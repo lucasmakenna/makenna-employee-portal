@@ -24,7 +24,12 @@ export default function LoginPage() {
     setError('');
     setLoading(true);
     try {
-      await signIn(email.trim().toLowerCase(), password);
+      await Promise.race([
+        signIn(email.trim().toLowerCase(), password),
+        new Promise((_, reject) =>
+          setTimeout(() => reject(new Error('Request timed out — check your connection and try again')), 10000)
+        ),
+      ]);
       router.push('/dashboard');
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Invalid email or password';
