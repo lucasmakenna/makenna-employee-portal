@@ -96,7 +96,19 @@ export default function RecipesTestTakePage() {
   const isCorrect = confirmed && selected === question.correct_answer;
 
   return (
-    <div className="max-w-2xl mx-auto space-y-6">
+    <div className="min-h-screen bg-page">
+      {/* Top bar */}
+      <header className="flex items-center justify-between border-b border-ink-100 bg-white px-4 py-3">
+        <img src="/logo.png" alt="Makenna Koffee" className="h-8 w-auto" />
+        <button
+          onClick={() => router.push('/recipes-test')}
+          className="flex items-center gap-2 rounded-full border border-ink-200 px-4 py-1.5 text-sm font-semibold text-ink-600 hover:bg-ink-50 transition"
+        >
+          <X size={15} /> Exit test
+        </button>
+      </header>
+
+    <div className="max-w-2xl mx-auto space-y-6 p-6">
       {/* Hand-off banner */}
       {assignedEmployee && (
         <div className="flex items-center gap-3 rounded-xl bg-cyan-50 border border-cyan-200 px-4 py-3">
@@ -113,16 +125,7 @@ export default function RecipesTestTakePage() {
           <span className="font-semibold text-ink-700">
             Question {currentIndex + 1} <span className="font-normal">of {total}</span>
           </span>
-          <div className="flex items-center gap-3">
-            <span className="text-emerald-600 font-semibold">{correctSoFar} correct</span>
-            <button
-              onClick={() => router.push('/recipes-test')}
-              className="text-ink-400 hover:text-ink-700 transition"
-              title="Exit test"
-            >
-              <X size={18} />
-            </button>
-          </div>
+          <span className="text-emerald-600 font-semibold">{correctSoFar} correct</span>
         </div>
         <div className="h-2 w-full rounded-full bg-ink-100 overflow-hidden">
           <div
@@ -247,6 +250,7 @@ export default function RecipesTestTakePage() {
           </button>
         )}
       </div>
+    </div>
     </div>
   );
 }
