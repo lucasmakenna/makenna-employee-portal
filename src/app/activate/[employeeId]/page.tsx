@@ -23,6 +23,7 @@ import { useEmployees, usePackets } from '@/data/store';
 import { fullName } from '@/data/employees';
 import { getLocation } from '@/data/locations';
 import { ONBOARDING_DOCS } from '@/data/onboarding';
+import { supabase } from '@/lib/supabase';
 import { format, parseISO } from 'date-fns';
 
 type Step = 'welcome' | 'tour' | 'docs' | 'day1' | 'done';
@@ -39,6 +40,8 @@ export default function ActivatePage() {
   const [password, setPassword] = useState('');
   const [confirm, setConfirm] = useState('');
   const [showPw, setShowPw] = useState(false);
+  const [authError, setAuthError] = useState('');
+  const [authLoading, setAuthLoading] = useState(false);
 
   useEffect(() => {
     // No useCurrentUser gate — this page is intentionally accessible from
@@ -131,10 +134,29 @@ export default function ActivatePage() {
                 Your password is encrypted. We can't see it, and we'll never email it back to you.
               </div>
 
+              {authError && (
+                <p className="mt-3 text-sm text-hibiscus-600 bg-hibiscus-50 rounded-lg px-3 py-2">
+                  {authError}
+                </p>
+              )}
+
               <NavRow
-                onNext={() => setStep('tour')}
-                nextDisabled={!passwordValid}
-                nextLabel="Continue"
+                onNext={async () => {
+                  setAuthError('');
+                  setAuthLoading(true);
+                  const { error } = await supabase.auth.signUp({
+                    email: employee.email,
+                    password,
+                  });
+                  setAuthLoading(false);
+                  if (error && !error.message.includes('already registered')) {
+                    setAuthError(error.message);
+                    return;
+                  }
+                  setStep('tour');
+                }}
+                nextDisabled={!passwordValid || authLoading}
+                nextLabel={authLoading ? 'Setting up…' : 'Continue'}
               />
             </>
           )}

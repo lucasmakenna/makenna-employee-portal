@@ -1,43 +1,59 @@
 'use client';
 
-// Sandbox auth. In production, swap for Clerk, NextAuth, or Supabase Auth
-// — the rest of the app reads through useCurrentUser() so the swap is
-// localized to this file.
-
-import { useEffect, useState } from 'react';
-import { Employee } from '@/types';
-import { EMPLOYEES } from '@/data/employees';
-
-const KEY = 'makenna-portal-current-user';
+import { useEffect, useState, useCallback } from 'react';
+import { supabase } from '@/lib/supabase';
+import { employeeFromRow } from '@/data/store';
+import type { Employee } from '@/types';
 
 export function useCurrentUser() {
   const [user, setUser] = useState<Employee | null>(null);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const id = window.localStorage.getItem(KEY);
-    if (id) setUser(EMPLOYEES.find((e) => e.id === id) ?? null);
-    setLoaded(true);
+    supabase.auth.getSession().then(async ({ data: { session } }) => {
+      if (session?.user?.email) {
+        const { data } = await supabase
+          .from('employees')
+          .select('*')
+          .eq('email', session.user.email)
+          .single();
+        setUser(data ? employeeFromRow(data as Record<string, unknown>) : null);
+      }
+      setLoaded(true);
+    });
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange(async (_event, session) => {
+      if (session?.user?.email) {
+        const { data } = await supabase
+          .from('employees')
+          .select('*')
+          .eq('email', session.user.email)
+          .single();
+        setUser(data ? employeeFromRow(data as Record<string, unknown>) : null);
+      } else {
+        setUser(null);
+      }
+      setLoaded(true);
+    });
+
+    return () => subscription.unsubscribe();
   }, []);
 
-  return {
-    user,
-    loaded,
-    signIn: (id: string) => {
-      window.localStorage.setItem(KEY, id);
-      setUser(EMPLOYEES.find((e) => e.id === id) ?? null);
-    },
-    signOut: () => {
-      window.localStorage.removeItem(KEY);
-      setUser(null);
-    },
-  };
+  const signIn = useCallback(async (email: string, password: string) => {
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    if (error) throw error;
+  }, []);
+
+  const signOut = useCallback(async () => {
+    await supabase.auth.signOut();
+    setUser(null);
+  }, []);
+
+  return { user, loaded, signIn, signOut };
 }
 
-// Use `can(role, capability)` from @/data/permissions instead of role lists.
-// This helper is kept for back-compat in case any future callers want a simple
-// role-list check (e.g. "is this user any of these roles?").
 export function isAnyRole(role: Employee['role'] | undefined, allowed: Employee['role'][]) {
   return !!role && allowed.includes(role);
 }
