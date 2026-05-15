@@ -6,7 +6,7 @@ import Link from 'next/link';
 import {
   ArrowLeft, Mail, Phone, MapPin, Calendar, FileText,
   CheckCircle, XCircle, ClipboardList, GraduationCap,
-  ShieldCheck, FileCheck, BookOpen,
+  ShieldCheck, FileCheck, BookOpen, Link2,
 } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
@@ -298,6 +298,16 @@ export default function TeamMemberPage() {
   const { user, loaded } = useCurrentUser();
   const { employees } = useEmployees();
   const [tab, setTab] = useState<Tab>('overview');
+  const [linkCopied, setLinkCopied] = useState(false);
+  const canManage = user?.role === 'admin' || user?.role === 'manager';
+
+  function copyInviteLink(empId: string) {
+    const url = `${window.location.origin}/activate/${empId}`;
+    navigator.clipboard.writeText(url).then(() => {
+      setLinkCopied(true);
+      setTimeout(() => setLinkCopied(false), 2500);
+    });
+  }
 
   const employee = employees.find((e) => e.id === params.id);
 
@@ -350,6 +360,18 @@ export default function TeamMemberPage() {
                 Hired {format(parseISO(employee.hiredOn), 'MMM d, yyyy')}
               </div>
             </div>
+            {canManage && (
+              <div className="mt-4">
+                <button
+                  onClick={() => copyInviteLink(employee.id)}
+                  className="flex items-center gap-2 rounded-full border border-ink-200 px-4 py-1.5 text-xs font-semibold text-ink-600 hover:bg-cyan-50 hover:border-cyan-300 transition"
+                >
+                  <Link2 size={13} />
+                  {linkCopied ? 'Link copied!' : 'Copy invite link'}
+                </button>
+                <p className="mt-1 text-xs text-ink-400">Send this link to the employee so they can set up their account.</p>
+              </div>
+            )}
           </div>
         </div>
 

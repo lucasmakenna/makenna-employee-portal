@@ -133,9 +133,14 @@ export default function LoginPage() {
             )}
           </button>
 
-          <p className="text-center text-xs text-ink-400">
-            New employee? Open the link from your welcome email to set up your account.
-          </p>
+          <div className="flex flex-col items-center gap-1">
+            <a href="/forgot-password" className="text-xs text-cyan-500 hover:underline">
+              Forgot your password?
+            </a>
+            <p className="text-center text-xs text-ink-400">
+              New employee? Open the link from your welcome email to set up your account.
+            </p>
+          </div>
         </form>
       </div>
     </div>

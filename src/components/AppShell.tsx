@@ -104,7 +104,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               </button>
             </div>
           )}
-          <ResetDemoButton />
+          {user?.role === 'admin' && <ResetDemoButton />}
         </div>
       </aside>
 
