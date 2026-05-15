@@ -171,8 +171,8 @@ export default function ActivatePage() {
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 <Feature
                   icon={<FileText size={18} />}
-                  title="Day 1 paperwork"
-                  body="Sign your W-4, I-9, handbook, and the rest. Each signature is timestamped."
+                  title="Your Employee Files"
+                  body="Executed W-4, I-9, Handbook, and any other relevant document."
                 />
                 <Feature
                   icon={<GraduationCap size={18} />}
