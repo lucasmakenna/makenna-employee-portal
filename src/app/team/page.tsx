@@ -10,7 +10,7 @@ import { useCurrentUser } from '@/lib/auth';
 import { fullName } from '@/data/employees';
 import { LOCATIONS, getLocation } from '@/data/locations';
 import { ROLES, ROLE_LABELS } from '@/types';
-import { useEmployees } from '@/data/store';
+import { useEmployees, usePackets } from '@/data/store';
 import type { Employee } from '@/types';
 
 const AVATAR_COLORS = [
@@ -22,6 +22,7 @@ export default function TeamPage() {
   const router = useRouter();
   const { user, loaded } = useCurrentUser();
   const { employees, add } = useEmployees();
+  const { create: createPacket } = usePackets();
   const [search, setSearch] = useState('');
   const [role, setRole] = useState<string>('all');
   const [loc, setLoc] = useState<string>('all');
@@ -141,7 +142,7 @@ export default function TeamPage() {
       {showAdd && (
         <AddEmployeeModal
           onClose={() => setShowAdd(false)}
-          onAdd={(emp) => { add(emp); setShowAdd(false); }}
+          onAdd={(emp) => { add(emp); createPacket(emp.id, emp.hiredOn); setShowAdd(false); }}
         />
       )}
     </AppShell>
