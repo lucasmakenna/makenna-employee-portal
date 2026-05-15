@@ -531,7 +531,12 @@ function RemoveEmployeeModal({
           body: JSON.stringify({ email: adminEmail, password }),
         },
       );
-      if (!res.ok) { setError('Incorrect password.'); setLoading(false); return; }
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({}));
+        setError(errData.error_description || errData.msg || errData.error || 'Incorrect password.');
+        setLoading(false);
+        return;
+      }
       onConfirm();
     } catch {
       setError('Something went wrong. Try again.');
