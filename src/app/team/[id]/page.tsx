@@ -6,7 +6,7 @@ import Link from 'next/link';
 import {
   ArrowLeft, Mail, Phone, MapPin, Calendar, FileText,
   CheckCircle, XCircle, ClipboardList, GraduationCap,
-  ShieldCheck, FileCheck, BookOpen, Link2,
+  ShieldCheck, FileCheck, BookOpen, Link2, Trash2,
 } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
@@ -296,10 +296,12 @@ export default function TeamMemberPage() {
   const params = useParams<{ id: string }>();
   const router = useRouter();
   const { user, loaded } = useCurrentUser();
-  const { employees } = useEmployees();
+  const { employees, remove } = useEmployees();
   const [tab, setTab] = useState<Tab>('overview');
   const [linkCopied, setLinkCopied] = useState(false);
+  const [confirmDelete, setConfirmDelete] = useState(false);
   const canManage = user?.role === 'admin' || user?.role === 'manager';
+  const isAdmin = user?.role === 'admin';
 
   function copyInviteLink(empId: string) {
     const url = `${window.location.origin}/activate/${empId}`;
@@ -361,15 +363,45 @@ export default function TeamMemberPage() {
               </div>
             </div>
             {canManage && (
-              <div className="mt-4">
-                <button
-                  onClick={() => copyInviteLink(employee.id)}
-                  className="flex items-center gap-2 rounded-full border border-ink-200 px-4 py-1.5 text-xs font-semibold text-ink-600 hover:bg-cyan-50 hover:border-cyan-300 transition"
-                >
-                  <Link2 size={13} />
-                  {linkCopied ? 'Link copied!' : 'Copy invite link'}
-                </button>
-                <p className="mt-1 text-xs text-ink-400">Send this link to the employee so they can set up their account.</p>
+              <div className="mt-4 flex flex-wrap items-center gap-3">
+                <div>
+                  <button
+                    onClick={() => copyInviteLink(employee.id)}
+                    className="flex items-center gap-2 rounded-full border border-ink-200 px-4 py-1.5 text-xs font-semibold text-ink-600 hover:bg-cyan-50 hover:border-cyan-300 transition"
+                  >
+                    <Link2 size={13} />
+                    {linkCopied ? 'Link copied!' : 'Copy invite link'}
+                  </button>
+                  <p className="mt-1 text-xs text-ink-400">Send this to the employee so they can set up their account.</p>
+                </div>
+                {isAdmin && employee.id !== user?.id && (
+                  <div>
+                    {!confirmDelete ? (
+                      <button
+                        onClick={() => setConfirmDelete(true)}
+                        className="flex items-center gap-2 rounded-full border border-hibiscus-200 px-4 py-1.5 text-xs font-semibold text-hibiscus-600 hover:bg-hibiscus-50 transition"
+                      >
+                        <Trash2 size={13} /> Remove employee
+                      </button>
+                    ) : (
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs text-hibiscus-600 font-semibold">Are you sure?</span>
+                        <button
+                          onClick={() => { remove(employee.id); router.replace('/team'); }}
+                          className="rounded-full bg-hibiscus-500 px-3 py-1 text-xs font-semibold text-white hover:bg-hibiscus-600 transition"
+                        >
+                          Yes, remove
+                        </button>
+                        <button
+                          onClick={() => setConfirmDelete(false)}
+                          className="rounded-full border border-ink-200 px-3 py-1 text-xs font-semibold text-ink-500 hover:bg-ink-50 transition"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
             )}
           </div>

@@ -343,9 +343,14 @@ export function useEmployees() {
 
   const getById = useCallback((id: string) => list.find((e) => e.id === id), [list]);
 
+  const remove = useCallback((id: string) => {
+    setList((prev) => prev.filter((e) => e.id !== id));
+    supabase.from('employees').delete().eq('id', id).then(() => {});
+  }, []);
+
   return useMemo(
-    () => ({ employees: list, add, update, getById }),
-    [list, add, update, getById],
+    () => ({ employees: list, add, update, getById, remove }),
+    [list, add, update, getById, remove],
   );
 }
 
