@@ -299,7 +299,7 @@ export default function TeamMemberPage() {
   const { employees, remove } = useEmployees();
   const [tab, setTab] = useState<Tab>('overview');
   const [linkCopied, setLinkCopied] = useState(false);
-  const [confirmDelete, setConfirmDelete] = useState(false);
+  const [showRemoveModal, setShowRemoveModal] = useState(false);
   const canManage = user?.role === 'admin' || user?.role === 'manager';
   const isAdmin = user?.role === 'admin';
 
@@ -330,6 +330,7 @@ export default function TeamMemberPage() {
   const pct = Math.round((done / total) * 100);
 
   return (
+    <>
     <AppShell>
       <div className="mx-auto max-w-5xl">
         <Link href="/team" className="mb-4 inline-flex items-center gap-1 text-sm text-ink-400 hover:text-ink-700">
@@ -375,32 +376,12 @@ export default function TeamMemberPage() {
                   <p className="mt-1 text-xs text-ink-400">Send this to the employee so they can set up their account.</p>
                 </div>
                 {isAdmin && employee.id !== user?.id && (
-                  <div>
-                    {!confirmDelete ? (
-                      <button
-                        onClick={() => setConfirmDelete(true)}
-                        className="flex items-center gap-2 rounded-full border border-hibiscus-200 px-4 py-1.5 text-xs font-semibold text-hibiscus-600 hover:bg-hibiscus-50 transition"
-                      >
-                        <Trash2 size={13} /> Remove employee
-                      </button>
-                    ) : (
-                      <div className="flex items-center gap-2">
-                        <span className="text-xs text-hibiscus-600 font-semibold">Are you sure?</span>
-                        <button
-                          onClick={() => { remove(employee.id); router.replace('/team'); }}
-                          className="rounded-full bg-hibiscus-500 px-3 py-1 text-xs font-semibold text-white hover:bg-hibiscus-600 transition"
-                        >
-                          Yes, remove
-                        </button>
-                        <button
-                          onClick={() => setConfirmDelete(false)}
-                          className="rounded-full border border-ink-200 px-3 py-1 text-xs font-semibold text-ink-500 hover:bg-ink-50 transition"
-                        >
-                          Cancel
-                        </button>
-                      </div>
-                    )}
-                  </div>
+                  <button
+                    onClick={() => setShowRemoveModal(true)}
+                    className="flex items-center gap-2 rounded-full border border-hibiscus-200 px-4 py-1.5 text-xs font-semibold text-hibiscus-600 hover:bg-hibiscus-50 transition"
+                  >
+                    <Trash2 size={13} /> Remove employee
+                  </button>
                 )}
               </div>
             )}
@@ -504,5 +485,107 @@ export default function TeamMemberPage() {
         )}
       </div>
     </AppShell>
+
+    {showRemoveModal && user && (
+      <RemoveEmployeeModal
+        employeeName={fullName(employee)}
+        adminEmail={user.email}
+        onCancel={() => setShowRemoveModal(false)}
+        onConfirm={() => { remove(employee.id); router.replace('/team'); }}
+      />
+    )}
+    </>
+  );
+}
+
+function RemoveEmployeeModal({
+  employeeName,
+  adminEmail,
+  onCancel,
+  onConfirm,
+}: {
+  employeeName: string;
+  adminEmail: string;
+  onCancel: () => void;
+  onConfirm: () => void;
+}) {
+  const [password, setPassword] = useState('');
+  const [reason, setReason] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!reason.trim()) { setError('Please enter a reason for termination.'); return; }
+    setError('');
+    setLoading(true);
+    try {
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_SUPABASE_URL}/auth/v1/token?grant_type=password`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? '',
+          },
+          body: JSON.stringify({ email: adminEmail, password }),
+        },
+      );
+      if (!res.ok) { setError('Incorrect password.'); setLoading(false); return; }
+      onConfirm();
+    } catch {
+      setError('Something went wrong. Try again.');
+      setLoading(false);
+    }
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
+      <div className="w-full max-w-md rounded-2xl bg-white shadow-2xl">
+        <div className="border-b border-ink-100 px-6 py-4">
+          <h2 className="text-lg font-bold text-hibiscus-600">Remove Employee</h2>
+          <p className="mt-1 text-sm text-ink-500">
+            You are about to remove <strong>{employeeName}</strong> from the portal. This cannot be undone.
+          </p>
+        </div>
+        <form onSubmit={handleSubmit} className="p-6 space-y-4">
+          <div>
+            <label className="label">Reason for termination</label>
+            <textarea
+              className="input w-full h-24 resize-none"
+              placeholder="e.g. Voluntary resignation, end of season, policy violation…"
+              value={reason}
+              onChange={(e) => setReason(e.target.value)}
+              required
+              autoFocus
+            />
+          </div>
+          <div>
+            <label className="label">Your password (to confirm)</label>
+            <input
+              type="password"
+              className="input w-full"
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+          {error && (
+            <p className="text-sm text-hibiscus-600 bg-hibiscus-50 rounded-lg px-3 py-2">{error}</p>
+          )}
+          <div className="flex gap-3 pt-1">
+            <button type="button" onClick={onCancel} className="btn-ghost flex-1">Cancel</button>
+            <button
+              type="submit"
+              disabled={loading || !password || !reason.trim()}
+              className="flex-1 rounded-full bg-hibiscus-500 px-4 py-2 text-sm font-semibold text-white hover:bg-hibiscus-600 disabled:opacity-40 transition"
+            >
+              {loading ? 'Verifying…' : 'Remove employee'}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 }
