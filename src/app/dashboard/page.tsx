@@ -14,9 +14,8 @@ import {
 import { useCurrentUser } from '@/lib/auth';
 import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
-import { EMPLOYEES, fullName, traineesInProgress } from '@/data/employees';
-import { CANDIDATES } from '@/data/candidates';
-import { PACKETS } from '@/data/onboarding';
+import { fullName } from '@/data/employees';
+import { useEmployees, useCandidates, usePackets } from '@/data/store';
 import { LOCATIONS, getLocation } from '@/data/locations';
 import { STATIONS, completedSkillsCount, totalSkills } from '@/data/training';
 import { format, formatDistanceToNow, parseISO } from 'date-fns';
@@ -24,6 +23,9 @@ import { format, formatDistanceToNow, parseISO } from 'date-fns';
 export default function DashboardPage() {
   const router = useRouter();
   const { user, loaded } = useCurrentUser();
+  const { employees } = useEmployees();
+  const { candidates } = useCandidates();
+  const { packets } = usePackets();
 
   useEffect(() => {
     if (loaded && !user) router.replace('/login');
@@ -31,12 +33,14 @@ export default function DashboardPage() {
 
   if (!user) return null;
 
-  const openCandidates = CANDIDATES.filter((c) => c.stage !== 'hired' && c.stage !== 'rejected').length;
-  const inProgressOnboarding = Object.values(PACKETS).filter(
+  const openCandidates = candidates.filter((c) => c.stage !== 'hired' && c.stage !== 'rejected').length;
+  const inProgressOnboarding = Object.values(packets).filter(
     (p) => p.tasks.some((t) => !t.signed),
   ).length;
-  const trainees = traineesInProgress().length;
-  const expiringCerts = EMPLOYEES.flatMap((e) =>
+  const trainees = employees.filter((e) =>
+    Object.values(e.trainingProgressByStation).some((s) => !s.signedOffAt),
+  ).length;
+  const expiringCerts = employees.flatMap((e) =>
     e.certifications.map((c) => ({ employee: e, cert: c })),
   ).filter((x) => {
     const days = (new Date(x.cert.expiresOn).getTime() - Date.now()) / 86400000;
@@ -103,7 +107,7 @@ export default function DashboardPage() {
                   { stage: 'offer', label: 'Offer' },
                   { stage: 'hired', label: 'Hired' },
                 ].map((s) => {
-                  const n = CANDIDATES.filter((c) => c.stage === s.stage).length;
+                  const n = candidates.filter((c) => c.stage === s.stage).length;
                   return (
                     <div key={s.stage} className="rounded-lg bg-cyan-50 p-3 text-center">
                       <div className="text-2xl font-bold text-ink-700">{n}</div>
@@ -125,7 +129,7 @@ export default function DashboardPage() {
                 </Link>
               </div>
               <div className="mt-4 space-y-3">
-                {traineesInProgress().map((e) => {
+                {employees.filter((e) => Object.keys(e.trainingProgressByStation).length > 0 && Object.values(e.trainingProgressByStation).some((s) => !s.signedOffAt)).map((e) => {
                   const total = totalSkills();
                   const done = completedSkillsCount(e.trainingProgressByStation);
                   const pct = Math.round((done / total) * 100);

@@ -8,11 +8,13 @@ import AppShell from '@/components/AppShell';
 import SquareStatusPanel from '@/components/SquareStatusPanel';
 import { useCurrentUser } from '@/lib/auth';
 import { LOCATIONS } from '@/data/locations';
-import { EMPLOYEES, fullName } from '@/data/employees';
+import { fullName } from '@/data/employees';
+import { useEmployees } from '@/data/store';
 
 export default function LocationsPage() {
   const router = useRouter();
   const { user, loaded } = useCurrentUser();
+  const { employees } = useEmployees();
 
   useEffect(() => {
     if (loaded && !user) router.replace('/login');
@@ -36,7 +38,7 @@ export default function LocationsPage() {
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {LOCATIONS.map((loc) => {
-            const team = EMPLOYEES.filter((e) => e.homeLocationId === loc.id);
+            const team = employees.filter((e) => e.homeLocationId === loc.id);
             const manager = team.find((e) => e.role === 'manager');
             return (
               <div key={loc.id} className="card p-5">

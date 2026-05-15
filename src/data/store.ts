@@ -189,13 +189,7 @@ function availabilityToRow(a: Availability) {
 }
 
 // ---------------------------------------------------------------------------
-// Seed helpers — on first run, push TypeScript seed data into Supabase
 // ---------------------------------------------------------------------------
-
-let candidatesSeeded = false;
-let employeesSeeded = false;
-let conversationsSeeded = false;
-let availabilitySeeded = false;
 
 // ---------------------------------------------------------------------------
 // Candidates
@@ -215,7 +209,7 @@ export type NewCandidateInput = {
 };
 
 export function useCandidates() {
-  const [list, setList] = useState<Candidate[]>(CAND_SEED);
+  const [list, setList] = useState<Candidate[]>([]);
 
   useEffect(() => {
     supabase
@@ -223,17 +217,9 @@ export function useCandidates() {
       .select('*')
       .order('applied_on', { ascending: false })
       .then(({ data }) => {
-        if (!data || data.length === 0) {
-          if (candidatesSeeded) return;
-          candidatesSeeded = true;
-          supabase
-            .from('candidates')
-            .insert(CAND_SEED.map(candidateToRow))
-            .then(() => {});
-          return;
+        if (data && data.length > 0) {
+          setList(data.map((r) => candidateFromRow(r as Record<string, unknown>)));
         }
-        candidatesSeeded = true;
-        setList(data.map((r) => candidateFromRow(r as Record<string, unknown>)));
       });
   }, []);
 
@@ -320,7 +306,7 @@ export function useCandidates() {
 // ---------------------------------------------------------------------------
 
 export function useEmployees() {
-  const [list, setList] = useState<Employee[]>(EMP_SEED);
+  const [list, setList] = useState<Employee[]>([]);
 
   useEffect(() => {
     supabase
@@ -328,17 +314,9 @@ export function useEmployees() {
       .select('*')
       .order('hired_on', { ascending: true })
       .then(({ data }) => {
-        if (!data || data.length === 0) {
-          if (employeesSeeded) return;
-          employeesSeeded = true;
-          supabase
-            .from('employees')
-            .insert(EMP_SEED.map(employeeToRow))
-            .then(() => {});
-          return;
+        if (data && data.length > 0) {
+          setList(data.map((r) => employeeFromRow(r as Record<string, unknown>)));
         }
-        employeesSeeded = true;
-        setList(data.map((r) => employeeFromRow(r as Record<string, unknown>)));
       });
   }, []);
 
@@ -376,7 +354,7 @@ export function useEmployees() {
 // ---------------------------------------------------------------------------
 
 export function usePackets() {
-  const [packets, setPackets] = useState<Record<string, OnboardingPacket>>(PACKET_SEED);
+  const [packets, setPackets] = useState<Record<string, OnboardingPacket>>({});
 
   useEffect(() => {
     supabase
@@ -494,7 +472,7 @@ export function buildEmployeeFromCandidate(
 // ---------------------------------------------------------------------------
 
 export function useConversations() {
-  const [list, setList] = useState<Conversation[]>(SEED_CONVERSATIONS);
+  const [list, setList] = useState<Conversation[]>([]);
 
   useEffect(() => {
     supabase
@@ -502,17 +480,9 @@ export function useConversations() {
       .select('*')
       .order('created_at', { ascending: true })
       .then(({ data }) => {
-        if (!data || data.length === 0) {
-          if (conversationsSeeded) return;
-          conversationsSeeded = true;
-          supabase
-            .from('conversations')
-            .insert(SEED_CONVERSATIONS.map(conversationToRow))
-            .then(() => {});
-          return;
+        if (data && data.length > 0) {
+          setList(data.map((r) => conversationFromRow(r as Record<string, unknown>)));
         }
-        conversationsSeeded = true;
-        setList(data.map((r) => conversationFromRow(r as Record<string, unknown>)));
       });
   }, []);
 
@@ -570,7 +540,7 @@ export function useConversations() {
 }
 
 export function useMessages() {
-  const [list, setList] = useState<Message[]>(SEED_MESSAGES);
+  const [list, setList] = useState<Message[]>([]);
 
   useEffect(() => {
     supabase
@@ -578,14 +548,9 @@ export function useMessages() {
       .select('*')
       .order('created_at', { ascending: true })
       .then(({ data }) => {
-        if (!data || data.length === 0) {
-          supabase
-            .from('messages')
-            .insert(SEED_MESSAGES.map(messageToRow))
-            .then(() => {});
-          return;
+        if (data && data.length > 0) {
+          setList(data.map((r) => messageFromRow(r as Record<string, unknown>)));
         }
-        setList(data.map((r) => messageFromRow(r as Record<string, unknown>)));
       });
   }, []);
 
@@ -657,21 +622,14 @@ export function useMessages() {
 // ---------------------------------------------------------------------------
 
 export function useAvailability() {
-  const [map, setMap] = useState<Record<string, Availability>>(SEED_AVAILABILITY);
+  const [map, setMap] = useState<Record<string, Availability>>({});
 
   useEffect(() => {
     supabase
       .from('availability')
       .select('*')
       .then(({ data }) => {
-        if (!data || data.length === 0) {
-          if (availabilitySeeded) return;
-          availabilitySeeded = true;
-          const rows = Object.values(SEED_AVAILABILITY).map(availabilityToRow);
-          supabase.from('availability').insert(rows).then(() => {});
-          return;
-        }
-        availabilitySeeded = true;
+        if (!data || data.length === 0) return;
         setMap(
           Object.fromEntries(
             data.map((r) => {
