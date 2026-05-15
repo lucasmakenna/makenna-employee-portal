@@ -136,9 +136,6 @@ export default function LoginPage() {
           <p className="text-center text-xs text-ink-400">
             New employee? Open the link from your welcome email to set up your account.
           </p>
-          <p style={{fontSize:'14px',wordBreak:'break-all',color:'red',fontWeight:'bold'}}>
-            DB: {process.env.NEXT_PUBLIC_SUPABASE_URL ?? 'NOT SET'}
-          </p>
         </form>
       </div>
     </div>
