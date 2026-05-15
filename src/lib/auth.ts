@@ -38,11 +38,13 @@ export function useCurrentUser() {
       .select('*')
       .eq('email', email)
       .single()
-      .then(({ data }) => {
-        setUser(data ? employeeFromRow(data as Record<string, unknown>) : null);
-        setLoaded(true);
-      })
-      .catch(() => setLoaded(true));
+      .then(
+        ({ data }) => {
+          setUser(data ? employeeFromRow(data as Record<string, unknown>) : null);
+          setLoaded(true);
+        },
+        () => setLoaded(true),
+      );
   }, []);
 
   const signOut = useCallback(() => {
