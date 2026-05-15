@@ -163,7 +163,7 @@ export default function ActivatePage() {
 
           {step === 'tour' && (
             <>
-              <h1 className="text-3xl font-bold text-ink-700">This is your home base</h1>
+              <h1 className="text-3xl font-bold text-ink-700">Welcome to the Makenna Mafia!</h1>
               <p className="mt-2 text-ink-600">
                 The Makenna Team app keeps everything you need in one spot. Here's a quick tour.
               </p>
