@@ -14,7 +14,7 @@ import {
   Flower,
   MessageSquare,
   Calendar,
-  BookOpen,
+  FlaskConical,
 } from 'lucide-react';
 import clsx from 'clsx';
 import { useCurrentUser } from '@/lib/auth';
@@ -32,7 +32,7 @@ const NAV = [
   { href: '/hiring', icon: Users, label: 'Hiring' },
   { href: '/onboarding', icon: ClipboardCheck, label: 'Onboarding' },
   { href: '/training', icon: GraduationCap, label: 'Training' },
-  { href: '/recipes-test', icon: BookOpen, label: 'Barista Test' },
+  { href: '/recipe-fill', icon: FlaskConical, label: 'Recipe Fill-In' },
   { href: '/team', icon: Users, label: 'Team' },
   { href: '/locations', icon: MapPin, label: 'Locations' },
 ];

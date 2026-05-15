@@ -18,11 +18,11 @@ import type {
   Role,
   LocationId,
   Availability,
-  RecipesTestAttempt,
-  RecipesTestAnswer,
+  RecipeFillAttempt,
+  RecipeFillAnswers,
 } from '@/types';
-import { RECIPES_TEST_PASSING_SCORE } from '@/types';
-import type { RecipesTestQuestion } from '@/types';
+import { RECIPE_FILL_PASSING_SCORE } from '@/types';
+import type { RecipeFillQuestion } from '@/types';
 
 // ---------------------------------------------------------------------------
 // Row ↔ TypeScript converters
@@ -658,115 +658,84 @@ export function useAvailability() {
 }
 
 // ---------------------------------------------------------------------------
-// Recipes Test Attempts
+// Recipe Fill-In Attempts
 // ---------------------------------------------------------------------------
 
-export function useRecipesTestAttempts() {
-  const [list, setList] = useState<RecipesTestAttempt[]>([]);
+const FILL_KEY = 'mk-recipe-fill-attempts-v1';
+
+export function useRecipeFillAttempts() {
+  const [list, setList] = useState<RecipeFillAttempt[]>([]);
 
   useEffect(() => {
-    supabase
-      .from('recipes_test_attempts')
-      .select('*')
-      .then(({ data }) => {
-        if (!data || data.length === 0) return;
-        setList(
-          data.map((row) => ({
-            id: row.id,
-            employeeId: row.employee_id,
-            startedAt: row.started_at,
-            completedAt: row.completed_at ?? undefined,
-            questionOrder: row.question_order ?? [],
-            answers: row.answers ?? {},
-            score: row.score ?? undefined,
-            passed: row.passed ?? undefined,
-          })),
-        );
-      });
+    try {
+      const raw = localStorage.getItem(FILL_KEY);
+      if (raw) setList(JSON.parse(raw));
+    } catch {}
   }, []);
 
-  const start = useCallback((employeeId: string, allQuestionIds: string[]): RecipesTestAttempt => {
+  const persist = useCallback((next: RecipeFillAttempt[]) => {
+    setList(next);
+    try { localStorage.setItem(FILL_KEY, JSON.stringify(next)); } catch {}
+  }, []);
+
+  const start = useCallback((employeeId: string, allQuestionIds: string[]): RecipeFillAttempt => {
     const shuffled = [...allQuestionIds].sort(() => Math.random() - 0.5);
-    const attempt: RecipesTestAttempt = {
-      id: `rta-${Date.now()}`,
+    const attempt: RecipeFillAttempt = {
+      id: `rfa-${Date.now()}`,
       employeeId,
       startedAt: new Date().toISOString(),
       questionOrder: shuffled,
       answers: {},
     };
-    setList((prev) => [attempt, ...prev]);
-    supabase
-      .from('recipes_test_attempts')
-      .insert({
-        id: attempt.id,
-        employee_id: attempt.employeeId,
-        started_at: attempt.startedAt,
-        question_order: attempt.questionOrder,
-        answers: attempt.answers,
-      })
-      .then(() => {});
+    setList((prev) => {
+      const next = [attempt, ...prev];
+      try { localStorage.setItem(FILL_KEY, JSON.stringify(next)); } catch {}
+      return next;
+    });
     return attempt;
   }, []);
 
-  const saveAnswer = useCallback(
-    (attemptId: string, questionId: string, answer: RecipesTestAnswer) => {
-      setList((prev) => {
-        const next = prev.map((a) =>
-          a.id === attemptId
-            ? { ...a, answers: { ...a.answers, [questionId]: answer } }
-            : a,
-        );
-        const updated = next.find((a) => a.id === attemptId);
-        if (updated) {
-          supabase
-            .from('recipes_test_attempts')
-            .update({ answers: updated.answers })
-            .eq('id', attemptId)
-            .then(() => {});
-        }
-        return next;
-      });
-    },
-    [],
-  );
-
-  const complete = useCallback(
-    (attemptId: string, questions: RecipesTestQuestion[]) => {
-      setList((prev) =>
-        prev.map((a) => {
-          if (a.id !== attemptId) return a;
-          const correct = questions.filter((q) => a.answers[q.id] === q.correct_answer).length;
-          const score = Math.round((correct / questions.length) * 100);
-          const completed = {
-            ...a,
-            completedAt: new Date().toISOString(),
-            score,
-            passed: score >= RECIPES_TEST_PASSING_SCORE,
-          };
-          supabase
-            .from('recipes_test_attempts')
-            .update({
-              completed_at: completed.completedAt,
-              score: completed.score,
-              passed: completed.passed,
-              answers: completed.answers,
-            })
-            .eq('id', attemptId)
-            .then(() => {});
-          return completed;
-        }),
+  const saveAnswer = useCallback((attemptId: string, key: string, value: string) => {
+    setList((prev) => {
+      const next = prev.map((a) =>
+        a.id === attemptId ? { ...a, answers: { ...a.answers, [key]: value } } : a,
       );
-    },
-    [],
-  );
+      try { localStorage.setItem(FILL_KEY, JSON.stringify(next)); } catch {}
+      return next;
+    });
+  }, []);
+
+  const complete = useCallback((attemptId: string, questions: RecipeFillQuestion[]) => {
+    setList((prev) => {
+      const next = prev.map((a) => {
+        if (a.id !== attemptId) return a;
+        let correctBlanks = 0;
+        let totalBlanks = 0;
+        for (const q of questions) {
+          for (const blank of q.blanks) {
+            const key = `${q.id}-${blank.index}`;
+            totalBlanks++;
+            if ((a.answers[key] ?? '') === blank.correct) correctBlanks++;
+          }
+        }
+        const score = totalBlanks > 0 ? Math.round((correctBlanks / totalBlanks) * 100) : 0;
+        return {
+          ...a,
+          completedAt: new Date().toISOString(),
+          score,
+          passed: score >= RECIPE_FILL_PASSING_SCORE,
+        };
+      });
+      try { localStorage.setItem(FILL_KEY, JSON.stringify(next)); } catch {}
+      return next;
+    });
+  }, []);
 
   const getById = useCallback((id: string) => list.find((a) => a.id === id), [list]);
-
   const getByEmployee = useCallback(
     (employeeId: string) => list.filter((a) => a.employeeId === employeeId),
     [list],
   );
-
   const inProgress = useCallback(
     (employeeId: string) => list.find((a) => a.employeeId === employeeId && !a.completedAt),
     [list],

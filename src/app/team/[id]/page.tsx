@@ -15,7 +15,7 @@ import { fullName } from '@/data/employees';
 import { useEmployees } from '@/data/store';
 import { getLocation } from '@/data/locations';
 import { STATIONS, totalSkills, completedSkillsCount } from '@/data/training';
-import { ROLE_LABELS, RECIPES_TEST_PASSING_SCORE } from '@/types';
+import { ROLE_LABELS } from '@/types';
 import { supabase } from '@/lib/supabase';
 import { format, parseISO } from 'date-fns';
 import clsx from 'clsx';

@@ -330,30 +330,33 @@ export type TimeOffRequest = {
   createdAt: string;
 };
 
-// ---------------------------------------------------------------------------
-// Recipes Test
-// ---------------------------------------------------------------------------
-
-export type RecipesTestAnswer = 'a' | 'b' | 'c' | 'd';
-
-export type RecipesTestQuestion = {
-  id: string;
-  question: string;
-  options: Record<RecipesTestAnswer, string>;
-  correct_answer: RecipesTestAnswer;
-  drink: string;
-  size: string;
+// Recipe Fill-In Test
+export type RecipeFillBlank = {
+  index: number;
+  type: 'quantity' | 'ingredient';
+  options: string[];
+  correct: string;
 };
 
-export type RecipesTestAttempt = {
+export type RecipeFillQuestion = {
+  id: string;
+  drink: string;
+  size: string;
+  template: string;
+  blanks: RecipeFillBlank[];
+};
+
+export type RecipeFillAnswers = Record<string, string>; // key: `${questionId}-${blankIndex}`
+
+export type RecipeFillAttempt = {
   id: string;
   employeeId: string;
   startedAt: string;
   completedAt?: string;
   questionOrder: string[];
-  answers: Record<string, RecipesTestAnswer>;
+  answers: RecipeFillAnswers;
   score?: number;
   passed?: boolean;
 };
 
-export const RECIPES_TEST_PASSING_SCORE = 90;
+export const RECIPE_FILL_PASSING_SCORE = 90;
