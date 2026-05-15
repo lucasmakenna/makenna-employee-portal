@@ -8,9 +8,9 @@ import clsx from 'clsx';
 import { CheckCircle, XCircle, ChevronRight, X, UserCheck } from 'lucide-react';
 import { useCurrentUser } from '@/lib/auth';
 import { useRecipeFillAttempts, useEmployees } from '@/data/store';
-import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP } from '@/data/recipe-fill';
+import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP, RECIPE_FILL_OPTIONS } from '@/data/recipe-fill';
 import { fullName } from '@/data/employees';
-import type { RecipeFillBlank } from '@/types';
+import type { RecipeFillBlank, RecipeFillBlankType } from '@/types';
 
 export default function RecipeFillTakePage() {
   const router = useRouter();
@@ -186,7 +186,7 @@ export default function RecipeFillTakePage() {
                   )}
                 >
                   <option value="">— qty —</option>
-                  {qtyBlank.options.map((opt) => (
+                  {RECIPE_FILL_OPTIONS.quantity.map((opt) => (
                     <option key={opt} value={opt}>{opt}</option>
                   ))}
                 </select>
@@ -210,7 +210,7 @@ export default function RecipeFillTakePage() {
                   )}
                 >
                   <option value="">— ingredient —</option>
-                  {ingBlank.options.map((opt) => (
+                  {RECIPE_FILL_OPTIONS[ingBlank.type as RecipeFillBlankType].map((opt) => (
                     <option key={opt} value={opt}>{opt}</option>
                   ))}
                 </select>

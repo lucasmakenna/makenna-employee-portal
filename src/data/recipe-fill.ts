@@ -1,15 +1,12 @@
 import rawData from './recipe-fill-questions.json';
-import type { RecipeFillQuestion } from '@/types';
+import type { RecipeFillQuestion, RecipeFillBlankType } from '@/types';
 
 const raw = rawData as {
   test_name: string;
   test_id: string;
   description: string;
   total_questions: number;
-  quantity_options: string[];
-  syrup_options: string[];
-  sauce_options: string[];
-  powder_options: string[];
+  options: Record<RecipeFillBlankType, string[]>;
   questions: RecipeFillQuestion[];
 };
 
@@ -19,6 +16,8 @@ export const RECIPE_FILL_META = {
   description: raw.description,
   totalQuestions: raw.total_questions,
 };
+
+export const RECIPE_FILL_OPTIONS: Record<RecipeFillBlankType, string[]> = raw.options;
 
 export const RECIPE_FILL_QUESTIONS: RecipeFillQuestion[] = raw.questions;
 

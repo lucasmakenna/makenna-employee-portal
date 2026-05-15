@@ -331,10 +331,11 @@ export type TimeOffRequest = {
 };
 
 // Recipe Fill-In Test
+export type RecipeFillBlankType = 'quantity' | 'syrup' | 'sauce' | 'powder';
+
 export type RecipeFillBlank = {
   index: number;
-  type: 'quantity' | 'ingredient';
-  options: string[];
+  type: RecipeFillBlankType;
   correct: string;
 };
 
