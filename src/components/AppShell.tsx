@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
@@ -130,12 +131,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               <span className="absolute right-1 top-1 h-2 w-2 rounded-full bg-hibiscus-400" />
             </button>
             {user && (
-              <div className="flex items-center gap-2">
-                <Avatar employee={user} size="sm" />
-                <span className="hidden md:inline text-sm font-medium text-ink-700">
-                  {user.firstName}
-                </span>
-              </div>
+              <ProfileMenu user={user} signOut={() => { signOut(); router.replace('/login'); }} />
             )}
           </div>
         </header>
@@ -164,6 +160,41 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
         <main className="flex-1 p-4 md:p-8">{children}</main>
       </div>
+    </div>
+  );
+}
+
+function ProfileMenu({ user, signOut }: { user: import('@/types').Employee; signOut: () => void }) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="relative">
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="flex items-center gap-2 rounded-full p-1 hover:bg-cyan-50"
+      >
+        <Avatar employee={user} size="sm" />
+        <span className="hidden md:inline text-sm font-medium text-ink-700">{user.firstName}</span>
+      </button>
+
+      {open && (
+        <>
+          <div className="fixed inset-0 z-10" onClick={() => setOpen(false)} />
+          <div className="absolute right-0 z-20 mt-2 w-44 rounded-xl border border-ink-100 bg-white shadow-lg py-1">
+            <div className="px-4 py-2 border-b border-ink-100">
+              <p className="text-sm font-semibold text-ink-700">{user.firstName} {user.lastName}</p>
+              <p className="text-xs text-ink-400 truncate">{user.email}</p>
+            </div>
+            <button
+              onClick={() => { setOpen(false); signOut(); }}
+              className="flex w-full items-center gap-2 px-4 py-2 text-sm text-hibiscus-600 hover:bg-hibiscus-50"
+            >
+              <LogOut size={14} />
+              Sign out
+            </button>
+          </div>
+        </>
+      )}
     </div>
   );
 }
