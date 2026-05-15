@@ -5,53 +5,52 @@ import { supabase } from '@/lib/supabase';
 import { employeeFromRow } from '@/data/store';
 import type { Employee } from '@/types';
 
+// Read/write the session directly from localStorage to avoid the Supabase
+// auth SDK's navigator.locks deadlock in Next.js App Router production builds.
+const PROJECT_REF =
+  (process.env.NEXT_PUBLIC_SUPABASE_URL ?? '').split('//')[1]?.split('.')[0] ?? '';
+const SESSION_KEY = `sb-${PROJECT_REF}-auth-token`;
+
+function readSessionEmail(): string | null {
+  if (typeof window === 'undefined') return null;
+  try {
+    const raw = localStorage.getItem(SESSION_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    return parsed?.user?.email ?? null;
+  } catch {
+    return null;
+  }
+}
+
 export function useCurrentUser() {
   const [user, setUser] = useState<Employee | null>(null);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    supabase.auth.getSession().then(async ({ data: { session } }) => {
-      if (session?.user?.email) {
-        const { data } = await supabase
-          .from('employees')
-          .select('*')
-          .eq('email', session.user.email)
-          .single();
-        setUser(data ? employeeFromRow(data as Record<string, unknown>) : null);
-      }
+    const email = readSessionEmail();
+    if (!email) {
       setLoaded(true);
-    });
-
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (_event, session) => {
-      if (session?.user?.email) {
-        const { data } = await supabase
-          .from('employees')
-          .select('*')
-          .eq('email', session.user.email)
-          .single();
+      return;
+    }
+    supabase
+      .from('employees')
+      .select('*')
+      .eq('email', email)
+      .single()
+      .then(({ data }) => {
         setUser(data ? employeeFromRow(data as Record<string, unknown>) : null);
-      } else {
-        setUser(null);
-      }
-      setLoaded(true);
-    });
-
-    return () => subscription.unsubscribe();
+        setLoaded(true);
+      })
+      .catch(() => setLoaded(true));
   }, []);
 
-  const signIn = useCallback(async (email: string, password: string) => {
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    if (error) throw error;
-  }, []);
-
-  const signOut = useCallback(async () => {
-    await supabase.auth.signOut();
+  const signOut = useCallback(() => {
+    if (typeof window !== 'undefined') localStorage.removeItem(SESSION_KEY);
     setUser(null);
   }, []);
 
-  return { user, loaded, signIn, signOut };
+  return { user, loaded, signOut };
 }
 
 export function isAnyRole(role: Employee['role'] | undefined, allowed: Employee['role'][]) {
