@@ -32,7 +32,7 @@ const NAV = [
   { href: '/hiring', icon: Users, label: 'Hiring' },
   { href: '/onboarding', icon: ClipboardCheck, label: 'Onboarding' },
   { href: '/training', icon: GraduationCap, label: 'Training' },
-  { href: '/recipe-fill', icon: FlaskConical, label: 'Recipe Fill-In' },
+  { href: '/recipe-fill', icon: FlaskConical, label: 'Barista Test' },
   { href: '/team', icon: Users, label: 'Team' },
   { href: '/locations', icon: MapPin, label: 'Locations' },
 ];

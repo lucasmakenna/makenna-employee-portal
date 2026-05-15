@@ -32,7 +32,7 @@ export default function RecipeFillResultsPage() {
       <div className="flex flex-col items-center justify-center min-h-64 gap-4 text-ink-400">
         <p>Results not found.</p>
         <button onClick={() => router.push('/recipe-fill')} className="text-cyan-600 underline text-sm">
-          Back to Recipe Fill-In Test
+          Back to Barista Test
         </button>
       </div>
     );
@@ -224,7 +224,7 @@ export default function RecipeFillResultsPage() {
             onClick={() => router.push('/recipe-fill')}
             className="flex items-center gap-2 rounded-full bg-cyan-400 px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-cyan-500 transition"
           >
-            <FlaskConical size={16} /> Test Home
+            <FlaskConical size={16} /> Barista Test Home
           </button>
         </div>
       </div>

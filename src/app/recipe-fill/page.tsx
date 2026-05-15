@@ -61,7 +61,7 @@ export default function RecipeFillPage() {
             <FlaskConical size={24} />
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-ink-800">Recipe Fill-In Test</h1>
+            <h1 className="text-2xl font-bold text-ink-800">Barista Test</h1>
             <p className="text-sm text-ink-500 mt-0.5">
               {RECIPE_FILL_META.totalQuestions} questions · Passing score {RECIPE_FILL_PASSING_SCORE}% · Select the correct pump amounts and ingredients for each drink
             </p>
