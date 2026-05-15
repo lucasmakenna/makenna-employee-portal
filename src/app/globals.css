@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand tokens — matched to makennakoffee.com */
+  --color-cyan: #4FB8C9;
+  --color-cyan-dark: #2A95A8;
+  --color-hibiscus: #C5293A;
+  --color-royal: #1F5FB6;
+  --color-page: #FFFFFF;
+  --color-cream: #FFF8E7;
+  --color-ink: #0F1729;
+}
+
+html, body {
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  /* The signature horizontal tri-stripe — used at the top of pages and
+     as a divider, mirroring how the site uses it under section headers. */
+  .tri-stripe {
+    height: 6px;
+    background: linear-gradient(
+      to right,
+      #C5293A 0%, #C5293A 33%,
+      #1F5FB6 33%, #1F5FB6 66%,
+      #7DD0D9 66%, #7DD0D9 100%
+    );
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition;
+  }
+  .btn-primary {
+    @apply btn bg-ink-700 text-white hover:bg-ink-600;
+  }
+  .btn-secondary {
+    @apply btn bg-cyan-50 text-cyan-600 hover:bg-cyan-100;
+  }
+  .btn-cyan {
+    @apply btn bg-cyan-400 text-white hover:bg-cyan-500;
+  }
+  .btn-hibiscus {
+    @apply btn bg-hibiscus-400 text-white hover:bg-hibiscus-500;
+  }
+  .btn-ghost {
+    @apply btn text-ink-700 hover:bg-ink-50;
+  }
+  .card {
+    @apply rounded-2xl bg-white shadow-soft border border-ink-100;
+  }
+  .input {
+    @apply w-full rounded-lg border border-ink-200 bg-white px-3 py-2 text-sm focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-200;
+  }
+  .label {
+    @apply mb-1 block text-xs font-semibold uppercase tracking-wider text-ink-400;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold;
+  }
+}
+
+/* Print styles — keep the audit certificate clean on paper */
+@media print {
+  body { background: white; }
+  .tri-stripe { display: none; }
+}
