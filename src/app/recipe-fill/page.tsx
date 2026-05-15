@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { FlaskConical, CheckCircle, XCircle, Clock, Trophy, ChevronRight, RotateCcw, UserCheck } from 'lucide-react';
+import { FlaskConical, CheckCircle, XCircle, Clock, Trophy, ChevronRight, RotateCcw, UserCheck, Trash2 } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import { useCurrentUser } from '@/lib/auth';
 import { useRecipeFillAttempts, useEmployees } from '@/data/store';
@@ -214,6 +214,27 @@ export default function RecipeFillPage() {
                 </li>
               ))}
             </ul>
+          </div>
+        )}
+
+        {/* Admin: clear all in-progress */}
+        {isManager && attempts.some((a) => !a.completedAt) && (
+          <div className="rounded-2xl border border-hibiscus-200 bg-hibiscus-50 p-4 flex items-center justify-between gap-4">
+            <div>
+              <p className="text-sm font-semibold text-hibiscus-700">
+                {attempts.filter((a) => !a.completedAt).length} in-progress session{attempts.filter((a) => !a.completedAt).length !== 1 ? 's' : ''}
+              </p>
+              <p className="text-xs text-hibiscus-500 mt-0.5">These will show as "in progress" in the assign dropdown. Clear them to start fresh.</p>
+            </div>
+            <button
+              onClick={() => {
+                localStorage.removeItem('mk-recipe-fill-attempts-v1');
+                window.location.reload();
+              }}
+              className="flex items-center gap-2 rounded-full bg-hibiscus-400 px-4 py-2 text-sm font-semibold text-white hover:bg-hibiscus-500 transition shrink-0"
+            >
+              <Trash2 size={14} /> Clear all
+            </button>
           </div>
         )}
 

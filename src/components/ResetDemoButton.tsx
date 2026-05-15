@@ -17,6 +17,7 @@ const DEMO_KEYS = [
   'mk-conversations-v1',
   'mk-messages-v1',
   'mk-availability-v1',
+  'mk-recipe-fill-attempts-v1',
   'makenna-portal-current-user',
   'makenna-signature-log',
 ];
