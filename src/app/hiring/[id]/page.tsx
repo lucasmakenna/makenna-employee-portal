@@ -45,7 +45,11 @@ export default function CandidateDetailPage() {
   const [startDate, setStartDate] = useState(
     new Date(Date.now() + 86400000 * 3).toISOString().slice(0, 10),
   );
-  const [hireRole, setHireRole] = useState<Role>('barista');
+  const [hireRole, setHireRole] = useState<Role>(
+    candidate?.appliedFor === 'Shift Lead' ? 'lead'
+    : candidate?.appliedFor === 'Manager' ? 'manager'
+    : 'barista'
+  );
   const [hiredEmployee, setHiredEmployee] = useState<Employee | null>(null);
 
   useEffect(() => {
