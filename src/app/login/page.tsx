@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Eye, EyeOff, Coffee } from 'lucide-react';
 import { useCurrentUser } from '@/lib/auth';
+import { supabase } from '@/lib/supabase';
 
 export default function LoginPage() {
   const router = useRouter();
@@ -24,12 +25,11 @@ export default function LoginPage() {
     setError('');
     setLoading(true);
     try {
-      await Promise.race([
-        signIn(email.trim().toLowerCase(), password),
-        new Promise((_, reject) =>
-          setTimeout(() => reject(new Error('Request timed out — check your connection and try again')), 10000)
-        ),
-      ]);
+      const { error } = await supabase.auth.signInWithPassword({
+        email: email.trim().toLowerCase(),
+        password,
+      });
+      if (error) throw error;
       router.push('/dashboard');
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Invalid email or password';
