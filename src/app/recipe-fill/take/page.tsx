@@ -1,7 +1,6 @@
 'use client';
 
-export const dynamic = 'force-dynamic';
-
+import { Suspense } from 'react';
 import { useEffect, useState, useCallback } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import clsx from 'clsx';
@@ -12,7 +11,7 @@ import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP, RECIPE_FILL_OPTIONS } 
 import { fullName } from '@/data/employees';
 import type { RecipeFillBlank, RecipeFillBlankType } from '@/types';
 
-export default function RecipeFillTakePage() {
+function RecipeFillTakeInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { user } = useCurrentUser();
@@ -278,5 +277,13 @@ export default function RecipeFillTakePage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function RecipeFillTakePage() {
+  return (
+    <Suspense fallback={null}>
+      <RecipeFillTakeInner />
+    </Suspense>
   );
 }
