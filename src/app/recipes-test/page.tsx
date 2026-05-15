@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { BookOpen, CheckCircle, XCircle, Clock, Trophy, ChevronRight, RotateCcw, UserCheck } from 'lucide-react';
+import AppShell from '@/components/AppShell';
 import { useCurrentUser } from '@/lib/auth';
 import { useRecipesTestAttempts, useEmployees } from '@/data/store';
 import { RECIPES_TEST_QUESTIONS, RECIPES_TEST_META } from '@/data/recipes-test';
@@ -53,6 +54,7 @@ export default function RecipesTestPage() {
   }
 
   return (
+    <AppShell>
     <div className="max-w-4xl mx-auto space-y-8">
       {/* Header */}
       <div className="flex items-start gap-4">
@@ -278,5 +280,6 @@ export default function RecipesTestPage() {
         </div>
       )}
     </div>
+    </AppShell>
   );
 }
