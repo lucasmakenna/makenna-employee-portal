@@ -14,12 +14,16 @@ import {
   FileLock2,
 } from 'lucide-react';
 import AppShell from '@/components/AppShell';
+import W4FormView from '@/components/W4FormView';
+import I9FormView from '@/components/I9FormView';
 import { useCurrentUser } from '@/lib/auth';
-import { getSignatureById, verifyChain } from '@/data/signatures';
+import { getSignatureById, getAllSignatures, verifyChain } from '@/data/signatures';
 import { getEmployee, fullName } from '@/data/employees';
 import { getDocTemplate } from '@/data/onboarding';
 import { usePackets } from '@/data/store';
 import type { SignatureAuditRecord } from '@/types';
+import type { W4Data } from '@/components/W4Form';
+import type { I9Data } from '@/components/I9Form';
 import { format, parseISO } from 'date-fns';
 
 export default function CertificatePage() {
@@ -53,8 +57,26 @@ export default function CertificatePage() {
 
   // Pull saved form data from the packet task (W-4 / I-9)
   const packet = getPacket(params.employeeId);
-  const task = packet?.tasks.find((t) => t.signatureRecordId === params.recordId);
+  // Find the task whose signatureRecordId matches — also search by priorRecordId for I-9 Section 2
+  const allSigs = getAllSignatures();
+  const thisRecord = allSigs.find((s) => s.id === params.recordId);
+  const task = packet?.tasks.find(
+    (t) => t.signatureRecordId === params.recordId || t.signatureRecordId === thisRecord?.priorRecordId
+  );
   const formData = task?.formData as Record<string, unknown> | undefined;
+
+  // For I-9: find both employee (Section 1) and employer (Section 2) signature records
+  const i9EmployeeRecord = docId === 'i9'
+    ? allSigs.find((s) => s.id === task?.signatureRecordId && s.documentTitle.includes('Section 1'))
+      ?? allSigs.find((s) => s.id === task?.signatureRecordId)
+    : undefined;
+  const i9EmployerRecord = docId === 'i9' && task?.signatureRecordId
+    ? allSigs.find(
+        (s) => s.context.employeeId === params.employeeId &&
+               s.documentTitle.includes('Section 2') &&
+               (s.priorRecordId === task.signatureRecordId || s.id !== task.signatureRecordId)
+      )
+    : undefined;
 
   return (
     <AppShell>
@@ -287,29 +309,34 @@ export default function CertificatePage() {
             </dl>
           </div>
 
-          {/* Filled form data (W-4 / I-9) or attestation text (all other docs) */}
+          {/* Completed form or attestation text */}
           <div className="mt-6">
-            {formData ? (
+            {docId === 'w4' && formData ? (
               <>
                 <h3 className="text-xs font-bold uppercase tracking-wider text-ink-400 mb-3">
-                  Completed form — as submitted
+                  Completed W-4 — as submitted
                 </h3>
-                <div className="rounded-xl border border-ink-100 bg-white divide-y divide-ink-50 overflow-hidden">
-                  {Object.entries(formData).map(([key, val]) => {
-                    if (val === null || val === undefined || val === '') return null;
-                    const label = key
-                      .replace(/([A-Z])/g, ' $1')
-                      .replace(/^./, (s) => s.toUpperCase())
-                      .trim();
-                    const display = typeof val === 'boolean' ? (val ? 'Yes' : 'No') : String(val);
-                    return (
-                      <div key={key} className="flex items-baseline justify-between gap-4 px-4 py-2.5">
-                        <span className="text-xs text-ink-400 shrink-0">{label}</span>
-                        <span className="text-sm font-semibold text-ink-800 text-right break-all">{display}</span>
-                      </div>
-                    );
-                  })}
-                </div>
+                <W4FormView
+                  data={formData as unknown as W4Data}
+                  signatureImagePngDataUrl={record.signatureImagePngDataUrl}
+                  signerName={record.signerLegalName}
+                  signedAt={format(parseISO(record.signedAtIso), 'PPPp')}
+                />
+              </>
+            ) : docId === 'i9' && formData ? (
+              <>
+                <h3 className="text-xs font-bold uppercase tracking-wider text-ink-400 mb-3">
+                  Completed I-9 — as submitted
+                </h3>
+                <I9FormView
+                  data={formData as unknown as I9Data}
+                  employeeSignatureUrl={i9EmployeeRecord?.signatureImagePngDataUrl ?? record.signatureImagePngDataUrl}
+                  employerSignatureUrl={i9EmployerRecord?.signatureImagePngDataUrl}
+                  employeeSignedAt={i9EmployeeRecord ? format(parseISO(i9EmployeeRecord.signedAtIso), 'PPPp') : format(parseISO(record.signedAtIso), 'PPPp')}
+                  employerSignedAt={i9EmployerRecord ? format(parseISO(i9EmployerRecord.signedAtIso), 'PPPp') : undefined}
+                  employeeName={i9EmployeeRecord?.signerLegalName ?? record.signerLegalName}
+                  employerName={i9EmployerRecord?.signerLegalName}
+                />
               </>
             ) : tpl ? (
               <>
