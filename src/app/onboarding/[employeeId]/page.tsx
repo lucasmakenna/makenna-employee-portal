@@ -16,7 +16,8 @@ import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
 import SignaturePad, { SignaturePadResult } from '@/components/SignaturePad';
 import ESIGNConsentGate from '@/components/ESIGNConsentGate';
-import PDFFormViewer from '@/components/PDFFormViewer';
+import W4Form, { W4Data } from '@/components/W4Form';
+import I9Form, { I9Data, I9Signatures } from '@/components/I9Form';
 import { useCurrentUser } from '@/lib/auth';
 import { getDocTemplate } from '@/data/onboarding';
 import { fullName } from '@/data/employees';
@@ -119,6 +120,98 @@ export default function OnboardingDetail() {
               signedByName: result.signerLegalName,
               signatureRecordId: record.id,
             }
+          : t,
+      ),
+    });
+    setActiveTaskId(null);
+  };
+
+  const handleW4Submit = async (formData: W4Data, signature: SignaturePadResult) => {
+    const documentBody = [
+      `IRS Form W-4 — Employee's Withholding Certificate`,
+      `Employee: ${formData.firstName} ${formData.middleInitial} ${formData.lastName}`.trim(),
+      `SSN: ${formData.ssn}`,
+      `Address: ${formData.address}, ${formData.city}, ${formData.state} ${formData.zip}`,
+      `Filing status: ${formData.filingStatus}`,
+      `Multiple jobs checkbox: ${formData.multipleJobsChecked ? 'Checked' : 'Not checked'}`,
+      `Qualifying children amount: $${formData.qualifyingChildrenAmount || '0'}`,
+      `Other dependents amount: $${formData.otherDependentsAmount || '0'}`,
+      `Dependents total: $${formData.dependentsTotalAmount || '0'}`,
+      `Other income: $${formData.otherIncome || '0'}`,
+      `Deductions: $${formData.deductions || '0'}`,
+      `Extra withholding: $${formData.extraWithholding || '0'}`,
+      `Employer: ${formData.employerName}`,
+      `First date of employment: ${formData.firstDateOfEmployment}`,
+    ].join('\n');
+    const geo = await tryGetGeolocation();
+    const prior = await getMostRecentRecord();
+    const record = await stampSignature({
+      context: { kind: 'onboarding', employeeId: packet.employeeId, docId: 'w4' },
+      signerEmployeeId: packet.employeeId,
+      signerLegalName: signature.signerLegalName,
+      documentTitle: "IRS Form W-4 — Employee's Withholding Certificate",
+      documentBody,
+      signatureImagePngDataUrl: signature.signaturePngDataUrl,
+      consentAcknowledged: true,
+      priorRecord: prior,
+      geo,
+    });
+    appendSignature(record);
+    updatePacket(packet.employeeId, {
+      tasks: packet.tasks.map((t) =>
+        t.id === 'w4'
+          ? { ...t, signed: true, signedAt: record.signedAtIso, signedByName: signature.signerLegalName, signatureRecordId: record.id, formData: formData as unknown as Record<string, unknown> }
+          : t,
+      ),
+    });
+    setActiveTaskId(null);
+  };
+
+  const handleI9Submit = async (formData: I9Data, signatures: I9Signatures) => {
+    const docListSummary = formData.documentListType === 'A'
+      ? `List A: ${formData.listADocument.documentTitle} (${formData.listADocument.documentNumber})`
+      : `List B: ${formData.listBDocument.documentTitle} (${formData.listBDocument.documentNumber}) | List C: ${formData.listCDocument.documentTitle} (${formData.listCDocument.documentNumber})`;
+    const documentBody = [
+      `USCIS Form I-9 — Employment Eligibility Verification`,
+      `Employee: ${formData.firstName} ${formData.middleInitial} ${formData.lastName}`.trim(),
+      `Address: ${formData.address}${formData.aptNumber ? ' Apt ' + formData.aptNumber : ''}, ${formData.city}, ${formData.state} ${formData.zip}`,
+      `Date of birth: ${formData.dateOfBirth}`,
+      `Citizenship status: ${formData.citizenshipStatus}`,
+      `Documents presented: ${docListSummary}`,
+      `Employee first day: ${formData.employeeFirstDay}`,
+      `Employer: ${formData.employerOrganization} — ${formData.employerTitle}`,
+    ].join('\n');
+    const geo = await tryGetGeolocation();
+    const prior = await getMostRecentRecord();
+    const empRecord = await stampSignature({
+      context: { kind: 'onboarding', employeeId: packet.employeeId, docId: 'i9' },
+      signerEmployeeId: packet.employeeId,
+      signerLegalName: signatures.employee.signerLegalName,
+      documentTitle: 'Form I-9 Section 1 — Employee Attestation',
+      documentBody,
+      signatureImagePngDataUrl: signatures.employee.signaturePngDataUrl,
+      consentAcknowledged: true,
+      priorRecord: prior,
+      geo,
+    });
+    appendSignature(empRecord);
+    const prior2 = await getMostRecentRecord();
+    const emplorRecord = await stampSignature({
+      context: { kind: 'onboarding', employeeId: packet.employeeId, docId: 'i9' },
+      signerEmployeeId: user.id,
+      signerLegalName: signatures.employer.signerLegalName,
+      documentTitle: 'Form I-9 Section 2 — Employer Verification',
+      documentBody,
+      signatureImagePngDataUrl: signatures.employer.signaturePngDataUrl,
+      consentAcknowledged: true,
+      priorRecord: prior2,
+      geo,
+    });
+    appendSignature(emplorRecord);
+    updatePacket(packet.employeeId, {
+      tasks: packet.tasks.map((t) =>
+        t.id === 'i9'
+          ? { ...t, signed: true, signedAt: emplorRecord.signedAtIso, signedByName: signatures.employer.signerLegalName, signatureRecordId: empRecord.id, formData: formData as unknown as Record<string, unknown> }
           : t,
       ),
     });
@@ -271,20 +364,18 @@ export default function OnboardingDetail() {
               };
 
               if (t.id === 'w4') {
+                const w4toggle = () => {
+                  if (isExpanded) { setActiveTaskId(null); return; }
+                  if (t.signed) { router.push(`/onboarding/${packet.employeeId}/certificate/${t.signatureRecordId}`); return; }
+                  startSign(t.id);
+                };
                 return (
-                  <TaskRow key={t.id} task={t} expanded={isExpanded} onToggle={toggle} onSign={() => {}}>
+                  <TaskRow key={t.id} task={t} expanded={isExpanded} onToggle={w4toggle} onSign={() => {}}>
                     {isExpanded && !t.signed && (
-                      <PDFFormViewer
-                        pdfUrl="/forms/w4.pdf"
-                        title="IRS Form W-4 — Employee's Withholding Certificate"
-                        instructions={
-                          <>
-                            <strong>Review the W-4 below.</strong> You can download and print it to fill out by hand, or bring a blank copy on Day 1 — your manager will have extras. Once you've reviewed it, sign the attestation below to acknowledge you understand its purpose.
-                          </>
-                        }
-                        attestationText={getDocTemplate('w4')?.templateBody ?? ''}
-                        signerName={fullName(employee)}
-                        onSubmit={(result) => handleSign('w4', result)}
+                      <W4Form
+                        employeeName={fullName(employee)}
+                        defaultFirstDateOfEmployment={packet.startDate}
+                        onSubmit={handleW4Submit}
                         onCancel={() => setActiveTaskId(null)}
                       />
                     )}
@@ -293,20 +384,19 @@ export default function OnboardingDetail() {
               }
 
               if (t.id === 'i9') {
+                const i9toggle = () => {
+                  if (isExpanded) { setActiveTaskId(null); return; }
+                  if (t.signed) { router.push(`/onboarding/${packet.employeeId}/certificate/${t.signatureRecordId}`); return; }
+                  startSign(t.id);
+                };
                 return (
-                  <TaskRow key={t.id} task={t} expanded={isExpanded} onToggle={toggle} onSign={() => {}}>
+                  <TaskRow key={t.id} task={t} expanded={isExpanded} onToggle={i9toggle} onSign={() => {}}>
                     {isExpanded && !t.signed && (
-                      <PDFFormViewer
-                        pdfUrl="/forms/i9.pdf"
-                        title="USCIS Form I-9 — Employment Eligibility Verification"
-                        instructions={
-                          <>
-                            <strong>Review the I-9 below.</strong> You must complete <strong>Section 1</strong> on or before your first day of paid work. Bring your original documents (passport, or driver's license + Social Security card) on Day 1 — your manager will complete Section 2 in person after inspecting them. Sign the attestation below to confirm you understand the requirement.
-                          </>
-                        }
-                        attestationText={getDocTemplate('i9')?.templateBody ?? ''}
-                        signerName={fullName(employee)}
-                        onSubmit={(result) => handleSign('i9', result)}
+                      <I9Form
+                        employeeName={fullName(employee)}
+                        defaultFirstDay={packet.startDate}
+                        currentUserName={fullName(user)}
+                        onSubmit={handleI9Submit}
                         onCancel={() => setActiveTaskId(null)}
                       />
                     )}
