@@ -27,15 +27,17 @@ function buildDrinkGroups(questionOrder: string[]) {
   return drinkOrder.map((drink) => ({ drink, questionIds: byDrink[drink] }));
 }
 
-// Size label mapping (e.g. "12 oz" → "S", "16 oz" → "M", etc.)
-const SIZE_LABEL: Record<string, string> = {
-  '12 oz': 'S',
-  '16 oz': 'M',
-  '20 oz': 'L',
-  '24 oz': 'XL',
+/** Derive S/M/L/XL labels from a drink's actual ranked sizes, not hardcoded oz values. */
+const SIZE_RANK_LABELS: Record<number, string[]> = {
+  1: [''],
+  2: ['S', 'L'],
+  3: ['S', 'M', 'L'],
+  4: ['S', 'M', 'L', 'XL'],
 };
-function sizeLabel(size: string) {
-  return SIZE_LABEL[size] ?? size;
+function getSizeLabels(sizes: string[]): Record<string, string> {
+  const sorted = [...sizes].sort((a, b) => parseInt(a) - parseInt(b));
+  const labels = SIZE_RANK_LABELS[sorted.length] ?? sorted.map((_, i) => `Size ${i + 1}`);
+  return Object.fromEntries(sorted.map((s, i) => [s, labels[i]]));
 }
 
 function blankKey(questionId: string, blank: RecipeFillBlank) {
@@ -102,11 +104,12 @@ function RecipeFillTakeInner() {
   const group = drinkGroups[currentGroupIndex];
   const groupQuestions = group.questionIds.map((id) => RECIPE_FILL_QUESTION_MAP[id]).filter(Boolean);
 
-  // Sort sizes: S → M → L → XL
-  const SIZE_ORDER = ['12 oz', '16 oz', '20 oz', '24 oz'];
+  // Sort sizes smallest → largest by oz value
   const sortedQuestions = [...groupQuestions].sort(
-    (a, b) => (SIZE_ORDER.indexOf(a.size) ?? 99) - (SIZE_ORDER.indexOf(b.size) ?? 99),
+    (a, b) => parseInt(a.size) - parseInt(b.size),
   );
+  // Build per-drink size labels (relative ranking, not fixed oz mapping)
+  const sizeLabels = getSizeLabels(sortedQuestions.map((q) => q.size));
 
   const progressPct = Math.round((currentGroupIndex / totalGroups) * 100);
 
@@ -188,7 +191,7 @@ function RecipeFillTakeInner() {
             {group.drink}
           </span>
           <span className="text-xs text-ink-400">
-            {sortedQuestions.map((q) => sizeLabel(q.size)).join(' · ')}
+            {sortedQuestions.map((q) => sizeLabels[q.size]).join(' · ')}
           </span>
         </div>
 
@@ -220,7 +223,7 @@ function RecipeFillTakeInner() {
                       ? 'bg-emerald-100 text-emerald-700'
                       : 'bg-hibiscus-100 text-hibiscus-700',
                   )}>
-                    {sizeLabel(q.size)} ({q.size})
+                    {sizeLabels[q.size]} ({q.size})
                   </span>
                   {confirmed && (
                     sizeAllCorrect
@@ -284,7 +287,7 @@ function RecipeFillTakeInner() {
                 {/* Correct answers revealed after wrong */}
                 {confirmed && !sizeAllCorrect && (
                   <div className="ml-1 rounded-xl bg-emerald-50 border border-emerald-200 px-4 py-3 space-y-1">
-                    <p className="text-xs font-semibold text-emerald-700 uppercase tracking-wider mb-1">Correct — {sizeLabel(q.size)}</p>
+                    <p className="text-xs font-semibold text-emerald-700 uppercase tracking-wider mb-1">Correct — {sizeLabels[q.size]}</p>
                     {pairs.map(([qtyBlank, ingBlank], pairIdx) => (
                       <p key={pairIdx} className="text-sm text-emerald-800">
                         <span className="font-bold">{qtyBlank.correct}</span> pumps of{' '}
