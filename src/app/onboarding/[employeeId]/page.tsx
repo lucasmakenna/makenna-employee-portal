@@ -18,6 +18,7 @@ import SignaturePad, { SignaturePadResult } from '@/components/SignaturePad';
 import ESIGNConsentGate from '@/components/ESIGNConsentGate';
 import W4Form, { W4Data } from '@/components/W4Form';
 import I9Form, { I9Data, I9Signatures } from '@/components/I9Form';
+import FormSheet from '@/components/FormSheet';
 import { useCurrentUser } from '@/lib/auth';
 import { getDocTemplate } from '@/data/onboarding';
 import { fullName } from '@/data/employees';
@@ -228,8 +229,45 @@ export default function OnboardingDetail() {
     });
   };
 
+  // W-4 full-screen sheet
+  const w4Task = packet.tasks.find((t) => t.id === 'w4');
+  const i9Task = packet.tasks.find((t) => t.id === 'i9');
+
   return (
     <AppShell>
+      {/* W-4 full-screen form sheet */}
+      {activeTaskId === 'w4' && w4Task && !w4Task.signed && (
+        <FormSheet
+          title="IRS Form W-4"
+          subtitle="Employee's Withholding Certificate"
+          onClose={() => setActiveTaskId(null)}
+        >
+          <W4Form
+            employeeName={fullName(employee)}
+            defaultFirstDateOfEmployment={packet.startDate}
+            onSubmit={handleW4Submit}
+            onCancel={() => setActiveTaskId(null)}
+          />
+        </FormSheet>
+      )}
+
+      {/* I-9 full-screen form sheet */}
+      {activeTaskId === 'i9' && i9Task && !i9Task.signed && (
+        <FormSheet
+          title="Form I-9"
+          subtitle="Employment Eligibility Verification"
+          onClose={() => setActiveTaskId(null)}
+        >
+          <I9Form
+            employeeName={fullName(employee)}
+            defaultFirstDay={packet.startDate}
+            currentUserName={fullName(user)}
+            onSubmit={handleI9Submit}
+            onCancel={() => setActiveTaskId(null)}
+          />
+        </FormSheet>
+      )}
+
       {pendingTaskId && (
         <ESIGNConsentGate
           employeeId={packet.employeeId}
@@ -363,44 +401,16 @@ export default function OnboardingDetail() {
                 startSign(t.id);
               };
 
-              if (t.id === 'w4') {
-                const w4toggle = () => {
-                  if (isExpanded) { setActiveTaskId(null); return; }
-                  if (t.signed) { router.push(`/onboarding/${packet.employeeId}/certificate/${t.signatureRecordId}`); return; }
+              if (t.id === 'w4' || t.id === 'i9') {
+                const formToggle = () => {
+                  if (t.signed) {
+                    if (t.signatureRecordId) router.push(`/onboarding/${packet.employeeId}/certificate/${t.signatureRecordId}`);
+                    return;
+                  }
                   startSign(t.id);
                 };
                 return (
-                  <TaskRow key={t.id} task={t} expanded={isExpanded} onToggle={w4toggle} onSign={() => {}}>
-                    {isExpanded && !t.signed && (
-                      <W4Form
-                        employeeName={fullName(employee)}
-                        defaultFirstDateOfEmployment={packet.startDate}
-                        onSubmit={handleW4Submit}
-                        onCancel={() => setActiveTaskId(null)}
-                      />
-                    )}
-                  </TaskRow>
-                );
-              }
-
-              if (t.id === 'i9') {
-                const i9toggle = () => {
-                  if (isExpanded) { setActiveTaskId(null); return; }
-                  if (t.signed) { router.push(`/onboarding/${packet.employeeId}/certificate/${t.signatureRecordId}`); return; }
-                  startSign(t.id);
-                };
-                return (
-                  <TaskRow key={t.id} task={t} expanded={isExpanded} onToggle={i9toggle} onSign={() => {}}>
-                    {isExpanded && !t.signed && (
-                      <I9Form
-                        employeeName={fullName(employee)}
-                        defaultFirstDay={packet.startDate}
-                        currentUserName={fullName(user)}
-                        onSubmit={handleI9Submit}
-                        onCancel={() => setActiveTaskId(null)}
-                      />
-                    )}
-                  </TaskRow>
+                  <TaskRow key={t.id} task={t} expanded={false} onToggle={formToggle} onSign={() => {}} />
                 );
               }
 

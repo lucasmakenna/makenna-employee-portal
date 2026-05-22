@@ -12,14 +12,13 @@ import {
   MapPin,
   Hash,
   FileLock2,
-  ExternalLink,
-  FileText,
 } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import { useCurrentUser } from '@/lib/auth';
 import { getSignatureById, verifyChain } from '@/data/signatures';
 import { getEmployee, fullName } from '@/data/employees';
 import { getDocTemplate } from '@/data/onboarding';
+import { usePackets } from '@/data/store';
 import type { SignatureAuditRecord } from '@/types';
 import { format, parseISO } from 'date-fns';
 
@@ -27,6 +26,7 @@ export default function CertificatePage() {
   const params = useParams<{ employeeId: string; recordId: string }>();
   const router = useRouter();
   const { user, loaded } = useCurrentUser();
+  const { get: getPacket } = usePackets();
   const [record, setRecord] = useState<SignatureAuditRecord | undefined>();
   const [chainValid, setChainValid] = useState<boolean | null>(null);
 
@@ -51,11 +51,10 @@ export default function CertificatePage() {
   const docId = (record.context as any).docId as string | undefined;
   const tpl = docId ? getDocTemplate(docId as import('@/types').OnboardingDocId) : null;
 
-  const PDF_URLS: Record<string, string> = {
-    w4: '/forms/w4.pdf',
-    i9: '/forms/i9.pdf',
-  };
-  const pdfUrl = docId ? PDF_URLS[docId] : null;
+  // Pull saved form data from the packet task (W-4 / I-9)
+  const packet = getPacket(params.employeeId);
+  const task = packet?.tasks.find((t) => t.signatureRecordId === params.recordId);
+  const formData = task?.formData as Record<string, unknown> | undefined;
 
   return (
     <AppShell>
@@ -288,51 +287,41 @@ export default function CertificatePage() {
             </dl>
           </div>
 
-          {/* Government form link (W-4 / I-9) */}
-          {pdfUrl && (
-            <div className="mt-6">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-ink-400 mb-2">
-                Government form reviewed
-              </h3>
-              <div className="rounded-xl border border-ink-200 bg-white overflow-hidden print:hidden">
-                <div className="flex items-center gap-4 p-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-ink-100">
-                    <FileText size={22} className="text-ink-500" />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-ink-800 truncate">{tpl?.title}</p>
-                    <p className="text-xs text-ink-400 mt-0.5">Official government form · PDF</p>
-                  </div>
+          {/* Filled form data (W-4 / I-9) or attestation text (all other docs) */}
+          <div className="mt-6">
+            {formData ? (
+              <>
+                <h3 className="text-xs font-bold uppercase tracking-wider text-ink-400 mb-3">
+                  Completed form — as submitted
+                </h3>
+                <div className="rounded-xl border border-ink-100 bg-white divide-y divide-ink-50 overflow-hidden">
+                  {Object.entries(formData).map(([key, val]) => {
+                    if (val === null || val === undefined || val === '') return null;
+                    const label = key
+                      .replace(/([A-Z])/g, ' $1')
+                      .replace(/^./, (s) => s.toUpperCase())
+                      .trim();
+                    const display = typeof val === 'boolean' ? (val ? 'Yes' : 'No') : String(val);
+                    return (
+                      <div key={key} className="flex items-baseline justify-between gap-4 px-4 py-2.5">
+                        <span className="text-xs text-ink-400 shrink-0">{label}</span>
+                        <span className="text-sm font-semibold text-ink-800 text-right break-all">{display}</span>
+                      </div>
+                    );
+                  })}
                 </div>
-                <div className="border-t border-ink-100 px-4 py-3 bg-ink-50">
-                  <a
-                    href={pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-cyan-400 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-500 transition"
-                  >
-                    <ExternalLink size={14} /> View Form
-                  </a>
+              </>
+            ) : tpl ? (
+              <>
+                <h3 className="text-xs font-bold uppercase tracking-wider text-ink-400 mb-2">
+                  Document text agreed to
+                </h3>
+                <div className="rounded-lg border border-ink-100 bg-white p-4 text-sm text-ink-700 leading-relaxed whitespace-pre-line">
+                  {tpl.templateBody}
                 </div>
-              </div>
-              {/* Print fallback */}
-              <p className="hidden print:block text-sm text-ink-400 mt-1">
-                Form: {pdfUrl}
-              </p>
-            </div>
-          )}
-
-          {/* What was signed */}
-          {tpl && (
-            <div className="mt-6">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-ink-400 mb-2">
-                Attestation text agreed to
-              </h3>
-              <div className="rounded-lg border border-ink-100 bg-white p-4 text-sm text-ink-700 leading-relaxed whitespace-pre-line">
-                {tpl.templateBody}
-              </div>
-            </div>
-          )}
+              </>
+            ) : null}
+          </div>
 
           {/* Signature image */}
           <div className="mt-6">
