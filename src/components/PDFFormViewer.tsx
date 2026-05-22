@@ -1,6 +1,6 @@
 'use client';
 
-import { Download, ExternalLink, Lock } from 'lucide-react';
+import { Download, ExternalLink, FileText, Lock } from 'lucide-react';
 import SignaturePad, { SignaturePadResult } from '@/components/SignaturePad';
 
 interface PDFFormViewerProps {
@@ -33,49 +33,35 @@ export default function PDFFormViewer({
         {instructions}
       </div>
 
-      {/* PDF embed */}
-      <div className="rounded-xl border border-ink-200 overflow-hidden bg-ink-50">
-        <div className="flex items-center justify-between border-b border-ink-200 bg-white px-4 py-2.5">
-          <span className="text-sm font-semibold text-ink-700">{title}</span>
-          <div className="flex items-center gap-2">
-            <a
-              href={pdfUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 rounded-lg border border-cyan-300 bg-cyan-50 px-3 py-1.5 text-xs font-semibold text-cyan-700 hover:bg-cyan-100 transition"
-            >
-              <ExternalLink size={13} />
-              Open PDF
-            </a>
-            <a
-              href={pdfUrl}
-              download
-              className="flex items-center gap-1.5 rounded-lg border border-ink-200 px-3 py-1.5 text-xs font-semibold text-ink-600 hover:bg-ink-50 transition"
-            >
-              <Download size={13} />
-              Download
-            </a>
+      {/* PDF open card — no iframe; opens in browser's native PDF viewer */}
+      <div className="rounded-xl border border-ink-200 bg-white overflow-hidden">
+        <div className="flex items-center gap-4 p-5">
+          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-ink-100">
+            <FileText size={26} className="text-ink-500" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="font-semibold text-ink-800 truncate">{title}</p>
+            <p className="text-xs text-ink-400 mt-0.5">Official government form · PDF</p>
           </div>
         </div>
-        {/* iframe — renders on desktop/Chrome; iPad Safari may show blank (use Open PDF button above) */}
-        <iframe
-          src={`${pdfUrl}#toolbar=0&view=FitH`}
-          title={title}
-          className="w-full"
-          style={{ height: '520px' }}
-        />
-        <div className="border-t border-ink-100 bg-amber-50 px-4 py-2.5 text-center md:hidden">
-          <p className="text-xs text-amber-700 font-medium">
-            PDF not loading?{' '}
-            <a
-              href={pdfUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline font-semibold"
-            >
-              Tap here to open it
-            </a>
-          </p>
+        <div className="flex gap-3 border-t border-ink-100 px-5 py-3 bg-ink-50">
+          <a
+            href={pdfUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-cyan-400 px-4 py-2.5 text-sm font-semibold text-white hover:bg-cyan-500 transition"
+          >
+            <ExternalLink size={15} />
+            View Form
+          </a>
+          <a
+            href={pdfUrl}
+            download
+            className="flex items-center justify-center gap-2 rounded-xl border border-ink-200 bg-white px-4 py-2.5 text-sm font-semibold text-ink-600 hover:bg-ink-50 transition"
+          >
+            <Download size={15} />
+            Download
+          </a>
         </div>
       </div>
 

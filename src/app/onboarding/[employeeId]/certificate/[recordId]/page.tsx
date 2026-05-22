@@ -14,6 +14,7 @@ import {
   FileLock2,
   Download,
   ExternalLink,
+  FileText,
 } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import { useCurrentUser } from '@/lib/auth';
@@ -288,43 +289,44 @@ export default function CertificatePage() {
             </dl>
           </div>
 
-          {/* Government form embed (W-4 / I-9) */}
+          {/* Government form link (W-4 / I-9) */}
           {pdfUrl && (
             <div className="mt-6">
               <h3 className="text-xs font-bold uppercase tracking-wider text-ink-400 mb-2">
                 Government form reviewed
               </h3>
-              <div className="rounded-xl border border-ink-200 overflow-hidden">
-                <div className="flex items-center justify-between border-b border-ink-100 bg-ink-50 px-4 py-2.5">
-                  <span className="text-sm font-semibold text-ink-700">{tpl?.title}</span>
-                  <div className="flex items-center gap-2">
-                    <a
-                      href={pdfUrl}
-                      download
-                      className="flex items-center gap-1.5 rounded-lg border border-ink-200 bg-white px-3 py-1 text-xs font-semibold text-ink-600 hover:bg-ink-50 transition print:hidden"
-                    >
-                      <Download size={12} /> Download
-                    </a>
-                    <a
-                      href={pdfUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 rounded-lg border border-ink-200 bg-white px-3 py-1 text-xs font-semibold text-ink-600 hover:bg-ink-50 transition print:hidden"
-                    >
-                      <ExternalLink size={12} /> Open
-                    </a>
+              <div className="rounded-xl border border-ink-200 bg-white overflow-hidden print:hidden">
+                <div className="flex items-center gap-4 p-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-ink-100">
+                    <FileText size={22} className="text-ink-500" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-semibold text-ink-800 truncate">{tpl?.title}</p>
+                    <p className="text-xs text-ink-400 mt-0.5">Official government form · PDF</p>
                   </div>
                 </div>
-                <iframe
-                  src={`${pdfUrl}#toolbar=0&view=FitH`}
-                  title={tpl?.title ?? 'Form'}
-                  className="w-full print:hidden"
-                  style={{ height: '500px' }}
-                />
-                <p className="border-t border-ink-100 bg-ink-50 px-4 py-2 text-xs text-ink-400 print:block hidden">
-                  Form available at: {typeof window !== 'undefined' ? window.location.origin : ''}{pdfUrl}
-                </p>
+                <div className="flex gap-3 border-t border-ink-100 px-4 py-3 bg-ink-50">
+                  <a
+                    href={pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-cyan-400 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-500 transition"
+                  >
+                    <ExternalLink size={14} /> View Form
+                  </a>
+                  <a
+                    href={pdfUrl}
+                    download
+                    className="flex items-center justify-center gap-2 rounded-xl border border-ink-200 bg-white px-4 py-2 text-sm font-semibold text-ink-600 hover:bg-ink-50 transition"
+                  >
+                    <Download size={14} /> Download
+                  </a>
+                </div>
               </div>
+              {/* Print fallback */}
+              <p className="hidden print:block text-sm text-ink-400 mt-1">
+                Form: {pdfUrl}
+              </p>
             </div>
           )}
 
