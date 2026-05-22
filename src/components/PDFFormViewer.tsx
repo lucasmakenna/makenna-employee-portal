@@ -37,30 +37,45 @@ export default function PDFFormViewer({
       <div className="rounded-xl border border-ink-200 overflow-hidden bg-ink-50">
         <div className="flex items-center justify-between border-b border-ink-200 bg-white px-4 py-2.5">
           <span className="text-sm font-semibold text-ink-700">{title}</span>
-          <a
-            href={pdfUrl}
-            download
-            className="flex items-center gap-1.5 rounded-lg border border-ink-200 px-3 py-1 text-xs font-semibold text-ink-600 hover:bg-ink-50 transition"
-          >
-            <Download size={13} />
-            Download PDF
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              href={pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 rounded-lg border border-cyan-300 bg-cyan-50 px-3 py-1.5 text-xs font-semibold text-cyan-700 hover:bg-cyan-100 transition"
+            >
+              <ExternalLink size={13} />
+              Open PDF
+            </a>
+            <a
+              href={pdfUrl}
+              download
+              className="flex items-center gap-1.5 rounded-lg border border-ink-200 px-3 py-1.5 text-xs font-semibold text-ink-600 hover:bg-ink-50 transition"
+            >
+              <Download size={13} />
+              Download
+            </a>
+          </div>
         </div>
+        {/* iframe — renders on desktop/Chrome; iPad Safari may show blank (use Open PDF button above) */}
         <iframe
           src={`${pdfUrl}#toolbar=0&view=FitH`}
           title={title}
           className="w-full"
           style={{ height: '520px' }}
         />
-        <div className="border-t border-ink-100 bg-white px-4 py-2 text-center">
-          <a
-            href={pdfUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-xs text-cyan-600 hover:underline"
-          >
-            <ExternalLink size={12} /> Open in new tab
-          </a>
+        <div className="border-t border-ink-100 bg-amber-50 px-4 py-2.5 text-center md:hidden">
+          <p className="text-xs text-amber-700 font-medium">
+            PDF not loading?{' '}
+            <a
+              href={pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-semibold"
+            >
+              Tap here to open it
+            </a>
+          </p>
         </div>
       </div>
 
