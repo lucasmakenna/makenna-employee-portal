@@ -12,6 +12,8 @@ import {
   MapPin,
   Hash,
   FileLock2,
+  Download,
+  ExternalLink,
 } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import { useCurrentUser } from '@/lib/auth';
@@ -46,8 +48,14 @@ export default function CertificatePage() {
   }
 
   const employee = getEmployee(record.signerEmployeeId);
-  const docId = (record.context as any).docId;
-  const tpl = docId ? getDocTemplate(docId) : null;
+  const docId = (record.context as any).docId as string | undefined;
+  const tpl = docId ? getDocTemplate(docId as import('@/types').OnboardingDocId) : null;
+
+  const PDF_URLS: Record<string, string> = {
+    w4: '/forms/w4.pdf',
+    i9: '/forms/i9.pdf',
+  };
+  const pdfUrl = docId ? PDF_URLS[docId] : null;
 
   return (
     <AppShell>
@@ -280,11 +288,51 @@ export default function CertificatePage() {
             </dl>
           </div>
 
+          {/* Government form embed (W-4 / I-9) */}
+          {pdfUrl && (
+            <div className="mt-6">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-ink-400 mb-2">
+                Government form reviewed
+              </h3>
+              <div className="rounded-xl border border-ink-200 overflow-hidden">
+                <div className="flex items-center justify-between border-b border-ink-100 bg-ink-50 px-4 py-2.5">
+                  <span className="text-sm font-semibold text-ink-700">{tpl?.title}</span>
+                  <div className="flex items-center gap-2">
+                    <a
+                      href={pdfUrl}
+                      download
+                      className="flex items-center gap-1.5 rounded-lg border border-ink-200 bg-white px-3 py-1 text-xs font-semibold text-ink-600 hover:bg-ink-50 transition print:hidden"
+                    >
+                      <Download size={12} /> Download
+                    </a>
+                    <a
+                      href={pdfUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 rounded-lg border border-ink-200 bg-white px-3 py-1 text-xs font-semibold text-ink-600 hover:bg-ink-50 transition print:hidden"
+                    >
+                      <ExternalLink size={12} /> Open
+                    </a>
+                  </div>
+                </div>
+                <iframe
+                  src={`${pdfUrl}#toolbar=0&view=FitH`}
+                  title={tpl?.title ?? 'Form'}
+                  className="w-full print:hidden"
+                  style={{ height: '500px' }}
+                />
+                <p className="border-t border-ink-100 bg-ink-50 px-4 py-2 text-xs text-ink-400 print:block hidden">
+                  Form available at: {typeof window !== 'undefined' ? window.location.origin : ''}{pdfUrl}
+                </p>
+              </div>
+            </div>
+          )}
+
           {/* What was signed */}
           {tpl && (
             <div className="mt-6">
               <h3 className="text-xs font-bold uppercase tracking-wider text-ink-400 mb-2">
-                Document text the signer agreed to
+                Attestation text agreed to
               </h3>
               <div className="rounded-lg border border-ink-100 bg-white p-4 text-sm text-ink-700 leading-relaxed whitespace-pre-line">
                 {tpl.templateBody}
