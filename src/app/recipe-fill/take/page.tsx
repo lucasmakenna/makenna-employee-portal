@@ -261,7 +261,7 @@ function RecipeFillTakeInner() {
                           ))}
                         </select>
 
-                        <span className="text-sm text-ink-500 font-medium">pumps of</span>
+                        <span className="text-sm text-ink-500 font-medium">{ingBlank.type === 'powder' ? 'scoops of' : 'pumps of'}</span>
 
                         <select
                           value={ingVal}
@@ -290,7 +290,8 @@ function RecipeFillTakeInner() {
                     <p className="text-xs font-semibold text-emerald-700 uppercase tracking-wider mb-1">Correct — {sizeLabels[q.size]}</p>
                     {pairs.map(([qtyBlank, ingBlank], pairIdx) => (
                       <p key={pairIdx} className="text-sm text-emerald-800">
-                        <span className="font-bold">{qtyBlank.correct}</span> pumps of{' '}
+                        <span className="font-bold">{qtyBlank.correct}</span>{' '}
+                        {ingBlank.type === 'powder' ? 'scoops' : 'pumps'} of{' '}
                         <span className="font-bold">{ingBlank.correct}</span>
                       </p>
                     ))}
@@ -303,11 +304,26 @@ function RecipeFillTakeInner() {
 
         {/* Feedback + action */}
         <div className="flex items-center justify-between min-h-[44px]">
-          {confirmed ? (
-            <p className={clsx('text-sm font-semibold', allGroupCorrect ? 'text-emerald-600' : 'text-hibiscus-500')}>
-              {allGroupCorrect ? 'Perfect! All sizes correct.' : 'Some blanks were wrong — see correct recipes above.'}
-            </p>
-          ) : (
+          {confirmed ? (() => {
+            // Count correct pairs across all sizes
+            const totalPairs = sortedQuestions.reduce((n, q) => n + Math.floor(q.blanks.length / 2), 0);
+            const correctPairs = sortedQuestions.reduce((n, q) => {
+              for (let i = 0; i < q.blanks.length; i += 2) {
+                const qtyBlank = q.blanks[i];
+                const ingBlank = q.blanks[i + 1];
+                if (
+                  (selections[blankKey(q.id, qtyBlank)] ?? '') === qtyBlank.correct &&
+                  (selections[blankKey(q.id, ingBlank)] ?? '') === ingBlank.correct
+                ) n++;
+              }
+              return n;
+            }, 0);
+            return (
+              <p className={clsx('text-sm font-semibold', correctPairs === totalPairs ? 'text-emerald-600' : 'text-hibiscus-500')}>
+                {correctPairs}/{totalPairs} answers correct
+              </p>
+            );
+          })() : (
             <span />
           )}
 
