@@ -6,14 +6,16 @@ import Link from 'next/link';
 import {
   ArrowLeft, Mail, Phone, MapPin, Calendar, FileText,
   CheckCircle, XCircle, ClipboardList, GraduationCap,
-  ShieldCheck, FileCheck, BookOpen, Link2, Trash2,
+  ShieldCheck, FileCheck, BookOpen, Link2, Trash2, Clock, Download,
 } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
 import { useCurrentUser } from '@/lib/auth';
 import { fullName } from '@/data/employees';
-import { useEmployees } from '@/data/store';
-import { getLocation } from '@/data/locations';
+import { useEmployees, usePackets } from '@/data/store';
+import { getLocation, LOCATIONS } from '@/data/locations';
+import { loadSignaturesForEmployee } from '@/data/signatures';
+import type { OnboardingPacket, Employee, LocationId } from '@/types';
 import { STATIONS, totalSkills, completedSkillsCount } from '@/data/training';
 import { ROLE_LABELS } from '@/types';
 import { supabase } from '@/lib/supabase';
@@ -31,8 +33,21 @@ type FileEvent =
 
 // ─── Employee File tab ─────────────────────────────────────────────────────────
 
-function EmployeeFileTab({ employeeId, hiredOn }: { employeeId: string; hiredOn: string }) {
+type PacketTask = {
+  id: string;
+  title: string;
+  required: boolean;
+  signed: boolean;
+  signedAt?: string;
+  signedByName?: string;
+  signatureRecordId?: string;
+  pdfStorageUrl?: string;
+  formData?: object;
+};
+
+function EmployeeFileTab({ employeeId, hiredOn, packet: packetProp, employee }: { employeeId: string; hiredOn: string; packet?: OnboardingPacket; employee: Employee }) {
   const [events, setEvents] = useState<FileEvent[]>([]);
+  const [tasks, setTasks] = useState<PacketTask[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -43,69 +58,113 @@ function EmployeeFileTab({ employeeId, hiredOn }: { employeeId: string; hiredOn:
       // Hired event
       collected.push({ kind: 'hired', hiredOn });
 
-      // Onboarding documents — from signature_audit_records, kind=onboarding only
-      const { data: sigs } = await supabase
-        .from('signature_audit_records')
-        .select('id, document_title, signed_at_iso, signer_legal_name, context')
-        .contains('context', { kind: 'onboarding', employeeId })
-        .order('signed_at_iso', { ascending: true });
+      // Onboarding documents — prefer localStorage (via loadSignaturesForEmployee) over Supabase-only
+      const allSigs = await loadSignaturesForEmployee(employeeId);
+      const onboardingSigs = allSigs
+        .filter((r) => (r.context as any)?.kind === 'onboarding')
+        .sort((a, b) => (a.signedAtIso < b.signedAtIso ? -1 : 1));
 
-      // Onboarding packet — for pdfStorageUrl on W-4/I-9
-      const { data: packet } = await supabase
-        .from('onboarding_packets')
-        .select('tasks')
-        .eq('employee_id', employeeId)
-        .single();
-
+      // Onboarding packet — prefer in-memory prop over Supabase query
       const taskMap: Record<string, { pdfStorageUrl?: string }> = {};
-      if (packet?.tasks) {
-        for (const t of packet.tasks as any[]) {
+      if (packetProp?.tasks) {
+        const packetTasks: PacketTask[] = packetProp.tasks.map((t) => ({
+          id: t.id,
+          title: t.title,
+          required: t.required ?? true,
+          signed: t.signed ?? false,
+          signedAt: t.signedAt,
+          signedByName: t.signedByName,
+          signatureRecordId: t.signatureRecordId,
+          pdfStorageUrl: t.pdfStorageUrl,
+          formData: t.formData as object | undefined,
+        }));
+        setTasks(packetTasks);
+        for (const t of packetProp.tasks) {
           taskMap[t.id] = { pdfStorageUrl: t.pdfStorageUrl };
+        }
+      } else {
+        // Fallback: fetch from Supabase if no in-memory packet yet
+        const { data: packetRow } = await supabase
+          .from('onboarding_packets')
+          .select('tasks')
+          .eq('employee_id', employeeId)
+          .single();
+        if (packetRow?.tasks) {
+          const packetTasks: PacketTask[] = (packetRow.tasks as any[]).map((t) => ({
+            id: t.id,
+            title: t.title,
+            required: t.required ?? true,
+            signed: t.signed ?? false,
+            signedAt: t.signedAt,
+            signedByName: t.signedByName,
+            signatureRecordId: t.signatureRecordId,
+            pdfStorageUrl: t.pdfStorageUrl,
+            formData: t.formData as object | undefined,
+          }));
+          setTasks(packetTasks);
+          for (const t of packetRow.tasks as any[]) {
+            taskMap[t.id] = { pdfStorageUrl: t.pdfStorageUrl };
+          }
         }
       }
 
       const seenSigIds = new Set<string>();
-      if (sigs) {
-        for (const sig of sigs) {
-          if (seenSigIds.has(sig.id)) continue;
-          seenSigIds.add(sig.id);
-          const ctx = sig.context as any;
-          const docId = ctx?.docId as string | undefined;
-          const pdfStorageUrl = docId ? taskMap[docId]?.pdfStorageUrl : undefined;
-          collected.push({
-            kind: 'document',
-            title: sig.document_title,
-            signedAt: sig.signed_at_iso,
-            docId,
-            pdfStorageUrl,
-            signerName: sig.signer_legal_name,
-          });
-        }
+      for (const sig of onboardingSigs) {
+        if (seenSigIds.has(sig.id)) continue;
+        seenSigIds.add(sig.id);
+        const ctx = sig.context as any;
+        const docId = ctx?.docId as string | undefined;
+        const pdfStorageUrl = docId ? taskMap[docId]?.pdfStorageUrl : undefined;
+        collected.push({
+          kind: 'document',
+          title: sig.documentTitle,
+          signedAt: sig.signedAtIso,
+          docId,
+          pdfStorageUrl,
+          signerName: sig.signerLegalName,
+        });
       }
 
-      // Training sections — from training_progress
-      const { data: progress } = await supabase
-        .from('training_progress')
-        .select('station_id, signed_off_at, signed_off_by')
-        .eq('employee_id', employeeId)
-        .not('signed_off_at', 'is', null)
-        .order('signed_off_at', { ascending: true });
+      // Training sections — prefer in-memory store, fall back to Supabase
+      type ProgressRow = { station_id: string; signed_off_at: string; signed_off_by?: string };
+      let progressRows: ProgressRow[] = [];
 
-      if (progress) {
-        for (const row of progress) {
-          const station = STATIONS.find((s) => s.id === row.station_id);
-          collected.push({
-            kind: 'training_section',
-            sectionName: station?.name ?? row.station_id,
-            signedOffAt: row.signed_off_at,
-            signedOffBy: row.signed_off_by ?? undefined,
-          });
-        }
-        // Training complete = all sections signed off
-        if (progress.length === STATIONS.length && progress.length > 0) {
-          const last = progress[progress.length - 1];
-          collected.push({ kind: 'training_complete', completedAt: last.signed_off_at });
-        }
+      // Build from in-memory trainingProgressByStation first
+      const inMemoryProgress = employee.trainingProgressByStation ?? {};
+      const inMemoryRows: ProgressRow[] = Object.entries(inMemoryProgress)
+        .filter(([, sp]) => !!sp?.signedOffAt)
+        .map(([stationId, sp]) => ({
+          station_id: stationId,
+          signed_off_at: sp!.signedOffAt!,
+          signed_off_by: sp!.signedOffBy,
+        }))
+        .sort((a, b) => (a.signed_off_at < b.signed_off_at ? -1 : 1));
+
+      if (inMemoryRows.length > 0) {
+        progressRows = inMemoryRows;
+      } else {
+        // Fall back to Supabase if nothing in-memory yet
+        const { data } = await supabase
+          .from('training_progress')
+          .select('station_id, signed_off_at, signed_off_by')
+          .eq('employee_id', employeeId)
+          .not('signed_off_at', 'is', null)
+          .order('signed_off_at', { ascending: true });
+        if (data) progressRows = data as ProgressRow[];
+      }
+
+      for (const row of progressRows) {
+        const station = STATIONS.find((s) => s.id === row.station_id);
+        collected.push({
+          kind: 'training_section',
+          sectionName: station?.name ?? row.station_id,
+          signedOffAt: row.signed_off_at,
+          signedOffBy: row.signed_off_by ?? undefined,
+        });
+      }
+      if (progressRows.length === STATIONS.length && progressRows.length > 0) {
+        const last = progressRows[progressRows.length - 1];
+        collected.push({ kind: 'training_complete', completedAt: last.signed_off_at });
       }
 
       // Test attempts
@@ -146,7 +205,7 @@ function EmployeeFileTab({ employeeId, hiredOn }: { employeeId: string; hiredOn:
     }
     load();
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [employeeId]);
+  }, [employeeId, packetProp]);
 
   if (loading) {
     return (
@@ -156,14 +215,82 @@ function EmployeeFileTab({ employeeId, hiredOn }: { employeeId: string; hiredOn:
     );
   }
 
-  if (events.length === 0) {
-    return <p className="text-sm text-ink-400 py-8 text-center">No records on file yet.</p>;
-  }
+  const signedCount = tasks.filter((t) => t.signed).length;
+  const requiredCount = tasks.filter((t) => t.required).length;
 
   return (
-    <div className="relative">
-      {/* Timeline line */}
-      <div className="absolute left-5 top-0 bottom-0 w-px bg-ink-100" />
+    <div className="space-y-8">
+      {/* Onboarding Documents */}
+      {tasks.length > 0 && (
+        <div>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-ink-400">Onboarding Documents</h3>
+            <span className={clsx(
+              'text-xs font-semibold px-2.5 py-1 rounded-full',
+              signedCount === requiredCount ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700',
+            )}>
+              {signedCount} / {tasks.length} signed
+            </span>
+          </div>
+          <div className="rounded-xl border border-ink-100 overflow-hidden divide-y divide-ink-100">
+            {tasks.map((t) => (
+              <div key={t.id} className="flex items-center gap-4 px-4 py-3 bg-white">
+                {t.signed ? (
+                  <CheckCircle size={18} className="text-emerald-500 shrink-0" />
+                ) : (
+                  <Clock size={18} className="text-ink-300 shrink-0" />
+                )}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-medium text-ink-700">{t.title}</span>
+                    {!t.required && (
+                      <span className="text-xs text-ink-400 bg-ink-100 rounded-full px-2 py-0.5">Optional</span>
+                    )}
+                  </div>
+                  {t.signed && t.signedAt ? (
+                    <div className="text-xs text-ink-400 mt-0.5">
+                      Signed by {t.signedByName} · {format(parseISO(t.signedAt), 'MMM d, yyyy · h:mm a')}
+                    </div>
+                  ) : (
+                    <div className="text-xs text-ink-400 mt-0.5">Pending</div>
+                  )}
+                </div>
+                <div className="flex gap-2 shrink-0">
+                  {(t.id === 'w4' || t.id === 'i9') && t.signed && t.formData && (
+                    <ViewDownloadPdfButton docId={t.id as 'w4' | 'i9'} formData={t.formData} />
+                  )}
+                  {t.pdfStorageUrl && (
+                    <a
+                      href={t.pdfStorageUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1 rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs font-semibold text-cyan-700 hover:bg-cyan-100 transition"
+                    >
+                      <FileText size={11} /> PDF
+                    </a>
+                  )}
+                  {t.signatureRecordId && (
+                    <Link
+                      href={`/onboarding/${employeeId}/certificate/${t.signatureRecordId}`}
+                      className="flex items-center gap-1 rounded-full border border-ink-200 px-3 py-1 text-xs font-semibold text-ink-600 hover:bg-ink-50 transition"
+                    >
+                      <ShieldCheck size={11} /> Certificate
+                    </Link>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Activity timeline */}
+      {events.length > 0 && (
+        <div>
+          <h3 className="text-sm font-semibold uppercase tracking-wider text-ink-400 mb-3">Activity Timeline</h3>
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-5 top-0 bottom-0 w-px bg-ink-100" />
 
       <ul className="space-y-0">
         {events.map((ev, i) => {
@@ -265,6 +392,72 @@ function EmployeeFileTab({ employeeId, hiredOn }: { employeeId: string; hiredOn:
         })}
       </ul>
     </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ViewDownloadPdfButton({ docId, formData }: { docId: 'w4' | 'i9'; formData: object }) {
+  const [loadingView, setLoadingView] = useState(false);
+  const [loadingDl, setLoadingDl] = useState(false);
+
+  const fetchPdf = async (): Promise<string | null> => {
+    const res = await fetch('/api/forms/pdf/preview', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ docId, formData }),
+    });
+    if (!res.ok) return null;
+    const blob = await res.blob();
+    return URL.createObjectURL(blob);
+  };
+
+  const handleView = async () => {
+    setLoadingView(true);
+    try {
+      const url = await fetchPdf();
+      if (url) window.open(url, '_blank');
+    } finally {
+      setLoadingView(false);
+    }
+  };
+
+  const handleDownload = async () => {
+    setLoadingDl(true);
+    try {
+      const url = await fetchPdf();
+      if (url) {
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${docId.toUpperCase()}_filled.pdf`;
+        a.click();
+        URL.revokeObjectURL(url);
+      }
+    } finally {
+      setLoadingDl(false);
+    }
+  };
+
+  return (
+    <div className="flex gap-1.5">
+      <button
+        onClick={handleView}
+        disabled={loadingView || loadingDl}
+        className="inline-flex items-center gap-1.5 rounded-lg border border-cyan-200 bg-cyan-50 px-3 py-1.5 text-xs font-semibold text-cyan-700 hover:bg-cyan-100 transition disabled:opacity-50"
+      >
+        <FileText size={12} />
+        {loadingView ? 'Loading…' : `View ${docId.toUpperCase()}`}
+      </button>
+      <button
+        onClick={handleDownload}
+        disabled={loadingView || loadingDl}
+        className="inline-flex items-center gap-1.5 rounded-lg border border-ink-200 bg-white px-3 py-1.5 text-xs font-semibold text-ink-600 hover:bg-ink-50 transition disabled:opacity-50"
+      >
+        <Download size={12} />
+        {loadingDl ? 'Saving…' : 'Save PDF'}
+      </button>
+    </div>
   );
 }
 
@@ -296,7 +489,8 @@ export default function TeamMemberPage() {
   const params = useParams<{ id: string }>();
   const router = useRouter();
   const { user, loaded } = useCurrentUser();
-  const { employees, remove } = useEmployees();
+  const { employees, remove, update: updateEmployee } = useEmployees();
+  const { get: getPacket } = usePackets();
   const [tab, setTab] = useState<Tab>('overview');
   const [linkCopied, setLinkCopied] = useState(false);
   const [showRemoveModal, setShowRemoveModal] = useState(false);
@@ -354,9 +548,55 @@ export default function TeamMemberPage() {
                 <Phone size={14} className="text-ink-400" />
                 {employee.phone}
               </div>
-              <div className="flex items-center gap-2 text-ink-700">
-                <MapPin size={14} className="text-ink-400" />
-                {getLocation(employee.homeLocationId)?.name}
+              <div className="flex items-start gap-2 text-ink-700">
+                <MapPin size={14} className="text-ink-400 mt-0.5 shrink-0" />
+                <div className="flex flex-wrap gap-1">
+                  <span className="font-medium">{getLocation(employee.homeLocationId)?.name}</span>
+                  {(employee.additionalLocationIds ?? []).map((lid) => (
+                    <span key={lid} className="rounded-full bg-cyan-50 border border-cyan-200 px-1.5 py-0.5 text-xs text-cyan-700">
+                      {getLocation(lid)?.name}
+                    </span>
+                  ))}
+                  {canManage && (
+                    <button
+                      onClick={() => {
+                        const available = LOCATIONS.filter(
+                          (l) => l.id !== employee.homeLocationId && !(employee.additionalLocationIds ?? []).includes(l.id as LocationId)
+                        );
+                        if (available.length === 0) return;
+                        const chosen = window.prompt(
+                          `Add location for ${employee.firstName}?\n\nAvailable:\n${available.map((l, i) => `${i + 1}. ${l.name}`).join('\n')}\n\nType a number:`
+                        );
+                        const idx = parseInt(chosen ?? '') - 1;
+                        if (isNaN(idx) || idx < 0 || idx >= available.length) return;
+                        updateEmployee(employee.id, {
+                          additionalLocationIds: [...(employee.additionalLocationIds ?? []), available[idx].id as LocationId],
+                        });
+                      }}
+                      className="rounded-full border border-dashed border-ink-300 px-1.5 py-0.5 text-xs text-ink-400 hover:border-cyan-400 hover:text-cyan-600 transition"
+                    >
+                      + location
+                    </button>
+                  )}
+                  {canManage && (employee.additionalLocationIds ?? []).length > 0 && (
+                    <button
+                      onClick={() => {
+                        const locs = employee.additionalLocationIds ?? [];
+                        const chosen = window.prompt(
+                          `Remove which location?\n${locs.map((id, i) => `${i + 1}. ${getLocation(id)?.name ?? id}`).join('\n')}\n\nType a number:`
+                        );
+                        const idx = parseInt(chosen ?? '') - 1;
+                        if (isNaN(idx) || idx < 0 || idx >= locs.length) return;
+                        updateEmployee(employee.id, {
+                          additionalLocationIds: locs.filter((_, i) => i !== idx),
+                        });
+                      }}
+                      className="rounded-full border border-dashed border-hibiscus-200 px-1.5 py-0.5 text-xs text-hibiscus-400 hover:border-hibiscus-400 hover:text-hibiscus-600 transition"
+                    >
+                      − remove
+                    </button>
+                  )}
+                </div>
               </div>
               <div className="flex items-center gap-2 text-ink-700">
                 <Calendar size={14} className="text-ink-400" />
@@ -480,7 +720,7 @@ export default function TeamMemberPage() {
                 </p>
               </div>
             </div>
-            <EmployeeFileTab employeeId={employee.id} hiredOn={employee.hiredOn} />
+            <EmployeeFileTab employeeId={employee.id} hiredOn={employee.hiredOn} packet={getPacket(employee.id)} employee={employee} />
           </div>
         )}
       </div>

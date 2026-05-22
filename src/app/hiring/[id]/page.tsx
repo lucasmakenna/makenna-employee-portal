@@ -16,7 +16,7 @@ import {
 import AppShell from '@/components/AppShell';
 import { useCurrentUser } from '@/lib/auth';
 import { STAGES } from '@/data/candidates';
-import { getLocation } from '@/data/locations';
+import { getLocation, LOCATIONS } from '@/data/locations';
 import { fullName } from '@/data/employees';
 import {
   useCandidates,
@@ -24,7 +24,7 @@ import {
   usePackets,
   buildEmployeeFromCandidate,
 } from '@/data/store';
-import { CandidateStage, Role, Employee } from '@/types';
+import { CandidateStage, Role, Employee, LocationId } from '@/types';
 import { format, parseISO } from 'date-fns';
 import { welcomeEmailFor } from '@/lib/email-templates';
 import EmailPreview from '@/components/EmailPreview';
@@ -49,6 +49,9 @@ export default function CandidateDetailPage() {
     candidate?.appliedFor === 'Shift Lead' ? 'lead'
     : candidate?.appliedFor === 'Manager' ? 'manager'
     : 'barista'
+  );
+  const [hireLocation, setHireLocation] = useState<LocationId>(
+    (candidate?.appliedToLocationId ?? LOCATIONS[0].id) as LocationId
   );
   const [hiredEmployee, setHiredEmployee] = useState<Employee | null>(null);
 
@@ -78,7 +81,7 @@ export default function CandidateDetailPage() {
 
   const handleHire = () => {
     // 1) Create the employee record
-    const employee = buildEmployeeFromCandidate(candidate, startDate, undefined, hireRole);
+    const employee = buildEmployeeFromCandidate(candidate, startDate, undefined, hireRole, hireLocation);
     addEmployee(employee);
     // 2) Create the onboarding packet
     createPacket(employee.id, startDate);
@@ -240,6 +243,18 @@ export default function CandidateDetailPage() {
                         <option value="trainer">Trainer</option>
                         <option value="lead">Shift Lead</option>
                         <option value="manager">Manager</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="label">Location</label>
+                      <select
+                        className="input"
+                        value={hireLocation}
+                        onChange={(e) => setHireLocation(e.target.value as LocationId)}
+                      >
+                        {LOCATIONS.map((l) => (
+                          <option key={l.id} value={l.id}>{l.name}</option>
+                        ))}
                       </select>
                     </div>
                     <div className="flex gap-2">

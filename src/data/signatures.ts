@@ -51,7 +51,7 @@ export function appendSignature(record: SignatureAuditRecord) {
     document_hash: record.documentHash,
     document_title: record.documentTitle,
     document_bytes: record.documentBytes,
-    signature_image_png: record.signatureImagePngDataUrl,
+    signature_image_png_data_url: record.signatureImagePngDataUrl,
     consent_acknowledged: record.consentAcknowledged,
     prior_record_id: record.priorRecordId,
     prior_record_hash: record.priorRecordHash,

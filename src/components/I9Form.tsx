@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import { FileText } from 'lucide-react';
 import SignaturePad, { SignaturePadResult } from '@/components/SignaturePad';
 import { format } from 'date-fns';
 
@@ -156,6 +157,8 @@ export default function I9Form({ employeeName, defaultFirstDay, currentUserName,
   const [submitting, setSubmitting] = useState(false);
   const [section1Done, setSection1Done] = useState(false);
   const [errors, setErrors] = useState<string[]>([]);
+  const [previewLoading, setPreviewLoading] = useState(false);
+  const formRef = useRef<HTMLDivElement>(null);
 
   const set = (field: keyof I9Data, value: string) =>
     setData((prev) => ({ ...prev, [field]: value }));
@@ -191,8 +194,28 @@ export default function I9Form({ employeeName, defaultFirstDay, currentUserName,
     }
   };
 
+  const handlePreview = async () => {
+    if (!validateSection1()) return;
+    setPreviewLoading(true);
+    try {
+      const res = await fetch('/api/forms/pdf/preview', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ docId: 'i9', formData: data }),
+      });
+      if (!res.ok) throw new Error('PDF generation failed');
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      window.open(url, '_blank');
+    } catch {
+      // silently fail
+    } finally {
+      setPreviewLoading(false);
+    }
+  };
+
   return (
-    <div className="space-y-0">
+    <div ref={formRef} className="space-y-0">
       {/* Header */}
       <div className="rounded-t-xl border border-ink-200 bg-ink-800 text-white p-4 flex items-start justify-between">
         <div>
@@ -342,15 +365,6 @@ export default function I9Form({ employeeName, defaultFirstDay, currentUserName,
             </div>
           </div>
 
-          {errors.length > 0 && (
-            <div className="rounded-lg bg-hibiscus-50 border border-hibiscus-200 p-3">
-              <p className="text-xs font-semibold text-hibiscus-700 mb-1">Please fix the following before signing:</p>
-              <ul className="list-disc list-inside space-y-0.5">
-                {errors.map((e, i) => <li key={i} className="text-xs text-hibiscus-600">{e}</li>)}
-              </ul>
-            </div>
-          )}
-
           {/* Employee signature */}
           <div className="border-t border-ink-200 pt-4">
             <div className="rounded-lg bg-amber-50 border border-amber-200 p-3 mb-4 text-xs text-amber-800">
@@ -360,7 +374,24 @@ export default function I9Form({ employeeName, defaultFirstDay, currentUserName,
               <span>Employee's signature</span>
               <span>Today's date: {format(new Date(), 'MM/dd/yyyy')}</span>
             </div>
+            <button
+              type="button"
+              onClick={handlePreview}
+              disabled={previewLoading}
+              className="inline-flex items-center gap-2 rounded-lg border border-ink-300 bg-ink-50 px-4 py-2 text-sm font-semibold text-ink-700 hover:bg-ink-100 transition mb-4 disabled:opacity-50"
+            >
+              <FileText size={15} />
+              {previewLoading ? 'Generating…' : 'Preview filled PDF'}
+            </button>
             <SignaturePad onSubmit={handleEmployeeSign} signerName={employeeName} />
+          {errors.length > 0 && (
+            <div className="mt-3 rounded-xl border border-hibiscus-300 bg-hibiscus-50 px-4 py-3">
+              <p className="text-sm font-semibold text-hibiscus-700 mb-1">Complete these fields before signing:</p>
+              <ul className="space-y-0.5">
+                {errors.map((e, i) => <li key={i} className="text-xs text-hibiscus-600">• {e}</li>)}
+              </ul>
+            </div>
+          )}
           </div>
         </div>
       </div>

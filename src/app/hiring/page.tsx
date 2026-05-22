@@ -3,14 +3,14 @@
 import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Plus, Search, Upload, X, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { Plus, Search, Upload, X, AlertCircle, CheckCircle2, RotateCcw, UserX } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import { useCurrentUser } from '@/lib/auth';
 import { STAGES } from '@/data/candidates';
 import { useCandidates } from '@/data/store';
 import { LOCATIONS, getLocation } from '@/data/locations';
 import { Candidate, CandidateStage, LocationId } from '@/types';
-import { formatDistanceToNow, parseISO } from 'date-fns';
+import { formatDistanceToNow, parseISO, format } from 'date-fns';
 
 const STAGE_ORDER: CandidateStage[] = [
   'applied',
@@ -23,10 +23,11 @@ const STAGE_ORDER: CandidateStage[] = [
 export default function HiringPage() {
   const router = useRouter();
   const { user, loaded } = useCurrentUser();
-  const { candidates, add } = useCandidates();
+  const { candidates, add, moveStage } = useCandidates();
   const [search, setSearch] = useState('');
   const [locationFilter, setLocationFilter] = useState<string>('all');
   const [showIndeedImport, setShowIndeedImport] = useState(false);
+  const [view, setView] = useState<'pipeline' | 'rejected'>('pipeline');
 
   useEffect(() => {
     if (loaded && !user) router.replace('/login');
@@ -45,6 +46,27 @@ export default function HiringPage() {
     });
   }, [candidates, search, locationFilter]);
 
+  const rejected = useMemo(() => {
+    return candidates.filter((c) => c.stage === 'rejected').filter((c) => {
+      if (locationFilter !== 'all' && c.appliedToLocationId !== locationFilter) return false;
+      if (!search) return true;
+      const q = search.toLowerCase();
+      return (
+        c.firstName.toLowerCase().includes(q) ||
+        c.lastName.toLowerCase().includes(q) ||
+        c.appliedFor.toLowerCase().includes(q)
+      );
+    });
+  }, [candidates, search, locationFilter]);
+
+  // Detect if a rejected candidate has reapplied (same email exists in non-rejected pool)
+  const reappliedEmails = useMemo(() => {
+    const activeEmails = new Set(
+      candidates.filter((c) => c.stage !== 'rejected').map((c) => c.email.toLowerCase())
+    );
+    return activeEmails;
+  }, [candidates]);
+
   if (!user) return null;
 
   return (
@@ -53,13 +75,14 @@ export default function HiringPage() {
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <h1 className="text-3xl font-bold text-ink-700">Hiring Pipeline</h1>
+            <h1 className="text-3xl font-bold text-ink-700">Hiring</h1>
             <p className="mt-1 text-sm text-ink-400">
-              {filtered.length} candidate{filtered.length === 1 ? '' : 's'} across{' '}
-              {LOCATIONS.length} locations
+              {view === 'pipeline'
+                ? `${filtered.length} active candidate${filtered.length === 1 ? '' : 's'} across ${LOCATIONS.length} locations`
+                : `${rejected.length} candidate${rejected.length === 1 ? '' : 's'} in reject pool`}
             </p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <div className="relative">
               <Search
                 size={16}
@@ -84,44 +107,114 @@ export default function HiringPage() {
                 </option>
               ))}
             </select>
-            <button
-              onClick={() => setShowIndeedImport(true)}
-              className="flex items-center gap-2 rounded-full border border-ink-200 bg-white px-4 py-2 text-sm font-semibold text-ink-600 hover:bg-cyan-50 hover:border-cyan-300 transition"
-            >
-              <Upload size={15} /> Import from Indeed
-            </button>
-            <Link href="/hiring/new" className="btn-cyan">
-              <Plus size={16} />
-              Add candidate
-            </Link>
+            {view === 'pipeline' && (
+              <>
+                <button
+                  onClick={() => setShowIndeedImport(true)}
+                  className="flex items-center gap-2 rounded-full border border-ink-200 bg-white px-4 py-2 text-sm font-semibold text-ink-600 hover:bg-cyan-50 hover:border-cyan-300 transition"
+                >
+                  <Upload size={15} /> Import from Indeed
+                </button>
+                <Link href="/hiring/new" className="btn-cyan">
+                  <Plus size={16} />
+                  Add candidate
+                </Link>
+              </>
+            )}
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5">
-          {STAGE_ORDER.map((stage) => {
-            const cards = filtered.filter((c) => c.stage === stage);
-            return (
-              <div key={stage} className="rounded-xl bg-cyan-50/40 p-3">
-                <div className="mb-3 flex items-center justify-between px-1">
-                  <h3 className="text-sm font-bold text-ink-700">
-                    {STAGES.find((s) => s.id === stage)?.label}
-                  </h3>
-                  <span className="pill bg-white text-ink-400">{cards.length}</span>
-                </div>
-                <div className="space-y-2">
-                  {cards.map((c) => (
-                    <CandidateCard key={c.id} candidate={c} />
-                  ))}
-                  {cards.length === 0 && (
-                    <div className="rounded-lg border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
-                      Empty
-                    </div>
-                  )}
-                </div>
-              </div>
-            );
-          })}
+        {/* View tabs */}
+        <div className="mb-5 flex gap-1 rounded-xl border border-ink-100 bg-ink-50 p-1 w-fit">
+          <button
+            onClick={() => setView('pipeline')}
+            className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${view === 'pipeline' ? 'bg-white shadow-sm text-ink-700' : 'text-ink-400 hover:text-ink-600'}`}
+          >
+            Pipeline
+          </button>
+          <button
+            onClick={() => setView('rejected')}
+            className={`flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-semibold transition ${view === 'rejected' ? 'bg-white shadow-sm text-ink-700' : 'text-ink-400 hover:text-ink-600'}`}
+          >
+            <UserX size={14} />
+            Reject Pool
+            {rejected.length > 0 && (
+              <span className="ml-1 rounded-full bg-red-100 px-1.5 py-0.5 text-xs font-bold text-red-600">{rejected.length}</span>
+            )}
+          </button>
         </div>
+
+        {view === 'pipeline' ? (
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5">
+            {STAGE_ORDER.map((stage) => {
+              const cards = filtered.filter((c) => c.stage === stage);
+              return (
+                <div key={stage} className="rounded-xl bg-cyan-50/40 p-3">
+                  <div className="mb-3 flex items-center justify-between px-1">
+                    <h3 className="text-sm font-bold text-ink-700">
+                      {STAGES.find((s) => s.id === stage)?.label}
+                    </h3>
+                    <span className="pill bg-white text-ink-400">{cards.length}</span>
+                  </div>
+                  <div className="space-y-2">
+                    {cards.map((c) => (
+                      <CandidateCard key={c.id} candidate={c} />
+                    ))}
+                    {cards.length === 0 && (
+                      <div className="rounded-lg border border-dashed border-ink-200 p-4 text-center text-xs text-ink-400">
+                        Empty
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="space-y-3">
+            {rejected.length === 0 && (
+              <div className="rounded-xl border border-dashed border-ink-200 p-12 text-center text-sm text-ink-400">
+                No rejected candidates yet.
+              </div>
+            )}
+            {rejected.map((c) => {
+              const loc = getLocation(c.appliedToLocationId);
+              const hasReapplied = reappliedEmails.has(c.email.toLowerCase());
+              return (
+                <div key={c.id} className="rounded-xl border border-ink-100 bg-white p-4 flex items-start gap-4">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <Link href={`/hiring/${c.id}`} className="font-semibold text-ink-700 hover:text-cyan-600">
+                        {c.firstName} {c.lastName}
+                      </Link>
+                      {hasReapplied && (
+                        <span className="flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-xs font-bold text-amber-700">
+                          <RotateCcw size={11} /> Reapplied
+                        </span>
+                      )}
+                    </div>
+                    <div className="mt-1 text-xs text-ink-400">
+                      {c.appliedFor} · {loc?.name} · Applied {format(parseISO(c.appliedOn), 'MMM d, yyyy')}
+                    </div>
+                    {c.notes.length > 0 && (
+                      <p className="mt-1.5 text-xs text-ink-500 italic line-clamp-1">
+                        "{c.notes[c.notes.length - 1].body}"
+                      </p>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <button
+                      onClick={() => moveStage(c.id, 'applied')}
+                      className="flex items-center gap-1.5 rounded-lg border border-cyan-200 bg-cyan-50 px-3 py-1.5 text-xs font-semibold text-cyan-700 hover:bg-cyan-100 transition"
+                    >
+                      <RotateCcw size={12} /> Re-enter pipeline
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </AppShell>
 

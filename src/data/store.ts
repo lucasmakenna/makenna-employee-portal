@@ -20,6 +20,7 @@ import type {
   Availability,
   RecipeFillAttempt,
   RecipeFillAnswers,
+  AccountabilityRecord,
 } from '@/types';
 import { RECIPE_FILL_PASSING_SCORE } from '@/types';
 import type { RecipeFillQuestion } from '@/types';
@@ -72,6 +73,7 @@ export function employeeFromRow(r: Record<string, unknown>): Employee {
     phone: (r.phone as string) ?? '',
     role: r.role as Role,
     homeLocationId: r.home_location_id as LocationId,
+    additionalLocationIds: (r.additional_location_ids as LocationId[]) ?? [],
     hiredOn: r.hired_on as string,
     birthday: (r.birthday as string) ?? undefined,
     certifications: (r.certifications as Employee['certifications']) ?? [],
@@ -91,6 +93,7 @@ function employeeToRow(e: Employee) {
     phone: e.phone,
     role: e.role,
     home_location_id: e.homeLocationId,
+    additional_location_ids: e.additionalLocationIds ?? [],
     hired_on: e.hiredOn,
     birthday: e.birthday ?? null,
     certifications: e.certifications,
@@ -208,9 +211,34 @@ export type NewCandidateInput = {
   authorName: string;
 };
 
-export function useCandidates() {
-  const [list, setList] = useState<Candidate[]>([]);
+const CANDIDATES_KEY = 'mk-candidates-v1';
 
+function loadCandidates(): Candidate[] {
+  if (typeof window === 'undefined') return [...CAND_SEED];
+  try {
+    const raw = localStorage.getItem(CANDIDATES_KEY);
+    if (!raw) return [...CAND_SEED];
+    const stored: Candidate[] = JSON.parse(raw);
+    // Merge: seed provides demo defaults, localStorage overrides + adds dynamic candidates
+    const map = new Map<string, Candidate>();
+    CAND_SEED.forEach((c) => map.set(c.id, c));
+    stored.forEach((c) => map.set(c.id, c));
+    return Array.from(map.values()).sort(
+      (a, b) => (a.appliedOn < b.appliedOn ? 1 : -1),
+    );
+  } catch {
+    return [...CAND_SEED];
+  }
+}
+
+function saveCandidates(list: Candidate[]) {
+  try { localStorage.setItem(CANDIDATES_KEY, JSON.stringify(list)); } catch {}
+}
+
+export function useCandidates() {
+  const [list, setList] = useState<Candidate[]>(loadCandidates);
+
+  // Hydrate from Supabase if available (merges on top of localStorage)
   useEffect(() => {
     supabase
       .from('candidates')
@@ -218,7 +246,16 @@ export function useCandidates() {
       .order('applied_on', { ascending: false })
       .then(({ data }) => {
         if (data && data.length > 0) {
-          setList(data.map((r) => candidateFromRow(r as Record<string, unknown>)));
+          setList((prev) => {
+            const remote = data.map((r) => candidateFromRow(r as Record<string, unknown>));
+            const map = new Map<string, Candidate>(prev.map((c) => [c.id, c]));
+            remote.forEach((c) => map.set(c.id, c));
+            const merged = Array.from(map.values()).sort(
+              (a, b) => (a.appliedOn < b.appliedOn ? 1 : -1),
+            );
+            saveCandidates(merged);
+            return merged;
+          });
         }
       });
   }, []);
@@ -248,15 +285,21 @@ export function useCandidates() {
           ]
         : [],
     };
-    setList((prev) => [candidate, ...prev]);
+    setList((prev) => {
+      const next = [candidate, ...prev];
+      saveCandidates(next);
+      return next;
+    });
     supabase.from('candidates').insert(candidateToRow(candidate)).then(() => {});
     return candidate;
   }, []);
 
   const update = useCallback((id: string, patch: Partial<Candidate>) => {
-    setList((prev) =>
-      prev.map((c) => (c.id === id ? { ...c, ...patch } : c)),
-    );
+    setList((prev) => {
+      const next = prev.map((c) => (c.id === id ? { ...c, ...patch } : c));
+      saveCandidates(next);
+      return next;
+    });
     supabase
       .from('candidates')
       .update({ ...patch, updated_at: new Date().toISOString() })
@@ -281,6 +324,7 @@ export function useCandidates() {
       const next = prev.map((c) =>
         c.id === id ? { ...c, notes: [...c.notes, newNote] } : c,
       );
+      saveCandidates(next);
       const updated = next.find((c) => c.id === id);
       if (updated) {
         supabase
@@ -305,8 +349,30 @@ export function useCandidates() {
 // Employees
 // ---------------------------------------------------------------------------
 
+const EMPLOYEES_KEY = 'mk-employees-v1';
+
+function loadEmployees(): Employee[] {
+  if (typeof window === 'undefined') return [...EMP_SEED];
+  try {
+    const raw = localStorage.getItem(EMPLOYEES_KEY);
+    if (!raw) return [...EMP_SEED];
+    const stored: Employee[] = JSON.parse(raw);
+    // Merge: seed provides base defaults, localStorage overrides + adds dynamic employees
+    const map = new Map<string, Employee>();
+    EMP_SEED.forEach((e) => map.set(e.id, e));
+    stored.forEach((e) => map.set(e.id, e));
+    return Array.from(map.values());
+  } catch {
+    return [...EMP_SEED];
+  }
+}
+
+function saveEmployees(list: Employee[]) {
+  try { localStorage.setItem(EMPLOYEES_KEY, JSON.stringify(list)); } catch {}
+}
+
 export function useEmployees() {
-  const [list, setList] = useState<Employee[]>([]);
+  const [list, setList] = useState<Employee[]>(loadEmployees);
 
   useEffect(() => {
     supabase
@@ -315,13 +381,19 @@ export function useEmployees() {
       .order('hired_on', { ascending: true })
       .then(({ data }) => {
         if (data && data.length > 0) {
-          setList(data.map((r) => employeeFromRow(r as Record<string, unknown>)));
+          const next = data.map((r) => employeeFromRow(r as Record<string, unknown>));
+          setList(next);
+          saveEmployees(next);
         }
       });
   }, []);
 
   const add = useCallback((employee: Employee) => {
-    setList((prev) => [...prev, employee]);
+    setList((prev) => {
+      const next = [...prev, employee];
+      saveEmployees(next);
+      return next;
+    });
     supabase.from('employees').insert(employeeToRow(employee)).then(() => {});
     return employee;
   }, []);
@@ -329,6 +401,7 @@ export function useEmployees() {
   const update = useCallback((id: string, patch: Partial<Employee>) => {
     setList((prev) => {
       const next = prev.map((e) => (e.id === id ? { ...e, ...patch } : e));
+      saveEmployees(next);
       const updated = next.find((e) => e.id === id);
       if (updated) {
         supabase
@@ -344,7 +417,11 @@ export function useEmployees() {
   const getById = useCallback((id: string) => list.find((e) => e.id === id), [list]);
 
   const remove = useCallback((id: string) => {
-    setList((prev) => prev.filter((e) => e.id !== id));
+    setList((prev) => {
+      const next = prev.filter((e) => e.id !== id);
+      saveEmployees(next);
+      return next;
+    });
     supabase.from('employees').delete().eq('id', id).then(() => {});
   }, []);
 
@@ -358,8 +435,26 @@ export function useEmployees() {
 // Onboarding packets
 // ---------------------------------------------------------------------------
 
+const PACKETS_KEY = 'mk-packets-v1';
+
+function loadPackets(): Record<string, OnboardingPacket> {
+  if (typeof window === 'undefined') return { ...PACKET_SEED };
+  try {
+    const raw = localStorage.getItem(PACKETS_KEY);
+    const stored: Record<string, OnboardingPacket> = raw ? JSON.parse(raw) : {};
+    // Seed data fills in any employees not yet in localStorage
+    return { ...PACKET_SEED, ...stored };
+  } catch {
+    return { ...PACKET_SEED };
+  }
+}
+
+function savePackets(packets: Record<string, OnboardingPacket>) {
+  try { localStorage.setItem(PACKETS_KEY, JSON.stringify(packets)); } catch {}
+}
+
 export function usePackets() {
-  const [packets, setPackets] = useState<Record<string, OnboardingPacket>>({});
+  const [packets, setPackets] = useState<Record<string, OnboardingPacket>>(loadPackets);
 
   useEffect(() => {
     supabase
@@ -378,6 +473,7 @@ export function usePackets() {
               managerSignOff: row.manager_sign_off ?? undefined,
             };
           }
+          savePackets(merged);
           return merged;
         });
       });
@@ -397,7 +493,11 @@ export function usePackets() {
           signed: false,
         })),
       };
-      setPackets((prev) => ({ ...prev, [employeeId]: packet }));
+      setPackets((prev) => {
+        const next = { ...prev, [employeeId]: packet };
+        savePackets(next);
+        return next;
+      });
       supabase
         .from('onboarding_packets')
         .upsert({
@@ -418,6 +518,7 @@ export function usePackets() {
     (employeeId: string, patch: Partial<OnboardingPacket>) => {
       setPackets((prev) => {
         const next = { ...prev, [employeeId]: { ...prev[employeeId], ...patch } };
+        savePackets(next);
         const p = next[employeeId];
         supabase
           .from('onboarding_packets')
@@ -455,6 +556,7 @@ export function buildEmployeeFromCandidate(
   startDate: string,
   trainerEmployeeId: string | undefined,
   role: Role = 'barista',
+  locationId?: LocationId,
 ): Employee {
   return {
     id: `emp-new-${Date.now()}`,
@@ -463,7 +565,7 @@ export function buildEmployeeFromCandidate(
     email: candidate.email,
     phone: candidate.phone,
     role,
-    homeLocationId: candidate.appliedToLocationId,
+    homeLocationId: locationId ?? candidate.appliedToLocationId,
     hiredOn: startDate,
     certifications: [],
     trainingProgressByStation: {},
@@ -476,8 +578,48 @@ export function buildEmployeeFromCandidate(
 // Messaging
 // ---------------------------------------------------------------------------
 
+const CONV_KEY = 'mk-conversations-v1';
+const MSG_KEY = 'mk-messages-v1';
+
+function loadConversations(): Conversation[] {
+  if (typeof window === 'undefined') return [...SEED_CONVERSATIONS];
+  try {
+    const raw = localStorage.getItem(CONV_KEY);
+    if (!raw) return [...SEED_CONVERSATIONS];
+    const stored: Conversation[] = JSON.parse(raw);
+    // Merge: keep seed convs that aren't in stored, then add stored on top
+    const storedIds = new Set(stored.map((c) => c.id));
+    const seedOnly = SEED_CONVERSATIONS.filter((c) => !storedIds.has(c.id));
+    return [...seedOnly, ...stored].sort((a, b) => (a.createdAt < b.createdAt ? -1 : 1));
+  } catch {
+    return [...SEED_CONVERSATIONS];
+  }
+}
+
+function saveConversations(convs: Conversation[]) {
+  try { localStorage.setItem(CONV_KEY, JSON.stringify(convs)); } catch {}
+}
+
+function loadMessages(): Message[] {
+  if (typeof window === 'undefined') return [...SEED_MESSAGES];
+  try {
+    const raw = localStorage.getItem(MSG_KEY);
+    if (!raw) return [...SEED_MESSAGES];
+    const stored: Message[] = JSON.parse(raw);
+    const storedIds = new Set(stored.map((m) => m.id));
+    const seedOnly = SEED_MESSAGES.filter((m) => !storedIds.has(m.id));
+    return [...seedOnly, ...stored].sort((a, b) => (a.createdAt < b.createdAt ? -1 : 1));
+  } catch {
+    return [...SEED_MESSAGES];
+  }
+}
+
+function saveMessages(msgs: Message[]) {
+  try { localStorage.setItem(MSG_KEY, JSON.stringify(msgs)); } catch {}
+}
+
 export function useConversations() {
-  const [list, setList] = useState<Conversation[]>([]);
+  const [list, setList] = useState<Conversation[]>(loadConversations);
 
   useEffect(() => {
     supabase
@@ -486,7 +628,14 @@ export function useConversations() {
       .order('created_at', { ascending: true })
       .then(({ data }) => {
         if (data && data.length > 0) {
-          setList(data.map((r) => conversationFromRow(r as Record<string, unknown>)));
+          setList((prev) => {
+            const fromDb = data.map((r) => conversationFromRow(r as Record<string, unknown>));
+            const dbIds = new Set(fromDb.map((c) => c.id));
+            const localOnly = prev.filter((c) => !dbIds.has(c.id));
+            const merged = [...localOnly, ...fromDb].sort((a, b) => (a.createdAt < b.createdAt ? -1 : 1));
+            saveConversations(merged);
+            return merged;
+          });
         }
       });
   }, []);
@@ -497,13 +646,21 @@ export function useConversations() {
       id: `conv:${Date.now()}`,
       createdAt: new Date().toISOString(),
     };
-    setList((prev) => [...prev, conv]);
+    setList((prev) => {
+      const next = [...prev, conv];
+      saveConversations(next);
+      return next;
+    });
     supabase.from('conversations').insert(conversationToRow(conv)).then(() => {});
     return conv;
   }, []);
 
   const update = useCallback((id: string, patch: Partial<Conversation>) => {
-    setList((prev) => prev.map((c) => (c.id === id ? { ...c, ...patch } : c)));
+    setList((prev) => {
+      const next = prev.map((c) => (c.id === id ? { ...c, ...patch } : c));
+      saveConversations(next);
+      return next;
+    });
     supabase
       .from('conversations')
       .update({ ...patch, updated_at: new Date().toISOString() })
@@ -545,7 +702,7 @@ export function useConversations() {
 }
 
 export function useMessages() {
-  const [list, setList] = useState<Message[]>([]);
+  const [list, setList] = useState<Message[]>(loadMessages);
 
   useEffect(() => {
     supabase
@@ -554,7 +711,14 @@ export function useMessages() {
       .order('created_at', { ascending: true })
       .then(({ data }) => {
         if (data && data.length > 0) {
-          setList(data.map((r) => messageFromRow(r as Record<string, unknown>)));
+          setList((prev) => {
+            const fromDb = data.map((r) => messageFromRow(r as Record<string, unknown>));
+            const dbIds = new Set(fromDb.map((m) => m.id));
+            const localOnly = prev.filter((m) => !dbIds.has(m.id));
+            const merged = [...localOnly, ...fromDb].sort((a, b) => (a.createdAt < b.createdAt ? -1 : 1));
+            saveMessages(merged);
+            return merged;
+          });
         }
       });
   }, []);
@@ -566,9 +730,28 @@ export function useMessages() {
       createdAt: new Date().toISOString(),
       readBy: [input.authorId],
     };
-    setList((prev) => [...prev, msg]);
+    setList((prev) => {
+      const next = [...prev, msg];
+      saveMessages(next);
+      return next;
+    });
     supabase.from('messages').insert(messageToRow(msg)).then(() => {});
     return msg;
+  }, []);
+
+  const togglePin = useCallback((messageId: string) => {
+    setList((prev) => {
+      const next = prev.map((m) =>
+        m.id === messageId ? { ...m, pinned: !m.pinned } : m,
+      );
+      saveMessages(next);
+      supabase
+        .from('messages')
+        .update({ pinned: next.find((m) => m.id === messageId)?.pinned ?? false })
+        .eq('id', messageId)
+        .then(() => {});
+      return next;
+    });
   }, []);
 
   const markRead = useCallback((conversationId: string, employeeId: string) => {
@@ -588,7 +771,9 @@ export function useMessages() {
       }
 
       const updatedIds = new Set(toUpdate.map((m) => m.id));
-      return prev.map((m) => (updatedIds.has(m.id) ? { ...m, readBy: [...m.readBy, employeeId] } : m));
+      const next = prev.map((m) => (updatedIds.has(m.id) ? { ...m, readBy: [...m.readBy, employeeId] } : m));
+      saveMessages(next);
+      return next;
     });
   }, []);
 
@@ -617,8 +802,8 @@ export function useMessages() {
   );
 
   return useMemo(
-    () => ({ messages: list, send, markRead, forConversation, lastMessage, unreadCount }),
-    [list, send, markRead, forConversation, lastMessage, unreadCount],
+    () => ({ messages: list, send, markRead, togglePin, forConversation, lastMessage, unreadCount }),
+    [list, send, markRead, togglePin, forConversation, lastMessage, unreadCount],
   );
 }
 
@@ -744,5 +929,70 @@ export function useRecipeFillAttempts() {
   return useMemo(
     () => ({ attempts: list, start, saveAnswer, complete, getById, getByEmployee, inProgress }),
     [list, start, saveAnswer, complete, getById, getByEmployee, inProgress],
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Accountability Records
+// ---------------------------------------------------------------------------
+
+const ACCOUNTABILITY_KEY = 'mk-accountability-v1';
+
+function loadAccountability(): AccountabilityRecord[] {
+  if (typeof window === 'undefined') return [];
+  try {
+    const raw = localStorage.getItem(ACCOUNTABILITY_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch { return []; }
+}
+
+function saveAccountability(records: AccountabilityRecord[]) {
+  if (typeof window === 'undefined') return;
+  localStorage.setItem(ACCOUNTABILITY_KEY, JSON.stringify(records));
+}
+
+export function useAccountability() {
+  const [list, setList] = useState<AccountabilityRecord[]>(loadAccountability);
+
+  const add = useCallback((input: Omit<AccountabilityRecord, 'id' | 'issuedAt'>): AccountabilityRecord => {
+    const record: AccountabilityRecord = {
+      ...input,
+      id: `acct-${Date.now()}`,
+      issuedAt: new Date().toISOString(),
+    };
+    setList((prev) => {
+      const next = [record, ...prev];
+      saveAccountability(next);
+      return next;
+    });
+    return record;
+  }, []);
+
+  const update = useCallback((id: string, patch: Partial<AccountabilityRecord>) => {
+    setList((prev) => {
+      const next = prev.map((r) => (r.id === id ? { ...r, ...patch } : r));
+      saveAccountability(next);
+      return next;
+    });
+  }, []);
+
+  const remove = useCallback((id: string) => {
+    setList((prev) => {
+      const next = prev.filter((r) => r.id !== id);
+      saveAccountability(next);
+      return next;
+    });
+  }, []);
+
+  const forEmployee = useCallback(
+    (employeeId: string) => list.filter((r) => r.employeeId === employeeId),
+    [list],
+  );
+
+  const getById = useCallback((id: string) => list.find((r) => r.id === id), [list]);
+
+  return useMemo(
+    () => ({ records: list, add, update, remove, forEmployee, getById }),
+    [list, add, update, remove, forEmployee, getById],
   );
 }

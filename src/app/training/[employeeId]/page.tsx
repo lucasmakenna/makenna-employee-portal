@@ -8,6 +8,8 @@ import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
 import SignaturePad, { SignaturePadResult } from '@/components/SignaturePad';
 import TrainingDocumentModal from '@/components/TrainingDocumentModal';
+import OnboardingDocModal from '@/components/OnboardingDocModal';
+import type { OnboardingDocId } from '@/types';
 import { useCurrentUser } from '@/lib/auth';
 import { can } from '@/data/permissions';
 import { getEmployee, fullName } from '@/data/employees';
@@ -16,7 +18,7 @@ import { STATIONS, totalSkills, completedSkillsCount } from '@/data/training';
 import { stampSignature, tryGetGeolocation } from '@/lib/signature-audit';
 import { appendSignature, getMostRecentRecord } from '@/data/signatures';
 import { loadTrainingProgress, saveStationProgress } from '@/lib/training-db';
-import { useEmployees } from '@/data/store';
+import { useEmployees, usePackets } from '@/data/store';
 
 /**
  * iPad-optimized trainee progress view.
@@ -35,10 +37,13 @@ export default function TraineeProgress() {
   const { user, loaded } = useCurrentUser();
 
   const { getById, update: updateEmployee } = useEmployees();
+  const { get: getPacket } = usePackets();
   const [activeStationId, setActiveStationId] = useState(STATIONS[0].id);
   const [signoffStationId, setSignoffStationId] = useState<string | null>(null);
-  /** documentModal: { skillId, documentId } when the PDF modal is open */
-  const [documentModal, setDocumentModal] = useState<{ skillId: string; documentId: string } | null>(null);
+  /** documentModal: { skillId, documentId, stationId } when the PDF modal is open */
+  const [documentModal, setDocumentModal] = useState<{ skillId: string; documentId: string; stationId: string } | null>(null);
+  /** onboardingDocModal: { skillId, docId } when an onboarding doc is opened inline */
+  const [onboardingDocModal, setOnboardingDocModal] = useState<{ skillId: string; docId: OnboardingDocId } | null>(null);
 
   useEffect(() => {
     if (loaded && !user) router.replace('/login');
@@ -72,6 +77,24 @@ export default function TraineeProgress() {
   const progress = employee.trainingProgressByStation[station.id];
   const skillsCompleted = progress?.skillsCompleted ?? [];
 
+  // Derive which onboarding docs are signed so we can auto-check linked skills
+  const packet = getPacket(params.employeeId);
+  const signedOnboardingDocIds = new Set(
+    (packet?.tasks ?? []).filter((t) => t.signed).map((t) => t.id),
+  );
+  // Merge manual completions with auto-completions from onboarding
+  const effectiveSkillsCompleted = [
+    ...skillsCompleted,
+    ...station.skills
+      .filter(
+        (sk) =>
+          sk.onboardingDocId &&
+          signedOnboardingDocIds.has(sk.onboardingDocId as OnboardingDocId) &&
+          !skillsCompleted.includes(sk.id),
+      )
+      .map((sk) => sk.id),
+  ];
+
   const toggleSkill = async (skillId: string) => {
     if (!canSignOff) return;
     const current = employee.trainingProgressByStation[station.id]?.skillsCompleted ?? [];
@@ -94,7 +117,7 @@ export default function TraineeProgress() {
     await saveStationProgress(employee.id, updated);
   };
 
-  const allStationSkillsDone = skillsCompleted.length === station.skills.length;
+  const allStationSkillsDone = effectiveSkillsCompleted.length === station.skills.length;
   const stationSigned = !!progress?.signedOffBy;
 
   const handleSignOff = async (result: SignaturePadResult) => {
@@ -124,7 +147,7 @@ export default function TraineeProgress() {
 
     const signedProgress = {
       stationId: station.id,
-      skillsCompleted,
+      skillsCompleted: effectiveSkillsCompleted,
       signedOffBy: user.id,
       signedOffAt: record.signedAtIso,
     };
@@ -167,11 +190,23 @@ export default function TraineeProgress() {
       {documentModal && employee && user && (
         <TrainingDocumentModal
           documentId={documentModal.documentId}
+          stationId={documentModal.stationId}
           employee={employee}
           signerEmployee={user}
           skillName={station.skills.find((s) => s.id === documentModal.skillId)?.name ?? ''}
           onSigned={() => handleDocumentSigned(documentModal.skillId)}
           onClose={() => setDocumentModal(null)}
+        />
+      )}
+      {/* Onboarding doc modal — opens inline when a skill has an onboardingDocId */}
+      {onboardingDocModal && employee && user && (
+        <OnboardingDocModal
+          employeeId={params.employeeId}
+          docId={onboardingDocModal.docId}
+          employee={employee}
+          user={user}
+          onSigned={() => { handleDocumentSigned(onboardingDocModal.skillId); setOnboardingDocModal(null); }}
+          onClose={() => setOnboardingDocModal(null)}
         />
       )}
       <div className="mx-auto max-w-[1400px]">
@@ -299,7 +334,11 @@ export default function TraineeProgress() {
 
             <div className="mt-6 space-y-3">
               {station.skills.map((sk) => {
-                const checked = skillsCompleted.includes(sk.id);
+                const checked = effectiveSkillsCompleted.includes(sk.id);
+                const autoCheckedFromOnboarding =
+                  sk.onboardingDocId &&
+                  signedOnboardingDocIds.has(sk.onboardingDocId as OnboardingDocId) &&
+                  !skillsCompleted.includes(sk.id);
                 return (
                   <div
                     key={sk.id}
@@ -310,22 +349,22 @@ export default function TraineeProgress() {
                     } ${stationSigned ? 'opacity-90' : ''}`}
                   >
                     <div className="flex items-start gap-4">
-                      {/* Checkbox — manual toggle for skills without a document; auto-filled for doc skills */}
+                      {/* Checkbox — manual toggle for plain skills; auto-filled for onboarding-linked skills */}
                       <button
-                        onClick={() => !sk.documentId && toggleSkill(sk.id)}
-                        disabled={!canSignOff || stationSigned || !!sk.documentId}
-                        title={sk.documentId ? 'Sign the document below to mark complete' : undefined}
+                        onClick={() => !sk.onboardingDocId && toggleSkill(sk.id)}
+                        disabled={!canSignOff || stationSigned || !!sk.onboardingDocId}
+                        title={sk.onboardingDocId ? 'Complete the onboarding document to mark this done' : undefined}
                         className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-md border-2 transition ${
                           checked
                             ? 'border-emerald-500 bg-emerald-500 text-white'
-                            : sk.documentId
+                            : sk.onboardingDocId
                             ? 'border-cyan-300 bg-cyan-50'
                             : 'border-ink-300 bg-white hover:border-ink-500'
-                        } ${(!canSignOff || stationSigned || !!sk.documentId) ? 'cursor-default' : 'cursor-pointer'}`}
+                        } ${(!canSignOff || stationSigned || !!sk.onboardingDocId) ? 'cursor-default' : 'cursor-pointer'}`}
                       >
                         {checked ? (
                           <CheckCircle2 size={16} />
-                        ) : sk.documentId ? (
+                        ) : sk.onboardingDocId ? (
                           <FileText size={12} className="text-cyan-400" />
                         ) : null}
                       </button>
@@ -345,29 +384,35 @@ export default function TraineeProgress() {
                           ))}
                         </ul>
 
-                        {/* Document button — shown when skill has an associated document */}
-                        {sk.documentId && canSignOff && !stationSigned && (
+                        {/* Training document — shown when skill requires signing a training-specific doc */}
+                        {sk.documentId && !stationSigned && !checked && canSignOff && (
                           <div className="mt-3">
-                            {checked ? (
+                            <button
+                              onClick={() => setDocumentModal({ skillId: sk.id, documentId: sk.documentId!, stationId: station.id })}
+                              className="inline-flex items-center gap-2 rounded-lg border border-cyan-300 bg-cyan-50 px-3 py-1.5 text-xs font-semibold text-cyan-700 hover:bg-cyan-100 transition"
+                            >
+                              <FileText size={12} />
+                              View &amp; sign document
+                            </button>
+                          </div>
+                        )}
+
+                        {/* Onboarding doc link — shown when skill is tied to an onboarding document */}
+                        {sk.onboardingDocId && !stationSigned && (
+                          <div className="mt-3">
+                            {autoCheckedFromOnboarding ? (
                               <span className="inline-flex items-center gap-1 rounded-lg bg-emerald-100 px-3 py-1.5 text-xs font-semibold text-emerald-700">
-                                <CheckCircle2 size={12} /> Document signed &amp; filed
+                                <CheckCircle2 size={12} /> Signed in onboarding
                               </span>
                             ) : (
                               <button
-                                onClick={() =>
-                                  setDocumentModal({ skillId: sk.id, documentId: sk.documentId! })
-                                }
+                                onClick={() => setOnboardingDocModal({ skillId: sk.id, docId: sk.onboardingDocId as OnboardingDocId })}
                                 className="inline-flex items-center gap-2 rounded-lg border border-cyan-300 bg-cyan-50 px-3 py-1.5 text-xs font-semibold text-cyan-700 hover:bg-cyan-100 transition"
                               >
                                 <FileText size={12} />
-                                View &amp; sign document
+                                Sign onboarding document
                               </button>
                             )}
-                          </div>
-                        )}
-                        {sk.documentId && !canSignOff && !checked && (
-                          <div className="mt-2 text-xs text-ink-400">
-                            Requires a trainer or manager to open and sign the document.
                           </div>
                         )}
                       </div>

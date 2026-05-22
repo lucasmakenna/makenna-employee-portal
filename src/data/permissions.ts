@@ -129,7 +129,7 @@ export const MATRIX: Matrix = {
 
   // ──── Comms ────────────────────────────────────────────────
   'comms.post_announcement':        { admin: true, manager: true, lead: true,  trainer: false, barista: false },
-  'comms.pin_announcement':         { admin: true, manager: true, lead: false, trainer: false, barista: false },
+  'comms.pin_announcement':         { admin: true, manager: true, lead: true,  trainer: false, barista: false },
   'comms.message_team':             { admin: true, manager: true, lead: true,  trainer: true,  barista: false },
 
   // ──── Admin ────────────────────────────────────────────────

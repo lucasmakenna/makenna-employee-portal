@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import { FileText } from 'lucide-react';
 import SignaturePad, { SignaturePadResult } from '@/components/SignaturePad';
 import { format } from 'date-fns';
 
@@ -111,6 +112,8 @@ export default function W4Form({ employeeName, defaultFirstDateOfEmployment, onS
   });
   const [submitting, setSubmitting] = useState(false);
   const [errors, setErrors] = useState<Partial<Record<keyof W4Data, string>>>({});
+  const [previewLoading, setPreviewLoading] = useState(false);
+  const formRef = useRef<HTMLDivElement>(null);
 
   const set = (field: keyof W4Data, value: string | boolean) =>
     setData((prev) => ({ ...prev, [field]: value }));
@@ -137,8 +140,28 @@ export default function W4Form({ employeeName, defaultFirstDateOfEmployment, onS
     }
   };
 
+  const handlePreview = async () => {
+    if (!validate()) return;
+    setPreviewLoading(true);
+    try {
+      const res = await fetch('/api/forms/pdf/preview', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ docId: 'w4', formData: data }),
+      });
+      if (!res.ok) throw new Error('PDF generation failed');
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      window.open(url, '_blank');
+    } catch {
+      // silently fail
+    } finally {
+      setPreviewLoading(false);
+    }
+  };
+
   return (
-    <div className="space-y-0">
+    <div ref={formRef} className="space-y-0">
       {/* IRS Form Header */}
       <div className="rounded-t-xl border border-ink-200 bg-ink-800 text-white p-4 flex items-start justify-between">
         <div>
@@ -405,11 +428,28 @@ export default function W4Form({ employeeName, defaultFirstDateOfEmployment, onS
             <span>Employee's signature</span>
             <span>Date: {format(new Date(), 'MM/dd/yyyy')}</span>
           </div>
+          <button
+            type="button"
+            onClick={handlePreview}
+            disabled={previewLoading}
+            className="inline-flex items-center gap-2 rounded-lg border border-ink-300 bg-ink-50 px-4 py-2 text-sm font-semibold text-ink-700 hover:bg-ink-100 transition mb-4 disabled:opacity-50"
+          >
+            <FileText size={15} />
+            {previewLoading ? 'Generating…' : 'Preview filled PDF'}
+          </button>
           <SignaturePad onSubmit={handleSign} signerName={employeeName} />
           {Object.keys(errors).length > 0 && (
-            <p className="mt-2 text-sm text-hibiscus-500 font-medium">
-              Please fill in all required fields above before signing.
-            </p>
+            <div className="mt-3 rounded-xl border border-hibiscus-300 bg-hibiscus-50 px-4 py-3">
+              <p className="text-sm font-semibold text-hibiscus-700 mb-1">Complete these fields before signing:</p>
+              <ul className="space-y-0.5">
+                {errors.firstName && <li className="text-xs text-hibiscus-600">• First name</li>}
+                {errors.lastName && <li className="text-xs text-hibiscus-600">• Last name</li>}
+                {errors.ssn && <li className="text-xs text-hibiscus-600">• Social Security Number (9 digits)</li>}
+                {errors.address && <li className="text-xs text-hibiscus-600">• Home address</li>}
+                {errors.city && <li className="text-xs text-hibiscus-600">• City</li>}
+                {errors.zip && <li className="text-xs text-hibiscus-600">• ZIP code</li>}
+              </ul>
+            </div>
           )}
         </div>
 

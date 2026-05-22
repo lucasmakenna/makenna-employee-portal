@@ -49,6 +49,22 @@ export default function OnboardingDetail() {
     if (packet) setConsented(hasConsented(packet.employeeId));
   }, [packet]);
 
+  // Auto-open a specific doc when linked from training (e.g. ?open=i9)
+  useEffect(() => {
+    if (!packet) return;
+    const openDoc = new URLSearchParams(window.location.search).get('open');
+    if (!openDoc) return;
+    const task = packet.tasks.find((t) => t.id === openDoc);
+    if (!task || task.signed) return;
+    // Inline startSign logic (avoids TDZ — startSign is defined after early returns below)
+    if (!hasConsented(packet.employeeId)) {
+      setPendingTaskId(openDoc);
+    } else {
+      setActiveTaskId(openDoc);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [packet]);
+
   if (!packet || !user) {
     return (
       <AppShell>

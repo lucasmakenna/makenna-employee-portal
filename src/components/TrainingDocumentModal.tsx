@@ -32,6 +32,7 @@ import { format, parseISO } from 'date-fns';
 
 interface Props {
   documentId: string;
+  stationId: string;
   employee: Employee;
   /** The trainer / manager who is overseeing this step — or the employee themselves for self-serve. */
   signerEmployee: Employee;
@@ -42,6 +43,7 @@ interface Props {
 
 export default function TrainingDocumentModal({
   documentId,
+  stationId,
   employee,
   signerEmployee,
   skillName,
@@ -79,7 +81,7 @@ export default function TrainingDocumentModal({
         context: {
           kind: 'training_skill',
           employeeId: employee.id,
-          stationId: 'compliance-culture',
+          stationId,
           skillId: documentId,
         },
         signerEmployeeId: signerEmployee.id,
@@ -239,9 +241,18 @@ export default function TrainingDocumentModal({
                   <PenLine size={18} /> Sign &amp; Attest
                 </h3>
                 <p className="mb-4 text-sm text-ink-600">
-                  By signing below, {fullName(signerEmployee)} confirms the above document has been
-                  reviewed and completed for{' '}
-                  <strong>{fullName(employee)}</strong>.
+                  {signerEmployee.id === employee.id ? (
+                    <>
+                      By signing below, <strong>{fullName(employee)}</strong> confirms they have
+                      read, understood, and agree to the above document.
+                    </>
+                  ) : (
+                    <>
+                      By signing below, <strong>{fullName(signerEmployee)}</strong> confirms the
+                      above document has been reviewed and completed by{' '}
+                      <strong>{fullName(employee)}</strong>.
+                    </>
+                  )}
                 </p>
                 {error && (
                   <div className="mb-4 rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</div>

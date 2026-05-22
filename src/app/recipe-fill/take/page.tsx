@@ -1,7 +1,7 @@
 'use client';
 
 import { Suspense } from 'react';
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useMemo } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import clsx from 'clsx';
 import { CheckCircle, XCircle, ChevronRight, X, UserCheck } from 'lucide-react';
@@ -10,6 +10,37 @@ import { useRecipeFillAttempts, useEmployees } from '@/data/store';
 import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP, RECIPE_FILL_OPTIONS } from '@/data/recipe-fill';
 import { fullName } from '@/data/employees';
 import type { RecipeFillBlank, RecipeFillBlankType } from '@/types';
+
+/** Groups question IDs by drink, preserving first-occurrence order from the shuffled list. */
+function buildDrinkGroups(questionOrder: string[]) {
+  const drinkOrder: string[] = [];
+  const byDrink: Record<string, string[]> = {};
+  for (const id of questionOrder) {
+    const q = RECIPE_FILL_QUESTION_MAP[id];
+    if (!q) continue;
+    if (!byDrink[q.drink]) {
+      drinkOrder.push(q.drink);
+      byDrink[q.drink] = [];
+    }
+    byDrink[q.drink].push(id);
+  }
+  return drinkOrder.map((drink) => ({ drink, questionIds: byDrink[drink] }));
+}
+
+// Size label mapping (e.g. "12 oz" → "S", "16 oz" → "M", etc.)
+const SIZE_LABEL: Record<string, string> = {
+  '12 oz': 'S',
+  '16 oz': 'M',
+  '20 oz': 'L',
+  '24 oz': 'XL',
+};
+function sizeLabel(size: string) {
+  return SIZE_LABEL[size] ?? size;
+}
+
+function blankKey(questionId: string, blank: RecipeFillBlank) {
+  return `${questionId}-${blank.index}`;
+}
 
 function RecipeFillTakeInner() {
   const router = useRouter();
@@ -20,7 +51,7 @@ function RecipeFillTakeInner() {
 
   const [selections, setSelections] = useState<Record<string, string>>({});
   const [confirmed, setConfirmed] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentGroupIndex, setCurrentGroupIndex] = useState(0);
 
   const forEmployeeId = searchParams.get('for');
   const activeEmployeeId = forEmployeeId ?? user?.id;
@@ -28,79 +59,89 @@ function RecipeFillTakeInner() {
 
   const attempt = activeEmployeeId ? inProgress(activeEmployeeId) : undefined;
 
+  // Build drink groups once per attempt
+  const drinkGroups = useMemo(
+    () => (attempt ? buildDrinkGroups(attempt.questionOrder) : []),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [attempt?.id],
+  );
+  const totalGroups = drinkGroups.length;
+
+  // Resume: find first group that has any unanswered questions
   useEffect(() => {
-    if (attempt) {
-      // Resume: count answered questions (each question has N blanks, all saved at confirm)
-      const answeredQuestionIds = new Set(
-        Object.keys(attempt.answers).map((key) => key.split('-').slice(0, -1).join('-')),
-      );
-      const resumeIndex = attempt.questionOrder.findIndex((id) => !answeredQuestionIds.has(id));
-      setCurrentIndex(resumeIndex >= 0 ? resumeIndex : attempt.questionOrder.length);
-    }
+    if (!attempt || drinkGroups.length === 0) return;
+    const answeredKeys = new Set(Object.keys(attempt.answers));
+    const resumeIdx = drinkGroups.findIndex((g) =>
+      g.questionIds.some((qId) => {
+        const q = RECIPE_FILL_QUESTION_MAP[qId];
+        return q?.blanks.some((b) => !answeredKeys.has(blankKey(qId, b)));
+      }),
+    );
+    setCurrentGroupIndex(resumeIdx >= 0 ? resumeIdx : drinkGroups.length);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [!!attempt]);
+  }, [!!attempt, drinkGroups.length]);
 
   useEffect(() => {
     if (!user) return;
     if (!attempt) router.replace('/recipe-fill');
   }, [user, attempt, router]);
 
-  const resetQuestion = useCallback(() => {
+  const resetGroup = useCallback(() => {
     setSelections({});
     setConfirmed(false);
   }, []);
 
   if (!user || !attempt) return null;
 
-  const total = attempt.questionOrder.length;
-
-  if (currentIndex >= total) {
+  if (currentGroupIndex >= totalGroups) {
     complete(attempt.id, RECIPE_FILL_QUESTIONS);
     router.replace(`/recipe-fill/results/${attempt.id}`);
     return null;
   }
 
-  const questionId = attempt.questionOrder[currentIndex];
-  const question = RECIPE_FILL_QUESTION_MAP[questionId];
-  if (!question) return null;
+  const group = drinkGroups[currentGroupIndex];
+  const groupQuestions = group.questionIds.map((id) => RECIPE_FILL_QUESTION_MAP[id]).filter(Boolean);
 
-  const progressPct = Math.round((currentIndex / total) * 100);
+  // Sort sizes: S → M → L → XL
+  const SIZE_ORDER = ['12 oz', '16 oz', '20 oz', '24 oz'];
+  const sortedQuestions = [...groupQuestions].sort(
+    (a, b) => (SIZE_ORDER.indexOf(a.size) ?? 99) - (SIZE_ORDER.indexOf(b.size) ?? 99),
+  );
 
-  function blankKey(blank: RecipeFillBlank) {
-    return `${questionId}-${blank.index}`;
-  }
+  const progressPct = Math.round((currentGroupIndex / totalGroups) * 100);
 
   function allAnswered() {
-    return question.blanks.every((b) => (selections[blankKey(b)] ?? '') !== '');
+    return sortedQuestions.every((q) =>
+      q.blanks.every((b) => (selections[blankKey(q.id, b)] ?? '') !== ''),
+    );
   }
 
   function handleConfirm() {
     if (!allAnswered() || confirmed) return;
     setConfirmed(true);
-    question.blanks.forEach((b) => {
-      saveAnswer(attempt!.id, blankKey(b), selections[blankKey(b)] ?? '');
+    sortedQuestions.forEach((q) => {
+      q.blanks.forEach((b) => {
+        saveAnswer(attempt!.id, blankKey(q.id, b), selections[blankKey(q.id, b)] ?? '');
+      });
     });
   }
 
   function handleNext() {
-    const nextIndex = currentIndex + 1;
-    if (nextIndex >= total) {
+    const next = currentGroupIndex + 1;
+    if (next >= totalGroups) {
       complete(attempt!.id, RECIPE_FILL_QUESTIONS);
       router.push(`/recipe-fill/results/${attempt!.id}`);
       return;
     }
-    setCurrentIndex(nextIndex);
-    resetQuestion();
+    setCurrentGroupIndex(next);
+    resetGroup();
   }
 
-  // Group blanks into pairs: [qty, ingredient], [qty, ingredient], ...
-  const pairs: [RecipeFillBlank, RecipeFillBlank][] = [];
-  for (let i = 0; i < question.blanks.length; i += 2) {
-    pairs.push([question.blanks[i], question.blanks[i + 1]]);
-  }
-
-  const allCorrect =
-    confirmed && question.blanks.every((b) => (selections[blankKey(b)] ?? '') === b.correct);
+  const allGroupCorrect =
+    confirmed &&
+    sortedQuestions.every((q) =>
+      q.blanks.every((b) => (selections[blankKey(q.id, b)] ?? '') === b.correct),
+    );
 
   return (
     <div className="min-h-screen bg-page">
@@ -130,7 +171,7 @@ function RecipeFillTakeInner() {
         <div className="space-y-2">
           <div className="flex items-center justify-between text-sm text-ink-500">
             <span className="font-semibold text-ink-700">
-              Question {currentIndex + 1} <span className="font-normal">of {total}</span>
+              Drink {currentGroupIndex + 1} <span className="font-normal">of {totalGroups}</span>
             </span>
           </div>
           <div className="h-2 w-full rounded-full bg-ink-100 overflow-hidden">
@@ -141,112 +182,127 @@ function RecipeFillTakeInner() {
           </div>
         </div>
 
-        {/* Drink tag */}
-        <div className="flex items-center gap-2">
+        {/* Drink name */}
+        <div className="flex items-center gap-2 flex-wrap">
           <span className="rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold text-cyan-700">
-            {question.drink}
+            {group.drink}
           </span>
-          <span className="rounded-full bg-ink-100 px-3 py-1 text-xs font-medium text-ink-500">
-            {question.size}
+          <span className="text-xs text-ink-400">
+            {sortedQuestions.map((q) => sizeLabel(q.size)).join(' · ')}
           </span>
         </div>
 
-        {/* Recipe card with inline dropdowns */}
-        <div className="rounded-2xl border border-ink-100 bg-white p-6 shadow-soft space-y-4">
-          <p className="text-xs font-semibold uppercase tracking-wider text-ink-400 mb-2">
-            Fill in the recipe
+        {/* Recipe card — one section per size */}
+        <div className="rounded-2xl border border-ink-100 bg-white p-6 shadow-soft space-y-6">
+          <p className="text-xs font-semibold uppercase tracking-wider text-ink-400">
+            Fill in the recipe for each size
           </p>
 
-          {pairs.map(([qtyBlank, ingBlank], pairIdx) => {
-            const qtyKey = blankKey(qtyBlank);
-            const ingKey = blankKey(ingBlank);
-            const qtyVal = selections[qtyKey] ?? '';
-            const ingVal = selections[ingKey] ?? '';
+          {sortedQuestions.map((q) => {
+            // Group blanks into qty+ingredient pairs
+            const pairs: [RecipeFillBlank, RecipeFillBlank][] = [];
+            for (let i = 0; i < q.blanks.length; i += 2) {
+              pairs.push([q.blanks[i], q.blanks[i + 1]]);
+            }
 
-            const qtyCorrect = qtyVal === qtyBlank.correct;
-            const ingCorrect = ingVal === ingBlank.correct;
+            const sizeAllCorrect =
+              confirmed && q.blanks.every((b) => (selections[blankKey(q.id, b)] ?? '') === b.correct);
 
             return (
-              <div key={pairIdx} className="flex flex-wrap items-center gap-2">
-                {/* Quantity dropdown */}
-                <select
-                  value={qtyVal}
-                  disabled={confirmed}
-                  onChange={(e) => setSelections((prev) => ({ ...prev, [qtyKey]: e.target.value }))}
-                  className={clsx(
-                    'rounded-xl border-2 px-3 py-2 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-100',
+              <div key={q.id} className="space-y-3">
+                {/* Size header */}
+                <div className="flex items-center gap-2">
+                  <span className={clsx(
+                    'rounded-full px-2.5 py-0.5 text-xs font-bold',
                     !confirmed
-                      ? qtyVal
-                        ? 'border-cyan-300 bg-cyan-50 text-cyan-800'
-                        : 'border-ink-200 bg-white text-ink-500'
-                      : qtyCorrect
-                      ? 'border-emerald-300 bg-emerald-50 text-emerald-800'
-                      : 'border-hibiscus-300 bg-hibiscus-50 text-hibiscus-800',
+                      ? 'bg-ink-100 text-ink-600'
+                      : sizeAllCorrect
+                      ? 'bg-emerald-100 text-emerald-700'
+                      : 'bg-hibiscus-100 text-hibiscus-700',
+                  )}>
+                    {sizeLabel(q.size)} ({q.size})
+                  </span>
+                  {confirmed && (
+                    sizeAllCorrect
+                      ? <CheckCircle size={15} className="text-emerald-500" />
+                      : <XCircle size={15} className="text-hibiscus-400" />
                   )}
-                >
-                  <option value="">— qty —</option>
-                  {RECIPE_FILL_OPTIONS.quantity.map((opt) => (
-                    <option key={opt} value={opt}>{opt}</option>
-                  ))}
-                </select>
+                </div>
 
-                <span className="text-sm text-ink-500 font-medium">pumps of</span>
+                {/* Ingredient rows */}
+                <div className="space-y-2 pl-1">
+                  {pairs.map(([qtyBlank, ingBlank], pairIdx) => {
+                    const qtyKey = blankKey(q.id, qtyBlank);
+                    const ingKey = blankKey(q.id, ingBlank);
+                    const qtyVal = selections[qtyKey] ?? '';
+                    const ingVal = selections[ingKey] ?? '';
+                    const qtyCorrect = qtyVal === qtyBlank.correct;
+                    const ingCorrect = ingVal === ingBlank.correct;
 
-                {/* Ingredient dropdown */}
-                <select
-                  value={ingVal}
-                  disabled={confirmed}
-                  onChange={(e) => setSelections((prev) => ({ ...prev, [ingKey]: e.target.value }))}
-                  className={clsx(
-                    'flex-1 min-w-40 rounded-xl border-2 px-3 py-2 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-100',
-                    !confirmed
-                      ? ingVal
-                        ? 'border-cyan-300 bg-cyan-50 text-cyan-800'
-                        : 'border-ink-200 bg-white text-ink-500'
-                      : ingCorrect
-                      ? 'border-emerald-300 bg-emerald-50 text-emerald-800'
-                      : 'border-hibiscus-300 bg-hibiscus-50 text-hibiscus-800',
-                  )}
-                >
-                  <option value="">— ingredient —</option>
-                  {RECIPE_FILL_OPTIONS[ingBlank.type as RecipeFillBlankType].map((opt) => (
-                    <option key={opt} value={opt}>{opt}</option>
-                  ))}
-                </select>
+                    return (
+                      <div key={pairIdx} className="flex flex-wrap items-center gap-2">
+                        <select
+                          value={qtyVal}
+                          disabled={confirmed}
+                          onChange={(e) => setSelections((prev) => ({ ...prev, [qtyKey]: e.target.value }))}
+                          className={clsx(
+                            'rounded-xl border-2 px-3 py-2 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-100',
+                            !confirmed
+                              ? qtyVal ? 'border-cyan-300 bg-cyan-50 text-cyan-800' : 'border-ink-200 bg-white text-ink-500'
+                              : qtyCorrect ? 'border-emerald-300 bg-emerald-50 text-emerald-800' : 'border-hibiscus-300 bg-hibiscus-50 text-hibiscus-800',
+                          )}
+                        >
+                          <option value="">— qty —</option>
+                          {RECIPE_FILL_OPTIONS.quantity.map((opt) => (
+                            <option key={opt} value={opt}>{opt}</option>
+                          ))}
+                        </select>
 
-                {/* Feedback icons after confirm */}
-                {confirmed && (
-                  <div className="flex items-center gap-1">
-                    {qtyCorrect && ingCorrect ? (
-                      <CheckCircle size={18} className="text-emerald-500" />
-                    ) : (
-                      <XCircle size={18} className="text-hibiscus-400" />
-                    )}
+                        <span className="text-sm text-ink-500 font-medium">pumps of</span>
+
+                        <select
+                          value={ingVal}
+                          disabled={confirmed}
+                          onChange={(e) => setSelections((prev) => ({ ...prev, [ingKey]: e.target.value }))}
+                          className={clsx(
+                            'flex-1 min-w-40 rounded-xl border-2 px-3 py-2 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-100',
+                            !confirmed
+                              ? ingVal ? 'border-cyan-300 bg-cyan-50 text-cyan-800' : 'border-ink-200 bg-white text-ink-500'
+                              : ingCorrect ? 'border-emerald-300 bg-emerald-50 text-emerald-800' : 'border-hibiscus-300 bg-hibiscus-50 text-hibiscus-800',
+                          )}
+                        >
+                          <option value="">— ingredient —</option>
+                          {RECIPE_FILL_OPTIONS[ingBlank.type as RecipeFillBlankType].map((opt) => (
+                            <option key={opt} value={opt}>{opt}</option>
+                          ))}
+                        </select>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Correct answers revealed after wrong */}
+                {confirmed && !sizeAllCorrect && (
+                  <div className="ml-1 rounded-xl bg-emerald-50 border border-emerald-200 px-4 py-3 space-y-1">
+                    <p className="text-xs font-semibold text-emerald-700 uppercase tracking-wider mb-1">Correct — {sizeLabel(q.size)}</p>
+                    {pairs.map(([qtyBlank, ingBlank], pairIdx) => (
+                      <p key={pairIdx} className="text-sm text-emerald-800">
+                        <span className="font-bold">{qtyBlank.correct}</span> pumps of{' '}
+                        <span className="font-bold">{ingBlank.correct}</span>
+                      </p>
+                    ))}
                   </div>
                 )}
               </div>
             );
           })}
-
-          {/* Correct answers revealed after wrong */}
-          {confirmed && !allCorrect && (
-            <div className="mt-4 rounded-xl bg-emerald-50 border border-emerald-200 px-4 py-3 space-y-1">
-              <p className="text-xs font-semibold text-emerald-700 uppercase tracking-wider mb-2">Correct Recipe</p>
-              {pairs.map(([qtyBlank, ingBlank], pairIdx) => (
-                <p key={pairIdx} className="text-sm text-emerald-800">
-                  <span className="font-bold">{qtyBlank.correct}</span> pumps of{' '}
-                  <span className="font-bold">{ingBlank.correct}</span>
-                </p>
-              ))}
-            </div>
-          )}
         </div>
 
         {/* Feedback + action */}
         <div className="flex items-center justify-between min-h-[44px]">
           {confirmed ? (
-            <p className={clsx('text-sm font-semibold', allCorrect ? 'text-emerald-600' : 'text-hibiscus-500')}>
-              {allCorrect ? 'Perfect! All correct.' : 'Some blanks were wrong — see the correct recipe above.'}
+            <p className={clsx('text-sm font-semibold', allGroupCorrect ? 'text-emerald-600' : 'text-hibiscus-500')}>
+              {allGroupCorrect ? 'Perfect! All sizes correct.' : 'Some blanks were wrong — see correct recipes above.'}
             </p>
           ) : (
             <span />
@@ -270,7 +326,7 @@ function RecipeFillTakeInner() {
               onClick={handleNext}
               className="flex items-center gap-2 rounded-full bg-cyan-400 px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-cyan-500 transition"
             >
-              {currentIndex + 1 >= total ? 'See Results' : 'Next Question'}
+              {currentGroupIndex + 1 >= totalGroups ? 'See Results' : 'Next Drink'}
               <ChevronRight size={16} />
             </button>
           )}

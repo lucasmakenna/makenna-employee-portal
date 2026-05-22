@@ -6,11 +6,13 @@ import Link from 'next/link';
 import { Search, UserPlus, X } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
+import EmailPreview from '@/components/EmailPreview';
 import { useCurrentUser } from '@/lib/auth';
 import { fullName } from '@/data/employees';
 import { LOCATIONS, getLocation } from '@/data/locations';
 import { ROLES, ROLE_LABELS } from '@/types';
 import { useEmployees, usePackets } from '@/data/store';
+import { welcomeEmailFor } from '@/lib/email-templates';
 import type { Employee } from '@/types';
 
 const AVATAR_COLORS = [
@@ -27,6 +29,7 @@ export default function TeamPage() {
   const [role, setRole] = useState<string>('all');
   const [loc, setLoc] = useState<string>('all');
   const [showAdd, setShowAdd] = useState(false);
+  const [justAdded, setJustAdded] = useState<Employee | null>(null);
 
   useEffect(() => {
     if (loaded && !user) router.replace('/login');
@@ -38,7 +41,10 @@ export default function TeamPage() {
 
   const filtered = employees.filter((e) => {
     if (role !== 'all' && e.role !== role) return false;
-    if (loc !== 'all' && e.homeLocationId !== loc) return false;
+    if (loc !== 'all') {
+      const allLocs = [e.homeLocationId, ...(e.additionalLocationIds ?? [])];
+      if (!allLocs.includes(loc as import('@/types').LocationId)) return false;
+    }
     if (!search) return true;
     const q = search.toLowerCase();
     return (
@@ -142,7 +148,23 @@ export default function TeamPage() {
       {showAdd && (
         <AddEmployeeModal
           onClose={() => setShowAdd(false)}
-          onAdd={(emp) => { add(emp); createPacket(emp.id, emp.hiredOn); setShowAdd(false); }}
+          onAdd={(emp, sendEmail) => {
+            add(emp);
+            createPacket(emp.id, emp.hiredOn);
+            setShowAdd(false);
+            if (sendEmail) setJustAdded(emp);
+            else router.push(`/onboarding/${emp.id}`);
+          }}
+        />
+      )}
+
+      {justAdded && (
+        <EmailPreview
+          email={welcomeEmailFor(justAdded, justAdded.hiredOn, fullName(user))}
+          recipientLabel={`${justAdded.firstName} ${justAdded.lastName} (new hire)`}
+          goToActivationUrl={`/activate/${justAdded.id}`}
+          onClose={() => { setJustAdded(null); router.push(`/onboarding/${justAdded.id}`); }}
+          onSend={() => { setJustAdded(null); router.push(`/onboarding/${justAdded.id}`); }}
         />
       )}
     </AppShell>
@@ -154,7 +176,7 @@ function AddEmployeeModal({
   onAdd,
 }: {
   onClose: () => void;
-  onAdd: (emp: Employee) => void;
+  onAdd: (emp: Employee, sendEmail: boolean) => void;
 }) {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -163,6 +185,7 @@ function AddEmployeeModal({
   const [role, setRole] = useState<Employee['role']>('barista');
   const [locationId, setLocationId] = useState<Employee['homeLocationId']>(LOCATIONS[0].id as Employee['homeLocationId']);
   const [hiredOn, setHiredOn] = useState(new Date().toISOString().slice(0, 10));
+  const [sendEmail, setSendEmail] = useState(true);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -181,7 +204,7 @@ function AddEmployeeModal({
       avatarColor: color,
       active: true,
     };
-    onAdd(emp);
+    onAdd(emp, sendEmail);
   }
 
   return (
@@ -234,6 +257,15 @@ function AddEmployeeModal({
             <label className="label">Hire date</label>
             <input type="date" className="input w-full" value={hiredOn} onChange={(e) => setHiredOn(e.target.value)} required />
           </div>
+          <label className="flex items-center gap-2 cursor-pointer select-none text-sm text-ink-600">
+            <input
+              type="checkbox"
+              checked={sendEmail}
+              onChange={(e) => setSendEmail(e.target.checked)}
+              className="h-4 w-4 rounded border-ink-300 text-cyan-500 focus:ring-cyan-300"
+            />
+            Send welcome email to new hire
+          </label>
           <div className="flex gap-3 pt-2">
             <button type="button" onClick={onClose} className="btn-ghost flex-1">Cancel</button>
             <button type="submit" className="btn-cyan flex-1" disabled={!firstName || !lastName || !email}>

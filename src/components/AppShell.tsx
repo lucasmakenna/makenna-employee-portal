@@ -15,6 +15,8 @@ import {
   MessageSquare,
   Calendar,
   FlaskConical,
+  PartyPopper,
+  ShieldAlert,
 } from 'lucide-react';
 import clsx from 'clsx';
 import { useCurrentUser } from '@/lib/auth';
@@ -34,6 +36,8 @@ const NAV = [
   { href: '/training', icon: GraduationCap, label: 'Training' },
   { href: '/recipe-fill', icon: FlaskConical, label: 'Barista Test' },
   { href: '/team', icon: Users, label: 'Team' },
+  { href: '/milestones', icon: PartyPopper, label: 'Milestones' },
+  { href: '/accountability', icon: ShieldAlert, label: 'Accountability' },
   { href: '/locations', icon: MapPin, label: 'Locations' },
 ];
 

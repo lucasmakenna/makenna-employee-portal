@@ -11,12 +11,37 @@ import { RECIPE_FILL_PASSING_SCORE } from '@/types';
 import { fullName } from '@/data/employees';
 import { format } from 'date-fns';
 
+// ── Test size config ──────────────────────────────────────────────────────────
+const TEST_SIZES = [
+  { id: 'quick',    label: 'Quick Practice',  drinkCount: 20,  description: '~5–10 min' },
+  { id: 'standard', label: 'Standard Test',   drinkCount: 50,  description: '~15–20 min' },
+  { id: 'full',     label: 'Full Menu',        drinkCount: 9999, description: 'All 309 drinks' },
+] as const;
+type TestSizeId = typeof TEST_SIZES[number]['id'];
+
+/** Pick `count` random question IDs, keeping all sizes of a selected drink together */
+function sampleQuestions(allQuestions: typeof RECIPE_FILL_QUESTIONS, drinkCount: number): string[] {
+  // Group by drink
+  const drinkMap = new Map<string, string[]>();
+  for (const q of allQuestions) {
+    if (!drinkMap.has(q.drink)) drinkMap.set(q.drink, []);
+    drinkMap.get(q.drink)!.push(q.id);
+  }
+  // Shuffle drinks
+  const drinks = Array.from(drinkMap.keys()).sort(() => Math.random() - 0.5);
+  // Take first N drinks
+  const selected = drinks.slice(0, drinkCount);
+  // Return all question IDs for those drinks
+  return selected.flatMap((d) => drinkMap.get(d)!);
+}
+
 export default function RecipeFillPage() {
   const router = useRouter();
   const { user } = useCurrentUser();
   const { attempts, start, inProgress } = useRecipeFillAttempts();
   const { employees } = useEmployees();
   const [assignTo, setAssignTo] = useState('');
+  const [testSize, setTestSize] = useState<TestSizeId>('standard');
 
   if (!user) return null;
 
@@ -35,19 +60,23 @@ export default function RecipeFillPage() {
   const selectedEmployee = assignableEmployees.find((e) => e.id === assignTo);
   const assigneeActiveAttempt = assignTo ? inProgress(assignTo) : undefined;
 
+  const selectedSize = TEST_SIZES.find((s) => s.id === testSize) ?? TEST_SIZES[1];
+
   function handleStart() {
     if (activeAttempt) {
       router.push('/recipe-fill/take');
       return;
     }
-    start(user!.id, RECIPE_FILL_QUESTIONS.map((q) => q.id));
+    const ids = sampleQuestions(RECIPE_FILL_QUESTIONS, selectedSize.drinkCount);
+    start(user!.id, ids);
     router.push('/recipe-fill/take');
   }
 
   function handleAssignStart() {
     if (!assignTo) return;
     if (!assigneeActiveAttempt) {
-      start(assignTo, RECIPE_FILL_QUESTIONS.map((q) => q.id));
+      const ids = sampleQuestions(RECIPE_FILL_QUESTIONS, selectedSize.drinkCount);
+      start(assignTo, ids);
     }
     router.push(`/recipe-fill/take?for=${assignTo}`);
   }
@@ -63,7 +92,7 @@ export default function RecipeFillPage() {
           <div>
             <h1 className="text-2xl font-bold text-ink-800">Barista Test</h1>
             <p className="text-sm text-ink-500 mt-0.5">
-              {RECIPE_FILL_META.totalQuestions} questions · Passing score {RECIPE_FILL_PASSING_SCORE}% · Select the correct pump amounts and ingredients for each drink
+              309 drinks · Passing score {RECIPE_FILL_PASSING_SCORE}% · Select the correct pump amounts and ingredients for each drink
             </p>
           </div>
         </div>
@@ -122,6 +151,31 @@ export default function RecipeFillPage() {
           </div>
         )}
 
+        {/* Test size selector */}
+        {!activeAttempt && (
+          <div className="rounded-2xl border border-ink-100 bg-white p-5 shadow-soft">
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-ink-400 mb-3">Test Size</h2>
+            <div className="flex flex-wrap gap-2">
+              {TEST_SIZES.map((s) => (
+                <button
+                  key={s.id}
+                  onClick={() => setTestSize(s.id)}
+                  className={`flex flex-col rounded-xl border-2 px-4 py-3 text-left transition ${
+                    testSize === s.id
+                      ? 'border-cyan-400 bg-cyan-50'
+                      : 'border-ink-100 hover:border-cyan-200'
+                  }`}
+                >
+                  <span className="text-sm font-bold text-ink-700">{s.label}</span>
+                  <span className="text-xs text-ink-400 mt-0.5">
+                    {s.id === 'full' ? 'All 309 drinks' : `${s.drinkCount} drinks`} · {s.description}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* My Status */}
         <div className="rounded-2xl border border-ink-100 bg-white p-6 shadow-soft">
           <h2 className="text-sm font-semibold uppercase tracking-wider text-ink-400 mb-4">Your Status</h2>
@@ -165,7 +219,7 @@ export default function RecipeFillPage() {
                   className="flex items-center gap-2 rounded-full bg-cyan-400 px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:bg-cyan-500 transition"
                 >
                   <ChevronRight size={16} />
-                  Resume Test (Q{Object.keys(activeAttempt.answers).length / 2 + 1} of {RECIPE_FILL_META.totalQuestions})
+                  Resume Test
                 </button>
               ) : (
                 <button

@@ -15,7 +15,7 @@ import { TrainingStation } from '@/types';
  *   3.  Barista Basics I              (Days 3–4)
  *   4.  Barista Basics II             (Days 5–6)
  *   5.  Opening Operations & Service  (Day 7)
- *   6.  Bar Routine                   (Day 8)
+ *   6.  Beginner Barista Bar Routine   (Day 8)
  *   7.  Peak Prep & Rush Hour         (Day 9)
  *   8.  Closing Operations            (Day 10)
  *   9.  Supervised Practice           (Days 11–13)
@@ -97,7 +97,7 @@ export const STATIONS: TrainingStation[] = [
         name: '1.1 W-4 Federal Tax Withholding — Completed & Filed',
         description: 'New Hire completes IRS Form W-4 for federal tax withholding and the original is filed.',
         estimatedMinutes: 10,
-        documentId: 'w4',
+        onboardingDocId: 'w4',
         steps: [
           'Complete W-4 Federal Withholding form with New Hire.',
           'Manager retains original and scans a copy into the employee file.',
@@ -109,7 +109,7 @@ export const STATIONS: TrainingStation[] = [
         name: '1.1 I-9 Employment Eligibility — 2 Documents Verified & Filed',
         description: 'New Hire completes Form I-9 with 2 acceptable eligibility documents verified by the manager.',
         estimatedMinutes: 10,
-        documentId: 'i9',
+        onboardingDocId: 'i9',
         steps: [
           'Complete Form I-9: verify the New Hire brought 2 acceptable eligibility documents (see I-9 page 2 for full list).',
           'Manager inspects originals and retains copies in the employee file.',
@@ -121,7 +121,7 @@ export const STATIONS: TrainingStation[] = [
         name: '1.1 Employee Handbook Acknowledgment — Signed & Filed',
         description: 'New Hire reviews and signs the Employee Handbook Acknowledgment form.',
         estimatedMinutes: 10,
-        documentId: 'handbook_ack',
+        onboardingDocId: 'handbook',
         steps: [
           'Confirm New Hire has read (or is reading) the handbook.',
           'Have New Hire sign the Employee Handbook Acknowledgment form.',
@@ -134,7 +134,7 @@ export const STATIONS: TrainingStation[] = [
         name: '1.1 Harassment Policy Review & Signature — Filed',
         description: 'New Hire reviews and signs the Harassment Policy Review form.',
         estimatedMinutes: 10,
-        documentId: 'harassment_policy_ack',
+        onboardingDocId: 'harassment_attestation',
         steps: [
           'Walk New Hire through the Harassment Policy.',
           'Have New Hire sign the Harassment Policy Review Form.',
@@ -207,7 +207,7 @@ export const STATIONS: TrainingStation[] = [
         name: '1.3 Makenna NDA — Signed & Filed',
         description: 'New Hire signs the Makenna Koffee Nondisclosure Agreement. Filed in Homebase.',
         estimatedMinutes: 10,
-        documentId: 'nda',
+        onboardingDocId: 'nda',
         steps: [
           'Review and sign the Makenna Nondisclosure Agreement (Makenna Nondisclosure Agreement.pdf).',
           'File signed NDA in Homebase.',

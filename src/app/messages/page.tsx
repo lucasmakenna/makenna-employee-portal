@@ -32,7 +32,7 @@ export default function MessagesPage() {
   const sp = useSearchParams();
   const { user, loaded } = useCurrentUser();
   const { conversations, visibleTo, update: updateConv } = useConversations();
-  const { send, forConversation, lastMessage, unreadCount, markRead } = useMessages();
+  const { send, forConversation, lastMessage, unreadCount, markRead, togglePin } = useMessages();
   const { getById } = useEmployees();
   const [activeId, setActiveId] = useState<string | null>(sp.get('c'));
   const [draft, setDraft] = useState('');
@@ -171,6 +171,32 @@ export default function MessagesPage() {
                   )}
                 </div>
 
+                {/* Pinned messages strip */}
+                {thread.some((m) => m.pinned) && (
+                  <div className="border-b border-amber-200 bg-amber-50 px-4 py-2 space-y-1">
+                    <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-amber-600 mb-1">
+                      <Pin size={11} /> Pinned
+                    </div>
+                    {thread.filter((m) => m.pinned).map((m) => (
+                      <div key={m.id} className="flex items-start justify-between gap-2 rounded-lg bg-white border border-amber-200 px-3 py-1.5">
+                        <p className="text-xs text-ink-700 line-clamp-1">
+                          <span className="font-semibold text-ink-500">{m.authorName.split(' ')[0]}:</span>{' '}
+                          {m.body}
+                        </p>
+                        {can(user.role, 'comms.pin_announcement') && (
+                          <button
+                            onClick={() => togglePin(m.id)}
+                            className="shrink-0 text-amber-400 hover:text-amber-700 transition"
+                            title="Unpin"
+                          >
+                            <Pin size={12} />
+                          </button>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
                 <div className="flex-1 overflow-y-auto p-4 space-y-3">
                   {thread.length === 0 && (
                     <p className="text-center text-sm text-ink-400 py-12">No messages yet.</p>
@@ -178,10 +204,11 @@ export default function MessagesPage() {
                   {thread.map((m) => {
                     const isMe = m.authorId === user.id;
                     const author = getById(m.authorId);
+                    const canPin = can(user.role, 'comms.pin_announcement');
                     return (
                       <div
                         key={m.id}
-                        className={`flex gap-2 ${isMe ? 'flex-row-reverse' : ''}`}
+                        className={`group flex gap-2 ${isMe ? 'flex-row-reverse' : ''}`}
                       >
                         {author && <Avatar employee={author} size="sm" />}
                         <div className={`flex flex-col ${isMe ? 'items-end' : 'items-start'} max-w-[75%]`}>
@@ -193,6 +220,20 @@ export default function MessagesPage() {
                               <span className="pill bg-hibiscus-50 text-hibiscus-500 ml-1">
                                 <Megaphone size={9} /> Announcement
                               </span>
+                            )}
+                            {m.pinned && (
+                              <span className="pill bg-amber-100 text-amber-600 ml-1">
+                                <Pin size={9} /> Pinned
+                              </span>
+                            )}
+                            {canPin && (
+                              <button
+                                onClick={() => togglePin(m.id)}
+                                className="ml-1 opacity-0 group-hover:opacity-100 transition text-ink-400 hover:text-amber-500"
+                                title={m.pinned ? 'Unpin' : 'Pin message'}
+                              >
+                                <Pin size={12} className={m.pinned ? 'text-amber-500' : ''} />
+                              </button>
                             )}
                           </div>
                           <div

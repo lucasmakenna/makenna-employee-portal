@@ -51,7 +51,10 @@ export type Employee = {
   email: string;
   phone: string;
   role: Role;
+  /** Primary / home location */
   homeLocationId: LocationId;
+  /** Additional locations this employee works at (e.g. cross-trained, floater) */
+  additionalLocationIds?: LocationId[];
   hiredOn: string; // ISO
   birthday?: string; // MM-DD
   certifications: Certification[];
@@ -236,6 +239,13 @@ export type TrainingSkill = {
    * Signing the document automatically marks the skill complete.
    */
   documentId?: string;
+  /**
+   * If set, this skill is completed by signing the corresponding onboarding document.
+   * Value maps to an onboarding task id (e.g. 'w4', 'i9').
+   * The training page auto-checks this skill when the onboarding doc is signed,
+   * and shows a "Go to Onboarding" button when it isn't.
+   */
+  onboardingDocId?: string;
 };
 
 export type TrainingSignoff = {
@@ -358,6 +368,47 @@ export type RecipeFillAttempt = {
   answers: RecipeFillAnswers;
   score?: number;
   passed?: boolean;
+};
+
+// Accountability & HR Records
+export type AccountabilityType = 'write_up' | 'verbal_warning' | 'final_warning' | 'suspension' | 'termination' | 'resignation' | 'pip';
+
+export const ACCOUNTABILITY_LABELS: Record<AccountabilityType, string> = {
+  write_up: 'Written Warning',
+  verbal_warning: 'Verbal Warning',
+  final_warning: 'Final Warning',
+  suspension: 'Suspension',
+  termination: 'Termination',
+  resignation: 'Resignation',
+  pip: 'Performance Improvement Plan',
+};
+
+export const ACCOUNTABILITY_COLORS: Record<AccountabilityType, string> = {
+  write_up: 'bg-amber-100 text-amber-700',
+  verbal_warning: 'bg-yellow-100 text-yellow-700',
+  final_warning: 'bg-orange-100 text-orange-700',
+  suspension: 'bg-red-100 text-red-700',
+  termination: 'bg-red-200 text-red-800',
+  resignation: 'bg-ink-100 text-ink-600',
+  pip: 'bg-blue-100 text-blue-700',
+};
+
+export type AccountabilityRecord = {
+  id: string;
+  employeeId: string;
+  type: AccountabilityType;
+  issuedAt: string; // ISO date
+  issuedByEmployeeId: string;
+  issuedByName: string;
+  locationId: string;
+  title: string;
+  description: string;
+  /** Employee's acknowledgment signature (e-sign) — captured when they read it in the portal */
+  employeeAcknowledgedAt?: string;
+  /** Attachments / notes added later */
+  followUpNotes?: string;
+  /** For termination/resignation: last day */
+  separationDate?: string;
 };
 
 export const RECIPE_FILL_PASSING_SCORE = 90;

@@ -43,13 +43,13 @@ html, body {
     @apply btn bg-cyan-50 text-cyan-600 hover:bg-cyan-100;
   }
   .btn-cyan {
-    @apply btn bg-cyan-400 text-white hover:bg-cyan-500;
+    @apply btn bg-cyan-400 text-white hover:bg-cyan-500 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-cyan-400;
   }
   .btn-hibiscus {
-    @apply btn bg-hibiscus-400 text-white hover:bg-hibiscus-500;
+    @apply btn bg-hibiscus-400 text-white hover:bg-hibiscus-500 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-hibiscus-400;
   }
   .btn-ghost {
-    @apply btn text-ink-700 hover:bg-ink-50;
+    @apply btn text-ink-700 hover:bg-ink-50 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent;
   }
   .card {
     @apply rounded-2xl bg-white shadow-soft border border-ink-100;

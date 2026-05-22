@@ -35,28 +35,9 @@ export type TrainingDocumentTemplate = {
 };
 
 export const TRAINING_DOCUMENT_TEMPLATES: TrainingDocumentTemplate[] = [
-  // ── Government Forms ────────────────────────────────────────────────────
-  {
-    id: 'w4',
-    title: 'IRS Form W-4 — Federal Tax Withholding',
-    description: 'Federal withholding. Download, complete, and return the original to your manager.',
-    type: 'external',
-    externalUrl: '/forms/w4.pdf',
-    templateBody:
-      'I have completed IRS Form W-4 truthfully and to the best of my knowledge. I understand that the information I have provided will be used to determine the federal income tax withheld from my pay. I will notify Makenna Koffee in writing if my filing status, dependents, or other tax-related information changes. Under penalties of perjury, I declare that this certificate, to the best of my knowledge and belief, is true, correct, and complete.',
-    populatedFields: ['firstName', 'lastName', 'hireDate'],
-  },
-  {
-    id: 'i9',
-    title: 'USCIS Form I-9 — Employment Eligibility Verification',
-    description: 'Work authorization. Bring 2 acceptable documents on Day 1.',
-    type: 'external',
-    externalUrl: '/forms/i9.pdf',
-    templateBody:
-      "I attest, under penalty of perjury, that I am a citizen or national of the United States, a lawful permanent resident, or an alien authorized to work in the United States. I will present original supporting documentation to my Makenna Koffee Store Manager for in-person inspection on or before my first day of paid work — either one List A document (such as a U.S. passport) OR one List B document (such as a driver's license) and one List C document (such as a Social Security card). If I am under 18 years of age, I will also provide a current school work permit. I understand that my employment is contingent on this verification per federal law.",
-    populatedFields: ['firstName', 'lastName', 'hireDate'],
-  },
   // ── Makenna Koffee Custom Forms ─────────────────────────────────────────
+  // Note: W-4 and I-9 are handled by OnboardingDocModal with inline W4Form/I9Form,
+  // not by TrainingDocumentModal, so they are not listed here.
   {
     id: 'handbook_ack',
     title: 'Employee Handbook Acknowledgement',
