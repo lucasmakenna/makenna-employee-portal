@@ -1,6 +1,6 @@
 'use client';
 
-import { Download, ExternalLink, FileText, Lock } from 'lucide-react';
+import { ExternalLink, FileText, Lock } from 'lucide-react';
 import SignaturePad, { SignaturePadResult } from '@/components/SignaturePad';
 
 interface PDFFormViewerProps {
@@ -44,23 +44,15 @@ export default function PDFFormViewer({
             <p className="text-xs text-ink-400 mt-0.5">Official government form · PDF</p>
           </div>
         </div>
-        <div className="flex gap-3 border-t border-ink-100 px-5 py-3 bg-ink-50">
+        <div className="border-t border-ink-100 px-5 py-3 bg-ink-50">
           <a
             href={pdfUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-cyan-400 px-4 py-2.5 text-sm font-semibold text-white hover:bg-cyan-500 transition"
+            className="flex w-full items-center justify-center gap-2 rounded-xl bg-cyan-400 px-4 py-2.5 text-sm font-semibold text-white hover:bg-cyan-500 transition"
           >
             <ExternalLink size={15} />
             View Form
-          </a>
-          <a
-            href={pdfUrl}
-            download
-            className="flex items-center justify-center gap-2 rounded-xl border border-ink-200 bg-white px-4 py-2.5 text-sm font-semibold text-ink-600 hover:bg-ink-50 transition"
-          >
-            <Download size={15} />
-            Download
           </a>
         </div>
       </div>
