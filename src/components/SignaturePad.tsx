@@ -20,6 +20,12 @@ export default function SignaturePad({
   const [mode, setMode] = useState<'type' | 'draw'>('type');
   const [name, setName] = useState(signerName);
 
+  // Sync if the parent resolves the employee name asynchronously after mount
+  // (useState only captures the initial value — this keeps the field correct)
+  useEffect(() => {
+    setName(signerName);
+  }, [signerName]);
+
   // Draw mode state
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [drawing, setDrawing] = useState(false);
