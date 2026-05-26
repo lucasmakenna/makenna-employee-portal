@@ -192,7 +192,7 @@ export default function TraineeProgress() {
           documentId={documentModal.documentId}
           stationId={documentModal.stationId}
           employee={employee}
-          signerEmployee={user}
+          signerEmployee={employee}
           skillName={station.skills.find((s) => s.id === documentModal.skillId)?.name ?? ''}
           onSigned={() => handleDocumentSigned(documentModal.skillId)}
           onClose={() => setDocumentModal(null)}
