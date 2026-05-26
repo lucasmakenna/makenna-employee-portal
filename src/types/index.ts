@@ -124,6 +124,7 @@ export type OnboardingDocId =
   | 'handbook'
   | 'food_handler_attestation'
   | 'harassment_attestation'
+  | 'meal_period_waiver'
   | 'direct_deposit'
   | 'emergency_contact';
 

@@ -54,6 +54,29 @@ export const ONBOARDING_DOCS: {
     templateBody: `I acknowledge that I have received, read, and understand the Makenna Koffee Employee Handbook. I agree to comply with the policies and procedures outlined in it, including those covering attendance, scheduling, conduct, dress code, harassment-free workplace, drug and alcohol use, and discipline. I understand that my employment is at-will and that the handbook may be updated from time to time, with current versions provided to me through this portal.`,
   },
   {
+    id: 'meal_period_waiver',
+    title: 'Meal Period Waiver',
+    description: 'California Labor Code §512 requires a 30-minute unpaid meal period for shifts over 5 hours. By mutual consent, this meal period may be waived for shifts of 6 hours or less.',
+    required: true,
+    templateBody: `CALIFORNIA MEAL PERIOD WAIVER — Labor Code §512 / IWC Wage Order No. 5
+
+By signing below, I voluntarily and knowingly waive my right to a first off-duty meal period on any workday on which my total daily work period is no more than six (6) hours, pursuant to California Labor Code §512(a) and applicable IWC Wage Order No. 5.
+
+I understand and agree to the following:
+
+1. RIGHT TO MEAL PERIOD. California law entitles me to an uninterrupted, off-duty, 30-minute meal period when I work more than five (5) hours in a day.
+
+2. WAIVER CONDITIONS. This waiver applies only on shifts where my total work period does not exceed six (6) hours. On any shift exceeding six (6) hours, I am entitled to a full 30-minute meal period and this waiver does not apply.
+
+3. SECOND MEAL PERIOD. If I work more than ten (10) hours in a day, I am entitled to a second 30-minute meal period. That second meal period may be waived by mutual consent only if my total hours do not exceed twelve (12) AND I did not waive the first meal period. A separate written agreement is required for any second meal period waiver.
+
+4. VOLUNTARY & REVOCABLE. This waiver is entirely voluntary. I may revoke it at any time by providing written notice to my Store Manager. Revocation does not affect my continued employment.
+
+5. NO RETALIATION. I understand that Makenna Koffee will not retaliate against me for exercising my right to a meal period or for revoking this waiver.
+
+This waiver is entered into by mutual consent of employee and employer.`,
+  },
+  {
     id: 'food_handler_attestation',
     title: 'Food Handler Certification (ServSafe)',
     description: 'Complete the ServSafe California Food Handler course on your first day using the in-store tablet. Makenna covers the fee and is paid training. The card is valid within 30 days of hire and is good for 3 years — renew before it expires.',
