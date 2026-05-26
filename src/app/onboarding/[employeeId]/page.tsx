@@ -76,7 +76,11 @@ export default function OnboardingDetail() {
 
   const employee = getEmployeeById(packet.employeeId);
   const trainer = packet.trainerEmployeeId ? getEmployeeById(packet.trainerEmployeeId) : null;
-  if (!employee) return null;
+  if (!employee) return (
+    <AppShell>
+      <p>Employee record not found.</p>
+    </AppShell>
+  );
 
   const total = packet.tasks.length;
   const done = packet.tasks.filter((t) => t.signed).length;

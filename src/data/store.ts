@@ -381,9 +381,14 @@ export function useEmployees() {
       .order('hired_on', { ascending: true })
       .then(({ data }) => {
         if (data && data.length > 0) {
-          const next = data.map((r) => employeeFromRow(r as Record<string, unknown>));
-          setList(next);
-          saveEmployees(next);
+          setList((prev) => {
+            const remote = data.map((r) => employeeFromRow(r as Record<string, unknown>));
+            const map = new Map<string, Employee>(prev.map((e) => [e.id, e]));
+            remote.forEach((e) => map.set(e.id, e));
+            const merged = Array.from(map.values());
+            saveEmployees(merged);
+            return merged;
+          });
         }
       });
   }, []);
