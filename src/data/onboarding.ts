@@ -63,9 +63,9 @@ export const ONBOARDING_DOCS: {
   {
     id: 'harassment_attestation',
     title: 'Harassment Prevention Training',
-    description: 'California SB 1343 requires all team members to complete harassment prevention training within 6 months of hire — 1 hour for crew, 2 hours for supervisors. We provide the curriculum in-house. This will be repeated every 2 years.',
+    description: 'California SB 1343 requires all team members to complete harassment prevention training within 6 months of hire — 1 hour for crew, 2 hours for supervisors. Complete the free state-provided course at calcivilrights.ca.gov/shpt, screenshot your completion screen, and upload it here before signing.',
     required: true,
-    templateBody: `I acknowledge the obligation under California SB 1343 to complete harassment prevention training within 6 months of my date of hire (1 hour for non-supervisory employees, 2 hours for supervisors), and to repeat the training every 2 years. I will complete the training through the curriculum provided by Makenna Koffee and provide my certificate of completion for retention.`,
+    templateBody: `I acknowledge the obligation under California SB 1343 to complete harassment prevention training within 6 months of my date of hire (1 hour for non-supervisory employees, 2 hours for supervisors), and to repeat the training every 2 years. I have completed the California Civil Rights Department's free online Harassment Prevention Training (https://calcivilrights.ca.gov/shpt/) and have uploaded my completion screenshot for retention. I understand that this training must be repeated every 2 years.`,
   },
   {
     id: 'nda',

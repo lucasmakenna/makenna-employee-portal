@@ -141,6 +141,8 @@ export type OnboardingTask = {
   formData?: Record<string, unknown>;
   /** Supabase Storage URL for the generated filled PDF. */
   pdfStorageUrl?: string;
+  /** Compressed screenshot data URL for external training completions (e.g. SHPT). */
+  completionProofDataUrl?: string;
 };
 
 // ---------------------------------------------------------------------------

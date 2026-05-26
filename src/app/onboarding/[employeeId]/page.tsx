@@ -19,6 +19,7 @@ import ESIGNConsentGate from '@/components/ESIGNConsentGate';
 import W4Form, { W4Data } from '@/components/W4Form';
 import I9Form, { I9Data, I9Signatures } from '@/components/I9Form';
 import FormSheet from '@/components/FormSheet';
+import HarassmentTrainingUpload, { HarassmentTrainingResult } from '@/components/HarassmentTrainingUpload';
 import { useCurrentUser } from '@/lib/auth';
 import { getDocTemplate } from '@/data/onboarding';
 import { fullName } from '@/data/employees';
@@ -223,6 +224,39 @@ export default function OnboardingDetail() {
     setActiveTaskId(null);
   };
 
+  const handleHarassmentSign = async (result: HarassmentTrainingResult) => {
+    const tpl = getDocTemplate('harassment_attestation');
+    const geo = await tryGetGeolocation();
+    const prior = await getMostRecentRecord();
+    const record = await stampSignature({
+      context: { kind: 'onboarding', employeeId: packet.employeeId, docId: 'harassment_attestation' },
+      signerEmployeeId: packet.employeeId,
+      signerLegalName: result.signature.signerLegalName,
+      documentTitle: tpl?.title ?? 'Harassment Prevention Training',
+      documentBody: tpl?.templateBody ?? '',
+      signatureImagePngDataUrl: result.signature.signaturePngDataUrl,
+      consentAcknowledged: true,
+      priorRecord: prior,
+      geo,
+    });
+    appendSignature(record);
+    updatePacket(packet.employeeId, {
+      tasks: packet.tasks.map((t) =>
+        t.id === 'harassment_attestation'
+          ? {
+              ...t,
+              signed: true,
+              signedAt: record.signedAtIso,
+              signedByName: result.signature.signerLegalName,
+              signatureRecordId: record.id,
+              completionProofDataUrl: result.completionProofDataUrl,
+            }
+          : t,
+      ),
+    });
+    setActiveTaskId(null);
+  };
+
   const handleManagerSignOff = () => {
     updatePacket(packet.employeeId, {
       managerSignOff: {
@@ -271,6 +305,23 @@ export default function OnboardingDetail() {
           />
         </FormSheet>
       )}
+
+      {/* Harassment Prevention — full-screen sheet */}
+      {activeTaskId === 'harassment_attestation' &&
+        !packet.tasks.find((t) => t.id === 'harassment_attestation')?.signed && (
+          <FormSheet
+            title="Harassment Prevention Training"
+            subtitle="California SB 1343 · CA Civil Rights Dept."
+            onClose={() => setActiveTaskId(null)}
+          >
+            <HarassmentTrainingUpload
+              signerName={fullName(employee)}
+              templateBody={getDocTemplate('harassment_attestation')?.templateBody ?? ''}
+              onSubmit={handleHarassmentSign}
+              onCancel={() => setActiveTaskId(null)}
+            />
+          </FormSheet>
+        )}
 
       {pendingTaskId && (
         <ESIGNConsentGate
@@ -405,7 +456,7 @@ export default function OnboardingDetail() {
                 startSign(t.id);
               };
 
-              if (t.id === 'w4' || t.id === 'i9') {
+              if (t.id === 'w4' || t.id === 'i9' || t.id === 'harassment_attestation') {
                 const formToggle = () => {
                   if (t.signed) {
                     if (t.signatureRecordId) router.push(`/onboarding/${packet.employeeId}/certificate/${t.signatureRecordId}`);
@@ -414,7 +465,9 @@ export default function OnboardingDetail() {
                   startSign(t.id);
                 };
                 return (
-                  <TaskRow key={t.id} task={t} expanded={false} onToggle={formToggle} onSign={() => {}} />
+                  <TaskRow key={t.id} task={t} expanded={false} onToggle={formToggle} onSign={() => {}}
+                    completionProofDataUrl={t.completionProofDataUrl}
+                  />
                 );
               }
 
@@ -444,6 +497,7 @@ function TaskRow({
   onSign,
   signerName,
   templateBody,
+  completionProofDataUrl,
   children,
 }: {
   task: OnboardingTask;
@@ -452,6 +506,7 @@ function TaskRow({
   onSign: (result: SignaturePadResult) => void;
   signerName?: string;
   templateBody?: string;
+  completionProofDataUrl?: string;
   children?: React.ReactNode;
 }) {
   return (
@@ -487,6 +542,17 @@ function TaskRow({
             )}
           </div>
           <p className="mt-1 line-clamp-2 text-sm text-ink-400">{task.description}</p>
+          {/* Completion proof thumbnail (harassment training) */}
+          {task.signed && completionProofDataUrl && (
+            <div className="mt-2 flex items-center gap-2">
+              <img
+                src={completionProofDataUrl}
+                alt="Completion proof"
+                className="h-10 w-16 rounded border border-emerald-200 object-cover"
+              />
+              <span className="text-xs text-emerald-700 font-semibold">Completion screenshot on file</span>
+            </div>
+          )}
         </div>
         <span className="hidden sm:block text-sm font-semibold text-ink-400">
           {task.signed ? 'View certificate' : expanded ? 'Close' : 'Sign'}
