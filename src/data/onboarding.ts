@@ -99,6 +99,39 @@ This waiver is entered into by mutual consent of employee and employer.`,
   },
 ];
 
+/**
+ * Work permit document — NOT included in the default onboarding packet.
+ * Dynamically injected by the onboarding page when the I-9 date of birth
+ * reveals the employee is under 18.
+ */
+export const WORK_PERMIT_DOC: {
+  id: OnboardingDocId;
+  title: string;
+  description: string;
+  required: boolean;
+  templateBody: string;
+} = {
+  id: 'work_permit',
+  title: 'California Work Permit',
+  description: 'California law requires all employees under 18 to have a valid work permit (CDE Form B1-4) issued by their school district. Present your current permit on Day 1. Permits expire at the end of each school year and must be renewed.',
+  required: true,
+  templateBody: `CALIFORNIA MINOR WORK PERMIT — Manager Attestation
+
+I, the undersigned manager/authorized employer representative of Makenna Koffee Company, attest that:
+
+1. PERMIT INSPECTED. I have physically inspected the California Work Permit (CDE Form B1-4) presented by this minor employee and verified that it is current, valid, and authorizes employment at this establishment.
+
+2. PHOTO ON FILE. I have photographed the permit and uploaded it to this portal for retention in the employee's file.
+
+3. WORK HOUR COMPLIANCE. I understand that California law (Education Code §49112) restricts the hours a minor may work based on their age, school enrollment status, and whether school is in session. I will schedule this employee in compliance with these restrictions at all times.
+
+4. PERMIT RENEWAL. I understand that work permits typically expire at the end of the school year. I will ensure the employee provides a renewed permit before their current permit expires, and will suspend their schedule if a valid permit is not on file.
+
+5. PERMIT REVOCATION. If the school revokes this employee's work permit, I understand that Makenna Koffee is required by law to immediately cease their employment until a new valid permit is obtained.
+
+By signing below, I confirm that I have reviewed the physical work permit and that all information uploaded is accurate.`,
+};
+
 export function freshPacket(employeeId: string, startDate: string, trainerId?: string): OnboardingPacket {
   return {
     employeeId,

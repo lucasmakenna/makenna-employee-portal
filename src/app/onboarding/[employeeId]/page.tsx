@@ -20,8 +20,9 @@ import W4Form, { W4Data } from '@/components/W4Form';
 import I9Form, { I9Data, I9Signatures } from '@/components/I9Form';
 import FormSheet from '@/components/FormSheet';
 import HarassmentTrainingUpload, { HarassmentTrainingResult } from '@/components/HarassmentTrainingUpload';
+import WorkPermitUpload, { WorkPermitResult } from '@/components/WorkPermitUpload';
 import { useCurrentUser } from '@/lib/auth';
-import { getDocTemplate } from '@/data/onboarding';
+import { getDocTemplate, WORK_PERMIT_DOC } from '@/data/onboarding';
 import { fullName } from '@/data/employees';
 import { getLocation } from '@/data/locations';
 import { useEmployees, usePackets } from '@/data/store';
@@ -214,13 +215,32 @@ export default function OnboardingDetail() {
       geo,
     });
     appendSignature(emplorRecord);
-    updatePacket(packet.employeeId, {
-      tasks: packet.tasks.map((t) =>
-        t.id === 'i9'
-          ? { ...t, signed: true, signedAt: emplorRecord.signedAtIso, signedByName: signatures.employer.signerLegalName, signatureRecordId: empRecord.id, formData: formData as unknown as Record<string, unknown> }
-          : t,
-      ),
-    });
+    const updatedTasks = packet.tasks.map((t) =>
+      t.id === 'i9'
+        ? { ...t, signed: true, signedAt: emplorRecord.signedAtIso, signedByName: signatures.employer.signerLegalName, signatureRecordId: empRecord.id, formData: formData as unknown as Record<string, unknown> }
+        : t,
+    );
+
+    // Auto-add work permit task if DOB reveals employee is under 18
+    if (formData.dateOfBirth && !packet.tasks.find((t) => t.id === 'work_permit')) {
+      const [yr, mo, dy] = formData.dateOfBirth.split('-').map(Number);
+      const dob = new Date(yr, mo - 1, dy);
+      const today = new Date();
+      let age = today.getFullYear() - dob.getFullYear();
+      const m = today.getMonth() - dob.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) age--;
+      if (age < 18) {
+        updatedTasks.push({
+          id: 'work_permit',
+          title: WORK_PERMIT_DOC.title,
+          description: WORK_PERMIT_DOC.description,
+          required: true,
+          signed: false,
+        });
+      }
+    }
+
+    updatePacket(packet.employeeId, { tasks: updatedTasks });
     setActiveTaskId(null);
   };
 
@@ -257,6 +277,42 @@ export default function OnboardingDetail() {
     setActiveTaskId(null);
   };
 
+  const handleWorkPermitSign = async (result: WorkPermitResult) => {
+    const geo = await tryGetGeolocation();
+    const prior = await getMostRecentRecord();
+    const record = await stampSignature({
+      context: { kind: 'onboarding', employeeId: packet.employeeId, docId: 'work_permit' },
+      signerEmployeeId: user.id,
+      signerLegalName: result.signature.signerLegalName,
+      documentTitle: WORK_PERMIT_DOC.title,
+      documentBody: WORK_PERMIT_DOC.templateBody,
+      signatureImagePngDataUrl: result.signature.signaturePngDataUrl,
+      consentAcknowledged: true,
+      priorRecord: prior,
+      geo,
+    });
+    appendSignature(record);
+    updatePacket(packet.employeeId, {
+      tasks: packet.tasks.map((t) =>
+        t.id === 'work_permit'
+          ? {
+              ...t,
+              signed: true,
+              signedAt: record.signedAtIso,
+              signedByName: result.signature.signerLegalName,
+              signatureRecordId: record.id,
+              completionProofDataUrl: result.completionProofDataUrl,
+              formData: {
+                permitExpirationDate: result.permitExpirationDate,
+                permitSchool: result.permitSchool,
+              },
+            }
+          : t,
+      ),
+    });
+    setActiveTaskId(null);
+  };
+
   const handleManagerSignOff = () => {
     updatePacket(packet.employeeId, {
       managerSignOff: {
@@ -270,6 +326,7 @@ export default function OnboardingDetail() {
   // W-4 full-screen sheet
   const w4Task = packet.tasks.find((t) => t.id === 'w4');
   const i9Task = packet.tasks.find((t) => t.id === 'i9');
+  const workPermitTask = packet.tasks.find((t) => t.id === 'work_permit');
 
   return (
     <AppShell>
@@ -322,6 +379,23 @@ export default function OnboardingDetail() {
             />
           </FormSheet>
         )}
+
+      {/* Work Permit — full-screen sheet (minors only, dynamically injected) */}
+      {activeTaskId === 'work_permit' && workPermitTask && !workPermitTask.signed && (
+        <FormSheet
+          title="California Work Permit"
+          subtitle="Minor Employee · CDE Form B1-4"
+          onClose={() => setActiveTaskId(null)}
+        >
+          <WorkPermitUpload
+            signerName={fullName(user)}
+            employeeName={fullName(employee)}
+            templateBody={WORK_PERMIT_DOC.templateBody}
+            onSubmit={handleWorkPermitSign}
+            onCancel={() => setActiveTaskId(null)}
+          />
+        </FormSheet>
+      )}
 
       {pendingTaskId && (
         <ESIGNConsentGate
@@ -456,7 +530,7 @@ export default function OnboardingDetail() {
                 startSign(t.id);
               };
 
-              if (t.id === 'w4' || t.id === 'i9' || t.id === 'harassment_attestation') {
+              if (t.id === 'w4' || t.id === 'i9' || t.id === 'harassment_attestation' || t.id === 'work_permit') {
                 const formToggle = () => {
                   if (t.signed) {
                     if (t.signatureRecordId) router.push(`/onboarding/${packet.employeeId}/certificate/${t.signatureRecordId}`);
