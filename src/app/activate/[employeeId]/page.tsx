@@ -285,8 +285,8 @@ export default function ActivatePage() {
               </Section>
 
               <Section title="Dress code">
-                <Item>Black shirt (we'll give you Makenna shirts on Day 1)</Item>
-                <Item>Dark pants — black, navy, or dark denim</Item>
+                <Item>Comfortable shirt (we'll give you Makenna shirts on Day 1)</Item>
+                <Item>Comfortable work pants</Item>
                 <Item>Closed-toe, non-slip shoes</Item>
                 <Item>Hair tied back. Limited jewelry. No strong cologne/perfume.</Item>
               </Section>

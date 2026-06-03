@@ -58,6 +58,10 @@ export default function TrainingDocumentModal({
   const template = getTrainingDocTemplate(documentId);
   if (!template) return null;
 
+  // For documents that require the employee's personal signature (e.g. CA Meal Period Waiver),
+  // the employee signs — not the trainer. The trainer cannot sign legal waivers on their behalf.
+  const effectiveSigner = template.requiresEmployeeSignature ? employee : signerEmployee;
+
   // Populate template body with employee data
   const hireDate = format(parseISO(employee.hiredOn), 'MMMM d, yyyy');
   const location = getLocation(employee.homeLocationId)?.name ?? employee.homeLocationId;
@@ -84,7 +88,7 @@ export default function TrainingDocumentModal({
           stationId,
           skillId: documentId,
         },
-        signerEmployeeId: signerEmployee.id,
+        signerEmployeeId: effectiveSigner.id,
         signerLegalName: result.signerLegalName,
         documentTitle: template.title,
         documentBody: populatedBody,
@@ -240,27 +244,38 @@ export default function TrainingDocumentModal({
                 <h3 className="mb-1 flex items-center gap-2 text-lg font-bold text-ink-700">
                   <PenLine size={18} /> Sign &amp; Attest
                 </h3>
-                <p className="mb-4 text-sm text-ink-600">
-                  {signerEmployee.id === employee.id ? (
-                    <>
-                      By signing below, <strong>{fullName(employee)}</strong> confirms they have
-                      read, understood, and agree to the above document.
-                    </>
-                  ) : (
-                    <>
-                      By signing below, <strong>{fullName(signerEmployee)}</strong> confirms the
-                      above document has been reviewed and completed by{' '}
-                      <strong>{fullName(employee)}</strong>.
-                    </>
-                  )}
-                </p>
+                {template.requiresEmployeeSignature ? (
+                  <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-800">
+                    <p className="font-semibold">Employee must sign personally</p>
+                    <p className="mt-1">
+                      This is a voluntary legal document. <strong>{fullName(employee)}</strong> must
+                      sign it themselves — a trainer or manager cannot sign on their behalf. Hand
+                      the iPad to <strong>{fullName(employee)}</strong> to sign below.
+                    </p>
+                  </div>
+                ) : (
+                  <p className="mb-4 text-sm text-ink-600">
+                    {effectiveSigner.id === employee.id ? (
+                      <>
+                        By signing below, <strong>{fullName(employee)}</strong> confirms they have
+                        read, understood, and agree to the above document.
+                      </>
+                    ) : (
+                      <>
+                        By signing below, <strong>{fullName(effectiveSigner)}</strong> confirms the
+                        above document has been reviewed and completed by{' '}
+                        <strong>{fullName(employee)}</strong>.
+                      </>
+                    )}
+                  </p>
+                )}
                 {error && (
                   <div className="mb-4 rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</div>
                 )}
                 {saving ? (
                   <div className="py-6 text-center text-sm text-ink-400">Saving signature…</div>
                 ) : (
-                  <SignaturePad onSubmit={handleSign} signerName={fullName(signerEmployee)} />
+                  <SignaturePad onSubmit={handleSign} signerName={fullName(effectiveSigner)} />
                 )}
               </div>
             ) : (

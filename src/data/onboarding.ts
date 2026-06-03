@@ -36,7 +36,7 @@ export const ONBOARDING_DOCS: {
     id: 'direct_deposit',
     title: 'Direct Deposit Authorization',
     description: 'Routing and account info for payroll. Voided check or bank letter accepted.',
-    required: true,
+    required: false,
     templateBody: `I authorize Makenna Koffee Company to deposit my net pay into the bank account I have designated. I understand that this authorization remains in effect until I notify the company in writing of any change. If funds are deposited in error, I authorize Makenna Koffee to recover the funds via reverse deposit.`,
   },
   {
@@ -57,7 +57,7 @@ export const ONBOARDING_DOCS: {
     id: 'meal_period_waiver',
     title: 'Meal Period Waiver',
     description: 'California Labor Code §512 requires a 30-minute unpaid meal period for shifts over 5 hours. By mutual consent, this meal period may be waived for shifts of 6 hours or less.',
-    required: true,
+    required: false,
     templateBody: `CALIFORNIA MEAL PERIOD WAIVER — Labor Code §512 / IWC Wage Order No. 5
 
 By signing below, I voluntarily and knowingly waive my right to a first off-duty meal period on any workday on which my total daily work period is no more than six (6) hours, pursuant to California Labor Code §512(a) and applicable IWC Wage Order No. 5.

@@ -32,6 +32,12 @@ export type TrainingDocumentTemplate = {
    * Keys are placeholder tokens {{firstName}}, {{lastName}}, etc.
    */
   populatedFields: Array<'firstName' | 'lastName' | 'email' | 'hireDate' | 'location' | 'role'>;
+  /**
+   * If true, the EMPLOYEE (not the trainer) must sign this document personally.
+   * Used for voluntary legal waivers and agreements where trainer attestation
+   * is legally insufficient (e.g., California Meal Period Waiver).
+   */
+  requiresEmployeeSignature?: boolean;
 };
 
 export const TRAINING_DOCUMENT_TEMPLATES: TrainingDocumentTemplate[] = [
@@ -70,6 +76,7 @@ export const TRAINING_DOCUMENT_TEMPLATES: TrainingDocumentTemplate[] = [
     title: 'California Meal Period Waiver',
     description: 'Optional waiver allowing the option to skip the 30-min meal break on shifts ≤ 6 hours. Voluntary.',
     type: 'custom',
+    requiresEmployeeSignature: true,
     templateBody:
       'CALIFORNIA MEAL PERIOD WAIVER\n\nEmployee: {{firstName}} {{lastName}}\nLocation: {{location}}\nEffective Date: {{hireDate}}\n\nPurpose: California Labor Code § 512 requires a 30-minute unpaid meal period when an employee works more than 5 hours. This waiver, per California law, permits the Employee to voluntarily waive that meal period only when the total work period for the day is no more than 6 hours.\n\nTerms:\n1. This waiver is VOLUNTARY. Signing this document is not a condition of employment. The Employee\'s decision to sign or not sign will not affect their job, their schedule, or their standing at Makenna Koffee.\n2. This waiver applies ONLY to shifts of 6 hours or less. It does not waive any meal period on shifts exceeding 6 hours.\n3. Having this waiver on file does NOT mean the Employee must skip their meal break on every shift. The choice belongs entirely to the Employee, shift by shift, without pressure from management.\n4. If a shift the Employee expected to be 6 hours or less extends beyond 6 hours, the meal break must be provided immediately.\n5. This waiver remains in effect for the duration of the Employee\'s employment unless revoked in writing.\n\nBy signing below, the Employee voluntarily waives their right to a 30-minute meal period on shifts of 6 hours or less, with full understanding of the terms above.',
     populatedFields: ['firstName', 'lastName', 'hireDate', 'location'],

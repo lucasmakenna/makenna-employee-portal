@@ -17,6 +17,7 @@ import {
   FlaskConical,
   PartyPopper,
   ShieldAlert,
+  BookOpen,
 } from 'lucide-react';
 import clsx from 'clsx';
 import { useCurrentUser } from '@/lib/auth';
@@ -35,6 +36,7 @@ const NAV = [
   { href: '/onboarding', icon: ClipboardCheck, label: 'Onboarding' },
   { href: '/training', icon: GraduationCap, label: 'Training' },
   { href: '/recipe-fill', icon: FlaskConical, label: 'Barista Test' },
+  { href: '/study', icon: BookOpen, label: 'Study Mode' },
   { href: '/team', icon: Users, label: 'Team' },
   { href: '/milestones', icon: PartyPopper, label: 'Milestones' },
   { href: '/accountability', icon: ShieldAlert, label: 'Accountability' },

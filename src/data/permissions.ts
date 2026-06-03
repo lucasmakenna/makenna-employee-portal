@@ -66,6 +66,7 @@ export type Capability =
   | 'comms.post_announcement'
   | 'comms.pin_announcement'
   | 'comms.message_team'
+  | 'comms.send_dm'
 
   // Admin
   | 'admin.manage_locations'
@@ -131,6 +132,8 @@ export const MATRIX: Matrix = {
   'comms.post_announcement':        { admin: true, manager: true, lead: true,  trainer: false, barista: false },
   'comms.pin_announcement':         { admin: true, manager: true, lead: true,  trainer: false, barista: false },
   'comms.message_team':             { admin: true, manager: true, lead: true,  trainer: true,  barista: false },
+  // Baristas can receive DMs but cannot initiate them
+  'comms.send_dm':                  { admin: true, manager: true, lead: true,  trainer: true,  barista: false },
 
   // ──── Admin ────────────────────────────────────────────────
   'admin.manage_locations':         { admin: true, manager: false,lead: false, trainer: false, barista: false },

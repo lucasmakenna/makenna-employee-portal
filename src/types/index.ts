@@ -250,6 +250,29 @@ export type TrainingSkill = {
    * and shows a "Go to Onboarding" button when it isn't.
    */
   onboardingDocId?: string;
+  /**
+   * If set, clicking the skill opens an End-of-Day quiz modal instead of a plain checkbox.
+   * The skill is marked complete only when the trainee reaches the passing score.
+   */
+  quiz?: {
+    questions: string[];
+    /**
+     * Answer key shown to the trainer after each question is marked.
+     * Parallel array to `questions` — index i is the expected answer for question i.
+     */
+    answers?: string[];
+    /** Minimum correct answers needed to pass */
+    passingScore: number;
+  };
+  /**
+   * YouTube embed URL (use https://www.youtube.com/embed/VIDEO_ID format).
+   * Renders an inline video player on the skill card.
+   */
+  videoUrl?: string;
+  /**
+   * Array of image URLs to display on the skill card as visual reference.
+   */
+  imageUrls?: string[];
 };
 
 export type TrainingSignoff = {

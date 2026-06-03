@@ -50,6 +50,7 @@ export default function NewMessagePage() {
   if (!user) return null;
 
   const canAnnounce = can(user.role, 'comms.post_announcement');
+  const canDM = can(user.role, 'comms.send_dm');
 
   const handleSend = () => {
     if (!body.trim()) return;
@@ -164,9 +165,10 @@ export default function NewMessagePage() {
             <ModeBtn
               icon={<MessageSquare size={16} />}
               label="One person (DM)"
-              hint="Direct message"
+              hint={canDM ? 'Direct message' : 'Lead / manager / admin only'}
               active={mode === 'dm'}
-              onClick={() => setMode('dm')}
+              onClick={() => canDM && setMode('dm')}
+              disabled={!canDM}
             />
             <ModeBtn
               icon={<HandHelping size={16} />}

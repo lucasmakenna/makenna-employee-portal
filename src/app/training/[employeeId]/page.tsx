@@ -3,12 +3,13 @@
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, CheckCircle2, Clock, FileText, PenLine, Stamp } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Clock, FileText, PenLine, Stamp, ClipboardList } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
 import SignaturePad, { SignaturePadResult } from '@/components/SignaturePad';
 import TrainingDocumentModal from '@/components/TrainingDocumentModal';
 import OnboardingDocModal from '@/components/OnboardingDocModal';
+import EndOfDayQuizModal from '@/components/EndOfDayQuizModal';
 import type { OnboardingDocId } from '@/types';
 import { useCurrentUser } from '@/lib/auth';
 import { can } from '@/data/permissions';
@@ -19,6 +20,29 @@ import { stampSignature, tryGetGeolocation } from '@/lib/signature-audit';
 import { appendSignature, getMostRecentRecord } from '@/data/signatures';
 import { loadTrainingProgress, saveStationProgress } from '@/lib/training-db';
 import { useEmployees, usePackets } from '@/data/store';
+
+/** Convert a skill name to Title Case, respecting em-dashes as phrase separators. */
+function toTitleCase(str: string): string {
+  const minorWords = new Set(['a', 'an', 'the', 'and', 'but', 'or', 'for', 'nor',
+    'on', 'at', 'to', 'by', 'in', 'of', 'up', 'as', 'vs', 'via']);
+  return str
+    .split(/(—|–)/)
+    .map((segment, segIdx) => {
+      if (segment === '—' || segment === '–') return segment;
+      return segment
+        .split(' ')
+        .map((word, wordIdx) => {
+          const lower = word.toLowerCase();
+          // Always capitalize first word of each phrase segment
+          if (wordIdx === 0 || segIdx === 0) return word.charAt(0).toUpperCase() + word.slice(1);
+          // Leave minor words lowercase unless first in segment
+          if (minorWords.has(lower)) return lower;
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        })
+        .join(' ');
+    })
+    .join('');
+}
 
 /**
  * iPad-optimized trainee progress view.
@@ -44,6 +68,8 @@ export default function TraineeProgress() {
   const [documentModal, setDocumentModal] = useState<{ skillId: string; documentId: string; stationId: string } | null>(null);
   /** onboardingDocModal: { skillId, docId } when an onboarding doc is opened inline */
   const [onboardingDocModal, setOnboardingDocModal] = useState<{ skillId: string; docId: OnboardingDocId } | null>(null);
+  /** quizModal: skillId of the End-of-Day quiz currently open */
+  const [quizSkillId, setQuizSkillId] = useState<string | null>(null);
 
   useEffect(() => {
     if (loaded && !user) router.replace('/login');
@@ -198,6 +224,20 @@ export default function TraineeProgress() {
           onClose={() => setDocumentModal(null)}
         />
       )}
+      {/* End-of-Day Quiz modal */}
+      {quizSkillId && (() => {
+        const quizSkill = station.skills.find((s) => s.id === quizSkillId);
+        return quizSkill?.quiz ? (
+          <EndOfDayQuizModal
+            skillName={quizSkill.name}
+            questions={quizSkill.quiz.questions}
+            answers={quizSkill.quiz.answers}
+            passingScore={quizSkill.quiz.passingScore}
+            onPass={async () => { await toggleSkill(quizSkillId); setQuizSkillId(null); }}
+            onClose={() => setQuizSkillId(null)}
+          />
+        ) : null;
+      })()}
       {/* Onboarding doc modal — opens inline when a skill has an onboardingDocId */}
       {onboardingDocModal && employee && user && (
         <OnboardingDocModal
@@ -349,21 +389,37 @@ export default function TraineeProgress() {
                     } ${stationSigned ? 'opacity-90' : ''}`}
                   >
                     <div className="flex items-start gap-4">
-                      {/* Checkbox — manual toggle for plain skills; auto-filled for onboarding-linked skills */}
+                      {/* Checkbox — quiz skills open a modal; onboarding-linked are auto-filled; others toggle directly */}
                       <button
-                        onClick={() => !sk.onboardingDocId && toggleSkill(sk.id)}
-                        disabled={!canSignOff || stationSigned || !!sk.onboardingDocId}
-                        title={sk.onboardingDocId ? 'Complete the onboarding document to mark this done' : undefined}
+                        onClick={() => {
+                          if (sk.quiz && canSignOff && !stationSigned && !checked) {
+                            setQuizSkillId(sk.id);
+                          } else if (!sk.onboardingDocId && !sk.quiz) {
+                            toggleSkill(sk.id);
+                          }
+                        }}
+                        disabled={!canSignOff || stationSigned || (!!sk.onboardingDocId && !sk.quiz)}
+                        title={
+                          sk.onboardingDocId
+                            ? 'Complete the onboarding document to mark this done'
+                            : sk.quiz && !checked
+                            ? 'Open End of Day Review quiz'
+                            : undefined
+                        }
                         className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-md border-2 transition ${
                           checked
                             ? 'border-emerald-500 bg-emerald-500 text-white'
                             : sk.onboardingDocId
                             ? 'border-cyan-300 bg-cyan-50'
+                            : sk.quiz
+                            ? 'border-amber-400 bg-amber-50 hover:bg-amber-100'
                             : 'border-ink-300 bg-white hover:border-ink-500'
-                        } ${(!canSignOff || stationSigned || !!sk.onboardingDocId) ? 'cursor-default' : 'cursor-pointer'}`}
+                        } ${(!canSignOff || stationSigned || (!!sk.onboardingDocId && !sk.quiz)) ? 'cursor-default' : 'cursor-pointer'}`}
                       >
                         {checked ? (
                           <CheckCircle2 size={16} />
+                        ) : sk.quiz ? (
+                          <ClipboardList size={12} className="text-amber-500" />
                         ) : sk.onboardingDocId ? (
                           <FileText size={12} className="text-cyan-400" />
                         ) : null}
@@ -371,18 +427,59 @@ export default function TraineeProgress() {
 
                       <div className="flex-1 min-w-0">
                         <div className="flex flex-wrap items-baseline justify-between gap-2">
-                          <div className="font-semibold text-ink-700">{sk.name}</div>
+                          <div className="font-semibold text-ink-700 capitalize-words">{toTitleCase(sk.name)}</div>
                           <span className="text-xs text-ink-400">~{sk.estimatedMinutes} min</span>
                         </div>
                         <p className="mt-1 text-sm text-ink-600">{sk.description}</p>
                         <ul className="mt-2 space-y-1">
                           {sk.competencyCriteria.map((c, i) => (
-                            <li key={i} className="flex items-start gap-2 text-xs text-ink-600">
-                              <span className="mt-1 h-1 w-1 shrink-0 rounded-full bg-ink-400" />
+                            <li key={i} className="flex items-start gap-2 text-sm text-ink-600">
+                              <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ink-400" />
                               {c}
                             </li>
                           ))}
                         </ul>
+
+                        {/* Video embed */}
+                        {sk.videoUrl && (
+                          <div className="mt-4 overflow-hidden rounded-xl border border-ink-100">
+                            <iframe
+                              src={sk.videoUrl}
+                              title={sk.name}
+                              className="aspect-video w-full"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowFullScreen
+                            />
+                          </div>
+                        )}
+
+                        {/* Reference images */}
+                        {sk.imageUrls && sk.imageUrls.length > 0 && (
+                          <div className={`mt-3 grid gap-2 ${sk.imageUrls.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
+                            {sk.imageUrls.map((url, imgIdx) => (
+                              <a key={imgIdx} href={url} target="_blank" rel="noopener noreferrer">
+                                <img
+                                  src={url}
+                                  alt={`${sk.name} reference ${imgIdx + 1}`}
+                                  className="w-full rounded-lg border border-ink-100 object-cover"
+                                />
+                              </a>
+                            ))}
+                          </div>
+                        )}
+
+                        {/* End-of-Day Quiz button */}
+                        {sk.quiz && !stationSigned && !checked && canSignOff && (
+                          <div className="mt-3">
+                            <button
+                              onClick={() => setQuizSkillId(sk.id)}
+                              className="inline-flex items-center gap-2 rounded-lg border border-amber-300 bg-amber-50 px-3 py-1.5 text-xs font-semibold text-amber-700 hover:bg-amber-100 transition"
+                            >
+                              <ClipboardList size={12} />
+                              Start End of Day Review ({sk.quiz.passingScore}/{sk.quiz.questions.length} to pass)
+                            </button>
+                          </div>
+                        )}
 
                         {/* Training document — shown when skill requires signing a training-specific doc */}
                         {sk.documentId && !stationSigned && !checked && canSignOff && (
