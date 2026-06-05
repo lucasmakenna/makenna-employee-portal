@@ -8,24 +8,24 @@ import allCards from '@/data/study-recipe-cards.json';
 interface RecipeCard {
   id: string;
   drink: string;
-  size: string;
   recipe: string;
   category: string;
 }
 
 const CATEGORIES = [
-  { id: 'all', label: 'All Drinks 🍹', emoji: '🍹' },
-  { id: 'Iced Lattes & Supremes', label: 'Iced Lattes & Supremes', emoji: '🧊' },
-  { id: 'Hot Lattes', label: 'Hot Lattes', emoji: '☕' },
-  { id: 'Chillers & Blended', label: 'Chillers & Blended', emoji: '🌀' },
-  { id: 'Cold Brew', label: 'Cold Brew', emoji: '🖤' },
-  { id: 'Matcha', label: 'Matcha', emoji: '🍵' },
-  { id: 'Freezes', label: 'Freezes', emoji: '🧊' },
-  { id: 'Slushies', label: 'Slushies', emoji: '🌊' },
-  { id: 'Makenna Energy', label: 'Makenna Energy', emoji: '⚡' },
-  { id: 'Americanos & Shaken', label: 'Americanos & Shaken', emoji: '🥃' },
-  { id: 'Teas & Refreshers', label: 'Teas & Refreshers', emoji: '🍑' },
-  { id: 'Seasonal', label: 'Seasonal', emoji: '🎃' },
+  { id: 'all',                   label: 'All Drinks',            emoji: '🍹' },
+  { id: 'Supremes — Iced',       label: 'Supremes — Iced',       emoji: '🧊' },
+  { id: 'Supremes — Hot',        label: 'Supremes — Hot',        emoji: '☕' },
+  { id: 'Chillers & Blended',    label: 'Chillers & Blended',    emoji: '🌀' },
+  { id: 'Cold Brew',             label: 'Cold Brew',             emoji: '🖤' },
+  { id: 'Matcha',                label: 'Matcha',                emoji: '🍵' },
+  { id: 'Freezes',               label: 'Freezes',               emoji: '❄️' },
+  { id: 'Slushies',              label: 'Slushies',              emoji: '🌊' },
+  { id: 'Makenna Energy',        label: 'Makenna Energy',        emoji: '⚡' },
+  { id: 'Americanos & Shaken',   label: 'Americanos & Shaken',   emoji: '🥃' },
+  { id: 'Teas & Refreshers',     label: 'Teas & Refreshers',     emoji: '🍑' },
+  { id: 'Specialty',             label: 'Specialty',             emoji: '⭐' },
+  { id: 'Seasonal',              label: 'Seasonal',              emoji: '🎃' },
 ];
 
 function shuffle<T>(arr: T[]): T[] {
@@ -66,8 +66,7 @@ export default function StudyPage() {
       setCardIndex((i) => i + 1);
       setFlipped(false);
     } else {
-      // Loop back
-      setDeck(shuffle(deck));
+      setDeck(shuffle([...deck]));
       setCardIndex(0);
       setFlipped(false);
     }
@@ -80,12 +79,6 @@ export default function StudyPage() {
     }
   }
 
-  function handleReshuffle() {
-    setDeck(shuffle(deck));
-    setCardIndex(0);
-    setFlipped(false);
-  }
-
   // ── FLASHCARD VIEW ───────────────────────────────────────────────────────
   if (activeCategoryId !== null && deck.length > 0) {
     const cat = CATEGORIES.find((c) => c.id === activeCategoryId);
@@ -95,7 +88,7 @@ export default function StudyPage() {
     return (
       <div className="min-h-screen bg-page flex flex-col p-4 md:p-8">
         {/* Header */}
-        <div className="flex items-center justify-between mb-6 max-w-2xl mx-auto w-full">
+        <div className="flex items-center justify-between mb-4 max-w-2xl mx-auto w-full">
           <button
             onClick={() => setActiveCategoryId(null)}
             className="flex items-center gap-1 text-sm text-ink-400 hover:text-ink-700"
@@ -105,13 +98,11 @@ export default function StudyPage() {
           <p className="text-xs font-bold uppercase tracking-widest text-ink-400 text-center">
             {cat?.emoji} {cat?.label}
           </p>
-          <p className="text-sm text-ink-400">
-            {cardIndex + 1} / {deck.length}
-          </p>
+          <p className="text-sm text-ink-400">{cardIndex + 1} / {deck.length}</p>
         </div>
 
         {/* Progress bar */}
-        <div className="w-full max-w-2xl mx-auto h-1.5 bg-ink-100 rounded-full mb-8">
+        <div className="w-full max-w-2xl mx-auto h-1.5 bg-ink-100 rounded-full mb-6">
           <div
             className="h-full bg-cyan-400 rounded-full transition-all duration-300"
             style={{ width: `${((cardIndex + 1) / deck.length) * 100}%` }}
@@ -119,7 +110,7 @@ export default function StudyPage() {
         </div>
 
         {/* Card */}
-        <div className="max-w-2xl mx-auto w-full flex-1 flex flex-col items-center justify-center gap-6">
+        <div className="max-w-2xl mx-auto w-full flex-1 flex flex-col items-center justify-center gap-5">
           <div
             className={`w-full cursor-pointer select-none rounded-2xl shadow-lg transition-all duration-200 ${
               flipped
@@ -127,31 +118,26 @@ export default function StudyPage() {
                 : 'bg-white border-2 border-ink-100 hover:border-cyan-200'
             }`}
             onClick={() => setFlipped((v) => !v)}
-            style={{ minHeight: 280 }}
           >
-            <div
-              className="p-8 flex flex-col items-center justify-center gap-4"
-              style={{ minHeight: 280 }}
-            >
-              {!flipped ? (
-                <>
-                  <p className="text-xs font-bold uppercase tracking-widest text-ink-400">Drink</p>
-                  <p className="text-2xl font-bold text-ink-700 text-center">{card.drink}</p>
-                  <p className="text-base text-ink-500">{card.size}</p>
-                  <p className="text-xs text-ink-300 mt-4">Tap to see recipe →</p>
-                </>
-              ) : (
-                <>
-                  <p className="text-xs font-bold uppercase tracking-widest text-cyan-500">Recipe</p>
-                  <p className="text-sm font-semibold text-ink-500 mb-1">{card.drink} — {card.size}</p>
-                  <p className="text-lg text-ink-700 text-center leading-relaxed font-medium">{card.recipe}</p>
-                </>
-              )}
-            </div>
+            {!flipped ? (
+              <div className="p-10 flex flex-col items-center justify-center gap-4 min-h-[240px]">
+                <p className="text-xs font-bold uppercase tracking-widest text-ink-400">Drink Name</p>
+                <p className="text-3xl font-bold text-ink-700 text-center leading-snug">{card.drink}</p>
+                <p className="text-xs text-ink-300 mt-4">Tap to see the full recipe →</p>
+              </div>
+            ) : (
+              <div className="p-6 flex flex-col gap-3">
+                <p className="text-xs font-bold uppercase tracking-widest text-cyan-500 text-center">Full Recipe</p>
+                <p className="text-sm font-bold text-ink-700 text-center mb-1">{card.drink}</p>
+                <div className="text-sm text-ink-700 leading-relaxed whitespace-pre-line">
+                  {card.recipe}
+                </div>
+              </div>
+            )}
           </div>
 
-          {/* Nav buttons */}
-          <div className="flex items-center gap-3 w-full">
+          {/* Nav */}
+          <div className="flex items-center gap-3 w-full max-w-2xl">
             <button
               className="btn-ghost px-5 py-3"
               onClick={handlePrev}
@@ -162,7 +148,7 @@ export default function StudyPage() {
 
             <button
               className="flex-1 flex items-center justify-center gap-2 btn-ghost py-3 text-sm"
-              onClick={handleReshuffle}
+              onClick={() => { setDeck(shuffle([...deck])); setCardIndex(0); setFlipped(false); }}
             >
               <Shuffle size={15} /> Shuffle
             </button>
@@ -186,7 +172,7 @@ export default function StudyPage() {
           </Link>
           <div>
             <h1 className="text-2xl font-bold text-ink-700">Study Mode</h1>
-            <p className="text-sm text-ink-400">Tap a category to start flipping recipe cards.</p>
+            <p className="text-sm text-ink-400">Pick a category and flip through full recipes.</p>
           </div>
         </div>
 
@@ -209,7 +195,7 @@ export default function StudyPage() {
                     <p className={`font-bold ${isAll ? 'text-cyan-700' : 'text-ink-700'}`}>
                       {cat.label}
                     </p>
-                    <p className="text-xs text-ink-400">{count} cards</p>
+                    <p className="text-xs text-ink-400">{count} drinks</p>
                   </div>
                 </div>
                 <ChevronRight size={18} className="text-ink-300" />
