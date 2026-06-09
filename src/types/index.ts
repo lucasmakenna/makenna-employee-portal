@@ -284,6 +284,12 @@ export type TrainingSkill = {
    * Use for policy walkthroughs where the trainer ticks each point as they cover it.
    */
   criteriaChecklist?: boolean;
+  /**
+   * Trainer-only notes, parallel array to competencyCriteria. Explains what
+   * each item is testing for. Never shown to the trainee — only rendered for
+   * trainer/manager/admin roles.
+   */
+  trainerNotes?: string[];
 };
 
 export type TrainingSignoff = {

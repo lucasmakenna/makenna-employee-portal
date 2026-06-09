@@ -5,7 +5,7 @@ import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Clock, Pencil } from 'lucide-react';
 import AppShell from '@/components/AppShell';
-import { useCurrentUser } from '@/lib/auth';
+import { useCurrentUser, isAnyRole } from '@/lib/auth';
 import { getStation, STATIONS } from '@/data/training';
 import { isInTraining, fullName } from '@/data/employees';
 import { useEmployees } from '@/data/store';
@@ -91,7 +91,15 @@ export default function StationDetailPage() {
                   {sk.criteriaChecklist ? 'Policy checklist — check each off as you cover it' : 'Competency criteria'}
                 </div>
                 {sk.criteriaChecklist ? (
-                  <ChecklistCriteria criteria={sk.competencyCriteria} skillId={sk.id} />
+                  <ChecklistCriteria
+                    criteria={sk.competencyCriteria}
+                    skillId={sk.id}
+                    trainerNotes={
+                      isAnyRole(user?.role, ['admin', 'manager', 'trainer'])
+                        ? sk.trainerNotes
+                        : undefined
+                    }
+                  />
                 ) : (
                   <ul className="space-y-1">
                     {sk.competencyCriteria.map((c, j) => (
@@ -170,7 +178,15 @@ export default function StationDetailPage() {
   );
 }
 
-function ChecklistCriteria({ criteria, skillId }: { criteria: string[]; skillId: string }) {
+function ChecklistCriteria({
+  criteria,
+  skillId,
+  trainerNotes,
+}: {
+  criteria: string[];
+  skillId: string;
+  trainerNotes?: string[];
+}) {
   const [checked, setChecked] = useState<boolean[]>(() => criteria.map(() => false));
 
   const toggle = (i: number) =>
@@ -199,6 +215,11 @@ function ChecklistCriteria({ criteria, skillId }: { criteria: string[]; skillId:
                 {c}
               </span>
             </label>
+            {trainerNotes?.[i] && (
+              <p className="ml-7 mt-1 text-xs italic text-hibiscus-600">
+                Trainer note: {trainerNotes[i]}
+              </p>
+            )}
           </li>
         ))}
       </ul>
