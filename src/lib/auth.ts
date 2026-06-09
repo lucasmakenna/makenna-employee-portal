@@ -11,10 +11,11 @@ export function useCurrentUser() {
 
   async function loadUser(email: string | undefined) {
     if (!email) { setUser(null); setLoaded(true); return; }
+    const normalizedEmail = email.trim().toLowerCase();
     const { data } = await supabase
       .from('employees')
       .select('*')
-      .eq('email', email)
+      .ilike('email', normalizedEmail)
       .single();
     setUser(data ? employeeFromRow(data as Record<string, unknown>) : null);
     setLoaded(true);
