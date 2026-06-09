@@ -18,6 +18,9 @@ const DEMO_KEYS = [
   'mk-messages-v1',
   'mk-availability-v1',
   'mk-recipe-fill-attempts-v1',
+  'mk-accountability-v1',
+  'mk-study-mastered-v1',
+  'mk-study-overrides-v1',
   'makenna-portal-current-user',
   'makenna-signature-log',
 ];
