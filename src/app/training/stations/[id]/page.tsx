@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Clock, Pencil } from 'lucide-react';
@@ -88,19 +88,20 @@ export default function StationDetailPage() {
               <p className="mt-2 text-sm text-ink-600">{sk.description}</p>
               <div className="mt-3 rounded-lg bg-cyan-50/40 p-3">
                 <div className="text-xs font-bold uppercase tracking-wider text-ink-400 mb-2">
-                  Competency criteria
+                  {sk.criteriaChecklist ? 'Policy checklist — check each off as you cover it' : 'Competency criteria'}
                 </div>
-                <ul className="space-y-1">
-                  {sk.competencyCriteria.map((c, j) => (
-                    <li
-                      key={j}
-                      className="flex items-start gap-2 text-sm text-ink-700"
-                    >
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400" />
-                      {c}
-                    </li>
-                  ))}
-                </ul>
+                {sk.criteriaChecklist ? (
+                  <ChecklistCriteria criteria={sk.competencyCriteria} skillId={sk.id} />
+                ) : (
+                  <ul className="space-y-1">
+                    {sk.competencyCriteria.map((c, j) => (
+                      <li key={j} className="flex items-start gap-2 text-sm text-ink-700">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-400" />
+                        {c}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
               {sk.images && sk.images.length > 0 && (
                 <div className="mt-4 space-y-4">
@@ -166,5 +167,44 @@ export default function StationDetailPage() {
         </div>
       </div>
     </AppShell>
+  );
+}
+
+function ChecklistCriteria({ criteria, skillId }: { criteria: string[]; skillId: string }) {
+  const [checked, setChecked] = useState<boolean[]>(() => criteria.map(() => false));
+
+  const toggle = (i: number) =>
+    setChecked((prev) => prev.map((v, idx) => (idx === i ? !v : v)));
+
+  const doneCount = checked.filter(Boolean).length;
+
+  return (
+    <div className="space-y-1">
+      {doneCount === criteria.length && (
+        <div className="mb-2 rounded-lg bg-emerald-50 border border-emerald-200 px-3 py-2 text-xs font-semibold text-emerald-700">
+          ✓ All points covered!
+        </div>
+      )}
+      <ul className="space-y-2">
+        {criteria.map((c, i) => (
+          <li key={`${skillId}-${i}`}>
+            <label className="flex items-start gap-3 cursor-pointer group">
+              <input
+                type="checkbox"
+                checked={checked[i]}
+                onChange={() => toggle(i)}
+                className="mt-0.5 h-4 w-4 shrink-0 rounded border-ink-300 accent-cyan-500 cursor-pointer"
+              />
+              <span className={`text-sm leading-snug transition-colors ${checked[i] ? 'line-through text-ink-400' : 'text-ink-700'}`}>
+                {c}
+              </span>
+            </label>
+          </li>
+        ))}
+      </ul>
+      {doneCount > 0 && doneCount < criteria.length && (
+        <p className="mt-2 text-xs text-ink-400">{doneCount} of {criteria.length} covered</p>
+      )}
+    </div>
   );
 }

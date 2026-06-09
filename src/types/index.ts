@@ -279,6 +279,11 @@ export type TrainingSkill = {
    * Array of image URLs to display on the skill card as visual reference.
    */
   imageUrls?: string[];
+  /**
+   * If true, competencyCriteria render as interactive checkboxes (session-only).
+   * Use for policy walkthroughs where the trainer ticks each point as they cover it.
+   */
+  criteriaChecklist?: boolean;
 };
 
 export type TrainingSignoff = {
