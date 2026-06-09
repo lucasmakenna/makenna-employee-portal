@@ -7,7 +7,7 @@ import {
   ArrowLeft, Mail, Phone, MapPin, Calendar, FileText,
   CheckCircle, XCircle, ClipboardList, GraduationCap,
   ShieldCheck, FileCheck, BookOpen, Link2, Trash2, Clock, Download,
-  ShieldAlert, ThumbsUp, ThumbsDown, ChevronRight,
+  ShieldAlert, ThumbsUp, ThumbsDown, ChevronRight, Send, KeyRound,
 } from 'lucide-react';
 import { ACCOUNTABILITY_LABELS, ACCOUNTABILITY_COLORS } from '@/types';
 import AppShell from '@/components/AppShell';
@@ -497,8 +497,56 @@ export default function TeamMemberPage() {
   const [tab, setTab] = useState<Tab>('overview');
   const [linkCopied, setLinkCopied] = useState(false);
   const [showRemoveModal, setShowRemoveModal] = useState(false);
+  const [inviteSending, setInviteSending] = useState(false);
+  const [inviteStatus, setInviteStatus] = useState<'idle' | 'sent' | 'resent' | 'error'>('idle');
+  const [showSetPassword, setShowSetPassword] = useState(false);
+  const [newPassword, setNewPassword] = useState('');
+  const [setPasswordStatus, setSetPasswordStatus] = useState<'idle' | 'saving' | 'done' | 'error'>('idle');
+  const [setPasswordError, setSetPasswordError] = useState('');
   const canManage = user?.role === 'admin' || user?.role === 'manager';
   const isAdmin = user?.role === 'admin';
+
+  async function handleSetPassword(emp: Employee) {
+    if (!newPassword || newPassword.length < 6) return;
+    setSetPasswordStatus('saving');
+    setSetPasswordError('');
+    try {
+      const res = await fetch('/api/set-password', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: emp.email, password: newPassword }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? 'Failed');
+      setSetPasswordStatus('done');
+      setNewPassword('');
+      setTimeout(() => { setSetPasswordStatus('idle'); setShowSetPassword(false); }, 3000);
+    } catch (err: unknown) {
+      setSetPasswordError(err instanceof Error ? err.message : 'Something went wrong');
+      setSetPasswordStatus('error');
+    }
+  }
+
+  async function sendPortalInvite(emp: Employee) {
+    setInviteSending(true);
+    setInviteStatus('idle');
+    try {
+      const res = await fetch('/api/invite-user', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: emp.email, name: fullName(emp) }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? 'Failed to send invite');
+      setInviteStatus(data.resent ? 'resent' : 'sent');
+      setTimeout(() => setInviteStatus('idle'), 4000);
+    } catch {
+      setInviteStatus('error');
+      setTimeout(() => setInviteStatus('idle'), 4000);
+    } finally {
+      setInviteSending(false);
+    }
+  }
 
   function copyInviteLink(empId: string) {
     const url = `${window.location.origin}/activate/${empId}`;
@@ -608,15 +656,70 @@ export default function TeamMemberPage() {
             </div>
             {canManage && (
               <div className="mt-4 flex flex-wrap items-center gap-3">
-                <div>
-                  <button
-                    onClick={() => copyInviteLink(employee.id)}
-                    className="flex items-center gap-2 rounded-full border border-ink-200 px-4 py-1.5 text-xs font-semibold text-ink-600 hover:bg-cyan-50 hover:border-cyan-300 transition"
-                  >
-                    <Link2 size={13} />
-                    {linkCopied ? 'Link copied!' : 'Copy invite link'}
-                  </button>
-                  <p className="mt-1 text-xs text-ink-400">Send this to the employee so they can set up their account.</p>
+                <div className="space-y-1">
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      onClick={() => sendPortalInvite(employee)}
+                      disabled={inviteSending}
+                      className={clsx(
+                        'flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs font-semibold transition',
+                        inviteStatus === 'sent' || inviteStatus === 'resent'
+                          ? 'border-emerald-300 bg-emerald-50 text-emerald-700'
+                          : inviteStatus === 'error'
+                          ? 'border-hibiscus-300 bg-hibiscus-50 text-hibiscus-700'
+                          : 'border-cyan-300 bg-cyan-50 text-cyan-700 hover:bg-cyan-100',
+                      )}
+                    >
+                      <Send size={13} />
+                      {inviteSending ? 'Sending…'
+                        : inviteStatus === 'sent' ? 'Invite sent!'
+                        : inviteStatus === 'resent' ? 'Reset link sent!'
+                        : inviteStatus === 'error' ? 'Failed — try again'
+                        : 'Send portal invite'}
+                    </button>
+                    <button
+                      onClick={() => copyInviteLink(employee.id)}
+                      className="flex items-center gap-2 rounded-full border border-ink-200 px-4 py-1.5 text-xs font-semibold text-ink-600 hover:bg-ink-50 transition"
+                    >
+                      <Link2 size={13} />
+                      {linkCopied ? 'Link copied!' : 'Copy invite link'}
+                    </button>
+                  </div>
+                  <p className="text-xs text-ink-400">
+                    "Send portal invite" emails them a setup link. If they already have an account, it sends a password reset instead.
+                  </p>
+                  {/* Set password directly */}
+                  {!showSetPassword ? (
+                    <button
+                      onClick={() => setShowSetPassword(true)}
+                      className="flex items-center gap-1.5 text-xs text-ink-400 hover:text-ink-700 transition mt-1"
+                    >
+                      <KeyRound size={12} /> Set password manually
+                    </button>
+                  ) : (
+                    <div className="mt-2 flex flex-col gap-2 rounded-xl border border-ink-200 bg-ink-50 p-3">
+                      <p className="text-xs font-semibold text-ink-600">Set a password for {employee.firstName}</p>
+                      <div className="flex gap-2">
+                        <input
+                          type="text"
+                          value={newPassword}
+                          onChange={(e) => setNewPassword(e.target.value)}
+                          placeholder="New password (min 6 chars)"
+                          className="input flex-1 text-sm py-1.5"
+                        />
+                        <button
+                          onClick={() => handleSetPassword(employee)}
+                          disabled={newPassword.length < 6 || setPasswordStatus === 'saving'}
+                          className="px-3 py-1.5 rounded-lg bg-cyan-500 text-white text-xs font-bold hover:bg-cyan-600 transition disabled:opacity-50"
+                        >
+                          {setPasswordStatus === 'saving' ? 'Saving…' : setPasswordStatus === 'done' ? '✓ Saved!' : 'Save'}
+                        </button>
+                        <button onClick={() => { setShowSetPassword(false); setNewPassword(''); setSetPasswordStatus('idle'); }} className="text-xs text-ink-400 hover:text-ink-700">Cancel</button>
+                      </div>
+                      {setPasswordError && <p className="text-xs text-hibiscus-600">{setPasswordError}</p>}
+                      {setPasswordStatus === 'done' && <p className="text-xs text-emerald-600">Password updated! Share it with {employee.firstName} directly.</p>}
+                    </div>
+                  )}
                 </div>
                 {isAdmin && employee.id !== user?.id && (
                   <button

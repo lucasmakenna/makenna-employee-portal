@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Coffee } from 'lucide-react';
+import { supabase } from '@/lib/supabase';
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState('');
@@ -15,25 +16,12 @@ export default function ForgotPasswordPage() {
     setError('');
     setLoading(true);
     try {
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_SUPABASE_URL}/auth/v1/recover`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? '',
-          },
-          body: JSON.stringify({
-            email: email.trim().toLowerCase(),
-            gotrue_meta_security: {},
-            redirect_to: `${window.location.origin}/reset-password`,
-          }),
-        },
+      const redirectTo = `${window.location.origin}/reset-password`;
+      const { error } = await supabase.auth.resetPasswordForEmail(
+        email.trim().toLowerCase(),
+        { redirectTo },
       );
-      if (!res.ok) {
-        const data = await res.json();
-        throw new Error(data.msg || 'Something went wrong');
-      }
+      if (error) throw error;
       setSent(true);
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : 'Something went wrong');

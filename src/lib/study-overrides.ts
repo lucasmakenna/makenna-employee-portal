@@ -4,19 +4,23 @@
  *
  * Supabase: requires a `study_overrides` table with columns:
  *   id         text PRIMARY KEY  (always 'singleton')
- *   hidden     jsonb             (array of card IDs)
+ *   hidden     jsonb             (array of card IDs — temporarily hidden)
+ *   deleted    jsonb             (array of card IDs — permanently removed from deck)
  *   categories jsonb             (object: cardId → new category string)
  *   updated_at timestamptz
  *
- * SQL to create:
+ * SQL to create (or ALTER existing table to add deleted column):
  *   create table study_overrides (
  *     id text primary key default 'singleton',
  *     hidden jsonb not null default '[]',
+ *     deleted jsonb not null default '[]',
  *     categories jsonb not null default '{}',
  *     updated_at timestamptz not null default now()
  *   );
  *   alter table study_overrides enable row level security;
  *   create policy "allow_all" on study_overrides for all using (true) with check (true);
+ *
+ * If table already exists, run: ALTER TABLE study_overrides ADD COLUMN IF NOT EXISTS deleted jsonb NOT NULL DEFAULT '[]';
  */
 
 import { supabase } from '@/lib/supabase';

@@ -3,10 +3,11 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Eye, EyeOff, CheckCircle2 } from 'lucide-react';
+import { supabase } from '@/lib/supabase';
 
 export default function ResetPasswordPage() {
   const router = useRouter();
-  const [accessToken, setAccessToken] = useState<string | null>(null);
+  const [ready, setReady] = useState(false);
   const [password, setPassword] = useState('');
   const [confirm, setConfirm] = useState('');
   const [showPw, setShowPw] = useState(false);
@@ -15,16 +16,20 @@ export default function ResetPasswordPage() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    // Supabase puts the token in the URL hash: #access_token=xxx&type=recovery
-    const hash = window.location.hash.slice(1);
-    const params = new URLSearchParams(hash);
-    const token = params.get('access_token');
-    const type = params.get('type');
-    if (token && type === 'recovery') {
-      setAccessToken(token);
-    } else {
-      setError('This reset link is invalid or has expired. Please request a new one.');
-    }
+    // Listen for Supabase PASSWORD_RECOVERY event — fires when the user
+    // lands on this page via the reset link in their email.
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event) => {
+      if (event === 'PASSWORD_RECOVERY') {
+        setReady(true);
+      }
+    });
+
+    // Also check if there's already a recovery session active
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session) setReady(true);
+    });
+
+    return () => subscription.unsubscribe();
   }, []);
 
   async function handleSubmit(e: React.FormEvent) {
@@ -33,22 +38,10 @@ export default function ResetPasswordPage() {
     setError('');
     setLoading(true);
     try {
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_SUPABASE_URL}/auth/v1/user`,
-        {
-          method: 'PUT',
-          headers: {
-            'Content-Type': 'application/json',
-            apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? '',
-            Authorization: `Bearer ${accessToken}`,
-          },
-          body: JSON.stringify({ password }),
-        },
-      );
-      if (!res.ok) {
-        const data = await res.json();
-        throw new Error(data.msg || data.error_description || 'Could not update password');
-      }
+      const { error } = await supabase.auth.updateUser({ password });
+      if (error) throw error;
+      // Sign out so they log in fresh with the new password
+      await supabase.auth.signOut();
       setDone(true);
       setTimeout(() => router.replace('/login'), 3000);
     } catch (err: unknown) {
@@ -74,66 +67,67 @@ export default function ResetPasswordPage() {
               <h1 className="text-xl font-bold text-ink-700">Password updated!</h1>
               <p className="text-sm text-ink-500">Redirecting you to sign in…</p>
             </div>
+          ) : !ready ? (
+            <div className="text-center space-y-3">
+              <p className="text-sm text-ink-500">Verifying reset link…</p>
+              <p className="text-xs text-ink-400">
+                If nothing happens,{' '}
+                <a href="/forgot-password" className="text-cyan-500 hover:underline">
+                  request a new reset link
+                </a>.
+              </p>
+            </div>
           ) : (
             <>
               <h1 className="text-xl font-bold text-ink-700 text-center">Set a new password</h1>
-              {error && !accessToken ? (
-                <div className="space-y-3 text-center">
-                  <p className="text-sm text-hibiscus-600 bg-hibiscus-50 rounded-lg px-3 py-2">{error}</p>
-                  <a href="/forgot-password" className="block text-sm text-cyan-500 hover:underline">
-                    Request a new reset link
-                  </a>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <label className="label">New password</label>
-                    <div className="relative">
-                      <input
-                        type={showPw ? 'text' : 'password'}
-                        className="input w-full pr-10"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        placeholder="At least 8 characters"
-                        required
-                        autoFocus
-                      />
-                      <button
-                        type="button"
-                        className="absolute right-3 top-1/2 -translate-y-1/2 text-ink-400 hover:text-ink-600"
-                        onClick={() => setShowPw((v) => !v)}
-                        tabIndex={-1}
-                      >
-                        {showPw ? <EyeOff size={16} /> : <Eye size={16} />}
-                      </button>
-                    </div>
-                  </div>
-                  <div>
-                    <label className="label">Confirm password</label>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label className="label">New password</label>
+                  <div className="relative">
                     <input
                       type={showPw ? 'text' : 'password'}
-                      className="input w-full"
-                      value={confirm}
-                      onChange={(e) => setConfirm(e.target.value)}
-                      placeholder="Re-enter your password"
+                      className="input w-full pr-10"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      placeholder="At least 8 characters"
                       required
+                      autoFocus
                     />
-                    {confirm && password !== confirm && (
-                      <p className="mt-1 text-xs text-hibiscus-500">Passwords don't match.</p>
-                    )}
+                    <button
+                      type="button"
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-ink-400 hover:text-ink-600"
+                      onClick={() => setShowPw((v) => !v)}
+                      tabIndex={-1}
+                    >
+                      {showPw ? <EyeOff size={16} /> : <Eye size={16} />}
+                    </button>
                   </div>
-                  {error && (
-                    <p className="text-sm text-hibiscus-600 bg-hibiscus-50 rounded-lg px-3 py-2">{error}</p>
+                </div>
+                <div>
+                  <label className="label">Confirm password</label>
+                  <input
+                    type={showPw ? 'text' : 'password'}
+                    className="input w-full"
+                    value={confirm}
+                    onChange={(e) => setConfirm(e.target.value)}
+                    placeholder="Re-enter your password"
+                    required
+                  />
+                  {confirm && password !== confirm && (
+                    <p className="mt-1 text-xs text-hibiscus-500">Passwords don't match.</p>
                   )}
-                  <button
-                    type="submit"
-                    className="btn-cyan w-full"
-                    disabled={!passwordValid || loading}
-                  >
-                    {loading ? 'Updating…' : 'Update password'}
-                  </button>
-                </form>
-              )}
+                </div>
+                {error && (
+                  <p className="text-sm text-hibiscus-600 bg-hibiscus-50 rounded-lg px-3 py-2">{error}</p>
+                )}
+                <button
+                  type="submit"
+                  className="btn-cyan w-full"
+                  disabled={!passwordValid || loading}
+                >
+                  {loading ? 'Updating…' : 'Update password'}
+                </button>
+              </form>
             </>
           )}
         </div>
