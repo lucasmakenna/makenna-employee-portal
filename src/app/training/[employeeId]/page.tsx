@@ -453,17 +453,22 @@ export default function TraineeProgress() {
                           </div>
                         )}
 
-                        {/* Reference images */}
-                        {sk.imageUrls && sk.imageUrls.length > 0 && (
-                          <div className={`mt-3 grid gap-2 ${sk.imageUrls.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
-                            {sk.imageUrls.map((url, imgIdx) => (
-                              <a key={imgIdx} href={url} target="_blank" rel="noopener noreferrer">
+                        {/* Reference images from Brain Blend */}
+                        {sk.images && sk.images.length > 0 && (
+                          <div className="mt-3 space-y-3">
+                            {sk.images.map((img, imgIdx) => (
+                              <figure key={imgIdx} className="overflow-hidden rounded-xl border border-ink-100">
                                 <img
-                                  src={url}
-                                  alt={`${sk.name} reference ${imgIdx + 1}`}
-                                  className="w-full rounded-lg border border-ink-100 object-cover"
+                                  src={img.src}
+                                  alt={img.caption ?? sk.name}
+                                  className="w-full object-contain bg-white"
                                 />
-                              </a>
+                                {img.caption && (
+                                  <figcaption className="border-t border-ink-100 bg-cyan-50/40 px-3 py-2 text-xs text-ink-500 leading-relaxed">
+                                    {img.caption}
+                                  </figcaption>
+                                )}
+                              </figure>
                             ))}
                           </div>
                         )}

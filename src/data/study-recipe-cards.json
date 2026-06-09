@@ -395,7 +395,7 @@
     "id": "c6b867b6-41bc-4689-85e6-8527339f5d3c",
     "drink": "Americano",
     "recipe": "\u25cf Small (12 oz)\nIn a measuring cup:\n2 espresso shots\nFill to 8 oz with cold water\nPour over ice and TOM-TOM\n\n\u25cf Medium (16 oz)\nIn a measuring cup:\n3 espresso shots\nFill to 10 oz with cold water\nPour over ice and TOM-TOM\n\n\u25cf Large (24 oz)\nIn a measuring cup:\n4 espresso shots\nFill to 12 oz with cold water\nPour over ice and TOM-TOM\n\n\u25cf X-tra Large (32 oz)\nIn a measuring cup:\n6 espresso shots\nFill to 20 oz with cold water\nPour over ice and TOM-TOM",
-    "category": "Supremes \u2014 Iced",
+    "category": "Americanos & Shaken",
     "mela_category": "Supreme Iced"
   },
   {
@@ -591,7 +591,7 @@
     "id": "4ca5f500-de3f-4203-82c5-b44bf0aceeb8",
     "drink": "Americano Hot",
     "recipe": "\u25cf Small (12 oz)\nIn a hot drink cup:\n2 espresso shots\nFill with hot water to top\n\n\u25cf Medium (16 oz)\nIn a hot drink cup:\n3 espresso shots\nFill with hot water to top\n\n\u25cf Large (20 oz)\nIn a hot drink cup:\n4 espresso shots\nFill with hot water to top",
-    "category": "Supremes \u2014 Hot",
+    "category": "Americanos & Shaken",
     "mela_category": "Supreme Hot"
   },
   {

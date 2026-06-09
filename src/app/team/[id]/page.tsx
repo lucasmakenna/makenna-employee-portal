@@ -7,12 +7,14 @@ import {
   ArrowLeft, Mail, Phone, MapPin, Calendar, FileText,
   CheckCircle, XCircle, ClipboardList, GraduationCap,
   ShieldCheck, FileCheck, BookOpen, Link2, Trash2, Clock, Download,
+  ShieldAlert, ThumbsUp, ThumbsDown, ChevronRight,
 } from 'lucide-react';
+import { ACCOUNTABILITY_LABELS, ACCOUNTABILITY_COLORS } from '@/types';
 import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
 import { useCurrentUser } from '@/lib/auth';
 import { fullName } from '@/data/employees';
-import { useEmployees, usePackets } from '@/data/store';
+import { useEmployees, usePackets, useAccountability } from '@/data/store';
 import { getLocation, LOCATIONS } from '@/data/locations';
 import { loadSignaturesForEmployee } from '@/data/signatures';
 import type { OnboardingPacket, Employee, LocationId } from '@/types';
@@ -483,7 +485,7 @@ function TimelineItem({
 
 // ─── Main page ─────────────────────────────────────────────────────────────────
 
-type Tab = 'overview' | 'file';
+type Tab = 'overview' | 'file' | 'accountability';
 
 export default function TeamMemberPage() {
   const params = useParams<{ id: string }>();
@@ -491,6 +493,7 @@ export default function TeamMemberPage() {
   const { user, loaded } = useCurrentUser();
   const { employees, remove, update: updateEmployee } = useEmployees();
   const { get: getPacket } = usePackets();
+  const { records: allAccountabilityRecords } = useAccountability();
   const [tab, setTab] = useState<Tab>('overview');
   const [linkCopied, setLinkCopied] = useState(false);
   const [showRemoveModal, setShowRemoveModal] = useState(false);
@@ -629,22 +632,36 @@ export default function TeamMemberPage() {
         </div>
 
         {/* Tabs */}
-        <div className="mb-6 flex gap-1 border-b border-ink-100">
-          {(['overview', 'file'] as Tab[]).map((t) => (
-            <button
-              key={t}
-              onClick={() => setTab(t)}
-              className={clsx(
-                'px-5 py-2.5 text-sm font-semibold border-b-2 transition -mb-px',
-                tab === t
-                  ? 'border-cyan-400 text-cyan-600'
-                  : 'border-transparent text-ink-400 hover:text-ink-700',
-              )}
-            >
-              {t === 'overview' ? 'Overview' : 'Employee File'}
-            </button>
-          ))}
-        </div>
+        {(() => {
+          const empRecords = allAccountabilityRecords.filter((r) => r.employeeId === employee.id);
+          return (
+            <div className="mb-6 flex gap-1 border-b border-ink-100">
+              {(['overview', 'file', 'accountability'] as Tab[]).map((t) => (
+                <button
+                  key={t}
+                  onClick={() => setTab(t)}
+                  className={clsx(
+                    'px-5 py-2.5 text-sm font-semibold border-b-2 transition -mb-px flex items-center gap-1.5',
+                    tab === t
+                      ? 'border-cyan-400 text-cyan-600'
+                      : 'border-transparent text-ink-400 hover:text-ink-700',
+                  )}
+                >
+                  {t === 'overview' ? 'Overview' : t === 'file' ? 'Employee File' : (
+                    <>
+                      Accountability
+                      {empRecords.length > 0 && (
+                        <span className={clsx('rounded-full px-1.5 py-0.5 text-xs font-bold', tab === t ? 'bg-cyan-100 text-cyan-700' : 'bg-ink-100 text-ink-500')}>
+                          {empRecords.length}
+                        </span>
+                      )}
+                    </>
+                  )}
+                </button>
+              ))}
+            </div>
+          );
+        })()}
 
         {/* Overview tab */}
         {tab === 'overview' && (
@@ -723,6 +740,87 @@ export default function TeamMemberPage() {
             <EmployeeFileTab employeeId={employee.id} hiredOn={employee.hiredOn} packet={getPacket(employee.id)} employee={employee} />
           </div>
         )}
+
+        {/* Accountability tab */}
+        {tab === 'accountability' && (() => {
+          const empRecords = allAccountabilityRecords
+            .filter((r) => r.employeeId === employee.id)
+            .sort((a, b) => new Date(b.issuedAt).getTime() - new Date(a.issuedAt).getTime());
+
+          return (
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h2 className="text-lg font-bold text-ink-700 flex items-center gap-2">
+                    <ShieldAlert size={18} className="text-hibiscus-500" />
+                    Accountability Records
+                  </h2>
+                  <p className="text-xs text-ink-400 mt-0.5">
+                    All formal disciplinary and HR records for {employee.firstName}.
+                  </p>
+                </div>
+                {canManage && (
+                  <Link href="/accountability" className="btn-hibiscus text-sm">
+                    <ShieldAlert size={14} /> Issue Record
+                  </Link>
+                )}
+              </div>
+
+              {empRecords.length === 0 ? (
+                <div className="rounded-xl border border-dashed border-ink-200 p-12 text-center">
+                  <ShieldAlert size={28} className="mx-auto mb-3 text-ink-200" />
+                  <p className="text-sm font-semibold text-ink-400">No accountability records on file</p>
+                  <p className="text-xs text-ink-300 mt-1">Records will appear here when issued.</p>
+                </div>
+              ) : (
+                <div className="space-y-3">
+                  {empRecords.map((record) => (
+                    <Link
+                      key={record.id}
+                      href={`/accountability/${record.id}`}
+                      className="group flex items-start gap-4 rounded-xl border border-ink-100 bg-white p-4 hover:border-cyan-200 hover:shadow-sm transition"
+                    >
+                      <div className="flex-1 min-w-0">
+                        {/* Type + status badges */}
+                        <div className="flex items-center gap-2 flex-wrap mb-1.5">
+                          <span className={`rounded-full px-2.5 py-0.5 text-xs font-bold ${ACCOUNTABILITY_COLORS[record.type]}`}>
+                            {ACCOUNTABILITY_LABELS[record.type]}
+                          </span>
+                          {record.employeeAgreed === true && (
+                            <span className="flex items-center gap-1 rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-700">
+                              <ThumbsUp size={10} /> Agreed
+                            </span>
+                          )}
+                          {record.employeeAgreed === false && (
+                            <span className="flex items-center gap-1 rounded-full bg-red-100 px-2 py-0.5 text-xs font-semibold text-red-700">
+                              <ThumbsDown size={10} /> Disputed
+                            </span>
+                          )}
+                          {record.employeeAcknowledgedAt && record.employeeAgreed === undefined && (
+                            <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs font-semibold text-blue-700">Acknowledged</span>
+                          )}
+                          {!record.employeeAcknowledgedAt && (
+                            <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-700">Pending response</span>
+                          )}
+                        </div>
+                        <p className="font-semibold text-sm text-ink-700 truncate">{record.title}</p>
+                        <p className="text-xs text-ink-400 mt-0.5">
+                          {format(parseISO(record.issuedAt), 'MMM d, yyyy')} · Issued by {record.issuedByName}
+                        </p>
+                        {record.employeeResponse && (
+                          <p className="mt-1.5 text-xs text-ink-500 italic truncate">
+                            Employee: "{record.employeeResponse}"
+                          </p>
+                        )}
+                      </div>
+                      <ChevronRight size={16} className="text-ink-300 shrink-0 mt-1 group-hover:text-cyan-400 transition" />
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })()}
       </div>
     </AppShell>
 

@@ -645,10 +645,10 @@ export function useConversations() {
       });
   }, []);
 
-  const create = useCallback((input: Omit<Conversation, 'id' | 'createdAt'>) => {
+  const create = useCallback((input: Omit<Conversation, 'id' | 'createdAt'> & { id?: string }) => {
     const conv: Conversation = {
       ...input,
-      id: `conv:${Date.now()}`,
+      id: input.id ?? `conv:${Date.now()}`,
       createdAt: new Date().toISOString(),
     };
     setList((prev) => {

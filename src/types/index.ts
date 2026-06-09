@@ -251,6 +251,12 @@ export type TrainingSkill = {
    */
   onboardingDocId?: string;
   /**
+   * Reference images from the Brain Blend document shown inline on the skill card.
+   * Paths are relative to /public (e.g. '/training/bean-bags.jpg').
+   * Each entry has a src and an optional caption.
+   */
+  images?: { src: string; caption?: string }[];
+  /**
    * If set, clicking the skill opens an End-of-Day quiz modal instead of a plain checkbox.
    * The skill is marked complete only when the trainee reaches the passing score.
    */
@@ -430,8 +436,16 @@ export type AccountabilityRecord = {
   locationId: string;
   title: string;
   description: string;
-  /** Employee's acknowledgment signature (e-sign) — captured when they read it in the portal */
+  /** Structured template field values filled in at creation time */
+  templateData?: Record<string, unknown>;
+  /** Employee's acknowledgment — captured when they read it in the portal */
   employeeAcknowledgedAt?: string;
+  /** true = employee agrees, false = employee disagrees */
+  employeeAgreed?: boolean;
+  /** Optional rebuttal written by the employee */
+  employeeResponse?: string;
+  /** When the employee submitted their agree/disagree response */
+  employeeRespondedAt?: string;
   /** Attachments / notes added later */
   followUpNotes?: string;
   /** For termination/resignation: last day */

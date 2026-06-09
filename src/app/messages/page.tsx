@@ -2,7 +2,7 @@
 
 export const dynamic = 'force-dynamic';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import {
@@ -37,6 +37,7 @@ export default function MessagesPage() {
   const [activeId, setActiveId] = useState<string | null>(sp.get('c'));
   const [draft, setDraft] = useState('');
   const [asAnnouncement, setAsAnnouncement] = useState(false);
+  const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (loaded && !user) router.replace('/login');
@@ -65,6 +66,11 @@ export default function MessagesPage() {
     if (active && user) markRead(active.id, user.id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [active?.id]);
+
+  // Auto-scroll to bottom when thread changes or active conversation switches
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [thread.length, activeId]);
 
   if (!user) return null;
 
@@ -202,6 +208,7 @@ export default function MessagesPage() {
                     <p className="text-center text-sm text-ink-400 py-12">No messages yet.</p>
                   )}
                   {thread.map((m) => {
+
                     const isMe = m.authorId === user.id;
                     const author = getById(m.authorId);
                     const canPin = can(user.role, 'comms.pin_announcement');
@@ -251,6 +258,7 @@ export default function MessagesPage() {
                       </div>
                     );
                   })}
+                  <div ref={bottomRef} />
                 </div>
 
                 <div className="border-t border-ink-100 p-3">

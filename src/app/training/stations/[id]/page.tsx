@@ -102,6 +102,24 @@ export default function StationDetailPage() {
                   ))}
                 </ul>
               </div>
+              {sk.images && sk.images.length > 0 && (
+                <div className="mt-4 space-y-4">
+                  {sk.images.map((img, j) => (
+                    <figure key={j} className="overflow-hidden rounded-xl border border-ink-100">
+                      <img
+                        src={img.src}
+                        alt={img.caption ?? ''}
+                        className="w-full object-contain bg-white"
+                      />
+                      {img.caption && (
+                        <figcaption className="border-t border-ink-100 bg-cyan-50/40 px-3 py-2 text-xs text-ink-500 leading-relaxed">
+                          {img.caption}
+                        </figcaption>
+                      )}
+                    </figure>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>

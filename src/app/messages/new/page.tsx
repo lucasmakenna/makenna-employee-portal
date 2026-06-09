@@ -67,9 +67,10 @@ export default function NewMessagePage() {
       });
     } else if (mode === 'location') {
       convId = `conv:loc:${locationId}`;
-      // Use existing channel if it exists, otherwise create
+      // Use existing channel if it exists, otherwise create with the stable id
       if (!conversations.find((c) => c.id === convId)) {
         create({
+          id: convId,
           type: 'location_channel',
           name: `${getLocation(locationId)?.name} Team`,
           locationId,
@@ -92,6 +93,7 @@ export default function NewMessagePage() {
       const recipient = employees.find((e) => e.id === recipientId);
       if (!conversations.find((c) => c.id === convId)) {
         create({
+          id: convId,                // ← pass stable id so message & conversation match
           type: 'dm',
           name: recipient ? `${fullName(user)} & ${fullName(recipient)}` : 'Direct message',
           participantIds: ids,

@@ -44,6 +44,18 @@ export default function TrainingHub() {
   return (
     <AppShell>
       <div className="mx-auto max-w-6xl">
+        <div className="mb-4 rounded-xl border border-cyan-100 bg-cyan-50 px-4 py-3 text-sm text-ink-600">
+          <p className="font-bold text-ink-700 mb-1">Purpose of this training program</p>
+          <p>
+            This training outlines the mandatory schedule, content, performance standards, and
+            documentation required for all new hires across all Makenna Koffee locations. The goal
+            is to ensure every employee achieves proficiency in food safety, beverage execution,
+            customer service, and compliance with all California labor and retail food laws as
+            detailed in the SOP Manual. The sections below are organized by suggested training day
+            to provide a structured timeline for completion.
+          </p>
+        </div>
+
         <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div>
             <h1 className="text-3xl font-bold text-ink-700">Training</h1>
