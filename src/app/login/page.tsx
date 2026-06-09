@@ -25,29 +25,11 @@ export default function LoginPage() {
     setError('');
     setLoading(true);
     try {
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_SUPABASE_URL}/auth/v1/token?grant_type=password`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'apikey': process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? '',
-          },
-          body: JSON.stringify({ email: email.trim().toLowerCase(), password }),
-        },
-      );
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error_description || data.msg || 'Invalid email or password');
-      // Store session directly in localStorage so Supabase picks it up on next page load
-      const storageKey = `sb-${process.env.NEXT_PUBLIC_SUPABASE_URL!.split('//')[1].split('.')[0]}-auth-token`;
-      localStorage.setItem(storageKey, JSON.stringify({
-        access_token: data.access_token,
-        token_type: data.token_type,
-        expires_in: data.expires_in,
-        expires_at: data.expires_at,
-        refresh_token: data.refresh_token,
-        user: data.user,
-      }));
+      const { error } = await supabase.auth.signInWithPassword({
+        email: email.trim().toLowerCase(),
+        password,
+      });
+      if (error) throw error;
       window.location.href = '/dashboard';
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Invalid email or password';
