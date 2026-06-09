@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import { supabase } from '@/lib/supabase';
 import { employeeFromRow } from '@/data/store';
+import { EMPLOYEES as SEED_EMPLOYEES } from '@/data/employees';
 import type { Employee } from '@/types';
 
 export function useCurrentUser() {
@@ -12,12 +13,25 @@ export function useCurrentUser() {
   async function loadUser(email: string | undefined) {
     if (!email) { setUser(null); setLoaded(true); return; }
     const normalizedEmail = email.trim().toLowerCase();
+
+    // Try Supabase first
     const { data } = await supabase
       .from('employees')
       .select('*')
       .ilike('email', normalizedEmail)
       .single();
-    setUser(data ? employeeFromRow(data as Record<string, unknown>) : null);
+
+    if (data) {
+      setUser(employeeFromRow(data as Record<string, unknown>));
+      setLoaded(true);
+      return;
+    }
+
+    // Fall back to seed data (covers employees not yet synced to Supabase)
+    const seed = SEED_EMPLOYEES.find(
+      (e) => e.email.toLowerCase() === normalizedEmail,
+    );
+    setUser(seed ?? null);
     setLoaded(true);
   }
 
