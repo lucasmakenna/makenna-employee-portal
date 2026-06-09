@@ -147,45 +147,7 @@ export function freshPacket(employeeId: string, startDate: string, trainerId?: s
   };
 }
 
-export const PACKETS: Record<string, OnboardingPacket> = {
-  'emp-005': {
-    employeeId: 'emp-005',
-    startDate: new Date(Date.now() - 5 * 86400000).toISOString().slice(0, 10),
-    trainerEmployeeId: 'emp-003',
-    tasks: ONBOARDING_DOCS.map((d) => ({
-      id: d.id,
-      title: d.title,
-      description: d.description,
-      required: d.required,
-      signed: ['w4', 'direct_deposit', 'emergency_contact'].includes(d.id),
-      signedAt: ['w4', 'direct_deposit', 'emergency_contact'].includes(d.id)
-        ? new Date(Date.now() - 4 * 86400000).toISOString()
-        : undefined,
-      signedByName: ['w4', 'direct_deposit', 'emergency_contact'].includes(d.id)
-        ? 'Diego Ramirez'
-        : undefined,
-    })),
-  },
-  'emp-006': {
-    employeeId: 'emp-006',
-    startDate: new Date(Date.now() - 12 * 86400000).toISOString().slice(0, 10),
-    trainerEmployeeId: 'emp-003',
-    tasks: ONBOARDING_DOCS.map((d) => ({
-      id: d.id,
-      title: d.title,
-      description: d.description,
-      required: d.required,
-      signed: d.id !== 'nda' && d.id !== 'harassment_attestation',
-      signedAt:
-        d.id !== 'nda' && d.id !== 'harassment_attestation'
-          ? new Date(Date.now() - 11 * 86400000).toISOString()
-          : undefined,
-      signedByName:
-        d.id !== 'nda' && d.id !== 'harassment_attestation' ? 'Ava Nguyen' : undefined,
-    })),
-    managerSignOff: undefined,
-  },
-};
+export const PACKETS: Record<string, OnboardingPacket> = {};
 
 export function getDocTemplate(id: OnboardingDocId) {
   return ONBOARDING_DOCS.find((d) => d.id === id);
