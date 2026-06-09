@@ -18,6 +18,7 @@ export default function TrainingHub() {
   const { user, loaded } = useCurrentUser();
   const { employees, update: updateEmployee } = useEmployees();
   const [locFilter, setLocFilter] = useState<string>('all');
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
     if (loaded && !user) router.replace('/login');
@@ -39,7 +40,17 @@ export default function TrainingHub() {
 
   const trainees = employees
     .filter((e) => e.active && isInTraining(e))
-    .filter((e) => locFilter === 'all' || e.homeLocationId === locFilter);
+    .filter((e) => locFilter === 'all' || e.homeLocationId === locFilter)
+    .filter((e) => {
+      if (!search) return true;
+      const q = search.toLowerCase();
+      return (
+        e.firstName.toLowerCase().includes(q) ||
+        e.lastName.toLowerCase().includes(q) ||
+        `${e.firstName} ${e.lastName}`.toLowerCase().includes(q) ||
+        e.email.toLowerCase().includes(q)
+      );
+    });
 
   return (
     <AppShell>
@@ -64,6 +75,13 @@ export default function TrainingHub() {
             </p>
           </div>
           <div className="flex items-center gap-2">
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search trainees..."
+              className="input w-48"
+            />
             <select
               value={locFilter}
               onChange={(e) => setLocFilter(e.target.value)}
