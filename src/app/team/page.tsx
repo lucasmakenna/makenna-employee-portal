@@ -50,6 +50,7 @@ export default function TeamPage() {
     return (
       e.firstName.toLowerCase().includes(q) ||
       e.lastName.toLowerCase().includes(q) ||
+      `${e.firstName} ${e.lastName}`.toLowerCase().includes(q) ||
       e.email.toLowerCase().includes(q)
     );
   });
