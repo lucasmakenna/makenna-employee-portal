@@ -28,9 +28,19 @@ export async function POST(req: Request) {
   if (listError) return NextResponse.json({ error: listError.message }, { status: 400 });
 
   const user = users.find((u) => u.email?.toLowerCase() === email.toLowerCase());
-  if (!user) return NextResponse.json({ error: 'No auth account found for this email. Use "Send portal invite" first.' }, { status: 404 });
 
-  // Update their password directly
+  if (!user) {
+    // No auth account yet — create one with this password
+    const { error: createError } = await adminClient.auth.admin.createUser({
+      email,
+      password,
+      email_confirm: true,
+    });
+    if (createError) return NextResponse.json({ error: createError.message }, { status: 400 });
+    return NextResponse.json({ ok: true, created: true });
+  }
+
+  // Account exists — update their password
   const { error } = await adminClient.auth.admin.updateUserById(user.id, { password });
   if (error) return NextResponse.json({ error: error.message }, { status: 400 });
 
