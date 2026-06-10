@@ -24,7 +24,7 @@ const SIZE_HEADER_RE = /^●/;
 
 const FLAVOR_LINE_RE = /\b(pumps?|scoops?|drizzles?)\b.*\bof\b|\bcans?\s+of\b|makenna energy can/i;
 const DAIRY_LINE_RE = /\b(milk|kona cloud|half and half|espresso shot)/i;
-const FILL_TO_RE = /^(fill to|pour over ice and tom-tom)/i;
+const FILL_TO_RE = /^fill to/i;
 
 function classifyLine(line: string): 2 | 3 | 4 {
   if (FLAVOR_LINE_RE.test(line)) return 2;
