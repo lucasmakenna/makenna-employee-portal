@@ -419,6 +419,32 @@ export default function StudyPage() {
           </div>
         </div>
 
+        {/* Level picker */}
+        <div className="card p-4">
+          <p className="text-xs font-bold uppercase tracking-wider text-ink-400 mb-2">
+            Study level
+          </p>
+          <div className="flex flex-wrap gap-1.5">
+            {STUDY_LEVELS.map((l) => (
+              <button
+                key={l.level}
+                onClick={() => changeLevel(l.level)}
+                className={`rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${
+                  studyLevel === l.level
+                    ? 'bg-cyan-400 text-white'
+                    : 'bg-white border border-ink-200 text-ink-500 hover:border-cyan-300'
+                }`}
+                title={l.hint}
+              >
+                {l.label}
+              </button>
+            ))}
+          </div>
+          <p className="mt-2 text-xs text-ink-400">
+            {STUDY_LEVELS.find((l) => l.level === studyLevel)?.hint}
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 gap-3">
           {CATEGORIES.map((cat) => {
             const total = categoryCounts[cat.id] ?? 0;
