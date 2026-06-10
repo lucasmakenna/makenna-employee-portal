@@ -88,6 +88,14 @@ export default function TeamPage() {
               ))}
             </select>
             {canManage && (
+              <Link
+                href="/team/bulk-invite"
+                className="flex items-center gap-2 rounded-full border border-cyan-300 px-4 py-2 text-sm font-semibold text-cyan-600 hover:bg-cyan-50 transition"
+              >
+                Bulk invite
+              </Link>
+            )}
+            {canManage && (
               <button
                 onClick={() => setShowAdd(true)}
                 className="flex items-center gap-2 rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-500 transition"
