@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight, ArrowLeft, Shuffle, CheckCircle2, RotateCcw,
 import allCards from '@/data/study-recipe-cards.json';
 import { useCurrentUser } from '@/lib/auth';
 import { fetchOverrides, applyOverrides, type StudyOverrides } from '@/lib/study-overrides';
+import { getLeveledRecipe, STUDY_LEVELS, type StudyLevel } from '@/lib/recipe-levels';
 
 interface RecipeCard {
   id: string;
@@ -15,6 +16,18 @@ interface RecipeCard {
 }
 
 const MASTERED_KEY = 'mk-study-mastered-v1';
+const LEVEL_KEY = 'mk-study-level-v1';
+
+function loadLevel(): StudyLevel {
+  if (typeof window === 'undefined') return 1;
+  const raw = window.localStorage.getItem(LEVEL_KEY);
+  const n = raw ? parseInt(raw, 10) : 1;
+  return (n >= 1 && n <= 4 ? n : 1) as StudyLevel;
+}
+
+function saveLevel(level: StudyLevel) {
+  try { window.localStorage.setItem(LEVEL_KEY, String(level)); } catch {}
+}
 
 function loadMastered(): Set<string> {
   if (typeof window === 'undefined') return new Set();
@@ -87,6 +100,15 @@ export default function StudyPage() {
   const [mastered, setMastered] = useState<Set<string>>(new Set());
   const [justMastered, setJustMastered] = useState(false);
   const [overrides, setOverrides] = useState<StudyOverrides>({ hidden: [], categories: {} });
+  const [studyLevel, setStudyLevel] = useState<StudyLevel>(1);
+
+  // Load study level from localStorage on mount
+  useEffect(() => { setStudyLevel(loadLevel()); }, []);
+
+  const changeLevel = useCallback((level: StudyLevel) => {
+    setStudyLevel(level);
+    saveLevel(level);
+  }, []);
 
   const rawCards = allCards as RecipeCard[];
   // Apply admin overrides (hidden + reclassified) to the card list
@@ -251,6 +273,24 @@ export default function StudyPage() {
           <p className="text-sm text-ink-400">{cardIndex + 1} / {deck.length}</p>
         </div>
 
+        {/* Level selector */}
+        <div className="max-w-2xl mx-auto w-full mb-3 flex flex-wrap items-center justify-center gap-1.5">
+          {STUDY_LEVELS.map((l) => (
+            <button
+              key={l.level}
+              onClick={() => changeLevel(l.level)}
+              className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
+                studyLevel === l.level
+                  ? 'bg-cyan-400 text-white'
+                  : 'bg-white border border-ink-200 text-ink-500 hover:border-cyan-300'
+              }`}
+              title={l.hint}
+            >
+              {l.label}
+            </button>
+          ))}
+        </div>
+
         {/* Mastery progress bar */}
         <div className="max-w-2xl mx-auto w-full mb-1 flex items-center justify-between text-[10px] text-ink-400">
           <span>{deck.length} left to study</span>
@@ -277,14 +317,19 @@ export default function StudyPage() {
               <div className="p-10 flex flex-col items-center justify-center gap-4 min-h-[240px]">
                 <p className="text-xs font-bold uppercase tracking-widest text-ink-400">Drink Name</p>
                 <p className="text-3xl font-bold text-ink-700 text-center leading-snug">{card.drink}</p>
-                <p className="text-xs text-ink-300 mt-4">Tap to see the full recipe →</p>
+                <p className="text-xs text-ink-400 mt-4 text-center px-4">
+                  {STUDY_LEVELS.find((l) => l.level === studyLevel)?.hint}
+                </p>
+                <p className="text-xs text-ink-300 mt-2">Tap to reveal the answer →</p>
               </div>
             ) : (
               <div className="p-6 flex flex-col gap-3">
-                <p className="text-xs font-bold uppercase tracking-widest text-cyan-500 text-center">Full Recipe</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-cyan-500 text-center">
+                  {STUDY_LEVELS.find((l) => l.level === studyLevel)?.label}
+                </p>
                 <p className="text-sm font-bold text-ink-700 text-center mb-1">{card.drink}</p>
                 <div className="text-sm text-ink-700 leading-relaxed whitespace-pre-line">
-                  {card.recipe}
+                  {getLeveledRecipe(card.recipe, studyLevel)}
                 </div>
               </div>
             )}
