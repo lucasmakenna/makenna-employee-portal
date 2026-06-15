@@ -12,11 +12,13 @@ import {
 import { ACCOUNTABILITY_LABELS, ACCOUNTABILITY_COLORS } from '@/types';
 import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
+import EmployeeAttachments from '@/components/EmployeeAttachments';
 import { useCurrentUser } from '@/lib/auth';
 import { fullName } from '@/data/employees';
 import { useEmployees, usePackets, useAccountability } from '@/data/store';
 import { getLocation, LOCATIONS } from '@/data/locations';
 import { loadSignaturesForEmployee } from '@/data/signatures';
+import { loadTrainingProgress } from '@/lib/training-db';
 import type { OnboardingPacket, Employee, LocationId } from '@/types';
 import { STATIONS, totalSkills, completedSkillsCount } from '@/data/training';
 import { ROLE_LABELS } from '@/types';
@@ -47,7 +49,16 @@ type PacketTask = {
   formData?: object;
 };
 
-function EmployeeFileTab({ employeeId, hiredOn, packet: packetProp, employee }: { employeeId: string; hiredOn: string; packet?: OnboardingPacket; employee: Employee }) {
+function EmployeeFileTab({
+  employeeId, hiredOn, packet: packetProp, employee, onUpdateAttachments, currentUserId,
+}: {
+  employeeId: string;
+  hiredOn: string;
+  packet?: OnboardingPacket;
+  employee: Employee;
+  onUpdateAttachments: (attachments: import('@/types').EmployeeAttachment[]) => void;
+  currentUserId: string;
+}) {
   const [events, setEvents] = useState<FileEvent[]>([]);
   const [tasks, setTasks] = useState<PacketTask[]>([]);
   const [loading, setLoading] = useState(true);
@@ -285,6 +296,16 @@ function EmployeeFileTab({ employeeId, hiredOn, packet: packetProp, employee }: 
           </div>
         </div>
       )}
+
+      {/* Photos & Files */}
+      <div>
+        <h3 className="text-sm font-semibold uppercase tracking-wider text-ink-400 mb-3">Photos &amp; Files</h3>
+        <EmployeeAttachments
+          attachments={employee.attachments ?? []}
+          onChange={onUpdateAttachments}
+          uploaderId={currentUserId}
+        />
+      </div>
 
       {/* Activity timeline */}
       {events.length > 0 && (
@@ -561,6 +582,16 @@ export default function TeamMemberPage() {
   useEffect(() => {
     if (loaded && !user) router.replace('/login');
   }, [loaded, user, router]);
+
+  // Overlay Supabase training progress on mount so the % shown here matches
+  // the Training tab, which reads from the same training_progress table.
+  useEffect(() => {
+    loadTrainingProgress(params.id).then((progress) => {
+      if (Object.keys(progress).length > 0) {
+        updateEmployee(params.id, { trainingProgressByStation: progress });
+      }
+    });
+  }, [params.id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!employee) {
     return (
@@ -840,7 +871,14 @@ export default function TeamMemberPage() {
                 </p>
               </div>
             </div>
-            <EmployeeFileTab employeeId={employee.id} hiredOn={employee.hiredOn} packet={getPacket(employee.id)} employee={employee} />
+            <EmployeeFileTab
+              employeeId={employee.id}
+              hiredOn={employee.hiredOn}
+              packet={getPacket(employee.id)}
+              employee={employee}
+              onUpdateAttachments={(attachments) => updateEmployee(employee.id, { attachments })}
+              currentUserId={user?.id ?? ''}
+            />
           </div>
         )}
 

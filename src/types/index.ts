@@ -61,6 +61,20 @@ export type Employee = {
   trainingProgressByStation: Record<string, StationProgress>;
   avatarColor: string; // hex for initial avatar
   active: boolean;
+  /** Photos / scans uploaded to this employee's file (IDs, notes, etc.). */
+  attachments?: EmployeeAttachment[];
+};
+
+export type EmployeeAttachment = {
+  id: string;
+  name: string;
+  /** Compressed JPEG/PNG as a data URL. */
+  dataUrl: string;
+  uploadedAt: string; // ISO
+  uploadedBy: string; // employee id of uploader
+  /** Optional link to an onboarding document this file represents (e.g. a
+   *  photo of a signed W-4 or work permit), or 'other' for general files. */
+  category?: OnboardingDocId | 'other';
 };
 
 export type Certification = {
