@@ -6,10 +6,6 @@ import { OnboardingPacket, OnboardingDocId } from '@/types';
  * `templateBody` is the canonical text the signer agrees to. The audit
  * trail SHA-256-hashes title + templateBody so any future edit produces a
  * different hash, and you can prove which version was signed.
- *
- * For the W-4 and I-9 the templateBody here is a summary acknowledgement —
- * in production the full IRS/USCIS form renders inline (PDF) and the
- * acknowledgement text below is the explicit affirmation the signer makes.
  */
 export const ONBOARDING_DOCS: {
   id: OnboardingDocId;
@@ -18,20 +14,6 @@ export const ONBOARDING_DOCS: {
   required: boolean;
   templateBody: string;
 }[] = [
-  {
-    id: 'w4',
-    title: 'IRS Form W-4',
-    description: 'Federal tax withholding. Determines how much federal income tax is held from each paycheck.',
-    required: true,
-    templateBody: `I have completed IRS Form W-4 truthfully and to the best of my knowledge. I understand that the information I have provided will be used to determine the federal income tax withheld from my pay. I will notify Makenna Koffee in writing if my filing status, dependents, or other tax-related information changes. Under penalties of perjury, I declare that this certificate, to the best of my knowledge and belief, is true, correct, and complete.`,
-  },
-  {
-    id: 'i9',
-    title: 'Form I-9 — Employment Eligibility',
-    description: 'U.S. work authorization. Bring two (2) work-eligibility documents on Day 1 (e.g., passport — or driver\'s license + Social Security card). If you\'re under 18, you also need a school work permit.',
-    required: true,
-    templateBody: `I attest, under penalty of perjury, that I am one of the following: (a) a citizen of the United States; (b) a noncitizen national of the United States; (c) a lawful permanent resident; or (d) an alien authorized to work in the United States. I will present original supporting documentation to my Makenna Koffee Store Manager for in-person inspection on or before my first day of paid work — either one List A document (such as a U.S. passport) OR one List B document (such as a driver's license) and one List C document (such as a Social Security card). If I am under 18 years of age, I will also provide a current school work permit. I understand that my employment is contingent on this verification per federal law.`,
-  },
   {
     id: 'direct_deposit',
     title: 'Direct Deposit Authorization',
