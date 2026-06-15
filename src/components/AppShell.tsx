@@ -18,22 +18,27 @@ import {
   PartyPopper,
   ShieldAlert,
   BookOpen,
+  Lock,
+  Eye,
+  EyeOff,
+  X,
 } from 'lucide-react';
 import clsx from 'clsx';
 import { useCurrentUser } from '@/lib/auth';
+import { supabase } from '@/lib/supabase';
 import Avatar from './Avatar';
-import ResetDemoButton from './ResetDemoButton';
 import { fullName } from '@/data/employees';
 import { getLocation } from '@/data/locations';
 import { BRAND } from '@/lib/brand';
 import { ROLE_LABELS } from '@/types';
 
+// Messages, Availability, and Hiring are hidden for now — this app is
+// training-only until that rollout phase begins. Onboarding is still
+// needed by admins/managers/trainers to review docs, but is hidden for
+// baristas (who use the /activate flow for their own docs, not this list).
 const NAV = [
   { href: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-  { href: '/messages', icon: MessageSquare, label: 'Messages' },
-  { href: '/availability', icon: Calendar, label: 'Availability' },
-  { href: '/hiring', icon: Users, label: 'Hiring' },
-  { href: '/onboarding', icon: ClipboardCheck, label: 'Onboarding' },
+  { href: '/onboarding', icon: ClipboardCheck, label: 'Onboarding', hideForBarista: true },
   { href: '/training', icon: GraduationCap, label: 'Training' },
   { href: '/recipe-fill', icon: FlaskConical, label: 'Barista Test' },
   { href: '/study', icon: BookOpen, label: 'Study Mode' },
@@ -67,7 +72,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         {/* Tri-stripe — the site's signature horizontal accent */}
         <div className="tri-stripe" />
         <nav className="flex-1 p-3">
-          {NAV.map((item) => {
+          {NAV.filter((item) => !(item.hideForBarista && user?.role === 'barista')).map((item) => {
             const active = pathname.startsWith(item.href);
             return (
               <Link
@@ -110,7 +115,6 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               </button>
             </div>
           )}
-          {user?.role === 'admin' && <ResetDemoButton />}
         </div>
       </aside>
 
@@ -144,7 +148,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
         {/* Mobile nav strip */}
         <nav className="flex overflow-x-auto border-b border-ink-100 bg-white px-2 py-2 md:hidden">
-          {NAV.map((item) => {
+          {NAV.filter((item) => !(item.hideForBarista && user?.role === 'barista')).map((item) => {
             const active = pathname.startsWith(item.href);
             return (
               <Link
@@ -172,6 +176,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
 function ProfileMenu({ user, signOut }: { user: import('@/types').Employee; signOut: () => void }) {
   const [open, setOpen] = useState(false);
+  const [showPasswordModal, setShowPasswordModal] = useState(false);
 
   return (
     <div className="relative">
@@ -192,6 +197,13 @@ function ProfileMenu({ user, signOut }: { user: import('@/types').Employee; sign
               <p className="text-xs text-ink-400 truncate">{user.email}</p>
             </div>
             <button
+              onClick={() => { setOpen(false); setShowPasswordModal(true); }}
+              className="flex w-full items-center gap-2 px-4 py-2 text-sm text-ink-700 hover:bg-cyan-50"
+            >
+              <Lock size={14} />
+              Change password
+            </button>
+            <button
               onClick={() => { setOpen(false); signOut(); }}
               className="flex w-full items-center gap-2 px-4 py-2 text-sm text-hibiscus-600 hover:bg-hibiscus-50"
             >
@@ -201,6 +213,104 @@ function ProfileMenu({ user, signOut }: { user: import('@/types').Employee; sign
           </div>
         </>
       )}
+
+      {showPasswordModal && <ChangePasswordModal onClose={() => setShowPasswordModal(false)} />}
+    </div>
+  );
+}
+
+function ChangePasswordModal({ onClose }: { onClose: () => void }) {
+  const [password, setPassword] = useState('');
+  const [confirm, setConfirm] = useState('');
+  const [showPw, setShowPw] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [done, setDone] = useState(false);
+
+  const valid = password.length >= 8 && password === confirm;
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!valid) return;
+    setError('');
+    setLoading(true);
+    try {
+      const { error } = await supabase.auth.updateUser({ password });
+      if (error) throw error;
+      setDone(true);
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Something went wrong');
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
+      <div className="w-full max-w-sm rounded-2xl bg-white shadow-2xl">
+        <div className="flex items-center justify-between border-b border-ink-100 px-6 py-4">
+          <h2 className="text-lg font-bold text-ink-700">Change password</h2>
+          <button onClick={onClose} className="rounded-full p-1 hover:bg-ink-100">
+            <X size={18} className="text-ink-400" />
+          </button>
+        </div>
+        <div className="p-6">
+          {done ? (
+            <div className="text-center space-y-3">
+              <p className="text-sm text-ink-600">Your password has been updated.</p>
+              <button onClick={onClose} className="btn-cyan w-full">Done</button>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <label className="label">New password</label>
+                <div className="relative">
+                  <input
+                    type={showPw ? 'text' : 'password'}
+                    className="input w-full pr-10"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="At least 8 characters"
+                    required
+                    autoFocus
+                  />
+                  <button
+                    type="button"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-ink-400 hover:text-ink-600"
+                    onClick={() => setShowPw((v) => !v)}
+                    tabIndex={-1}
+                  >
+                    {showPw ? <EyeOff size={16} /> : <Eye size={16} />}
+                  </button>
+                </div>
+              </div>
+              <div>
+                <label className="label">Confirm password</label>
+                <input
+                  type={showPw ? 'text' : 'password'}
+                  className="input w-full"
+                  value={confirm}
+                  onChange={(e) => setConfirm(e.target.value)}
+                  placeholder="Re-enter your password"
+                  required
+                />
+                {confirm && password !== confirm && (
+                  <p className="mt-1 text-xs text-hibiscus-500">Passwords don't match.</p>
+                )}
+              </div>
+              {error && (
+                <p className="text-sm text-hibiscus-600 bg-hibiscus-50 rounded-lg px-3 py-2">{error}</p>
+              )}
+              <div className="flex gap-3 pt-2">
+                <button type="button" onClick={onClose} className="btn-ghost flex-1">Cancel</button>
+                <button type="submit" className="btn-cyan flex-1" disabled={!valid || loading}>
+                  {loading ? 'Updating…' : 'Update password'}
+                </button>
+              </div>
+            </form>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
