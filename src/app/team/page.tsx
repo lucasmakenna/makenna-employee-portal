@@ -39,7 +39,14 @@ export default function TeamPage() {
 
   const canManage = user.role === 'admin' || user.role === 'manager';
 
-  const filtered = employees.filter((e) => {
+  // Baristas only see teammates at their own location(s) — full directory
+  // is for managers/admins/trainers/leads coordinating across stores.
+  const myLocs = [user.homeLocationId, ...(user.additionalLocationIds ?? [])];
+  const visibleEmployees = user.role === 'barista'
+    ? employees.filter((e) => [e.homeLocationId, ...(e.additionalLocationIds ?? [])].some((l) => myLocs.includes(l)))
+    : employees;
+
+  const filtered = visibleEmployees.filter((e) => {
     if (role !== 'all' && e.role !== role) return false;
     if (loc !== 'all') {
       const allLocs = [e.homeLocationId, ...(e.additionalLocationIds ?? [])];
@@ -62,7 +69,7 @@ export default function TeamPage() {
           <div>
             <h1 className="text-3xl font-bold text-ink-700">Team</h1>
             <p className="mt-1 text-sm text-ink-400">
-              {filtered.length} of {employees.length} team members
+              {filtered.length} of {visibleEmployees.length} team members
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">

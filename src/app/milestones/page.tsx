@@ -113,9 +113,15 @@ export default function MilestonesPage() {
   const today = new Date();
   const currentYear = viewMonth.getFullYear();
 
+  // Baristas only see milestones for teammates at their own location(s).
+  const myLocs = user ? [user.homeLocationId, ...(user.additionalLocationIds ?? [])] : [];
+  const visibleEmployees = user?.role === 'barista'
+    ? employees.filter((e) => [e.homeLocationId, ...(e.additionalLocationIds ?? [])].some((l) => myLocs.includes(l)))
+    : employees;
+
   const allEvents = useMemo(
-    () => buildEvents(employees, currentYear),
-    [employees, currentYear],
+    () => buildEvents(visibleEmployees, currentYear),
+    [visibleEmployees, currentYear],
   );
 
   // Events in the current view month
