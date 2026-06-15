@@ -26,6 +26,35 @@ import { RECIPE_FILL_PASSING_SCORE } from '@/types';
 import type { RecipeFillQuestion } from '@/types';
 
 // ---------------------------------------------------------------------------
+// Database sync helper
+//
+// Local writes happen immediately so the UI feels instant, but every new
+// record also needs to land in Supabase or other devices/users won't see it.
+// This wraps that write with a retry and a visible alert on final failure,
+// so a failed sync is never silent.
+// ---------------------------------------------------------------------------
+
+function syncToDb(
+  run: () => PromiseLike<{ error: { message: string } | null }>,
+  label: string,
+  attempt = 1,
+): void {
+  run().then(({ error }) => {
+    if (!error) return;
+    console.error(`Failed to sync ${label} to database (attempt ${attempt}):`, error.message);
+    if (attempt < 3) {
+      setTimeout(() => syncToDb(run, label, attempt + 1), 1000 * attempt);
+    } else if (typeof window !== 'undefined') {
+      window.alert(
+        `Could not save "${label}" to the shared database after several tries (${error.message}).\n\n` +
+          `It's saved on THIS device only and won't show up for other users yet. ` +
+          `Check your internet connection and try the action again.`,
+      );
+    }
+  });
+}
+
+// ---------------------------------------------------------------------------
 // Row ↔ TypeScript converters
 // ---------------------------------------------------------------------------
 
@@ -81,6 +110,7 @@ export function employeeFromRow(r: Record<string, unknown>): Employee {
       (r.training_progress_by_station as Employee['trainingProgressByStation']) ?? {},
     avatarColor: (r.avatar_color as string) ?? '#4FB8C9',
     active: r.active as boolean,
+    attachments: (r.attachments as Employee['attachments']) ?? [],
   };
 }
 
@@ -100,6 +130,7 @@ function employeeToRow(e: Employee) {
     training_progress_by_station: e.trainingProgressByStation,
     avatar_color: e.avatarColor,
     active: e.active,
+    attachments: e.attachments ?? [],
     updated_at: new Date().toISOString(),
   };
 }
@@ -290,7 +321,7 @@ export function useCandidates() {
       saveCandidates(next);
       return next;
     });
-    supabase.from('candidates').insert(candidateToRow(candidate)).then(() => {});
+    syncToDb(() => supabase.from('candidates').insert(candidateToRow(candidate)), `new candidate ${candidate.firstName} ${candidate.lastName}`);
     return candidate;
   }, []);
 
@@ -351,6 +382,11 @@ export function useCandidates() {
 
 const EMPLOYEES_KEY = 'mk-employees-v1';
 
+// Retired seed/demo employee IDs that should never appear, even if a
+// browser's localStorage cached them from before they were removed from
+// EMP_SEED or deleted from Supabase.
+const RETIRED_EMPLOYEE_IDS = new Set(['emp-001', 'emp-002', 'emp-009', 'emp-1779390524264']);
+
 function loadEmployees(): Employee[] {
   if (typeof window === 'undefined') return [...EMP_SEED];
   try {
@@ -361,6 +397,7 @@ function loadEmployees(): Employee[] {
     const map = new Map<string, Employee>();
     EMP_SEED.forEach((e) => map.set(e.id, e));
     stored.forEach((e) => map.set(e.id, e));
+    RETIRED_EMPLOYEE_IDS.forEach((id) => map.delete(id));
     return Array.from(map.values());
   } catch {
     return [...EMP_SEED];
@@ -399,7 +436,7 @@ export function useEmployees() {
       saveEmployees(next);
       return next;
     });
-    supabase.from('employees').insert(employeeToRow(employee)).then(() => {});
+    syncToDb(() => supabase.from('employees').insert(employeeToRow(employee)), `new employee ${employee.firstName} ${employee.lastName}`);
     return employee;
   }, []);
 
@@ -409,11 +446,10 @@ export function useEmployees() {
       saveEmployees(next);
       const updated = next.find((e) => e.id === id);
       if (updated) {
-        supabase
-          .from('employees')
-          .update(employeeToRow(updated))
-          .eq('id', id)
-          .then(() => {});
+        syncToDb(
+          () => supabase.from('employees').update(employeeToRow(updated)).eq('id', id),
+          `update for ${updated.firstName} ${updated.lastName}`,
+        );
       }
       return next;
     });
@@ -503,17 +539,18 @@ export function usePackets() {
         savePackets(next);
         return next;
       });
-      supabase
-        .from('onboarding_packets')
-        .upsert({
-          employee_id: packet.employeeId,
-          start_date: packet.startDate,
-          trainer_employee_id: packet.trainerEmployeeId ?? null,
-          tasks: packet.tasks,
-          manager_sign_off: null,
-          updated_at: new Date().toISOString(),
-        })
-        .then(() => {});
+      syncToDb(
+        () =>
+          supabase.from('onboarding_packets').upsert({
+            employee_id: packet.employeeId,
+            start_date: packet.startDate,
+            trainer_employee_id: packet.trainerEmployeeId ?? null,
+            tasks: packet.tasks,
+            manager_sign_off: null,
+            updated_at: new Date().toISOString(),
+          }),
+        `onboarding packet for ${employeeId}`,
+      );
       return packet;
     },
     [],
@@ -656,7 +693,7 @@ export function useConversations() {
       saveConversations(next);
       return next;
     });
-    supabase.from('conversations').insert(conversationToRow(conv)).then(() => {});
+    syncToDb(() => supabase.from('conversations').insert(conversationToRow(conv)), `new conversation "${conv.name}"`);
     return conv;
   }, []);
 
@@ -740,7 +777,7 @@ export function useMessages() {
       saveMessages(next);
       return next;
     });
-    supabase.from('messages').insert(messageToRow(msg)).then(() => {});
+    syncToDb(() => supabase.from('messages').insert(messageToRow(msg)), 'new message');
     return msg;
   }, []);
 
