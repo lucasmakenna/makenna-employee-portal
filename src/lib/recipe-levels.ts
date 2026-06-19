@@ -22,7 +22,7 @@ export const STUDY_LEVELS: { level: StudyLevel; label: string; hint: string }[] 
 
 const SIZE_HEADER_RE = /^●/;
 
-const FLAVOR_LINE_RE = /\b(pumps?|scoops?|drizzles?)\b.*\bof\b|\bcans?\s+of\b|makenna energy can/i;
+const FLAVOR_LINE_RE = /^[⁃\-•\*]?\s*[\d].*\b(pumps?|scoops?|drizzles?)(\s+of\b|\s+\w)|\bcans?\s+of\b|makenna energy can/i;
 const DAIRY_LINE_RE = /\b(milk|kona cloud|half and half|espresso shot)/i;
 const FILL_TO_RE = /^fill to/i;
 
@@ -32,7 +32,7 @@ function classifyLine(line: string): 2 | 3 | 4 {
   return 4;
 }
 
-const FLAVOR_NAME_RE = /(?:pumps?|scoops?|drizzles?|cans?)\s+of\s+([^,]+?)(?:\s+in\s+\d.*)?$/i;
+const FLAVOR_NAME_RE = /(?:pumps?|scoops?|drizzles?|cans?)\s+(?:of\s+)?([^,]+?)(?:\s+(?:in|with|on|and then)\s+.*)?$/i;
 
 function extractFlavorName(line: string): string | null {
   const m = line.match(FLAVOR_NAME_RE);
@@ -59,7 +59,7 @@ export function getLeveledRecipe(recipe: string, level: StudyLevel): string {
       if (!seen.has(key)) seen.set(key, name);
     }
     if (seen.size === 0) return '(No flavor ingredients — base drink.)';
-    return [...seen.values()].map((n) => `• ${n}`).join('\n');
+    return Array.from(seen.values()).map((n) => `• ${n}`).join('\n');
   }
 
   // Levels 2 & 3: keep size headers + lines at or below the chosen level

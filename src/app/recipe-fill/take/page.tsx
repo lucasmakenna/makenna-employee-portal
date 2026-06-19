@@ -261,7 +261,7 @@ function RecipeFillTakeInner() {
                           ))}
                         </select>
 
-                        <span className="text-sm text-ink-500 font-medium">{ingBlank.type === 'powder' ? 'scoops of' : 'pumps of'}</span>
+                        <span className="text-sm text-ink-500 font-medium">{ingBlank.type === 'powder' ? 'scoops of' : ingBlank.type === 'cream' ? 'oz of' : 'pumps of'}</span>
 
                         <select
                           value={ingVal}
@@ -291,7 +291,7 @@ function RecipeFillTakeInner() {
                     {pairs.map(([qtyBlank, ingBlank], pairIdx) => (
                       <p key={pairIdx} className="text-sm text-emerald-800">
                         <span className="font-bold">{qtyBlank.correct}</span>{' '}
-                        {ingBlank.type === 'powder' ? 'scoops' : 'pumps'} of{' '}
+                        {ingBlank.type === 'powder' ? 'scoops' : ingBlank.type === 'cream' ? 'oz' : 'pumps'} of{' '}
                         <span className="font-bold">{ingBlank.correct}</span>
                       </p>
                     ))}
