@@ -22,7 +22,15 @@ export function useCurrentUser() {
       .single();
 
     if (data) {
-      setUser(employeeFromRow(data as Record<string, unknown>));
+      const employee = employeeFromRow(data as Record<string, unknown>);
+      if (employee.role === 'barista') {
+        // Baristas don't get portal logins — kick out any lingering session.
+        await supabase.auth.signOut();
+        setUser(null);
+        setLoaded(true);
+        return;
+      }
+      setUser(employee);
       setLoaded(true);
       return;
     }

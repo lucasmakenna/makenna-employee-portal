@@ -25,11 +25,24 @@ export default function LoginPage() {
     setError('');
     setLoading(true);
     try {
+      const normalizedEmail = email.trim().toLowerCase();
       const { error } = await supabase.auth.signInWithPassword({
-        email: email.trim().toLowerCase(),
+        email: normalizedEmail,
         password,
       });
       if (error) throw error;
+
+      const { data: emp } = await supabase
+        .from('employees')
+        .select('role')
+        .ilike('email', normalizedEmail)
+        .single();
+
+      if (emp?.role === 'barista') {
+        await supabase.auth.signOut();
+        throw new Error('Baristas don’t have portal logins. Ask your manager for your employee file link.');
+      }
+
       window.location.href = '/dashboard';
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Invalid email or password';

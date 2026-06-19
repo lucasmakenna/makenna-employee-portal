@@ -730,7 +730,22 @@ export default function TeamMemberPage() {
                 Hired {format(parseISO(employee.hiredOn), 'MMM d, yyyy')}
               </div>
             </div>
-            {canManage && (
+            {canManage && employee.role === 'barista' && (
+              <div className="mt-4 flex flex-wrap items-center gap-3">
+                <p className="text-xs text-ink-400">
+                  Baristas don't have portal logins — use the Employee File link in the Employee File tab to share their file.
+                </p>
+                {isAdmin && employee.id !== user?.id && (
+                  <button
+                    onClick={() => setShowRemoveModal(true)}
+                    className="flex items-center gap-2 rounded-full border border-hibiscus-200 px-4 py-1.5 text-xs font-semibold text-hibiscus-600 hover:bg-hibiscus-50 transition"
+                  >
+                    <Trash2 size={13} /> Remove employee
+                  </button>
+                )}
+              </div>
+            )}
+            {canManage && employee.role !== 'barista' && (
               <div className="mt-4 flex flex-wrap items-center gap-3">
                 <div className="space-y-1">
                   <div className="flex flex-wrap gap-2">
