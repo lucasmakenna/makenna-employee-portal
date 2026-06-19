@@ -133,7 +133,8 @@ export default function LoginPage() {
               Forgot your password?
             </a>
             <p className="text-center text-xs text-ink-400">
-              New employee? Open the link from your welcome email to set up your account.
+              New manager, shift lead, or trainer?{' '}
+              <a href="/signup" className="text-cyan-500 hover:underline">Create an account</a>
             </p>
           </div>
         </form>
