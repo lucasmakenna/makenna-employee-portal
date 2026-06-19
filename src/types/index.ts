@@ -63,6 +63,8 @@ export type Employee = {
   active: boolean;
   /** Photos / scans uploaded to this employee's file (IDs, notes, etc.). */
   attachments?: EmployeeAttachment[];
+  /** UUID token for the read-only "view my file" share link. Generated on demand by a manager. */
+  shareToken?: string;
 };
 
 export type EmployeeAttachment = {
@@ -399,7 +401,7 @@ export type TimeOffRequest = {
 };
 
 // Recipe Fill-In Test
-export type RecipeFillBlankType = 'quantity' | 'syrup' | 'sauce' | 'powder';
+export type RecipeFillBlankType = 'quantity' | 'syrup' | 'sauce' | 'powder' | 'cream';
 
 export type RecipeFillBlank = {
   index: number;

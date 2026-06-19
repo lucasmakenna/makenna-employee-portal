@@ -111,6 +111,7 @@ export function employeeFromRow(r: Record<string, unknown>): Employee {
     avatarColor: (r.avatar_color as string) ?? '#4FB8C9',
     active: r.active as boolean,
     attachments: (r.attachments as Employee['attachments']) ?? [],
+    shareToken: (r.share_token as string) ?? undefined,
   };
 }
 

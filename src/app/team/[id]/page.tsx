@@ -233,6 +233,8 @@ function EmployeeFileTab({
 
   return (
     <div className="space-y-8">
+      <ShareFileLinkButton employeeId={employeeId} shareToken={employee.shareToken} />
+
       {/* Onboarding Documents */}
       {tasks.length > 0 && (
         <div>
@@ -417,6 +419,49 @@ function EmployeeFileTab({
     </div>
         </div>
       )}
+    </div>
+  );
+}
+
+function ShareFileLinkButton({ employeeId, shareToken }: { employeeId: string; shareToken?: string }) {
+  const [token, setToken] = useState(shareToken);
+  const [loading, setLoading] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  async function handleClick() {
+    let t = token;
+    if (!t) {
+      setLoading(true);
+      const res = await fetch(`/api/employee-file/generate/${employeeId}`, { method: 'POST' });
+      const json = await res.json();
+      setLoading(false);
+      if (!res.ok) return;
+      t = json.shareToken;
+      setToken(t);
+    }
+    const url = `${window.location.origin}/file/${t}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      window.prompt('Copy this link:', url);
+    }
+  }
+
+  return (
+    <div className="flex items-center justify-between rounded-xl border border-cyan-200 bg-cyan-50/50 px-4 py-3">
+      <div>
+        <p className="text-sm font-semibold text-ink-700">Employee file link</p>
+        <p className="text-xs text-ink-400">A read-only link this employee can open without logging in.</p>
+      </div>
+      <button
+        onClick={handleClick}
+        disabled={loading}
+        className="flex items-center gap-2 rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-500 transition disabled:opacity-50"
+      >
+        <Link2 size={14} /> {loading ? 'Generating…' : copied ? 'Copied!' : 'Copy link'}
+      </button>
     </div>
   );
 }
