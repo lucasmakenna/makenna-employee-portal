@@ -108,6 +108,22 @@
     ],
     "topping": [
       "sugar crystals"
+    ],
+    "fill_oz": [
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "12",
+      "14",
+      "16",
+      "20",
+      "24"
     ]
   },
   "questions": [
@@ -25408,90 +25424,6 @@
       ]
     },
     {
-      "id": "9611455f-2e20-494e-bc9d-a6a54b61dc0f",
-      "drink": "Caramel Crunch Chai Hot",
-      "size": "12 oz",
-      "template": "___ scoops of ___\n___ oz of ___\n___ to 10 oz\nAdd ___ on top\nAdd ___ to the top and ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "spiced chai powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 3,
-          "type": "cream",
-          "correct": "Maui Milk"
-        },
-        {
-          "index": 4,
-          "type": "milk",
-          "correct": "Milk of Choice"
-        },
-        {
-          "index": 5,
-          "type": "cream",
-          "correct": "Kona Cloud"
-        },
-        {
-          "index": 6,
-          "type": "drizzle",
-          "correct": "caramel drizzle"
-        },
-        {
-          "index": 7,
-          "type": "topping",
-          "correct": "sugar crystals"
-        }
-      ]
-    },
-    {
-      "id": "15692271-f225-4bea-80c7-102c2a86318e",
-      "drink": "Caramel Crunch Chai Hot",
-      "size": "16 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "spiced chai powder"
-        }
-      ]
-    },
-    {
-      "id": "8be5f1c1-4ad9-4dc4-b45c-f132ba5cbe83",
-      "drink": "Caramel Crunch Chai Hot",
-      "size": "24 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "spiced chai powder"
-        }
-      ]
-    },
-    {
       "id": "bda374bf-c968-413d-b24b-64bd2ed4e0e5",
       "drink": "Mocha Americano hot",
       "size": "12 oz",
@@ -33416,6 +33348,165 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        }
+      ]
+    },
+    {
+      "id": "9611455f-2e20-494e-bc9d-a6a54b61dc0f",
+      "drink": "Caramel Crunch Chai Hot",
+      "size": "12 oz",
+      "template": "___ scoops of ___\n___ oz of ___\n___ to ___ oz\nAdd ___ on top\nAdd ___ to the top and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "milk",
+          "correct": "Milk of Choice"
+        },
+        {
+          "index": 5,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        },
+        {
+          "index": 8,
+          "type": "topping",
+          "correct": "sugar crystals"
+        }
+      ]
+    },
+    {
+      "id": "15692271-f225-4bea-80c7-102c2a86318e",
+      "drink": "Caramel Crunch Chai Hot",
+      "size": "16 oz",
+      "template": "___ scoops of ___\n___ oz of ___\n___ to ___ oz\nAdd ___\nAdd ___ to the top and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "milk",
+          "correct": "Milk of Choice"
+        },
+        {
+          "index": 5,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        },
+        {
+          "index": 8,
+          "type": "topping",
+          "correct": "sugar crystals"
+        }
+      ]
+    },
+    {
+      "id": "8be5f1c1-4ad9-4dc4-b45c-f132ba5cbe83",
+      "drink": "Caramel Crunch Chai Hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___\n___ oz of ___\n___ to ___ oz\nAdd ___\nAdd ___ to the top and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "milk",
+          "correct": "Milk of Choice"
+        },
+        {
+          "index": 5,
+          "type": "fill_oz",
+          "correct": "14"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        },
+        {
+          "index": 8,
+          "type": "topping",
+          "correct": "sugar crystals"
         }
       ]
     }
