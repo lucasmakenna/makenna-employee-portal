@@ -79,7 +79,8 @@
       "peppermint sauce",
       "salted caramel sauce",
       "white chocolate sauce",
-      "pumpkin pie sauce"
+      "pumpkin pie sauce",
+      "pumpkin sauce"
     ],
     "powder": [
       "horchata powder",
@@ -12985,7 +12986,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin pie sauce"
+          "correct": "pumpkin sauce"
         }
       ]
     },
@@ -13013,7 +13014,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin pie sauce"
+          "correct": "pumpkin sauce"
         }
       ]
     },
@@ -13041,7 +13042,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin pie sauce"
+          "correct": "pumpkin sauce"
         }
       ]
     },
@@ -13069,7 +13070,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin pie sauce"
+          "correct": "pumpkin sauce"
         }
       ]
     },
