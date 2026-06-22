@@ -7,7 +7,7 @@ import clsx from 'clsx';
 import { CheckCircle, XCircle, ChevronRight, X, UserCheck } from 'lucide-react';
 import { useCurrentUser } from '@/lib/auth';
 import { useRecipeFillAttempts, useEmployees } from '@/data/store';
-import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP, RECIPE_FILL_OPTIONS } from '@/data/recipe-fill';
+import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP, RECIPE_FILL_OPTIONS, parseTemplateUnits } from '@/data/recipe-fill';
 import { fullName } from '@/data/employees';
 import type { RecipeFillBlank, RecipeFillBlankType } from '@/types';
 
@@ -202,11 +202,7 @@ function RecipeFillTakeInner() {
           </p>
 
           {sortedQuestions.map((q) => {
-            // Group blanks into qty+ingredient pairs
-            const pairs: [RecipeFillBlank, RecipeFillBlank][] = [];
-            for (let i = 0; i < q.blanks.length; i += 2) {
-              pairs.push([q.blanks[i], q.blanks[i + 1]]);
-            }
+            const units = parseTemplateUnits(q.template, q.blanks);
 
             const sizeAllCorrect =
               confirmed && q.blanks.every((b) => (selections[blankKey(q.id, b)] ?? '') === b.correct);
@@ -234,65 +230,55 @@ function RecipeFillTakeInner() {
 
                 {/* Ingredient rows */}
                 <div className="space-y-2 pl-1">
-                  {pairs.map(([qtyBlank, ingBlank], pairIdx) => {
-                    const qtyKey = blankKey(q.id, qtyBlank);
-                    const ingKey = blankKey(q.id, ingBlank);
-                    const qtyVal = selections[qtyKey] ?? '';
-                    const ingVal = selections[ingKey] ?? '';
-                    const qtyCorrect = qtyVal === qtyBlank.correct;
-                    const ingCorrect = ingVal === ingBlank.correct;
-
-                    return (
-                      <div key={pairIdx} className="flex flex-wrap items-center gap-2">
-                        <select
-                          value={qtyVal}
-                          disabled={confirmed}
-                          onChange={(e) => setSelections((prev) => ({ ...prev, [qtyKey]: e.target.value }))}
-                          className={clsx(
-                            'rounded-xl border-2 px-3 py-2 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-100',
-                            !confirmed
-                              ? qtyVal ? 'border-cyan-300 bg-cyan-50 text-cyan-800' : 'border-ink-200 bg-white text-ink-500'
-                              : qtyCorrect ? 'border-emerald-300 bg-emerald-50 text-emerald-800' : 'border-hibiscus-300 bg-hibiscus-50 text-hibiscus-800',
-                          )}
-                        >
-                          <option value="">— qty —</option>
-                          {RECIPE_FILL_OPTIONS.quantity.map((opt) => (
-                            <option key={opt} value={opt}>{opt}</option>
-                          ))}
-                        </select>
-
-                        <span className="text-sm text-ink-500 font-medium">{ingBlank.type === 'powder' ? 'scoops of' : ingBlank.type === 'cream' ? 'oz of' : 'pumps of'}</span>
-
-                        <select
-                          value={ingVal}
-                          disabled={confirmed}
-                          onChange={(e) => setSelections((prev) => ({ ...prev, [ingKey]: e.target.value }))}
-                          className={clsx(
-                            'flex-1 min-w-40 rounded-xl border-2 px-3 py-2 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-100',
-                            !confirmed
-                              ? ingVal ? 'border-cyan-300 bg-cyan-50 text-cyan-800' : 'border-ink-200 bg-white text-ink-500'
-                              : ingCorrect ? 'border-emerald-300 bg-emerald-50 text-emerald-800' : 'border-hibiscus-300 bg-hibiscus-50 text-hibiscus-800',
-                          )}
-                        >
-                          <option value="">— ingredient —</option>
-                          {RECIPE_FILL_OPTIONS[ingBlank.type as RecipeFillBlankType].map((opt) => (
-                            <option key={opt} value={opt}>{opt}</option>
-                          ))}
-                        </select>
-                      </div>
-                    );
-                  })}
+                  {units.map((unit, unitIdx) => (
+                    <div key={unitIdx} className="flex flex-wrap items-center gap-1.5">
+                      {unit.parts[0] && <span className="text-sm text-ink-500 font-medium">{unit.parts[0]}</span>}
+                      {unit.blanks.map((blank, blankIdx) => {
+                        const key = blankKey(q.id, blank);
+                        const val = selections[key] ?? '';
+                        const isCorrect = val === blank.correct;
+                        return (
+                          <span key={blank.index} className="flex items-center gap-1.5">
+                            <select
+                              value={val}
+                              disabled={confirmed}
+                              onChange={(e) => setSelections((prev) => ({ ...prev, [key]: e.target.value }))}
+                              className={clsx(
+                                'rounded-xl border-2 px-3 py-2 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-cyan-100',
+                                blank.type === 'quantity' ? '' : 'flex-1 min-w-40',
+                                !confirmed
+                                  ? val ? 'border-cyan-300 bg-cyan-50 text-cyan-800' : 'border-ink-200 bg-white text-ink-500'
+                                  : isCorrect ? 'border-emerald-300 bg-emerald-50 text-emerald-800' : 'border-hibiscus-300 bg-hibiscus-50 text-hibiscus-800',
+                              )}
+                            >
+                              <option value="">{blank.type === 'quantity' ? '— qty —' : '— select —'}</option>
+                              {RECIPE_FILL_OPTIONS[blank.type as RecipeFillBlankType].map((opt) => (
+                                <option key={opt} value={opt}>{opt}</option>
+                              ))}
+                            </select>
+                            {unit.parts[blankIdx + 1] && (
+                              <span className="text-sm text-ink-500 font-medium">{unit.parts[blankIdx + 1]}</span>
+                            )}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  ))}
                 </div>
 
                 {/* Correct answers revealed after wrong */}
                 {confirmed && !sizeAllCorrect && (
                   <div className="ml-1 rounded-xl bg-emerald-50 border border-emerald-200 px-4 py-3 space-y-1">
                     <p className="text-xs font-semibold text-emerald-700 uppercase tracking-wider mb-1">Correct — {sizeLabels[q.size]}</p>
-                    {pairs.map(([qtyBlank, ingBlank], pairIdx) => (
-                      <p key={pairIdx} className="text-sm text-emerald-800">
-                        <span className="font-bold">{qtyBlank.correct}</span>{' '}
-                        {ingBlank.type === 'powder' ? 'scoops' : ingBlank.type === 'cream' ? 'oz' : 'pumps'} of{' '}
-                        <span className="font-bold">{ingBlank.correct}</span>
+                    {units.map((unit, unitIdx) => (
+                      <p key={unitIdx} className="text-sm text-emerald-800">
+                        {unit.parts[0]}
+                        {unit.blanks.map((blank, blankIdx) => (
+                          <span key={blank.index}>
+                            <span className="font-bold">{blank.correct}</span>
+                            {unit.parts[blankIdx + 1]}
+                          </span>
+                        ))}
                       </p>
                     ))}
                   </div>
@@ -305,22 +291,19 @@ function RecipeFillTakeInner() {
         {/* Feedback + action */}
         <div className="flex items-center justify-between min-h-[44px]">
           {confirmed ? (() => {
-            // Count correct pairs across all sizes
-            const totalPairs = sortedQuestions.reduce((n, q) => n + Math.floor(q.blanks.length / 2), 0);
-            const correctPairs = sortedQuestions.reduce((n, q) => {
-              for (let i = 0; i < q.blanks.length; i += 2) {
-                const qtyBlank = q.blanks[i];
-                const ingBlank = q.blanks[i + 1];
-                if (
-                  (selections[blankKey(q.id, qtyBlank)] ?? '') === qtyBlank.correct &&
-                  (selections[blankKey(q.id, ingBlank)] ?? '') === ingBlank.correct
-                ) n++;
-              }
-              return n;
-            }, 0);
+            // Count correct units (a unit = all its blanks correct) across all sizes
+            let totalUnits = 0;
+            let correctUnits = 0;
+            sortedQuestions.forEach((q) => {
+              const units = parseTemplateUnits(q.template, q.blanks);
+              units.forEach((unit) => {
+                totalUnits++;
+                if (unit.blanks.every((b) => (selections[blankKey(q.id, b)] ?? '') === b.correct)) correctUnits++;
+              });
+            });
             return (
-              <p className={clsx('text-sm font-semibold', correctPairs === totalPairs ? 'text-emerald-600' : 'text-hibiscus-500')}>
-                {correctPairs}/{totalPairs} answers correct
+              <p className={clsx('text-sm font-semibold', correctUnits === totalUnits ? 'text-emerald-600' : 'text-hibiscus-500')}>
+                {correctUnits}/{totalUnits} answers correct
               </p>
             );
           })() : (

@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import { CheckCircle, XCircle, ChevronDown, ChevronUp, RotateCcw, FlaskConical } from 'lucide-react';
 import { useCurrentUser } from '@/lib/auth';
 import { useRecipeFillAttempts } from '@/data/store';
-import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP } from '@/data/recipe-fill';
+import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP, parseTemplateUnits } from '@/data/recipe-fill';
 import { RECIPE_FILL_PASSING_SCORE } from '@/types';
 import { format } from 'date-fns';
 
@@ -159,11 +159,7 @@ export default function RecipeFillResultsPage() {
                     {expanded && (
                       <div className="px-6 pb-4 space-y-3">
                         {qs.map((q) => {
-                          // Pair blanks into [qty, ingredient] rows
-                          const pairs: [typeof q.blanks[0], typeof q.blanks[0]][] = [];
-                          for (let i = 0; i < q.blanks.length; i += 2) {
-                            pairs.push([q.blanks[i], q.blanks[i + 1]]);
-                          }
+                          const units = parseTemplateUnits(q.template, q.blanks);
                           return (
                             <div key={q.id} className="rounded-xl border border-ink-100 bg-ink-50 p-4">
                               <div className="flex items-center gap-2 mb-2">
@@ -172,27 +168,36 @@ export default function RecipeFillResultsPage() {
                                 </span>
                               </div>
                               <div className="space-y-1.5">
-                                {pairs.map(([qtyBlank, ingBlank], pairIdx) => {
-                                  const qtyKey = `${q.id}-${qtyBlank.index}`;
-                                  const ingKey = `${q.id}-${ingBlank.index}`;
-                                  const theirQty = attempt.answers[qtyKey] ?? '—';
-                                  const theirIng = attempt.answers[ingKey] ?? '—';
-                                  const qtyRight = theirQty === qtyBlank.correct;
-                                  const ingRight = theirIng === ingBlank.correct;
-                                  const lineCorrect = qtyRight && ingRight;
+                                {units.map((unit, unitIdx) => {
+                                  const lineCorrect = unit.blanks.every(
+                                    (b) => (attempt.answers[`${q.id}-${b.index}`] ?? '') === b.correct,
+                                  );
+                                  const theirs = unit.parts
+                                    .slice(0, 1)
+                                    .concat(
+                                      unit.blanks.flatMap((b, i) => [
+                                        attempt.answers[`${q.id}-${b.index}`] ?? '—',
+                                        unit.parts[i + 1] ?? '',
+                                      ]),
+                                    )
+                                    .join('');
+                                  const correctText = unit.parts
+                                    .slice(0, 1)
+                                    .concat(unit.blanks.flatMap((b, i) => [b.correct, unit.parts[i + 1] ?? '']))
+                                    .join('');
                                   return (
-                                    <div key={pairIdx} className="grid grid-cols-2 gap-3 text-xs">
+                                    <div key={unitIdx} className="grid grid-cols-2 gap-3 text-xs">
                                       <div>
                                         <span className="text-ink-400">Your answer: </span>
                                         <span className={clsx('font-semibold', lineCorrect ? 'text-emerald-700' : 'text-hibiscus-600')}>
-                                          {theirQty} pumps of {theirIng}
+                                          {theirs}
                                         </span>
                                       </div>
                                       {!lineCorrect && (
                                         <div>
                                           <span className="text-ink-400">Correct: </span>
                                           <span className="font-semibold text-emerald-700">
-                                            {qtyBlank.correct} pumps of {ingBlank.correct}
+                                            {correctText}
                                           </span>
                                         </div>
                                       )}
