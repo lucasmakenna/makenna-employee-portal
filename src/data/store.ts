@@ -24,6 +24,7 @@ import type {
 } from '@/types';
 import { RECIPE_FILL_PASSING_SCORE } from '@/types';
 import type { RecipeFillQuestion } from '@/types';
+import { parseTemplateUnits, computeUnitMatches } from './recipe-fill';
 
 // ---------------------------------------------------------------------------
 // Database sync helper
@@ -933,18 +934,25 @@ export function useRecipeFillAttempts() {
     });
   }, []);
 
-  const complete = useCallback((attemptId: string, questions: RecipeFillQuestion[]) => {
+  const complete = useCallback((attemptId: string, allQuestions: RecipeFillQuestion[]) => {
+    const questionMap = new Map(allQuestions.map((q) => [q.id, q]));
     setList((prev) => {
       const next = prev.map((a) => {
         if (a.id !== attemptId) return a;
         let correctBlanks = 0;
         let totalBlanks = 0;
-        for (const q of questions) {
-          for (const blank of q.blanks) {
-            const key = `${q.id}-${blank.index}`;
-            totalBlanks++;
-            if ((a.answers[key] ?? '') === blank.correct) correctBlanks++;
-          }
+        // Score only the questions this attempt actually covered (not the
+        // whole database) — and grade interchangeable flavor pumps as a
+        // set rather than position-by-position.
+        for (const qid of a.questionOrder) {
+          const q = questionMap.get(qid);
+          if (!q) continue;
+          const units = parseTemplateUnits(q.template, q.blanks);
+          const matches = computeUnitMatches(units, (b) => a.answers[`${q.id}-${b.index}`] ?? '');
+          units.forEach((u, i) => {
+            totalBlanks += u.blanks.length;
+            if (matches[i]) correctBlanks += u.blanks.length;
+          });
         }
         const score = totalBlanks > 0 ? Math.round((correctBlanks / totalBlanks) * 100) : 0;
         return {

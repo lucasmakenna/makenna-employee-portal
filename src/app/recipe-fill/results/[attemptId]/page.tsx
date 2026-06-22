@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import { CheckCircle, XCircle, ChevronDown, ChevronUp, RotateCcw, FlaskConical } from 'lucide-react';
 import { useCurrentUser } from '@/lib/auth';
 import { useRecipeFillAttempts } from '@/data/store';
-import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP, parseTemplateUnits } from '@/data/recipe-fill';
+import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP, parseTemplateUnits, computeUnitMatches } from '@/data/recipe-fill';
 import { RECIPE_FILL_PASSING_SCORE } from '@/types';
 import { format } from 'date-fns';
 
@@ -40,23 +40,26 @@ export default function RecipeFillResultsPage() {
 
   const questions = attempt.questionOrder.map((id) => RECIPE_FILL_QUESTION_MAP[id]).filter(Boolean);
 
-  // Score by blank accuracy
+  // Score by blank accuracy — interchangeable flavor pumps are graded as a
+  // set, not position-by-position (order never matters for "2 pumps of
+  // peach + 1 pump of vanilla" vs "1 pump of vanilla + 2 pumps of peach").
   let totalBlanks = 0;
   let correctBlanks = 0;
+  const questionUnitMatches = new Map<string, boolean[]>();
   for (const q of questions) {
-    for (const blank of q.blanks) {
-      const key = `${q.id}-${blank.index}`;
-      totalBlanks++;
-      if ((attempt.answers[key] ?? '') === blank.correct) correctBlanks++;
-    }
+    const units = parseTemplateUnits(q.template, q.blanks);
+    const matches = computeUnitMatches(units, (b) => attempt.answers[`${q.id}-${b.index}`] ?? '');
+    questionUnitMatches.set(q.id, matches);
+    units.forEach((u, i) => {
+      totalBlanks += u.blanks.length;
+      if (matches[i]) correctBlanks += u.blanks.length;
+    });
   }
   const score = attempt.score ?? (totalBlanks > 0 ? Math.round((correctBlanks / totalBlanks) * 100) : 0);
   const passed = attempt.passed ?? score >= RECIPE_FILL_PASSING_SCORE;
 
-  // A question is "missed" if any blank is wrong
-  const missed = questions.filter((q) =>
-    q.blanks.some((b) => (attempt.answers[`${q.id}-${b.index}`] ?? '') !== b.correct),
-  );
+  // A question is "missed" if any of its units didn't match
+  const missed = questions.filter((q) => (questionUnitMatches.get(q.id) ?? []).some((m) => !m));
   const missedByDrink = missed.reduce<Record<string, typeof missed>>((acc, q) => {
     if (!acc[q.drink]) acc[q.drink] = [];
     acc[q.drink].push(q);
@@ -160,6 +163,7 @@ export default function RecipeFillResultsPage() {
                       <div className="px-6 pb-4 space-y-3">
                         {qs.map((q) => {
                           const units = parseTemplateUnits(q.template, q.blanks);
+                          const matches = questionUnitMatches.get(q.id) ?? [];
                           return (
                             <div key={q.id} className="rounded-xl border border-ink-100 bg-ink-50 p-4">
                               <div className="flex items-center gap-2 mb-2">
@@ -169,9 +173,7 @@ export default function RecipeFillResultsPage() {
                               </div>
                               <div className="space-y-1.5">
                                 {units.map((unit, unitIdx) => {
-                                  const lineCorrect = unit.blanks.every(
-                                    (b) => (attempt.answers[`${q.id}-${b.index}`] ?? '') === b.correct,
-                                  );
+                                  const lineCorrect = matches[unitIdx] ?? false;
                                   const theirs = unit.parts
                                     .slice(0, 1)
                                     .concat(

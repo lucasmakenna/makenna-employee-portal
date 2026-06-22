@@ -7,7 +7,7 @@ import clsx from 'clsx';
 import { CheckCircle, XCircle, ChevronRight, X, UserCheck } from 'lucide-react';
 import { useCurrentUser } from '@/lib/auth';
 import { useRecipeFillAttempts, useEmployees } from '@/data/store';
-import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP, RECIPE_FILL_OPTIONS, parseTemplateUnits } from '@/data/recipe-fill';
+import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_QUESTION_MAP, RECIPE_FILL_OPTIONS, parseTemplateUnits, computeUnitMatches, correctBlankIndices } from '@/data/recipe-fill';
 import { fullName } from '@/data/employees';
 import type { RecipeFillBlank, RecipeFillBlankType } from '@/types';
 
@@ -142,9 +142,10 @@ function RecipeFillTakeInner() {
 
   const allGroupCorrect =
     confirmed &&
-    sortedQuestions.every((q) =>
-      q.blanks.every((b) => (selections[blankKey(q.id, b)] ?? '') === b.correct),
-    );
+    sortedQuestions.every((q) => {
+      const units = parseTemplateUnits(q.template, q.blanks);
+      return computeUnitMatches(units, (b) => selections[blankKey(q.id, b)] ?? '').every(Boolean);
+    });
 
   return (
     <div className="min-h-screen bg-page">
@@ -203,9 +204,10 @@ function RecipeFillTakeInner() {
 
           {sortedQuestions.map((q) => {
             const units = parseTemplateUnits(q.template, q.blanks);
+            const getVal = (b: RecipeFillBlank) => selections[blankKey(q.id, b)] ?? '';
+            const correctIdx = confirmed ? correctBlankIndices(q, getVal) : new Set<number>();
 
-            const sizeAllCorrect =
-              confirmed && q.blanks.every((b) => (selections[blankKey(q.id, b)] ?? '') === b.correct);
+            const sizeAllCorrect = confirmed && q.blanks.every((b) => correctIdx.has(b.index));
 
             return (
               <div key={q.id} className="space-y-3">
@@ -236,7 +238,7 @@ function RecipeFillTakeInner() {
                       {unit.blanks.map((blank, blankIdx) => {
                         const key = blankKey(q.id, blank);
                         const val = selections[key] ?? '';
-                        const isCorrect = val === blank.correct;
+                        const isCorrect = correctIdx.has(blank.index);
                         return (
                           <span key={blank.index} className="flex items-center gap-1.5">
                             <select
@@ -296,10 +298,9 @@ function RecipeFillTakeInner() {
             let correctUnits = 0;
             sortedQuestions.forEach((q) => {
               const units = parseTemplateUnits(q.template, q.blanks);
-              units.forEach((unit) => {
-                totalUnits++;
-                if (unit.blanks.every((b) => (selections[blankKey(q.id, b)] ?? '') === b.correct)) correctUnits++;
-              });
+              const matches = computeUnitMatches(units, (b) => selections[blankKey(q.id, b)] ?? '');
+              totalUnits += units.length;
+              correctUnits += matches.filter(Boolean).length;
             });
             return (
               <p className={clsx('text-sm font-semibold', correctUnits === totalUnits ? 'text-emerald-600' : 'text-hibiscus-500')}>
