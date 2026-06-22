@@ -35,13 +35,17 @@ export type LocationId =
   | 'westlake'
   | 'santa-monica'
   | 'beach-house'
-  | 'coffee-truck';
+  | 'coffee-truck'
+  | 'balboa'
+  | 'reseda';
 
 export type Location = {
   id: LocationId;
   name: string;
   city: string;
   manager?: string; // employee id
+  /** Store PIN code (e.g. alarm/POS access code). */
+  pin?: string;
 };
 
 export type Employee = {

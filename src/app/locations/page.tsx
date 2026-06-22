@@ -62,6 +62,14 @@ export default function LocationsPage() {
                     <div className="font-semibold text-ink-700">{fullName(manager)}</div>
                   </div>
                 )}
+                {loc.pin && (
+                  <div className="mt-3 rounded-lg bg-ink-50 p-3">
+                    <div className="text-xs font-semibold uppercase tracking-wider text-ink-400">
+                      Store PIN
+                    </div>
+                    <div className="font-semibold text-ink-700 tracking-widest">{loc.pin}</div>
+                  </div>
+                )}
                 <div className="mt-3 flex flex-wrap gap-1">
                   {team.slice(0, 6).map((e) => (
                     <Link
