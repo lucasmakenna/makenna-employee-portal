@@ -69,16 +69,17 @@
       "vanilla syrup",
       "watermelon syrup",
       "salted caramel syrup",
-      "strawberry puree"
+      "strawberry puree",
+      "chocolate mac syrup"
     ],
     "sauce": [
       "caramel sauce",
       "chocolate sauce",
       "peppermint bark sauce",
       "peppermint sauce",
-      "pumpkin sauce",
       "salted caramel sauce",
-      "white chocolate sauce"
+      "white chocolate sauce",
+      "pumpkin pie sauce"
     ],
     "powder": [
       "horchata powder",
@@ -94,7 +95,8 @@
       "brown sugar",
       "cinnamon powder",
       "spiced/vanilla chai powder",
-      "peanut butter"
+      "peanut butter",
+      "cookie butter"
     ],
     "cream": [
       "Kona Cloud",
@@ -1620,7 +1622,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "raspberry syrup"
+          "correct": "red raspberry syrup"
         },
         {
           "index": 6,
@@ -5711,98 +5713,6 @@
       ]
     },
     {
-      "id": "452a2714-7fc2-4a21-b55d-e146ed416a59",
-      "drink": "Cabo San Lucas",
-      "size": "12 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cinnamon syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "8"
-        }
-      ]
-    },
-    {
-      "id": "a6f41c5b-f389-4f0c-8881-993dea3099f2",
-      "drink": "Cabo San Lucas",
-      "size": "16 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cinnamon syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        }
-      ]
-    },
-    {
-      "id": "56b6542e-c1e4-472f-98e5-d6c92969e01e",
-      "drink": "Cabo San Lucas",
-      "size": "24 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cinnamon syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        }
-      ]
-    },
-    {
-      "id": "a3d888ad-1155-443b-a2c7-0dc41f97808a",
-      "drink": "Cabo San Lucas",
-      "size": "32 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cinnamon syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "20"
-        }
-      ]
-    },
-    {
       "id": "ea4a034b-997b-4a25-a505-edda452cf94b",
       "drink": "Caramel Latte Iced",
       "size": "12 oz",
@@ -7348,138 +7258,6 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "20"
-        }
-      ]
-    },
-    {
-      "id": "34a2cd4d-9ead-48d2-afee-29ee53fe86cb",
-      "drink": "The Ben",
-      "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "banana syrup"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        }
-      ]
-    },
-    {
-      "id": "da2d6d88-f363-4bc1-bc0c-c0c1046983cf",
-      "drink": "The Ben",
-      "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "banana syrup"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        }
-      ]
-    },
-    {
-      "id": "1d17a43f-c0d9-4bb6-bf6b-e538f0f21780",
-      "drink": "The Ben",
-      "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "banana syrup"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        }
-      ]
-    },
-    {
-      "id": "0a5dd266-c14d-4272-b20a-e8e741747ece",
-      "drink": "The Ben",
-      "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "banana syrup"
-        },
-        {
-          "index": 4,
           "type": "fill_oz",
           "correct": "20"
         }
@@ -11490,78 +11268,6 @@
       ]
     },
     {
-      "id": "d510ce90-84ce-44e2-8552-e4c0dc1d6877",
-      "drink": "Peach Tea",
-      "size": "12 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "peach syrup"
-        }
-      ]
-    },
-    {
-      "id": "190a72f3-1610-4ca7-98ed-6e00fdf41760",
-      "drink": "Peach Tea",
-      "size": "16 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "peach syrup"
-        }
-      ]
-    },
-    {
-      "id": "8c7b4785-e0a6-4d66-8471-acf91b3bcd17",
-      "drink": "Peach Tea",
-      "size": "24 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "peach syrup"
-        }
-      ]
-    },
-    {
-      "id": "0f273789-d888-4a87-a5fb-4770348b6d41",
-      "drink": "Peach Tea",
-      "size": "32 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "6"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "peach syrup"
-        }
-      ]
-    },
-    {
       "id": "50b4cb57-5ab5-4919-9cbf-fd5037fc42e4",
       "drink": "Sandy Beach",
       "size": "12 oz",
@@ -12235,7 +11941,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12268,7 +11974,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12301,7 +12007,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12334,7 +12040,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12357,7 +12063,7 @@
         {
           "index": 1,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 2,
@@ -12380,7 +12086,7 @@
         {
           "index": 1,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 2,
@@ -12403,7 +12109,7 @@
         {
           "index": 1,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 2,
@@ -12436,7 +12142,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12469,7 +12175,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12502,7 +12208,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12535,7 +12241,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12568,7 +12274,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12601,7 +12307,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12634,7 +12340,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12667,7 +12373,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12700,7 +12406,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12733,7 +12439,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12766,7 +12472,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -12995,7 +12701,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -13033,7 +12739,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -13071,7 +12777,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -13109,7 +12815,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -13147,7 +12853,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -13180,7 +12886,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -13213,7 +12919,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -13246,7 +12952,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         },
         {
           "index": 4,
@@ -13279,7 +12985,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         }
       ]
     },
@@ -13307,7 +13013,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         }
       ]
     },
@@ -13335,7 +13041,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
+          "correct": "pumpkin pie sauce"
         }
       ]
     },
@@ -13363,99 +13069,7 @@
         {
           "index": 3,
           "type": "sauce",
-          "correct": "pumpkin sauce"
-        }
-      ]
-    },
-    {
-      "id": "b398a991-321d-4080-8da5-6ebbc27f9892",
-      "drink": "Cookie Butter Iced",
-      "size": "12 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "8"
-        }
-      ]
-    },
-    {
-      "id": "158dc3c4-7049-44f6-994b-64e23c80af2d",
-      "drink": "Cookie Butter Iced",
-      "size": "16 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        }
-      ]
-    },
-    {
-      "id": "fede1dd5-962a-4892-a23c-7a2c589384f6",
-      "drink": "Cookie Butter Iced",
-      "size": "24 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        }
-      ]
-    },
-    {
-      "id": "5d2f778f-6e0d-439f-80f2-a56e12dd4cca",
-      "drink": "Cookie Butter Iced",
-      "size": "32 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "20"
+          "correct": "pumpkin pie sauce"
         }
       ]
     },
@@ -14969,60 +14583,6 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "8"
-        }
-      ]
-    },
-    {
-      "id": "66d1e647-af10-4fa2-b1db-818ae47d0a58",
-      "drink": "Milky Way Iced",
-      "size": "12 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1/4"
-        },
-        {
-          "index": 1,
-          "type": "sauce",
-          "correct": "caramel sauce"
-        }
-      ]
-    },
-    {
-      "id": "d6307037-16a4-42a1-929c-0f7ce27704fc",
-      "drink": "Milky Way Iced",
-      "size": "16 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 1,
-          "type": "sauce",
-          "correct": "caramel sauce"
-        }
-      ]
-    },
-    {
-      "id": "3a098350-1ab1-4812-83ae-b7d6d90a4070",
-      "drink": "Milky Way Iced",
-      "size": "24 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3/4"
-        },
-        {
-          "index": 1,
-          "type": "sauce",
-          "correct": "caramel sauce"
         }
       ]
     },
@@ -17691,158 +17251,6 @@
       ]
     },
     {
-      "id": "b8532468-ff46-450e-a02f-bd497143046b",
-      "drink": "Cinnamon Cookie Freeze",
-      "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 3,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
-          "correct": "cinnamon syrup"
-        }
-      ]
-    },
-    {
-      "id": "d11e9f96-c874-425e-b59d-881bc7034059",
-      "drink": "Cinnamon Cookie Freeze",
-      "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
-          "correct": "cinnamon syrup"
-        }
-      ]
-    },
-    {
-      "id": "4449751a-4b08-4487-984a-ea1cd769161e",
-      "drink": "Cinnamon Cookie Freeze",
-      "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 3,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
-          "correct": "cinnamon syrup"
-        }
-      ]
-    },
-    {
-      "id": "8566007e-5692-4610-99ab-bf99fd018ee8",
-      "drink": "Cinnamon Cookie Freeze",
-      "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "6"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 3,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
-          "correct": "cinnamon syrup"
-        }
-      ]
-    },
-    {
       "id": "5289e663-70ce-4417-a6d7-ecaba635ad9b",
       "drink": "Orange Dream Freeze",
       "size": "12 oz",
@@ -19734,118 +19142,6 @@
       ]
     },
     {
-      "id": "ffaa2f9a-ede3-4943-98a1-b508b0a735aa",
-      "drink": "White Chocolate Mac Cold Brew",
-      "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 1,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "macadamia nut syrup"
-        }
-      ]
-    },
-    {
-      "id": "c66f2a2a-1500-440e-8d7e-ddf8e9d85254",
-      "drink": "White Chocolate Mac Cold Brew",
-      "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 1,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "macadamia nut syrup"
-        }
-      ]
-    },
-    {
-      "id": "47443185-f6da-4577-92a0-45efd8b87736",
-      "drink": "White Chocolate Mac Cold Brew",
-      "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "macadamia nut syrup"
-        }
-      ]
-    },
-    {
-      "id": "ce7f1021-86ef-4da3-8510-9d23d43a23a2",
-      "drink": "White Chocolate Mac Cold Brew",
-      "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "macadamia nut syrup"
-        }
-      ]
-    },
-    {
       "id": "d0e3a695-ad3c-45a2-8feb-486f67223edc",
       "drink": "Cruzer",
       "size": "16 oz",
@@ -19926,118 +19222,6 @@
           "index": 3,
           "type": "syrup",
           "correct": "blackberry syrup"
-        }
-      ]
-    },
-    {
-      "id": "300a2f1b-575b-4388-acbe-44596676cc70",
-      "drink": "Blended Honey Lavender",
-      "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "vanilla syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "lavender syrup"
-        }
-      ]
-    },
-    {
-      "id": "040cb365-31cf-42b4-9ef6-a90a43090432",
-      "drink": "Blended Honey Lavender",
-      "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "vanilla syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "lavender syrup"
-        }
-      ]
-    },
-    {
-      "id": "b6a866cb-62b3-4fe4-8b62-8b871ab6c1bc",
-      "drink": "Blended Honey Lavender",
-      "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "vanilla syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "lavender syrup"
-        }
-      ]
-    },
-    {
-      "id": "edf45ae9-a4f0-4818-b106-80c690effcd6",
-      "drink": "Blended Honey Lavender",
-      "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "6"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "vanilla syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "lavender syrup"
         }
       ]
     },
@@ -24255,167 +23439,6 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "14"
-        }
-      ]
-    },
-    {
-      "id": "1eea6a11-b62d-4d84-816f-35b4b2dc1287",
-      "drink": "Maui Vanilla Hot",
-      "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        }
-      ]
-    },
-    {
-      "id": "2d045671-5557-4843-88b8-086981bda897",
-      "drink": "Maui Vanilla Hot",
-      "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3/4"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        }
-      ]
-    },
-    {
-      "id": "ba3c39fc-1c04-478f-8625-05c596195260",
-      "drink": "Maui Vanilla Hot",
-      "size": "20 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "14"
-        }
-      ]
-    },
-    {
-      "id": "9a675666-a2e4-4517-b58e-b9bfffe0294a",
-      "drink": "Maui Vanilla Iced",
-      "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "8"
-        }
-      ]
-    },
-    {
-      "id": "3cf8f62c-f8e4-4d6a-8b3c-14d4383f52df",
-      "drink": "Maui Vanilla Iced",
-      "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3/4"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        }
-      ]
-    },
-    {
-      "id": "f17c4641-e23f-44a3-945a-53cf53dd3860",
-      "drink": "Maui Vanilla Iced",
-      "size": "24 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        }
-      ]
-    },
-    {
-      "id": "406f7fe0-69f3-4932-823d-a1e2e2ab0feb",
-      "drink": "Maui Vanilla Iced",
-      "size": "32 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "20"
         }
       ]
     },
@@ -31063,78 +30086,6 @@
       ]
     },
     {
-      "id": "01d8f6aa-3604-46a6-854d-c76fdba3c349",
-      "drink": "Love at First Sip Iced",
-      "size": "12 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
-      "id": "70052ca6-667e-4e53-b37d-0a81d9e555d0",
-      "drink": "Love at First Sip Iced",
-      "size": "16 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
-      "id": "8704b9f2-90de-4eda-9f6a-bfc0c28a4dff",
-      "drink": "Love at First Sip Iced",
-      "size": "24 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
-      "id": "5207f9f2-fab1-45dc-a92e-84445bf5c2c8",
-      "drink": "Love at First Sip Iced",
-      "size": "32 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "5"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
       "id": "405b62d2-a040-4844-ac3a-42eb6a5d1590",
       "drink": "Love Shot Shaken Espresso",
       "size": "12 oz",
@@ -34969,202 +33920,6 @@
       ]
     },
     {
-      "id": "e110ac47-cd6e-459a-808e-def18a3995b3",
-      "drink": "Double Matcha Iced",
-      "size": "12 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
-      "id": "a911da72-18ff-4620-8318-792ec9d9a227",
-      "drink": "Double Matcha Iced",
-      "size": "16 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
-      "id": "a3c474f0-49a4-4a1d-b8ec-06eb86b13051",
-      "drink": "Double Matcha Iced",
-      "size": "24 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
-      "id": "086230c5-9a4f-44c0-9386-e046519db89a",
-      "drink": "Double Matcha Iced",
-      "size": "32 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "5"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
-      "id": "ae0b4268-21fc-4fe0-8607-cca00899142a",
-      "drink": "Double Matcha Hot",
-      "size": "12 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
-      "id": "e14bf17d-0664-40df-afa4-dd72b2e43934",
-      "drink": "Double Matcha Hot",
-      "size": "16 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
-      "id": "6d061280-089c-462f-b7d1-27e454ac3a2a",
-      "drink": "Double Matcha Hot",
-      "size": "24 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
       "id": "e7c4171e-8a64-498a-a6d5-bf8ca46e3a6b",
       "drink": "Cookie Butter Matcha Iced",
       "size": "12 oz",
@@ -37913,6 +36668,1978 @@
           "index": 0,
           "type": "fill_oz",
           "correct": "20"
+        }
+      ]
+    },
+    {
+      "id": "bf2-laf-12 oz",
+      "drink": "Love at First Sip Iced",
+      "size": "12 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 8,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        }
+      ]
+    },
+    {
+      "id": "bf2-laf-16 oz",
+      "drink": "Love at First Sip Iced",
+      "size": "16 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 8,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        }
+      ]
+    },
+    {
+      "id": "bf2-laf-24 oz",
+      "drink": "Love at First Sip Iced",
+      "size": "24 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 8,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        }
+      ]
+    },
+    {
+      "id": "bf2-laf-32 oz",
+      "drink": "Love at First Sip Iced",
+      "size": "32 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "20"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 8,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        }
+      ]
+    },
+    {
+      "id": "bf2-pccb-12 oz",
+      "drink": "Pumpkin Cream Cold Brew",
+      "size": "12 oz",
+      "template": "___ pumps of ___\n___ oz of cold brew\n___ pumps of ___\n___ oz of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "vanilla syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "6"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "sauce",
+          "correct": "pumpkin pie sauce"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        }
+      ]
+    },
+    {
+      "id": "bf2-pccb-16 oz",
+      "drink": "Pumpkin Cream Cold Brew",
+      "size": "16 oz",
+      "template": "___ pumps of ___\n___ oz of cold brew\n___ pumps of ___\n___ oz of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "vanilla syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "sauce",
+          "correct": "pumpkin pie sauce"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        }
+      ]
+    },
+    {
+      "id": "bf2-pccb-24 oz",
+      "drink": "Pumpkin Cream Cold Brew",
+      "size": "24 oz",
+      "template": "___ pumps of ___\n___ oz of cold brew\n___ pumps of ___\n___ oz of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "vanilla syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "sauce",
+          "correct": "pumpkin pie sauce"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        }
+      ]
+    },
+    {
+      "id": "bf2-pccb-32 oz",
+      "drink": "Pumpkin Cream Cold Brew",
+      "size": "32 oz",
+      "template": "___ pumps of ___\n___ oz of cold brew\n___ pumps of ___\n___ oz of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "vanilla syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "16"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 4,
+          "type": "sauce",
+          "correct": "pumpkin pie sauce"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        }
+      ]
+    },
+    {
+      "id": "bf2-bhl-12 oz",
+      "drink": "Blended Honey Lavender",
+      "size": "12 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\nMilk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "lavender syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "5"
+        }
+      ]
+    },
+    {
+      "id": "bf2-bhl-16 oz",
+      "drink": "Blended Honey Lavender",
+      "size": "16 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\nMilk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "lavender syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "6"
+        }
+      ]
+    },
+    {
+      "id": "bf2-bhl-24 oz",
+      "drink": "Blended Honey Lavender",
+      "size": "24 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\nMilk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "lavender syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "7"
+        }
+      ]
+    },
+    {
+      "id": "bf2-bhl-32 oz",
+      "drink": "Blended Honey Lavender",
+      "size": "32 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\nMilk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "lavender syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "bf2-mw-12 oz",
+      "drink": "Milky Way Iced",
+      "size": "12 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "mocha powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
+        }
+      ]
+    },
+    {
+      "id": "bf2-mw-16 oz",
+      "drink": "Milky Way Iced",
+      "size": "16 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "mocha powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "bf2-mw-24 oz",
+      "drink": "Milky Way Iced",
+      "size": "24 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "mocha powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "bf2-ccf-12 oz",
+      "drink": "Cinnamon Cookie Freeze",
+      "size": "12 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___ + ___ pumps of ___\nFill to ___ oz with milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "cinnamon syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 7,
+          "type": "syrup",
+          "correct": "chocolate mac syrup"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "6"
+        }
+      ]
+    },
+    {
+      "id": "bf2-ccf-16 oz",
+      "drink": "Cinnamon Cookie Freeze",
+      "size": "16 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___ + ___ pumps of ___\nFill to ___ oz with milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "cinnamon syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 7,
+          "type": "syrup",
+          "correct": "chocolate mac syrup"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "7"
+        }
+      ]
+    },
+    {
+      "id": "bf2-ccf-24 oz",
+      "drink": "Cinnamon Cookie Freeze",
+      "size": "24 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___ + ___ pumps of ___\nFill to ___ oz with milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "cinnamon syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 7,
+          "type": "syrup",
+          "correct": "chocolate mac syrup"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "8"
+        }
+      ]
+    },
+    {
+      "id": "bf2-ccf-32 oz",
+      "drink": "Cinnamon Cookie Freeze",
+      "size": "32 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___ + ___ pumps of ___\nFill to ___ oz with milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "cinnamon syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 7,
+          "type": "syrup",
+          "correct": "chocolate mac syrup"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "bf2-pt-12 oz",
+      "drink": "Peach Tea",
+      "size": "12 oz",
+      "template": "___ pumps of ___\n___ oz tea of choice",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        }
+      ]
+    },
+    {
+      "id": "bf2-pt-16 oz",
+      "drink": "Peach Tea",
+      "size": "16 oz",
+      "template": "___ pumps of ___\n___ oz tea of choice",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "bf2-pt-24 oz",
+      "drink": "Peach Tea",
+      "size": "24 oz",
+      "template": "___ pumps of ___\n___ oz tea of choice",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "bf2-pt-32 oz",
+      "drink": "Peach Tea",
+      "size": "32 oz",
+      "template": "___ pumps of ___\n___ oz tea of choice",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "20"
+        }
+      ]
+    },
+    {
+      "id": "bf2-bac-24oz",
+      "drink": "Beaches and Cream Iced",
+      "size": "24 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "vanilla syrup"
+        }
+      ]
+    },
+    {
+      "id": "bf3-cabo-12 oz",
+      "drink": "Cabo San Lucas",
+      "size": "12 oz",
+      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "cinnamon syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "fill_oz",
+          "correct": "8"
+        }
+      ]
+    },
+    {
+      "id": "bf3-cabo-16 oz",
+      "drink": "Cabo San Lucas",
+      "size": "16 oz",
+      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "cinnamon syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "4"
+        },
+        {
+          "index": 3,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "bf3-cabo-24 oz",
+      "drink": "Cabo San Lucas",
+      "size": "24 oz",
+      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "cinnamon syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "4"
+        },
+        {
+          "index": 3,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "bf3-cabo-32 oz",
+      "drink": "Cabo San Lucas",
+      "size": "32 oz",
+      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "cinnamon syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 3,
+          "type": "fill_oz",
+          "correct": "20"
+        }
+      ]
+    },
+    {
+      "id": "bf3-cbi-12 oz",
+      "drink": "Cookie Butter Iced",
+      "size": "12 oz",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "cookie butter"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "8"
+        }
+      ]
+    },
+    {
+      "id": "bf3-cbi-16 oz",
+      "drink": "Cookie Butter Iced",
+      "size": "16 oz",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "cookie butter"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "bf3-cbi-24 oz",
+      "drink": "Cookie Butter Iced",
+      "size": "24 oz",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "cookie butter"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "bf3-cbi-32 oz",
+      "drink": "Cookie Butter Iced",
+      "size": "32 oz",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "cookie butter"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "20"
+        }
+      ]
+    },
+    {
+      "id": "bf3-ben-12 oz",
+      "drink": "The Ben",
+      "size": "12 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "chocolate macadamia nut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "banana syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
+        }
+      ]
+    },
+    {
+      "id": "bf3-ben-16 oz",
+      "drink": "The Ben",
+      "size": "16 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "chocolate macadamia nut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "banana syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "bf3-ben-24 oz",
+      "drink": "The Ben",
+      "size": "24 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "chocolate macadamia nut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "banana syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "bf3-ben-32 oz",
+      "drink": "The Ben",
+      "size": "32 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "chocolate macadamia nut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "banana syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
+        }
+      ]
+    },
+    {
+      "id": "bf3-wcmcb-12 oz",
+      "drink": "White Chocolate Mac Cold Brew",
+      "size": "12 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "macadamia nut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        }
+      ]
+    },
+    {
+      "id": "bf3-wcmcb-16 oz",
+      "drink": "White Chocolate Mac Cold Brew",
+      "size": "16 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "macadamia nut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        }
+      ]
+    },
+    {
+      "id": "bf3-wcmcb-24 oz",
+      "drink": "White Chocolate Mac Cold Brew",
+      "size": "24 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "macadamia nut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        }
+      ]
+    },
+    {
+      "id": "bf3-wcmcb-32 oz",
+      "drink": "White Chocolate Mac Cold Brew",
+      "size": "32 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "macadamia nut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        }
+      ]
+    },
+    {
+      "id": "bf3-mvh-12 oz",
+      "drink": "Maui Vanilla Hot",
+      "size": "12 oz",
+      "template": "___ scoops of ___\nMaui Milk to ___ oz\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "7"
+        },
+        {
+          "index": 3,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "bf3-mvh-16 oz",
+      "drink": "Maui Vanilla Hot",
+      "size": "16 oz",
+      "template": "___ scoops of ___\nMaui Milk to ___ oz\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 3,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "bf3-mvh-20 oz",
+      "drink": "Maui Vanilla Hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___\nMaui Milk to ___ oz\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 3,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "bf3-mvi-12 oz",
+      "drink": "Maui Vanilla Iced",
+      "size": "12 oz",
+      "template": "___ scoops of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "4"
+        },
+        {
+          "index": 3,
+          "type": "fill_oz",
+          "correct": "8"
+        }
+      ]
+    },
+    {
+      "id": "bf3-mvi-16 oz",
+      "drink": "Maui Vanilla Iced",
+      "size": "16 oz",
+      "template": "___ scoops of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "6"
+        },
+        {
+          "index": 3,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "bf3-mvi-24 oz",
+      "drink": "Maui Vanilla Iced",
+      "size": "24 oz",
+      "template": "___ scoops of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "7"
+        },
+        {
+          "index": 3,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "bf3-mvi-32 oz",
+      "drink": "Maui Vanilla Iced",
+      "size": "32 oz",
+      "template": "___ scoops of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 3,
+          "type": "fill_oz",
+          "correct": "20"
+        }
+      ]
+    },
+    {
+      "id": "bf3-dmh-12 oz",
+      "drink": "Double Matcha Hot",
+      "size": "12 oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ scoop matcha in ___ oz of kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        }
+      ]
+    },
+    {
+      "id": "bf3-dmh-16 oz",
+      "drink": "Double Matcha Hot",
+      "size": "16 oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ scoop matcha in ___ oz of kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        }
+      ]
+    },
+    {
+      "id": "bf3-dmh-24 oz",
+      "drink": "Double Matcha Hot",
+      "size": "24 oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ scoop matcha in ___ oz of kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "14"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        }
+      ]
+    },
+    {
+      "id": "bf3-dmi-12 oz",
+      "drink": "Double Matcha Iced",
+      "size": "12 oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ scoop matcha in ___ oz of kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        }
+      ]
+    },
+    {
+      "id": "bf3-dmi-16 oz",
+      "drink": "Double Matcha Iced",
+      "size": "16 oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ scoop matcha in ___ oz of kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        }
+      ]
+    },
+    {
+      "id": "bf3-dmi-24 oz",
+      "drink": "Double Matcha Iced",
+      "size": "24 oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ scoop matcha in ___ oz of kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        }
+      ]
+    },
+    {
+      "id": "bf3-dmi-32 oz",
+      "drink": "Double Matcha Iced",
+      "size": "32 oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ scoop matcha in ___ oz of kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "20"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     }
