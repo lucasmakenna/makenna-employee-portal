@@ -36126,8 +36126,8 @@
     },
     {
       "id": "maui-latte-full-iced-12oz",
-      "drink": "Maui Latte Full Iced",
-      "size": "12 oz",
+      "drink": "Maui Latte Full",
+      "size": "12 oz (Iced)",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -36139,8 +36139,8 @@
     },
     {
       "id": "maui-latte-full-iced-16oz",
-      "drink": "Maui Latte Full Iced",
-      "size": "16 oz",
+      "drink": "Maui Latte Full",
+      "size": "16 oz (Iced)",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -36152,8 +36152,8 @@
     },
     {
       "id": "maui-latte-full-iced-24oz",
-      "drink": "Maui Latte Full Iced",
-      "size": "24 oz",
+      "drink": "Maui Latte Full",
+      "size": "24 oz (Iced)",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -36165,8 +36165,8 @@
     },
     {
       "id": "maui-latte-full-iced-32oz",
-      "drink": "Maui Latte Full Iced",
-      "size": "32 oz",
+      "drink": "Maui Latte Full",
+      "size": "32 oz (Iced)",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -36178,8 +36178,8 @@
     },
     {
       "id": "maui-latte-full-hot-12oz",
-      "drink": "Maui Latte Full Hot",
-      "size": "12 oz",
+      "drink": "Maui Latte Full",
+      "size": "12 oz (Hot)",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -36191,8 +36191,8 @@
     },
     {
       "id": "maui-latte-full-hot-16oz",
-      "drink": "Maui Latte Full Hot",
-      "size": "16 oz",
+      "drink": "Maui Latte Full",
+      "size": "16 oz (Hot)",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -36204,8 +36204,8 @@
     },
     {
       "id": "maui-latte-full-hot-20oz",
-      "drink": "Maui Latte Full Hot",
-      "size": "20 oz",
+      "drink": "Maui Latte Full",
+      "size": "20 oz (Hot)",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
