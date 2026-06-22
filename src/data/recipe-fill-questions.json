@@ -88,7 +88,9 @@
       "vanilla bean powder",
       "vanilla chai powder",
       "vanilla powder",
-      "white chocolate powder"
+      "white chocolate powder",
+      "brown sugar",
+      "cinnamon powder"
     ],
     "cream": [
       "Kona Cloud",
@@ -36113,6 +36115,209 @@
           "index": 7,
           "type": "topping",
           "correct": "sugar crystals"
+        }
+      ]
+    },
+    {
+      "id": "maui-latte-full-iced-12oz",
+      "drink": "Maui Latte Full Iced",
+      "size": "12 oz",
+      "template": "___ oz Maui Milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "8"
+        }
+      ]
+    },
+    {
+      "id": "maui-latte-full-iced-16oz",
+      "drink": "Maui Latte Full Iced",
+      "size": "16 oz",
+      "template": "___ oz Maui Milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "maui-latte-full-iced-24oz",
+      "drink": "Maui Latte Full Iced",
+      "size": "24 oz",
+      "template": "___ oz Maui Milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "maui-latte-full-iced-32oz",
+      "drink": "Maui Latte Full Iced",
+      "size": "32 oz",
+      "template": "___ oz Maui Milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "20"
+        }
+      ]
+    },
+    {
+      "id": "maui-latte-full-hot-12oz",
+      "drink": "Maui Latte Full Hot",
+      "size": "12 oz",
+      "template": "Maui Milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "maui-latte-full-hot-16oz",
+      "drink": "Maui Latte Full Hot",
+      "size": "16 oz",
+      "template": "Maui Milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "maui-latte-full-hot-20oz",
+      "drink": "Maui Latte Full Hot",
+      "size": "20 oz",
+      "template": "Maui Milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "shaken-brown-sugar-cinnamon-oat-12oz",
+      "drink": "Shaken Brown Sugar Cinnamon Oat",
+      "size": "12 oz",
+      "template": "___ scoops of ___ + ___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "shaken-brown-sugar-cinnamon-oat-16oz",
+      "drink": "Shaken Brown Sugar Cinnamon Oat",
+      "size": "16 oz",
+      "template": "___ scoops of ___ + ___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "shaken-brown-sugar-cinnamon-oat-24oz",
+      "drink": "Shaken Brown Sugar Cinnamon Oat",
+      "size": "24 oz",
+      "template": "___ scoops of ___ + ___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/4"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "shaken-brown-sugar-cinnamon-oat-32oz",
+      "drink": "Shaken Brown Sugar Cinnamon Oat",
+      "size": "32 oz",
+      "template": "___ scoops of ___ + ___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "cinnamon powder"
         }
       ]
     }
