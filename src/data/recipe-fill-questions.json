@@ -9043,34 +9043,6 @@
       ]
     },
     {
-      "id": "e329c14c-daa9-496f-be73-078e94e6171f",
-      "drink": "Hot",
-      "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cherry syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "almond syrup"
-        }
-      ]
-    },
-    {
       "id": "88337b95-147c-4720-9124-c40b2ea0618c",
       "drink": "Cabo San Lucas Hot",
       "size": "12 oz",
@@ -9576,24 +9548,6 @@
       ]
     },
     {
-      "id": "6c8e7b2f-1f08-4e38-a8b2-73bee890acbc",
-      "drink": "Jet Fuel Hot",
-      "size": "24 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "5"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "irish cream syrup"
-        }
-      ]
-    },
-    {
       "id": "173fb469-e940-4aee-a541-3e9693ee01a6",
       "drink": "Kiss Me Hot",
       "size": "12 oz",
@@ -9636,24 +9590,6 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "12"
-        }
-      ]
-    },
-    {
-      "id": "4993fa8a-4230-4d6c-be87-481509f46741",
-      "drink": "Kiss Me Hot",
-      "size": "24 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "5"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "irish cream syrup"
         }
       ]
     },
@@ -11310,24 +11246,6 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "12"
-        }
-      ]
-    },
-    {
-      "id": "eff94b90-3b87-4b07-b7b9-d32a257034fa",
-      "drink": "Wipeout Hot",
-      "size": "24 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "5"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
         }
       ]
     },
@@ -22153,24 +22071,6 @@
       ]
     },
     {
-      "id": "a1550930-4e03-4eee-ad2f-48be0f4ea9bb",
-      "drink": "Vanilla Breve hot",
-      "size": "24 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        }
-      ]
-    },
-    {
       "id": "52920fc3-a04d-4c24-b2a2-9e914e95d35e",
       "drink": "Twilight",
       "size": "12 oz",
@@ -24292,34 +24192,6 @@
       ]
     },
     {
-      "id": "844a0bd6-b4ec-43a5-a0e6-733d5cd5d6be",
-      "drink": "Lavender White Mocha Hot",
-      "size": "24 oz",
-      "template": "___ pumps of ___ + ___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "lavender syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "white chocolate powder"
-        }
-      ]
-    },
-    {
       "id": "cd62eaab-d7c3-4faa-9f9d-6e79a2e4e0f1",
       "drink": "Cupid\u2019s Kiss Blended",
       "size": "12 oz",
@@ -25936,34 +25808,6 @@
       ]
     },
     {
-      "id": "e1c14c0a-f2df-46b9-8dfb-cd4c849de5a3",
-      "drink": "Honey Bee Latte Hot",
-      "size": "24 oz",
-      "template": "___ pumps of ___ + ___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "coconut syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "3/4"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "vanilla powder"
-        }
-      ]
-    },
-    {
       "id": "d196e095-cf96-41ef-8d5a-e1875e7af33f",
       "drink": "Sugar Cookie Latte Iced",
       "size": "12 oz",
@@ -26768,24 +26612,6 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "12"
-        }
-      ]
-    },
-    {
-      "id": "f08d73e3-47e4-4290-b940-f25901e55c5b",
-      "drink": "Oat Cream Matcha Hot",
-      "size": "24 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
         }
       ]
     },
@@ -27833,24 +27659,6 @@
       ]
     },
     {
-      "id": "d82bbf63-3350-432d-b7f1-70e5c439bd53",
-      "drink": "Wanderlust Hot",
-      "size": "24 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        }
-      ]
-    },
-    {
       "id": "65c9ea06-20c5-46b8-af84-6f2c1c4ded94",
       "drink": "Fireball Americano Hot",
       "size": "12 oz",
@@ -27907,34 +27715,6 @@
       ]
     },
     {
-      "id": "75adfff3-9b57-46ef-8deb-e5eacb4d0338",
-      "drink": "Fireball Americano Hot",
-      "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "cinnamon syrup"
-        }
-      ]
-    },
-    {
       "id": "a6600ab6-4f94-44f9-9faf-7927e0611f4a",
       "drink": "Toffee Nut Americano Hot",
       "size": "12 oz",
@@ -27982,34 +27762,6 @@
           "index": 2,
           "type": "quantity",
           "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "toffee nut syrup"
-        }
-      ]
-    },
-    {
-      "id": "05228188-77ce-42a6-8175-a3f0a480b063",
-      "drink": "Toffee Nut Americano Hot",
-      "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "2 1/2"
         },
         {
           "index": 3,
@@ -28089,39 +27841,6 @@
         },
         {
           "index": 5,
-          "type": "drizzle",
-          "correct": "honey drizzle"
-        }
-      ]
-    },
-    {
-      "id": "040fc89f-db54-4256-8ffc-1f60fdaff8af",
-      "drink": "Arizona Girl Hot",
-      "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nAdd ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 3,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        },
-        {
-          "index": 4,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -31169,24 +30888,6 @@
       ]
     },
     {
-      "id": "49299528-561a-4947-b048-64cc30dd7f0e",
-      "drink": "Mocha Americano hot",
-      "size": "24 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "mocha powder"
-        }
-      ]
-    },
-    {
       "id": "37163628-117f-486c-bc34-ca42632b5c26",
       "drink": "Dr. Creamy (Blended)",
       "size": "12 oz",
@@ -31498,34 +31199,6 @@
           "index": 2,
           "type": "quantity",
           "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "pistachio powder"
-        }
-      ]
-    },
-    {
-      "id": "ebd98b4e-9cd6-410e-a1e8-78254491071d",
-      "drink": "Pistachio Americano Hot",
-      "size": "24 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/4"
         },
         {
           "index": 3,
@@ -35743,39 +35416,6 @@
           "index": 2,
           "type": "quantity",
           "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "strawberry puree"
-        },
-        {
-          "index": 4,
-          "type": "drizzle",
-          "correct": "strawberry puree drizzle"
-        }
-      ]
-    },
-    {
-      "id": "8ba40d81-2c7d-4014-89f6-b6132f4d4b42",
-      "drink": "Love Shot Shaken Espresso",
-      "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___ drizzle",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
         },
         {
           "index": 3,
@@ -40264,34 +39904,6 @@
       ]
     },
     {
-      "id": "5bc8ddad-965c-4819-bf0b-eb0758885d84",
-      "drink": "Lavender Matcha Hot",
-      "size": "24 oz",
-      "template": "___ pumps of ___ + ___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "lavender syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "matcha powder"
-        }
-      ]
-    },
-    {
       "id": "0302abcb-c9d3-4f89-bbf7-f60b9eca89b4",
       "drink": "Milky Way Blended",
       "size": "12 oz",
@@ -40508,24 +40120,6 @@
           "index": 8,
           "type": "cream",
           "correct": "Kona Cloud"
-        }
-      ]
-    },
-    {
-      "id": "eec9eaef-d1a9-40d2-9187-b3b900527494",
-      "drink": "Milky Way Hot",
-      "size": "24 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3/4"
-        },
-        {
-          "index": 1,
-          "type": "sauce",
-          "correct": "caramel sauce"
         }
       ]
     },
@@ -40758,24 +40352,6 @@
       ]
     },
     {
-      "id": "540bb6d8-d42c-43b1-ba81-03dd3d0c923d",
-      "drink": "Aloha Latte Hot",
-      "size": "24 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        }
-      ]
-    },
-    {
       "id": "47e1c285-99ea-4c3e-9527-470f6ca034c6",
       "drink": "Obsession Iced",
       "size": "12 oz",
@@ -40970,34 +40546,6 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "12"
-        }
-      ]
-    },
-    {
-      "id": "42bb8db5-65c5-4767-b68b-45cf28cb0624",
-      "drink": "Obsession Hot",
-      "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "irish cream syrup"
         }
       ]
     },
@@ -49042,6 +48590,608 @@
           "index": 7,
           "type": "topping",
           "correct": "cookie crumb"
+        }
+      ]
+    },
+    {
+      "id": "e329c14c-daa9-496f-be73-078e94e6171f",
+      "drink": "Hot",
+      "size": "20 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "cherry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "almond syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "6c8e7b2f-1f08-4e38-a8b2-73bee890acbc",
+      "drink": "Jet Fuel Hot",
+      "size": "20 oz",
+      "template": "___ pumps of ___\nHalf and Half to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "irish cream syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "4993fa8a-4230-4d6c-be87-481509f46741",
+      "drink": "Kiss Me Hot",
+      "size": "20 oz",
+      "template": "___ pumps of ___\nHalf and Half to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "irish cream syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "eff94b90-3b87-4b07-b7b9-d32a257034fa",
+      "drink": "Wipeout Hot",
+      "size": "20 oz",
+      "template": "___ pumps of ___\nHalf and Half to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "chocolate macadamia nut syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "a1550930-4e03-4eee-ad2f-48be0f4ea9bb",
+      "drink": "Vanilla Breve hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___\nHalf and Half to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "844a0bd6-b4ec-43a5-a0e6-733d5cd5d6be",
+      "drink": "Lavender White Mocha Hot",
+      "size": "20 oz",
+      "template": "___ pumps of ___ + ___ scoops of ___\nWhole milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "lavender syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "white chocolate powder"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "e1c14c0a-f2df-46b9-8dfb-cd4c849de5a3",
+      "drink": "Honey Bee Latte Hot",
+      "size": "20 oz",
+      "template": "___ pumps of ___ + ___ scoops of ___\nWhole milk to ___ oz\n___ oz of ___\n___ oz of ___\nAdd ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "14"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 9,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        },
+        {
+          "index": 10,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        }
+      ]
+    },
+    {
+      "id": "f08d73e3-47e4-4290-b940-f25901e55c5b",
+      "drink": "Oat Cream Matcha Hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___\nOat milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "d82bbf63-3350-432d-b7f1-70e5c439bd53",
+      "drink": "Wanderlust Hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        }
+      ]
+    },
+    {
+      "id": "75adfff3-9b57-46ef-8deb-e5eacb4d0338",
+      "drink": "Fireball Americano Hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "cinnamon syrup"
+        }
+      ]
+    },
+    {
+      "id": "05228188-77ce-42a6-8175-a3f0a480b063",
+      "drink": "Toffee Nut Americano Hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "toffee nut syrup"
+        }
+      ]
+    },
+    {
+      "id": "040fc89f-db54-4256-8ffc-1f60fdaff8af",
+      "drink": "Arizona Girl Hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of oat milk\nAdd ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        }
+      ]
+    },
+    {
+      "id": "49299528-561a-4947-b048-64cc30dd7f0e",
+      "drink": "Mocha Americano hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "mocha powder"
+        }
+      ]
+    },
+    {
+      "id": "ebd98b4e-9cd6-410e-a1e8-78254491071d",
+      "drink": "Pistachio Americano Hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___ + ___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/4"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "pistachio powder"
+        }
+      ]
+    },
+    {
+      "id": "8ba40d81-2c7d-4014-89f6-b6132f4d4b42",
+      "drink": "Love Shot Shaken Espresso",
+      "size": "20 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___ drizzle",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        },
+        {
+          "index": 4,
+          "type": "drizzle",
+          "correct": "strawberry puree drizzle"
+        }
+      ]
+    },
+    {
+      "id": "5bc8ddad-965c-4819-bf0b-eb0758885d84",
+      "drink": "Lavender Matcha Hot",
+      "size": "20 oz",
+      "template": "___ pumps of ___ + ___ scoops of ___\nWhole milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "lavender syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "eec9eaef-d1a9-40d2-9187-b3b900527494",
+      "drink": "Milky Way Hot",
+      "size": "20 oz",
+      "template": "___ small scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\nAdd ___ around rim and on top of drink\nThin layer of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "mocha powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "14"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        }
+      ]
+    },
+    {
+      "id": "540bb6d8-d42c-43b1-ba81-03dd3d0c923d",
+      "drink": "Aloha Latte Hot",
+      "size": "20 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz\nTop with ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "chocolate macadamia nut syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "14"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        }
+      ]
+    },
+    {
+      "id": "42bb8db5-65c5-4767-b68b-45cf28cb0624",
+      "drink": "Obsession Hot",
+      "size": "20 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "irish cream syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     }
