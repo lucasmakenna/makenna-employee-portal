@@ -6,7 +6,7 @@ import { FlaskConical, CheckCircle, XCircle, Clock, Trophy, ChevronRight, Rotate
 import AppShell from '@/components/AppShell';
 import { useCurrentUser } from '@/lib/auth';
 import { useRecipeFillAttempts, useEmployees } from '@/data/store';
-import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_META } from '@/data/recipe-fill';
+import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_META, getHiddenDrinkNames } from '@/data/recipe-fill';
 import { RECIPE_FILL_PASSING_SCORE } from '@/types';
 import { fullName } from '@/data/employees';
 import { format } from 'date-fns';
@@ -20,10 +20,15 @@ const TEST_SIZES = [
 type TestSizeId = typeof TEST_SIZES[number]['id'];
 
 /** Pick `count` random question IDs, keeping all sizes of a selected drink together */
-function sampleQuestions(allQuestions: typeof RECIPE_FILL_QUESTIONS, drinkCount: number): string[] {
+function sampleQuestions(
+  allQuestions: typeof RECIPE_FILL_QUESTIONS,
+  drinkCount: number,
+  hiddenDrinks?: Set<string>,
+): string[] {
   // Group by drink
   const drinkMap = new Map<string, string[]>();
   for (const q of allQuestions) {
+    if (hiddenDrinks?.has(q.drink)) continue;
     if (!drinkMap.has(q.drink)) drinkMap.set(q.drink, []);
     drinkMap.get(q.drink)!.push(q.id);
   }
@@ -62,20 +67,22 @@ export default function RecipeFillPage() {
 
   const selectedSize = TEST_SIZES.find((s) => s.id === testSize) ?? TEST_SIZES[1];
 
-  function handleStart() {
+  async function handleStart() {
     if (activeAttempt) {
       router.push('/recipe-fill/take');
       return;
     }
-    const ids = sampleQuestions(RECIPE_FILL_QUESTIONS, selectedSize.drinkCount);
+    const hidden = await getHiddenDrinkNames();
+    const ids = sampleQuestions(RECIPE_FILL_QUESTIONS, selectedSize.drinkCount, hidden);
     start(user!.id, ids);
     router.push('/recipe-fill/take');
   }
 
-  function handleAssignStart() {
+  async function handleAssignStart() {
     if (!assignTo) return;
     if (!assigneeActiveAttempt) {
-      const ids = sampleQuestions(RECIPE_FILL_QUESTIONS, selectedSize.drinkCount);
+      const hidden = await getHiddenDrinkNames();
+      const ids = sampleQuestions(RECIPE_FILL_QUESTIONS, selectedSize.drinkCount, hidden);
       start(assignTo, ids);
     }
     router.push(`/recipe-fill/take?for=${assignTo}`);
