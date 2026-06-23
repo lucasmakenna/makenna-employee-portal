@@ -137,7 +137,8 @@
       "Rainbow Nerds",
       "green sugar crystals",
       "chocolate chips",
-      "strawberry boba"
+      "strawberry boba",
+      "cookie crumb"
     ],
     "fill_oz": [
       "2",
@@ -6201,158 +6202,6 @@
       ]
     },
     {
-      "id": "a82d5900-d30f-4c4c-8608-d0d2ba64b2cd",
-      "drink": "Hawaiian Honey",
-      "size": "12 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ drizzle",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "coconut syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 4,
-          "type": "cream",
-          "correct": "Half and Half"
-        },
-        {
-          "index": 5,
-          "type": "drizzle",
-          "correct": "honey drizzle"
-        }
-      ]
-    },
-    {
-      "id": "0ec25157-7f38-423a-a2d9-33206e1b9457",
-      "drink": "Hawaiian Honey",
-      "size": "16 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ drizzle",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "coconut syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 4,
-          "type": "cream",
-          "correct": "Half and Half"
-        },
-        {
-          "index": 5,
-          "type": "drizzle",
-          "correct": "honey drizzle"
-        }
-      ]
-    },
-    {
-      "id": "f8b56386-9f29-43d8-8745-22d6028721e5",
-      "drink": "Hawaiian Honey",
-      "size": "24 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ drizzle",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "coconut syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 4,
-          "type": "cream",
-          "correct": "Half and Half"
-        },
-        {
-          "index": 5,
-          "type": "drizzle",
-          "correct": "honey drizzle"
-        }
-      ]
-    },
-    {
-      "id": "abc1f57b-cc3e-4c8b-a46e-98be6b75fea5",
-      "drink": "Hawaiian Honey",
-      "size": "32 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ drizzle",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "coconut syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "5"
-        },
-        {
-          "index": 4,
-          "type": "cream",
-          "correct": "Half and Half"
-        },
-        {
-          "index": 5,
-          "type": "drizzle",
-          "correct": "honey drizzle"
-        }
-      ]
-    },
-    {
       "id": "8518b5ee-f530-42ec-9ada-2b94ccb0d52c",
       "drink": "Hawaiian Latte",
       "size": "12 oz",
@@ -9322,105 +9171,6 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "14"
-        }
-      ]
-    },
-    {
-      "id": "8a887162-1cec-49a1-803b-d4f7997b4a83",
-      "drink": "Hawaiian Honey Hot",
-      "size": "12 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "coconut syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 4,
-          "type": "cream",
-          "correct": "Half and Half"
-        }
-      ]
-    },
-    {
-      "id": "a4b2777d-4909-489a-bdca-036f68f73df3",
-      "drink": "Hawaiian Honey Hot",
-      "size": "16 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "coconut syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 4,
-          "type": "cream",
-          "correct": "Half and Half"
-        }
-      ]
-    },
-    {
-      "id": "cd2d0c83-cc10-4d60-9071-16ef8a31b693",
-      "drink": "Hawaiian Honey Hot",
-      "size": "20 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "coconut syrup"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 4,
-          "type": "cream",
-          "correct": "Half and Half"
         }
       ]
     },
@@ -40921,237 +40671,6 @@
       ]
     },
     {
-      "id": "e7c4171e-8a64-498a-a6d5-bf8ca46e3a6b",
-      "drink": "Cookie Butter Matcha Iced",
-      "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "8"
-        }
-      ]
-    },
-    {
-      "id": "3eacc5eb-e9c3-4b0a-b327-b263fa986fc4",
-      "drink": "Cookie Butter Matcha Iced",
-      "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        }
-      ]
-    },
-    {
-      "id": "55f4ed48-65b5-44cd-836e-e6cb8adbfbb9",
-      "drink": "Cookie Butter Matcha Iced",
-      "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        }
-      ]
-    },
-    {
-      "id": "04e402db-87c3-402d-87b1-315aab90d0e4",
-      "drink": "Cookie Butter Matcha Iced",
-      "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "5"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        }
-      ]
-    },
-    {
-      "id": "2db765f4-3f82-4068-8dcf-1d74a1627f0a",
-      "drink": "Cookie Butter Matcha Hot",
-      "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        }
-      ]
-    },
-    {
-      "id": "ee3b4984-8927-4044-8c09-9e1295beef14",
-      "drink": "Cookie Butter Matcha Hot",
-      "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        }
-      ]
-    },
-    {
-      "id": "f354fce6-9f86-4c99-9e4e-0dec294cd897",
-      "drink": "Cookie Butter Matcha Hot",
-      "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "matcha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        }
-      ]
-    },
-    {
       "id": "6ac29d20-f3a7-452c-9eb8-bf786b65084a",
       "drink": "Strawberry Matcha Hot",
       "size": "12 oz",
@@ -47637,6 +47156,678 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "hh-iced-12 oz",
+      "drink": "Hawaiian Honey",
+      "size": "12 oz",
+      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ drizzle around the rim",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "caramel syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        }
+      ]
+    },
+    {
+      "id": "hh-iced-16 oz",
+      "drink": "Hawaiian Honey",
+      "size": "16 oz",
+      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ drizzle around the rim",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "caramel syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        }
+      ]
+    },
+    {
+      "id": "hh-iced-24 oz",
+      "drink": "Hawaiian Honey",
+      "size": "24 oz",
+      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ drizzle around the rim",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "caramel syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        }
+      ]
+    },
+    {
+      "id": "hh-iced-32 oz",
+      "drink": "Hawaiian Honey",
+      "size": "32 oz",
+      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ drizzle around the rim",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "caramel syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "20"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        }
+      ]
+    },
+    {
+      "id": "hh-hot-12 oz",
+      "drink": "Hawaiian Honey Hot",
+      "size": "12 oz",
+      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ over the top of the drink",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "caramel syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        }
+      ]
+    },
+    {
+      "id": "hh-hot-16 oz",
+      "drink": "Hawaiian Honey Hot",
+      "size": "16 oz",
+      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ over the top of the drink",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "caramel syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        }
+      ]
+    },
+    {
+      "id": "hh-hot-20 oz",
+      "drink": "Hawaiian Honey Hot",
+      "size": "20 oz",
+      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ over the top of the drink",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "caramel syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "14"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        }
+      ]
+    },
+    {
+      "id": "cbm-iced-12 oz",
+      "drink": "Cookie Butter Matcha Iced",
+      "size": "12 oz",
+      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "powder",
+          "correct": "cookie butter"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "topping",
+          "correct": "cookie crumb"
+        }
+      ]
+    },
+    {
+      "id": "cbm-iced-16 oz",
+      "drink": "Cookie Butter Matcha Iced",
+      "size": "16 oz",
+      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "powder",
+          "correct": "cookie butter"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "topping",
+          "correct": "cookie crumb"
+        }
+      ]
+    },
+    {
+      "id": "cbm-iced-24 oz",
+      "drink": "Cookie Butter Matcha Iced",
+      "size": "24 oz",
+      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "powder",
+          "correct": "cookie butter"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "topping",
+          "correct": "cookie crumb"
+        }
+      ]
+    },
+    {
+      "id": "cbm-iced-32 oz",
+      "drink": "Cookie Butter Matcha Iced",
+      "size": "32 oz",
+      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "20"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "powder",
+          "correct": "cookie butter"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "topping",
+          "correct": "cookie crumb"
+        }
+      ]
+    },
+    {
+      "id": "cbm-hot-12 oz",
+      "drink": "Cookie Butter Matcha Hot",
+      "size": "12 oz",
+      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "powder",
+          "correct": "cookie butter"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "topping",
+          "correct": "cookie crumb"
+        }
+      ]
+    },
+    {
+      "id": "cbm-hot-16 oz",
+      "drink": "Cookie Butter Matcha Hot",
+      "size": "16 oz",
+      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "powder",
+          "correct": "cookie butter"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "topping",
+          "correct": "cookie crumb"
+        }
+      ]
+    },
+    {
+      "id": "cbm-hot-24 oz",
+      "drink": "Cookie Butter Matcha Hot",
+      "size": "24 oz",
+      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "matcha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "14"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "powder",
+          "correct": "cookie butter"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "topping",
+          "correct": "cookie crumb"
         }
       ]
     }
