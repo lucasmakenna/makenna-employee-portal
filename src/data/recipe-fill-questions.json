@@ -73,7 +73,8 @@
       "chocolate mac syrup",
       "cookie dough bits",
       "butterscotch syrup",
-      "mango puree"
+      "mango puree",
+      "caramel syrup"
     ],
     "sauce": [
       "caramel sauce",
@@ -118,7 +119,8 @@
       "chocolate drizzle",
       "dark chocolate drizzle",
       "white chocolate drizzle",
-      "strawberry puree drizzle"
+      "strawberry puree drizzle",
+      "salted caramel drizzle"
     ],
     "topping": [
       "sugar crystals",
@@ -37457,7 +37459,7 @@
       "id": "bd7cab57-e709-4004-9f71-400c1b0d6a95",
       "drink": "Sweet n salty",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz + ___ pumps of ___\nAdd ___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -37483,6 +37485,21 @@
           "index": 4,
           "type": "quantity",
           "correct": "8"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 6,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "salted caramel drizzle"
         }
       ]
     },
@@ -37490,7 +37507,7 @@
       "id": "40dd7636-374d-4385-869a-000accec5249",
       "drink": "Sweet n salty",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz + ___ pumps of ___\nAdd ___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -37516,6 +37533,21 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "10"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 6,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "salted caramel drizzle"
         }
       ]
     },
@@ -37523,7 +37555,7 @@
       "id": "757b6b95-5206-43af-8fd2-73b781df42e3",
       "drink": "Sweet n salty",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz + ___ pumps of ___\nAdd ___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -37549,6 +37581,21 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "12"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 6,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "salted caramel drizzle"
         }
       ]
     },
@@ -37556,7 +37603,7 @@
       "id": "d7e68cf4-87b4-4ad0-a655-dc6f92ec788f",
       "drink": "Sweet n salty",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz + ___ pumps of ___\nAdd ___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -37582,6 +37629,21 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "20"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "salted caramel drizzle"
         }
       ]
     },
@@ -37589,7 +37651,7 @@
       "id": "ebbd59e7-fe2d-440b-8861-60efcd1ef3db",
       "drink": "Sweet n salty HOT",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz\nAdd ___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -37613,8 +37675,23 @@
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 5,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
+        },
+        {
+          "index": 6,
           "type": "fill_oz",
           "correct": "10"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "salted caramel drizzle"
         }
       ]
     },
@@ -37622,7 +37699,7 @@
       "id": "1d579707-8f38-42a6-a5b6-382475ccfef8",
       "drink": "Sweet n salty HOT",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz\nAdd ___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -37646,16 +37723,31 @@
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 5,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
+        },
+        {
+          "index": 6,
           "type": "fill_oz",
           "correct": "12"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "salted caramel drizzle"
         }
       ]
     },
     {
       "id": "d9ea1dd7-b304-4369-895f-190ced013ccb",
       "drink": "Sweet n salty HOT",
-      "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "size": "20 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz\nAdd ___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -37676,6 +37768,26 @@
           "index": 3,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 5,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "salted caramel drizzle"
         }
       ]
     },
@@ -37683,7 +37795,7 @@
       "id": "9622c8c2-37b3-41cf-90a0-b6e09a109d25",
       "drink": "Salty Ex Boyfriend",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___\n___ around rim of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -37729,6 +37841,11 @@
           "index": 8,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 9,
+          "type": "sauce",
+          "correct": "caramel sauce"
         }
       ]
     },
@@ -37736,7 +37853,7 @@
       "id": "f9858877-6ede-4234-9c8d-0bc6de57f3a9",
       "drink": "Salty Ex Boyfriend",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___\n___ around rim of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -37782,6 +37899,11 @@
           "index": 8,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 9,
+          "type": "sauce",
+          "correct": "caramel sauce"
         }
       ]
     },
@@ -37789,7 +37911,7 @@
       "id": "29072b51-7b7d-47a3-87ad-fdf13c9b28d5",
       "drink": "Salty Ex Boyfriend",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___\n___ around rim of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -37835,6 +37957,11 @@
           "index": 8,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 9,
+          "type": "sauce",
+          "correct": "caramel sauce"
         }
       ]
     },
@@ -37842,7 +37969,7 @@
       "id": "61b0cb5f-84e3-4359-b603-7849bfb194d4",
       "drink": "Salty Ex Boyfriend",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___\n___ around rim of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -37888,6 +38015,11 @@
           "index": 8,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 9,
+          "type": "sauce",
+          "correct": "caramel sauce"
         }
       ]
     },
@@ -37895,7 +38027,7 @@
       "id": "8b3b3724-33e0-49e3-b032-22fbd5164204",
       "drink": "Salty Ex Girlfriend",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___\n___ around rim of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -37941,6 +38073,11 @@
           "index": 8,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 9,
+          "type": "sauce",
+          "correct": "caramel sauce"
         }
       ]
     },
@@ -37948,7 +38085,7 @@
       "id": "887b0dea-6f1c-45d3-9746-8b4a6d4fcc30",
       "drink": "Salty Ex Girlfriend",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___\n___ around rim of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -37994,6 +38131,11 @@
           "index": 8,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 9,
+          "type": "sauce",
+          "correct": "caramel sauce"
         }
       ]
     },
@@ -38001,7 +38143,7 @@
       "id": "d7d72e65-c884-45e3-a0eb-87985c95310a",
       "drink": "Salty Ex Girlfriend",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___\n___ around rim of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -38047,6 +38189,11 @@
           "index": 8,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 9,
+          "type": "sauce",
+          "correct": "caramel sauce"
         }
       ]
     },
@@ -38054,7 +38201,7 @@
       "id": "ce679e43-b41a-4090-bc3b-73a6f6c43ca1",
       "drink": "Salty Ex Girlfriend",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ oz of ___\n___ around rim of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -38100,6 +38247,11 @@
           "index": 8,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 9,
+          "type": "sauce",
+          "correct": "caramel sauce"
         }
       ]
     },
@@ -38107,7 +38259,7 @@
       "id": "8e853085-3db0-4632-979c-4fe7cd5a9bab",
       "drink": "Salty Ex Boyfriend HOT",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -38153,6 +38305,16 @@
           "index": 8,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 10,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
@@ -38160,7 +38322,7 @@
       "id": "e4a094a8-d6cf-4b09-af0c-cf063ea85247",
       "drink": "Salty Ex Boyfriend HOT",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -38206,6 +38368,16 @@
           "index": 8,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 10,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
@@ -38213,7 +38385,7 @@
       "id": "9d47f009-c11c-481c-ad25-1a2073aa183b",
       "drink": "Salty Ex Boyfriend HOT",
       "size": "20 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -38259,6 +38431,16 @@
           "index": 8,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 10,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
@@ -38266,7 +38448,7 @@
       "id": "e4c8a598-bf32-4c1e-880f-d6c5951fa693",
       "drink": "Salty Ex Girlfriend HOT",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -38312,6 +38494,16 @@
           "index": 8,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 10,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
@@ -38319,7 +38511,7 @@
       "id": "f8d6bdfd-bf96-47af-8c98-c266f729c50b",
       "drink": "Salty Ex Girlfriend HOT",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -38365,6 +38557,16 @@
           "index": 8,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 10,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
@@ -38372,7 +38574,7 @@
       "id": "4c56f6b5-63fe-4c38-a8b0-846f552e4711",
       "drink": "Salty Ex Girlfriend HOT",
       "size": "20 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -38418,6 +38620,16 @@
           "index": 8,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 10,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
@@ -38425,25 +38637,40 @@
       "id": "4be7f132-a03c-48c3-9d9a-c218d0b1c9f2",
       "drink": "Salty Cold Brew",
       "size": "12 oz",
-      "template": "___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "2"
+          "correct": "3/4"
         },
         {
           "index": 1,
+          "type": "syrup",
+          "correct": "caramel syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "6"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 2,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 3,
+          "index": 6,
           "type": "sauce",
           "correct": "salted caramel sauce"
         }
@@ -38453,25 +38680,40 @@
       "id": "5536571c-f69b-4e68-8569-864a6894f37c",
       "drink": "Salty Cold Brew",
       "size": "16 oz",
-      "template": "___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 1,
+          "type": "syrup",
+          "correct": "caramel syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 2,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 3,
+          "index": 6,
           "type": "sauce",
           "correct": "salted caramel sauce"
         }
@@ -38481,25 +38723,40 @@
       "id": "3582d9ce-6c51-400b-b753-1f9bc03895b7",
       "drink": "Salty Cold Brew",
       "size": "24 oz",
-      "template": "___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1 1/4"
         },
         {
           "index": 1,
+          "type": "syrup",
+          "correct": "caramel syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 2,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 3,
+          "index": 6,
           "type": "sauce",
           "correct": "salted caramel sauce"
         }
@@ -38509,25 +38766,40 @@
       "id": "a9df8cb2-0fbd-46eb-9107-9ce76d534b45",
       "drink": "Salty Cold Brew",
       "size": "32 oz",
-      "template": "___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "4"
+          "correct": "2"
         },
         {
           "index": 1,
+          "type": "syrup",
+          "correct": "caramel syrup"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "16"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 2,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 6,
           "type": "sauce",
           "correct": "salted caramel sauce"
         }
