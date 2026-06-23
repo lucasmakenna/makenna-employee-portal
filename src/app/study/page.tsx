@@ -43,15 +43,27 @@ function saveMastered(ids: Set<string>) {
 
 // The Brain Blend's "Most Popular Drinks: Day 1 Study List"
 const TOP_21_DRINKS = [
-  'Maui Latte', 'Maui Latte Full', 'Sandy Blonde', 'The Legend', 'Cabo San Lucas',
-  'Cookie Butter Latte', 'Cookie Butter Iced', 'The Ben',
-  'Brown Sugar Cinnamon Cold Brew', 'White Chocolate Macadamia Nut Cold Brew',
-  'White Chocolate Mac Cold Brew', 'Shaken Brown Sugar Oat Milk',
-  'Shaken Brown Sugar Cinnamon Oat', 'Maui Vanilla', 'Maui Vanilla Iced',
-  'Summer Latte', 'Vanilla Caramel Chiller', 'Sandy Kisses Chiller',
-  'PB no J Chiller', 'Oreo Chiller', 'The Vacation', 'Starburst', 'Local Juice',
-  'Skittles', 'Matcha', 'Matcha Iced', 'Spiced / Vanilla Chai',
-  'Spiced/Vanilla Chai', 'Chai Spiced/Vanilla Iced',
+  'Maui Latte 3/4',
+  'Sandy Blonde',
+  'The Legend',
+  'Cabo San Lucas',
+  'Cookie Butter Iced',
+  'The Ben',
+  'Brown Sugar Cinnamon Cold Brew',
+  'White Chocolate Mac Cold Brew',
+  'Shaken Brown Sugar Cinnamon Oat',
+  'Maui Vanilla Hot', 'Maui Vanilla Iced',
+  'Summer Latte',
+  'Vanilla Caramel Chiller',
+  'Sandy Kisses Chiller',
+  'Banana Protein',
+  'Oreo Chiller',
+  'The Vacation',
+  'Starburst',
+  'Local Juice',
+  'Skittles',
+  'Double Matcha Hot', 'Double Matcha Iced',
+  'Spiced Chai Blended', 'Spiced Chai Iced',
 ];
 
 const CATEGORIES = [

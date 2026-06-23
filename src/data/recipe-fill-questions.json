@@ -74,7 +74,8 @@
       "cookie dough bits",
       "butterscotch syrup",
       "mango puree",
-      "caramel syrup"
+      "caramel syrup",
+      "sf coconut syrup"
     ],
     "sauce": [
       "caramel sauce",
@@ -102,7 +103,10 @@
       "spiced/vanilla chai powder",
       "peanut butter",
       "cookie butter",
-      "Chocolate Chips"
+      "Chocolate Chips",
+      "vanilla protein powder",
+      "mocha protein",
+      "blueberries"
     ],
     "cream": [
       "Kona Cloud",
@@ -110,7 +114,8 @@
       "heavy cream",
       "coconut cr\u00e8me",
       "Half and Half",
-      "oat milk"
+      "oat milk",
+      "nonfat milk"
     ],
     "drizzle": [
       "caramel drizzle",
@@ -44166,10 +44171,15 @@
       "id": "sf-americano-12 oz",
       "drink": "Americano",
       "size": "12 oz",
-      "template": "Fill to ___ oz with cold water",
+      "template": "___ espresso shots\nFill to ___ oz with cold water",
       "blanks": [
         {
           "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
           "type": "fill_oz",
           "correct": "8"
         }
@@ -44179,10 +44189,15 @@
       "id": "sf-americano-16 oz",
       "drink": "Americano",
       "size": "16 oz",
-      "template": "Fill to ___ oz with cold water",
+      "template": "___ espresso shots\nFill to ___ oz with cold water",
       "blanks": [
         {
           "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
           "type": "fill_oz",
           "correct": "10"
         }
@@ -44192,10 +44207,15 @@
       "id": "sf-americano-24 oz",
       "drink": "Americano",
       "size": "24 oz",
-      "template": "Fill to ___ oz with cold water",
+      "template": "___ espresso shots\nFill to ___ oz with cold water",
       "blanks": [
         {
           "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
           "type": "fill_oz",
           "correct": "12"
         }
@@ -44205,10 +44225,15 @@
       "id": "sf-americano-32 oz",
       "drink": "Americano",
       "size": "32 oz",
-      "template": "Fill to ___ oz with cold water",
+      "template": "___ espresso shots\nFill to ___ oz with cold water",
       "blanks": [
         {
           "index": 0,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
+          "index": 1,
           "type": "fill_oz",
           "correct": "20"
         }
@@ -46374,6 +46399,987 @@
           "index": 0,
           "type": "fill_oz",
           "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "amh-12 oz",
+      "drink": "Americano Hot",
+      "size": "12 oz",
+      "template": "___ espresso shots",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        }
+      ]
+    },
+    {
+      "id": "amh-16 oz",
+      "drink": "Americano Hot",
+      "size": "16 oz",
+      "template": "___ espresso shots",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        }
+      ]
+    },
+    {
+      "id": "amh-20 oz",
+      "drink": "Americano Hot",
+      "size": "20 oz",
+      "template": "___ espresso shots",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        }
+      ]
+    },
+    {
+      "id": "m17-baja-12 oz",
+      "drink": "Baja Beach",
+      "size": "12 oz",
+      "template": "___ can Mountain Dew\n___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 1,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 2,
+          "type": "syrup",
+          "correct": "lime syrup"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 4,
+          "type": "syrup",
+          "correct": "blue raspberry syrup"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "pineapple syrup"
+        }
+      ]
+    },
+    {
+      "id": "m17-baja-16 oz",
+      "drink": "Baja Beach",
+      "size": "16 oz",
+      "template": "___ can Mountain Dew\n___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 1,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 2,
+          "type": "syrup",
+          "correct": "lime syrup"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 4,
+          "type": "syrup",
+          "correct": "blue raspberry syrup"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "pineapple syrup"
+        }
+      ]
+    },
+    {
+      "id": "m17-baja-24 oz",
+      "drink": "Baja Beach",
+      "size": "24 oz",
+      "template": "___ can Mountain Dew\n___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 2,
+          "type": "syrup",
+          "correct": "lime syrup"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 4,
+          "type": "syrup",
+          "correct": "blue raspberry syrup"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "pineapple syrup"
+        }
+      ]
+    },
+    {
+      "id": "m17-Banana-Protein",
+      "drink": "Banana Protein",
+      "size": "24 oz",
+      "template": "___ scoops of ___\n___ banana\n___ scoops of ___\n___ oz ___\nAdd ___ drizzle",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla protein powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "powder",
+          "correct": "peanut butter"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "nonfat milk"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        }
+      ]
+    },
+    {
+      "id": "m17-Blueberry-Protein",
+      "drink": "Blueberry Protein",
+      "size": "24 oz",
+      "template": "___ scoops of ___\n___ scoops of ___\n___ banana\n___ scoops of ___\n___ oz ___\nAdd ___ drizzle",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "blueberries"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "vanilla protein powder"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "powder",
+          "correct": "peanut butter"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "nonfat milk"
+        },
+        {
+          "index": 9,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        }
+      ]
+    },
+    {
+      "id": "m17-Mocha-Protein",
+      "drink": "Mocha Protein",
+      "size": "24 oz",
+      "template": "___ scoops of ___\n___ banana\n___ scoops of ___\n___ oz ___\nAdd ___ drizzle",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "mocha protein"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "powder",
+          "correct": "peanut butter"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "nonfat milk"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "honey drizzle"
+        }
+      ]
+    },
+    {
+      "id": "m17-cruiser-12 oz",
+      "drink": "Beach Cruiser",
+      "size": "12 oz",
+      "template": "___ pumps of all flavors\n___ oz tea of choice",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "8"
+        }
+      ]
+    },
+    {
+      "id": "m17-cruiser-16 oz",
+      "drink": "Beach Cruiser",
+      "size": "16 oz",
+      "template": "___ pumps of all flavors\n___ oz tea of choice",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "m17-cruiser-24 oz",
+      "drink": "Beach Cruiser",
+      "size": "24 oz",
+      "template": "___ pumps of all flavors\n___ oz tea of choice",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "m17-cruiser-32 oz",
+      "drink": "Beach Cruiser",
+      "size": "32 oz",
+      "template": "___ pumps of all flavors\n___ oz tea of choice",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "20"
+        }
+      ]
+    },
+    {
+      "id": "m17-butterbeer-12 oz",
+      "drink": "Butter beer",
+      "size": "12 oz",
+      "template": "___ pumps of ___\nAdd ___ can of root beer\n___ oz of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "butterscotch syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "Maui Milk"
+        }
+      ]
+    },
+    {
+      "id": "m17-butterbeer-16 oz",
+      "drink": "Butter beer",
+      "size": "16 oz",
+      "template": "___ pumps of ___\nAdd ___ can of root beer\n___ oz of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "butterscotch syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "Maui Milk"
+        }
+      ]
+    },
+    {
+      "id": "m17-butterbeer-24 oz",
+      "drink": "Butter beer",
+      "size": "24 oz",
+      "template": "___ pumps of ___\nAdd ___ can of root beer\n___ oz of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "butterscotch syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "Maui Milk"
+        }
+      ]
+    },
+    {
+      "id": "m17-ccdc-12 oz",
+      "drink": "Coconut Cream Diet Coke",
+      "size": "12 oz",
+      "template": "___ can Diet Coke\n___ pumps of ___\n___ oz ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 1,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 2,
+          "type": "syrup",
+          "correct": "sf coconut syrup"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "coconut cr\u00e8me"
+        }
+      ]
+    },
+    {
+      "id": "m17-ccdc-16 oz",
+      "drink": "Coconut Cream Diet Coke",
+      "size": "16 oz",
+      "template": "___ can Diet Coke\n___ pumps of ___\n___ oz ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 1,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 2,
+          "type": "syrup",
+          "correct": "sf coconut syrup"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "coconut cr\u00e8me"
+        }
+      ]
+    },
+    {
+      "id": "m17-ccdc-24 oz",
+      "drink": "Coconut Cream Diet Coke",
+      "size": "24 oz",
+      "template": "___ can Diet Coke\n___ pumps of ___\n___ oz ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 2,
+          "type": "syrup",
+          "correct": "sf coconut syrup"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "coconut cr\u00e8me"
+        }
+      ]
+    },
+    {
+      "id": "m17-pfizz-12 oz",
+      "drink": "Paradise Fizz",
+      "size": "12 oz",
+      "template": "___ can Coke\n___ pumps of ___\n___ oz ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 1,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 2,
+          "type": "syrup",
+          "correct": "pineapple syrup"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "coconut cr\u00e8me"
+        }
+      ]
+    },
+    {
+      "id": "m17-pfizz-16 oz",
+      "drink": "Paradise Fizz",
+      "size": "16 oz",
+      "template": "___ can Coke\n___ pumps of ___\n___ oz ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 1,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 2,
+          "type": "syrup",
+          "correct": "pineapple syrup"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "coconut cr\u00e8me"
+        }
+      ]
+    },
+    {
+      "id": "m17-pfizz-24 oz",
+      "drink": "Paradise Fizz",
+      "size": "24 oz",
+      "template": "___ can Coke\n___ pumps of ___\n___ oz ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 2,
+          "type": "syrup",
+          "correct": "pineapple syrup"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "coconut cr\u00e8me"
+        }
+      ]
+    },
+    {
+      "id": "m17-pdc-16 oz",
+      "drink": "Peachy Diet Coke",
+      "size": "16 oz",
+      "template": "___ can Diet Coke\n___ pumps of ___\n___ oz ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 1,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 2,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "coconut cr\u00e8me"
+        }
+      ]
+    },
+    {
+      "id": "m17-pdc-24 oz",
+      "drink": "Peachy Diet Coke",
+      "size": "24 oz",
+      "template": "___ can Diet Coke\n___ pumps of ___\n___ oz ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 2,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "coconut cr\u00e8me"
+        }
+      ]
+    },
+    {
+      "id": "m17-jmango-12 oz",
+      "drink": "Juicy Mango",
+      "size": "12 oz",
+      "template": "___ pumps of ___\nTea of choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "mango puree"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        }
+      ]
+    },
+    {
+      "id": "m17-jmango-16 oz",
+      "drink": "Juicy Mango",
+      "size": "16 oz",
+      "template": "___ pumps of ___\nTea of choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "mango puree"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "m17-jmango-24 oz",
+      "drink": "Juicy Mango",
+      "size": "24 oz",
+      "template": "___ pumps of ___\nTea of choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "mango puree"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "m17-jmango-32 oz",
+      "drink": "Juicy Mango",
+      "size": "32 oz",
+      "template": "___ pumps of ___\nTea of choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "mango puree"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "20"
+        }
+      ]
+    },
+    {
+      "id": "m17-mtboba-12 oz",
+      "drink": "Mango Tea Boba",
+      "size": "12 oz",
+      "template": "___ pumps of ___\nTea of choice to ___ oz\nAdd ___ scoop ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "mango puree"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "topping",
+          "correct": "strawberry boba"
+        }
+      ]
+    },
+    {
+      "id": "m17-mtboba-16 oz",
+      "drink": "Mango Tea Boba",
+      "size": "16 oz",
+      "template": "___ pumps of ___\nTea of choice to ___ oz\nAdd ___ scoop ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "mango puree"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 4,
+          "type": "topping",
+          "correct": "strawberry boba"
+        }
+      ]
+    },
+    {
+      "id": "m17-mtboba-24 oz",
+      "drink": "Mango Tea Boba",
+      "size": "24 oz",
+      "template": "___ pumps of ___\nTea of choice to ___ oz\nAdd ___ scoop ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "mango puree"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "topping",
+          "correct": "strawberry boba"
+        }
+      ]
+    },
+    {
+      "id": "m17-mtboba-32 oz",
+      "drink": "Mango Tea Boba",
+      "size": "32 oz",
+      "template": "___ pumps of ___\nTea of choice to ___ oz\nAdd ___ scoop ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "mango puree"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "20"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 4,
+          "type": "topping",
+          "correct": "strawberry boba"
         }
       ]
     }
