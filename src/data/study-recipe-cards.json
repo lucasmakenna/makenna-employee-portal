@@ -2847,5 +2847,19 @@
     "recipe": "\u25cf Small (12 oz)\nAdd 1 scoop strawberry boba in drink cup\nIn a measuring cup:\n1/4 pump of strawberry syrup\n1/2 pump of peach syrup\n1/4 pump of white chocolate sauce\nWater to 2 oz\nWHISK THOROUGHLY\nPour into drink cup\nIce to the top of the drink cup\nTop off with lemonade\n\n\u25cf Medium (16 oz)\nAdd 1.5 scoops strawberry boba in drink cup\nIn a measuring cup:\n1/2 pump of strawberry syrup\n3/4 pump of peach syrup\n1/2 pump of white chocolate sauce\nWater to 4 oz\nWHISK THOROUGHLY\nPour into drink cup\nIce to the top of the drink cup\nTop off with lemonade\n\n\u25cf Large (24 oz)\nAdd 2 scoops strawberry boba in drink cup\nIn a measuring cup:\n1 pump of strawberry syrup\n1 1/4 pump of peach syrup\n1 pump of white chocolate sauce\nWater to 6 oz\nWHISK THOROUGHLY\nPour into drink cup\nIce to the top of the drink cup\nTop off with lemonade\n\n\u25cf X-tra Large (32 oz)\nAdd 3 scoops strawberry boba in drink cup\nIn a measuring cup:\n1 pump of strawberry syrup\n1 1/2 pumps of peach syrup\n1 pump of white chocolate sauce\nWater to 8 oz\nWHISK THOROUGHLY\nPour into drink cup\nIce to the top of the drink cup\nTop off with lemonade",
     "category": "Teas & Refreshers",
     "mela_category": "Tea & Refreshers"
+  },
+  {
+    "id": "0c6e4929-97c1-4d1e-8493-93b30bbb293a",
+    "drink": "Almond Blossom",
+    "recipe": "\u25cf Small (12 oz)\nIn a measuring cup:\n1 1/2 (one and a half) pumps of cherry syrup\n1/2 (one half) pumps of almond syrup\n1 espresso shot\n2 oz of Maui Milk\nMilk of Choice to 8 oz\nPour over ice and TOM-TOM\n\n\u25cf Medium (16 oz)\nIn a measuring cup:\n2 pumps of cherry syrup\n1 pump of almond syrup\n2 espresso shots\n2 1/2 (two and a half) oz of Maui Milk\nMilk of Choice to 10 oz\nPour over ice and TOM-TOM\n\n\u25cf Large (24 oz)\nIn a measuring cup:\n2 1/2 (two and a half) pumps of cherry syrup\n1 1/2 (one and a half) pumps of almond syrup\n2 espresso shots\n2 1/2 (two and a half) oz of Maui Milk\nMilk of Choice to 12 oz\nPour over ice and TOM-TOM\n\n\u25cf X-tra Large (32 oz)\nIn a measuring cup:\n4 pumps of cherry syrup\n2 pumps of almond syrup\n4 espresso shots\n5 oz of Maui Milk\nMilk of Choice to 20 oz\nPour over ice and TOM-TOM",
+    "category": "Supremes \u2014 Iced",
+    "mela_category": "Supreme Iced"
+  },
+  {
+    "id": "c8d9b9b6-cfb9-4a5d-b9e7-8b1b6f30e4f5",
+    "drink": "Almond Blossom Hot",
+    "recipe": "\u25cf Small (12 oz)\nIn a hot drink cup:\n1 1/2 (one and a half) pumps of cherry syrup\n1/2 (one half) pumps of almond syrup\n1 espresso shot\nWHISK THOROUGHLY\nIn a measuring cup:\n2 oz of Maui Milk\nMilk of Choice to 10 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n\u25cf Medium (16 oz)\nIn a hot drink cup:\n2 pumps of cherry syrup\n1 pump of almond syrup\n2 espresso shots\nWHISK THOROUGHLY\nIn a measuring cup:\n2 1/2 (two and a half) oz of Maui Milk\nMilk of Choice to 12 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n\u25cf Large (20 oz)\nIn a hot drink cup:\n2 1/2 (two and a half) pumps of cherry syrup\n1 1/2 (one and a half) pumps of almond syrup\n2 espresso shots\nWHISK THOROUGHLY\nIn a measuring cup:\n2 1/2 (two and a half) oz of Maui Milk\nMilk of Choice to 14 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup",
+    "category": "Supremes \u2014 Hot",
+    "mela_category": "Supreme Hot"
   }
 ]
