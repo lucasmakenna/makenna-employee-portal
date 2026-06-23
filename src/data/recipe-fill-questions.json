@@ -72,7 +72,8 @@
       "strawberry puree",
       "chocolate mac syrup",
       "cookie dough bits",
-      "butterscotch syrup"
+      "butterscotch syrup",
+      "mango puree"
     ],
     "sauce": [
       "caramel sauce",
@@ -124,7 +125,11 @@
       "gummy sharks",
       "chocolate curls",
       "pistachio bits",
-      "red pop rocks"
+      "red pop rocks",
+      "Oreos",
+      "Rainbow Nerds",
+      "green sugar crystals",
+      "chocolate chips"
     ],
     "fill_oz": [
       "2",
@@ -35685,7 +35690,7 @@
       "id": "72b759b2-7ad1-40ac-b30c-73be16151558",
       "drink": "Sweetheart Swirl Chiller",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk to ___ oz + ___ ___\n___ pumps of ___\nAdd ___ drizzle & ___ drizzle around inside of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -35711,6 +35716,36 @@
           "index": 4,
           "type": "quantity",
           "correct": "5"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 6,
+          "type": "topping",
+          "correct": "Oreos"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 8,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        },
+        {
+          "index": 9,
+          "type": "drizzle",
+          "correct": "strawberry puree drizzle"
+        },
+        {
+          "index": 10,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -35718,7 +35753,7 @@
       "id": "680e8465-349a-4367-9cca-76c9e55b07b0",
       "drink": "Sweetheart Swirl Chiller",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk to ___ oz + ___ ___\n___ pumps of ___\nAdd ___ drizzle & ___ drizzle around inside of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -35744,6 +35779,36 @@
           "index": 4,
           "type": "quantity",
           "correct": "6"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 6,
+          "type": "topping",
+          "correct": "Oreos"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 8,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        },
+        {
+          "index": 9,
+          "type": "drizzle",
+          "correct": "strawberry puree drizzle"
+        },
+        {
+          "index": 10,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -35751,7 +35816,7 @@
       "id": "9d3a8de6-67a3-4d97-983d-f62b4ee65b8e",
       "drink": "Sweetheart Swirl Chiller",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\nMilk to ___ oz + ___ ___\n___ pumps of ___\nAdd ___ drizzle & ___ drizzle around inside of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -35777,6 +35842,36 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "7"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 6,
+          "type": "topping",
+          "correct": "Oreos"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 8,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        },
+        {
+          "index": 9,
+          "type": "drizzle",
+          "correct": "strawberry puree drizzle"
+        },
+        {
+          "index": 10,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -35936,7 +36031,7 @@
       "id": "9d7f2129-a482-4a9b-bfbc-16164d691872",
       "drink": "Rainbow Rush Makenna Energy",
       "size": "16 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\n___ oz ___ with ___ pumps of ___\nAdd ___ on top of Kona",
       "blanks": [
         {
           "index": 0,
@@ -35947,6 +36042,36 @@
           "index": 1,
           "type": "syrup",
           "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "kiwi syrup"
+        },
+        {
+          "index": 7,
+          "type": "topping",
+          "correct": "Rainbow Nerds"
         }
       ]
     },
@@ -35954,7 +36079,7 @@
       "id": "69442549-e908-42f5-a803-f325c3f2634e",
       "drink": "Rainbow Rush Makenna Energy",
       "size": "24 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\n___ oz ___ with ___ pumps of ___\nAdd ___ on top of Kona",
       "blanks": [
         {
           "index": 0,
@@ -35965,6 +36090,36 @@
           "index": 1,
           "type": "syrup",
           "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "kiwi syrup"
+        },
+        {
+          "index": 7,
+          "type": "topping",
+          "correct": "Rainbow Nerds"
         }
       ]
     },
@@ -35972,7 +36127,7 @@
       "id": "0e08a3cd-8069-4bc7-9169-914dc8980164",
       "drink": "Rainbow Rush Makenna Energy",
       "size": "32 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\n___ oz ___ with ___ pumps of ___\nAdd ___ on top of Kona",
       "blanks": [
         {
           "index": 0,
@@ -35983,6 +36138,36 @@
           "index": 1,
           "type": "syrup",
           "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "kiwi syrup"
+        },
+        {
+          "index": 7,
+          "type": "topping",
+          "correct": "Rainbow Nerds"
         }
       ]
     },
@@ -35990,7 +36175,7 @@
       "id": "6bca0ce4-c75b-4e10-a390-0c484686c05f",
       "drink": "Pot O\u2019 Gold Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nTo ___ oz with whole milk\n___ oz ___ with ___ pumps of ___\nTop with ___",
       "blanks": [
         {
           "index": 0,
@@ -36021,6 +36206,36 @@
           "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 10,
+          "type": "syrup",
+          "correct": "creme de menthe syrup"
+        },
+        {
+          "index": 11,
+          "type": "topping",
+          "correct": "green sugar crystals"
         }
       ]
     },
@@ -36028,7 +36243,7 @@
       "id": "64072cce-c344-401a-b99c-d809f7640f30",
       "drink": "Pot O\u2019 Gold Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nTo ___ oz with whole milk\n___ oz ___ with ___ pumps of ___\nTop with ___",
       "blanks": [
         {
           "index": 0,
@@ -36059,6 +36274,36 @@
           "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 10,
+          "type": "syrup",
+          "correct": "creme de menthe syrup"
+        },
+        {
+          "index": 11,
+          "type": "topping",
+          "correct": "green sugar crystals"
         }
       ]
     },
@@ -36066,7 +36311,7 @@
       "id": "11f0f2b9-0e92-43a0-97e8-06707e5f711a",
       "drink": "Pot O\u2019 Gold Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nTo ___ oz with whole milk\n___ oz ___ with ___ pumps of ___\nTop with ___",
       "blanks": [
         {
           "index": 0,
@@ -36097,6 +36342,36 @@
           "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 10,
+          "type": "syrup",
+          "correct": "creme de menthe syrup"
+        },
+        {
+          "index": 11,
+          "type": "topping",
+          "correct": "green sugar crystals"
         }
       ]
     },
@@ -36104,7 +36379,7 @@
       "id": "5a5509a7-27cc-46ca-a692-f4ccd65a9f85",
       "drink": "Pot O\u2019 Gold Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nTo ___ oz with whole milk\n___ oz ___ with ___ pumps of ___\nTop with ___",
       "blanks": [
         {
           "index": 0,
@@ -36135,6 +36410,36 @@
           "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 10,
+          "type": "syrup",
+          "correct": "creme de menthe syrup"
+        },
+        {
+          "index": 11,
+          "type": "topping",
+          "correct": "green sugar crystals"
         }
       ]
     },
@@ -36585,7 +36890,7 @@
       "id": "29a6f4e6-0a3f-4000-a435-a97e4e36e556",
       "drink": "Rainbow Rush Makenna Energy Slush",
       "size": "12 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ oz ___ with ___ pumps of ___\nAdd ___ on top of Kona",
       "blanks": [
         {
           "index": 0,
@@ -36596,6 +36901,31 @@
           "index": 1,
           "type": "syrup",
           "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "kiwi syrup"
+        },
+        {
+          "index": 6,
+          "type": "topping",
+          "correct": "Rainbow Nerds"
         }
       ]
     },
@@ -36603,7 +36933,7 @@
       "id": "b2ed7d10-c66d-46b2-adc5-c594726b64c2",
       "drink": "Rainbow Rush Makenna Energy Slush",
       "size": "16 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ oz ___ with ___ pumps of ___\nAdd ___ on top of Kona",
       "blanks": [
         {
           "index": 0,
@@ -36614,6 +36944,31 @@
           "index": 1,
           "type": "syrup",
           "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "kiwi syrup"
+        },
+        {
+          "index": 6,
+          "type": "topping",
+          "correct": "Rainbow Nerds"
         }
       ]
     },
@@ -36621,7 +36976,7 @@
       "id": "28dad495-33f5-45ec-85e9-243502026f3e",
       "drink": "Rainbow Rush Makenna Energy Slush",
       "size": "24 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ oz ___ with ___ pumps of ___\nAdd ___ on top of Kona",
       "blanks": [
         {
           "index": 0,
@@ -36632,6 +36987,31 @@
           "index": 1,
           "type": "syrup",
           "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "kiwi syrup"
+        },
+        {
+          "index": 6,
+          "type": "topping",
+          "correct": "Rainbow Nerds"
         }
       ]
     },
@@ -36639,7 +37019,7 @@
       "id": "7ed96cd9-6aac-4be8-be27-ad83e77f808e",
       "drink": "Rainbow Rush Makenna Energy Slush",
       "size": "32 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ oz ___ with ___ pumps of ___\nAdd ___ on top of Kona",
       "blanks": [
         {
           "index": 0,
@@ -36650,6 +37030,31 @@
           "index": 1,
           "type": "syrup",
           "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "kiwi syrup"
+        },
+        {
+          "index": 6,
+          "type": "topping",
+          "correct": "Rainbow Nerds"
         }
       ]
     },
@@ -36700,7 +37105,7 @@
       "id": "885dd77b-ac08-46a4-911b-844c16773c36",
       "drink": "Cocoa Berry",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz + ___ pumps of ___\nAdd ___ on top\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -36716,6 +37121,26 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "6"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 6,
+          "type": "topping",
+          "correct": "chocolate chips"
         }
       ]
     },
@@ -36822,7 +37247,7 @@
       "id": "c6cebe15-0f7a-4942-9745-ac76004ae772",
       "drink": "Mango Passion Fruit Matcha",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz + ___ pumps of ___\n___ oz ___ with ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -36838,6 +37263,36 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "10"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
+          "type": "syrup",
+          "correct": "mango puree"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 8,
+          "type": "syrup",
+          "correct": "passionfruit syrup"
         }
       ]
     },
@@ -36888,7 +37343,7 @@
       "id": "081346f0-3c7d-44bd-b6ef-997d538c04c4",
       "drink": "Miami Vice",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of water",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of water\n___ oz of ___\nTo the ___ with lemonade",
       "blanks": [
         {
           "index": 0,
@@ -36924,6 +37379,21 @@
           "index": 6,
           "type": "quantity",
           "correct": "2"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "coconut cr\u00e8me"
+        },
+        {
+          "index": 9,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
