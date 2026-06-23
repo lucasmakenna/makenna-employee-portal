@@ -43222,7 +43222,7 @@
     {
       "id": "sf-sugar-latte-12 oz",
       "drink": "Sugar Latte",
-      "size": "12 oz",
+      "size": "12 oz (Iced)",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
@@ -43245,7 +43245,7 @@
     {
       "id": "sf-sugar-latte-16 oz",
       "drink": "Sugar Latte",
-      "size": "16 oz",
+      "size": "16 oz (Iced)",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
@@ -43268,7 +43268,7 @@
     {
       "id": "sf-sugar-latte-24 oz",
       "drink": "Sugar Latte",
-      "size": "24 oz",
+      "size": "24 oz (Iced)",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
@@ -43291,7 +43291,7 @@
     {
       "id": "sf-sugar-latte-32 oz",
       "drink": "Sugar Latte",
-      "size": "32 oz",
+      "size": "32 oz (Iced)",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
@@ -47568,6 +47568,75 @@
           "index": 0,
           "type": "fill_oz",
           "correct": "7"
+        }
+      ]
+    },
+    {
+      "id": "sf-sugar-latte-hot-12 oz",
+      "drink": "Sugar Latte",
+      "size": "12 oz (Hot)",
+      "template": "___ scoops of ___\nFill steamer to ___ oz milk of choice",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "sf-sugar-latte-hot-16 oz",
+      "drink": "Sugar Latte",
+      "size": "16 oz (Hot)",
+      "template": "___ scoops of ___\nFill steamer to ___ oz milk of choice",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "sf-sugar-latte-hot-20 oz",
+      "drink": "Sugar Latte",
+      "size": "20 oz (Hot)",
+      "template": "___ scoops of ___\nFill steamer to ___ oz milk of choice",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     }

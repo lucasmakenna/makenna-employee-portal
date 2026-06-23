@@ -2179,16 +2179,9 @@
   {
     "id": "3ff85730-d1c4-48ac-9437-17e7e509428e",
     "drink": "Sugar Latte",
-    "recipe": "\u25cf Small (12 oz)\nIn a measuring cup:\n1 1/2 (one and a half) scoops of brown sugar\n1 espresso shot\nWHISK THOROUGHLY\nMilk of Choice to 8 oz\nPour over ice and TOM-TOM\n\n\u25cf Medium (16 oz)\nIn a measuring cup:\n2 scoops of brown sugar\n2 espresso shots\nWHISK THOROUGHLY\nMilk of Choice to 10 oz\nPour over ice and TOM-TOM\n\n\u25cf Large (24 oz)\nIn a measuring cup:\n2 1/2 (two and a half) scoops of brown sugar\n2 espresso shots\nWHISK THOROUGHLY\nMilk of Choice to 12 oz\nPour over ice and TOM-TOM\n\n\u25cf X-tra Large (32 oz)\nIn a measuring cup:\n4 scoops of brown sugar\n4 espresso shots\nWHISK THOROUGHLY\nMilk of Choice to 20 oz\nPour over ice and TOM-TOM",
+    "recipe": "\u25cf Small (12 oz), Iced\nIn a measuring cup:\n1 1/2 (one and a half) scoops of brown sugar\n1 espresso shot\nWHISK THOROUGHLY\nMilk of Choice to 8 oz\nPour over ice and TOM-TOM\n\n\u25cf Medium (16 oz), Iced\nIn a measuring cup:\n2 scoops of brown sugar\n2 espresso shots\nWHISK THOROUGHLY\nMilk of Choice to 10 oz\nPour over ice and TOM-TOM\n\n\u25cf Large (24 oz), Iced\nIn a measuring cup:\n2 1/2 (two and a half) scoops of brown sugar\n2 espresso shots\nWHISK THOROUGHLY\nMilk of Choice to 12 oz\nPour over ice and TOM-TOM\n\n\u25cf X-tra Large (32 oz), Iced\nIn a measuring cup:\n4 scoops of brown sugar\n4 espresso shots\nWHISK THOROUGHLY\nMilk of Choice to 20 oz\nPour over ice and TOM-TOM\n\n\u25cf Small (12 oz), Hot\nIn a hot drink cup:\n1 1/2 (one and a half) scoops of brown sugar\n1 espresso shot\nMix thoroughly\nFill steamer to 10 oz milk of choice\n\n\u25cf Medium (16 oz), Hot\nIn a hot drink cup:\n2 scoops of brown sugar\n2 espresso shots\nMix thoroughly\nFill steamer to 12 oz milk of choice\n\n\u25cf Large (20 oz), Hot\nIn a hot drink cup:\n2 1/2 (two and a half) scoops of brown sugar\n2 espresso shots\nMix thoroughly\nFill to steamer 14 with milk of choice",
     "category": "Supremes \u2014 Iced",
     "mela_category": "Supreme Iced"
-  },
-  {
-    "id": "34ae907f-a006-4ca8-84f3-9795ce31d273",
-    "drink": "Sugar Latte",
-    "recipe": "\u25cf Small (12 oz)\nIn a hot drink cup:\n1 1/2 (one and a half) scoops of brown sugar\n1 espresso shot\nMix thoroughly\nFill steamer to 10 oz milk of choice\n\n\u25cf Medium (16 oz)\nIn a hot drink cup:\n2 scoops of brown sugar\n2 espresso shots\nMix thoroughly\nFill steamer to 12 oz milk of choice\n\n\u25cf Large (20 oz)\nIn a hot drink cup:\n2 1/2 (two and a half) scoops of brown sugar\n2 espresso shots\nMix thoroughly\nFill to steamer 14 with milk of choice",
-    "category": "Supremes \u2014 Hot",
-    "mela_category": "Supreme Hot"
   },
   {
     "id": "bf19ecac-1823-45d1-bbdf-a5eb0331bbe7",
