@@ -46285,6 +46285,97 @@
           "correct": "2"
         }
       ]
+    },
+    {
+      "id": "m34-iced-12 oz",
+      "drink": "Maui Latte 3/4",
+      "size": "12 oz (Iced)",
+      "template": "___ oz Maui Milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "4"
+        }
+      ]
+    },
+    {
+      "id": "m34-iced-16 oz",
+      "drink": "Maui Latte 3/4",
+      "size": "16 oz (Iced)",
+      "template": "___ oz Maui Milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "6"
+        }
+      ]
+    },
+    {
+      "id": "m34-iced-24 oz",
+      "drink": "Maui Latte 3/4",
+      "size": "24 oz (Iced)",
+      "template": "___ oz Maui Milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "7"
+        }
+      ]
+    },
+    {
+      "id": "m34-iced-32 oz",
+      "drink": "Maui Latte 3/4",
+      "size": "32 oz (Iced)",
+      "template": "___ oz Maui Milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "m34-hot-12 oz",
+      "drink": "Maui Latte 3/4",
+      "size": "12 oz (Hot)",
+      "template": "Maui Milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "7"
+        }
+      ]
+    },
+    {
+      "id": "m34-hot-16 oz",
+      "drink": "Maui Latte 3/4",
+      "size": "16 oz (Hot)",
+      "template": "Maui Milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "8"
+        }
+      ]
+    },
+    {
+      "id": "m34-hot-20 oz",
+      "drink": "Maui Latte 3/4",
+      "size": "20 oz (Hot)",
+      "template": "Maui Milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
     }
   ]
 }
