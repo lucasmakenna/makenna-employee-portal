@@ -3075,7 +3075,7 @@
         {
           "index": 2,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         }
       ]
     },
@@ -3167,7 +3167,7 @@
         {
           "index": 2,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         }
       ]
     },
@@ -3299,7 +3299,7 @@
         {
           "index": 4,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         }
       ]
     },
@@ -5426,7 +5426,7 @@
         {
           "index": 0,
           "type": "quantity",
-          "correct": "5"
+          "correct": "6"
         },
         {
           "index": 1,
@@ -5436,7 +5436,7 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "5"
+          "correct": "6"
         },
         {
           "index": 3,
@@ -5446,7 +5446,7 @@
         {
           "index": 4,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         },
         {
           "index": 5,
@@ -5780,7 +5780,7 @@
         {
           "index": 2,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         },
         {
           "index": 3,
@@ -5967,7 +5967,7 @@
         {
           "index": 6,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         }
       ]
     },
@@ -7048,7 +7048,7 @@
         {
           "index": 0,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1 1/2"
         },
         {
           "index": 1,
@@ -7317,7 +7317,7 @@
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "5"
         },
         {
           "index": 6,
@@ -7853,7 +7853,7 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1 1/2"
         },
         {
           "index": 3,
@@ -11675,7 +11675,7 @@
         {
           "index": 0,
           "type": "quantity",
-          "correct": "5"
+          "correct": "6"
         },
         {
           "index": 1,
@@ -12347,7 +12347,7 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "3"
+          "correct": "2"
         },
         {
           "index": 3,
@@ -12604,7 +12604,7 @@
       "id": "1a2d868b-d0c5-43aa-a410-bb9fdd781697",
       "drink": "Islander",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nTea of choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -12625,6 +12625,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -12632,7 +12637,7 @@
       "id": "dfa63d38-c4a2-4720-aab4-f309058adfa6",
       "drink": "Islander",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nTea of choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -12653,6 +12658,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -12660,7 +12670,7 @@
       "id": "4d78454f-2e7b-41c1-8c6b-3599a8509a40",
       "drink": "Islander",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nTea of choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -12681,6 +12691,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -12688,7 +12703,7 @@
       "id": "5f4fd925-e237-4365-a56e-14525dad7e38",
       "drink": "Islander",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nTea of choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -12709,6 +12724,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -13946,7 +13966,7 @@
         {
           "index": 4,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         }
       ]
     },
@@ -16191,7 +16211,7 @@
         {
           "index": 4,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         }
       ]
     },
@@ -16463,7 +16483,7 @@
       "id": "60ad11f0-3e7f-40d7-80fa-ed217b69fdbb",
       "drink": "Love Shack Cold Brew",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -16476,22 +16496,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "6",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "raspberry syrup"
         }
@@ -16501,7 +16526,7 @@
       "id": "f98d3c92-0722-4f71-ada5-bb4c0a401c91",
       "drink": "Love Shack Cold Brew",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -16514,22 +16539,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "8",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "raspberry syrup"
         }
@@ -16539,7 +16569,7 @@
       "id": "3119aa77-2f8e-416d-b9e7-84c1b9f4080b",
       "drink": "Love Shack Cold Brew",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -16552,22 +16582,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "10",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "raspberry syrup"
         }
@@ -16577,7 +16612,7 @@
       "id": "ce84ee7a-40d3-40db-b6e0-1a832b177187",
       "drink": "Love Shack Cold Brew",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -16590,22 +16625,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "16",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "raspberry syrup"
         }
@@ -18885,7 +18925,7 @@
         {
           "index": 0,
           "type": "quantity",
-          "correct": "6"
+          "correct": "3"
         },
         {
           "index": 1,
@@ -18895,7 +18935,7 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "6"
+          "correct": "3"
         },
         {
           "index": 3,
@@ -18904,7 +18944,7 @@
         },
         {
           "index": 4,
-          "type": "quantity",
+          "type": "fill_oz",
           "correct": "6"
         }
       ]
@@ -19401,7 +19441,7 @@
         {
           "index": 0,
           "type": "quantity",
-          "correct": "5"
+          "correct": "6"
         },
         {
           "index": 1,
@@ -20034,7 +20074,7 @@
         {
           "index": 6,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         }
       ]
     },
@@ -20338,7 +20378,7 @@
         {
           "index": 4,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         }
       ]
     },
@@ -20550,7 +20590,7 @@
         {
           "index": 8,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         }
       ]
     },
@@ -20697,7 +20737,7 @@
         {
           "index": 4,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         },
         {
           "index": 5,
@@ -21006,7 +21046,7 @@
         {
           "index": 6,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         }
       ]
     },
@@ -21014,7 +21054,7 @@
       "id": "58f022d1-f98a-40e0-9259-3a5108b675f3",
       "drink": "Brown Sugar Cinnamon Cold Brew",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___\nAdd ___ on top",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -21027,27 +21067,32 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "6",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "brown sugar cinnamon syrup"
         },
         {
-          "index": 6,
+          "index": 7,
           "type": "powder",
           "correct": "cinnamon powder"
         }
@@ -21057,7 +21102,7 @@
       "id": "87d93cf0-f140-4c7a-a21d-d6c9d0bd19fc",
       "drink": "Brown Sugar Cinnamon Cold Brew",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___\nAdd ___ on top",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -21070,27 +21115,32 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "8",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "brown sugar cinnamon syrup"
         },
         {
-          "index": 6,
+          "index": 7,
           "type": "powder",
           "correct": "cinnamon powder"
         }
@@ -21100,7 +21150,7 @@
       "id": "87ec531e-58dd-4cdf-a655-c85867d9c106",
       "drink": "Brown Sugar Cinnamon Cold Brew",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___\nAdd ___ on top",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -21113,27 +21163,32 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "10",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "brown sugar cinnamon syrup"
         },
         {
-          "index": 6,
+          "index": 7,
           "type": "powder",
           "correct": "cinnamon powder"
         }
@@ -21143,7 +21198,7 @@
       "id": "3eb9f9ad-f703-4718-9e4c-fb1f52a183f9",
       "drink": "Brown Sugar Cinnamon Cold Brew",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___\nAdd ___ on top",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -21156,27 +21211,32 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "16",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "brown sugar cinnamon syrup"
         },
         {
-          "index": 6,
+          "index": 7,
           "type": "powder",
           "correct": "cinnamon powder"
         }
@@ -21186,7 +21246,7 @@
       "id": "5c93ea24-4a05-49c2-925d-a4baed4b7f75",
       "drink": "Caramel Cold Brew",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21199,22 +21259,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "6",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "sauce",
           "correct": "caramel sauce"
         }
@@ -21224,7 +21289,7 @@
       "id": "9b22e48e-d7b4-4c17-94f7-6a051601c601",
       "drink": "Caramel Cold Brew",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21237,22 +21302,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "8",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "sauce",
           "correct": "caramel sauce"
         }
@@ -21262,7 +21332,7 @@
       "id": "93461543-6bbe-4602-a060-240b86dc7e5d",
       "drink": "Caramel Cold Brew",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21275,22 +21345,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "10",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "sauce",
           "correct": "caramel sauce"
         }
@@ -21300,7 +21375,7 @@
       "id": "528f46d7-cc91-4588-8541-a870319e1096",
       "drink": "Caramel Cold Brew",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21313,22 +21388,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "16",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "sauce",
           "correct": "caramel sauce"
         }
@@ -21510,7 +21590,7 @@
       "id": "37f076f3-7e16-43bf-9d7b-60bf5f946001",
       "drink": "Coconut Cold Brew",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21523,22 +21603,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "6",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "coconut syrup"
         }
@@ -21548,7 +21633,7 @@
       "id": "d5f64834-4517-475c-ba24-033a6960beb8",
       "drink": "Coconut Cold Brew",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21561,22 +21646,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "8",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "coconut syrup"
         }
@@ -21586,7 +21676,7 @@
       "id": "fb2d18a9-7f5a-4c4e-b848-c589106a883e",
       "drink": "Coconut Cold Brew",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21599,22 +21689,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "10",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "coconut syrup"
         }
@@ -21624,7 +21719,7 @@
       "id": "c2410211-f14a-432f-9846-83948b1c520f",
       "drink": "Coconut Cold Brew",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21637,22 +21732,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "16",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "coconut syrup"
         }
@@ -21662,7 +21762,7 @@
       "id": "3c883d82-a843-4c3e-9b41-55541beaf66c",
       "drink": "Irish Cream Cold Brew",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21676,21 +21776,26 @@
         },
         {
           "index": 2,
+          "type": "fill_oz",
+          "correct": "6"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "irish cream syrup"
         }
@@ -21700,7 +21805,7 @@
       "id": "dccbc470-552d-4595-9b75-a7779e1095d0",
       "drink": "Irish Cream Cold Brew",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21714,21 +21819,26 @@
         },
         {
           "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "irish cream syrup"
         }
@@ -21738,7 +21848,7 @@
       "id": "26fd259e-a600-4a81-ba8c-cd6638a0654e",
       "drink": "Irish Cream Cold Brew",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21752,21 +21862,26 @@
         },
         {
           "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "irish cream syrup"
         }
@@ -21776,7 +21891,7 @@
       "id": "ccd67305-d8b0-4aef-8d9b-e0df60d13908",
       "drink": "Irish Cream Cold Brew",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -21790,21 +21905,26 @@
         },
         {
           "index": 2,
+          "type": "fill_oz",
+          "correct": "16"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "irish cream syrup"
         }
@@ -22303,7 +22423,7 @@
       "id": "81c502d4-0e35-41cf-bbb3-c252074b9b52",
       "drink": "Warm Cocoa",
       "size": "12 oz",
-      "template": "___ scoops of ___",
+      "template": "___ scoops of ___\nWhole milk to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -22314,6 +22434,11 @@
           "index": 1,
           "type": "powder",
           "correct": "mocha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -22321,7 +22446,7 @@
       "id": "29c0a84f-9803-495e-8d45-0429aa3e8f76",
       "drink": "Warm Cocoa",
       "size": "16 oz",
-      "template": "___ scoops of ___",
+      "template": "___ scoops of ___\nWhole milk to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -22332,6 +22457,11 @@
           "index": 1,
           "type": "powder",
           "correct": "mocha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -22339,7 +22469,7 @@
       "id": "c50a59e5-8197-4759-beff-c1c33ef6b1bd",
       "drink": "Warm Cocoa",
       "size": "24 oz",
-      "template": "___ scoops of ___",
+      "template": "___ scoops of ___\nWhole milk to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -22350,6 +22480,11 @@
           "index": 1,
           "type": "powder",
           "correct": "mocha powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -27228,7 +27363,7 @@
       "id": "8fd8f792-a722-4079-a46d-30d4c1d7d39d",
       "drink": "Lavender Cold Brew",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -27241,22 +27376,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "6",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "lavender syrup"
         }
@@ -27266,7 +27406,7 @@
       "id": "97544390-2d1a-44d6-94c0-bff42d700aad",
       "drink": "Lavender Cold Brew",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -27279,22 +27419,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "8",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "lavender syrup"
         }
@@ -27304,7 +27449,7 @@
       "id": "1c287b19-8485-476d-9984-dd7bfdd776f3",
       "drink": "Lavender Cold Brew",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -27317,22 +27462,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "10",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "lavender syrup"
         }
@@ -27342,7 +27492,7 @@
       "id": "e5b78038-4899-4bb1-8d23-842b10d239a5",
       "drink": "Lavender Cold Brew",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -27355,22 +27505,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "16",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "lavender syrup"
         }
@@ -31343,7 +31498,7 @@
       "id": "2ec6f300-91e8-4245-82db-e849b65d8cf4",
       "drink": "Pistachio Cream Cold Brew",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ scoops of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ scoops of ___",
       "blanks": [
         {
           "index": 0,
@@ -31356,22 +31511,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "6",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "powder",
           "correct": "pistachio powder"
         }
@@ -31381,7 +31541,7 @@
       "id": "fc8724c5-2879-4ddc-a740-858dcea669ee",
       "drink": "Pistachio Cream Cold Brew",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ scoops of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ scoops of ___",
       "blanks": [
         {
           "index": 0,
@@ -31394,22 +31554,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "8",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "powder",
           "correct": "pistachio powder"
         }
@@ -31419,7 +31584,7 @@
       "id": "68ad81ee-2890-47dd-a746-f5e2426e938b",
       "drink": "Pistachio Cream Cold Brew",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ scoops of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ scoops of ___",
       "blanks": [
         {
           "index": 0,
@@ -31432,22 +31597,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "10",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "powder",
           "correct": "pistachio powder"
         }
@@ -31457,7 +31627,7 @@
       "id": "e8f7e2c1-f77f-4654-a930-31f5fb209dd6",
       "drink": "Pistachio Cream Cold Brew",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ oz of ___ + ___ scoops of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ oz of ___ + ___ scoops of ___",
       "blanks": [
         {
           "index": 0,
@@ -31470,22 +31640,27 @@
           "correct": "vanilla syrup"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "16",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "powder",
           "correct": "pistachio powder"
         }
@@ -44435,7 +44610,7 @@
         {
           "index": 0,
           "type": "quantity",
-          "correct": "4"
+          "correct": "5"
         },
         {
           "index": 1,
@@ -45323,7 +45498,7 @@
         {
           "index": 8,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         }
       ]
     },
@@ -45927,7 +46102,7 @@
       "id": "bf3-wcmcb-12 oz",
       "drink": "White Chocolate Mac Cold Brew",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ pumps of ___\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -45940,22 +46115,27 @@
           "correct": "white chocolate sauce"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "6",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "syrup",
           "correct": "macadamia nut syrup"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -45965,7 +46145,7 @@
       "id": "bf3-wcmcb-16 oz",
       "drink": "White Chocolate Mac Cold Brew",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ pumps of ___\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -45978,22 +46158,27 @@
           "correct": "white chocolate sauce"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "8",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "syrup",
           "correct": "macadamia nut syrup"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -46003,7 +46188,7 @@
       "id": "bf3-wcmcb-24 oz",
       "drink": "White Chocolate Mac Cold Brew",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ pumps of ___\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -46016,22 +46201,27 @@
           "correct": "white chocolate sauce"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "10",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "syrup",
           "correct": "macadamia nut syrup"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -46041,7 +46231,7 @@
       "id": "bf3-wcmcb-32 oz",
       "drink": "White Chocolate Mac Cold Brew",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\nCold Brew to ___ oz\n___ pumps of ___\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -46054,22 +46244,27 @@
           "correct": "white chocolate sauce"
         },
         {
-          "index": 2,
+          "type": "fill_oz",
+          "correct": "16",
+          "index": 2
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "syrup",
           "correct": "macadamia nut syrup"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -46919,7 +47114,7 @@
       "id": "m17-cruiser-12 oz",
       "drink": "Beach Cruiser",
       "size": "12 oz",
-      "template": "___ pumps of all flavors\n___ oz tea of choice",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___\n___ oz tea of choice",
       "blanks": [
         {
           "index": 0,
@@ -46928,6 +47123,31 @@
         },
         {
           "index": 1,
+          "type": "syrup",
+          "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 6,
           "type": "fill_oz",
           "correct": "8"
         }
@@ -46937,7 +47157,7 @@
       "id": "m17-cruiser-16 oz",
       "drink": "Beach Cruiser",
       "size": "16 oz",
-      "template": "___ pumps of all flavors\n___ oz tea of choice",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___\n___ oz tea of choice",
       "blanks": [
         {
           "index": 0,
@@ -46946,6 +47166,31 @@
         },
         {
           "index": 1,
+          "type": "syrup",
+          "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 6,
           "type": "fill_oz",
           "correct": "10"
         }
@@ -46955,7 +47200,7 @@
       "id": "m17-cruiser-24 oz",
       "drink": "Beach Cruiser",
       "size": "24 oz",
-      "template": "___ pumps of all flavors\n___ oz tea of choice",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___\n___ oz tea of choice",
       "blanks": [
         {
           "index": 0,
@@ -46964,6 +47209,31 @@
         },
         {
           "index": 1,
+          "type": "syrup",
+          "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 6,
           "type": "fill_oz",
           "correct": "12"
         }
@@ -46973,7 +47243,7 @@
       "id": "m17-cruiser-32 oz",
       "drink": "Beach Cruiser",
       "size": "32 oz",
-      "template": "___ pumps of all flavors\n___ oz tea of choice",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___\n___ oz tea of choice",
       "blanks": [
         {
           "index": 0,
@@ -46982,6 +47252,31 @@
         },
         {
           "index": 1,
+          "type": "syrup",
+          "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 6,
           "type": "fill_oz",
           "correct": "20"
         }
@@ -49583,6 +49878,39 @@
           "index": 13,
           "type": "powder",
           "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "bw3-32 oz",
+      "drink": "Blended Waikiki",
+      "size": "32 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "white chocolate powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "vanilla syrup"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     }
