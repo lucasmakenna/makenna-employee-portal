@@ -46290,7 +46290,7 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "1/2"
         },
         {
           "index": 4,
@@ -46323,7 +46323,7 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "1/2"
         },
         {
           "index": 4,
@@ -46356,7 +46356,7 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "1/2"
         },
         {
           "index": 4,
@@ -46493,7 +46493,7 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         }
       ]
     },
@@ -48509,7 +48509,7 @@
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         },
         {
           "index": 6,
