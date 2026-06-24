@@ -113,7 +113,7 @@
       "Kona Cloud",
       "Maui Milk",
       "heavy cream",
-      "coconut cr\u00e8me",
+      "coconut crème",
       "Half and Half",
       "oat milk",
       "nonfat milk",
@@ -143,7 +143,8 @@
       "cookie crumb",
       "pumpkin spice",
       "pumpkin sugar crystals",
-      "graham crackers"
+      "graham crackers",
+      "sprinkles"
     ],
     "fill_oz": [
       "2",
@@ -2484,7 +2485,7 @@
     },
     {
       "id": "eaf5572d-99ed-4e45-b919-7bbde5a43810",
-      "drink": "The Dragon\u2019s Breath",
+      "drink": "The Dragon’s Breath",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -2522,7 +2523,7 @@
     },
     {
       "id": "ee6860f5-3dab-49c6-98b0-ffd60a7bf9d3",
-      "drink": "The Dragon\u2019s Breath",
+      "drink": "The Dragon’s Breath",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -2560,7 +2561,7 @@
     },
     {
       "id": "d5ee5e80-063f-41bf-9f3a-05cf3649ca58",
-      "drink": "The Dragon\u2019s Breath",
+      "drink": "The Dragon’s Breath",
       "size": "32 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -13250,7 +13251,7 @@
     },
     {
       "id": "50ae86b7-61cb-480b-90e2-77c9620d7612",
-      "drink": "Caramel De\u2019Lite",
+      "drink": "Caramel De’Lite",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -13283,7 +13284,7 @@
     },
     {
       "id": "25fe46f5-b9e9-4641-ab15-9b136d331f83",
-      "drink": "Caramel De\u2019Lite",
+      "drink": "Caramel De’Lite",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -13316,7 +13317,7 @@
     },
     {
       "id": "43ed1194-03cb-4f2d-b9c4-edb17106d34c",
-      "drink": "Caramel De\u2019Lite",
+      "drink": "Caramel De’Lite",
       "size": "24 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -15812,7 +15813,7 @@
     },
     {
       "id": "a2e3b9cd-f9ea-44e3-82c9-1010c4c40e60",
-      "drink": "Santa\u2019s Cookie Iced",
+      "drink": "Santa’s Cookie Iced",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
@@ -15865,7 +15866,7 @@
     },
     {
       "id": "92bb4c83-678c-4d03-981a-b94afb126b90",
-      "drink": "Santa\u2019s Cookie Iced",
+      "drink": "Santa’s Cookie Iced",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
@@ -15918,7 +15919,7 @@
     },
     {
       "id": "7fa4bf0c-1d48-4977-a912-c662dabb2ddd",
-      "drink": "Santa\u2019s Cookie Iced",
+      "drink": "Santa’s Cookie Iced",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
@@ -15971,7 +15972,7 @@
     },
     {
       "id": "8e458aff-28d3-4381-9698-f9c7b538ef36",
-      "drink": "Santa\u2019s Cookie Iced",
+      "drink": "Santa’s Cookie Iced",
       "size": "32 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
@@ -16156,7 +16157,7 @@
     },
     {
       "id": "6205f875-27e3-4a1f-b39e-307ad6d33874",
-      "drink": "Cupid\u2019s Kiss Iced",
+      "drink": "Cupid’s Kiss Iced",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
       "blanks": [
@@ -16204,7 +16205,7 @@
     },
     {
       "id": "14fd4040-f6da-4ccc-9a0b-f5014da690c4",
-      "drink": "Cupid\u2019s Kiss Iced",
+      "drink": "Cupid’s Kiss Iced",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
       "blanks": [
@@ -16252,7 +16253,7 @@
     },
     {
       "id": "900da671-deae-44d3-b479-bffaf5ccee40",
-      "drink": "Cupid\u2019s Kiss Iced",
+      "drink": "Cupid’s Kiss Iced",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
       "blanks": [
@@ -16300,7 +16301,7 @@
     },
     {
       "id": "aa512318-b265-4780-b33b-98c5c304de48",
-      "drink": "Cupid\u2019s Kiss Iced",
+      "drink": "Cupid’s Kiss Iced",
       "size": "32 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
       "blanks": [
@@ -17284,7 +17285,7 @@
     },
     {
       "id": "b9864a04-be30-43ca-84b8-e5125f6bce96",
-      "drink": "Going bananas Chiller\ud83c\udf4c",
+      "drink": "Going bananas Chiller🍌",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz ___, milk of choice to ___ oz",
       "blanks": [
@@ -17347,7 +17348,7 @@
     },
     {
       "id": "3654bef0-fa2e-45a4-8689-d4a808222647",
-      "drink": "Going bananas Chiller\ud83c\udf4c",
+      "drink": "Going bananas Chiller🍌",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz ___, milk of choice to ___ oz",
       "blanks": [
@@ -17410,7 +17411,7 @@
     },
     {
       "id": "ea22e5bf-f250-4db3-9649-48aa6e1053e3",
-      "drink": "Going bananas Chiller\ud83c\udf4c",
+      "drink": "Going bananas Chiller🍌",
       "size": "24 oz",
       "template": "___ scoops of ___ + ___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz ___, milk of choice to ___ oz",
       "blanks": [
@@ -17473,7 +17474,7 @@
     },
     {
       "id": "b4ae538a-57d0-490f-8556-76c04e68ca69",
-      "drink": "Going bananas Chiller\ud83c\udf4c",
+      "drink": "Going bananas Chiller🍌",
       "size": "32 oz",
       "template": "___ scoops of ___ + ___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz ___, milk of choice to ___ oz",
       "blanks": [
@@ -22709,7 +22710,7 @@
     },
     {
       "id": "7ebf118a-eb9d-4dd6-b43b-d31c1d2b480d",
-      "drink": "Santa\u2019s Cookie Blended",
+      "drink": "Santa’s Cookie Blended",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -22752,7 +22753,7 @@
     },
     {
       "id": "060e0dbf-406b-4513-be2e-eb4a24312470",
-      "drink": "Santa\u2019s Cookie Blended",
+      "drink": "Santa’s Cookie Blended",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -22795,7 +22796,7 @@
     },
     {
       "id": "9ec004a8-b267-4863-ae50-0bc583de07ce",
-      "drink": "Santa\u2019s Cookie Blended",
+      "drink": "Santa’s Cookie Blended",
       "size": "24 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -22838,7 +22839,7 @@
     },
     {
       "id": "cf71adeb-dd08-4c59-b5d2-14ebb6aa1488",
-      "drink": "Santa\u2019s Cookie Blended",
+      "drink": "Santa’s Cookie Blended",
       "size": "32 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -22881,7 +22882,7 @@
     },
     {
       "id": "dcfa63d9-0464-4123-9de1-f97be4d8c6e7",
-      "drink": "Santa\u2019s Cookie Hot",
+      "drink": "Santa’s Cookie Hot",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -22924,7 +22925,7 @@
     },
     {
       "id": "70a55db6-507d-49a3-850e-ad15e8f80b44",
-      "drink": "Santa\u2019s Cookie Hot",
+      "drink": "Santa’s Cookie Hot",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nMaui Milk to ___ oz",
       "blanks": [
@@ -22972,7 +22973,7 @@
     },
     {
       "id": "7988d884-fa50-4bd6-9c19-3e968bc1e0b5",
-      "drink": "Santa\u2019s Cookie Hot",
+      "drink": "Santa’s Cookie Hot",
       "size": "20 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -24219,7 +24220,7 @@
     },
     {
       "id": "cd62eaab-d7c3-4faa-9f9d-6e79a2e4e0f1",
-      "drink": "Cupid\u2019s Kiss Blended",
+      "drink": "Cupid’s Kiss Blended",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -24252,7 +24253,7 @@
     },
     {
       "id": "b523c61f-b42d-4226-83c7-cde5a609b913",
-      "drink": "Cupid\u2019s Kiss Blended",
+      "drink": "Cupid’s Kiss Blended",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -24285,7 +24286,7 @@
     },
     {
       "id": "c2bd69fb-4d1e-4325-b976-97e86e14b7f4",
-      "drink": "Cupid\u2019s Kiss Blended",
+      "drink": "Cupid’s Kiss Blended",
       "size": "24 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -24318,7 +24319,7 @@
     },
     {
       "id": "c0dfad36-e4a5-4e17-ac1c-8f95267f236c",
-      "drink": "Cupid\u2019s Kiss Hot",
+      "drink": "Cupid’s Kiss Hot",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
@@ -24361,7 +24362,7 @@
     },
     {
       "id": "66f599ef-a39e-4b3c-972d-e8696ba5a9c5",
-      "drink": "Cupid\u2019s Kiss Hot",
+      "drink": "Cupid’s Kiss Hot",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
@@ -24404,7 +24405,7 @@
     },
     {
       "id": "b28323f5-e465-41e2-9b7e-0092bd4977dc",
-      "drink": "Cupid\u2019s Kiss Hot",
+      "drink": "Cupid’s Kiss Hot",
       "size": "20 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
@@ -25837,7 +25838,7 @@
       "id": "d196e095-cf96-41ef-8d5a-e1875e7af33f",
       "drink": "Sugar Cookie Latte Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -25883,6 +25884,16 @@
           "index": 8,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "topping",
+          "correct": "sprinkles"
         }
       ]
     },
@@ -25890,7 +25901,7 @@
       "id": "dee159ef-de8c-444a-bf87-4ed7bd91becc",
       "drink": "Sugar Cookie Latte Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -25936,6 +25947,16 @@
           "index": 8,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "topping",
+          "correct": "sprinkles"
         }
       ]
     },
@@ -25943,7 +25964,7 @@
       "id": "c7f031a5-b76a-470a-a13c-2cc678796ddb",
       "drink": "Sugar Cookie Latte Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -25989,6 +26010,16 @@
           "index": 8,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "topping",
+          "correct": "sprinkles"
         }
       ]
     },
@@ -25996,7 +26027,7 @@
       "id": "3fee9029-c879-49a2-bdef-1d1456268fdc",
       "drink": "Sugar Cookie Latte Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -26041,7 +26072,17 @@
         {
           "index": 8,
           "type": "cream",
-          "correct": "Half and Half"
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "topping",
+          "correct": "sprinkles"
         }
       ]
     },
@@ -30375,7 +30416,7 @@
     },
     {
       "id": "223af6c6-a8f6-42c7-917a-9663aa558de3",
-      "drink": "Dragon\u2019s Breath Slushy",
+      "drink": "Dragon’s Breath Slushy",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -30413,7 +30454,7 @@
     },
     {
       "id": "29e33568-1a0d-485d-a708-195a0b37faa1",
-      "drink": "Dragon\u2019s Breath Slushy",
+      "drink": "Dragon’s Breath Slushy",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -30451,7 +30492,7 @@
     },
     {
       "id": "614bda33-e244-4b1e-8268-3846fb6cf539",
-      "drink": "Dragon\u2019s Breath Slushy",
+      "drink": "Dragon’s Breath Slushy",
       "size": "32 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -36329,7 +36370,7 @@
     },
     {
       "id": "6bca0ce4-c75b-4e10-a390-0c484686c05f",
-      "drink": "Pot O\u2019 Gold Iced",
+      "drink": "Pot O’ Gold Iced",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nTo ___ oz with whole milk\n___ oz ___ with ___ pumps of ___\nTop with ___",
       "blanks": [
@@ -36397,7 +36438,7 @@
     },
     {
       "id": "64072cce-c344-401a-b99c-d809f7640f30",
-      "drink": "Pot O\u2019 Gold Iced",
+      "drink": "Pot O’ Gold Iced",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nTo ___ oz with whole milk\n___ oz ___ with ___ pumps of ___\nTop with ___",
       "blanks": [
@@ -36465,7 +36506,7 @@
     },
     {
       "id": "11f0f2b9-0e92-43a0-97e8-06707e5f711a",
-      "drink": "Pot O\u2019 Gold Iced",
+      "drink": "Pot O’ Gold Iced",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nTo ___ oz with whole milk\n___ oz ___ with ___ pumps of ___\nTop with ___",
       "blanks": [
@@ -36533,7 +36574,7 @@
     },
     {
       "id": "5a5509a7-27cc-46ca-a692-f4ccd65a9f85",
-      "drink": "Pot O\u2019 Gold Iced",
+      "drink": "Pot O’ Gold Iced",
       "size": "32 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nTo ___ oz with whole milk\n___ oz ___ with ___ pumps of ___\nTop with ___",
       "blanks": [
@@ -37216,7 +37257,7 @@
     },
     {
       "id": "6b4e5418-9387-469f-a3c6-ea7024ac7d6a",
-      "drink": "Beach S\u2019more",
+      "drink": "Beach S’more",
       "size": "16 oz",
       "template": "___ chocolate macadamia nut syrup\n___ pumps of ___\n___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim of cup\nAdd ___",
       "blanks": [
@@ -37559,7 +37600,7 @@
         {
           "index": 8,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         },
         {
           "index": 9,
@@ -44193,7 +44234,7 @@
         {
           "index": 1,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         },
         {
           "index": 2,
@@ -44231,7 +44272,7 @@
         {
           "index": 1,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         },
         {
           "index": 2,
@@ -44269,7 +44310,7 @@
         {
           "index": 1,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         },
         {
           "index": 2,
@@ -44307,7 +44348,7 @@
         {
           "index": 1,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         },
         {
           "index": 2,
@@ -47022,7 +47063,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
@@ -47055,7 +47096,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
@@ -47088,7 +47129,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
@@ -47121,7 +47162,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
@@ -47154,7 +47195,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
@@ -47187,7 +47228,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
@@ -47220,7 +47261,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
@@ -47253,7 +47294,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
@@ -47510,7 +47551,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
@@ -47586,7 +47627,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
@@ -47619,7 +47660,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
@@ -47652,7 +47693,7 @@
         {
           "index": 4,
           "type": "cream",
-          "correct": "coconut cr\u00e8me"
+          "correct": "coconut crème"
         }
       ]
     },
