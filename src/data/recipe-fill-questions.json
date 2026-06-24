@@ -116,7 +116,8 @@
       "coconut cr\u00e8me",
       "Half and Half",
       "oat milk",
-      "nonfat milk"
+      "nonfat milk",
+      "Oat Kona"
     ],
     "drizzle": [
       "caramel drizzle",
@@ -10062,7 +10063,7 @@
       "id": "0ee85a16-20c8-404f-b1eb-7f4b992d8362",
       "drink": "Sandy Blonde Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -10076,18 +10077,33 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 4,
           "type": "fill_oz",
           "correct": "10"
         },
         {
-          "index": 3,
+          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 4,
+          "index": 6,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -10095,7 +10111,7 @@
       "id": "5705a078-bf6b-46d6-9baf-22722b6fef12",
       "drink": "Sandy Blonde Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -10131,6 +10147,11 @@
           "index": 6,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -10138,7 +10159,7 @@
       "id": "3367f2f9-56ba-443d-835e-f9cce69cc832",
       "drink": "Sandy Blonde Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -10174,6 +10195,11 @@
           "index": 6,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -26959,7 +26985,7 @@
         {
           "index": 6,
           "type": "cream",
-          "correct": "Kona Cloud"
+          "correct": "Oat Kona"
         }
       ]
     },
@@ -27002,7 +27028,7 @@
         {
           "index": 6,
           "type": "cream",
-          "correct": "Kona Cloud"
+          "correct": "Oat Kona"
         }
       ]
     },
@@ -27045,7 +27071,7 @@
         {
           "index": 6,
           "type": "cream",
-          "correct": "Kona Cloud"
+          "correct": "Oat Kona"
         }
       ]
     },
@@ -27088,7 +27114,7 @@
         {
           "index": 6,
           "type": "cream",
-          "correct": "Kona Cloud"
+          "correct": "Oat Kona"
         }
       ]
     },
@@ -42976,52 +43002,42 @@
       "id": "sf-salty-kiss-12 oz",
       "drink": "Salty kiss",
       "size": "12 oz",
-      "template": "___ oz Maui Milk\nMilk of Choice to ___ oz\n___ oz Kona Cloud\n___ pumps of ___\n___ oz of ___\n___ oz of ___",
+      "template": "___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pump of ___",
       "blanks": [
         {
           "index": 0,
-          "type": "fill_oz",
+          "type": "quantity",
           "correct": "4"
         },
         {
           "index": 1,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 4,
-          "type": "syrup",
-          "correct": "salted caramel syrup"
-        },
-        {
-          "index": 5,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 6,
           "type": "cream",
           "correct": "Maui Milk"
         },
         {
-          "index": 7,
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 8,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "salted caramel syrup"
         }
       ]
     },
@@ -43029,52 +43045,42 @@
       "id": "sf-salty-kiss-16 oz",
       "drink": "Salty kiss",
       "size": "16 oz",
-      "template": "___ oz Maui Milk\nMilk of Choice to ___ oz\n___ oz Kona Cloud\n___ pumps of ___\n___ oz of ___\n___ oz of ___",
+      "template": "___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pump of ___",
       "blanks": [
         {
           "index": 0,
-          "type": "fill_oz",
+          "type": "quantity",
           "correct": "6"
         },
         {
           "index": 1,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 4,
-          "type": "syrup",
-          "correct": "salted caramel syrup"
-        },
-        {
-          "index": 5,
-          "type": "quantity",
-          "correct": "6"
-        },
-        {
-          "index": 6,
           "type": "cream",
           "correct": "Maui Milk"
         },
         {
-          "index": 7,
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 8,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "salted caramel syrup"
         }
       ]
     },
@@ -43082,7 +43088,7 @@
       "id": "sf-salty-kiss-24 oz",
       "drink": "Salty kiss",
       "size": "24 oz",
-      "template": "___ oz Maui Milk\nMilk of Choice to ___ oz\n___ oz Kona Cloud\n___ pumps of ___\n___ oz of ___\n___ oz of ___",
+      "template": "___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pump of ___",
       "blanks": [
         {
           "index": 0,
@@ -43091,43 +43097,33 @@
         },
         {
           "index": 1,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 4,
-          "type": "syrup",
-          "correct": "salted caramel syrup"
-        },
-        {
-          "index": 5,
-          "type": "fill_oz",
-          "correct": "7"
-        },
-        {
-          "index": 6,
           "type": "cream",
           "correct": "Maui Milk"
         },
         {
-          "index": 7,
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 8,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "salted caramel syrup"
         }
       ]
     },
@@ -43135,7 +43131,7 @@
       "id": "sf-salty-kiss-32 oz",
       "drink": "Salty kiss",
       "size": "32 oz",
-      "template": "___ oz Maui Milk\nMilk of Choice to ___ oz\n___ oz Kona Cloud\n___ pumps of ___\n___ oz of ___\n___ oz of ___",
+      "template": "___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pump of ___",
       "blanks": [
         {
           "index": 0,
@@ -43144,43 +43140,33 @@
         },
         {
           "index": 1,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 2,
-          "type": "fill_oz",
-          "correct": "4"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 4,
-          "type": "syrup",
-          "correct": "salted caramel syrup"
-        },
-        {
-          "index": 5,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 6,
           "type": "cream",
           "correct": "Maui Milk"
         },
         {
-          "index": 7,
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "20"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 8,
+          "index": 4,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "salted caramel syrup"
         }
       ]
     },
