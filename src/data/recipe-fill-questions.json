@@ -4139,7 +4139,7 @@
       "id": "bc1954f4-1c8f-4137-bb50-6dcd17c8946d",
       "drink": "Maui Mocha Chiller",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMaui Milk to ___ oz",
+      "template": "___ scoops of ___\nMaui Milk to ___ oz\nAdd ___ around inside of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -4155,6 +4155,11 @@
           "index": 2,
           "type": "quantity",
           "correct": "5"
+        },
+        {
+          "index": 3,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4162,7 +4167,7 @@
       "id": "5e31fc4c-37a1-4536-9acd-f2f946d2df70",
       "drink": "Maui Mocha Chiller",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMaui Milk to ___ oz",
+      "template": "___ scoops of ___\nMaui Milk to ___ oz\nAdd ___ around inside of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -4178,6 +4183,11 @@
           "index": 2,
           "type": "quantity",
           "correct": "6"
+        },
+        {
+          "index": 3,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4185,7 +4195,7 @@
       "id": "dd009243-3ff4-40c2-83c6-8067a6a28115",
       "drink": "Maui Mocha Chiller",
       "size": "24 oz",
-      "template": "___ scoops of ___\nMaui Milk to ___ oz",
+      "template": "___ scoops of ___\nMaui Milk to ___ oz\nAdd ___ around inside of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -4201,6 +4211,11 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "7"
+        },
+        {
+          "index": 3,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4208,7 +4223,7 @@
       "id": "b8378884-637e-414a-913d-15846a9a9998",
       "drink": "Maui Mocha Chiller",
       "size": "32 oz",
-      "template": "___ scoops of ___\nMaui Milk to ___ oz",
+      "template": "___ scoops of ___\nMaui Milk to ___ oz\nAdd ___ around inside of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -4224,6 +4239,11 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "12"
+        },
+        {
+          "index": 3,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -5618,7 +5638,7 @@
         {
           "index": 6,
           "type": "fill_oz",
-          "correct": "12"
+          "correct": "14"
         },
         {
           "index": 7,
@@ -41773,7 +41793,7 @@
       "id": "1258f7ea-3f8d-4bde-9ad8-551b46858d19",
       "drink": "Horchata Matcha Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___ + ___ pumps of ___\nMilk of choice to ___ oz",
+      "template": "___ scoops of ___\n___ scoop of ___\n___ pumps of ___\nMilk of choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -41816,7 +41836,7 @@
       "id": "32c1856d-8e5c-487a-996f-b0e9ade1cac4",
       "drink": "Horchata Matcha Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___ + ___ pumps of ___\nMilk of choice to ___ oz",
+      "template": "___ scoops of ___\n___ scoop of ___\n___ pumps of ___\nMilk of choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -41859,7 +41879,7 @@
       "id": "ed74a34f-8885-4a6d-b304-7657f6c12717",
       "drink": "Horchata Matcha Hot",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___ + ___ pumps of ___\nMilk of choice to ___ oz",
+      "template": "___ scoops of ___\n___ scoop of ___\n___ pumps of ___\nMilk of choice to ___ oz",
       "blanks": [
         {
           "index": 0,
