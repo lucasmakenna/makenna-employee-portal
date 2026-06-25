@@ -35557,7 +35557,7 @@
         {
           "index": 0,
           "type": "quantity",
-          "correct": "5"
+          "correct": "6"
         },
         {
           "index": 1,
@@ -37988,7 +37988,7 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         },
         {
           "index": 8,
@@ -37998,7 +37998,7 @@
         {
           "index": 9,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         },
         {
           "index": 10,
