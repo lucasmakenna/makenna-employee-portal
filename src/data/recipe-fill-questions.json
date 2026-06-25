@@ -5937,7 +5937,7 @@
         {
           "index": 0,
           "type": "quantity",
-          "correct": "5"
+          "correct": "6"
         },
         {
           "index": 1,
@@ -5957,7 +5957,7 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "5"
+          "correct": "6"
         },
         {
           "index": 5,
@@ -7489,7 +7489,7 @@
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "5"
         },
         {
           "index": 6,
@@ -8995,92 +8995,6 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "20"
-        }
-      ]
-    },
-    {
-      "id": "f95aa47c-05f2-42d5-97f3-a6c385c6770d",
-      "drink": "Hot",
-      "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cherry syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "almond syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 5,
-          "type": "cream",
-          "correct": "Maui Milk"
-        },
-        {
-          "index": 6,
-          "type": "fill_oz",
-          "correct": "10"
-        }
-      ]
-    },
-    {
-      "id": "0ec6fbec-0748-4b32-96c9-f1da9f34afcf",
-      "drink": "Hot",
-      "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cherry syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "almond syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 5,
-          "type": "cream",
-          "correct": "Maui Milk"
-        },
-        {
-          "index": 6,
-          "type": "fill_oz",
-          "correct": "12"
         }
       ]
     },
@@ -26262,7 +26176,7 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "5"
+          "correct": "4"
         },
         {
           "index": 8,
@@ -28633,7 +28547,7 @@
         {
           "index": 0,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1 1/2"
         },
         {
           "index": 1,
@@ -30981,7 +30895,7 @@
         {
           "index": 0,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "2"
         },
         {
           "index": 1,
@@ -32246,7 +32160,7 @@
         {
           "index": 5,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 6,
@@ -32465,7 +32379,7 @@
       "id": "948a51b5-e9a7-4b88-8e53-eecb644f8402",
       "drink": "Gingerbread Chai",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -32490,27 +32404,32 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 5,
-          "type": "syrup",
-          "correct": "gingerbread syrup"
-        },
-        {
-          "index": 6,
           "type": "fill_oz",
           "correct": "8"
         },
         {
-          "index": 7,
+          "index": 6,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 8,
-          "type": "cream",
-          "correct": "Maui Milk"
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 9,
+          "type": "syrup",
+          "correct": "gingerbread syrup"
         }
       ]
     },
@@ -32518,7 +32437,7 @@
       "id": "54a83417-91f1-4f6d-9364-c9a1463375ae",
       "drink": "Gingerbread Chai",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -32543,27 +32462,32 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1 1/2"
         },
         {
           "index": 5,
-          "type": "syrup",
-          "correct": "gingerbread syrup"
-        },
-        {
-          "index": 6,
           "type": "fill_oz",
           "correct": "10"
         },
         {
-          "index": 7,
+          "index": 6,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "2"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 8,
-          "type": "cream",
-          "correct": "Maui Milk"
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 9,
+          "type": "syrup",
+          "correct": "gingerbread syrup"
         }
       ]
     },
@@ -32571,7 +32495,7 @@
       "id": "37dc3f61-ba2c-4644-bef8-f289d9657719",
       "drink": "Gingerbread Chai",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -32596,27 +32520,32 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1 1/2"
         },
         {
           "index": 5,
-          "type": "syrup",
-          "correct": "gingerbread syrup"
-        },
-        {
-          "index": 6,
           "type": "fill_oz",
           "correct": "12"
         },
         {
-          "index": 7,
+          "index": 6,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "2"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 8,
-          "type": "cream",
-          "correct": "Maui Milk"
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 9,
+          "type": "syrup",
+          "correct": "gingerbread syrup"
         }
       ]
     },
@@ -33608,7 +33537,7 @@
       "id": "dcee93b8-9586-4c83-8c66-dd2b51c98b03",
       "drink": "Firecracker",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz ___ with ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -33637,8 +33566,8 @@
         },
         {
           "index": 5,
-          "type": "syrup",
-          "correct": "blue raspberry syrup"
+          "type": "cream",
+          "correct": "Half and Half"
         },
         {
           "index": 6,
@@ -33653,7 +33582,17 @@
         {
           "index": 8,
           "type": "cream",
-          "correct": "Half and Half"
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 10,
+          "type": "syrup",
+          "correct": "blue raspberry syrup"
         }
       ]
     },
@@ -33661,7 +33600,7 @@
       "id": "26b01cfd-2828-4d05-99af-10ff2833b379",
       "drink": "Firecracker",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz ___ with ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -33686,12 +33625,12 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "2"
+          "correct": "2 1/2"
         },
         {
           "index": 5,
-          "type": "syrup",
-          "correct": "blue raspberry syrup"
+          "type": "cream",
+          "correct": "Half and Half"
         },
         {
           "index": 6,
@@ -33701,12 +33640,22 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "2"
         },
         {
           "index": 8,
           "type": "cream",
-          "correct": "Half and Half"
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 10,
+          "type": "syrup",
+          "correct": "blue raspberry syrup"
         }
       ]
     },
@@ -33714,7 +33663,7 @@
       "id": "5decbc83-39b3-4469-b61a-811436fb2a03",
       "drink": "Firecracker",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz ___ with ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -33739,12 +33688,12 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "2"
+          "correct": "2 1/2"
         },
         {
           "index": 5,
-          "type": "syrup",
-          "correct": "blue raspberry syrup"
+          "type": "cream",
+          "correct": "Half and Half"
         },
         {
           "index": 6,
@@ -33754,12 +33703,22 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "2"
         },
         {
           "index": 8,
           "type": "cream",
-          "correct": "Half and Half"
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 10,
+          "type": "syrup",
+          "correct": "blue raspberry syrup"
         }
       ]
     },
@@ -33767,7 +33726,7 @@
       "id": "0464f395-6ac4-4c43-bc9f-7b9aaca52f81",
       "drink": "Firecracker",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz ___ with ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -33792,12 +33751,12 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "4"
+          "correct": "5"
         },
         {
           "index": 5,
-          "type": "syrup",
-          "correct": "blue raspberry syrup"
+          "type": "cream",
+          "correct": "Half and Half"
         },
         {
           "index": 6,
@@ -33807,12 +33766,22 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "5"
+          "correct": "4"
         },
         {
           "index": 8,
           "type": "cream",
-          "correct": "Half and Half"
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 10,
+          "type": "syrup",
+          "correct": "blue raspberry syrup"
         }
       ]
     },
@@ -33820,7 +33789,7 @@
       "id": "683e1291-71b6-43e1-bd0d-76e39f92df33",
       "drink": "Freedom Latte",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ around cup\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -33844,28 +33813,43 @@
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 6,
           "type": "fill_oz",
           "correct": "8"
         },
         {
-          "index": 5,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 6,
-          "type": "syrup",
-          "correct": "strawberry syrup"
-        },
-        {
           "index": 7,
-          "type": "quantity",
-          "correct": "2"
+          "type": "drizzle",
+          "correct": "strawberry puree drizzle"
         },
         {
           "index": 8,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 9,
           "type": "cream",
-          "correct": "Half and Half"
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 11,
+          "type": "syrup",
+          "correct": "strawberry syrup"
         }
       ]
     },
@@ -33873,7 +33857,7 @@
       "id": "f1c132a7-b19d-466f-8b64-ab7621a9c6ff",
       "drink": "Freedom Latte",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ around cup\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -33897,28 +33881,43 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 6,
-          "type": "syrup",
-          "correct": "strawberry syrup"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "strawberry puree drizzle"
+        },
+        {
+          "index": 8,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 11,
+          "type": "syrup",
+          "correct": "strawberry syrup"
         }
       ]
     },
@@ -33926,7 +33925,7 @@
       "id": "cbe9d97f-e5f2-4745-a182-6fc65da5f946",
       "drink": "Freedom Latte",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ around cup\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -33950,28 +33949,43 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 6,
-          "type": "syrup",
-          "correct": "strawberry syrup"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 8,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "strawberry puree drizzle"
+        },
+        {
+          "index": 8,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 11,
+          "type": "syrup",
+          "correct": "strawberry syrup"
         }
       ]
     },
@@ -34171,7 +34185,7 @@
       "id": "e3254ec5-ef06-4d3a-8f2c-5ff2c53b54e1",
       "drink": "American Flag Freeze",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ spiraled to the top\n___ on top",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz ___ with ___ pumps of ___\nAdd ___ spiraled to the top\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -34185,26 +34199,36 @@
         },
         {
           "index": 2,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "blue raspberry syrup"
-        },
-        {
-          "index": 4,
           "type": "fill_oz",
           "correct": "6"
         },
         {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
           "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "blue raspberry syrup"
+        },
+        {
+          "index": 7,
           "type": "drizzle",
           "correct": "strawberry drizzle"
         },
         {
-          "index": 6,
+          "index": 8,
           "type": "topping",
           "correct": "red pop rocks"
         }
@@ -34214,7 +34238,7 @@
       "id": "71ae6574-8614-41c8-8c1e-8c0feb50ffe0",
       "drink": "American Flag Freeze",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ spiraled to the top\n___ on top",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz ___ with ___ pumps of ___\nAdd ___ spiraled to the top\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -34228,26 +34252,36 @@
         },
         {
           "index": 2,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "blue raspberry syrup"
-        },
-        {
-          "index": 4,
           "type": "fill_oz",
           "correct": "7"
         },
         {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
           "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "blue raspberry syrup"
+        },
+        {
+          "index": 7,
           "type": "drizzle",
           "correct": "strawberry drizzle"
         },
         {
-          "index": 6,
+          "index": 8,
           "type": "topping",
           "correct": "red pop rocks"
         }
@@ -34257,7 +34291,7 @@
       "id": "ab28a404-41a4-45f6-a453-6a3304a22f78",
       "drink": "American Flag Freeze",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ spiraled to the top\n___ on top",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz ___ with ___ pumps of ___\nAdd ___ spiraled to the top\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -34271,26 +34305,36 @@
         },
         {
           "index": 2,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "blue raspberry syrup"
-        },
-        {
-          "index": 4,
           "type": "fill_oz",
           "correct": "8"
         },
         {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
           "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "blue raspberry syrup"
+        },
+        {
+          "index": 7,
           "type": "drizzle",
           "correct": "strawberry drizzle"
         },
         {
-          "index": 6,
+          "index": 8,
           "type": "topping",
           "correct": "red pop rocks"
         }
@@ -34300,7 +34344,7 @@
       "id": "c0a08a82-b6f7-4b7f-9c70-5466ccee22e5",
       "drink": "American Flag Freeze",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ spiraled to the top\n___ on top",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz ___ with ___ pumps of ___\nAdd ___ spiraled to the top\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -34314,26 +34358,36 @@
         },
         {
           "index": 2,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "blue raspberry syrup"
-        },
-        {
-          "index": 4,
           "type": "fill_oz",
           "correct": "12"
         },
         {
+          "index": 3,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 4,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
           "index": 5,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 6,
+          "type": "syrup",
+          "correct": "blue raspberry syrup"
+        },
+        {
+          "index": 7,
           "type": "drizzle",
           "correct": "strawberry drizzle"
         },
         {
-          "index": 6,
+          "index": 8,
           "type": "topping",
           "correct": "red pop rocks"
         }
@@ -37491,7 +37545,7 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         },
         {
           "index": 3,
@@ -37501,7 +37555,7 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         },
         {
           "index": 5,
@@ -37719,7 +37773,7 @@
       "id": "d3f37121-b973-4320-8ccb-05c3a797ff35",
       "drink": "Brownie Batter Latte",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz\nMix ___ oz of ___ with ___ pump of ___",
       "blanks": [
         {
           "index": 0,
@@ -37743,18 +37797,38 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 7,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 10,
+          "type": "sauce",
+          "correct": "chocolate sauce"
         }
       ]
     },
@@ -39316,7 +39390,7 @@
       "id": "9086a247-5b6d-43a2-b069-5f82bae2c49b",
       "drink": "Fried Banana Latte",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -39340,18 +39414,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -39359,7 +39433,7 @@
       "id": "80a59cda-4783-4f9d-8c6c-d37ba75fd466",
       "drink": "Fried Banana Latte",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -39383,18 +39457,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -39402,7 +39476,7 @@
       "id": "5e7f37fd-00ab-4928-9d57-2aacd953a13d",
       "drink": "Fried Banana Latte",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -39426,18 +39500,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -39445,7 +39519,7 @@
       "id": "7200abeb-4226-48d5-94ab-e59706f7bd13",
       "drink": "Fried Banana Latte",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -39469,18 +39543,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -39963,7 +40037,7 @@
       "id": "d01c98c3-c0c7-401a-870e-fde7142b6e01",
       "drink": "Honey Lavender Latte Hot",
       "size": "12 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -39977,18 +40051,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 5,
@@ -40001,7 +40075,7 @@
       "id": "ff8b4436-be0d-4603-95ff-9a1297366dd1",
       "drink": "Honey Lavender Latte Hot",
       "size": "16 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -40015,18 +40089,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 5,
@@ -40039,7 +40113,7 @@
       "id": "f2aa12fe-f008-48c3-99d7-7147b0bfc3ae",
       "drink": "Honey Lavender Latte Hot",
       "size": "20 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -40053,18 +40127,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 5,
@@ -40077,7 +40151,7 @@
       "id": "08786118-81f6-4600-a87c-bb203c64f596",
       "drink": "Honey Lavender Latte Hot",
       "size": "32 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -40091,18 +40165,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 5,
@@ -40953,7 +41027,7 @@
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 6,
@@ -41067,7 +41141,7 @@
         {
           "index": 1,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 2,
@@ -41077,7 +41151,7 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         },
         {
           "index": 4,
@@ -41467,7 +41541,7 @@
       "id": "c2f75640-18db-4939-b410-be0103decb29",
       "drink": "Shaken Toffee Nut",
       "size": "16 oz",
-      "template": "___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -41476,6 +41550,16 @@
         },
         {
           "index": 1,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
           "type": "syrup",
           "correct": "toffee nut syrup"
         }
@@ -41485,15 +41569,25 @@
       "id": "1abd4a8a-d092-44e5-84a5-f4f1aa7463fd",
       "drink": "Shaken Toffee Nut",
       "size": "24 oz",
-      "template": "___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "3"
         },
         {
           "index": 1,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 3,
           "type": "syrup",
           "correct": "toffee nut syrup"
         }
@@ -41503,15 +41597,25 @@
       "id": "041f9301-a011-46d2-8a3c-6ad36391bb90",
       "drink": "Shaken Toffee Nut",
       "size": "32 oz",
-      "template": "___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "3"
+          "correct": "4"
         },
         {
           "index": 1,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 3,
           "type": "syrup",
           "correct": "toffee nut syrup"
         }
@@ -42647,7 +42751,7 @@
         {
           "index": 0,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "1"
         },
         {
           "index": 1,
@@ -42657,7 +42761,7 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "1"
         },
         {
           "index": 3,
@@ -42667,7 +42771,7 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "1"
         },
         {
           "index": 5,
@@ -42677,7 +42781,7 @@
         {
           "index": 6,
           "type": "fill_oz",
-          "correct": "19"
+          "correct": "18"
         },
         {
           "index": 7,
@@ -42700,42 +42804,57 @@
       "id": "41dd12ca-24c5-46f2-9e5e-0d0126611d80",
       "drink": "The Flamingo",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nWater to ___ oz",
+      "template": "Add ___ scoop ___ in drink cup\n___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nWater to ___ oz\nLemonade to ___ oz",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "1/4"
+          "correct": "1"
         },
         {
           "index": 1,
-          "type": "syrup",
-          "correct": "strawberry syrup"
+          "type": "topping",
+          "correct": "strawberry boba"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1/2"
+          "correct": "1/4"
         },
         {
           "index": 3,
           "type": "syrup",
-          "correct": "peach syrup"
+          "correct": "strawberry syrup"
         },
         {
           "index": 4,
           "type": "quantity",
-          "correct": "1/4"
+          "correct": "1/2"
         },
         {
           "index": 5,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
+          "type": "syrup",
+          "correct": "peach syrup"
         },
         {
           "index": 6,
           "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 7,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
           "correct": "2"
+        },
+        {
+          "index": 9,
+          "type": "fill_oz",
+          "correct": "7"
         }
       ]
     },
@@ -42743,42 +42862,57 @@
       "id": "2fc6596c-11d5-4fe6-8725-b746aeb5fcae",
       "drink": "The Flamingo",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nWater to ___ oz",
+      "template": "Add ___ scoop ___ in drink cup\n___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nWater to ___ oz\nLemonade to ___ oz",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "1/2"
+          "correct": "1 1/2"
         },
         {
           "index": 1,
-          "type": "syrup",
-          "correct": "strawberry syrup"
+          "type": "topping",
+          "correct": "strawberry boba"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "3/4"
+          "correct": "1/2"
         },
         {
           "index": 3,
           "type": "syrup",
-          "correct": "peach syrup"
+          "correct": "strawberry syrup"
         },
         {
           "index": 4,
           "type": "quantity",
-          "correct": "1/2"
+          "correct": "3/4"
         },
         {
           "index": 5,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
+          "type": "syrup",
+          "correct": "peach syrup"
         },
         {
           "index": 6,
           "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 7,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
           "correct": "4"
+        },
+        {
+          "index": 9,
+          "type": "fill_oz",
+          "correct": "9"
         }
       ]
     },
@@ -42786,42 +42920,57 @@
       "id": "08432f57-bded-4968-994e-ad1fa3651c50",
       "drink": "The Flamingo",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nWater to ___ oz",
+      "template": "Add ___ scoop ___ in drink cup\n___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nWater to ___ oz\nLemonade to ___ oz",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 1,
-          "type": "syrup",
-          "correct": "strawberry syrup"
+          "type": "topping",
+          "correct": "strawberry boba"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1 1/4"
+          "correct": "1"
         },
         {
           "index": 3,
           "type": "syrup",
-          "correct": "peach syrup"
+          "correct": "strawberry syrup"
         },
         {
           "index": 4,
           "type": "quantity",
-          "correct": "1"
+          "correct": "1 1/4"
         },
         {
           "index": 5,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
+          "type": "syrup",
+          "correct": "peach syrup"
         },
         {
           "index": 6,
           "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 7,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
           "correct": "6"
+        },
+        {
+          "index": 9,
+          "type": "fill_oz",
+          "correct": "11"
         }
       ]
     },
@@ -42829,42 +42978,57 @@
       "id": "7d0f36eb-c30f-4aa6-b24e-8969884c51df",
       "drink": "The Flamingo",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nWater to ___ oz",
+      "template": "Add ___ scoop ___ in drink cup\n___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nWater to ___ oz\nLemonade to ___ oz",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "1"
+          "correct": "3"
         },
         {
           "index": 1,
-          "type": "syrup",
-          "correct": "strawberry syrup"
+          "type": "topping",
+          "correct": "strawberry boba"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "1"
         },
         {
           "index": 3,
           "type": "syrup",
-          "correct": "peach syrup"
+          "correct": "strawberry syrup"
         },
         {
           "index": 4,
           "type": "quantity",
-          "correct": "1"
+          "correct": "1 1/2"
         },
         {
           "index": 5,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
+          "type": "syrup",
+          "correct": "peach syrup"
         },
         {
           "index": 6,
           "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 7,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
           "correct": "8"
+        },
+        {
+          "index": 9,
+          "type": "fill_oz",
+          "correct": "18"
         }
       ]
     },
@@ -44995,7 +45159,7 @@
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         },
         {
           "index": 6,
@@ -45005,7 +45169,7 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 8,
@@ -45646,7 +45810,7 @@
       "id": "bf3-cabo-12 oz",
       "drink": "Cabo San Lucas",
       "size": "12 oz",
-      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -45667,16 +45831,6 @@
           "index": 3,
           "type": "fill_oz",
           "correct": "8"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 5,
-          "type": "cream",
-          "correct": "Maui Milk"
         }
       ]
     },
@@ -45684,7 +45838,7 @@
       "id": "bf3-cabo-16 oz",
       "drink": "Cabo San Lucas",
       "size": "16 oz",
-      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -45705,16 +45859,6 @@
           "index": 3,
           "type": "fill_oz",
           "correct": "10"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 5,
-          "type": "cream",
-          "correct": "Maui Milk"
         }
       ]
     },
@@ -45722,7 +45866,7 @@
       "id": "bf3-cabo-24 oz",
       "drink": "Cabo San Lucas",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -45743,16 +45887,6 @@
           "index": 3,
           "type": "fill_oz",
           "correct": "12"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 5,
-          "type": "cream",
-          "correct": "Maui Milk"
         }
       ]
     },
@@ -45760,7 +45894,7 @@
       "id": "bf3-cabo-32 oz",
       "drink": "Cabo San Lucas",
       "size": "32 oz",
-      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ oz Maui Milk\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -45781,16 +45915,6 @@
           "index": 3,
           "type": "fill_oz",
           "correct": "20"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "8"
-        },
-        {
-          "index": 5,
-          "type": "cream",
-          "correct": "Maui Milk"
         }
       ]
     },
@@ -48968,49 +49092,6 @@
       ]
     },
     {
-      "id": "e329c14c-daa9-496f-be73-078e94e6171f",
-      "drink": "Hot",
-      "size": "20 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "cherry syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "almond syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 5,
-          "type": "cream",
-          "correct": "Maui Milk"
-        },
-        {
-          "index": 6,
-          "type": "fill_oz",
-          "correct": "14"
-        }
-      ]
-    },
-    {
       "id": "6c8e7b2f-1f08-4e38-a8b2-73bee890acbc",
       "drink": "Jet Fuel Hot",
       "size": "20 oz",
@@ -49977,6 +50058,34 @@
           "index": 4,
           "type": "cream",
           "correct": "Maui Milk"
+        }
+      ]
+    },
+    {
+      "id": "stn-12oz",
+      "drink": "Shaken Toffee Nut",
+      "size": "12 oz",
+      "template": "___ scoops of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "toffee nut syrup"
         }
       ]
     }
