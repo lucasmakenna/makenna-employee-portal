@@ -4252,7 +4252,7 @@
       "id": "60a03c07-15ff-40fa-b407-98b63dd64a9f",
       "drink": "Mocha Chiller",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\nAdd ___ around inside of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -4268,6 +4268,11 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "5"
+        },
+        {
+          "index": 3,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4275,7 +4280,7 @@
       "id": "79ccbbe9-2ebb-41d5-8404-668af0415d11",
       "drink": "Mocha Chiller",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\nAdd ___ around inside of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -4291,6 +4296,11 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "6"
+        },
+        {
+          "index": 3,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4298,7 +4308,7 @@
       "id": "62645228-01e7-468a-9533-9d05f85a9eb9",
       "drink": "Mocha Chiller",
       "size": "24 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\nAdd ___ around inside of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -4314,6 +4324,11 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "7"
+        },
+        {
+          "index": 3,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4321,7 +4336,7 @@
       "id": "53e4bd9b-bca4-43bc-a052-9b643fa7a9e0",
       "drink": "Mocha Chiller",
       "size": "32 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\nAdd ___ around inside of drink cup",
       "blanks": [
         {
           "index": 0,
@@ -4337,6 +4352,11 @@
           "index": 2,
           "type": "fill_oz",
           "correct": "12"
+        },
+        {
+          "index": 3,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
