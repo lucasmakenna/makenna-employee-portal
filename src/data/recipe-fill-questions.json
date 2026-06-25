@@ -20387,7 +20387,7 @@
       "id": "d9836015-d744-474d-88ce-6c9ab96adf19",
       "drink": "Cake Batter Freeze",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ ___\nFill to ___ oz with milk",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___\nFill to ___ oz with milk",
       "blanks": [
         {
           "index": 0,
@@ -20430,7 +20430,7 @@
       "id": "119ab710-a1a3-4fee-8cba-d91eb71ec91b",
       "drink": "Cake Batter Freeze",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ ___\nFill to ___ oz with milk",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___\nFill to ___ oz with milk",
       "blanks": [
         {
           "index": 0,
@@ -20473,7 +20473,7 @@
       "id": "cc511780-cd8f-4587-96af-8ed35c8b6e5a",
       "drink": "Cake Batter Freeze",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ ___\nFill to ___ oz with milk",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___\nFill to ___ oz with milk",
       "blanks": [
         {
           "index": 0,
@@ -20516,7 +20516,7 @@
       "id": "2998dd9b-4cf9-4649-89d7-c4b189e627eb",
       "drink": "Cake Batter Freeze",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ ___\nFill to ___ oz with milk",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___\nFill to ___ oz with milk",
       "blanks": [
         {
           "index": 0,
