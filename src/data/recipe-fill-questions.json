@@ -18868,78 +18868,12 @@
       "id": "ab3e6171-f76d-470d-b623-c83395e6f9b9",
       "drink": "Blended Nutty Irishman",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
           "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "hazelnut syrup"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "5"
-        }
-      ]
-    },
-    {
-      "id": "54d8773d-243f-49c1-a324-84e96690e777",
-      "drink": "Blended Nutty Irishman",
-      "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "hazelnut syrup"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "6"
-        }
-      ]
-    },
-    {
-      "id": "e2e3e992-18fe-4cd4-b0f9-467bea3858a0",
-      "drink": "Blended Nutty Irishman",
-      "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
         },
         {
           "index": 1,
@@ -18954,25 +18888,35 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "hazelnut syrup"
+          "correct": "irish cream syrup"
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "hazelnut syrup"
+        },
+        {
+          "index": 6,
           "type": "fill_oz",
-          "correct": "7"
+          "correct": "5"
         }
       ]
     },
     {
-      "id": "eb13a24f-37d3-402e-b560-f7ba493f2773",
+      "id": "54d8773d-243f-49c1-a324-84e96690e777",
       "drink": "Blended Nutty Irishman",
-      "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "size": "16 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "6"
+          "correct": "3"
         },
         {
           "index": 1,
@@ -18987,10 +18931,106 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "hazelnut syrup"
+          "correct": "irish cream syrup"
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "hazelnut syrup"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "6"
+        }
+      ]
+    },
+    {
+      "id": "e2e3e992-18fe-4cd4-b0f9-467bea3858a0",
+      "drink": "Blended Nutty Irishman",
+      "size": "24 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "irish cream syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "hazelnut syrup"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "7"
+        }
+      ]
+    },
+    {
+      "id": "eb13a24f-37d3-402e-b560-f7ba493f2773",
+      "drink": "Blended Nutty Irishman",
+      "size": "32 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "irish cream syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "hazelnut syrup"
+        },
+        {
+          "index": 6,
           "type": "fill_oz",
           "correct": "12"
         }
@@ -20883,7 +20923,7 @@
       "id": "e9558dcb-4e32-4292-aca4-ec99bc1a379d",
       "drink": "Peppermint Patty Freeze",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nFill to ___ oz with milk\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___\nFill to ___ oz with milk\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -20908,10 +20948,20 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "6"
+          "correct": "1 1/2"
         },
         {
           "index": 5,
+          "type": "syrup",
+          "correct": "creme de menthe syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
+          "index": 7,
           "type": "drizzle",
           "correct": "chocolate drizzle"
         }
@@ -20921,7 +20971,7 @@
       "id": "c18eddda-ee22-411c-a2ab-2e0af5f42270",
       "drink": "Peppermint Patty Freeze",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nFill to ___ oz with milk\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___\nFill to ___ oz with milk\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -20945,11 +20995,21 @@
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "creme de menthe syrup"
+        },
+        {
+          "index": 6,
           "type": "fill_oz",
           "correct": "7"
         },
         {
-          "index": 5,
+          "index": 7,
           "type": "drizzle",
           "correct": "chocolate drizzle"
         }
@@ -20959,7 +21019,7 @@
       "id": "5cae437f-349f-43cc-a080-509afaa6fb8f",
       "drink": "Peppermint Patty Freeze",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nFill to ___ oz with milk\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___\nFill to ___ oz with milk\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -20984,10 +21044,20 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "8"
+          "correct": "3"
         },
         {
           "index": 5,
+          "type": "syrup",
+          "correct": "creme de menthe syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "8"
+        },
+        {
+          "index": 7,
           "type": "drizzle",
           "correct": "chocolate drizzle"
         }
@@ -20997,7 +21067,7 @@
       "id": "8a0ecd70-94ea-4526-933b-1e0a325ccd6f",
       "drink": "Peppermint Patty Freeze",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nFill to ___ oz with milk\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ pumps of ___\nFill to ___ oz with milk\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -21021,11 +21091,21 @@
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "creme de menthe syrup"
+        },
+        {
+          "index": 6,
           "type": "fill_oz",
           "correct": "14"
         },
         {
-          "index": 5,
+          "index": 7,
           "type": "drizzle",
           "correct": "chocolate drizzle"
         }
