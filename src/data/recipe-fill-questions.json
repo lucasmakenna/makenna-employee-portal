@@ -8654,7 +8654,7 @@
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "5"
         },
         {
           "index": 6,
@@ -41048,7 +41048,7 @@
         {
           "index": 5,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 6,
