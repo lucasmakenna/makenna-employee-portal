@@ -2,7 +2,7 @@
   "test_name": "Barista Test",
   "test_id": "recipe-fill",
   "description": "Fill in the correct pump amounts and ingredients for each Makenna Koffee recipe.",
-  "total_questions": 1246,
+  "total_questions": 1399,
   "options": {
     "quantity": [
       "1/4",
@@ -70,7 +70,6 @@
       "watermelon syrup",
       "salted caramel syrup",
       "strawberry puree",
-      "chocolate mac syrup",
       "cookie dough bits",
       "butterscotch syrup",
       "mango puree",
@@ -4574,7 +4573,7 @@
     },
     {
       "id": "4e21146c-e95c-4b25-adb7-648eefc37e49",
-      "drink": "PB no J Chiller",
+      "drink": "PB No J Chiller",
       "size": "12 oz",
       "template": "___ scoops of ___\n___ scoops of ___\nMilk of Choice to ___ oz\n___",
       "blanks": [
@@ -4612,7 +4611,7 @@
     },
     {
       "id": "3301a224-aee8-4973-8553-e60f5190d24a",
-      "drink": "PB no J Chiller",
+      "drink": "PB No J Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\nMilk of Choice to ___ oz\n___",
       "blanks": [
@@ -4650,7 +4649,7 @@
     },
     {
       "id": "b6b2629c-6aa9-4784-8d65-cb91a387392d",
-      "drink": "PB no J Chiller",
+      "drink": "PB No J Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\nMilk of Choice to ___ oz\n___",
       "blanks": [
@@ -4688,7 +4687,7 @@
     },
     {
       "id": "f48ac8e2-582b-4f54-9477-5163c8091c67",
-      "drink": "PB no J Chiller",
+      "drink": "PB No J Chiller",
       "size": "32 oz",
       "template": "___ scoops of ___\n___ scoops of ___\nMilk of Choice to ___ oz\n___",
       "blanks": [
@@ -9021,7 +9020,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 2,
@@ -9044,7 +9043,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 2,
@@ -9067,7 +9066,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 2,
@@ -9090,7 +9089,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 2,
@@ -10501,7 +10500,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 2,
@@ -10544,7 +10543,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 2,
@@ -10587,7 +10586,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 2,
@@ -15230,7 +15229,7 @@
     },
     {
       "id": "42271167-30d9-4548-964c-80e4240f2a53",
-      "drink": "Gingerbread latte Iced",
+      "drink": "Gingerbread Latte Iced",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
       "blanks": [
@@ -15288,7 +15287,7 @@
     },
     {
       "id": "2cfbba48-b391-4610-92ef-03e9952865af",
-      "drink": "Gingerbread latte Iced",
+      "drink": "Gingerbread Latte Iced",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
       "blanks": [
@@ -15346,7 +15345,7 @@
     },
     {
       "id": "3052d422-e72a-47a6-bf42-cbe14eef3227",
-      "drink": "Gingerbread latte Iced",
+      "drink": "Gingerbread Latte Iced",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
       "blanks": [
@@ -15404,7 +15403,7 @@
     },
     {
       "id": "3e0bf0e2-243a-4952-b14d-e93fdec04523",
-      "drink": "Gingerbread latte Iced",
+      "drink": "Gingerbread Latte Iced",
       "size": "32 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
       "blanks": [
@@ -17590,7 +17589,7 @@
     },
     {
       "id": "b9864a04-be30-43ca-84b8-e5125f6bce96",
-      "drink": "Going bananas Chiller🍌",
+      "drink": "Going Bananas Chiller🍌",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz ___, milk of choice to ___ oz",
       "blanks": [
@@ -17622,7 +17621,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 6,
@@ -17653,7 +17652,7 @@
     },
     {
       "id": "3654bef0-fa2e-45a4-8689-d4a808222647",
-      "drink": "Going bananas Chiller🍌",
+      "drink": "Going Bananas Chiller🍌",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz ___, milk of choice to ___ oz",
       "blanks": [
@@ -17685,7 +17684,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 6,
@@ -17716,7 +17715,7 @@
     },
     {
       "id": "ea22e5bf-f250-4db3-9649-48aa6e1053e3",
-      "drink": "Going bananas Chiller🍌",
+      "drink": "Going Bananas Chiller🍌",
       "size": "24 oz",
       "template": "___ scoops of ___ + ___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz ___, milk of choice to ___ oz",
       "blanks": [
@@ -17748,7 +17747,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 6,
@@ -17779,7 +17778,7 @@
     },
     {
       "id": "b4ae538a-57d0-490f-8556-76c04e68ca69",
-      "drink": "Going bananas Chiller🍌",
+      "drink": "Going Bananas Chiller🍌",
       "size": "32 oz",
       "template": "___ scoops of ___ + ___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz ___, milk of choice to ___ oz",
       "blanks": [
@@ -17811,7 +17810,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 6,
@@ -17842,7 +17841,7 @@
     },
     {
       "id": "7b9c0891-468e-4633-a219-be2af59ee014",
-      "drink": "Chillin in cabo",
+      "drink": "Chillin in Cabo",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
@@ -17885,7 +17884,7 @@
     },
     {
       "id": "ff2ed533-c7a9-45f5-a456-645d7e5c996d",
-      "drink": "Chillin in cabo",
+      "drink": "Chillin in Cabo",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
@@ -17928,7 +17927,7 @@
     },
     {
       "id": "dcf2e393-3acb-4a2f-9e9a-0394ade7e33c",
-      "drink": "Chillin in cabo",
+      "drink": "Chillin in Cabo",
       "size": "24 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
@@ -17971,7 +17970,7 @@
     },
     {
       "id": "56b1bfb8-b41c-464f-b85d-16d42a2902d0",
-      "drink": "Chillin in cabo",
+      "drink": "Chillin in Cabo",
       "size": "32 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
@@ -18166,7 +18165,7 @@
     },
     {
       "id": "a57999ba-77ff-4393-9249-dc722312c801",
-      "drink": "Hawaiian dream chiller",
+      "drink": "Hawaiian Dream Chiller",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
@@ -18214,7 +18213,7 @@
     },
     {
       "id": "e0057427-3a9c-48c2-aa33-4ce8897e4c89",
-      "drink": "Hawaiian dream chiller",
+      "drink": "Hawaiian Dream Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
@@ -18262,7 +18261,7 @@
     },
     {
       "id": "ab916a2a-aa82-4323-8130-aecec38abb00",
-      "drink": "Hawaiian dream chiller",
+      "drink": "Hawaiian Dream Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
@@ -18310,7 +18309,7 @@
     },
     {
       "id": "67bc1a35-d2dd-4b73-b6da-a0edb7d344b8",
-      "drink": "Hawaiian dream chiller",
+      "drink": "Hawaiian Dream Chiller",
       "size": "32 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
@@ -19291,7 +19290,7 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 4,
@@ -19324,7 +19323,7 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 4,
@@ -19357,7 +19356,7 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 4,
@@ -19390,7 +19389,7 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 4,
@@ -22638,7 +22637,7 @@
     },
     {
       "id": "a7b2f942-7ea9-4452-968b-480afe91db4c",
-      "drink": "Vanilla Breve hot",
+      "drink": "Vanilla Breve Hot",
       "size": "12 oz",
       "template": "___ scoops of ___\nHalf and Half to ___ oz",
       "blanks": [
@@ -22661,7 +22660,7 @@
     },
     {
       "id": "a766b4fb-b336-4ece-93d7-06e73f1b05c2",
-      "drink": "Vanilla Breve hot",
+      "drink": "Vanilla Breve Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\nHalf and Half to ___ oz",
       "blanks": [
@@ -23171,7 +23170,7 @@
     },
     {
       "id": "5c883e25-636b-4518-9f92-1be2af56e700",
-      "drink": "Gingerbread latte Hot",
+      "drink": "Gingerbread Latte Hot",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
       "blanks": [
@@ -23229,7 +23228,7 @@
     },
     {
       "id": "4a33f1fa-90f6-45f7-9304-5f9c992ea054",
-      "drink": "Gingerbread latte Hot",
+      "drink": "Gingerbread Latte Hot",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
       "blanks": [
@@ -23287,7 +23286,7 @@
     },
     {
       "id": "b7ffdaf9-f19d-48f5-b37e-daaf142274b5",
-      "drink": "Gingerbread latte Hot",
+      "drink": "Gingerbread Latte Hot",
       "size": "20 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
       "blanks": [
@@ -23556,8 +23555,8 @@
       ]
     },
     {
-      "id": "dcfa63d9-0464-4123-9de1-f97be4d8c6e7",
-      "drink": "Santa’s Cookie Hot",
+      "id": "sugar-cookie-santas-12oz",
+      "drink": "Sugar Cookie (Santa's Cookie) Hot or Cold",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
@@ -23609,8 +23608,8 @@
       ]
     },
     {
-      "id": "70a55db6-507d-49a3-850e-ad15e8f80b44",
-      "drink": "Santa’s Cookie Hot",
+      "id": "sugar-cookie-santas-16oz",
+      "drink": "Sugar Cookie (Santa's Cookie) Hot or Cold",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nMaui Milk to ___ oz\nAdd ___\n___ on top",
       "blanks": [
@@ -23667,8 +23666,8 @@
       ]
     },
     {
-      "id": "7988d884-fa50-4bd6-9c19-3e968bc1e0b5",
-      "drink": "Santa’s Cookie Hot",
+      "id": "sugar-cookie-santas-20oz",
+      "drink": "Sugar Cookie (Santa's Cookie) Hot or Cold",
       "size": "20 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
@@ -25539,7 +25538,7 @@
     },
     {
       "id": "891dbeef-03f2-4946-9c10-95952a15ebd2",
-      "drink": "Wanderlust iced",
+      "drink": "Wanderlust Iced",
       "size": "16 oz",
       "template": "___ scoops of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -25562,7 +25561,7 @@
     },
     {
       "id": "92c4ef3a-1d6e-4e30-a9bf-a423bb43ec0a",
-      "drink": "Wanderlust iced",
+      "drink": "Wanderlust Iced",
       "size": "24 oz",
       "template": "___ scoops of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -25585,7 +25584,7 @@
     },
     {
       "id": "4c25a955-7b55-4646-8cf3-ca942bd672ea",
-      "drink": "Wanderlust iced",
+      "drink": "Wanderlust Iced",
       "size": "32 oz",
       "template": "___ scoops of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -25780,7 +25779,7 @@
     },
     {
       "id": "8068de2b-2083-455e-aaa0-c71e24d24673",
-      "drink": "Toffee Nut Americano iced",
+      "drink": "Toffee Nut Americano Iced",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -25813,7 +25812,7 @@
     },
     {
       "id": "516dc0e2-9200-4561-9495-e5c9e8c3a3b0",
-      "drink": "Toffee Nut Americano iced",
+      "drink": "Toffee Nut Americano Iced",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -25846,7 +25845,7 @@
     },
     {
       "id": "8ea219aa-5f7d-4471-add4-92e2f81d97d3",
-      "drink": "Toffee Nut Americano iced",
+      "drink": "Toffee Nut Americano Iced",
       "size": "24 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -25879,7 +25878,7 @@
     },
     {
       "id": "09338480-80b9-48cf-9c6f-2c94b5ed22c0",
-      "drink": "Toffee Nut Americano iced",
+      "drink": "Toffee Nut Americano Iced",
       "size": "32 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -26044,7 +26043,7 @@
     },
     {
       "id": "22c0c2b3-a48c-4fed-8c99-00fbb6f0f3a7",
-      "drink": "Mocha Americano iced",
+      "drink": "Mocha Americano Iced",
       "size": "12 oz",
       "template": "___ scoops of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -26067,7 +26066,7 @@
     },
     {
       "id": "2b19143c-d522-4345-9ae2-bcc0a042c0e5",
-      "drink": "Mocha Americano iced",
+      "drink": "Mocha Americano Iced",
       "size": "16 oz",
       "template": "___ scoops of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -26090,7 +26089,7 @@
     },
     {
       "id": "428e4bef-11c3-4e2a-ab24-6a0979d2aca3",
-      "drink": "Mocha Americano iced",
+      "drink": "Mocha Americano Iced",
       "size": "24 oz",
       "template": "___ scoops of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -26113,7 +26112,7 @@
     },
     {
       "id": "1c769471-2fea-4f0c-9ff7-2afec024003b",
-      "drink": "Mocha Americano iced",
+      "drink": "Mocha Americano Iced",
       "size": "32 oz",
       "template": "___ scoops of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -26288,7 +26287,7 @@
     },
     {
       "id": "0e673a13-c993-4d87-97a6-a0a81049c431",
-      "drink": "Honey Bee Latte iced",
+      "drink": "Honey Bee Latte Iced",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ scoops of ___\n___ oz of ___\n___ oz of ___\nWhole milk to ___ oz\nAdd ___ and ___",
       "blanks": [
@@ -26351,7 +26350,7 @@
     },
     {
       "id": "da6fa945-2262-4fc3-9647-1c2440fd5a00",
-      "drink": "Honey Bee Latte iced",
+      "drink": "Honey Bee Latte Iced",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ scoops of ___\n___ oz of ___\n___ oz of ___\nWhole milk to ___ oz\nAdd ___ and ___",
       "blanks": [
@@ -26414,7 +26413,7 @@
     },
     {
       "id": "6a53b368-93b5-4565-80f5-e952f83ea1fa",
-      "drink": "Honey Bee Latte iced",
+      "drink": "Honey Bee Latte Iced",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ scoops of ___\n___ oz of ___\n___ oz of ___\nWhole milk to ___ oz\nAdd ___ and ___",
       "blanks": [
@@ -26477,7 +26476,7 @@
     },
     {
       "id": "313e2599-32a1-4b9d-a150-e3e8d50e5ced",
-      "drink": "Honey Bee Latte iced",
+      "drink": "Honey Bee Latte Iced",
       "size": "32 oz",
       "template": "___ pumps of ___ + ___ scoops of ___\n___ oz of ___\n___ oz of ___\nWhole milk to ___ oz\nAdd ___ and ___",
       "blanks": [
@@ -26917,155 +26916,6 @@
       ]
     },
     {
-      "id": "0ab36f32-9196-4143-b153-3ac384d86142",
-      "drink": "Sugar Cookie Hot",
-      "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ on top",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3/4"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "white chocolate powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "toasted marshmallow syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "1/2"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
-          "correct": "almond roca syrup"
-        },
-        {
-          "index": 6,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 7,
-          "type": "topping",
-          "correct": "sprinkles"
-        }
-      ]
-    },
-    {
-      "id": "7f62c7f5-010c-4970-ac9b-039cfdcc9a65",
-      "drink": "Sugar Cookie Hot",
-      "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nMaui Milk to ___ oz\n___ on top",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "white chocolate powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "toasted marshmallow syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
-          "correct": "almond roca syrup"
-        },
-        {
-          "index": 6,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 7,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 8,
-          "type": "topping",
-          "correct": "sprinkles"
-        }
-      ]
-    },
-    {
-      "id": "c7b32be9-2de3-4a80-b38e-5bb2fe05e99c",
-      "drink": "Sugar Cookie Hot",
-      "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ on top",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "white chocolate powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "toasted marshmallow syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
-          "correct": "almond roca syrup"
-        },
-        {
-          "index": 6,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 7,
-          "type": "topping",
-          "correct": "sprinkles"
-        }
-      ]
-    },
-    {
       "id": "e240fdef-74ae-45f8-977d-9cfcae694c4f",
       "drink": "Sugar Cookie Blended",
       "size": "12 oz",
@@ -27259,7 +27109,7 @@
     },
     {
       "id": "c4c19c96-4e02-473e-83d1-1009b16ac195",
-      "drink": "Caramel crunch chai (iced)",
+      "drink": "Caramel Crunch Chai (Iced)",
       "size": "12 oz",
       "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
       "blanks": [
@@ -27312,7 +27162,7 @@
     },
     {
       "id": "3c108228-5fcb-43fe-ad25-443de17b47bd",
-      "drink": "Caramel crunch chai (iced)",
+      "drink": "Caramel Crunch Chai (Iced)",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
       "blanks": [
@@ -27365,7 +27215,7 @@
     },
     {
       "id": "8b71f564-098f-49c2-95b0-470f582314c5",
-      "drink": "Caramel crunch chai (iced)",
+      "drink": "Caramel Crunch Chai (Iced)",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
       "blanks": [
@@ -27418,7 +27268,7 @@
     },
     {
       "id": "2905caea-8c76-431b-bc44-bdc70489c268",
-      "drink": "Caramel crunch chai (iced)",
+      "drink": "Caramel Crunch Chai (Iced)",
       "size": "32 oz",
       "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
       "blanks": [
@@ -27805,7 +27655,7 @@
     },
     {
       "id": "4dd4320a-ba8c-4a51-98fd-f394591cb60e",
-      "drink": "Makenna blast",
+      "drink": "Makenna Blast",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -27843,7 +27693,7 @@
     },
     {
       "id": "e4bb351f-7931-4ff2-853f-f5934e09fdbe",
-      "drink": "Makenna blast",
+      "drink": "Makenna Blast",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -27881,7 +27731,7 @@
     },
     {
       "id": "bb2ccc9e-ce22-4a1a-ad1d-018aed504652",
-      "drink": "Makenna blast",
+      "drink": "Makenna Blast",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -27919,7 +27769,7 @@
     },
     {
       "id": "3b155dcd-5548-4151-b7c6-fe1e998fc4d9",
-      "drink": "Oat milk cream cold brew",
+      "drink": "Oat Milk Cream Cold Brew",
       "size": "12 oz",
       "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___\nTop with ___ oz of ___",
       "blanks": [
@@ -27962,7 +27812,7 @@
     },
     {
       "id": "5bdf6ec1-6b4d-46dc-9861-d961483aedb6",
-      "drink": "Oat milk cream cold brew",
+      "drink": "Oat Milk Cream Cold Brew",
       "size": "16 oz",
       "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___\nTop with ___ oz of ___",
       "blanks": [
@@ -28005,7 +27855,7 @@
     },
     {
       "id": "1d534a7b-eac6-4709-a402-d542772b1dad",
-      "drink": "Oat milk cream cold brew",
+      "drink": "Oat Milk Cream Cold Brew",
       "size": "24 oz",
       "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___\nTop with ___ oz of ___",
       "blanks": [
@@ -28048,7 +27898,7 @@
     },
     {
       "id": "fbe2e14e-7f6a-4e47-9392-47797cce1375",
-      "drink": "Oat milk cream cold brew",
+      "drink": "Oat Milk Cream Cold Brew",
       "size": "32 oz",
       "template": "___ pumps of ___ in ___ oz cold brew\n___ oz of ___\nTop with ___ oz of ___",
       "blanks": [
@@ -31945,7 +31795,7 @@
     },
     {
       "id": "bda374bf-c968-413d-b24b-64bd2ed4e0e5",
-      "drink": "Mocha Americano hot",
+      "drink": "Mocha Americano Hot",
       "size": "12 oz",
       "template": "___ scoops of ___",
       "blanks": [
@@ -31963,7 +31813,7 @@
     },
     {
       "id": "11d3a812-b2b1-45e5-9c42-7f39378459dc",
-      "drink": "Mocha Americano hot",
+      "drink": "Mocha Americano Hot",
       "size": "16 oz",
       "template": "___ scoops of ___",
       "blanks": [
@@ -32113,7 +31963,7 @@
     },
     {
       "id": "bdd5ad8f-284d-4916-96f4-1f5ebc0167be",
-      "drink": "Pistachio Americano iced",
+      "drink": "Pistachio Americano Iced",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ scoops of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -32146,7 +31996,7 @@
     },
     {
       "id": "159f8910-48df-457a-9dea-3941a51e0760",
-      "drink": "Pistachio Americano iced",
+      "drink": "Pistachio Americano Iced",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ scoops of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -32179,7 +32029,7 @@
     },
     {
       "id": "d8f1cd14-15dd-4440-998f-67de91871a46",
-      "drink": "Pistachio Americano iced",
+      "drink": "Pistachio Americano Iced",
       "size": "24 oz",
       "template": "___ scoops of ___ + ___ scoops of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -32212,7 +32062,7 @@
     },
     {
       "id": "7b289be9-da29-43da-b930-ba0364dfae13",
-      "drink": "Pistachio Americano iced",
+      "drink": "Pistachio Americano Iced",
       "size": "32 oz",
       "template": "___ scoops of ___ + ___ scoops of ___\nFill to ___ oz with cold water",
       "blanks": [
@@ -32669,7 +32519,7 @@
     },
     {
       "id": "e2d29938-ed8f-4543-84af-99014d48d8d2",
-      "drink": "Shock wave",
+      "drink": "Shock Wave",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -32697,7 +32547,7 @@
     },
     {
       "id": "9557e7a9-f62d-423b-911c-1254620f50f9",
-      "drink": "Shock wave",
+      "drink": "Shock Wave",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -32725,7 +32575,7 @@
     },
     {
       "id": "90d92960-c15c-4630-acec-dfaedd32c6dc",
-      "drink": "Shock wave",
+      "drink": "Shock Wave",
       "size": "32 oz",
       "template": "___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -33072,7 +32922,7 @@
     },
     {
       "id": "4a75852b-e12d-4e2b-95c8-b3ac8e38ec83",
-      "drink": "Shock wave slushy",
+      "drink": "Shock Wave Slushy",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -33100,7 +32950,7 @@
     },
     {
       "id": "8a264022-6b7e-47c6-8fe8-c2dbaea5a328",
-      "drink": "Shock wave slushy",
+      "drink": "Shock Wave Slushy",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -33128,7 +32978,7 @@
     },
     {
       "id": "7d627bf3-a436-42bd-8389-b9c882e71604",
-      "drink": "Shock wave slushy",
+      "drink": "Shock Wave Slushy",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -33156,7 +33006,7 @@
     },
     {
       "id": "d22653ad-6898-4ceb-b251-43f45f0f68bc",
-      "drink": "Shock wave slushy",
+      "drink": "Shock Wave Slushy",
       "size": "32 oz",
       "template": "___ pumps of ___ + ___ pumps of ___",
       "blanks": [
@@ -34387,7 +34237,7 @@
     },
     {
       "id": "28be87aa-ad75-4b96-bb4f-b722af0b4c92",
-      "drink": "Dubai latte",
+      "drink": "Dubai Latte",
       "size": "12 oz",
       "template": "___ scoops of ___\nHalf and Half to ___ oz\n___ oz of ___\n___ scoops of ___\n___ on top",
       "blanks": [
@@ -34435,7 +34285,7 @@
     },
     {
       "id": "6332cd99-49ba-444e-8453-b81aa66db735",
-      "drink": "Dubai latte",
+      "drink": "Dubai Latte",
       "size": "16 oz",
       "template": "___ scoops of ___\nHalf and Half to ___ oz\n___ oz of ___\n___ scoops of ___\n___ on top",
       "blanks": [
@@ -34483,7 +34333,7 @@
     },
     {
       "id": "e5d87ba1-6ffd-4baf-ba87-b3f52d7fcbcc",
-      "drink": "Dubai latte",
+      "drink": "Dubai Latte",
       "size": "24 oz",
       "template": "___ scoops of ___\nHalf and Half to ___ oz\n___ oz of ___\n___ scoops of ___\n___ on top",
       "blanks": [
@@ -35746,7 +35596,7 @@
     },
     {
       "id": "005b38cc-6d17-4d4a-8ab2-675d7b2ea8e0",
-      "drink": "Caramel apple pie",
+      "drink": "Caramel Apple Pie",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim of cup\nAdd ___\n___ on top\nCrushed ___ on top",
       "blanks": [
@@ -35809,7 +35659,7 @@
     },
     {
       "id": "f39475ee-a211-4687-84ff-a34eb0d6b34e",
-      "drink": "Caramel apple pie",
+      "drink": "Caramel Apple Pie",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim of cup\nAdd ___\n___ on top\nCrushed ___ on top",
       "blanks": [
@@ -35872,7 +35722,7 @@
     },
     {
       "id": "12776418-c384-4524-ac1b-0d1fc11023b1",
-      "drink": "Caramel apple pie",
+      "drink": "Caramel Apple Pie",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim of cup\nAdd ___\n___ on top\nCrushed ___ on top",
       "blanks": [
@@ -35935,7 +35785,7 @@
     },
     {
       "id": "ff3ad387-a2d5-4dfb-9c0e-f2d0d40d0f68",
-      "drink": "Shaken apple crisp",
+      "drink": "Shaken Apple Crisp",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ scoops of ___",
       "blanks": [
@@ -35963,7 +35813,7 @@
     },
     {
       "id": "6a16f637-c694-4a70-a46f-4318b3da99bd",
-      "drink": "Shaken apple crisp",
+      "drink": "Shaken Apple Crisp",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ scoops of ___",
       "blanks": [
@@ -35991,7 +35841,7 @@
     },
     {
       "id": "6434cce4-29d1-442c-ac4f-6215ec19331c",
-      "drink": "Shaken apple crisp",
+      "drink": "Shaken Apple Crisp",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ scoops of ___",
       "blanks": [
@@ -36178,7 +36028,7 @@
     },
     {
       "id": "4fb3deae-82da-4760-8d7b-e9f18526b5cf",
-      "drink": "Green mamba",
+      "drink": "Green Mamba",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___",
       "blanks": [
@@ -36231,7 +36081,7 @@
     },
     {
       "id": "284071e0-16b6-4a63-9c33-4b62725d6f66",
-      "drink": "Banana pudding matcha",
+      "drink": "Banana Pudding Matcha",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
       "blanks": [
@@ -36279,7 +36129,7 @@
     },
     {
       "id": "e7e5ade5-0741-4f67-b559-f2926c98dfee",
-      "drink": "Banana pudding matcha",
+      "drink": "Banana Pudding Matcha",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
       "blanks": [
@@ -36327,7 +36177,7 @@
     },
     {
       "id": "2d1f8b77-1837-4491-9085-952f0ac80b01",
-      "drink": "Banana pudding matcha",
+      "drink": "Banana Pudding Matcha",
       "size": "24 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
       "blanks": [
@@ -36375,7 +36225,7 @@
     },
     {
       "id": "3379a272-1f5d-4247-a27f-74dd8ca90cf5",
-      "drink": "Banana pudding matcha",
+      "drink": "Banana Pudding Matcha",
       "size": "32 oz",
       "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
       "blanks": [
@@ -36423,7 +36273,7 @@
     },
     {
       "id": "e830afa7-510f-46a1-b1d8-dcffc328a3d0",
-      "drink": "Strawberry matcha",
+      "drink": "Strawberry Matcha",
       "size": "12 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
@@ -36466,7 +36316,7 @@
     },
     {
       "id": "7b8015c5-9676-4d51-b8aa-ffdd409e2ab0",
-      "drink": "Strawberry matcha",
+      "drink": "Strawberry Matcha",
       "size": "16 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
@@ -36509,7 +36359,7 @@
     },
     {
       "id": "2d932aff-e0ce-45bb-af2c-d596fad834ce",
-      "drink": "Strawberry matcha",
+      "drink": "Strawberry Matcha",
       "size": "24 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
@@ -36552,7 +36402,7 @@
     },
     {
       "id": "31f8e6b0-9e55-4018-ab64-8ecd153700a6",
-      "drink": "Strawberry matcha",
+      "drink": "Strawberry Matcha",
       "size": "32 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
@@ -36595,7 +36445,7 @@
     },
     {
       "id": "64c546e9-872c-4bd2-9f5a-52ac8775d06c",
-      "drink": "Shaken peppermint",
+      "drink": "Shaken Peppermint",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nTop with ___",
       "blanks": [
@@ -36638,7 +36488,7 @@
     },
     {
       "id": "dffd046a-2b0b-4aa2-bcb3-7ce680782379",
-      "drink": "Shaken peppermint",
+      "drink": "Shaken Peppermint",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nTop with ___",
       "blanks": [
@@ -36681,7 +36531,7 @@
     },
     {
       "id": "35c81838-0452-4b78-98aa-03314be9bd3b",
-      "drink": "Shaken peppermint",
+      "drink": "Shaken Peppermint",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nTop with ___",
       "blanks": [
@@ -36724,7 +36574,7 @@
     },
     {
       "id": "85f32ab4-41cd-4b1b-a3f9-fc1707dac9b9",
-      "drink": "Chocolate milk",
+      "drink": "Chocolate Milk",
       "size": "12 oz",
       "template": "___ scoops of ___\nWhole milk to ___ oz",
       "blanks": [
@@ -36747,7 +36597,7 @@
     },
     {
       "id": "b5f37383-6f7c-4f84-974e-c8fe2658fff3",
-      "drink": "Chocolate milk",
+      "drink": "Chocolate Milk",
       "size": "16 oz",
       "template": "___ scoops of ___\nWhole milk to ___ oz",
       "blanks": [
@@ -36770,7 +36620,7 @@
     },
     {
       "id": "6718513a-96e8-4268-817d-63e1111e9283",
-      "drink": "Chocolate milk",
+      "drink": "Chocolate Milk",
       "size": "24 oz",
       "template": "___ scoops of ___\nWhole milk to ___ oz",
       "blanks": [
@@ -39046,7 +38896,7 @@
     },
     {
       "id": "bd7cab57-e709-4004-9f71-400c1b0d6a95",
-      "drink": "Sweet n salty",
+      "drink": "Sweet n Salty",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz + ___ pumps of ___\nAdd ___",
       "blanks": [
@@ -39094,7 +38944,7 @@
     },
     {
       "id": "40dd7636-374d-4385-869a-000accec5249",
-      "drink": "Sweet n salty",
+      "drink": "Sweet n Salty",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz + ___ pumps of ___\nAdd ___",
       "blanks": [
@@ -39142,7 +38992,7 @@
     },
     {
       "id": "757b6b95-5206-43af-8fd2-73b781df42e3",
-      "drink": "Sweet n salty",
+      "drink": "Sweet n Salty",
       "size": "24 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz + ___ pumps of ___\nAdd ___",
       "blanks": [
@@ -39190,7 +39040,7 @@
     },
     {
       "id": "d7e68cf4-87b4-4ad0-a655-dc6f92ec788f",
-      "drink": "Sweet n salty",
+      "drink": "Sweet n Salty",
       "size": "32 oz",
       "template": "___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz + ___ pumps of ___\nAdd ___",
       "blanks": [
@@ -39238,7 +39088,7 @@
     },
     {
       "id": "ebbd59e7-fe2d-440b-8861-60efcd1ef3db",
-      "drink": "Sweet n salty HOT",
+      "drink": "Sweet n Salty HOT",
       "size": "12 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz\nAdd ___",
       "blanks": [
@@ -39286,7 +39136,7 @@
     },
     {
       "id": "1d579707-8f38-42a6-a5b6-382475ccfef8",
-      "drink": "Sweet n salty HOT",
+      "drink": "Sweet n Salty HOT",
       "size": "16 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz\nAdd ___",
       "blanks": [
@@ -39334,7 +39184,7 @@
     },
     {
       "id": "d9ea1dd7-b304-4369-895f-190ced013ccb",
-      "drink": "Sweet n salty HOT",
+      "drink": "Sweet n Salty HOT",
       "size": "20 oz",
       "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nHalf and Half to ___ oz\nAdd ___",
       "blanks": [
@@ -44311,8 +44161,8 @@
     },
     {
       "id": "maui-latte-full-iced-12oz",
-      "drink": "Maui Latte Full",
-      "size": "12 oz (Iced)",
+      "drink": "Maui Latte Full Iced",
+      "size": "12 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -44324,8 +44174,8 @@
     },
     {
       "id": "maui-latte-full-iced-16oz",
-      "drink": "Maui Latte Full",
-      "size": "16 oz (Iced)",
+      "drink": "Maui Latte Full Iced",
+      "size": "16 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -44337,8 +44187,8 @@
     },
     {
       "id": "maui-latte-full-iced-24oz",
-      "drink": "Maui Latte Full",
-      "size": "24 oz (Iced)",
+      "drink": "Maui Latte Full Iced",
+      "size": "24 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -44350,8 +44200,8 @@
     },
     {
       "id": "maui-latte-full-iced-32oz",
-      "drink": "Maui Latte Full",
-      "size": "32 oz (Iced)",
+      "drink": "Maui Latte Full Iced",
+      "size": "32 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -44363,8 +44213,8 @@
     },
     {
       "id": "maui-latte-full-hot-12oz",
-      "drink": "Maui Latte Full",
-      "size": "12 oz (Hot)",
+      "drink": "Maui Latte Full Hot",
+      "size": "12 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -44376,8 +44226,8 @@
     },
     {
       "id": "maui-latte-full-hot-16oz",
-      "drink": "Maui Latte Full",
-      "size": "16 oz (Hot)",
+      "drink": "Maui Latte Full Hot",
+      "size": "16 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -44389,8 +44239,8 @@
     },
     {
       "id": "maui-latte-full-hot-20oz",
-      "drink": "Maui Latte Full",
-      "size": "20 oz (Hot)",
+      "drink": "Maui Latte Full Hot",
+      "size": "20 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -44605,7 +44455,7 @@
     },
     {
       "id": "sf-salty-kiss-12 oz",
-      "drink": "Salty kiss",
+      "drink": "Salty Kiss",
       "size": "12 oz",
       "template": "___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pump of ___",
       "blanks": [
@@ -44648,7 +44498,7 @@
     },
     {
       "id": "sf-salty-kiss-16 oz",
-      "drink": "Salty kiss",
+      "drink": "Salty Kiss",
       "size": "16 oz",
       "template": "___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pump of ___",
       "blanks": [
@@ -44691,7 +44541,7 @@
     },
     {
       "id": "sf-salty-kiss-24 oz",
-      "drink": "Salty kiss",
+      "drink": "Salty Kiss",
       "size": "24 oz",
       "template": "___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pump of ___",
       "blanks": [
@@ -44734,7 +44584,7 @@
     },
     {
       "id": "sf-salty-kiss-32 oz",
-      "drink": "Salty kiss",
+      "drink": "Salty Kiss",
       "size": "32 oz",
       "template": "___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pump of ___",
       "blanks": [
@@ -45077,9 +44927,9 @@
       ]
     },
     {
-      "id": "sf-sugar-latte-12 oz",
-      "drink": "Sugar Latte",
-      "size": "12 oz (Iced)",
+      "id": "sugar-latte-iced-12oz",
+      "drink": "Sugar Latte Iced",
+      "size": "12 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
@@ -45100,9 +44950,9 @@
       ]
     },
     {
-      "id": "sf-sugar-latte-16 oz",
-      "drink": "Sugar Latte",
-      "size": "16 oz (Iced)",
+      "id": "sugar-latte-iced-16oz",
+      "drink": "Sugar Latte Iced",
+      "size": "16 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
@@ -45123,9 +44973,9 @@
       ]
     },
     {
-      "id": "sf-sugar-latte-24 oz",
-      "drink": "Sugar Latte",
-      "size": "24 oz (Iced)",
+      "id": "sugar-latte-iced-24oz",
+      "drink": "Sugar Latte Iced",
+      "size": "24 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
@@ -45146,9 +44996,9 @@
       ]
     },
     {
-      "id": "sf-sugar-latte-32 oz",
-      "drink": "Sugar Latte",
-      "size": "32 oz (Iced)",
+      "id": "sugar-latte-iced-32oz",
+      "drink": "Sugar Latte Iced",
+      "size": "32 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
@@ -45440,7 +45290,7 @@
     },
     {
       "id": "sf-mint-mojito-hot-12 oz",
-      "drink": "Mint Mojito hot",
+      "drink": "Mint Mojito Hot",
       "size": "12 oz",
       "template": "___ scoops of ___\n___ oz of ___\nWhole Milk to ___ oz",
       "blanks": [
@@ -45473,7 +45323,7 @@
     },
     {
       "id": "sf-mint-mojito-hot-16 oz",
-      "drink": "Mint Mojito hot",
+      "drink": "Mint Mojito Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of ___\nWhole Milk to ___ oz",
       "blanks": [
@@ -45506,7 +45356,7 @@
     },
     {
       "id": "sf-mint-mojito-hot-20 oz",
-      "drink": "Mint Mojito hot",
+      "drink": "Mint Mojito Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ oz of ___\nWhole Milk to ___ oz",
       "blanks": [
@@ -46720,7 +46570,7 @@
         {
           "index": 7,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 8,
@@ -46773,7 +46623,7 @@
         {
           "index": 7,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 8,
@@ -46826,7 +46676,7 @@
         {
           "index": 7,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 8,
@@ -46879,7 +46729,7 @@
         {
           "index": 7,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 8,
@@ -47326,7 +47176,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 2,
@@ -47369,7 +47219,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 2,
@@ -47412,7 +47262,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 2,
@@ -47455,7 +47305,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate mac syrup"
+          "correct": "chocolate macadamia nut syrup"
         },
         {
           "index": 2,
@@ -48084,9 +47934,9 @@
       ]
     },
     {
-      "id": "m34-iced-12 oz",
-      "drink": "Maui Latte 3/4",
-      "size": "12 oz (Iced)",
+      "id": "maui-latte-34-iced-12oz",
+      "drink": "Maui Latte (3/4) Iced",
+      "size": "12 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -48097,9 +47947,9 @@
       ]
     },
     {
-      "id": "m34-iced-16 oz",
-      "drink": "Maui Latte 3/4",
-      "size": "16 oz (Iced)",
+      "id": "maui-latte-34-iced-16oz",
+      "drink": "Maui Latte (3/4) Iced",
+      "size": "16 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -48110,9 +47960,9 @@
       ]
     },
     {
-      "id": "m34-iced-24 oz",
-      "drink": "Maui Latte 3/4",
-      "size": "24 oz (Iced)",
+      "id": "maui-latte-34-iced-24oz",
+      "drink": "Maui Latte (3/4) Iced",
+      "size": "24 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -48123,9 +47973,9 @@
       ]
     },
     {
-      "id": "m34-iced-32 oz",
-      "drink": "Maui Latte 3/4",
-      "size": "32 oz (Iced)",
+      "id": "maui-latte-34-iced-32oz",
+      "drink": "Maui Latte (3/4) Iced",
+      "size": "32 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -48136,9 +47986,9 @@
       ]
     },
     {
-      "id": "m34-hot-12 oz",
-      "drink": "Maui Latte 3/4",
-      "size": "12 oz (Hot)",
+      "id": "maui-latte-34-hot-12oz",
+      "drink": "Maui Latte (3/4) Hot",
+      "size": "12 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -48149,9 +47999,9 @@
       ]
     },
     {
-      "id": "m34-hot-16 oz",
-      "drink": "Maui Latte 3/4",
-      "size": "16 oz (Hot)",
+      "id": "maui-latte-34-hot-16oz",
+      "drink": "Maui Latte (3/4) Hot",
+      "size": "16 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -48162,9 +48012,9 @@
       ]
     },
     {
-      "id": "m34-hot-20 oz",
-      "drink": "Maui Latte 3/4",
-      "size": "20 oz (Hot)",
+      "id": "maui-latte-34-hot-20oz",
+      "drink": "Maui Latte (3/4) Hot",
+      "size": "20 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -48670,7 +48520,7 @@
     },
     {
       "id": "m17-butterbeer-12 oz",
-      "drink": "Butter beer",
+      "drink": "Butter Beer",
       "size": "12 oz",
       "template": "___ pumps of ___\nAdd ___ can of root beer\n___ oz of ___",
       "blanks": [
@@ -48703,7 +48553,7 @@
     },
     {
       "id": "m17-butterbeer-16 oz",
-      "drink": "Butter beer",
+      "drink": "Butter Beer",
       "size": "16 oz",
       "template": "___ pumps of ___\nAdd ___ can of root beer\n___ oz of ___",
       "blanks": [
@@ -48736,7 +48586,7 @@
     },
     {
       "id": "m17-butterbeer-24 oz",
-      "drink": "Butter beer",
+      "drink": "Butter Beer",
       "size": "24 oz",
       "template": "___ pumps of ___\nAdd ___ can of root beer\n___ oz of ___",
       "blanks": [
@@ -49431,9 +49281,9 @@
       ]
     },
     {
-      "id": "m14-iced-12 oz",
-      "drink": "Maui Latte 1/4",
-      "size": "12 oz (Iced)",
+      "id": "maui-latte-14-iced-12oz",
+      "drink": "Maui Latte (1/4) Iced",
+      "size": "12 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -49444,9 +49294,9 @@
       ]
     },
     {
-      "id": "m14-iced-16 oz",
-      "drink": "Maui Latte 1/4",
-      "size": "16 oz (Iced)",
+      "id": "maui-latte-14-iced-16oz",
+      "drink": "Maui Latte (1/4) Iced",
+      "size": "16 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -49457,9 +49307,9 @@
       ]
     },
     {
-      "id": "m14-iced-24 oz",
-      "drink": "Maui Latte 1/4",
-      "size": "24 oz (Iced)",
+      "id": "maui-latte-14-iced-24oz",
+      "drink": "Maui Latte (1/4) Iced",
+      "size": "24 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -49470,9 +49320,9 @@
       ]
     },
     {
-      "id": "m14-iced-32 oz",
-      "drink": "Maui Latte 1/4",
-      "size": "32 oz (Iced)",
+      "id": "maui-latte-14-iced-32oz",
+      "drink": "Maui Latte (1/4) Iced",
+      "size": "32 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -49483,9 +49333,9 @@
       ]
     },
     {
-      "id": "m14-hot-12 oz",
-      "drink": "Maui Latte 1/4",
-      "size": "12 oz (Hot)",
+      "id": "maui-latte-14-hot-12oz",
+      "drink": "Maui Latte (1/4) Hot",
+      "size": "12 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -49496,9 +49346,9 @@
       ]
     },
     {
-      "id": "m14-hot-16 oz",
-      "drink": "Maui Latte 1/4",
-      "size": "16 oz (Hot)",
+      "id": "maui-latte-14-hot-16oz",
+      "drink": "Maui Latte (1/4) Hot",
+      "size": "16 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -49509,9 +49359,9 @@
       ]
     },
     {
-      "id": "m14-hot-20 oz",
-      "drink": "Maui Latte 1/4",
-      "size": "20 oz (Hot)",
+      "id": "maui-latte-14-hot-20oz",
+      "drink": "Maui Latte (1/4) Hot",
+      "size": "20 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -49522,9 +49372,9 @@
       ]
     },
     {
-      "id": "m12-iced-12 oz",
-      "drink": "Maui Latte 1/2",
-      "size": "12 oz (Iced)",
+      "id": "maui-latte-12-iced-12oz",
+      "drink": "Maui Latte (1/2) Iced",
+      "size": "12 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -49535,9 +49385,9 @@
       ]
     },
     {
-      "id": "m12-iced-16 oz",
-      "drink": "Maui Latte 1/2",
-      "size": "16 oz (Iced)",
+      "id": "maui-latte-12-iced-16oz",
+      "drink": "Maui Latte (1/2) Iced",
+      "size": "16 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -49548,9 +49398,9 @@
       ]
     },
     {
-      "id": "m12-iced-24 oz",
-      "drink": "Maui Latte 1/2",
-      "size": "24 oz (Iced)",
+      "id": "maui-latte-12-iced-24oz",
+      "drink": "Maui Latte (1/2) Iced",
+      "size": "24 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -49561,9 +49411,9 @@
       ]
     },
     {
-      "id": "m12-iced-32 oz",
-      "drink": "Maui Latte 1/2",
-      "size": "32 oz (Iced)",
+      "id": "maui-latte-12-iced-32oz",
+      "drink": "Maui Latte (1/2) Iced",
+      "size": "32 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
         {
@@ -49574,9 +49424,9 @@
       ]
     },
     {
-      "id": "m12-hot-12 oz",
-      "drink": "Maui Latte 1/2",
-      "size": "12 oz (Hot)",
+      "id": "maui-latte-12-hot-12oz",
+      "drink": "Maui Latte (1/2) Hot",
+      "size": "12 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -49587,9 +49437,9 @@
       ]
     },
     {
-      "id": "m12-hot-16 oz",
-      "drink": "Maui Latte 1/2",
-      "size": "16 oz (Hot)",
+      "id": "maui-latte-12-hot-16oz",
+      "drink": "Maui Latte (1/2) Hot",
+      "size": "16 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -49600,9 +49450,9 @@
       ]
     },
     {
-      "id": "m12-hot-20 oz",
-      "drink": "Maui Latte 1/2",
-      "size": "20 oz (Hot)",
+      "id": "maui-latte-12-hot-20oz",
+      "drink": "Maui Latte (1/2) Hot",
+      "size": "20 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
         {
@@ -49613,9 +49463,9 @@
       ]
     },
     {
-      "id": "sf-sugar-latte-hot-12 oz",
-      "drink": "Sugar Latte",
-      "size": "12 oz (Hot)",
+      "id": "sugar-latte-hot-12oz",
+      "drink": "Sugar Latte Hot",
+      "size": "12 oz",
       "template": "___ scoops of ___\nFill steamer to ___ oz milk of choice",
       "blanks": [
         {
@@ -49636,9 +49486,9 @@
       ]
     },
     {
-      "id": "sf-sugar-latte-hot-16 oz",
-      "drink": "Sugar Latte",
-      "size": "16 oz (Hot)",
+      "id": "sugar-latte-hot-16oz",
+      "drink": "Sugar Latte Hot",
+      "size": "16 oz",
       "template": "___ scoops of ___\nFill steamer to ___ oz milk of choice",
       "blanks": [
         {
@@ -49659,9 +49509,9 @@
       ]
     },
     {
-      "id": "sf-sugar-latte-hot-20 oz",
-      "drink": "Sugar Latte",
-      "size": "20 oz (Hot)",
+      "id": "sugar-latte-hot-20oz",
+      "drink": "Sugar Latte Hot",
+      "size": "20 oz",
       "template": "___ scoops of ___\nFill steamer to ___ oz milk of choice",
       "blanks": [
         {
@@ -50424,7 +50274,7 @@
     },
     {
       "id": "a1550930-4e03-4eee-ad2f-48be0f4ea9bb",
-      "drink": "Vanilla Breve hot",
+      "drink": "Vanilla Breve Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\nHalf and Half to ___ oz",
       "blanks": [
@@ -50678,7 +50528,7 @@
     },
     {
       "id": "49299528-561a-4947-b048-64cc30dd7f0e",
-      "drink": "Mocha Americano hot",
+      "drink": "Mocha Americano Hot",
       "size": "20 oz",
       "template": "___ scoops of ___",
       "blanks": [

@@ -43,7 +43,7 @@ function saveMastered(ids: Set<string>) {
 
 // The Brain Blend's "Most Popular Drinks: Day 1 Study List"
 const TOP_21_DRINKS = [
-  'Maui Latte 3/4',
+  'Maui Latte (3/4) Iced', 'Maui Latte (3/4) Hot',
   'Sandy Blonde',
   'The Legend',
   'Cabo San Lucas',
