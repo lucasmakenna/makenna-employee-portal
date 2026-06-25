@@ -50766,7 +50766,7 @@
       "id": "bbl-12 oz",
       "drink": "Banana Babe Latte",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___ with ___ pumps of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -50844,7 +50844,7 @@
       "id": "bbl-16 oz",
       "drink": "Banana Babe Latte",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___ with ___ pumps of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -50922,7 +50922,7 @@
       "id": "bbl-24 oz",
       "drink": "Banana Babe Latte",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___ with ___ pumps of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -51000,7 +51000,7 @@
       "id": "bbl-32 oz",
       "drink": "Banana Babe Latte",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___ with ___ pumps of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
