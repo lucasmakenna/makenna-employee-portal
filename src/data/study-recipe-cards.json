@@ -1548,8 +1548,8 @@
   },
   {
     "id": "c51d02c0-5d89-4df6-a5d2-5e19216ab1fb",
-    "drink": "Chai Spiced/Vanilla Hot",
-    "recipe": "● Small (12 oz)\nIn a hot drink cup:\n1 1/2 (one and a half) scoops of spiced/vanilla chai\nIn a measuring cup:\nMilk of Choice to 10 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n● Medium (16 oz)\nIn a hot drink cup:\n2 scoops of spiced/vanilla Chai\nIn a measuring cup:\nMilk of Choice to 12 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n● Large (20 oz)\nIn a hot drink cup:\n2 1/2 (two and a half) scoops of spiced/vanilla chai\nIn a measuring cup:\nMilk of Choice to 14 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup",
+    "drink": "Vanilla Chai Hot",
+    "recipe": "● Small (12 oz)\nIn a hot drink cup:\n1 1/2 (one and a half) scoops of vanilla chai\nIn a measuring cup:\nMilk of Choice to 10 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n● Medium (16 oz)\nIn a hot drink cup:\n2 scoops of vanilla chai\nIn a measuring cup:\nMilk of Choice to 12 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n● Large (20 oz)\nIn a hot drink cup:\n2 1/2 (two and a half) scoops of vanilla chai\nIn a measuring cup:\nMilk of Choice to 14 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup",
     "category": "Chillers & Blended",
     "mela_category": "Coffee Free - Not Blended"
   },
@@ -2847,5 +2847,12 @@
     "recipe": "● Small (12 oz)\nIn a hot drink cup:\n1 1/2 (one and a half) pumps of cherry syrup\n1/2 (one half) pumps of almond syrup\n1 espresso shot\nWHISK THOROUGHLY\nIn a measuring cup:\n2 oz of Maui Milk\nMilk of Choice to 10 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n● Medium (16 oz)\nIn a hot drink cup:\n2 pumps of cherry syrup\n1 pump of almond syrup\n2 espresso shots\nWHISK THOROUGHLY\nIn a measuring cup:\n2 1/2 (two and a half) oz of Maui Milk\nMilk of Choice to 12 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n● Large (20 oz)\nIn a hot drink cup:\n2 1/2 (two and a half) pumps of cherry syrup\n1 1/2 (one and a half) pumps of almond syrup\n2 espresso shots\nWHISK THOROUGHLY\nIn a measuring cup:\n2 1/2 (two and a half) oz of Maui Milk\nMilk of Choice to 14 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup",
     "category": "Supremes — Hot",
     "mela_category": "Supreme Hot"
+  },
+  {
+    "id": "c51d02c0-5d89-4df6-a5d2-5e19216ab1fb-spiced",
+    "drink": "Spiced Chai Hot",
+    "recipe": "● Small (12 oz)\nIn a hot drink cup:\n1 1/2 (one and a half) scoops of spiced chai\nIn a measuring cup:\nMilk of Choice to 10 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n● Medium (16 oz)\nIn a hot drink cup:\n2 scoops of spiced chai\nIn a measuring cup:\nMilk of Choice to 12 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n● Large (20 oz)\nIn a hot drink cup:\n2 1/2 (two and a half) scoops of spiced chai\nIn a measuring cup:\nMilk of Choice to 14 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup",
+    "category": "Chillers & Blended",
+    "mela_category": "Coffee Free - Not Blended"
   }
 ]

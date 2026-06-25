@@ -101,7 +101,6 @@
       "white chocolate powder",
       "brown sugar",
       "cinnamon powder",
-      "spiced/vanilla chai powder",
       "peanut butter",
       "cookie butter",
       "Chocolate Chips",
@@ -44038,8 +44037,8 @@
       ]
     },
     {
-      "id": "sf-chai-spiced-vanilla-hot-12 oz",
-      "drink": "Chai Spiced/Vanilla Hot",
+      "id": "sf-chai-spiced-vanilla-hot-12 oz-vanilla",
+      "drink": "Vanilla Chai Hot",
       "size": "12 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -44051,7 +44050,7 @@
         {
           "index": 1,
           "type": "powder",
-          "correct": "spiced/vanilla chai powder"
+          "correct": "vanilla chai powder"
         },
         {
           "index": 2,
@@ -44061,8 +44060,31 @@
       ]
     },
     {
-      "id": "sf-chai-spiced-vanilla-hot-16 oz",
-      "drink": "Chai Spiced/Vanilla Hot",
+      "id": "sf-chai-spiced-vanilla-hot-12 oz-spiced",
+      "drink": "Spiced Chai Hot",
+      "size": "12 oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "sf-chai-spiced-vanilla-hot-16 oz-vanilla",
+      "drink": "Vanilla Chai Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -44074,7 +44096,7 @@
         {
           "index": 1,
           "type": "powder",
-          "correct": "spiced/vanilla chai powder"
+          "correct": "vanilla chai powder"
         },
         {
           "index": 2,
@@ -44084,8 +44106,31 @@
       ]
     },
     {
-      "id": "sf-chai-spiced-vanilla-hot-20 oz",
-      "drink": "Chai Spiced/Vanilla Hot",
+      "id": "sf-chai-spiced-vanilla-hot-16 oz-spiced",
+      "drink": "Spiced Chai Hot",
+      "size": "16 oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "sf-chai-spiced-vanilla-hot-20 oz-vanilla",
+      "drink": "Vanilla Chai Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz",
       "blanks": [
@@ -44097,7 +44142,30 @@
         {
           "index": 1,
           "type": "powder",
-          "correct": "spiced/vanilla chai powder"
+          "correct": "vanilla chai powder"
+        },
+        {
+          "index": 2,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "sf-chai-spiced-vanilla-hot-20 oz-spiced",
+      "drink": "Spiced Chai Hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
         },
         {
           "index": 2,
