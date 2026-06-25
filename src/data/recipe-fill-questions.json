@@ -148,7 +148,8 @@
       "candy cane pieces",
       "peppermint sprinkles",
       "lavender buds",
-      "pop rocks"
+      "pop rocks",
+      "pumpkin sugar"
     ],
     "fill_oz": [
       "2",
@@ -9020,7 +9021,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 2,
@@ -9043,7 +9044,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 2,
@@ -9066,7 +9067,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 2,
@@ -9089,7 +9090,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 2,
@@ -10500,7 +10501,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 2,
@@ -10543,7 +10544,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 2,
@@ -10586,7 +10587,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 2,
@@ -14503,7 +14504,7 @@
         {
           "index": 7,
           "type": "topping",
-          "correct": "pumpkin sugar crystals"
+          "correct": "pumpkin sugar"
         }
       ]
     },
@@ -14551,7 +14552,7 @@
         {
           "index": 7,
           "type": "topping",
-          "correct": "pumpkin sugar crystals"
+          "correct": "pumpkin sugar"
         }
       ]
     },
@@ -14599,7 +14600,7 @@
         {
           "index": 7,
           "type": "topping",
-          "correct": "pumpkin sugar crystals"
+          "correct": "pumpkin sugar"
         }
       ]
     },
@@ -14647,7 +14648,7 @@
         {
           "index": 7,
           "type": "topping",
-          "correct": "pumpkin sugar crystals"
+          "correct": "pumpkin sugar"
         }
       ]
     },
@@ -14695,7 +14696,7 @@
         {
           "index": 7,
           "type": "topping",
-          "correct": "pumpkin sugar crystals"
+          "correct": "pumpkin sugar"
         }
       ]
     },
@@ -14743,7 +14744,7 @@
         {
           "index": 7,
           "type": "topping",
-          "correct": "pumpkin sugar crystals"
+          "correct": "pumpkin sugar"
         }
       ]
     },
@@ -14791,7 +14792,7 @@
         {
           "index": 7,
           "type": "topping",
-          "correct": "pumpkin sugar crystals"
+          "correct": "pumpkin sugar"
         }
       ]
     },
@@ -14839,7 +14840,7 @@
         {
           "index": 7,
           "type": "topping",
-          "correct": "pumpkin sugar crystals"
+          "correct": "pumpkin sugar"
         }
       ]
     },
@@ -17621,7 +17622,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 6,
@@ -17684,7 +17685,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 6,
@@ -17747,7 +17748,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 6,
@@ -17810,7 +17811,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 6,
@@ -35367,7 +35368,7 @@
         {
           "index": 3,
           "type": "topping",
-          "correct": "red pop rocks"
+          "correct": "pop rocks"
         }
       ]
     },
@@ -35395,7 +35396,7 @@
         {
           "index": 3,
           "type": "topping",
-          "correct": "red pop rocks"
+          "correct": "pop rocks"
         }
       ]
     },
@@ -35423,7 +35424,7 @@
         {
           "index": 3,
           "type": "topping",
-          "correct": "red pop rocks"
+          "correct": "pop rocks"
         }
       ]
     },
@@ -35451,7 +35452,7 @@
         {
           "index": 3,
           "type": "topping",
-          "correct": "red pop rocks"
+          "correct": "pop rocks"
         }
       ]
     },
@@ -47293,7 +47294,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 2,
@@ -47336,7 +47337,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 2,
@@ -47379,7 +47380,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 2,
@@ -47422,7 +47423,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "chocolate macadamia nut syrup"
+          "correct": "chocolate mac syrup"
         },
         {
           "index": 2,
