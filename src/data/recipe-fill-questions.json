@@ -27149,7 +27149,7 @@
       "id": "c4c19c96-4e02-473e-83d1-1009b16ac195",
       "drink": "Caramel Crunch Chai (Iced)",
       "size": "12 oz",
-      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
+      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ to the top and ___\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -27183,18 +27183,18 @@
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
-        },
-        {
-          "index": 7,
           "type": "drizzle",
           "correct": "caramel drizzle"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "topping",
           "correct": "sugar crystals"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
         }
       ]
     },
@@ -27202,7 +27202,7 @@
       "id": "3c108228-5fcb-43fe-ad25-443de17b47bd",
       "drink": "Caramel Crunch Chai (Iced)",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
+      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ to the top and ___\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -27236,18 +27236,18 @@
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
-        },
-        {
-          "index": 7,
           "type": "drizzle",
           "correct": "caramel drizzle"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "topping",
           "correct": "sugar crystals"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
         }
       ]
     },
@@ -27255,7 +27255,7 @@
       "id": "8b71f564-098f-49c2-95b0-470f582314c5",
       "drink": "Caramel Crunch Chai (Iced)",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
+      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ to the top and ___\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -27289,18 +27289,18 @@
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
-        },
-        {
-          "index": 7,
           "type": "drizzle",
           "correct": "caramel drizzle"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "topping",
           "correct": "sugar crystals"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
         }
       ]
     },
@@ -27308,7 +27308,7 @@
       "id": "2905caea-8c76-431b-bc44-bdc70489c268",
       "drink": "Caramel Crunch Chai (Iced)",
       "size": "32 oz",
-      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
+      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ to the top and ___\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -27342,18 +27342,18 @@
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
-        },
-        {
-          "index": 7,
           "type": "drizzle",
           "correct": "caramel drizzle"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "topping",
           "correct": "sugar crystals"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
         }
       ]
     },
@@ -32755,7 +32755,7 @@
       "id": "3b909042-87bf-429f-9ca6-121c652217d1",
       "drink": "Cookie Dough Chiller",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz\n___ scoop of ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ scoop of ___\nMaui Milk to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -32780,17 +32780,17 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "5"
-        },
-        {
-          "index": 5,
-          "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "syrup",
           "correct": "cookie dough bits"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "5"
         },
         {
           "index": 7,
@@ -32803,7 +32803,7 @@
       "id": "559b3963-003f-41ff-8a08-95fe016b6e78",
       "drink": "Cookie Dough Chiller",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz\n___ scoop of ___\nAdd ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ scoop of ___\nMaui Milk to ___ oz\nAdd ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -32828,27 +32828,27 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "6"
-        },
-        {
-          "index": 5,
-          "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "syrup",
           "correct": "cookie dough bits"
         },
         {
+          "index": 6,
+          "type": "quantity",
+          "correct": "6"
+        },
+        {
           "index": 7,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         },
         {
           "index": 8,
-          "type": "drizzle",
-          "correct": "chocolate drizzle"
+          "type": "cream",
+          "correct": "Kona Cloud"
         }
       ]
     },
@@ -32856,7 +32856,7 @@
       "id": "76873991-18c8-48f5-92c5-7aedf1c02ce1",
       "drink": "Cookie Dough Chiller",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz\n___ scoop of ___\nAdd ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ scoop of ___\nMaui Milk to ___ oz\nAdd ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -32880,28 +32880,28 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "7"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "syrup",
           "correct": "cookie dough bits"
         },
         {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "7"
+        },
+        {
           "index": 7,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         },
         {
           "index": 8,
-          "type": "drizzle",
-          "correct": "chocolate drizzle"
+          "type": "cream",
+          "correct": "Kona Cloud"
         }
       ]
     },
@@ -32909,7 +32909,7 @@
       "id": "d2ca282e-119e-425e-a4f9-56d69b5277eb",
       "drink": "Cookie Dough Chiller",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz\n___ scoop of ___\nAdd ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ scoop of ___\nMaui Milk to ___ oz\nAdd ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -32933,28 +32933,28 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "syrup",
           "correct": "cookie dough bits"
         },
         {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
           "index": 7,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         },
         {
           "index": 8,
-          "type": "drizzle",
-          "correct": "chocolate drizzle"
+          "type": "cream",
+          "correct": "Kona Cloud"
         }
       ]
     },
@@ -33480,7 +33480,7 @@
       "id": "72c9347d-0486-4aee-8547-42c67b3555ca",
       "drink": "Chocolate Covered Strawberry Iced",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\n___ pumps of ___ into ___ oz ___\nAdd ___ & ___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\n___ oz of ___ with ___ pumps of ___\nAdd ___ & ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -33520,22 +33520,22 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 8,
-          "type": "syrup",
-          "correct": "strawberry syrup"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 9,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 10,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "strawberry syrup"
         },
         {
           "index": 11,
@@ -33553,7 +33553,7 @@
       "id": "1b9991d5-acb5-471e-9dbe-c6d500ac0f9f",
       "drink": "Chocolate Covered Strawberry Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\n___ pumps of ___ into ___ oz ___\nAdd ___ & ___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\n___ oz of ___ with ___ pumps of ___\nAdd ___ & ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -33593,22 +33593,22 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 8,
-          "type": "syrup",
-          "correct": "strawberry syrup"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 9,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 10,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "strawberry syrup"
         },
         {
           "index": 11,
@@ -33626,7 +33626,7 @@
       "id": "aa0b757c-0a21-44d5-8fb0-5b2bad2772c1",
       "drink": "Chocolate Covered Strawberry Iced",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\n___ pumps of ___ into ___ oz ___\nAdd ___ & ___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\n___ oz of ___ with ___ pumps of ___\nAdd ___ & ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -33666,22 +33666,22 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 8,
-          "type": "syrup",
-          "correct": "strawberry syrup"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 9,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 10,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "strawberry syrup"
         },
         {
           "index": 11,
@@ -33699,7 +33699,7 @@
       "id": "17978df1-6f22-4b49-8606-4a796b861b05",
       "drink": "Chocolate Covered Strawberry Iced",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\n___ pumps of ___ into ___ oz ___\nAdd ___ & ___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\n___ oz of ___ with ___ pumps of ___\nAdd ___ & ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -33739,22 +33739,22 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         },
         {
           "index": 8,
-          "type": "syrup",
-          "correct": "strawberry syrup"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 9,
           "type": "quantity",
-          "correct": "4"
+          "correct": "2"
         },
         {
           "index": 10,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "strawberry syrup"
         },
         {
           "index": 11,
@@ -40558,7 +40558,7 @@
       "id": "e9110672-47d8-4c92-8cc2-8eef2cf653d5",
       "drink": "Chocolate Covered Strawberry Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___ into ___ oz ___\nAdd ___ & ___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ oz of ___ with ___ pumps of ___\nAdd ___ & ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -40598,22 +40598,22 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 8,
-          "type": "syrup",
-          "correct": "strawberry syrup"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 9,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 10,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "strawberry syrup"
         },
         {
           "index": 11,
@@ -40631,7 +40631,7 @@
       "id": "ee32cc67-d06d-41d0-81f6-4ecf64064850",
       "drink": "Chocolate Covered Strawberry Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___ into ___ oz ___\nAdd ___ & ___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ oz of ___ with ___ pumps of ___\nAdd ___ & ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -40671,22 +40671,22 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 8,
-          "type": "syrup",
-          "correct": "strawberry syrup"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 9,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 10,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "strawberry syrup"
         },
         {
           "index": 11,
@@ -40704,7 +40704,7 @@
       "id": "46632aa6-f185-4a4f-b51c-b83daa009600",
       "drink": "Chocolate Covered Strawberry Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___ into ___ oz ___\nAdd ___ & ___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ oz of ___ with ___ pumps of ___\nAdd ___ & ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -40744,22 +40744,22 @@
         {
           "index": 7,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 8,
-          "type": "syrup",
-          "correct": "strawberry syrup"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 9,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 10,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "strawberry syrup"
         },
         {
           "index": 11,
@@ -41641,7 +41641,7 @@
       "id": "880a40a0-f556-4cb6-a88b-4b9d67eaaa5a",
       "drink": "Banana Cream Iced",
       "size": "16 oz",
-      "template": "___ pump of ___\n___ pumps of ___\n___ Makenna Energy Can\n___ oz of Maui\nAdd ___\nLine the cup with ___",
+      "template": "___ pump of ___\n___ pumps of ___\n___ Makenna Energy Can\n___ oz of Maui\nLine the cup with ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -41675,13 +41675,13 @@
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "drizzle",
+          "correct": "white chocolate drizzle"
         },
         {
           "index": 7,
-          "type": "drizzle",
-          "correct": "white chocolate drizzle"
+          "type": "cream",
+          "correct": "Kona Cloud"
         }
       ]
     },
@@ -41689,7 +41689,7 @@
       "id": "3eacb814-e2b3-43b8-9c36-f6ac741176a5",
       "drink": "Banana Cream Iced",
       "size": "24 oz",
-      "template": "___ pump of ___\n___ pumps of ___\n___ Makenna Energy Can\n___ oz of Maui\nAdd ___\nLine the cup with ___",
+      "template": "___ pump of ___\n___ pumps of ___\n___ Makenna Energy Can\n___ oz of Maui\nLine the cup with ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -41723,13 +41723,13 @@
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "drizzle",
+          "correct": "white chocolate drizzle"
         },
         {
           "index": 7,
-          "type": "drizzle",
-          "correct": "white chocolate drizzle"
+          "type": "cream",
+          "correct": "Kona Cloud"
         }
       ]
     },
@@ -41737,7 +41737,7 @@
       "id": "8b5cac52-60dd-4266-8ab7-b221a8923934",
       "drink": "Banana Cream Iced",
       "size": "32 oz",
-      "template": "___ pump of ___\n___ pumps of ___\n___ Makenna Energy Can\n___ oz of Maui\nAdd ___\nLine the cup with ___",
+      "template": "___ pump of ___\n___ pumps of ___\n___ Makenna Energy Can\n___ oz of Maui\nLine the cup with ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -41771,13 +41771,13 @@
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "drizzle",
+          "correct": "white chocolate drizzle"
         },
         {
           "index": 7,
-          "type": "drizzle",
-          "correct": "white chocolate drizzle"
+          "type": "cream",
+          "correct": "Kona Cloud"
         }
       ]
     },
