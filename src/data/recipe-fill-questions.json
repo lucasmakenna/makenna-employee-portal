@@ -36037,7 +36037,7 @@
       "id": "284071e0-16b6-4a63-9c33-4b62725d6f66",
       "drink": "Banana Pudding Matcha",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ on Kona cloud",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -36057,15 +36057,25 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 6,
           "type": "syrup",
           "correct": "banana syrup"
         },
         {
-          "index": 5,
+          "index": 7,
           "type": "topping",
           "correct": "cookie crumb"
         }
@@ -36075,7 +36085,7 @@
       "id": "e7e5ade5-0741-4f67-b559-f2926c98dfee",
       "drink": "Banana Pudding Matcha",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ on Kona cloud",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -36095,15 +36105,25 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 6,
           "type": "syrup",
           "correct": "banana syrup"
         },
         {
-          "index": 5,
+          "index": 7,
           "type": "topping",
           "correct": "cookie crumb"
         }
@@ -36113,7 +36133,7 @@
       "id": "2d1f8b77-1837-4491-9085-952f0ac80b01",
       "drink": "Banana Pudding Matcha",
       "size": "24 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ on Kona cloud",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -36133,15 +36153,25 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 6,
           "type": "syrup",
           "correct": "banana syrup"
         },
         {
-          "index": 5,
+          "index": 7,
           "type": "topping",
           "correct": "cookie crumb"
         }
@@ -36151,7 +36181,7 @@
       "id": "3379a272-1f5d-4247-a27f-74dd8ca90cf5",
       "drink": "Banana Pudding Matcha",
       "size": "32 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ on Kona cloud",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -36171,15 +36201,25 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         },
         {
           "index": 4,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 5,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 6,
           "type": "syrup",
           "correct": "banana syrup"
         },
         {
-          "index": 5,
+          "index": 7,
           "type": "topping",
           "correct": "cookie crumb"
         }
