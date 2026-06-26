@@ -37,7 +37,6 @@
       "coconut syrup",
       "cookie butter syrup",
       "cookie dough syrup",
-      "creme de banana syrup",
       "creme de menthe syrup",
       "dragon fruit kiwi syrup",
       "dragon fruit syrup",
@@ -17631,7 +17630,7 @@
         {
           "index": 7,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 8,
@@ -17694,7 +17693,7 @@
         {
           "index": 7,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 8,
@@ -17757,7 +17756,7 @@
         {
           "index": 7,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 8,
@@ -17820,7 +17819,7 @@
         {
           "index": 7,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 8,
@@ -20052,7 +20051,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
@@ -20095,7 +20094,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
@@ -20138,7 +20137,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
@@ -20181,7 +20180,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
@@ -20224,7 +20223,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
@@ -20272,7 +20271,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
@@ -20320,7 +20319,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
@@ -20368,7 +20367,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
@@ -23556,7 +23555,7 @@
     },
     {
       "id": "sugar-cookie-santas-12oz",
-      "drink": "Sugar Cookie (Santa's Cookie) Hot or Cold",
+      "drink": "Santa's Cookie (Sugar Cookie)",
       "size": "12 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
@@ -23609,7 +23608,7 @@
     },
     {
       "id": "sugar-cookie-santas-16oz",
-      "drink": "Sugar Cookie (Santa's Cookie) Hot or Cold",
+      "drink": "Santa's Cookie (Sugar Cookie)",
       "size": "16 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nMaui Milk to ___ oz\nAdd ___\n___ on top",
       "blanks": [
@@ -23667,7 +23666,7 @@
     },
     {
       "id": "sugar-cookie-santas-20oz",
-      "drink": "Sugar Cookie (Santa's Cookie) Hot or Cold",
+      "drink": "Santa's Cookie (Sugar Cookie)",
       "size": "20 oz",
       "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
@@ -50796,7 +50795,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
@@ -50874,7 +50873,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
@@ -50952,7 +50951,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
@@ -51030,7 +51029,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "creme de banana syrup"
+          "correct": "banana syrup"
         },
         {
           "index": 6,
