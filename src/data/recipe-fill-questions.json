@@ -33071,90 +33071,6 @@
       ]
     },
     {
-      "id": "ac5c228c-fd8f-4e34-a289-486337effd95",
-      "drink": "Shock Wave",
-      "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "blue raspberry syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "lime syrup"
-        }
-      ]
-    },
-    {
-      "id": "5245cdad-d951-4e58-afa2-1dcf58c1e7a4",
-      "drink": "Shock Wave",
-      "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "blue raspberry syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "lime syrup"
-        }
-      ]
-    },
-    {
-      "id": "7c84e6ca-4e5f-4bcf-81bc-a8a344e22d2b",
-      "drink": "Shock Wave",
-      "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "blue raspberry syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "syrup",
-          "correct": "lime syrup"
-        }
-      ]
-    },
-    {
       "id": "948a51b5-e9a7-4b88-8e53-eecb644f8402",
       "drink": "Gingerbread Chai",
       "size": "12 oz",
@@ -36121,7 +36037,7 @@
       "id": "284071e0-16b6-4a63-9c33-4b62725d6f66",
       "drink": "Banana Pudding Matcha",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ on Kona cloud",
       "blanks": [
         {
           "index": 0,
@@ -36150,16 +36066,6 @@
         },
         {
           "index": 5,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
-        },
-        {
-          "index": 7,
           "type": "topping",
           "correct": "cookie crumb"
         }
@@ -36169,7 +36075,7 @@
       "id": "e7e5ade5-0741-4f67-b559-f2926c98dfee",
       "drink": "Banana Pudding Matcha",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ on Kona cloud",
       "blanks": [
         {
           "index": 0,
@@ -36198,16 +36104,6 @@
         },
         {
           "index": 5,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
-        },
-        {
-          "index": 7,
           "type": "topping",
           "correct": "cookie crumb"
         }
@@ -36217,7 +36113,7 @@
       "id": "2d1f8b77-1837-4491-9085-952f0ac80b01",
       "drink": "Banana Pudding Matcha",
       "size": "24 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ on Kona cloud",
       "blanks": [
         {
           "index": 0,
@@ -36246,16 +36142,6 @@
         },
         {
           "index": 5,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
-        },
-        {
-          "index": 7,
           "type": "topping",
           "correct": "cookie crumb"
         }
@@ -36265,7 +36151,7 @@
       "id": "3379a272-1f5d-4247-a27f-74dd8ca90cf5",
       "drink": "Banana Pudding Matcha",
       "size": "32 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ pumps of ___\n___ on Kona cloud",
       "blanks": [
         {
           "index": 0,
@@ -36294,16 +36180,6 @@
         },
         {
           "index": 5,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
-        },
-        {
-          "index": 7,
           "type": "topping",
           "correct": "cookie crumb"
         }
@@ -45346,22 +45222,22 @@
       "id": "sf-root-beer-float-32oz",
       "drink": "Root Beer Float",
       "size": "32 oz",
-      "template": "Add ___ can of Root beer\n___ oz of ___",
+      "template": "___ oz of ___\nAdd ___ can of Root beer",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 2,
+          "index": 1,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
