@@ -177,7 +177,7 @@
       "id": "30c84c95-66d5-4590-8692-2bac6d915575",
       "drink": "Aqua Berry",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -198,6 +198,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "pomegranate syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -205,7 +210,7 @@
       "id": "d783a02f-cead-45e7-adea-e121a01fc4a9",
       "drink": "Aqua Berry",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -226,6 +231,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "pomegranate syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -233,7 +243,7 @@
       "id": "fa5cac7c-8ed2-4a39-aca7-abbf0de014ed",
       "drink": "Aqua Berry",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -254,6 +264,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "pomegranate syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -261,7 +276,7 @@
       "id": "7438370a-63df-418b-802a-a4aa26b9f32a",
       "drink": "Beach Babe",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -292,6 +307,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -299,7 +319,7 @@
       "id": "15f27221-39a6-4768-bdca-8bbc3a225803",
       "drink": "Beach Babe",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -330,6 +350,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -337,7 +362,7 @@
       "id": "e7c18edf-0170-420f-b211-dabc0602eb77",
       "drink": "Beach Babe",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -368,6 +393,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -375,7 +405,7 @@
       "id": "f85a20e7-27d7-4fcf-98a2-b80644179f94",
       "drink": "Beast",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -396,6 +426,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "orange syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -403,7 +438,7 @@
       "id": "9ec0935e-be3a-40b7-90b7-56de26564de1",
       "drink": "Beast",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -424,6 +459,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "blackberry syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -431,7 +471,7 @@
       "id": "03ea8730-340d-4173-ae0c-adf6ef42cb28",
       "drink": "Beast",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -452,6 +492,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "orange syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -459,7 +504,7 @@
       "id": "166cebe2-ca30-4814-bfa6-025619fc9aa7",
       "drink": "Breezy",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -480,6 +525,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "vanilla syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -487,7 +537,7 @@
       "id": "4d964e18-4790-4945-95cf-6d812f3d6f2e",
       "drink": "Breezy",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -508,6 +558,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "vanilla syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -515,7 +570,7 @@
       "id": "80e1a3b9-a235-492e-b129-63445646828b",
       "drink": "Breezy",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -536,6 +591,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "vanilla syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -543,7 +603,7 @@
       "id": "c571c1b8-2ce1-4c4d-b06d-7b5d52d60742",
       "drink": "Falling Coconut",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -564,6 +624,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "raspberry syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -571,7 +636,7 @@
       "id": "79977f93-4384-4d87-8538-390a3a2fca91",
       "drink": "Falling Coconut",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -592,6 +657,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "raspberry syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -599,7 +669,7 @@
       "id": "716f10bc-24e1-4762-8e5c-a2b1e3b7f06a",
       "drink": "Falling Coconut",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -620,6 +690,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "raspberry syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -627,7 +702,7 @@
       "id": "5e37e58e-2d5f-412b-9a47-8597337fb67b",
       "drink": "Great White",
       "size": "16 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -638,6 +713,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "vanilla syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -645,7 +725,7 @@
       "id": "729d4ef7-4115-4ec2-b8d0-663420eea79f",
       "drink": "Great White",
       "size": "24 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -656,6 +736,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "vanilla syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -663,7 +748,7 @@
       "id": "bd3f1ecf-3eef-4c33-a637-93cf238e363d",
       "drink": "Great White",
       "size": "32 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -674,6 +759,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "vanilla syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -681,7 +771,7 @@
       "id": "4d4c8244-62ae-41d2-badd-3efabe705f56",
       "drink": "Hawaiian Girl",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -702,6 +792,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "coconut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -709,7 +804,7 @@
       "id": "f035ad4f-7e75-4921-a1a1-de71731b74ad",
       "drink": "Hawaiian Girl",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -730,6 +825,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "coconut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -737,7 +837,7 @@
       "id": "0aeb8a67-9609-4d1b-9491-dcc9c974e152",
       "drink": "Hawaiian Girl",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -758,6 +858,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "coconut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -765,7 +870,7 @@
       "id": "9099af63-0109-410e-ba01-8dcea67dfd6c",
       "drink": "Lightning Strike",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -806,6 +911,11 @@
           "index": 7,
           "type": "syrup",
           "correct": "banana syrup"
+        },
+        {
+          "index": 8,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -813,7 +923,7 @@
       "id": "e5fea232-8954-4ab5-ad1b-6696b41af56d",
       "drink": "Lightning Strike",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -854,6 +964,11 @@
           "index": 7,
           "type": "syrup",
           "correct": "banana syrup"
+        },
+        {
+          "index": 8,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -861,7 +976,7 @@
       "id": "b623048b-18c8-49df-8c4e-853f2b826f1f",
       "drink": "Lightning Strike",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -902,6 +1017,11 @@
           "index": 7,
           "type": "syrup",
           "correct": "banana syrup"
+        },
+        {
+          "index": 8,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -909,7 +1029,7 @@
       "id": "1344c6e9-3bd8-4e0d-ac18-f98c63e42f7b",
       "drink": "Local Juice",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -940,6 +1060,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "coconut syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -947,7 +1072,7 @@
       "id": "331a0b9d-2a99-477a-bae9-f5fb0f3e29bc",
       "drink": "Local Juice",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -978,6 +1103,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "coconut syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -985,7 +1115,7 @@
       "id": "5e33fcfc-792c-4938-b556-19652b506a5f",
       "drink": "Local Juice",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1016,6 +1146,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "coconut syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -1023,7 +1158,7 @@
       "id": "0a084d57-e159-4177-8625-c3f0bf59ac4e",
       "drink": "Mango Makenna Energy",
       "size": "16 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -1037,6 +1172,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -1046,7 +1186,7 @@
       "id": "216619a4-2a66-4016-8760-2cc712f04409",
       "drink": "Mango Makenna Energy",
       "size": "24 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -1060,6 +1200,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -1069,7 +1214,7 @@
       "id": "f5df74af-2d33-4f64-8af9-a4326b9af328",
       "drink": "Mango Makenna Energy",
       "size": "32 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -1083,6 +1228,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -1092,7 +1242,7 @@
       "id": "10c41c9f-bcf9-4da5-8fe6-f864a39e55b2",
       "drink": "Midnight Moon",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1123,6 +1273,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -1130,7 +1285,7 @@
       "id": "03475a48-a35d-49c5-a522-712a883bb4a5",
       "drink": "Midnight Moon",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1161,6 +1316,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -1168,7 +1328,7 @@
       "id": "e4e9534c-3017-4c0e-a380-71ff400d0a83",
       "drink": "Midnight Moon",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1199,6 +1359,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -1206,7 +1371,7 @@
       "id": "1ffa3eaf-e2c6-49f5-9a8d-120c59bb1a20",
       "drink": "Orange Creamsicle",
       "size": "16 oz",
-      "template": "___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -1221,10 +1386,15 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "1"
         },
         {
           "index": 3,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Half and Half"
         }
@@ -1234,7 +1404,7 @@
       "id": "8ebc7a48-ba3e-46fb-aab8-90f52917d44b",
       "drink": "Orange Creamsicle",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -1249,10 +1419,15 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "3"
+          "correct": "1 1/2"
         },
         {
           "index": 3,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Half and Half"
         }
@@ -1262,7 +1437,7 @@
       "id": "c599e98d-1ab5-4c78-8c70-d18cfe416e8b",
       "drink": "Orange Creamsicle",
       "size": "32 oz",
-      "template": "___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -1277,10 +1452,15 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "5"
+          "correct": "2"
         },
         {
           "index": 3,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Half and Half"
         }
@@ -1290,7 +1470,7 @@
       "id": "22655ea1-80b4-4942-80e2-70b9bf2e43ba",
       "drink": "Pomegranate Makenna Energy",
       "size": "16 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1301,6 +1481,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "pomegranate syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -1308,7 +1493,7 @@
       "id": "90f75e78-9332-40f2-b8dd-aed731a94ff9",
       "drink": "Pomegranate Makenna Energy",
       "size": "24 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1319,6 +1504,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "pomegranate syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -1326,7 +1516,7 @@
       "id": "576b61df-d543-4a53-a3a6-6f0367d665d5",
       "drink": "Pomegranate Makenna Energy",
       "size": "32 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1337,6 +1527,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "pomegranate syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -1344,7 +1539,7 @@
       "id": "6779e3e1-5487-432d-acb0-93a9d7a00aed",
       "drink": "Purple Haze",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1375,6 +1570,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "lime syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -1382,7 +1582,7 @@
       "id": "20fd67db-1530-4f81-8235-125b1f63fe4d",
       "drink": "Purple Haze",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1413,6 +1613,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "lime syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -1420,7 +1625,7 @@
       "id": "93564e52-d065-45b6-b4b8-d350193d6c52",
       "drink": "Purple Haze",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1451,6 +1656,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "lime syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -1458,7 +1668,7 @@
       "id": "edea16f9-92b8-42f8-b00a-bb0c72c858e8",
       "drink": "Raging Bull",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1479,6 +1689,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "vanilla syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -1486,7 +1701,7 @@
       "id": "50a190ab-bc38-4d17-811c-6dd458854888",
       "drink": "Raging Bull",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1507,6 +1722,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "vanilla syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -1514,7 +1734,7 @@
       "id": "4bde4a84-1367-4d58-8a9d-e42e2e265b4a",
       "drink": "Raging Bull",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1535,6 +1755,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "vanilla syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -1542,7 +1767,7 @@
       "id": "f0bea968-e978-4501-9ce0-89b721b0eca0",
       "drink": "Red Hammer",
       "size": "16 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1553,6 +1778,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "raspberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -1560,7 +1790,7 @@
       "id": "816aabd4-aa44-4853-bda5-0cbbe1098453",
       "drink": "Red Hammer",
       "size": "24 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1571,6 +1801,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "raspberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -1578,7 +1813,7 @@
       "id": "eb8c2cd6-a5f5-4494-8b72-bc9b1c87058b",
       "drink": "Red Hammer",
       "size": "32 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1589,6 +1824,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "raspberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -1596,7 +1836,7 @@
       "id": "2bcd7e15-3b9f-42cc-9957-98eb03695b1e",
       "drink": "Red Starburst",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1617,6 +1857,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "almond syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -1624,7 +1869,7 @@
       "id": "05f80bdb-5bba-4650-8d80-596fad7f9932",
       "drink": "Red Starburst",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1645,6 +1890,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "almond syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -1652,7 +1902,7 @@
       "id": "51efe897-aff9-4c44-a70e-1c927aff2c38",
       "drink": "Red Starburst",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1673,6 +1923,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "almond syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -1680,7 +1935,7 @@
       "id": "e8179f5f-4f71-4d94-b353-bac5871ee31e",
       "drink": "Skittles",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -1724,6 +1979,11 @@
         },
         {
           "index": 8,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 9,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -1733,7 +1993,7 @@
       "id": "ad77a780-12e7-4ec6-9a39-d0e1815ba9c9",
       "drink": "Skittles",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -1777,6 +2037,11 @@
         },
         {
           "index": 8,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 9,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -1786,7 +2051,7 @@
       "id": "77eed06c-5fc3-447d-8b1e-48a7f9ea6097",
       "drink": "Skittles",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -1830,6 +2095,11 @@
         },
         {
           "index": 8,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 9,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -1839,7 +2109,7 @@
       "id": "0606e10e-daa4-4f12-a4ad-e979c2f12e00",
       "drink": "Sour Gummy Makenna Energy",
       "size": "16 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1850,6 +2120,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "sour gummy syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -1857,7 +2132,7 @@
       "id": "5ebdd283-40b1-4fea-861d-d789382212d5",
       "drink": "Sour Gummy Makenna Energy",
       "size": "24 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1868,6 +2143,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "sour gummy syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -1875,7 +2155,7 @@
       "id": "b29a097f-65d4-4552-a3e4-465335432c7f",
       "drink": "Sour Gummy Makenna Energy",
       "size": "32 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1886,6 +2166,11 @@
           "index": 1,
           "type": "syrup",
           "correct": "sour gummy syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -1893,7 +2178,7 @@
       "id": "f138763d-422e-4099-9aaa-47352f4f5880",
       "drink": "Starburst",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1934,6 +2219,11 @@
           "index": 7,
           "type": "syrup",
           "correct": "kiwi syrup"
+        },
+        {
+          "index": 8,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -1941,7 +2231,7 @@
       "id": "6fc3a098-c985-4ec6-947a-9f9de95a9294",
       "drink": "Starburst",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -1982,6 +2272,11 @@
           "index": 7,
           "type": "syrup",
           "correct": "kiwi syrup"
+        },
+        {
+          "index": 8,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -1989,7 +2284,7 @@
       "id": "c1d1fbdb-35b3-4692-be17-e00ca725a511",
       "drink": "Starburst",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2030,6 +2325,11 @@
           "index": 7,
           "type": "syrup",
           "correct": "kiwi syrup"
+        },
+        {
+          "index": 8,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -2037,7 +2337,7 @@
       "id": "2e91b975-8451-476e-9d52-badfa3c2235a",
       "drink": "Strawberry Pomegranate",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2058,6 +2358,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "pomegranate syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -2065,7 +2370,7 @@
       "id": "499b9d40-d912-440e-b4b8-ca480216e7c7",
       "drink": "Strawberry Pomegranate",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2086,6 +2391,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "pomegranate syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -2093,7 +2403,7 @@
       "id": "06af51e4-f481-4cd5-8e7d-32f6dca0fb6d",
       "drink": "Strawberry Pomegranate",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2114,6 +2424,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "pomegranate syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -2121,7 +2436,7 @@
       "id": "b5e59b82-da9a-4685-a1c8-312e0483f35f",
       "drink": "Strawberry Makenna Energy",
       "size": "16 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -2135,6 +2450,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -2144,7 +2464,7 @@
       "id": "e192aafd-f180-41a9-9430-cca70647f10b",
       "drink": "Strawberry Makenna Energy",
       "size": "24 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -2158,6 +2478,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -2167,7 +2492,7 @@
       "id": "38f5b236-9563-4bba-b7e9-98ccbe808986",
       "drink": "Strawberry Makenna Energy",
       "size": "32 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -2181,6 +2506,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -2190,7 +2520,7 @@
       "id": "c9c1fbca-75d0-4c29-a2d9-36510245ffaa",
       "drink": "Stray Cat",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2221,6 +2551,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -2228,7 +2563,7 @@
       "id": "8464aecc-441f-4019-803b-b4a749c7512f",
       "drink": "Stray Cat",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2259,6 +2594,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -2266,7 +2606,7 @@
       "id": "aae7ae7d-3694-4d50-9f87-5214046b8360",
       "drink": "Stray Cat",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2297,6 +2637,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -2304,7 +2649,7 @@
       "id": "bdc83f69-5b6f-47b6-9958-01dc37ce84ec",
       "drink": "Surfing Cherry",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2335,6 +2680,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -2342,7 +2692,7 @@
       "id": "0fe44f25-4932-4dbc-944f-1937a0cbafe8",
       "drink": "Surfing Cherry",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2373,6 +2723,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -2380,7 +2735,7 @@
       "id": "65681722-4203-45a9-bdd2-ecfe620358c2",
       "drink": "Surfing Cherry",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2411,6 +2766,11 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -2418,7 +2778,7 @@
       "id": "256b0df3-60ea-4467-93b8-87ad2a12d30e",
       "drink": "Surfing Monkey",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -2443,10 +2803,15 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "1"
         },
         {
           "index": 5,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 6,
           "type": "cream",
           "correct": "Half and Half"
         }
@@ -2456,7 +2821,7 @@
       "id": "ba75b54f-a56a-448e-ab25-a6304914e35f",
       "drink": "Surfing Monkey",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -2481,10 +2846,15 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "3"
+          "correct": "1 1/2"
         },
         {
           "index": 5,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 6,
           "type": "cream",
           "correct": "Half and Half"
         }
@@ -2494,7 +2864,7 @@
       "id": "77bd12f9-f3f6-4359-8a57-3529a1684248",
       "drink": "Surfing Monkey",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -2519,10 +2889,15 @@
         {
           "index": 4,
           "type": "quantity",
-          "correct": "5"
+          "correct": "2"
         },
         {
           "index": 5,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 6,
           "type": "cream",
           "correct": "Half and Half"
         }
@@ -2532,7 +2907,7 @@
       "id": "eaf5572d-99ed-4e45-b919-7bbde5a43810",
       "drink": "The Dragon’s Breath",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2563,6 +2938,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "passionfruit syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -2570,7 +2950,7 @@
       "id": "ee6860f5-3dab-49c6-98b0-ffd60a7bf9d3",
       "drink": "The Dragon’s Breath",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2601,6 +2981,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "passionfruit syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -2608,7 +2993,7 @@
       "id": "d5ee5e80-063f-41bf-9f3a-05cf3649ca58",
       "drink": "The Dragon’s Breath",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2639,6 +3024,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "passionfruit syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -2646,7 +3036,7 @@
       "id": "59c2c42d-60d3-4f31-b854-2f09db33a03d",
       "drink": "The Flying Phoenix",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2667,6 +3057,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "kiwi syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -2674,7 +3069,7 @@
       "id": "51063c88-13fe-4127-b18e-eb03700d2a74",
       "drink": "The Flying Phoenix",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2695,6 +3090,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "kiwi syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -2702,7 +3102,7 @@
       "id": "09e28b00-ed69-43e5-ae29-ecc859250f1f",
       "drink": "The Flying Phoenix",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2723,6 +3123,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "kiwi syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -2730,7 +3135,7 @@
       "id": "66247c48-704b-4a3a-8093-9de4e4db3da9",
       "drink": "The Lemon Drop",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2751,6 +3156,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "lemon syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -2758,7 +3168,7 @@
       "id": "3f0ac06c-444d-41a8-9350-84f64c88da42",
       "drink": "The Lemon Drop",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2779,6 +3189,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "lemon syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -2786,7 +3201,7 @@
       "id": "233853e0-77b0-4024-a362-6236cf4f6344",
       "drink": "The Lemon Drop",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2807,6 +3222,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "lemon syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -2814,7 +3234,7 @@
       "id": "7a71c852-289f-4fbc-b0c0-752fccbdd2e5",
       "drink": "The Nick",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2835,6 +3255,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "lime syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -2842,7 +3267,7 @@
       "id": "4dda516b-7ea8-44f0-97f3-7733bc00e9be",
       "drink": "The Nick",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2863,6 +3288,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "lime syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -2870,7 +3300,7 @@
       "id": "a8861562-f2ab-41d6-846b-6e0449eae1e2",
       "drink": "The Nick",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -2891,6 +3321,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "lime syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -2898,7 +3333,7 @@
       "id": "7f218e87-6417-4eca-9d5b-c1aaac441677",
       "drink": "The Vacation",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -2922,6 +3357,11 @@
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 5,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -2931,7 +3371,7 @@
       "id": "dbf5fa21-20fa-4fe5-8c9f-9a3df54fa421",
       "drink": "The Vacation",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -2955,6 +3395,11 @@
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 5,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -2964,7 +3409,7 @@
       "id": "5cb36359-adb2-4650-8a26-bf3573c2fac6",
       "drink": "The Vacation",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -2988,6 +3433,11 @@
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -2997,7 +3447,7 @@
       "id": "0fbde5ab-39b8-4076-a150-53377203f61b",
       "drink": "Watermelon Makenna Energy",
       "size": "16 oz",
-      "template": "___ pumps of ___\nTop with ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nTop with ___",
       "blanks": [
         {
           "index": 0,
@@ -3011,6 +3461,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -3020,7 +3475,7 @@
       "id": "0cc24a45-3b18-4739-a231-28d074ab8ffa",
       "drink": "Watermelon Makenna Energy",
       "size": "24 oz",
-      "template": "___ pumps of ___\nTop with ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nTop with ___",
       "blanks": [
         {
           "index": 0,
@@ -3034,6 +3489,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -3043,7 +3503,7 @@
       "id": "509c35c3-512e-48ca-9ac8-a9711d514af7",
       "drink": "Watermelon Makenna Energy",
       "size": "32 oz",
-      "template": "___ pumps of ___\nTop with ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nTop with ___",
       "blanks": [
         {
           "index": 0,
@@ -3057,6 +3517,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
           "type": "cream",
           "correct": "Kona Cloud"
         }
@@ -11359,7 +11824,7 @@
       "id": "cf911525-99d5-4ac9-96ff-888a7eed0e26",
       "drink": "Dr. Creamy",
       "size": "12 oz",
-      "template": "___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\nAdd ___ can of Dr. Pepper\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -11374,10 +11839,15 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "1/2"
         },
         {
           "index": 3,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Maui Milk"
         }
@@ -11387,7 +11857,7 @@
       "id": "1a8a3985-3517-46fe-ad74-a30ab0458371",
       "drink": "Dr. Creamy",
       "size": "16 oz",
-      "template": "___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\nAdd ___ can of Dr. Pepper\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -11402,10 +11872,15 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "2"
+          "correct": "3/4"
         },
         {
           "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Maui Milk"
         }
@@ -11415,7 +11890,7 @@
       "id": "ab966fea-385e-454c-9ab8-b74862e3dd47",
       "drink": "Dr. Creamy",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\nAdd ___ can of Dr. Pepper\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -11430,10 +11905,15 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "1"
         },
         {
           "index": 3,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Maui Milk"
         }
@@ -11443,7 +11923,7 @@
       "id": "fd0c62be-a2b7-486e-b972-184ff52dd394",
       "drink": "Dr. Creamy",
       "size": "32 oz",
-      "template": "___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\nAdd ___ can of Dr. Pepper\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -11458,10 +11938,15 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "4"
+          "correct": "1 1/2"
         },
         {
           "index": 3,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Maui Milk"
         }
@@ -14452,7 +14937,7 @@
       "id": "a51908fb-4556-4233-bb7e-0f2031490e1c",
       "drink": "Caramel Apple Makenna Energy",
       "size": "16 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -14466,6 +14951,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
           "type": "drizzle",
           "correct": "caramel drizzle"
         }
@@ -14475,7 +14965,7 @@
       "id": "29699dc7-952a-4bc3-80a7-c7825a58db64",
       "drink": "Caramel Apple Makenna Energy",
       "size": "24 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -14489,6 +14979,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
           "type": "drizzle",
           "correct": "caramel drizzle"
         }
@@ -14498,7 +14993,7 @@
       "id": "b14605d9-ae1c-4494-aa52-69e59ec5adbf",
       "drink": "Caramel Apple Makenna Energy",
       "size": "32 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -14512,6 +15007,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
           "type": "drizzle",
           "correct": "caramel drizzle"
         }
@@ -16917,7 +17417,7 @@
       "id": "36d7d223-45de-4aa4-a071-5207f67b1327",
       "drink": "Love Struck Makenna Energy",
       "size": "16 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -16931,6 +17431,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
           "type": "drizzle",
           "correct": "white chocolate drizzle"
         }
@@ -16940,7 +17445,7 @@
       "id": "054d3fc2-142f-4f11-9b58-a9bf75631697",
       "drink": "Love Struck Makenna Energy",
       "size": "24 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -16954,6 +17459,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
           "type": "drizzle",
           "correct": "white chocolate drizzle"
         }
@@ -16963,7 +17473,7 @@
       "id": "f49ed1b5-ce73-4ab1-8460-d52c584db989",
       "drink": "Love Struck Makenna Energy",
       "size": "32 oz",
-      "template": "___ pumps of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ Makenna Energy Can\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -16977,6 +17487,11 @@
         },
         {
           "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
           "type": "drizzle",
           "correct": "white chocolate drizzle"
         }
@@ -22954,7 +23469,7 @@
       "id": "d0e3a695-ad3c-45a2-8feb-486f67223edc",
       "drink": "Cruzer",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -22975,6 +23490,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "blackberry syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -22982,7 +23502,7 @@
       "id": "3a915d08-b0da-43ee-ba9b-77fe09ebcb48",
       "drink": "Cruzer",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -23003,6 +23523,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "blackberry syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -23010,7 +23535,7 @@
       "id": "42f1e392-365c-42cc-acf1-a5f13eb64990",
       "drink": "Cruzer",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -23031,6 +23556,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "blackberry syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -27715,35 +28245,40 @@
       "id": "4dd4320a-ba8c-4a51-98fd-f394591cb60e",
       "drink": "Makenna Blast",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ can Mountain Dew\n___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "1"
+          "correct": "1/2"
         },
         {
           "index": 1,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 2,
           "type": "syrup",
           "correct": "lime syrup"
         },
         {
-          "index": 2,
+          "index": 3,
           "type": "quantity",
           "correct": "1/4"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "syrup",
           "correct": "blue raspberry syrup"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "1/4"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "pineapple syrup"
         }
@@ -27753,35 +28288,40 @@
       "id": "e4bb351f-7931-4ff2-853f-f5934e09fdbe",
       "drink": "Makenna Blast",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ can Mountain Dew\n___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "1/2"
         },
         {
           "index": 1,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 2,
           "type": "syrup",
           "correct": "lime syrup"
         },
         {
-          "index": 2,
+          "index": 3,
           "type": "quantity",
           "correct": "1/2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "syrup",
           "correct": "blue raspberry syrup"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "1/2"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "pineapple syrup"
         }
@@ -27791,35 +28331,40 @@
       "id": "bb2ccc9e-ce22-4a1a-ad1d-018aed504652",
       "drink": "Makenna Blast",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ can Mountain Dew\n___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 1,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 2,
           "type": "syrup",
           "correct": "lime syrup"
         },
         {
-          "index": 2,
+          "index": 3,
           "type": "quantity",
           "correct": "3/4"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "syrup",
           "correct": "blue raspberry syrup"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "quantity",
           "correct": "3/4"
         },
         {
-          "index": 5,
+          "index": 6,
           "type": "syrup",
           "correct": "pineapple syrup"
         }
@@ -32383,7 +32928,7 @@
       "id": "a914952a-8af2-4eaa-ad9d-61eeaf20c70a",
       "drink": "Cloud 9",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -32404,6 +32949,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "coconut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -32411,7 +32961,7 @@
       "id": "4b932fe7-0fac-4bf0-8484-08dcca9f9139",
       "drink": "Cloud 9",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -32432,6 +32982,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "coconut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -32439,7 +32994,7 @@
       "id": "d23c1ec1-455c-479e-b871-7c711a47272a",
       "drink": "Cloud 9",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -32460,6 +33015,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "coconut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -32579,7 +33139,7 @@
       "id": "e2d29938-ed8f-4543-84af-99014d48d8d2",
       "drink": "Shock Wave",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -32600,6 +33160,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "lime syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -32607,7 +33172,7 @@
       "id": "9557e7a9-f62d-423b-911c-1254620f50f9",
       "drink": "Shock Wave",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -32628,6 +33193,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "lime syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -32635,7 +33205,7 @@
       "id": "90d92960-c15c-4630-acec-dfaedd32c6dc",
       "drink": "Shock Wave",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -32656,6 +33226,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "lime syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -35419,7 +35994,7 @@
       "id": "1d403224-72d3-4720-8fea-3d9adecc948b",
       "drink": "4th of July Makenna Energy",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -35443,6 +36018,11 @@
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 5,
           "type": "topping",
           "correct": "pop rocks"
         }
@@ -35452,7 +36032,7 @@
       "id": "2c905215-a277-449f-9757-af22209e453f",
       "drink": "4th of July Makenna Energy",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -35476,6 +36056,11 @@
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 5,
           "type": "topping",
           "correct": "pop rocks"
         }
@@ -35485,7 +36070,7 @@
       "id": "f96a758b-8143-4f11-9f1a-f15212fbffc2",
       "drink": "4th of July Makenna Energy",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -35509,6 +36094,11 @@
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
           "type": "topping",
           "correct": "pop rocks"
         }
@@ -36832,7 +37422,7 @@
       "id": "7ee2255d-b894-4a76-973e-500b172094fa",
       "drink": "Love Potion Makenna Energy",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -36863,6 +37453,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "almond syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
@@ -36870,7 +37465,7 @@
       "id": "b1267fbf-e500-4bfd-adc3-52502215c471",
       "drink": "Love Potion Makenna Energy",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -36901,6 +37496,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "almond syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1 1/2"
         }
       ]
     },
@@ -36908,7 +37508,7 @@
       "id": "c1ff903d-b3b3-4acb-9399-8db420f35a30",
       "drink": "Love Potion Makenna Energy",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -36939,6 +37539,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "almond syrup"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
         }
       ]
     },
@@ -38064,7 +38669,7 @@
       "id": "2a4680fa-d7e2-4e8f-b42f-4e6f81d01297",
       "drink": "Four Leaf CLover",
       "size": "12 oz",
-      "template": "___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\n___ can Mountain Dew\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -38079,10 +38684,15 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1"
+          "correct": "1/2"
         },
         {
           "index": 3,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Half and Half"
         }
@@ -38092,7 +38702,7 @@
       "id": "b65345c6-57b3-4281-8676-4fbc92258007",
       "drink": "Four Leaf CLover",
       "size": "16 oz",
-      "template": "___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\n___ can Mountain Dew\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -38107,10 +38717,15 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "2"
+          "correct": "3/4"
         },
         {
           "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Half and Half"
         }
@@ -38120,7 +38735,7 @@
       "id": "ee100cc4-39eb-4d15-a13e-0ad1af9b89b3",
       "drink": "Four Leaf CLover",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\n___ can Mountain Dew\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -38135,10 +38750,15 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "1"
         },
         {
           "index": 3,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Half and Half"
         }
@@ -38148,7 +38768,7 @@
       "id": "99041ff6-93a6-460c-8aa6-24a0b15cdc05",
       "drink": "Four Leaf CLover",
       "size": "32 oz",
-      "template": "___ pumps of ___\n___ oz of ___",
+      "template": "___ pumps of ___\n___ can Mountain Dew\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -38163,10 +38783,15 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "4"
+          "correct": "1 1/2"
         },
         {
           "index": 3,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 4,
           "type": "cream",
           "correct": "Half and Half"
         }
@@ -38454,7 +39079,7 @@
       "id": "bdc30074-1ca8-45fa-8837-9266aec34eb1",
       "drink": "Cherry Bomb",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ Makenna Energy Can",
       "blanks": [
         {
           "index": 0,
@@ -38475,6 +39100,11 @@
           "index": 3,
           "type": "syrup",
           "correct": "almond syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
         }
       ]
     },
