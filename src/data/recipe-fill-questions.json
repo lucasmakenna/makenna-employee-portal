@@ -9098,7 +9098,7 @@
       "id": "88337b95-147c-4720-9124-c40b2ea0618c",
       "drink": "Cabo San Lucas Hot",
       "size": "12 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ over top of drink\nSprinkle ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ over top of drink\nSprinkle ___",
       "blanks": [
         {
           "index": 0,
@@ -9112,18 +9112,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 5,
@@ -9141,7 +9141,7 @@
       "id": "ac0e5062-b219-46ac-af25-cbbe9d835b59",
       "drink": "Cabo San Lucas Hot",
       "size": "16 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ over top of drink\nSprinkle ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ over top of drink\nSprinkle ___",
       "blanks": [
         {
           "index": 0,
@@ -9155,18 +9155,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 5,
@@ -9184,7 +9184,7 @@
       "id": "8e4c1489-346e-4c12-9196-61c444fe1a79",
       "drink": "Cabo San Lucas Hot",
       "size": "20 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ over top of drink\nSprinkle ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ over top of drink\nSprinkle ___",
       "blanks": [
         {
           "index": 0,
@@ -9198,18 +9198,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 5,
