@@ -13793,7 +13793,7 @@
       "id": "bb1127ee-3761-43f3-99d0-00af2075de83",
       "drink": "PUMPKIN CREME SPICE LATTE",
       "size": "12 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ and ___ sprinkles on top",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ and ___ sprinkles on top",
       "blanks": [
         {
           "index": 0,
@@ -13807,18 +13807,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 5,
@@ -13836,7 +13836,7 @@
       "id": "663a331c-2570-4821-9363-0fc6c62ef8f6",
       "drink": "PUMPKIN CREME SPICE LATTE",
       "size": "16 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ and ___ sprinkles on top",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ and ___ sprinkles on top",
       "blanks": [
         {
           "index": 0,
@@ -13850,18 +13850,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 5,
@@ -13879,7 +13879,7 @@
       "id": "c42d6049-7917-4582-81f2-16bc0a09837b",
       "drink": "PUMPKIN CREME SPICE LATTE",
       "size": "24 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ and ___ sprinkles on top",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ and ___ sprinkles on top",
       "blanks": [
         {
           "index": 0,
@@ -13893,18 +13893,61 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 6,
+          "type": "topping",
+          "correct": "pumpkin spice"
+        }
+      ]
+    },
+    {
+      "id": "pcsl-32oz",
+      "drink": "PUMPKIN CREME SPICE LATTE",
+      "size": "32 oz",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ and ___ sprinkles on top",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "pumpkin pie sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 3,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 5,
