@@ -33772,7 +33772,7 @@
       "id": "e09bc95f-307d-4302-8c95-c043540a9d04",
       "drink": "Samoa Sunrise Iced",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\n___ On Kona",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___\n___ on top\n___ On Kona",
       "blanks": [
         {
           "index": 0,
@@ -33821,11 +33821,16 @@
         },
         {
           "index": 9,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        },
+        {
+          "index": 10,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 10,
+          "index": 11,
           "type": "drizzle",
           "correct": "caramel drizzle"
         }
@@ -33835,7 +33840,7 @@
       "id": "6bccd717-9aeb-4e91-9852-ea1b2ad738bf",
       "drink": "Samoa Sunrise Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\n___ On Kona",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___\n___ on top\n___ On Kona",
       "blanks": [
         {
           "index": 0,
@@ -33884,11 +33889,16 @@
         },
         {
           "index": 9,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        },
+        {
+          "index": 10,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 10,
+          "index": 11,
           "type": "drizzle",
           "correct": "caramel drizzle"
         }
@@ -33898,7 +33908,7 @@
       "id": "723df5ca-8e51-4c1a-a91b-5790bfd67aed",
       "drink": "Samoa Sunrise Iced",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\n___ On Kona",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___\n___ on top\n___ On Kona",
       "blanks": [
         {
           "index": 0,
@@ -33947,11 +33957,16 @@
         },
         {
           "index": 9,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        },
+        {
+          "index": 10,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 10,
+          "index": 11,
           "type": "drizzle",
           "correct": "caramel drizzle"
         }
@@ -51312,7 +51327,7 @@
       "id": "ssi-32oz-add",
       "drink": "Samoa Sunrise Iced",
       "size": "32 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\n___ On Kona",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___\n___ on top\n___ On Kona",
       "blanks": [
         {
           "index": 0,
@@ -51361,11 +51376,16 @@
         },
         {
           "index": 9,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        },
+        {
+          "index": 10,
           "type": "cream",
           "correct": "Kona Cloud"
         },
         {
-          "index": 10,
+          "index": 11,
           "type": "drizzle",
           "correct": "caramel drizzle"
         }
