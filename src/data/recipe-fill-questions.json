@@ -4363,7 +4363,7 @@
       "id": "87b851f4-df48-4a48-96e6-b0a374bda90f",
       "drink": "Maui Caramel Chiller",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -4389,6 +4389,11 @@
           "index": 4,
           "type": "quantity",
           "correct": "5"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -4396,7 +4401,7 @@
       "id": "568547e5-7306-4bd7-8c99-60e594be339b",
       "drink": "Maui Caramel Chiller",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -4422,6 +4427,11 @@
           "index": 4,
           "type": "quantity",
           "correct": "6"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -4429,7 +4439,7 @@
       "id": "709955e0-7a1e-4361-9e2f-a98d9dbf203c",
       "drink": "Maui Caramel Chiller",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -4455,6 +4465,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "7"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -4462,7 +4477,7 @@
       "id": "3039a37e-a091-4d10-bbaf-40359ed13e57",
       "drink": "Maui Caramel Chiller",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMaui Milk to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -4488,6 +4503,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "12"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -4903,7 +4923,7 @@
       "id": "6000a6ff-9458-49ac-b07f-9f7a2d8796aa",
       "drink": "Oreo Chiller",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -4929,6 +4949,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "5"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4936,7 +4961,7 @@
       "id": "944d42f1-4967-4a54-8f7b-7746ef1edc44",
       "drink": "Oreo Chiller",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -4962,6 +4987,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "6"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4969,7 +4999,7 @@
       "id": "61c57296-917b-4c7f-b336-8e862ca67f11",
       "drink": "Oreo Chiller",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -4995,6 +5025,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "7"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -5002,7 +5037,7 @@
       "id": "33873be1-d7f7-4bf2-8895-1b531ced71ca",
       "drink": "Oreo Chiller",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -5028,6 +5063,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "12"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -5187,7 +5227,7 @@
       "id": "5b8ab868-9cf2-40c1-8f18-a85b4f825d53",
       "drink": "Sandy Kisses Chiller",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -5213,6 +5253,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "5"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -5220,7 +5265,7 @@
       "id": "34c74fab-f314-413b-ad40-219c5034459d",
       "drink": "Sandy Kisses Chiller",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -5246,6 +5291,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "6"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -5253,7 +5303,7 @@
       "id": "e6f5e68d-dfd4-4783-9834-9578274512ac",
       "drink": "Sandy Kisses Chiller",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -5279,6 +5329,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "7"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -5286,7 +5341,7 @@
       "id": "d8442ca4-ffaf-42a1-942b-1c7190d2d32e",
       "drink": "Sandy Kisses Chiller",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -5312,6 +5367,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "12"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -5511,7 +5571,7 @@
       "id": "3d32578a-8756-48d5-a8ec-c4c0895d28b5",
       "drink": "Vanilla Caramel Chiller",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -5537,6 +5597,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "5"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -5544,7 +5609,7 @@
       "id": "fe5d49da-9824-48e8-bb3f-214660eab2f3",
       "drink": "Vanilla Caramel Chiller",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -5570,6 +5635,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "6"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -5577,7 +5647,7 @@
       "id": "9e1c0c6f-b744-4a31-95a7-f8d3dfc79482",
       "drink": "Vanilla Caramel Chiller",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -5603,6 +5673,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "7"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -5610,7 +5685,7 @@
       "id": "d39ec92f-c9dd-463c-ab4f-adf7e873ee5b",
       "drink": "Vanilla Caramel Chiller",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -5636,6 +5711,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "12"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -13897,7 +13977,7 @@
       "id": "50ae86b7-61cb-480b-90e2-77c9620d7612",
       "drink": "Caramel De’Lite",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nTop with ___",
       "blanks": [
         {
           "index": 0,
@@ -13923,6 +14003,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "6"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -13930,7 +14015,7 @@
       "id": "25fe46f5-b9e9-4641-ab15-9b136d331f83",
       "drink": "Caramel De’Lite",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nTop with ___",
       "blanks": [
         {
           "index": 0,
@@ -13956,6 +14041,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "7"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -13963,7 +14053,7 @@
       "id": "43ed1194-03cb-4f2d-b9c4-edb17106d34c",
       "drink": "Caramel De’Lite",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nTop with ___",
       "blanks": [
         {
           "index": 0,
@@ -13989,6 +14079,11 @@
           "index": 4,
           "type": "fill_oz",
           "correct": "8"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -13996,7 +14091,7 @@
       "id": "17e4ae63-e8f3-430f-bd3a-904ccf28711d",
       "drink": "Peanut Butter Patties",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -14032,6 +14127,11 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "5"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -14039,7 +14139,7 @@
       "id": "e47b581c-3e8e-495d-a9f7-79e26f48d2ee",
       "drink": "Peanut Butter Patties",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -14075,6 +14175,11 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "6"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -14082,7 +14187,7 @@
       "id": "eee12079-792d-42f9-aefc-b188c88c2d06",
       "drink": "Peanut Butter Patties",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -14118,6 +14223,11 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "7"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -16021,7 +16131,7 @@
       "id": "7ed7450b-2b03-4550-a17a-6638505bbc46",
       "drink": "Nutcracker Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -16057,6 +16167,11 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "8"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -16064,7 +16179,7 @@
       "id": "f7df3179-b238-4225-9ffa-2628d83956ce",
       "drink": "Nutcracker Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -16100,6 +16215,11 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "10"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -16107,7 +16227,7 @@
       "id": "35747422-2ae7-4b2d-bfc6-d03197117697",
       "drink": "Nutcracker Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -16143,6 +16263,11 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "12"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -16150,7 +16275,7 @@
       "id": "51a35d60-3b1c-4ec0-b505-969345bb9e97",
       "drink": "Nutcracker Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -16186,6 +16311,11 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "20"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -16385,7 +16515,7 @@
       "id": "863ec2e2-0142-4134-bf8a-7af27179678d",
       "drink": "The Rudolph Iced",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16426,6 +16556,11 @@
           "index": 7,
           "type": "topping",
           "correct": "candy cane pieces"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -16433,7 +16568,7 @@
       "id": "22f08de0-f88c-47ac-ab60-580e6247cd03",
       "drink": "The Rudolph Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16474,6 +16609,11 @@
           "index": 7,
           "type": "topping",
           "correct": "candy cane pieces"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -16481,7 +16621,7 @@
       "id": "e2802afe-b2f3-446f-b28e-5cfb91dfdf75",
       "drink": "The Rudolph Iced",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16522,6 +16662,11 @@
           "index": 7,
           "type": "topping",
           "correct": "candy cane pieces"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -16529,7 +16674,7 @@
       "id": "053df89a-9558-423c-b406-c129505c102c",
       "drink": "The Rudolph Iced",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16570,6 +16715,11 @@
           "index": 7,
           "type": "topping",
           "correct": "candy cane pieces"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -17921,7 +18071,7 @@
       "id": "2f3b5013-a847-42e6-93c4-b6064d9cebb1",
       "drink": "Snickers",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ & ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -17957,6 +18107,16 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "6"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -17964,7 +18124,7 @@
       "id": "a10b71fb-0810-4518-a3ae-5b42e9b766e8",
       "drink": "Snickers",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ & ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -18000,6 +18160,16 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "7"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -18007,7 +18177,7 @@
       "id": "82802f1b-182f-458c-aea8-75820a0978bf",
       "drink": "Snickers",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ & ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -18043,6 +18213,16 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "6"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -24482,7 +24662,7 @@
       "id": "19a7f26e-590d-46cf-82a9-5ead769bf3cf",
       "drink": "The Rudolph Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -24523,6 +24703,11 @@
           "index": 7,
           "type": "topping",
           "correct": "candy cane pieces"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -24530,7 +24715,7 @@
       "id": "70bd6ead-1589-4448-a36f-e32056f800d8",
       "drink": "The Rudolph Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -24571,6 +24756,11 @@
           "index": 7,
           "type": "topping",
           "correct": "candy cane pieces"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -24578,7 +24768,7 @@
       "id": "49449b2e-8cee-4a50-8d64-557ee37aaebb",
       "drink": "The Rudolph Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -24619,6 +24809,11 @@
           "index": 7,
           "type": "topping",
           "correct": "candy cane pieces"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -24626,7 +24821,7 @@
       "id": "a50c22b3-fc73-49c6-bfb3-6f7e495cd5e7",
       "drink": "Nutcracker Blended",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -24662,6 +24857,11 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "5"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -24669,7 +24869,7 @@
       "id": "b3ad12ca-b23b-4737-a7de-8a95d1769fb5",
       "drink": "Nutcracker Blended",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -24705,6 +24905,11 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "6"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -24712,7 +24917,7 @@
       "id": "5764bbb4-5978-4b36-8b80-a5f65d4e6ae0",
       "drink": "Nutcracker Blended",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -24748,6 +24953,11 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "7"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -24755,7 +24965,7 @@
       "id": "17671e80-ca16-4899-ae6a-9d4dfb81a871",
       "drink": "Nutcracker Blended",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -24791,6 +25001,11 @@
           "index": 6,
           "type": "fill_oz",
           "correct": "12"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -36854,7 +37069,7 @@
       "id": "e830afa7-510f-46a1-b1d8-dcffc328a3d0",
       "drink": "Strawberry Matcha",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\nAdd ___ to the cup",
       "blanks": [
         {
           "index": 0,
@@ -36890,6 +37105,11 @@
           "index": 6,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "strawberry drizzle"
         }
       ]
     },
@@ -36897,7 +37117,7 @@
       "id": "7b8015c5-9676-4d51-b8aa-ffdd409e2ab0",
       "drink": "Strawberry Matcha",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\nAdd ___ to the cup",
       "blanks": [
         {
           "index": 0,
@@ -36933,6 +37153,11 @@
           "index": 6,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "strawberry drizzle"
         }
       ]
     },
@@ -36940,7 +37165,7 @@
       "id": "2d932aff-e0ce-45bb-af2c-d596fad834ce",
       "drink": "Strawberry Matcha",
       "size": "24 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\nAdd ___ to the cup",
       "blanks": [
         {
           "index": 0,
@@ -36976,6 +37201,11 @@
           "index": 6,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "strawberry drizzle"
         }
       ]
     },
@@ -36983,7 +37213,7 @@
       "id": "31f8e6b0-9e55-4018-ab64-8ecd153700a6",
       "drink": "Strawberry Matcha",
       "size": "32 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\nAdd ___ to the cup",
       "blanks": [
         {
           "index": 0,
@@ -37019,6 +37249,11 @@
           "index": 6,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "strawberry drizzle"
         }
       ]
     },
@@ -46494,7 +46729,7 @@
       "id": "bf2-laf-12 oz",
       "drink": "Love at First Sip Iced",
       "size": "12 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -46540,6 +46775,11 @@
           "index": 8,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 9,
+          "type": "drizzle",
+          "correct": "strawberry puree drizzle"
         }
       ]
     },
@@ -46547,7 +46787,7 @@
       "id": "bf2-laf-16 oz",
       "drink": "Love at First Sip Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -46593,6 +46833,11 @@
           "index": 8,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 9,
+          "type": "drizzle",
+          "correct": "strawberry puree drizzle"
         }
       ]
     },
@@ -46600,7 +46845,7 @@
       "id": "bf2-laf-24 oz",
       "drink": "Love at First Sip Iced",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -46646,6 +46891,11 @@
           "index": 8,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 9,
+          "type": "drizzle",
+          "correct": "strawberry puree drizzle"
         }
       ]
     },
@@ -46653,7 +46903,7 @@
       "id": "bf2-laf-32 oz",
       "drink": "Love at First Sip Iced",
       "size": "32 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\nWhole milk to ___ oz\n___ oz of ___\n___ pumps of ___\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -46699,6 +46949,11 @@
           "index": 8,
           "type": "syrup",
           "correct": "strawberry puree"
+        },
+        {
+          "index": 9,
+          "type": "drizzle",
+          "correct": "strawberry puree drizzle"
         }
       ]
     },
@@ -46858,7 +47113,7 @@
       "id": "bf2-mw-12 oz",
       "drink": "Milky Way Iced",
       "size": "12 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\nThin layer of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\nThin layer of ___\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -46899,6 +47154,11 @@
           "index": 7,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -46906,7 +47166,7 @@
       "id": "bf2-mw-16 oz",
       "drink": "Milky Way Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\nThin layer of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\nThin layer of ___\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -46947,6 +47207,11 @@
           "index": 7,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
@@ -46954,7 +47219,7 @@
       "id": "bf2-mw-24 oz",
       "drink": "Milky Way Iced",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\nThin layer of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of ___\nWhole milk to ___ oz\nThin layer of ___\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -46995,6 +47260,11 @@
           "index": 7,
           "type": "cream",
           "correct": "Kona Cloud"
+        },
+        {
+          "index": 8,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
         }
       ]
     },
