@@ -26537,7 +26537,7 @@
       "id": "6b5d5d23-e70d-4bc4-8fe2-d4b918f93e34",
       "drink": "Honey Bee Latte Hot",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ scoops of ___\nWhole milk to ___ oz\n___ oz of ___\n___ oz of ___\nAdd ___ and ___",
+      "template": "___ pumps of ___ + ___ scoops of ___\n___ oz of ___\n___ oz of ___\nWhole milk to ___ oz\nAdd ___ and ___",
       "blanks": [
         {
           "index": 0,
@@ -26561,28 +26561,28 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "1 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
         },
         {
-          "index": 7,
+          "index": 6,
           "type": "quantity",
           "correct": "1 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 9,
@@ -26600,7 +26600,7 @@
       "id": "3e07f8a3-085c-4a20-9c61-c7e967b11056",
       "drink": "Honey Bee Latte Hot",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ scoops of ___\nWhole milk to ___ oz\n___ oz of ___\n___ oz of ___\nAdd ___ and ___",
+      "template": "___ pumps of ___ + ___ scoops of ___\n___ oz of ___\n___ oz of ___\nWhole milk to ___ oz\nAdd ___ and ___",
       "blanks": [
         {
           "index": 0,
@@ -26624,28 +26624,28 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
         },
         {
-          "index": 7,
+          "index": 6,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 9,
@@ -50328,7 +50328,7 @@
       "id": "e1c14c0a-f2df-46b9-8dfb-cd4c849de5a3",
       "drink": "Honey Bee Latte Hot",
       "size": "20 oz",
-      "template": "___ pumps of ___ + ___ scoops of ___\nWhole milk to ___ oz\n___ oz of ___\n___ oz of ___\nAdd ___ and ___",
+      "template": "___ pumps of ___ + ___ scoops of ___\n___ oz of ___\n___ oz of ___\nWhole milk to ___ oz\nAdd ___ and ___",
       "blanks": [
         {
           "index": 0,
@@ -50352,28 +50352,28 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
         },
         {
-          "index": 7,
+          "index": 6,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 9,
