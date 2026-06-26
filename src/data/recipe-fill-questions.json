@@ -6407,7 +6407,7 @@
       "id": "8518b5ee-f530-42ec-9ada-2b94ccb0d52c",
       "drink": "Hawaiian Latte",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -6431,18 +6431,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -6450,7 +6450,7 @@
       "id": "ef08fa43-37c6-469c-816e-ce7b028ebd36",
       "drink": "Hawaiian Latte",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -6474,18 +6474,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -6493,7 +6493,7 @@
       "id": "812fa4e8-b25c-4345-81cb-0d9c5da66c11",
       "drink": "Hawaiian Latte",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -6517,18 +6517,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -6536,7 +6536,7 @@
       "id": "fbf6eb56-0ff6-4188-8d86-05435411d958",
       "drink": "Hawaiian Latte",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -6560,18 +6560,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -6579,7 +6579,7 @@
       "id": "56f57b94-8e06-4faa-842a-fd2d1ceb2ba3",
       "drink": "Heart Attack",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -6603,18 +6603,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -6622,7 +6622,7 @@
       "id": "a61b6db0-9dcb-453c-8d88-2401262cd7d1",
       "drink": "Heart Attack",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -6646,18 +6646,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -6665,7 +6665,7 @@
       "id": "89377649-b793-419b-bfa6-26fa4f5d755c",
       "drink": "Heart Attack",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -6689,18 +6689,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -7254,7 +7254,7 @@
       "id": "b604094d-396c-4e21-a471-befc16be88ac",
       "drink": "North Shore Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -7278,18 +7278,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -7297,7 +7297,7 @@
       "id": "44219aa0-3550-49fb-b185-7b7e0aedf0f4",
       "drink": "North Shore Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -7321,18 +7321,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -7340,7 +7340,7 @@
       "id": "43446e93-018b-405c-bb50-9fb8dc70fa33",
       "drink": "North Shore Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -7364,18 +7364,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -7383,7 +7383,7 @@
       "id": "d9f0aac6-e49e-4b7a-ab94-8a7af7375dc6",
       "drink": "North Shore Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -7407,18 +7407,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -7426,7 +7426,7 @@
       "id": "b569c767-7b1e-4134-ab0f-3b87aead476e",
       "drink": "Nutty Irishman",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -7450,18 +7450,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -7469,7 +7469,7 @@
       "id": "cf4a5031-2411-424c-84c7-2419eebe740c",
       "drink": "Nutty Irishman",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -7493,18 +7493,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -7512,7 +7512,7 @@
       "id": "505af708-2c36-428d-afb4-3766d568236d",
       "drink": "Nutty Irishman",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -7536,18 +7536,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -7555,7 +7555,7 @@
       "id": "7676a03f-4b8a-4ce1-9143-56ce55f6aaad",
       "drink": "Nutty Irishman",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -7579,18 +7579,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -7790,7 +7790,7 @@
       "id": "96e1ff8f-93de-4f73-81af-369705445bd9",
       "drink": "Sandy Brunette",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -7814,18 +7814,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 7,
@@ -7838,7 +7838,7 @@
       "id": "4bf9e2b5-3a4a-4849-9b82-bd0b6745f6e1",
       "drink": "Sandy Brunette",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -7862,18 +7862,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -7886,7 +7886,7 @@
       "id": "47e1c425-5d49-4099-b10b-96a128a2c433",
       "drink": "Sandy Brunette",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -7910,18 +7910,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -7934,7 +7934,7 @@
       "id": "91c56696-c8b1-4b31-994a-d523586ac218",
       "drink": "Sandy Brunette",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -7958,18 +7958,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 7,
@@ -8206,7 +8206,7 @@
       "id": "6d2b5546-76fd-4913-8ecd-ccdd9465d8e4",
       "drink": "The Haylee",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8230,18 +8230,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -8249,7 +8249,7 @@
       "id": "8af4bf88-98cf-493a-8db4-6612a5c8219c",
       "drink": "The Haylee",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8273,18 +8273,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -8292,7 +8292,7 @@
       "id": "1d1b8849-fd8f-4ac8-a43b-ae3f1821428e",
       "drink": "The Haylee",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8316,18 +8316,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -8335,7 +8335,7 @@
       "id": "585119e5-cfa6-49e2-95ce-15b6f9fa3528",
       "drink": "The Haylee",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8359,18 +8359,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -8378,7 +8378,7 @@
       "id": "3b4fdca5-ff21-4bf1-8624-78b31180e390",
       "drink": "The Legend",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -8402,18 +8402,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 7,
@@ -8426,7 +8426,7 @@
       "id": "ac82216b-4685-4cb4-b293-109611c030de",
       "drink": "The Legend",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -8450,18 +8450,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -8474,7 +8474,7 @@
       "id": "971848e9-b8aa-425d-985b-4ca85c1db401",
       "drink": "The Legend",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -8498,18 +8498,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -8522,7 +8522,7 @@
       "id": "407ad673-3f3f-4979-aa37-8756f21099ec",
       "drink": "The Legend",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\nAdd ___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\nAdd ___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -8546,18 +8546,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 7,
@@ -8570,7 +8570,7 @@
       "id": "3e51e450-030a-478a-b6a2-4bdd8cd51219",
       "drink": "The Taylor",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8594,18 +8594,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -8613,7 +8613,7 @@
       "id": "4ebca28a-84ab-4b52-a04a-b01a941a6cb9",
       "drink": "The Taylor",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8637,18 +8637,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -8656,7 +8656,7 @@
       "id": "b2fa3970-b31c-4e30-9dcb-9e7b729cbef6",
       "drink": "The Taylor",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8680,18 +8680,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -8699,7 +8699,7 @@
       "id": "4baf53f6-8336-431f-bcd5-963de4c0c115",
       "drink": "The Taylor",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8723,18 +8723,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -8742,7 +8742,7 @@
       "id": "e42d0e46-ed97-425a-bb89-8461cf67ff7e",
       "drink": "Waikiki",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8766,18 +8766,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -8785,7 +8785,7 @@
       "id": "208e37b6-31e2-4740-9aa8-a5302111e80a",
       "drink": "Waikiki",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8809,18 +8809,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -8828,7 +8828,7 @@
       "id": "929ac29d-a5f3-4351-b258-010c1845574e",
       "drink": "Waikiki",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8852,18 +8852,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -8871,7 +8871,7 @@
       "id": "cdcb941f-116c-454d-a584-aa4a3513103e",
       "drink": "Waikiki",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -8895,18 +8895,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -9296,7 +9296,7 @@
       "id": "8730627e-fe83-4278-a52d-4c8d50d788a4",
       "drink": "Hawaiian Latte Hot",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -9320,18 +9320,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -9339,7 +9339,7 @@
       "id": "e9c67089-e88a-4f24-9f0b-abb464a3e22e",
       "drink": "Hawaiian Latte Hot",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -9363,18 +9363,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -9382,7 +9382,7 @@
       "id": "497396f4-6339-4b8f-b762-e2faab8da940",
       "drink": "Hawaiian Latte Hot",
       "size": "20 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -9406,18 +9406,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -9425,7 +9425,7 @@
       "id": "3d9dc31e-5403-47ad-b16a-3542cdf4b750",
       "drink": "Heart Attack Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -9449,18 +9449,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -9468,7 +9468,7 @@
       "id": "42ac76fb-2c96-445f-b9b2-4abb621feaac",
       "drink": "Heart Attack Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -9492,18 +9492,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -9886,7 +9886,7 @@
       "id": "4820c719-e7fd-4452-bea2-ddc9be0b4614",
       "drink": "North Shore Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -9910,18 +9910,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -9929,7 +9929,7 @@
       "id": "d183b199-754c-4099-aaf5-1662c7186d44",
       "drink": "North Shore Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -9953,18 +9953,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -9972,7 +9972,7 @@
       "id": "2254e90e-a98f-41c8-aa61-26a5bc39c379",
       "drink": "North Shore Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -9996,18 +9996,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -10015,7 +10015,7 @@
       "id": "9f6edff8-e406-46cb-9aa8-c30adc4535e1",
       "drink": "Nutty Irishman Hot",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10039,18 +10039,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -10058,7 +10058,7 @@
       "id": "56707aac-498e-4887-9264-1fa941cd1313",
       "drink": "Nutty Irishman Hot",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10082,18 +10082,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -10101,7 +10101,7 @@
       "id": "e25025ce-964d-47b7-8a17-2ce5fd1ffb5b",
       "drink": "Nutty Irishman Hot",
       "size": "20 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10125,18 +10125,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -10144,7 +10144,7 @@
       "id": "0ee85a16-20c8-404f-b1eb-7f4b992d8362",
       "drink": "Sandy Blonde Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -10168,18 +10168,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -10192,7 +10192,7 @@
       "id": "5705a078-bf6b-46d6-9baf-22722b6fef12",
       "drink": "Sandy Blonde Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -10216,18 +10216,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -10240,7 +10240,7 @@
       "id": "3367f2f9-56ba-443d-835e-f9cce69cc832",
       "drink": "Sandy Blonde Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -10264,18 +10264,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 7,
@@ -10288,7 +10288,7 @@
       "id": "de4b904e-8d69-44e2-abc9-d8d38a8cc1ef",
       "drink": "Sandy Brunette Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10312,18 +10312,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -10331,7 +10331,7 @@
       "id": "7fa822a1-d9bd-43ce-8229-fb7a89be0895",
       "drink": "Sandy Brunette Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10355,18 +10355,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -10374,7 +10374,7 @@
       "id": "4f422438-c17b-4ab6-93ab-780d7b6f0416",
       "drink": "Sandy Brunette Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10398,18 +10398,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -10486,7 +10486,7 @@
       "id": "a95f7103-5a14-48b1-8b52-b46a033038dd",
       "drink": "The Ben Hot",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10510,18 +10510,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -10529,7 +10529,7 @@
       "id": "a5104dfe-0037-4bba-b643-cc4b53274405",
       "drink": "The Ben Hot",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10553,18 +10553,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -10572,7 +10572,7 @@
       "id": "6e85b941-ba3f-4366-8e80-16cb2ffbee43",
       "drink": "The Ben Hot",
       "size": "20 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10596,18 +10596,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -10714,7 +10714,7 @@
       "id": "e2b9b321-5412-472c-a786-73f29d7cf79b",
       "drink": "The Haylee Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10738,18 +10738,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -10757,7 +10757,7 @@
       "id": "82b87efa-bac0-4d81-8285-54521fc14424",
       "drink": "The Haylee Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10781,18 +10781,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -10800,7 +10800,7 @@
       "id": "9790d0f4-7573-4af3-af24-e43a5ecb2077",
       "drink": "The Haylee Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -10824,18 +10824,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -10843,7 +10843,7 @@
       "id": "4fb0c09a-a4f8-4beb-ad03-d6c923744397",
       "drink": "The Legend Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -10867,18 +10867,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -10891,7 +10891,7 @@
       "id": "230b0eb3-4bcb-483a-861d-1f0ee80ddfdc",
       "drink": "The Legend Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -10915,18 +10915,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -10939,7 +10939,7 @@
       "id": "126fad59-70de-4db6-af4b-dd73c5ab3d0d",
       "drink": "The Legend Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -10963,18 +10963,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 7,
@@ -10987,7 +10987,7 @@
       "id": "afe3c993-74fc-43f8-b6e8-942e64a02ac3",
       "drink": "The Taylor Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -11011,18 +11011,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -11030,7 +11030,7 @@
       "id": "65e6b651-c70f-4a3d-84c7-02f0685b9b3a",
       "drink": "The Taylor Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -11054,18 +11054,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -11073,7 +11073,7 @@
       "id": "dbc43b68-f7f0-4777-8897-c2b60445d147",
       "drink": "The Taylor Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -11097,18 +11097,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -11116,7 +11116,7 @@
       "id": "32cb7cd9-fc69-437e-8790-c05d4b71751e",
       "drink": "Waikiki Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -11140,18 +11140,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -11159,7 +11159,7 @@
       "id": "fd18fcbb-fd3c-46d0-b205-80ea1e6dbd8b",
       "drink": "Waikiki Hot",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -11183,18 +11183,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -11202,7 +11202,7 @@
       "id": "2f589486-ee77-4960-9974-91df6bb50b74",
       "drink": "Waikiki Hot",
       "size": "20 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -11226,18 +11226,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -13492,7 +13492,7 @@
       "id": "17e4ae63-e8f3-430f-bd3a-904ccf28711d",
       "drink": "Peanut Butter Patties",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -13516,18 +13516,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "5"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "5"
         }
       ]
     },
@@ -13535,7 +13535,7 @@
       "id": "e47b581c-3e8e-495d-a9f7-79e26f48d2ee",
       "drink": "Peanut Butter Patties",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -13559,18 +13559,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "6"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "6"
         }
       ]
     },
@@ -13578,7 +13578,7 @@
       "id": "eee12079-792d-42f9-aefc-b188c88c2d06",
       "drink": "Peanut Butter Patties",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -13602,18 +13602,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "7"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "7"
         }
       ]
     },
@@ -13621,7 +13621,7 @@
       "id": "c97d459b-a9ef-468a-bb2d-d909a728b7c2",
       "drink": "PUMPKIN CHAI",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -13645,18 +13645,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -13664,7 +13664,7 @@
       "id": "0d93f0da-6c84-4d39-a3af-c7f07df1bfc4",
       "drink": "PUMPKIN CHAI",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -13688,18 +13688,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -13707,7 +13707,7 @@
       "id": "43a288ea-e4a4-4393-83e2-46d967bdb885",
       "drink": "PUMPKIN CHAI",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -13731,18 +13731,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "3"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -13750,7 +13750,7 @@
       "id": "799c999a-845e-48f3-a3c3-4ba7fedf655d",
       "drink": "PUMPKIN CHAI",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -13774,18 +13774,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -14054,7 +14054,7 @@
       "id": "d02c5f17-62f0-4a8f-8e35-67c6f3dd05bb",
       "drink": "FALL IN A CUP LATTE",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -14078,18 +14078,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 7,
@@ -14102,7 +14102,7 @@
       "id": "d01044bd-b451-45ff-af1d-93d2383a268b",
       "drink": "FALL IN A CUP LATTE",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -14126,18 +14126,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -14150,7 +14150,7 @@
       "id": "8035f5eb-7f85-43f5-9630-39c8fcf3f3d5",
       "drink": "FALL IN A CUP LATTE",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -14174,18 +14174,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -14198,7 +14198,7 @@
       "id": "816b7b32-ec9f-4bf9-b175-8c8b9e7a0dcd",
       "drink": "FALL IN A CUP LATTE",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -14222,18 +14222,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 7,
@@ -14246,7 +14246,7 @@
       "id": "fef4d79c-8baf-4bbd-9192-0e3592752328",
       "drink": "ALOHA PUMPKIN SPICE LATTE",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -14270,18 +14270,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 7,
@@ -14294,7 +14294,7 @@
       "id": "546a1477-2a34-47d3-a6d9-98e73cdcf521",
       "drink": "ALOHA PUMPKIN SPICE LATTE",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -14318,18 +14318,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -14342,7 +14342,7 @@
       "id": "36833d26-99b4-476e-b4f8-9d771aaa9c0f",
       "drink": "ALOHA PUMPKIN SPICE LATTE",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -14366,18 +14366,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -15227,7 +15227,7 @@
       "id": "42271167-30d9-4548-964c-80e4240f2a53",
       "drink": "Gingerbread Latte Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15261,18 +15261,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 9,
@@ -15285,7 +15285,7 @@
       "id": "2cfbba48-b391-4610-92ef-03e9952865af",
       "drink": "Gingerbread Latte Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15319,18 +15319,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 9,
@@ -15343,7 +15343,7 @@
       "id": "3052d422-e72a-47a6-bf42-cbe14eef3227",
       "drink": "Gingerbread Latte Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15377,18 +15377,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 9,
@@ -15401,7 +15401,7 @@
       "id": "3e0bf0e2-243a-4952-b14d-e93fdec04523",
       "drink": "Gingerbread Latte Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15435,18 +15435,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 9,
@@ -15459,7 +15459,7 @@
       "id": "7ed7450b-2b03-4550-a17a-6638505bbc46",
       "drink": "Nutcracker Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -15483,18 +15483,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -15502,7 +15502,7 @@
       "id": "f7df3179-b238-4225-9ffa-2628d83956ce",
       "drink": "Nutcracker Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -15526,18 +15526,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -15545,7 +15545,7 @@
       "id": "35747422-2ae7-4b2d-bfc6-d03197117697",
       "drink": "Nutcracker Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -15569,18 +15569,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -15588,7 +15588,7 @@
       "id": "51a35d60-3b1c-4ec0-b505-969345bb9e97",
       "drink": "Nutcracker Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -15612,18 +15612,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -15631,7 +15631,7 @@
       "id": "4e9839a4-0e48-4123-9c71-f124d5f4d40b",
       "drink": "Peppermint Snowball Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15655,18 +15655,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 7,
@@ -15679,7 +15679,7 @@
       "id": "eee708e5-1fba-4031-874b-82ebcf6a8959",
       "drink": "Peppermint Snowball Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15703,18 +15703,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -15727,7 +15727,7 @@
       "id": "8422e5a5-50d6-4438-a7d3-186a0eeeed83",
       "drink": "Peppermint Snowball Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15751,18 +15751,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -15775,7 +15775,7 @@
       "id": "3540d677-cc0a-4360-b7f3-b30a2d22562d",
       "drink": "Peppermint Snowball Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15799,18 +15799,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 7,
@@ -15823,7 +15823,7 @@
       "id": "863ec2e2-0142-4134-bf8a-7af27179678d",
       "drink": "The Rudolph Iced",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15847,18 +15847,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 7,
@@ -15871,7 +15871,7 @@
       "id": "22f08de0-f88c-47ac-ab60-580e6247cd03",
       "drink": "The Rudolph Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15895,18 +15895,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -15919,7 +15919,7 @@
       "id": "e2802afe-b2f3-446f-b28e-5cfb91dfdf75",
       "drink": "The Rudolph Iced",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15943,18 +15943,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -15967,7 +15967,7 @@
       "id": "053df89a-9558-423c-b406-c129505c102c",
       "drink": "The Rudolph Iced",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -15991,18 +15991,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 7,
@@ -16015,7 +16015,7 @@
       "id": "a2e3b9cd-f9ea-44e3-82c9-1010c4c40e60",
       "drink": "Santa’s Cookie Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16049,18 +16049,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "1 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 9,
@@ -16078,7 +16078,7 @@
       "id": "92bb4c83-678c-4d03-981a-b94afb126b90",
       "drink": "Santa’s Cookie Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16112,18 +16112,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 9,
@@ -16141,7 +16141,7 @@
       "id": "7fa4bf0c-1d48-4977-a912-c662dabb2ddd",
       "drink": "Santa’s Cookie Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16175,18 +16175,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 9,
@@ -16204,7 +16204,7 @@
       "id": "8e458aff-28d3-4381-9698-f9c7b538ef36",
       "drink": "Santa’s Cookie Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16238,18 +16238,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 9,
@@ -16399,7 +16399,7 @@
       "id": "6205f875-27e3-4a1f-b39e-307ad6d33874",
       "drink": "Cupid’s Kiss Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16423,18 +16423,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 7,
@@ -16452,7 +16452,7 @@
       "id": "14fd4040-f6da-4ccc-9a0b-f5014da690c4",
       "drink": "Cupid’s Kiss Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16476,18 +16476,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -16505,7 +16505,7 @@
       "id": "900da671-deae-44d3-b479-bffaf5ccee40",
       "drink": "Cupid’s Kiss Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16529,18 +16529,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -16558,7 +16558,7 @@
       "id": "aa512318-b265-4780-b33b-98c5c304de48",
       "drink": "Cupid’s Kiss Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16582,18 +16582,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 7,
@@ -16924,7 +16924,7 @@
       "id": "4a11bad0-b50e-4a54-b073-77dbbf9cd2f8",
       "drink": "Raspberry Truffle Iced",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16948,18 +16948,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 7,
@@ -16972,7 +16972,7 @@
       "id": "92a9312f-5b67-46ef-bc8d-49d01d5348f7",
       "drink": "Raspberry Truffle Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -16996,18 +16996,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -17020,7 +17020,7 @@
       "id": "cda013c1-d95a-4c43-97b9-df89e67f32f8",
       "drink": "Raspberry Truffle Iced",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -17044,18 +17044,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -17068,7 +17068,7 @@
       "id": "83584f56-add7-4ccd-9fd0-a299ef63cac3",
       "drink": "Raspberry Truffle Iced",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -17092,18 +17092,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 7,
@@ -17116,7 +17116,7 @@
       "id": "d42c6525-25e3-4f9f-9871-e3d98a11be95",
       "drink": "Almond Joy",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17140,18 +17140,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "6"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "6"
         }
       ]
     },
@@ -17159,7 +17159,7 @@
       "id": "b86f08b3-cfd4-4272-a25e-6aad44056c78",
       "drink": "Almond Joy",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17183,18 +17183,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "7"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "7"
         }
       ]
     },
@@ -17202,7 +17202,7 @@
       "id": "62cab87b-51c0-4767-b4b0-00d8062e9754",
       "drink": "Almond Joy",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17226,18 +17226,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "3"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -17245,7 +17245,7 @@
       "id": "83bf3c82-1af6-4490-a6c2-d312ca960607",
       "drink": "Mounds",
       "size": "12 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17259,18 +17259,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "6"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "6"
         }
       ]
     },
@@ -17278,7 +17278,7 @@
       "id": "963b970a-b775-440e-97ab-8cfc1a28dec7",
       "drink": "Mounds",
       "size": "16 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17292,18 +17292,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "7"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "7"
         }
       ]
     },
@@ -17311,7 +17311,7 @@
       "id": "6a41437d-0b6a-4867-b004-16a5741eb512",
       "drink": "Mounds",
       "size": "24 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17325,18 +17325,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "3"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -17344,7 +17344,7 @@
       "id": "2f3b5013-a847-42e6-93c4-b6064d9cebb1",
       "drink": "Snickers",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17368,18 +17368,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "6"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "6"
         }
       ]
     },
@@ -17387,7 +17387,7 @@
       "id": "a10b71fb-0810-4518-a3ae-5b42e9b766e8",
       "drink": "Snickers",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17411,18 +17411,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "7"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "7"
         }
       ]
     },
@@ -17430,7 +17430,7 @@
       "id": "82802f1b-182f-458c-aea8-75820a0978bf",
       "drink": "Snickers",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17454,18 +17454,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "6"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "3"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "6"
         }
       ]
     },
@@ -17839,7 +17839,7 @@
       "id": "7b9c0891-468e-4633-a219-be2af59ee014",
       "drink": "Chillin in Cabo",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17863,18 +17863,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "5"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "1"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "5"
         }
       ]
     },
@@ -17882,7 +17882,7 @@
       "id": "ff2ed533-c7a9-45f5-a456-645d7e5c996d",
       "drink": "Chillin in Cabo",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17906,18 +17906,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "6"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "6"
         }
       ]
     },
@@ -17925,7 +17925,7 @@
       "id": "dcf2e393-3acb-4a2f-9e9a-0394ade7e33c",
       "drink": "Chillin in Cabo",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17949,18 +17949,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "7"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "7"
         }
       ]
     },
@@ -17968,7 +17968,7 @@
       "id": "56b1bfb8-b41c-464f-b85d-16d42a2902d0",
       "drink": "Chillin in Cabo",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -17992,18 +17992,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -19866,7 +19866,7 @@
       "id": "c261c6eb-765f-4959-b5ff-b0d24a5998f4",
       "drink": "Honey Lavender Latte Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -19880,18 +19880,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 5,
@@ -19904,7 +19904,7 @@
       "id": "1f6789c5-ecff-49aa-9cfd-50ae01267598",
       "drink": "Honey Lavender Latte Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -19918,18 +19918,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 5,
@@ -19942,7 +19942,7 @@
       "id": "806b48de-fcb0-4628-97a6-75386d0ef76c",
       "drink": "Honey Lavender Latte Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -19956,18 +19956,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 5,
@@ -19980,7 +19980,7 @@
       "id": "f90780c3-4581-45d4-8a6c-70726dabcdb7",
       "drink": "Honey Lavender Latte Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___",
+      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -19994,18 +19994,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 5,
@@ -22334,7 +22334,7 @@
       "id": "05ccda35-1ead-4646-b546-265f2d0e8db9",
       "drink": "Coco Cabana",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -22358,18 +22358,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -22377,7 +22377,7 @@
       "id": "7fd3b73c-a319-48c1-8f21-e9ce49d9119d",
       "drink": "Coco Cabana",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -22401,18 +22401,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -22420,7 +22420,7 @@
       "id": "8a3a73e4-a5e3-4645-a099-427a0d3ff7cf",
       "drink": "Coco Cabana",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -22444,18 +22444,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -22463,7 +22463,7 @@
       "id": "12379bee-d1eb-499e-85ba-b7fccfb1700b",
       "drink": "Coco Cabana",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -22487,18 +22487,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -22506,7 +22506,7 @@
       "id": "5fb5b94b-8f18-43f4-8a5d-fb66d97c6cb1",
       "drink": "Coco Cabana - Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -22530,18 +22530,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -22549,7 +22549,7 @@
       "id": "5ac0e4cd-f4df-477d-90be-d4adc02571b2",
       "drink": "Coco Cabana - Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -22573,18 +22573,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -22592,7 +22592,7 @@
       "id": "1fa70334-88e3-42bf-86a3-bf62de2bc1de",
       "drink": "Coco Cabana - Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -22616,18 +22616,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -23168,7 +23168,7 @@
       "id": "5c883e25-636b-4518-9f92-1be2af56e700",
       "drink": "Gingerbread Latte Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -23202,18 +23202,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 9,
@@ -23226,7 +23226,7 @@
       "id": "4a33f1fa-90f6-45f7-9304-5f9c992ea054",
       "drink": "Gingerbread Latte Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -23260,18 +23260,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 9,
@@ -23284,7 +23284,7 @@
       "id": "b7ffdaf9-f19d-48f5-b37e-daaf142274b5",
       "drink": "Gingerbread Latte Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -23318,18 +23318,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 9,
@@ -23890,7 +23890,7 @@
       "id": "19a7f26e-590d-46cf-82a9-5ead769bf3cf",
       "drink": "The Rudolph Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -23914,18 +23914,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -23938,7 +23938,7 @@
       "id": "70bd6ead-1589-4448-a36f-e32056f800d8",
       "drink": "The Rudolph Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -23962,18 +23962,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -23986,7 +23986,7 @@
       "id": "49449b2e-8cee-4a50-8d64-557ee37aaebb",
       "drink": "The Rudolph Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -24010,18 +24010,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 7,
@@ -24358,7 +24358,7 @@
       "id": "92a0638a-b3b6-4ec6-b481-948b1c2ad0c5",
       "drink": "Peppermint Snowball Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -24382,18 +24382,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -24406,7 +24406,7 @@
       "id": "cbfab7d8-ffb5-4040-b9db-4887e4fcac76",
       "drink": "Peppermint Snowball Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -24430,18 +24430,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -24454,7 +24454,7 @@
       "id": "1f772e1b-1689-407a-8f71-c1fc1deb0990",
       "drink": "Peppermint Snowball Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -24478,18 +24478,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 7,
@@ -25126,7 +25126,7 @@
       "id": "c0dfad36-e4a5-4e17-ac1c-8f95267f236c",
       "drink": "Cupid’s Kiss Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -25150,18 +25150,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -25169,7 +25169,7 @@
       "id": "66f599ef-a39e-4b3c-972d-e8696ba5a9c5",
       "drink": "Cupid’s Kiss Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -25193,18 +25193,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -25212,7 +25212,7 @@
       "id": "b28323f5-e465-41e2-9b7e-0092bd4977dc",
       "drink": "Cupid’s Kiss Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -25236,18 +25236,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -25407,7 +25407,7 @@
       "id": "3dca08c9-c856-4a35-b537-e01f047fe7b3",
       "drink": "Raspberry Truffle Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -25431,18 +25431,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -25450,7 +25450,7 @@
       "id": "0aed87c3-b27d-463b-9823-8445601eff63",
       "drink": "Raspberry Truffle Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -25474,18 +25474,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -25493,7 +25493,7 @@
       "id": "292825bf-da13-43a5-bb80-39fdeafdff94",
       "drink": "Raspberry Truffle Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -25517,18 +25517,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -26663,7 +26663,7 @@
       "id": "d196e095-cf96-41ef-8d5a-e1875e7af33f",
       "drink": "Sugar Cookie Latte Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -26697,18 +26697,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "1 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 9,
@@ -26726,7 +26726,7 @@
       "id": "dee159ef-de8c-444a-bf87-4ed7bd91becc",
       "drink": "Sugar Cookie Latte Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -26760,18 +26760,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 9,
@@ -26789,7 +26789,7 @@
       "id": "c7f031a5-b76a-470a-a13c-2cc678796ddb",
       "drink": "Sugar Cookie Latte Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -26823,18 +26823,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 9,
@@ -26852,7 +26852,7 @@
       "id": "3fee9029-c879-49a2-bdef-1d1456268fdc",
       "drink": "Sugar Cookie Latte Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___\n___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -26886,18 +26886,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 9,
@@ -28111,7 +28111,7 @@
       "id": "f2a22aac-345d-4dff-bcfb-dbf23e2cc3c8",
       "drink": "Kona Cloud Chai Iced",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -28125,18 +28125,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "1 1/2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -28144,7 +28144,7 @@
       "id": "54a3e997-595c-451f-80fb-95f4a1269fbd",
       "drink": "Kona Cloud Chai Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -28158,18 +28158,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -28177,7 +28177,7 @@
       "id": "e1eeaefe-95fc-4dda-8afc-18dd58b37dbb",
       "drink": "Kona Cloud Chai Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ on top",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -28191,18 +28191,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "1 1/2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 5,
@@ -28215,7 +28215,7 @@
       "id": "4d0f7a40-eea2-4248-bd63-e77b8375229e",
       "drink": "Kona Cloud Chai Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ on top",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -28229,18 +28229,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 5,
@@ -28253,7 +28253,7 @@
       "id": "b1ab1e23-5bbb-44ef-8ca8-e0f8f153d889",
       "drink": "Kona Cloud Chai Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ on top",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -28267,18 +28267,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 5,
@@ -28375,7 +28375,7 @@
       "id": "aa122855-87cc-42ff-a3bf-e8d7a6477c56",
       "drink": "Maui Mocha Iced",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -28389,18 +28389,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -28408,7 +28408,7 @@
       "id": "b3f2aeb5-1f20-4b0d-9577-38c2523b33f0",
       "drink": "Maui Mocha Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -28422,18 +28422,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "6"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -35594,7 +35594,7 @@
       "id": "005b38cc-6d17-4d4a-8ab2-675d7b2ea8e0",
       "drink": "Caramel Apple Pie",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim of cup\nAdd ___\n___ on top\nCrushed ___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim of cup\nAdd ___\n___ on top\nCrushed ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -35618,18 +35618,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "1 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 7,
@@ -35657,7 +35657,7 @@
       "id": "f39475ee-a211-4687-84ff-a34eb0d6b34e",
       "drink": "Caramel Apple Pie",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim of cup\nAdd ___\n___ on top\nCrushed ___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim of cup\nAdd ___\n___ on top\nCrushed ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -35681,18 +35681,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -35720,7 +35720,7 @@
       "id": "12776418-c384-4524-ac1b-0d1fc11023b1",
       "drink": "Caramel Apple Pie",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim of cup\nAdd ___\n___ on top\nCrushed ___ on top",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim of cup\nAdd ___\n___ on top\nCrushed ___ on top",
       "blanks": [
         {
           "index": 0,
@@ -35744,18 +35744,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -36026,7 +36026,7 @@
       "id": "4fb3deae-82da-4760-8d7b-e9f18526b5cf",
       "drink": "Green Mamba",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___",
+      "template": "___ scoops of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___",
       "blanks": [
         {
           "index": 0,
@@ -36050,18 +36050,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -37862,7 +37862,7 @@
       "id": "7780a3ae-a25a-4cb0-b091-b1a8bd04baed",
       "drink": "The Lucky Charm Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -37886,18 +37886,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         }
       ]
     },
@@ -37905,7 +37905,7 @@
       "id": "10d7e03b-a85d-4eab-bb7d-ba0425c4200b",
       "drink": "The Lucky Charm Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -37929,18 +37929,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         }
       ]
     },
@@ -37948,7 +37948,7 @@
       "id": "f17a49de-180e-4681-8248-d90793435e7b",
       "drink": "The Lucky Charm Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -37972,18 +37972,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -37991,7 +37991,7 @@
       "id": "33ab73fc-5039-4345-9ea0-eb934db9be2b",
       "drink": "The Lucky Charm Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -38015,18 +38015,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
@@ -38034,7 +38034,7 @@
       "id": "18f9bea8-a15a-455d-85cc-47d84289e7b6",
       "drink": "Samoa Sunrise Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top\n___ On Kona",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\n___ On Kona",
       "blanks": [
         {
           "index": 0,
@@ -38068,18 +38068,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 9,
@@ -38097,7 +38097,7 @@
       "id": "c5b42476-e900-42f2-83fc-3ab216902f7c",
       "drink": "Samoa Sunrise Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top\n___ On Kona",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\n___ On Kona",
       "blanks": [
         {
           "index": 0,
@@ -38131,18 +38131,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 9,
@@ -38160,7 +38160,7 @@
       "id": "ece84fe3-3ed5-44d3-8ba8-77ed45e98c30",
       "drink": "Samoa Sunrise Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ on top\n___ On Kona",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ on top\n___ On Kona",
       "blanks": [
         {
           "index": 0,
@@ -38194,18 +38194,18 @@
         },
         {
           "index": 6,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 7,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 8,
+          "index": 7,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 9,
@@ -38507,7 +38507,7 @@
       "id": "6b4e5418-9387-469f-a3c6-ea7024ac7d6a",
       "drink": "Beach S’more",
       "size": "16 oz",
-      "template": "___ chocolate macadamia nut syrup\n___ pumps of ___\n___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim of cup\nAdd ___",
+      "template": "___ chocolate macadamia nut syrup\n___ pumps of ___\n___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim of cup\nAdd ___",
       "blanks": [
         {
           "index": 0,
@@ -38536,18 +38536,18 @@
         },
         {
           "index": 5,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 6,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 7,
+          "index": 6,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 7,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 8,
@@ -39774,7 +39774,7 @@
       "id": "8e853085-3db0-4632-979c-4fe7cd5a9bab",
       "drink": "Salty Ex Boyfriend HOT",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -39798,18 +39798,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -39837,7 +39837,7 @@
       "id": "e4a094a8-d6cf-4b09-af0c-cf063ea85247",
       "drink": "Salty Ex Boyfriend HOT",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -39861,18 +39861,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -39900,7 +39900,7 @@
       "id": "9d47f009-c11c-481c-ad25-1a2073aa183b",
       "drink": "Salty Ex Boyfriend HOT",
       "size": "20 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -39924,18 +39924,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 7,
@@ -39963,7 +39963,7 @@
       "id": "e4c8a598-bf32-4c1e-880f-d6c5951fa693",
       "drink": "Salty Ex Girlfriend HOT",
       "size": "12 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -39987,18 +39987,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -40026,7 +40026,7 @@
       "id": "f8d6bdfd-bf96-47af-8c98-c266f729c50b",
       "drink": "Salty Ex Girlfriend HOT",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -40050,18 +40050,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -40089,7 +40089,7 @@
       "id": "4c56f6b5-63fe-4c38-a8b0-846f552e4711",
       "drink": "Salty Ex Girlfriend HOT",
       "size": "20 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ oz of ___\n___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -40113,18 +40113,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 7,
@@ -49531,7 +49531,7 @@
       "id": "hh-iced-12 oz",
       "drink": "Hawaiian Honey",
       "size": "12 oz",
-      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim",
+      "template": "___ pumps of ___\n___ squirt of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -49555,18 +49555,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
         },
         {
           "index": 7,
@@ -49579,7 +49579,7 @@
       "id": "hh-iced-16 oz",
       "drink": "Hawaiian Honey",
       "size": "16 oz",
-      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim",
+      "template": "___ pumps of ___\n___ squirt of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -49603,18 +49603,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -49627,7 +49627,7 @@
       "id": "hh-iced-24 oz",
       "drink": "Hawaiian Honey",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim",
+      "template": "___ pumps of ___\n___ squirt of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -49651,18 +49651,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -49675,7 +49675,7 @@
       "id": "hh-iced-32 oz",
       "drink": "Hawaiian Honey",
       "size": "32 oz",
-      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ around the rim",
+      "template": "___ pumps of ___\n___ squirt of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the rim",
       "blanks": [
         {
           "index": 0,
@@ -49699,18 +49699,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "20"
         },
         {
           "index": 7,
@@ -49723,7 +49723,7 @@
       "id": "hh-hot-12 oz",
       "drink": "Hawaiian Honey Hot",
       "size": "12 oz",
-      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ over the top of the drink",
+      "template": "___ pumps of ___\n___ squirt of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ over the top of the drink",
       "blanks": [
         {
           "index": 0,
@@ -49747,18 +49747,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
         },
         {
           "index": 7,
@@ -49771,7 +49771,7 @@
       "id": "hh-hot-16 oz",
       "drink": "Hawaiian Honey Hot",
       "size": "16 oz",
-      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ over the top of the drink",
+      "template": "___ pumps of ___\n___ squirt of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ over the top of the drink",
       "blanks": [
         {
           "index": 0,
@@ -49795,18 +49795,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
         },
         {
           "index": 7,
@@ -49819,7 +49819,7 @@
       "id": "hh-hot-20 oz",
       "drink": "Hawaiian Honey Hot",
       "size": "20 oz",
-      "template": "___ pumps of ___\n___ squirt of ___\nMilk of Choice to ___ oz\n___ oz of ___\nAdd ___ over the top of the drink",
+      "template": "___ pumps of ___\n___ squirt of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ over the top of the drink",
       "blanks": [
         {
           "index": 0,
@@ -49843,18 +49843,18 @@
         },
         {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "14"
-        },
-        {
-          "index": 5,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 6,
+          "index": 5,
           "type": "cream",
           "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "14"
         },
         {
           "index": 7,
@@ -51107,7 +51107,7 @@
       "id": "kcci-24 oz",
       "drink": "Kona Cloud Chai Iced",
       "size": "24 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -51121,18 +51121,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "12"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "12"
         }
       ]
     },
@@ -51140,7 +51140,7 @@
       "id": "kcci-32 oz",
       "drink": "Kona Cloud Chai Iced",
       "size": "32 oz",
-      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -51154,18 +51154,18 @@
         },
         {
           "index": 2,
-          "type": "fill_oz",
-          "correct": "20"
-        },
-        {
-          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
+        },
+        {
+          "index": 4,
+          "type": "fill_oz",
+          "correct": "20"
         }
       ]
     },
