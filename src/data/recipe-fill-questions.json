@@ -40386,7 +40386,7 @@
       "id": "5968e7c5-3a79-42ee-8165-300eaa5311bf",
       "drink": "Lilikoi Matcha",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -40400,18 +40400,18 @@
         },
         {
           "index": 2,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
-          "type": "syrup",
-          "correct": "passionfruit syrup"
-        },
-        {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "8"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
@@ -40420,8 +40420,8 @@
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "passionfruit syrup"
         }
       ]
     },
@@ -40429,7 +40429,7 @@
       "id": "eb870efd-23cf-4d57-ac02-52f9e5e690d8",
       "drink": "Lilikoi Matcha",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -40443,18 +40443,18 @@
         },
         {
           "index": 2,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
-          "type": "syrup",
-          "correct": "passionfruit syrup"
-        },
-        {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "10"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
@@ -40463,8 +40463,8 @@
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "passionfruit syrup"
         }
       ]
     },
@@ -40472,7 +40472,7 @@
       "id": "4611d47d-dadf-45e2-8fb1-22e211013686",
       "drink": "Lilikoi Matcha",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -40486,18 +40486,18 @@
         },
         {
           "index": 2,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
-          "type": "syrup",
-          "correct": "passionfruit syrup"
-        },
-        {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "12"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
@@ -40506,8 +40506,8 @@
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "passionfruit syrup"
         }
       ]
     },
@@ -40515,7 +40515,7 @@
       "id": "50c8b016-bdc3-42bc-9130-7509dff6e8f7",
       "drink": "Lilikoi Matcha",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\nMilk of Choice to ___ oz\n___ oz of ___",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -40529,18 +40529,18 @@
         },
         {
           "index": 2,
+          "type": "fill_oz",
+          "correct": "20"
+        },
+        {
+          "index": 3,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 3,
-          "type": "syrup",
-          "correct": "passionfruit syrup"
-        },
-        {
           "index": 4,
-          "type": "fill_oz",
-          "correct": "20"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
@@ -40549,8 +40549,8 @@
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "passionfruit syrup"
         }
       ]
     },
@@ -42683,7 +42683,7 @@
       "id": "c2606eaa-19a6-4544-839d-eaff38da5971",
       "drink": "Banana Pudding Matcha Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ pump ___ in ___ oz of ___\nLayer of ___ on kona",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -42703,22 +42703,22 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
-          "type": "syrup",
-          "correct": "banana syrup"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "banana syrup"
         },
         {
           "index": 7,
@@ -42731,7 +42731,7 @@
       "id": "3dc16968-561e-40a2-b696-f0e91ef7e884",
       "drink": "Banana Pudding Matcha Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ pump ___ in ___ oz of ___\nLayer of ___ on kona",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -42751,22 +42751,22 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
-          "type": "syrup",
-          "correct": "banana syrup"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "banana syrup"
         },
         {
           "index": 7,
@@ -42779,7 +42779,7 @@
       "id": "072eced6-fae9-43e0-b50a-85edd248b017",
       "drink": "Banana Pudding Matcha Hot",
       "size": "24 oz",
-      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ pump ___ in ___ oz of ___\nLayer of ___ on kona",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -42799,22 +42799,22 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
-          "type": "syrup",
-          "correct": "banana syrup"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "syrup",
+          "correct": "banana syrup"
         },
         {
           "index": 7,
@@ -49673,7 +49673,7 @@
       "id": "cbm-iced-12 oz",
       "drink": "Cookie Butter Matcha Iced",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ scoops of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -49693,22 +49693,22 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
-          "type": "powder",
-          "correct": "cookie butter"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "powder",
+          "correct": "cookie butter"
         },
         {
           "index": 7,
@@ -49721,7 +49721,7 @@
       "id": "cbm-iced-16 oz",
       "drink": "Cookie Butter Matcha Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ scoops of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -49741,22 +49741,22 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
-          "type": "powder",
-          "correct": "cookie butter"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "powder",
+          "correct": "cookie butter"
         },
         {
           "index": 7,
@@ -49769,7 +49769,7 @@
       "id": "cbm-iced-24 oz",
       "drink": "Cookie Butter Matcha Iced",
       "size": "24 oz",
-      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ scoops of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -49789,22 +49789,22 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
-          "type": "powder",
-          "correct": "cookie butter"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "powder",
+          "correct": "cookie butter"
         },
         {
           "index": 7,
@@ -49817,7 +49817,7 @@
       "id": "cbm-iced-32 oz",
       "drink": "Cookie Butter Matcha Iced",
       "size": "32 oz",
-      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ scoops of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -49837,22 +49837,22 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         },
         {
           "index": 4,
-          "type": "powder",
-          "correct": "cookie butter"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
           "type": "quantity",
-          "correct": "4"
+          "correct": "2"
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "powder",
+          "correct": "cookie butter"
         },
         {
           "index": 7,
@@ -49865,7 +49865,7 @@
       "id": "cbm-hot-12 oz",
       "drink": "Cookie Butter Matcha Hot",
       "size": "12 oz",
-      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ scoops of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -49885,22 +49885,22 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
-          "type": "powder",
-          "correct": "cookie butter"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "powder",
+          "correct": "cookie butter"
         },
         {
           "index": 7,
@@ -49913,7 +49913,7 @@
       "id": "cbm-hot-16 oz",
       "drink": "Cookie Butter Matcha Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ scoops of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -49933,22 +49933,22 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
-          "type": "powder",
-          "correct": "cookie butter"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "powder",
+          "correct": "cookie butter"
         },
         {
           "index": 7,
@@ -49961,7 +49961,7 @@
       "id": "cbm-hot-24 oz",
       "drink": "Cookie Butter Matcha Hot",
       "size": "24 oz",
-      "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ scoop of ___ in ___ oz of ___\nLayer of ___ on kona",
+      "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ scoops of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -49981,22 +49981,22 @@
         {
           "index": 3,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2"
         },
         {
           "index": 4,
-          "type": "powder",
-          "correct": "cookie butter"
+          "type": "cream",
+          "correct": "Kona Cloud"
         },
         {
           "index": 5,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 6,
-          "type": "cream",
-          "correct": "Kona Cloud"
+          "type": "powder",
+          "correct": "cookie butter"
         },
         {
           "index": 7,
