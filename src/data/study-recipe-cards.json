@@ -2088,7 +2088,7 @@
   {
     "id": "0e51f41a-b0b2-4f20-afb7-fdb1b745a97f",
     "drink": "Root Beer Float",
-    "recipe": "● Small (12 oz)\nIn a measuring cup:\n1 1/2 (one and a half) oz Maui Milk\nMix\nAdd 1/2 (one half) can of Root beer\nPour over ice\n\n● Medium (16 oz)\nIn a measuring cup:\n2 oz Maui Milk\nMix\nAdd 3/4 (three quarters) can of Root beer\nPour over ice\n\n● Large (24 oz)\nIn a measuring cup:\n2 1/2 (two and a half) oz Maui Milk\nMix\nAdd 1 can of Root beer\nPour over ice\n\n● X-tra Large (32 oz)\nIn a measuring cup:\n1 1/2 (one and a half) cans of Root beer\n4 oz Maui Milk\nMix\nPour over ice",
+    "recipe": "● Small (12 oz)\nIn a measuring cup:\n1 1/2 (one and a half) oz Maui Milk\nMix\nAdd 1/2 (one half) can of Root beer\nPour over ice\n\n● Medium (16 oz)\nIn a measuring cup:\n2 oz Maui Milk\nMix\nAdd 3/4 (three quarters) can of Root beer\nPour over ice\n\n● Large (24 oz)\nIn a measuring cup:\n2 1/2 (two and a half) oz Maui Milk\nMix\nAdd 1 can of Root beer\nPour over ice\n\n● X-tra Large (32 oz)\nIn a measuring cup:\n4 oz Maui Milk\nMix\nAdd 1 1/2 (one and a half) cans of Root beer\nPour over ice",
     "category": "Chillers & Blended",
     "mela_category": "Coffee Free - Not Blended"
   },
@@ -2200,7 +2200,7 @@
   {
     "id": "8b96b91b-d7dc-4c9a-b8fb-fcd57b06c5c5",
     "drink": "Sugar Latte Hot",
-    "recipe": "● Small (12 oz)\nIn a hot drink cup:\n1 1/2 (one and a half) scoops of brown sugar\n1 espresso shot\nMix thoroughly\nFill steamer to 10 oz milk of choice\n\n● Medium (16 oz)\nIn a hot drink cup:\n2 scoops of brown sugar\n2 espresso shots\nMix thoroughly\nFill steamer to 12 oz milk of choice\n\n● Large (20 oz)\nIn a hot drink cup:\n2 1/2 (two and a half) scoops of brown sugar\n2 espresso shots\nMix thoroughly\nFill to steamer 14 with milk of choice",
+    "recipe": "● Small (12 oz)\nIn a hot drink cup:\n1 1/2 (one and a half) scoops of brown sugar\n1 espresso shot\nMix thoroughly\nIn a measuring cup:\n10 oz milk of choice\nTransfer into steamer pitcher\nSteam to desired temperature\nTransfer into hot drink cup\n\n● Medium (16 oz)\nIn a hot drink cup:\n2 scoops of brown sugar\n2 espresso shots\nMix thoroughly\nIn a measuring cup:\n12 oz milk of choice\nTransfer into steamer pitcher\nSteam to desired temperature\nTransfer into hot drink cup\n\n● Large (20 oz)\nIn a hot drink cup:\n2 1/2 (two and a half) scoops of brown sugar\n2 espresso shots\nMix thoroughly\nIn a measuring cup:\n14 oz milk of choice\nTransfer into steamer pitcher\nSteam to desired temperature\nTransfer into hot drink cup",
     "category": "Supremes — Hot",
     "mela_category": "Supreme Iced"
   },
@@ -2718,14 +2718,14 @@
   {
     "id": "2ded81b1-2777-4de2-891d-054c13f59503",
     "drink": "Banana Cream Iced",
-    "recipe": "● Medium (16 oz)\nIn drink cup:\n1 pump of vanilla syrup\n2 pumps of banana syrup\n1 Makenna Energy Can\n1/2 (one half) oz Maui\nMIX THOROUGHLY\nPour over ice\nAdd white chocolate drizzle\nAdd Kona Cloud\n\n● Large (24 oz)\nIn drink cup:\n1 1/4 (one and a quarter) pumps of vanilla syrup\n2 1/2 (two and a half) pumps of banana syrup\n1 1/2 (one and a half) Makenna Energy Cans\n1 1/2 (one and a half) oz Maui\nMIX THOROUGHLY\nPour over ice\nAdd white chocolate drizzle\nAdd Kona Cloud\n\n● X-tra Large (32 oz)\nIn drink cup:\n2 pumps of vanilla syrup\n4 pumps of banana syrup\n2 Makenna Energy Cans\n2 oz Maui\nMIX THOROUGHLY\nPour over ice\nAdd white chocolate drizzle\nAdd Kona Cloud",
+    "recipe": "● Medium (16 oz)\nIn drink cup:\nLine the cup with white chocolate drizzle\n1 pump of vanilla syrup\n2 pumps of banana syrup\n1 Makenna Energy Can\n1/2 (half) oz Maui Milk\nMIX THOROUGHLY\nPour over ice\nAdd Kona Cloud\n\n● Large (24 oz)\nIn drink cup:\nLine the cup with white chocolate drizzle\n1 1/2 (one and a half) pumps of vanilla syrup\n2 1/2 (two and a half) pumps of banana syrup\n1 1/2 (one and a half) Makenna Energy Cans\n1/2 (one half) oz Maui Milk\nMIX THOROUGHLY\nPour over ice\nAdd Kona Cloud\n\n● X-tra Large (32 oz)\nIn drink cup:\nLine the cup with white chocolate drizzle\n2 pumps of vanilla syrup\n4 pumps of banana syrup\n2 Makenna Energy Cans\n1 oz Maui Milk\nMIX THOROUGHLY\nPour over ice\nAdd Kona Cloud",
     "category": "Makenna Energy",
     "mela_category": "Makenna Energy"
   },
   {
     "id": "65316016-5b6e-476a-8852-ecfdee3b1f14",
     "drink": "Banana Cream Slush",
-    "recipe": "● Medium (16 oz)\nIn drink cup:\nLine the cup with white chocolate drizzle\n1 pump of vanilla syrup\n2 pumps of banana syrup\nIn a separate measuring cup:\n1 oz Maui\nPour into drink cup\nAdd Slush\nMix thoroughly\nAdd Kona Cloud\n\n● Large (24 oz)\nIn drink cup:\nLine the cup with white chocolate drizzle\n3/4 (three quarters) pump of vanilla syrup\n1 1/4 (one and a quarter) pumps of banana syrup\nIn a separate measuring cup:\n1 oz Maui\nPour into drink cup\nAdd Slush\nMix thoroughly\nAdd Kona Cloud\n\n● X-tra Large (32 oz)\nIn drink cup:\nLine the cup with white chocolate drizzle\n2 pumps of vanilla syrup\n4 pumps of banana syrup\nIn a separate measuring cup:\n2 oz Maui\nPour into drink cup\nAdd Slush\nMix thoroughly\nAdd Kona Cloud",
+    "recipe": "● Small (12 oz)\nIn drink cup:\n1/4 (one quarter) pump of vanilla syrup\n1/2 (one half) pump of banana syrup\nIn a separate measuring cup:\n1/2 (one half) oz Maui Milk\nAdd Slush\nMix thoroughly\nPour into drink cup\nAdd white chocolate drizzle around the cup\nAdd Kona Cloud\nAdd white chocolate drizzle on top of Kona\n\n● Medium (16 oz)\nIn drink cup:\n1/2 (one half) pump of vanilla syrup\n1 pump of banana syrup\nIn a separate measuring cup:\n1/2 (one half) oz Maui Milk\nAdd Slush\nMix thoroughly\nPour into drink cup\nAdd white chocolate drizzle around the cup\nAdd Kona Cloud\nAdd white chocolate drizzle on top of Kona\n\n● Large (24 oz)\nIn drink cup:\n3/4 (three quarters) pump of vanilla syrup\n1 1/4 (one and a quarter) pumps of banana syrup\nIn a separate measuring cup:\n1/2 (one half) oz Maui Milk\nAdd Slush\nMix thoroughly\nPour into drink cup\nAdd white chocolate drizzle around the cup\nAdd Kona Cloud\nAdd white chocolate drizzle on top of Kona\n\n● X-tra Large (32 oz)\nIn drink cup:\n1 pump of vanilla syrup\n2 pumps of banana syrup\nIn a separate measuring cup:\n1 oz Maui Milk\nAdd Slush\nMix thoroughly\nPour into drink cup\nAdd white chocolate drizzle around the cup\nAdd Kona Cloud\nAdd white chocolate drizzle on top of Kona",
     "category": "Slushies",
     "mela_category": "Makenna Energy Slushy"
   },
