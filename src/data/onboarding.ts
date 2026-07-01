@@ -17,7 +17,7 @@ export const ONBOARDING_DOCS: {
   {
     id: 'direct_deposit',
     title: 'Direct Deposit Authorization',
-    description: 'Routing and account info for payroll. Voided check or bank letter accepted.',
+    description: 'Signed in person — not via this app. Manager provides the form on Day 1. Once the completed form is returned with a voided check or bank letter, sign below to record it in the portal.',
     required: false,
     templateBody: `I authorize Makenna Koffee Company to deposit my net pay into the bank account I have designated. I understand that this authorization remains in effect until I notify the company in writing of any change. If funds are deposited in error, I authorize Makenna Koffee to recover the funds via reverse deposit.`,
   },
