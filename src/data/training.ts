@@ -991,6 +991,7 @@ export const STATIONS: TrainingStation[] = [
           'Whisk until the sugar dissolves completely and the water looks transparent with no sugar crystals at the bottom.',
           'Pour the sugar syrup into the second slushy mix pitcher.',
           'Add 32 oz of cold drinking water to the second pitcher.',
+          'Tom-Tom the contents from both pitchers 3–4 times until the color is uniform.',
           'Pour the slushy mix into the slushy machine or store in the refrigerator for later.',
           'Use By Date: 7 days from the current date.',
         ],
