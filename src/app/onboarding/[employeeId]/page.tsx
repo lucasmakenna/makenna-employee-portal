@@ -8,6 +8,7 @@ import {
   CheckCircle2,
   FileText,
   Lock,
+  Plus,
   Shield,
   ShieldCheck,
   Stamp,
@@ -16,12 +17,11 @@ import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
 import SignaturePad, { SignaturePadResult } from '@/components/SignaturePad';
 import ESIGNConsentGate from '@/components/ESIGNConsentGate';
-import W4Form, { W4Data } from '@/components/W4Form';
-import I9Form, { I9Data, I9Signatures } from '@/components/I9Form';
 import FormSheet from '@/components/FormSheet';
 import HarassmentTrainingUpload, { HarassmentTrainingResult } from '@/components/HarassmentTrainingUpload';
 import WorkPermitUpload, { WorkPermitResult } from '@/components/WorkPermitUpload';
 import { useCurrentUser } from '@/lib/auth';
+import { can } from '@/data/permissions';
 import { getDocTemplate, WORK_PERMIT_DOC } from '@/data/onboarding';
 import { fullName } from '@/data/employees';
 import { getLocation } from '@/data/locations';
@@ -133,117 +133,6 @@ export default function OnboardingDetail() {
     setActiveTaskId(null);
   };
 
-  const handleW4Submit = async (formData: W4Data, signature: SignaturePadResult) => {
-    const documentBody = [
-      `IRS Form W-4 — Employee's Withholding Certificate`,
-      `Employee: ${formData.firstName} ${formData.middleInitial} ${formData.lastName}`.trim(),
-      `SSN: ${formData.ssn}`,
-      `Address: ${formData.address}, ${formData.city}, ${formData.state} ${formData.zip}`,
-      `Filing status: ${formData.filingStatus}`,
-      `Multiple jobs checkbox: ${formData.multipleJobsChecked ? 'Checked' : 'Not checked'}`,
-      `Qualifying children amount: $${formData.qualifyingChildrenAmount || '0'}`,
-      `Other dependents amount: $${formData.otherDependentsAmount || '0'}`,
-      `Dependents total: $${formData.dependentsTotalAmount || '0'}`,
-      `Other income: $${formData.otherIncome || '0'}`,
-      `Deductions: $${formData.deductions || '0'}`,
-      `Extra withholding: $${formData.extraWithholding || '0'}`,
-      `Employer: ${formData.employerName}`,
-      `First date of employment: ${formData.firstDateOfEmployment}`,
-    ].join('\n');
-    const geo = await tryGetGeolocation();
-    const prior = await getMostRecentRecord();
-    const record = await stampSignature({
-      context: { kind: 'onboarding', employeeId: packet.employeeId, docId: 'w4' },
-      signerEmployeeId: packet.employeeId,
-      signerLegalName: signature.signerLegalName,
-      documentTitle: "IRS Form W-4 — Employee's Withholding Certificate",
-      documentBody,
-      signatureImagePngDataUrl: signature.signaturePngDataUrl,
-      consentAcknowledged: true,
-      priorRecord: prior,
-      geo,
-    });
-    appendSignature(record);
-    updatePacket(packet.employeeId, {
-      tasks: packet.tasks.map((t) =>
-        t.id === 'w4'
-          ? { ...t, signed: true, signedAt: record.signedAtIso, signedByName: signature.signerLegalName, signatureRecordId: record.id, formData: formData as unknown as Record<string, unknown> }
-          : t,
-      ),
-    });
-    setActiveTaskId(null);
-  };
-
-  const handleI9Submit = async (formData: I9Data, signatures: I9Signatures) => {
-    const docListSummary = formData.documentListType === 'A'
-      ? `List A: ${formData.listADocument.documentTitle} (${formData.listADocument.documentNumber})`
-      : `List B: ${formData.listBDocument.documentTitle} (${formData.listBDocument.documentNumber}) | List C: ${formData.listCDocument.documentTitle} (${formData.listCDocument.documentNumber})`;
-    const documentBody = [
-      `USCIS Form I-9 — Employment Eligibility Verification`,
-      `Employee: ${formData.firstName} ${formData.middleInitial} ${formData.lastName}`.trim(),
-      `Address: ${formData.address}${formData.aptNumber ? ' Apt ' + formData.aptNumber : ''}, ${formData.city}, ${formData.state} ${formData.zip}`,
-      `Date of birth: ${formData.dateOfBirth}`,
-      `Citizenship status: ${formData.citizenshipStatus}`,
-      `Documents presented: ${docListSummary}`,
-      `Employee first day: ${formData.employeeFirstDay}`,
-      `Employer: ${formData.employerOrganization} — ${formData.employerTitle}`,
-    ].join('\n');
-    const geo = await tryGetGeolocation();
-    const prior = await getMostRecentRecord();
-    const empRecord = await stampSignature({
-      context: { kind: 'onboarding', employeeId: packet.employeeId, docId: 'i9' },
-      signerEmployeeId: packet.employeeId,
-      signerLegalName: signatures.employee.signerLegalName,
-      documentTitle: 'Form I-9 Section 1 — Employee Attestation',
-      documentBody,
-      signatureImagePngDataUrl: signatures.employee.signaturePngDataUrl,
-      consentAcknowledged: true,
-      priorRecord: prior,
-      geo,
-    });
-    appendSignature(empRecord);
-    const prior2 = await getMostRecentRecord();
-    const emplorRecord = await stampSignature({
-      context: { kind: 'onboarding', employeeId: packet.employeeId, docId: 'i9' },
-      signerEmployeeId: user.id,
-      signerLegalName: signatures.employer.signerLegalName,
-      documentTitle: 'Form I-9 Section 2 — Employer Verification',
-      documentBody,
-      signatureImagePngDataUrl: signatures.employer.signaturePngDataUrl,
-      consentAcknowledged: true,
-      priorRecord: prior2,
-      geo,
-    });
-    appendSignature(emplorRecord);
-    const updatedTasks = packet.tasks.map((t) =>
-      t.id === 'i9'
-        ? { ...t, signed: true, signedAt: emplorRecord.signedAtIso, signedByName: signatures.employer.signerLegalName, signatureRecordId: empRecord.id, formData: formData as unknown as Record<string, unknown> }
-        : t,
-    );
-
-    // Auto-add work permit task if DOB reveals employee is under 18
-    if (formData.dateOfBirth && !packet.tasks.find((t) => t.id === 'work_permit')) {
-      const [yr, mo, dy] = formData.dateOfBirth.split('-').map(Number);
-      const dob = new Date(yr, mo - 1, dy);
-      const today = new Date();
-      let age = today.getFullYear() - dob.getFullYear();
-      const m = today.getMonth() - dob.getMonth();
-      if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) age--;
-      if (age < 18) {
-        updatedTasks.push({
-          id: 'work_permit',
-          title: WORK_PERMIT_DOC.title,
-          description: WORK_PERMIT_DOC.description,
-          required: true,
-          signed: false,
-        });
-      }
-    }
-
-    updatePacket(packet.employeeId, { tasks: updatedTasks });
-    setActiveTaskId(null);
-  };
-
   const handleHarassmentSign = async (result: HarassmentTrainingResult) => {
     const tpl = getDocTemplate('harassment_attestation');
     const geo = await tryGetGeolocation();
@@ -323,46 +212,26 @@ export default function OnboardingDetail() {
     });
   };
 
-  // W-4 full-screen sheet
-  const w4Task = packet.tasks.find((t) => t.id === 'w4');
-  const i9Task = packet.tasks.find((t) => t.id === 'i9');
   const workPermitTask = packet.tasks.find((t) => t.id === 'work_permit');
+  const canIssue = can(user.role, 'team.discipline');
+
+  const addWorkPermit = () => {
+    updatePacket(packet.employeeId, {
+      tasks: [
+        ...packet.tasks,
+        {
+          id: 'work_permit',
+          title: WORK_PERMIT_DOC.title,
+          description: WORK_PERMIT_DOC.description,
+          required: true,
+          signed: false,
+        },
+      ],
+    });
+  };
 
   return (
     <AppShell>
-      {/* W-4 full-screen form sheet */}
-      {activeTaskId === 'w4' && w4Task && !w4Task.signed && (
-        <FormSheet
-          title="IRS Form W-4"
-          subtitle="Employee's Withholding Certificate"
-          onClose={() => setActiveTaskId(null)}
-        >
-          <W4Form
-            employeeName={fullName(employee)}
-            defaultFirstDateOfEmployment={packet.startDate}
-            onSubmit={handleW4Submit}
-            onCancel={() => setActiveTaskId(null)}
-          />
-        </FormSheet>
-      )}
-
-      {/* I-9 full-screen form sheet */}
-      {activeTaskId === 'i9' && i9Task && !i9Task.signed && (
-        <FormSheet
-          title="Form I-9"
-          subtitle="Employment Eligibility Verification"
-          onClose={() => setActiveTaskId(null)}
-        >
-          <I9Form
-            employeeName={fullName(employee)}
-            defaultFirstDay={packet.startDate}
-            currentUserName={fullName(user)}
-            onSubmit={handleI9Submit}
-            onCancel={() => setActiveTaskId(null)}
-          />
-        </FormSheet>
-      )}
-
       {/* Harassment Prevention — full-screen sheet */}
       {activeTaskId === 'harassment_attestation' &&
         !packet.tasks.find((t) => t.id === 'harassment_attestation')?.signed && (
@@ -478,6 +347,17 @@ export default function OnboardingDetail() {
                   />
                 </div>
               </div>
+
+              {canIssue && !workPermitTask && (
+                <div className="mt-4 border-t border-ink-100 pt-4">
+                  <button
+                    onClick={addWorkPermit}
+                    className="flex items-center gap-1.5 text-xs text-ink-400 hover:text-cyan-600 transition"
+                  >
+                    <Plus size={13} /> Employee under 18? Add work permit
+                  </button>
+                </div>
+              )}
             </div>
 
             {/* Manager sign-off */}
@@ -530,7 +410,7 @@ export default function OnboardingDetail() {
                 startSign(t.id);
               };
 
-              if (t.id === 'w4' || t.id === 'i9' || t.id === 'harassment_attestation' || t.id === 'work_permit') {
+              if (t.id === 'harassment_attestation' || t.id === 'work_permit') {
                 const formToggle = () => {
                   if (t.signed) {
                     if (t.signatureRecordId) router.push(`/onboarding/${packet.employeeId}/certificate/${t.signatureRecordId}`);
@@ -572,7 +452,6 @@ function TaskRow({
   signerName,
   templateBody,
   completionProofDataUrl,
-  children,
 }: {
   task: OnboardingTask;
   expanded: boolean;
@@ -581,7 +460,6 @@ function TaskRow({
   signerName?: string;
   templateBody?: string;
   completionProofDataUrl?: string;
-  children?: React.ReactNode;
 }) {
   return (
     <div
@@ -633,15 +511,7 @@ function TaskRow({
         </span>
       </button>
 
-      {/* W-4 / I-9: render the full form as children */}
-      {expanded && !task.signed && children && (
-        <div className="border-t border-ink-100 p-4 bg-ink-50">
-          {children}
-        </div>
-      )}
-
-      {/* All other docs: show attestation text + signature pad */}
-      {expanded && !task.signed && !children && templateBody && signerName && (
+      {expanded && !task.signed && templateBody && signerName && (
         <div className="border-t border-ink-100 p-4 bg-white space-y-4">
           <div className="rounded-lg bg-cyan-50/50 p-4 text-sm text-ink-700">
             <p className="font-semibold text-ink-700 mb-2 flex items-center gap-2">
