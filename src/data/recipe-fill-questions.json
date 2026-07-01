@@ -41848,44 +41848,6 @@
       ]
     },
     {
-      "id": "08786118-81f6-4600-a87c-bb203c64f596",
-      "drink": "Honey Lavender Latte Hot",
-      "size": "32 oz",
-      "template": "___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "lavender syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "5"
-        },
-        {
-          "index": 3,
-          "type": "cream",
-          "correct": "Half and Half"
-        },
-        {
-          "index": 4,
-          "type": "fill_oz",
-          "correct": "24"
-        },
-        {
-          "index": 5,
-          "type": "drizzle",
-          "correct": "honey drizzle"
-        }
-      ]
-    },
-    {
       "id": "1163dcc1-cf1e-4105-9539-882a444c8d65",
       "drink": "Lavender Matcha Hot",
       "size": "12 oz",
@@ -43619,7 +43581,7 @@
     {
       "id": "5522475c-de46-41dc-9a9b-634c89e85405",
       "drink": "Strawberry Matcha Hot",
-      "size": "24 oz",
+      "size": "20 oz",
       "template": "___ scoops of ___\nMilk of choice to ___ oz\n___ pump ___ in ___ oz of kona",
       "blanks": [
         {
@@ -43753,7 +43715,7 @@
     {
       "id": "072eced6-fae9-43e0-b50a-85edd248b017",
       "drink": "Banana Pudding Matcha Hot",
-      "size": "24 oz",
+      "size": "20 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ pumps of ___\n___ on top",
       "blanks": [
         {
@@ -43907,7 +43869,7 @@
     {
       "id": "ed74a34f-8885-4a6d-b304-7657f6c12717",
       "drink": "Horchata Matcha Hot",
-      "size": "24 oz",
+      "size": "20 oz",
       "template": "___ scoops of ___\n___ scoop of ___\n___ pumps of ___\nMilk of choice to ___ oz\nAdd ___ and ___",
       "blanks": [
         {
@@ -44278,7 +44240,7 @@
     {
       "id": "e1d28c3d-253e-4411-881a-634eb869274f",
       "drink": "Sugar Crystal Matcha Hot",
-      "size": "24 oz",
+      "size": "20 oz",
       "template": "___ scoops of ___\n___ scoops of ___\nMilk of choice to ___ oz\n___ oz of kona with ___ scoop ___\nTop with ___",
       "blanks": [
         {
@@ -48603,7 +48565,7 @@
     {
       "id": "bf3-dmh-24 oz",
       "drink": "Double Matcha Hot",
-      "size": "24 oz",
+      "size": "20 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ scoop matcha in ___ oz of kona",
       "blanks": [
         {
@@ -50990,7 +50952,7 @@
     {
       "id": "cbm-hot-24 oz",
       "drink": "Cookie Butter Matcha Hot",
-      "size": "24 oz",
+      "size": "20 oz",
       "template": "___ scoops of ___\nMilk of Choice to ___ oz\n___ oz of ___\n___ scoops of ___\n___ on top",
       "blanks": [
         {
