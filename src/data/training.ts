@@ -982,7 +982,7 @@ export const STATIONS: TrainingStation[] = [
       {
         id: 'bb1-13',
         name: 'Makenna Energy Slushy mix — how to make it',
-        description: 'Make the slushy mix: 14 energy drinks, sugar syrup (12 oz sugar + hot water to 24 oz), mix, add 32 oz cold water, tom-tom, pour into slushy machine. Use By: 7 days.',
+        description: 'Make the slushy mix: 14 energy drinks, sugar syrup (12 oz sugar + hot water to 24 oz), mix, add 32 oz cold water, pour into slushy machine. Use By: 7 days.',
         estimatedMinutes: 15,
         competencyCriteria: [
           'Grab 2 empty slushy mix pitchers, a measuring cup, and a whisk.',
@@ -991,7 +991,6 @@ export const STATIONS: TrainingStation[] = [
           'Whisk until the sugar dissolves completely and the water looks transparent with no sugar crystals at the bottom.',
           'Pour the sugar syrup into the second slushy mix pitcher.',
           'Add 32 oz of cold drinking water to the second pitcher.',
-          'Tom-Tom the contents from both pitchers 3–4 times until the color is uniform.',
           'Pour the slushy mix into the slushy machine or store in the refrigerator for later.',
           'Use By Date: 7 days from the current date.',
         ],
