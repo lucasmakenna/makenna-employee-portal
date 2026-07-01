@@ -31,7 +31,7 @@ export const ONBOARDING_DOCS: {
   {
     id: 'handbook',
     title: 'Employee Handbook Acknowledgement',
-    description: 'Confirms you\'ve read the Makenna Koffee handbook including dress code, scheduling, conduct, and discipline.',
+    description: 'Signed in person — not via this app. Manager provides a physical copy on Day 1. Once the signed copy is returned, sign below to record acknowledgement in the portal.',
     required: true,
     templateBody: `I acknowledge that I have received, read, and understand the Makenna Koffee Employee Handbook. I agree to comply with the policies and procedures outlined in it, including those covering attendance, scheduling, conduct, dress code, harassment-free workplace, drug and alcohol use, and discipline. I understand that my employment is at-will and that the handbook may be updated from time to time, with current versions provided to me through this portal.`,
   },
