@@ -2875,5 +2875,33 @@
     "recipe": "● Small (12 oz)\nIn a hot drink cup:\n1 1/2 (one and a half) scoops of spiced chai\nIn a measuring cup:\nMilk of Choice to 10 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n● Medium (16 oz)\nIn a hot drink cup:\n2 scoops of spiced chai\nIn a measuring cup:\nMilk of Choice to 12 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\n\n● Large (20 oz)\nIn a hot drink cup:\n2 1/2 (two and a half) scoops of spiced chai\nIn a measuring cup:\nMilk of Choice to 14 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup",
     "category": "Chillers & Blended",
     "mela_category": "Coffee Free - Not Blended"
+  },
+  {
+    "id": "94edf5a7-707b-5d72-be83-8e2adca17921",
+    "drink": "Churro Latte Iced",
+    "recipe": "12oz\n1 1/4 pumps white chocolate\n3/4 scoop brown sugar powder\n1 shot of espresso\nWhisk\n2oz half and half\nMilk of choice to 8oz\n \nadd Kona and churro sprinkle\n(Churro sprinkle: cinnamon powder and raw sugar crystals)\n\n16oz \n2 pumps white chocolate\n1 scoop brown sugar powder\n2 shots of espresso\nWhisk\n2 1/2oz half and half\nMilk of choice to 10oz\n \nadd Kona and churro sprinkle\n(Churro sprinkle: cinnamon powder and raw sugar crystals)\n\n24oz\n2 1/2pumps white chocolate\n1 1/2 scoop brown sugar powder\n2 shots of espresso\nWhisk\n2 1/2oz half and half\nMilk of choice to 12oz\n \nadd Kona and churro sprinkle\n(Churro sprinkle: cinnamon powder and raw sugar crystals)",
+    "category": "Supremes — Iced",
+    "mela_category": "Supreme Iced"
+  },
+  {
+    "id": "f86c724f-75f3-57c3-b0e2-bb2487cfd1fc",
+    "drink": "Cinna-Swirl",
+    "recipe": "12oz\n1 1/2 pump of white chocolate sauce\n1/2 pump of Caramel sauce\n1 Espresso shot\nWhisk thoroughly \n2 oz half and half \nMilk of choice to 8 oz\nPour over ice and  \nCaramel sauce around cup\nKona cloud and cinnamon powder\n\n16oz\n2 pump of white chocolate sauce\n3/4 pump of Caramel sauce\n2 Espresso shots\nWhisk thoroughly \n2 1/2 oz half and half\nMilk of choice to 10 oz\nPour over ice and  \nCaramel sauce around cup\nKona cloud and cinnamon powder\n\n24oz\n2 1/2 pump of white chocolate sauce\n1 pump of Caramel sauce\n2 Espresso shots\nWhisk thoroughly\n2 1/2 oz half and half\nMilk of choice to 12 oz\nPour over ice and  \nCaramel sauce around cup\nKona cloud and cinnamon powder",
+    "category": "Specialty",
+    "mela_category": ""
+  },
+  {
+    "id": "d76f7d2d-908f-5a9a-9857-850aba2059bc",
+    "drink": "Horchata Latte",
+    "recipe": "12oz\n1/2 scoop horchata\n1 brown sugar cinnamon syrup\n1/4 pump white chocolate\n1 shot of espresso\nWhisk\n2 oz Maui milk\nMilk of choice to 8oz\n \nPour over ice\nAdd Kona and cinnamon powder\n\n16oz \n3/4 scoop horchata\n1 1/2brown sugar cinnamon syrup\n1/2 pump white chocolate\n2 shots of espresso\nWhisk\n2 1/2oz Maui milk\nMilk of choice to 10oz\n \nPour over ice\nAdd Kona and cinnamon powder\n\n24oz\n1 scoop horchata\n2 brown sugar cinnamon syrup\n3/4 pump white chocolate\n2 shots of espresso\nWhisk\n2 1/2oz Maui milk\nMilk of choice to 12oz\n \nPour over ice\nAdd Kona and cinnamon powder",
+    "category": "Supremes — Iced",
+    "mela_category": "Supreme Iced"
+  },
+  {
+    "id": "1848b010-bf99-5b04-b307-7cc23fce41c9",
+    "drink": "Horchata Latte Hot",
+    "recipe": "12oz\nIn cup \n½ scoop horchata\n1 brown sugar cinnamon syrup\n¼ pump white chocolate\n1 shot of espresso\nWhisk\nIn steam pitcher\n2 oz Maui milk\nMilk of choice to 10oz\nSteam \nPour into cup \nAdd Kona and cinnamon powder \n\n16oz \n3/4 scoop horchata\n1 1/2 brown sugar cinnamon syrup\n1/2 pump white chocolate \n2 shots of espresso \nWhisk\nIn steam pitcher\n2 1/2oz Maui milk\nMilk of choice to 12oz\nSteam\nPour into cup\nAdd Kona and cinnamon powder\n\n24oz\n1 scoop horchata \n2 brown sugar cinnamon syrup\n3/4 pump white chocolate\n2 shots of espresso\nWhisk\nIn steam pitcher\n2 1/2oz Maui milk\nMilk of choice to 14oz\nSteam\nPour into cup\nAdd Kona and cinnamon powder",
+    "category": "Supremes — Hot",
+    "mela_category": "Supreme Hot"
   }
 ]

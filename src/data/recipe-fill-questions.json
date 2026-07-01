@@ -52766,6 +52766,732 @@
           "correct": "white chocolate drizzle"
         }
       ]
+    },
+    {
+      "id": "79231cf0-6fdc-51eb-8f1b-9fa68216c79c",
+      "drink": "Churro Latte Iced",
+      "size": "12 oz",
+      "template": "___ pumps of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\nTop with ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/4"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 8,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        },
+        {
+          "index": 9,
+          "type": "topping",
+          "correct": "sugar crystals"
+        }
+      ]
+    },
+    {
+      "id": "937fd4de-8c86-5672-8bd5-db1d6007bb10",
+      "drink": "Churro Latte Iced",
+      "size": "16 oz",
+      "template": "___ pumps of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\nTop with ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 8,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        },
+        {
+          "index": 9,
+          "type": "topping",
+          "correct": "sugar crystals"
+        }
+      ]
+    },
+    {
+      "id": "47c4ac59-0c95-5926-98ab-97c2c1beb41c",
+      "drink": "Churro Latte Iced",
+      "size": "24 oz",
+      "template": "___ pumps of ___ + ___ scoops of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___\nTop with ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "brown sugar"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 8,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        },
+        {
+          "index": 9,
+          "type": "topping",
+          "correct": "sugar crystals"
+        }
+      ]
+    },
+    {
+      "id": "32252717-f106-5686-a082-29d140eb422f",
+      "drink": "Cinna-Swirl",
+      "size": "12 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the cup\nAdd ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "24800af1-e522-5a85-84cf-aebd56cfaa35",
+      "drink": "Cinna-Swirl",
+      "size": "16 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the cup\nAdd ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "8d00fa5f-fae5-503b-9405-f82a51c6ca17",
+      "drink": "Cinna-Swirl",
+      "size": "24 oz",
+      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ around the cup\nAdd ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 5,
+          "type": "cream",
+          "correct": "Half and Half"
+        },
+        {
+          "index": 6,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 7,
+          "type": "drizzle",
+          "correct": "caramel drizzle"
+        },
+        {
+          "index": 8,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 9,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "6496a78f-8ff2-5a02-89ba-76288e1a0ccf",
+      "drink": "Horchata Latte",
+      "size": "12 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "horchata powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "brown sugar cinnamon syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 5,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "263efadf-d3ec-5728-8212-318c0204cbaa",
+      "drink": "Horchata Latte",
+      "size": "16 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "horchata powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "brown sugar cinnamon syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 5,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "aaf3eb44-b61b-502f-96c9-fdbb62eedb8b",
+      "drink": "Horchata Latte",
+      "size": "24 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "horchata powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "brown sugar cinnamon syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 5,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "1eaa1737-e70d-55f7-9e3d-3675d3adfc5d",
+      "drink": "Horchata Latte Hot",
+      "size": "12 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "horchata powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "brown sugar cinnamon syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1/4"
+        },
+        {
+          "index": 5,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "e47cdde9-f1b7-519c-bf10-6aca46f3e9be",
+      "drink": "Horchata Latte Hot",
+      "size": "16 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "horchata powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "brown sugar cinnamon syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 5,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "12"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
+    },
+    {
+      "id": "6dd17cf8-2b81-5487-b619-3d739436ca6a",
+      "drink": "Horchata Latte Hot",
+      "size": "24 oz",
+      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz\nAdd ___ and ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "horchata powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "brown sugar cinnamon syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 5,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 7,
+          "type": "cream",
+          "correct": "Maui Milk"
+        },
+        {
+          "index": 8,
+          "type": "fill_oz",
+          "correct": "14"
+        },
+        {
+          "index": 9,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 10,
+          "type": "powder",
+          "correct": "cinnamon powder"
+        }
+      ]
     }
   ]
 }
