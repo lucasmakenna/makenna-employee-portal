@@ -2212,20 +2212,6 @@
     "mela_category": "Supreme Hot"
   },
   {
-    "id": "19468f73-5742-4908-8622-58e18ea56101",
-    "drink": "Shock Wave Slushy",
-    "recipe": "● Small (12 oz)\nIn drink cup:\n3/4 (three quarters) pumps of blue raspberry syrup\n1/4 (one quarter) pumps of lime syrup\nAdd Makenna Energy slush\nMIX THOROUGHLY\n\n● Medium (16 oz)\nIn drink cup:\n1 pump of blue raspberry syrup\n1/2 (one half) pumps of lime syrup\nAdd Makenna Energy slush\nMIX THOROUGHLY\n\n● Large (24 oz)\nIn drink cup:\n1 1/4 (one and a quarter) pumps of blue raspberry syrup\n3/4 (three quarters) pumps of lime syrup\nAdd Makenna Energy slush\nMIX THOROUGHLY\n\n● X-tra Large (32 oz)\nIn drink cup:\n2 pumps of blue raspberry syrup\n1 pump of lime syrup\nAdd Makenna Energy slush\nMIX THOROUGHLY",
-    "category": "Slushies",
-    "mela_category": "Makenna Energy Slushy"
-  },
-  {
-    "id": "ea4fd55d-ae3d-467f-93b9-1fd71d0fbd5b",
-    "drink": "Shock Wave",
-    "recipe": "● Medium (16 oz)\nIn drink cup:\n2 pumps of blue raspberry syrup\n1 pump of lime syrup\n1 Makenna Energy Can\nTop off with ice\n\n● Large (24 oz)\nIn drink cup:\n2 1/2 (two and a half) pumps of blue raspberry syrup\n1 1/2 (one and a half) pumps of lime syrup\n1 1/2 (one and a half) Makenna Energy Cans\nTop off with ice\n\n● X-tra Large (32 oz)\nIn drink cup:\n4 pumps of blue raspberry syrup\n2 pumps of lime syrup\n2 Makenna Energy Cans\nTop off with ice",
-    "category": "Makenna Energy",
-    "mela_category": "Makenna Energy"
-  },
-  {
     "id": "fc302f35-51e2-4f75-bc63-60b8282bba82",
     "drink": "Gingerbread Chai",
     "recipe": "● Small (12 oz)\nIn a measuring cup:\n1 1/2 (one and a half) scoops of spiced chai\n1 1/2 (one and a half) pumps of gingerbread syrup\nHot water\nWHISK THOROUGHLY\n1 oz Maui Milk\nMilk of Choice to 8 oz\n2 oz of Kona Cloud\n2 pumps of gingerbread syrup\nMIX THOROUGHLY\nTop off drink\n\n● Medium (16 oz)\nIn a measuring cup:\n2 scoops of spiced chai\n2 pumps of gingerbread syrup\nHot water\nWHISK THOROUGHLY\n1 1/2 (one and a half) oz Maui Milk\nMilk of Choice to 10 oz\n2 oz of Kona Cloud\n2 pumps of gingerbread syrup\nMIX THOROUGHLY\nTop off drink\n\n● Large (24 oz)\nIn a measuring cup:\n2 1/2 (two and a half) scoops of spiced chai\n2 1/2 (two and a half) pumps of gingerbread syrup\nHot water\nWHISK THOROUGHLY\n1 1/2 (one and a half) oz Maui Milk\nMilk of Choice to 12 oz\n2 oz of Kona Cloud\n2 pumps of gingerbread syrup\nMIX THOROUGHLY\nTop off drink",
@@ -2907,14 +2893,14 @@
   {
     "id": "a4b9033e-1da9-55d5-9f77-c82b2472348a",
     "drink": "Churro Latte Hot",
-    "recipe": "",
+    "recipe": "12oz\n1 1/4 pumps white chocolate\n3/4 scoop brown sugar powder\n1 shot of espresso\nWhisk\n2oz half and half\nMilk of choice to 8oz\n \nadd Kona and churro sprinkle\n(Churro sprinkle: cinnamon powder and raw sugar crystals)\n\n16oz \n2 pumps white chocolate\n1 scoop brown sugar powder\n2 shots of espresso\nWhisk\n2 1/2oz half and half\nMilk of choice to 10oz\n \nadd Kona and churro sprinkle\n(Churro sprinkle: cinnamon powder and raw sugar crystals)\n\n24oz\n2 1/2pumps white chocolate\n1 1/2 scoop brown sugar powder\n2 shots of espresso\nWhisk\n2 1/2oz half and half\nMilk of choice to 12oz\n \nadd Kona and churro sprinkle\n(Churro sprinkle: cinnamon powder and raw sugar crystals)",
     "category": "Supremes — Hot",
     "mela_category": "Supreme Hot"
   },
   {
     "id": "73a1ad82-3fcf-5743-baec-3033fdd2ac47",
     "drink": "Piña Colada Matcha",
-    "recipe": "",
+    "recipe": "● 12oz\n2 scoops of matcha powder\n2oz coconut cream \n1.5pumps pineapple\nMIX THOROUGHLY\nNon fat milk to 8 oz\nPour over ice and TOM\n● 16oz\n2 1/2 scoops of matcha powder\n2oz coconut cream\n2 pumps pineapple\nMIX THOROUGHLY\nNonfat milk to 10 oz\nPour over ice and   \n● 24oz\n3 scoops of matcha powder\n2.5 oz coconut cream\n2.5 pumps pineapple\nMIX THOROUGHLY\nNon fat milk to 12 oz\nPour over ice and",
     "category": "Matcha",
     "mela_category": "Matcha"
   }
