@@ -99,7 +99,8 @@
       "Chocolate Chips",
       "vanilla protein powder",
       "mocha protein",
-      "blueberries"
+      "blueberries",
+      "cookie butter bits"
     ],
     "cream": [
       "Kona Cloud",
@@ -11719,7 +11720,7 @@
       "id": "fd18fcbb-fd3c-46d0-b205-80ea1e6dbd8b",
       "drink": "Waikiki Hot",
       "size": "16 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -11728,8 +11729,8 @@
         },
         {
           "index": 1,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
+          "type": "powder",
+          "correct": "white chocolate powder"
         },
         {
           "index": 2,
@@ -11762,7 +11763,7 @@
       "id": "2f589486-ee77-4960-9974-91df6bb50b74",
       "drink": "Waikiki Hot",
       "size": "20 oz",
-      "template": "___ pumps of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
+      "template": "___ scoops of ___ + ___ pumps of ___\n___ oz of ___\nMilk of Choice to ___ oz",
       "blanks": [
         {
           "index": 0,
@@ -11771,8 +11772,8 @@
         },
         {
           "index": 1,
-          "type": "sauce",
-          "correct": "white chocolate sauce"
+          "type": "powder",
+          "correct": "white chocolate powder"
         },
         {
           "index": 2,
@@ -27950,7 +27951,7 @@
       "id": "c4c19c96-4e02-473e-83d1-1009b16ac195",
       "drink": "Caramel Crunch Chai (Iced)",
       "size": "12 oz",
-      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ to the top and ___\nAdd ___ on top",
+      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
       "blanks": [
         {
           "index": 0,
@@ -27984,18 +27985,18 @@
         },
         {
           "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
           "type": "drizzle",
           "correct": "caramel drizzle"
         },
         {
-          "index": 7,
+          "index": 8,
           "type": "topping",
           "correct": "sugar crystals"
-        },
-        {
-          "index": 8,
-          "type": "cream",
-          "correct": "Kona Cloud"
         }
       ]
     },
@@ -28003,7 +28004,7 @@
       "id": "3c108228-5fcb-43fe-ad25-443de17b47bd",
       "drink": "Caramel Crunch Chai (Iced)",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ to the top and ___\nAdd ___ on top",
+      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
       "blanks": [
         {
           "index": 0,
@@ -28037,18 +28038,18 @@
         },
         {
           "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
           "type": "drizzle",
           "correct": "caramel drizzle"
         },
         {
-          "index": 7,
+          "index": 8,
           "type": "topping",
           "correct": "sugar crystals"
-        },
-        {
-          "index": 8,
-          "type": "cream",
-          "correct": "Kona Cloud"
         }
       ]
     },
@@ -28056,7 +28057,7 @@
       "id": "8b71f564-098f-49c2-95b0-470f582314c5",
       "drink": "Caramel Crunch Chai (Iced)",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ to the top and ___\nAdd ___ on top",
+      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
       "blanks": [
         {
           "index": 0,
@@ -28090,18 +28091,18 @@
         },
         {
           "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
           "type": "drizzle",
           "correct": "caramel drizzle"
         },
         {
-          "index": 7,
+          "index": 8,
           "type": "topping",
           "correct": "sugar crystals"
-        },
-        {
-          "index": 8,
-          "type": "cream",
-          "correct": "Kona Cloud"
         }
       ]
     },
@@ -28109,7 +28110,7 @@
       "id": "2905caea-8c76-431b-bc44-bdc70489c268",
       "drink": "Caramel Crunch Chai (Iced)",
       "size": "32 oz",
-      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ to the top and ___\nAdd ___ on top",
+      "template": "___ scoops of ___\n___ oz of ___\nFill with whole milk to ___ oz\nAdd ___\nAdd ___ on top\nAdd ___ to the top and ___",
       "blanks": [
         {
           "index": 0,
@@ -28143,18 +28144,18 @@
         },
         {
           "index": 6,
+          "type": "cream",
+          "correct": "Kona Cloud"
+        },
+        {
+          "index": 7,
           "type": "drizzle",
           "correct": "caramel drizzle"
         },
         {
-          "index": 7,
+          "index": 8,
           "type": "topping",
           "correct": "sugar crystals"
-        },
-        {
-          "index": 8,
-          "type": "cream",
-          "correct": "Kona Cloud"
         }
       ]
     },
@@ -46218,7 +46219,7 @@
       "id": "sf-shaken-brown-sugar-maui-12 oz",
       "drink": "Shaken Brown Sugar Maui",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
+      "template": "___ scoops of ___ + ___ mini scoops of ___",
       "blanks": [
         {
           "index": 0,
@@ -46246,7 +46247,7 @@
       "id": "sf-shaken-brown-sugar-maui-16 oz",
       "drink": "Shaken Brown Sugar Maui",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
+      "template": "___ scoops of ___ + ___ mini scoops of ___",
       "blanks": [
         {
           "index": 0,
@@ -46274,7 +46275,7 @@
       "id": "sf-shaken-brown-sugar-maui-24 oz",
       "drink": "Shaken Brown Sugar Maui",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
+      "template": "___ scoops of ___ + ___ mini scoops of ___",
       "blanks": [
         {
           "index": 0,
@@ -46302,7 +46303,7 @@
       "id": "sf-shaken-brown-sugar-maui-32 oz",
       "drink": "Shaken Brown Sugar Maui",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ scoops of ___",
+      "template": "___ scoops of ___ + ___ mini scoops of ___",
       "blanks": [
         {
           "index": 0,
@@ -50584,7 +50585,7 @@
         {
           "index": 6,
           "type": "powder",
-          "correct": "cookie butter"
+          "correct": "cookie butter bits"
         },
         {
           "index": 7,
@@ -50632,7 +50633,7 @@
         {
           "index": 6,
           "type": "powder",
-          "correct": "cookie butter"
+          "correct": "cookie butter bits"
         },
         {
           "index": 7,
@@ -50680,7 +50681,7 @@
         {
           "index": 6,
           "type": "powder",
-          "correct": "cookie butter"
+          "correct": "cookie butter bits"
         },
         {
           "index": 7,
@@ -50728,7 +50729,7 @@
         {
           "index": 6,
           "type": "powder",
-          "correct": "cookie butter"
+          "correct": "cookie butter bits"
         },
         {
           "index": 7,
@@ -50776,7 +50777,7 @@
         {
           "index": 6,
           "type": "powder",
-          "correct": "cookie butter"
+          "correct": "cookie butter bits"
         },
         {
           "index": 7,
@@ -50824,7 +50825,7 @@
         {
           "index": 6,
           "type": "powder",
-          "correct": "cookie butter"
+          "correct": "cookie butter bits"
         },
         {
           "index": 7,
@@ -50872,7 +50873,7 @@
         {
           "index": 6,
           "type": "powder",
-          "correct": "cookie butter"
+          "correct": "cookie butter bits"
         },
         {
           "index": 7,
