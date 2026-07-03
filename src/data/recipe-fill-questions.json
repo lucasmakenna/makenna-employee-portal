@@ -66,12 +66,10 @@
       "toffee nut syrup",
       "vanilla syrup",
       "watermelon syrup",
-      "salted caramel syrup",
       "strawberry puree",
       "cookie dough bits",
       "butterscotch syrup",
       "mango puree",
-      "caramel syrup",
       "sf coconut syrup"
     ],
     "sauce": [
@@ -81,8 +79,7 @@
       "peppermint sauce",
       "salted caramel sauce",
       "white chocolate sauce",
-      "pumpkin sauce",
-      "dark chocolate sauce"
+      "pumpkin sauce"
     ],
     "powder": [
       "horchata powder",
@@ -120,7 +117,6 @@
       "strawberry drizzle",
       "honey drizzle",
       "chocolate drizzle",
-      "dark chocolate drizzle",
       "white chocolate drizzle",
       "strawberry puree drizzle",
       "salted caramel drizzle"
@@ -4241,7 +4237,7 @@
         {
           "index": 5,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4279,7 +4275,7 @@
         {
           "index": 5,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4317,7 +4313,7 @@
         {
           "index": 5,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4355,7 +4351,7 @@
         {
           "index": 5,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -8394,7 +8390,7 @@
         {
           "index": 7,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -8442,7 +8438,7 @@
         {
           "index": 7,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -8490,7 +8486,7 @@
         {
           "index": 7,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -8538,7 +8534,7 @@
         {
           "index": 7,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -22630,7 +22626,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "dark chocolate sauce"
+          "correct": "chocolate sauce"
         }
       ]
     },
@@ -22673,7 +22669,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "dark chocolate sauce"
+          "correct": "chocolate sauce"
         }
       ]
     },
@@ -22716,7 +22712,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "dark chocolate sauce"
+          "correct": "chocolate sauce"
         }
       ]
     },
@@ -22759,7 +22755,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "dark chocolate sauce"
+          "correct": "chocolate sauce"
         }
       ]
     },
@@ -40815,8 +40811,8 @@
         },
         {
           "index": 1,
-          "type": "syrup",
-          "correct": "caramel syrup"
+          "type": "sauce",
+          "correct": "caramel sauce"
         },
         {
           "index": 2,
@@ -40858,8 +40854,8 @@
         },
         {
           "index": 1,
-          "type": "syrup",
-          "correct": "caramel syrup"
+          "type": "sauce",
+          "correct": "caramel sauce"
         },
         {
           "index": 2,
@@ -40901,8 +40897,8 @@
         },
         {
           "index": 1,
-          "type": "syrup",
-          "correct": "caramel syrup"
+          "type": "sauce",
+          "correct": "caramel sauce"
         },
         {
           "index": 2,
@@ -40944,8 +40940,8 @@
         },
         {
           "index": 1,
-          "type": "syrup",
-          "correct": "caramel syrup"
+          "type": "sauce",
+          "correct": "caramel sauce"
         },
         {
           "index": 2,
@@ -45118,8 +45114,8 @@
         },
         {
           "index": 6,
-          "type": "syrup",
-          "correct": "salted caramel syrup"
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
@@ -45161,8 +45157,8 @@
         },
         {
           "index": 6,
-          "type": "syrup",
-          "correct": "salted caramel syrup"
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
@@ -45204,8 +45200,8 @@
         },
         {
           "index": 6,
-          "type": "syrup",
-          "correct": "salted caramel syrup"
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
@@ -45247,8 +45243,8 @@
         },
         {
           "index": 6,
-          "type": "syrup",
-          "correct": "salted caramel syrup"
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
@@ -50236,8 +50232,8 @@
         },
         {
           "index": 3,
-          "type": "syrup",
-          "correct": "caramel syrup"
+          "type": "sauce",
+          "correct": "caramel sauce"
         },
         {
           "index": 4,
@@ -50284,8 +50280,8 @@
         },
         {
           "index": 3,
-          "type": "syrup",
-          "correct": "caramel syrup"
+          "type": "sauce",
+          "correct": "caramel sauce"
         },
         {
           "index": 4,
@@ -50332,8 +50328,8 @@
         },
         {
           "index": 3,
-          "type": "syrup",
-          "correct": "caramel syrup"
+          "type": "sauce",
+          "correct": "caramel sauce"
         },
         {
           "index": 4,
@@ -50380,8 +50376,8 @@
         },
         {
           "index": 3,
-          "type": "syrup",
-          "correct": "caramel syrup"
+          "type": "sauce",
+          "correct": "caramel sauce"
         },
         {
           "index": 4,
@@ -50428,8 +50424,8 @@
         },
         {
           "index": 3,
-          "type": "syrup",
-          "correct": "caramel syrup"
+          "type": "sauce",
+          "correct": "caramel sauce"
         },
         {
           "index": 4,
@@ -50476,8 +50472,8 @@
         },
         {
           "index": 3,
-          "type": "syrup",
-          "correct": "caramel syrup"
+          "type": "sauce",
+          "correct": "caramel sauce"
         },
         {
           "index": 4,
@@ -50524,8 +50520,8 @@
         },
         {
           "index": 3,
-          "type": "syrup",
-          "correct": "caramel syrup"
+          "type": "sauce",
+          "correct": "caramel sauce"
         },
         {
           "index": 4,
