@@ -169,6 +169,13 @@
       "18",
       "20",
       "24"
+    ],
+    "sweetener": [
+      "honey",
+      "caramel sauce",
+      "chocolate sauce",
+      "white chocolate sauce",
+      "salted caramel sauce"
     ]
   },
   "questions": [
@@ -17315,40 +17322,50 @@
       "id": "a57999ba-77ff-4393-9249-dc722312c801",
       "drink": "Hawaiian Dream Chiller",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nAdd ___",
+      "template": "___ second squeeze of ___ drizzle\n___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1 1/2"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
+          "type": "sweetener",
+          "correct": "honey"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1/2"
+          "correct": "2"
         },
         {
           "index": 3,
-          "type": "sauce",
-          "correct": "caramel sauce"
+          "type": "powder",
+          "correct": "vanilla powder"
         },
         {
           "index": 4,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "1/2"
         },
         {
           "index": 5,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 7,
           "type": "syrup",
           "correct": "coconut syrup"
         },
         {
-          "index": 6,
+          "index": 8,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -17358,40 +17375,50 @@
       "id": "e0057427-3a9c-48c2-aa33-4ce8897e4c89",
       "drink": "Hawaiian Dream Chiller",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nAdd ___",
+      "template": "___ second squeeze of ___ drizzle\n___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "3"
+          "correct": "1 1/2"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
+          "type": "sweetener",
+          "correct": "honey"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1/2"
+          "correct": "3"
         },
         {
           "index": 3,
-          "type": "sauce",
-          "correct": "caramel sauce"
+          "type": "powder",
+          "correct": "vanilla powder"
         },
         {
           "index": 4,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "1/2"
         },
         {
           "index": 5,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 7,
           "type": "syrup",
           "correct": "coconut syrup"
         },
         {
-          "index": 6,
+          "index": 8,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -17401,40 +17428,50 @@
       "id": "ab916a2a-aa82-4323-8130-aecec38abb00",
       "drink": "Hawaiian Dream Chiller",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nAdd ___",
+      "template": "___ second squeeze of ___ drizzle\n___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "4"
+          "correct": "2"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
+          "type": "sweetener",
+          "correct": "honey"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1"
+          "correct": "4"
         },
         {
           "index": 3,
-          "type": "sauce",
-          "correct": "caramel sauce"
+          "type": "powder",
+          "correct": "vanilla powder"
         },
         {
           "index": 4,
           "type": "quantity",
-          "correct": "3 1/2"
+          "correct": "1"
         },
         {
           "index": 5,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "3 1/2"
+        },
+        {
+          "index": 7,
           "type": "syrup",
           "correct": "coconut syrup"
         },
         {
-          "index": 6,
+          "index": 8,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -17444,40 +17481,50 @@
       "id": "67bc1a35-d2dd-4b73-b6da-a0edb7d344b8",
       "drink": "Hawaiian Dream Chiller",
       "size": "32 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nAdd ___",
+      "template": "___ second squeeze of ___ drizzle\n___ scoops of ___ + ___ pumps of ___ + ___ pumps of ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "6"
+          "correct": "3"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
+          "type": "sweetener",
+          "correct": "honey"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1"
+          "correct": "6"
         },
         {
           "index": 3,
-          "type": "sauce",
-          "correct": "caramel sauce"
+          "type": "powder",
+          "correct": "vanilla powder"
         },
         {
           "index": 4,
           "type": "quantity",
-          "correct": "5"
+          "correct": "1"
         },
         {
           "index": 5,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "5"
+        },
+        {
+          "index": 7,
           "type": "syrup",
           "correct": "coconut syrup"
         },
         {
-          "index": 6,
+          "index": 8,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -18918,30 +18965,35 @@
       "id": "c261c6eb-765f-4959-b5ff-b0d24a5998f4",
       "drink": "Honey Lavender Latte Iced",
       "size": "12 oz",
-      "template": "___ pumps of ___\n___ oz of ___\nAdd ___",
+      "template": "a quarter coin sized ___ dollop\n___ pumps of ___\n___ oz of ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
+          "type": "sweetener",
+          "correct": "honey"
+        },
+        {
+          "index": 1,
           "type": "quantity",
           "correct": "1 1/2"
         },
         {
-          "index": 1,
+          "index": 2,
           "type": "syrup",
           "correct": "lavender syrup"
         },
         {
-          "index": 2,
+          "index": 3,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Half and Half"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -18951,30 +19003,35 @@
       "id": "1f6789c5-ecff-49aa-9cfd-50ae01267598",
       "drink": "Honey Lavender Latte Iced",
       "size": "16 oz",
-      "template": "___ pumps of ___\n___ oz of ___\nAdd ___",
+      "template": "a quarter coin sized ___ dollop\n___ pumps of ___\n___ oz of ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
+          "type": "sweetener",
+          "correct": "honey"
+        },
+        {
+          "index": 1,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 1,
+          "index": 2,
           "type": "syrup",
           "correct": "lavender syrup"
         },
         {
-          "index": 2,
+          "index": 3,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Half and Half"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -18984,30 +19041,35 @@
       "id": "806b48de-fcb0-4628-97a6-75386d0ef76c",
       "drink": "Honey Lavender Latte Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ oz of ___\nAdd ___",
+      "template": "a quarter coin sized ___ dollop\n___ pumps of ___\n___ oz of ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
+          "type": "sweetener",
+          "correct": "honey"
+        },
+        {
+          "index": 1,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 1,
+          "index": 2,
           "type": "syrup",
           "correct": "lavender syrup"
         },
         {
-          "index": 2,
+          "index": 3,
           "type": "quantity",
           "correct": "2 1/2"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Half and Half"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -19017,30 +19079,35 @@
       "id": "f90780c3-4581-45d4-8a6c-70726dabcdb7",
       "drink": "Honey Lavender Latte Iced",
       "size": "32 oz",
-      "template": "___ pumps of ___\n___ oz of ___\nAdd ___",
+      "template": "a quarter coin sized ___ dollop\n___ pumps of ___\n___ oz of ___\nAdd ___",
       "blanks": [
         {
           "index": 0,
+          "type": "sweetener",
+          "correct": "honey"
+        },
+        {
+          "index": 1,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 1,
+          "index": 2,
           "type": "syrup",
           "correct": "lavender syrup"
         },
         {
-          "index": 2,
+          "index": 3,
           "type": "quantity",
           "correct": "5"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "cream",
           "correct": "Half and Half"
         },
         {
-          "index": 4,
+          "index": 5,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -43264,25 +43331,30 @@
       "id": "sf-shaken-liquid-sunshine-12 oz",
       "drink": "Shaken Liquid Sunshine",
       "size": "12 oz",
-      "template": "___ scoops of ___\nAdd ___ on top\nAdd ___",
+      "template": "a quarter coin sized ___ dollop\n___ scoops of ___\nAdd ___ on top\nAdd ___",
       "blanks": [
         {
           "index": 0,
+          "type": "sweetener",
+          "correct": "honey"
+        },
+        {
+          "index": 1,
           "type": "quantity",
           "correct": "1 1/2"
         },
         {
-          "index": 1,
+          "index": 2,
           "type": "powder",
           "correct": "brown sugar"
         },
         {
-          "index": 2,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -43292,25 +43364,30 @@
       "id": "sf-shaken-liquid-sunshine-16 oz",
       "drink": "Shaken Liquid Sunshine",
       "size": "16 oz",
-      "template": "___ scoops of ___\nAdd ___ on top\nAdd ___",
+      "template": "a quarter coin sized ___ dollop\n___ scoops of ___\nAdd ___ on top\nAdd ___",
       "blanks": [
         {
           "index": 0,
+          "type": "sweetener",
+          "correct": "honey"
+        },
+        {
+          "index": 1,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 1,
+          "index": 2,
           "type": "powder",
           "correct": "brown sugar"
         },
         {
-          "index": 2,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -43320,25 +43397,30 @@
       "id": "sf-shaken-liquid-sunshine-24 oz",
       "drink": "Shaken Liquid Sunshine",
       "size": "24 oz",
-      "template": "___ scoops of ___\nAdd ___ on top\nAdd ___",
+      "template": "a quarter coin sized ___ dollop\n___ scoops of ___\nAdd ___ on top\nAdd ___",
       "blanks": [
         {
           "index": 0,
+          "type": "sweetener",
+          "correct": "honey"
+        },
+        {
+          "index": 1,
           "type": "quantity",
           "correct": "3"
         },
         {
-          "index": 1,
+          "index": 2,
           "type": "powder",
           "correct": "brown sugar"
         },
         {
-          "index": 2,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -43348,25 +43430,30 @@
       "id": "sf-shaken-liquid-sunshine-32 oz",
       "drink": "Shaken Liquid Sunshine",
       "size": "32 oz",
-      "template": "___ scoops of ___\nAdd ___ on top\nAdd ___",
+      "template": "a quarter coin sized ___ dollop\n___ scoops of ___\nAdd ___ on top\nAdd ___",
       "blanks": [
         {
           "index": 0,
+          "type": "sweetener",
+          "correct": "honey"
+        },
+        {
+          "index": 1,
           "type": "quantity",
           "correct": "4"
         },
         {
-          "index": 1,
+          "index": 2,
           "type": "powder",
           "correct": "brown sugar"
         },
         {
-          "index": 2,
+          "index": 3,
           "type": "cream",
           "correct": "Maui Milk"
         },
         {
-          "index": 3,
+          "index": 4,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -44035,35 +44122,45 @@
       "id": "bf2-bhl-12 oz",
       "drink": "Blended Honey Lavender",
       "size": "12 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\nMilk to ___ oz\n___",
+      "template": "___ second squirt of ___\n___ scoops of ___\n___ pumps of ___\nMilk to ___ oz\n___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
+          "type": "sweetener",
+          "correct": "honey"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "2"
         },
         {
           "index": 3,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 5,
           "type": "syrup",
           "correct": "lavender syrup"
         },
         {
-          "index": 4,
+          "index": 6,
           "type": "fill_oz",
           "correct": "5"
         },
         {
-          "index": 5,
+          "index": 7,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -44073,35 +44170,45 @@
       "id": "bf2-bhl-16 oz",
       "drink": "Blended Honey Lavender",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\nMilk to ___ oz\n___",
+      "template": "___ second squirt of ___\n___ scoops of ___\n___ pumps of ___\nMilk to ___ oz\n___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "3"
+          "correct": "1 1/2"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
+          "type": "sweetener",
+          "correct": "honey"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "2"
+          "correct": "3"
         },
         {
           "index": 3,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
           "type": "syrup",
           "correct": "lavender syrup"
         },
         {
-          "index": 4,
+          "index": 6,
           "type": "fill_oz",
           "correct": "6"
         },
         {
-          "index": 5,
+          "index": 7,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -44111,35 +44218,45 @@
       "id": "bf2-bhl-24 oz",
       "drink": "Blended Honey Lavender",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\nMilk to ___ oz\n___",
+      "template": "___ second squirt of ___\n___ scoops of ___\n___ pumps of ___\nMilk to ___ oz\n___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "4"
+          "correct": "2"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
+          "type": "sweetener",
+          "correct": "honey"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "3"
+          "correct": "4"
         },
         {
           "index": 3,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 5,
           "type": "syrup",
           "correct": "lavender syrup"
         },
         {
-          "index": 4,
+          "index": 6,
           "type": "fill_oz",
           "correct": "7"
         },
         {
-          "index": 5,
+          "index": 7,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
@@ -44149,35 +44266,45 @@
       "id": "bf2-bhl-32 oz",
       "drink": "Blended Honey Lavender",
       "size": "32 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\nMilk to ___ oz\n___",
+      "template": "___ second squirt of ___\n___ scoops of ___\n___ pumps of ___\nMilk to ___ oz\n___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "6"
+          "correct": "3"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
+          "type": "sweetener",
+          "correct": "honey"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "4"
+          "correct": "6"
         },
         {
           "index": 3,
+          "type": "powder",
+          "correct": "vanilla powder"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 5,
           "type": "syrup",
           "correct": "lavender syrup"
         },
         {
-          "index": 4,
+          "index": 6,
           "type": "fill_oz",
           "correct": "12"
         },
         {
-          "index": 5,
+          "index": 7,
           "type": "drizzle",
           "correct": "honey drizzle"
         }
