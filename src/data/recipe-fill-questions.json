@@ -35069,7 +35069,7 @@
       "id": "b8a4ea8b-8d3b-429a-84dd-70bcc544580d",
       "drink": "Blended Cookie Butter",
       "size": "12 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ scoops of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -35088,8 +35088,8 @@
         },
         {
           "index": 3,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
+          "type": "powder",
+          "correct": "cookie butter"
         },
         {
           "index": 4,
@@ -35102,7 +35102,7 @@
       "id": "8eb1a389-6c3d-424b-a727-8631fd43931c",
       "drink": "Blended Cookie Butter",
       "size": "16 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ scoops of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -35121,8 +35121,8 @@
         },
         {
           "index": 3,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
+          "type": "powder",
+          "correct": "cookie butter"
         },
         {
           "index": 4,
@@ -35135,7 +35135,7 @@
       "id": "176f7afb-2214-4a98-adc6-2e01d9dfaf24",
       "drink": "Blended Cookie Butter",
       "size": "24 oz",
-      "template": "___ scoops of ___ + ___ pumps of ___\n___ on top",
+      "template": "___ scoops of ___ + ___ scoops of ___\n___ on top",
       "blanks": [
         {
           "index": 0,
@@ -35154,8 +35154,8 @@
         },
         {
           "index": 3,
-          "type": "syrup",
-          "correct": "cookie butter syrup"
+          "type": "powder",
+          "correct": "cookie butter"
         },
         {
           "index": 4,
@@ -36922,7 +36922,7 @@
       "id": "2f5f7fce-2637-48a9-afa3-5ed74d9116d2",
       "drink": "Strawberry Lemonade Refresher",
       "size": "16 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___ + ___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -36933,6 +36933,16 @@
           "index": 1,
           "type": "syrup",
           "correct": "strawberry syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "strawberry puree"
         }
       ]
     },
