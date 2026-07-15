@@ -4142,7 +4142,7 @@
         {
           "index": 4,
           "type": "drizzle",
-          "correct": "chocolate drizzle"
+          "correct": "dark chocolate drizzle"
         }
       ]
     },
@@ -4175,7 +4175,7 @@
         {
           "index": 4,
           "type": "drizzle",
-          "correct": "chocolate drizzle"
+          "correct": "dark chocolate drizzle"
         }
       ]
     },
@@ -4208,7 +4208,7 @@
         {
           "index": 4,
           "type": "drizzle",
-          "correct": "chocolate drizzle"
+          "correct": "dark chocolate drizzle"
         }
       ]
     },
@@ -4241,7 +4241,7 @@
         {
           "index": 4,
           "type": "drizzle",
-          "correct": "chocolate drizzle"
+          "correct": "dark chocolate drizzle"
         }
       ]
     },
@@ -7800,7 +7800,7 @@
         {
           "index": 6,
           "type": "drizzle",
-          "correct": "chocolate drizzle"
+          "correct": "dark chocolate drizzle"
         }
       ]
     },
@@ -7843,7 +7843,7 @@
         {
           "index": 6,
           "type": "drizzle",
-          "correct": "chocolate drizzle"
+          "correct": "dark chocolate drizzle"
         }
       ]
     },
@@ -7886,7 +7886,7 @@
         {
           "index": 6,
           "type": "drizzle",
-          "correct": "chocolate drizzle"
+          "correct": "dark chocolate drizzle"
         }
       ]
     },
@@ -7929,7 +7929,7 @@
         {
           "index": 6,
           "type": "drizzle",
-          "correct": "chocolate drizzle"
+          "correct": "dark chocolate drizzle"
         }
       ]
     },
@@ -20932,7 +20932,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "chocolate sauce"
+          "correct": "dark chocolate sauce"
         }
       ]
     },
@@ -20975,7 +20975,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "chocolate sauce"
+          "correct": "dark chocolate sauce"
         }
       ]
     },
@@ -21018,7 +21018,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "chocolate sauce"
+          "correct": "dark chocolate sauce"
         }
       ]
     },
@@ -21061,7 +21061,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "chocolate sauce"
+          "correct": "dark chocolate sauce"
         }
       ]
     },
