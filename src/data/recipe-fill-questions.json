@@ -79,8 +79,7 @@
       "peppermint sauce",
       "salted caramel sauce",
       "white chocolate sauce",
-      "pumpkin sauce",
-      "dark chocolate sauce"
+      "pumpkin sauce"
     ],
     "powder": [
       "horchata powder",
@@ -121,8 +120,7 @@
       "chocolate drizzle",
       "white chocolate drizzle",
       "strawberry puree drizzle",
-      "salted caramel drizzle",
-      "dark chocolate drizzle"
+      "salted caramel drizzle"
     ],
     "topping": [
       "sugar crystals",
@@ -4142,7 +4140,7 @@
         {
           "index": 4,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4175,7 +4173,7 @@
         {
           "index": 4,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4208,7 +4206,7 @@
         {
           "index": 4,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -4241,7 +4239,7 @@
         {
           "index": 4,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -7800,7 +7798,7 @@
         {
           "index": 6,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -7843,7 +7841,7 @@
         {
           "index": 6,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -7886,7 +7884,7 @@
         {
           "index": 6,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -7929,7 +7927,7 @@
         {
           "index": 6,
           "type": "drizzle",
-          "correct": "dark chocolate drizzle"
+          "correct": "chocolate drizzle"
         }
       ]
     },
@@ -20932,7 +20930,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "dark chocolate sauce"
+          "correct": "chocolate sauce"
         }
       ]
     },
@@ -20975,7 +20973,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "dark chocolate sauce"
+          "correct": "chocolate sauce"
         }
       ]
     },
@@ -21018,7 +21016,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "dark chocolate sauce"
+          "correct": "chocolate sauce"
         }
       ]
     },
@@ -21061,7 +21059,7 @@
         {
           "index": 6,
           "type": "sauce",
-          "correct": "dark chocolate sauce"
+          "correct": "chocolate sauce"
         }
       ]
     },
