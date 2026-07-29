@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState, useCallback } from 'react';
-import { supabase } from '@/lib/supabase';
+import { dbCall } from '@/lib/db-client';
 import { CANDIDATES as CAND_SEED } from './candidates';
 import { EMPLOYEES as EMP_SEED } from './employees';
 import { SEED_CONVERSATIONS, SEED_MESSAGES } from './messaging';
@@ -21,6 +21,7 @@ import type {
   RecipeFillAttempt,
   RecipeFillAnswers,
   AccountabilityRecord,
+  TrainingNote,
 } from '@/types';
 import { RECIPE_FILL_PASSING_SCORE } from '@/types';
 import type { RecipeFillQuestion } from '@/types';
@@ -273,14 +274,10 @@ export function useCandidates() {
 
   // Hydrate from Supabase if available (merges on top of localStorage)
   useEffect(() => {
-    supabase
-      .from('candidates')
-      .select('*')
-      .order('applied_on', { ascending: false })
-      .then(({ data }) => {
+    dbCall('candidates', 'select', { order: { col: 'applied_on', asc: false } }).then(({ data }) => {
         if (data && data.length > 0) {
           setList((prev) => {
-            const remote = data.map((r) => candidateFromRow(r as Record<string, unknown>));
+            const remote: Candidate[] = data.map((r: unknown) => candidateFromRow(r as Record<string, unknown>));
             const map = new Map<string, Candidate>(prev.map((c) => [c.id, c]));
             remote.forEach((c) => map.set(c.id, c));
             const merged = Array.from(map.values()).sort(
@@ -323,7 +320,7 @@ export function useCandidates() {
       saveCandidates(next);
       return next;
     });
-    syncToDb(() => supabase.from('candidates').insert(candidateToRow(candidate)), `new candidate ${candidate.firstName} ${candidate.lastName}`);
+    syncToDb(() => dbCall('candidates', 'insert', { data: candidateToRow(candidate) }), `new candidate ${candidate.firstName} ${candidate.lastName}`);
     return candidate;
   }, []);
 
@@ -333,11 +330,7 @@ export function useCandidates() {
       saveCandidates(next);
       return next;
     });
-    supabase
-      .from('candidates')
-      .update({ ...patch, updated_at: new Date().toISOString() })
-      .eq('id', id)
-      .then(() => {});
+    dbCall('candidates', 'update', { data: { ...patch, updated_at: new Date().toISOString() }, eq: [['id', id]] }).then(() => {});
   }, []);
 
   const moveStage = useCallback(
@@ -360,11 +353,7 @@ export function useCandidates() {
       saveCandidates(next);
       const updated = next.find((c) => c.id === id);
       if (updated) {
-        supabase
-          .from('candidates')
-          .update({ notes: updated.notes, updated_at: new Date().toISOString() })
-          .eq('id', id)
-          .then(() => {});
+        dbCall('candidates', 'update', { data: { notes: updated.notes, updated_at: new Date().toISOString() }, eq: [['id', id]] }).then(() => {});
       }
       return next;
     });
@@ -414,14 +403,10 @@ export function useEmployees() {
   const [list, setList] = useState<Employee[]>(loadEmployees);
 
   useEffect(() => {
-    supabase
-      .from('employees')
-      .select('*')
-      .order('hired_on', { ascending: true })
-      .then(({ data }) => {
+    dbCall('employees', 'select', { order: { col: 'hired_on', asc: true } }).then(({ data }) => {
         if (data && data.length > 0) {
           setList((prev) => {
-            const remote = data.map((r) => employeeFromRow(r as Record<string, unknown>));
+            const remote: Employee[] = data.map((r: unknown) => employeeFromRow(r as Record<string, unknown>));
             const map = new Map<string, Employee>(prev.map((e) => [e.id, e]));
             remote.forEach((e) => map.set(e.id, e));
             const merged = Array.from(map.values());
@@ -438,7 +423,7 @@ export function useEmployees() {
       saveEmployees(next);
       return next;
     });
-    syncToDb(() => supabase.from('employees').insert(employeeToRow(employee)), `new employee ${employee.firstName} ${employee.lastName}`);
+    syncToDb(() => dbCall('employees', 'insert', { data: employeeToRow(employee) }), `new employee ${employee.firstName} ${employee.lastName}`);
     return employee;
   }, []);
 
@@ -449,7 +434,7 @@ export function useEmployees() {
       const updated = next.find((e) => e.id === id);
       if (updated) {
         syncToDb(
-          () => supabase.from('employees').update(employeeToRow(updated)).eq('id', id),
+          () => dbCall('employees', 'update', { data: employeeToRow(updated), eq: [['id', id]] }),
           `update for ${updated.firstName} ${updated.lastName}`,
         );
       }
@@ -465,7 +450,7 @@ export function useEmployees() {
       saveEmployees(next);
       return next;
     });
-    supabase.from('employees').delete().eq('id', id).then(() => {});
+    dbCall('employees', 'delete', { eq: [['id', id]] }).then(() => {});
   }, []);
 
   return useMemo(
@@ -500,10 +485,7 @@ export function usePackets() {
   const [packets, setPackets] = useState<Record<string, OnboardingPacket>>(loadPackets);
 
   useEffect(() => {
-    supabase
-      .from('onboarding_packets')
-      .select('*')
-      .then(({ data }) => {
+    dbCall('onboarding_packets', 'select').then(({ data }) => {
         if (!data || data.length === 0) return;
         setPackets((prev) => {
           const merged = { ...prev };
@@ -542,15 +524,14 @@ export function usePackets() {
         return next;
       });
       syncToDb(
-        () =>
-          supabase.from('onboarding_packets').upsert({
-            employee_id: packet.employeeId,
-            start_date: packet.startDate,
-            trainer_employee_id: packet.trainerEmployeeId ?? null,
-            tasks: packet.tasks,
-            manager_sign_off: null,
-            updated_at: new Date().toISOString(),
-          }),
+        () => dbCall('onboarding_packets', 'upsert', { data: {
+          employee_id: packet.employeeId,
+          start_date: packet.startDate,
+          trainer_employee_id: packet.trainerEmployeeId ?? null,
+          tasks: packet.tasks,
+          manager_sign_off: null,
+          updated_at: new Date().toISOString(),
+        }}),
         `onboarding packet for ${employeeId}`,
       );
       return packet;
@@ -564,17 +545,14 @@ export function usePackets() {
         const next = { ...prev, [employeeId]: { ...prev[employeeId], ...patch } };
         savePackets(next);
         const p = next[employeeId];
-        supabase
-          .from('onboarding_packets')
-          .upsert({
-            employee_id: p.employeeId,
-            start_date: p.startDate,
-            trainer_employee_id: p.trainerEmployeeId ?? null,
-            tasks: p.tasks,
-            manager_sign_off: p.managerSignOff ?? null,
-            updated_at: new Date().toISOString(),
-          })
-          .then(() => {});
+        dbCall('onboarding_packets', 'upsert', { data: {
+          employee_id: p.employeeId,
+          start_date: p.startDate,
+          trainer_employee_id: p.trainerEmployeeId ?? null,
+          tasks: p.tasks,
+          manager_sign_off: p.managerSignOff ?? null,
+          updated_at: new Date().toISOString(),
+        }}).then(() => {});
         return next;
       });
     },
@@ -666,14 +644,10 @@ export function useConversations() {
   const [list, setList] = useState<Conversation[]>(loadConversations);
 
   useEffect(() => {
-    supabase
-      .from('conversations')
-      .select('*')
-      .order('created_at', { ascending: true })
-      .then(({ data }) => {
+    dbCall('conversations', 'select', { order: { col: 'created_at', asc: true } }).then(({ data }) => {
         if (data && data.length > 0) {
           setList((prev) => {
-            const fromDb = data.map((r) => conversationFromRow(r as Record<string, unknown>));
+            const fromDb: Conversation[] = data.map((r: unknown) => conversationFromRow(r as Record<string, unknown>));
             const dbIds = new Set(fromDb.map((c) => c.id));
             const localOnly = prev.filter((c) => !dbIds.has(c.id));
             const merged = [...localOnly, ...fromDb].sort((a, b) => (a.createdAt < b.createdAt ? -1 : 1));
@@ -695,7 +669,7 @@ export function useConversations() {
       saveConversations(next);
       return next;
     });
-    syncToDb(() => supabase.from('conversations').insert(conversationToRow(conv)), `new conversation "${conv.name}"`);
+    syncToDb(() => dbCall('conversations', 'insert', { data: conversationToRow(conv) }), `new conversation "${conv.name}"`);
     return conv;
   }, []);
 
@@ -705,11 +679,7 @@ export function useConversations() {
       saveConversations(next);
       return next;
     });
-    supabase
-      .from('conversations')
-      .update({ ...patch, updated_at: new Date().toISOString() })
-      .eq('id', id)
-      .then(() => {});
+    dbCall('conversations', 'update', { data: { ...patch, updated_at: new Date().toISOString() }, eq: [['id', id]] }).then(() => {});
   }, []);
 
   const getById = useCallback(
@@ -749,14 +719,10 @@ export function useMessages() {
   const [list, setList] = useState<Message[]>(loadMessages);
 
   useEffect(() => {
-    supabase
-      .from('messages')
-      .select('*')
-      .order('created_at', { ascending: true })
-      .then(({ data }) => {
+    dbCall('messages', 'select', { order: { col: 'created_at', asc: true } }).then(({ data }) => {
         if (data && data.length > 0) {
           setList((prev) => {
-            const fromDb = data.map((r) => messageFromRow(r as Record<string, unknown>));
+            const fromDb: Message[] = data.map((r: unknown) => messageFromRow(r as Record<string, unknown>));
             const dbIds = new Set(fromDb.map((m) => m.id));
             const localOnly = prev.filter((m) => !dbIds.has(m.id));
             const merged = [...localOnly, ...fromDb].sort((a, b) => (a.createdAt < b.createdAt ? -1 : 1));
@@ -779,7 +745,7 @@ export function useMessages() {
       saveMessages(next);
       return next;
     });
-    syncToDb(() => supabase.from('messages').insert(messageToRow(msg)), 'new message');
+    syncToDb(() => dbCall('messages', 'insert', { data: messageToRow(msg) }), 'new message');
     return msg;
   }, []);
 
@@ -789,11 +755,7 @@ export function useMessages() {
         m.id === messageId ? { ...m, pinned: !m.pinned } : m,
       );
       saveMessages(next);
-      supabase
-        .from('messages')
-        .update({ pinned: next.find((m) => m.id === messageId)?.pinned ?? false })
-        .eq('id', messageId)
-        .then(() => {});
+      dbCall('messages', 'update', { data: { pinned: next.find((m) => m.id === messageId)?.pinned ?? false }, eq: [['id', messageId]] }).then(() => {});
       return next;
     });
   }, []);
@@ -807,11 +769,7 @@ export function useMessages() {
       if (toUpdate.length === 0) return prev;
 
       for (const m of toUpdate) {
-        supabase
-          .from('messages')
-          .update({ read_by: m.readBy })
-          .eq('id', m.id)
-          .then(() => {});
+        dbCall('messages', 'update', { data: { read_by: m.readBy }, eq: [['id', m.id]] }).then(() => {});
       }
 
       const updatedIds = new Set(toUpdate.map((m) => m.id));
@@ -859,14 +817,11 @@ export function useAvailability() {
   const [map, setMap] = useState<Record<string, Availability>>({});
 
   useEffect(() => {
-    supabase
-      .from('availability')
-      .select('*')
-      .then(({ data }) => {
+    dbCall('availability', 'select').then(({ data }) => {
         if (!data || data.length === 0) return;
         setMap(
           Object.fromEntries(
-            data.map((r) => {
+            data.map((r: unknown) => {
               const a = availabilityFromRow(r as Record<string, unknown>);
               return [a.employeeId, a];
             }),
@@ -880,7 +835,7 @@ export function useAvailability() {
   const upsert = useCallback((a: Availability) => {
     const updated = { ...a, updatedAt: new Date().toISOString() };
     setMap((prev) => ({ ...prev, [a.employeeId]: updated }));
-    supabase.from('availability').upsert(availabilityToRow(updated)).then(() => {});
+    dbCall('availability', 'upsert', { data: availabilityToRow(updated) }).then(() => {});
   }, []);
 
   return useMemo(() => ({ map, get, upsert }), [map, get, upsert]);
@@ -1046,4 +1001,68 @@ export function useAccountability() {
     () => ({ records: list, add, update, remove, forEmployee, getById }),
     [list, add, update, remove, forEmployee, getById],
   );
+}
+
+// ---------------------------------------------------------------------------
+// Training handoff notes (Supabase-first — no localStorage cache)
+// ---------------------------------------------------------------------------
+
+function trainingNoteFromRow(r: Record<string, unknown>): TrainingNote {
+  return {
+    id: r.id as string,
+    employeeId: r.employee_id as string,
+    authorId: r.author_id as string,
+    authorName: r.author_name as string,
+    body: r.body as string,
+    createdAt: r.created_at as string,
+  };
+}
+
+export function useTrainingNotes(employeeId: string) {
+  const [notes, setNotes] = useState<TrainingNote[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    dbCall('training_notes', 'select', {
+      eq: [['employee_id', employeeId]],
+      order: { col: 'created_at', asc: true },
+    }).then(({ data }) => {
+      if (data) {
+        setNotes((data as Record<string, unknown>[]).map(trainingNoteFromRow));
+      }
+      setLoading(false);
+    });
+  }, [employeeId]);
+
+  const add = useCallback(
+    (input: { authorId: string; authorName: string; body: string }) => {
+      const note: TrainingNote = {
+        id: `tn-${Date.now()}`,
+        employeeId,
+        authorId: input.authorId,
+        authorName: input.authorName,
+        body: input.body.trim(),
+        createdAt: new Date().toISOString(),
+      };
+      setNotes((prev) => [...prev, note]);
+      syncToDb(
+        () => dbCall('training_notes', 'insert', {
+          data: {
+            id: note.id,
+            employee_id: note.employeeId,
+            author_id: note.authorId,
+            author_name: note.authorName,
+            body: note.body,
+            created_at: note.createdAt,
+          },
+        }),
+        `training note for ${employeeId}`,
+      );
+      return note;
+    },
+    [employeeId],
+  );
+
+  return useMemo(() => ({ notes, loading, add }), [notes, loading, add]);
 }

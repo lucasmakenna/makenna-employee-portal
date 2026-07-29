@@ -1,9 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, CheckCircle2, Clock, FileText, PenLine, Stamp, ClipboardList } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Clock, FileText, PenLine, Stamp, ClipboardList, NotebookPen } from 'lucide-react';
+import { format, parseISO } from 'date-fns';
 import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
 import SignaturePad, { SignaturePadResult } from '@/components/SignaturePad';
@@ -19,7 +20,7 @@ import { STATIONS, totalSkills, completedSkillsCount } from '@/data/training';
 import { stampSignature, tryGetGeolocation } from '@/lib/signature-audit';
 import { appendSignature, getMostRecentRecord } from '@/data/signatures';
 import { loadTrainingProgress, saveStationProgress } from '@/lib/training-db';
-import { useEmployees, usePackets } from '@/data/store';
+import { useEmployees, usePackets, useTrainingNotes } from '@/data/store';
 
 /** Convert a skill name to Title Case, respecting em-dashes as phrase separators. */
 function toTitleCase(str: string): string {
@@ -62,6 +63,10 @@ export default function TraineeProgress() {
 
   const { getById, update: updateEmployee } = useEmployees();
   const { get: getPacket } = usePackets();
+  const { notes, loading: notesLoading, add: addNote } = useTrainingNotes(params.employeeId);
+  const [noteText, setNoteText] = useState('');
+  const [noteSubmitting, setNoteSubmitting] = useState(false);
+  const notesEndRef = useRef<HTMLDivElement>(null);
   const [activeStationId, setActiveStationId] = useState(STATIONS[0].id);
   const [signoffStationId, setSignoffStationId] = useState<string | null>(null);
   /** documentModal: { skillId, documentId, stationId } when the PDF modal is open */
@@ -209,6 +214,15 @@ export default function TraineeProgress() {
   const total = totalSkills();
   const done = completedSkillsCount(employee.trainingProgressByStation);
   const overallPct = Math.round((done / total) * 100);
+
+  const handleAddNote = async () => {
+    if (!noteText.trim() || !user) return;
+    setNoteSubmitting(true);
+    addNote({ authorId: user.id, authorName: fullName(user), body: noteText });
+    setNoteText('');
+    setNoteSubmitting(false);
+    setTimeout(() => notesEndRef.current?.scrollIntoView({ behavior: 'smooth' }), 50);
+  };
 
   return (
     <AppShell>
@@ -567,6 +581,67 @@ export default function TraineeProgress() {
             )}
           </div>
         </div>
+
+        {/* Trainer Handoff Notes — visible to anyone who can sign off training */}
+        {canSignOff && (
+          <div className="card mt-4 p-6">
+            <div className="mb-4 flex items-center gap-2">
+              <NotebookPen size={18} className="text-ink-400" />
+              <h2 className="text-lg font-bold text-ink-700">Trainer Notes</h2>
+              <span className="text-xs text-ink-400">— leave a note for the next trainer</span>
+            </div>
+
+            {/* Notes list */}
+            <div className="space-y-4">
+              {notesLoading && (
+                <p className="text-sm text-ink-400">Loading notes…</p>
+              )}
+              {!notesLoading && notes.length === 0 && (
+                <p className="text-sm text-ink-400 italic">No notes yet.</p>
+              )}
+              {notes.map((note) => (
+                <div key={note.id} className="flex gap-3">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-ink-100 text-xs font-bold text-ink-600">
+                    {note.authorName.split(' ').map((n) => n[0]).join('').slice(0, 2).toUpperCase()}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex flex-wrap items-baseline gap-2">
+                      <span className="text-sm font-semibold text-ink-700">{note.authorName}</span>
+                      <span className="text-xs text-ink-400">
+                        {format(parseISO(note.createdAt), 'MMM d, yyyy · h:mm a')}
+                      </span>
+                    </div>
+                    <p className="mt-0.5 whitespace-pre-wrap text-sm text-ink-600">{note.body}</p>
+                  </div>
+                </div>
+              ))}
+              <div ref={notesEndRef} />
+            </div>
+
+            {/* Add note */}
+            <div className="mt-4 border-t border-ink-100 pt-4">
+              <textarea
+                value={noteText}
+                onChange={(e) => setNoteText(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) handleAddNote();
+                }}
+                placeholder="Leave a note for the next trainer… (⌘↵ to submit)"
+                rows={3}
+                className="input w-full resize-none"
+              />
+              <div className="mt-2 flex justify-end">
+                <button
+                  onClick={handleAddNote}
+                  disabled={!noteText.trim() || noteSubmitting}
+                  className="btn-primary"
+                >
+                  Add note
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </AppShell>
   );

@@ -484,3 +484,16 @@ export type AccountabilityRecord = {
 };
 
 export const RECIPE_FILL_PASSING_SCORE = 95;
+
+// ---------------------------------------------------------------------------
+// Training handoff notes
+// ---------------------------------------------------------------------------
+
+export type TrainingNote = {
+  id: string;
+  employeeId: string;
+  authorId: string;
+  authorName: string;
+  body: string;
+  createdAt: string;
+};
