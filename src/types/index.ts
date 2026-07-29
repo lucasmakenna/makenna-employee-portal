@@ -483,4 +483,4 @@ export type AccountabilityRecord = {
   separationDate?: string;
 };
 
-export const RECIPE_FILL_PASSING_SCORE = 90;
+export const RECIPE_FILL_PASSING_SCORE = 95;
