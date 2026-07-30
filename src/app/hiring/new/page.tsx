@@ -37,8 +37,10 @@ export default function AddCandidatePage() {
 
   if (!user) return null;
 
+  const emailRequired = appliedFor !== 'Barista';
   const valid =
-    firstName.trim() && lastName.trim() && email.trim() && phone.trim();
+    firstName.trim() && lastName.trim() && phone.trim() &&
+    (emailRequired ? email.trim() : true);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -110,14 +112,16 @@ export default function AddCandidatePage() {
 
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <label className="label">Email</label>
+                <label className="label">
+                  Email{!emailRequired && <span className="ml-1 text-ink-400 font-normal">(optional)</span>}
+                </label>
                 <input
                   className="input"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="jasmine@example.com"
-                  required
+                  required={emailRequired}
                 />
               </div>
               <div>
