@@ -126,7 +126,7 @@ function employeeToRow(e: Employee) {
     id: e.id,
     first_name: e.firstName,
     last_name: e.lastName,
-    email: e.email,
+    email: e.email || null,
     phone: e.phone,
     role: e.role,
     home_location_id: e.homeLocationId,
