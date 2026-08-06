@@ -111,6 +111,17 @@ export default function StationDetailPage() {
                   </ul>
                 )}
               </div>
+              {sk.videoUrl && (
+                <div className="mt-4 overflow-hidden rounded-xl border border-ink-100">
+                  <iframe
+                    src={sk.videoUrl}
+                    title={sk.name}
+                    className="aspect-video w-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              )}
               {sk.images && sk.images.length > 0 && (
                 <div className="mt-4 space-y-4">
                   {sk.images.map((img, j) => (
