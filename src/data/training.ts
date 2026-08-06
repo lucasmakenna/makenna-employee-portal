@@ -40,6 +40,9 @@ export const STATIONS: TrainingStation[] = [
           'Provide the dress code policy to New Hire prior to Day 1.',
           'Notify New Hire that Makenna shirts will be provided on their first day.',
         ],
+        images: [
+          { src: '/training/dress-code-policy.jpg', caption: 'Dress Code Policy' },
+        ],
       },
       {
         id: 'pb-3',
