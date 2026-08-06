@@ -3,7 +3,8 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Search, UserPlus, X } from 'lucide-react';
+import { Search, UserPlus, X, RotateCcw, ChevronDown, ChevronUp } from 'lucide-react';
+import { format, parseISO } from 'date-fns';
 import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
 import EmailPreview from '@/components/EmailPreview';
@@ -23,7 +24,8 @@ const AVATAR_COLORS = [
 export default function TeamPage() {
   const router = useRouter();
   const { user, loaded } = useCurrentUser();
-  const { employees, add } = useEmployees();
+  const { employees, add, restore } = useEmployees();
+  const [showDeactivated, setShowDeactivated] = useState(false);
   const { create: createPacket } = usePackets();
   const [search, setSearch] = useState('');
   const [role, setRole] = useState<string>('all');
@@ -42,9 +44,14 @@ export default function TeamPage() {
   // Baristas only see teammates at their own location(s) — full directory
   // is for managers/admins/trainers/leads coordinating across stores.
   const myLocs = [user.homeLocationId, ...(user.additionalLocationIds ?? [])];
+  const activeEmployees = employees.filter((e) => e.active);
   const visibleEmployees = user.role === 'barista'
-    ? employees.filter((e) => [e.homeLocationId, ...(e.additionalLocationIds ?? [])].some((l) => myLocs.includes(l)))
-    : employees;
+    ? activeEmployees.filter((e) => [e.homeLocationId, ...(e.additionalLocationIds ?? [])].some((l) => myLocs.includes(l)))
+    : activeEmployees;
+
+  const deactivatedEmployees = user.role === 'admin'
+    ? employees.filter((e) => !e.active)
+    : [];
 
   const filtered = visibleEmployees.filter((e) => {
     if (role !== 'all' && e.role !== role) return false;
@@ -161,6 +168,48 @@ export default function TeamPage() {
         )}
       </div>
 
+      {/* Deactivated employees — admin only */}
+      {deactivatedEmployees.length > 0 && (
+        <div className="mt-8">
+          <button
+            onClick={() => setShowDeactivated((v) => !v)}
+            className="flex items-center gap-2 text-sm font-semibold text-ink-400 hover:text-ink-600"
+          >
+            {showDeactivated ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+            Deactivated employees ({deactivatedEmployees.length})
+          </button>
+          {showDeactivated && (
+            <div className="mt-3 space-y-2">
+              {deactivatedEmployees.map((e) => (
+                <div key={e.id} className="rounded-xl border border-ink-100 bg-ink-50 p-4 flex items-start justify-between gap-4">
+                  <div className="flex-1 min-w-0">
+                    <div className="font-semibold text-ink-700">{fullName(e)}</div>
+                    <div className="text-xs text-ink-400 mt-0.5">
+                      {ROLE_LABELS[e.role]} · {getLocation(e.homeLocationId)?.name}
+                    </div>
+                    {e.deactivatedAt && (
+                      <div className="text-xs text-ink-400 mt-1">
+                        Deactivated {format(parseISO(e.deactivatedAt), 'MMM d, yyyy')}
+                        {e.deactivatedByName && ` by ${e.deactivatedByName}`}
+                      </div>
+                    )}
+                    {e.deactivationReason && (
+                      <div className="text-xs text-ink-500 mt-1 italic">"{e.deactivationReason}"</div>
+                    )}
+                  </div>
+                  <button
+                    onClick={() => restore(e.id)}
+                    className="flex shrink-0 items-center gap-1.5 rounded-full border border-ink-200 bg-white px-3 py-1.5 text-xs font-semibold text-ink-600 hover:bg-cyan-50 hover:border-cyan-300 hover:text-cyan-700 transition"
+                  >
+                    <RotateCcw size={12} /> Restore
+                  </button>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
       {showAdd && (
         <AddEmployeeModal
           onClose={() => setShowAdd(false)}
@@ -220,7 +269,7 @@ function AddEmployeeModal({
       avatarColor: color,
       active: true,
     };
-    onAdd(emp, sendEmail);
+    onAdd(emp, sendEmail && !!email.trim());
   }
 
   return (
@@ -244,8 +293,8 @@ function AddEmployeeModal({
             </div>
           </div>
           <div>
-            <label className="label">Work email</label>
-            <input type="email" className="input w-full" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <label className="label">Work email <span className="font-normal text-ink-400">(optional)</span></label>
+            <input type="email" className="input w-full" value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div>
             <label className="label">Phone</label>
@@ -273,18 +322,20 @@ function AddEmployeeModal({
             <label className="label">Hire date</label>
             <input type="date" className="input w-full" value={hiredOn} onChange={(e) => setHiredOn(e.target.value)} required />
           </div>
-          <label className="flex items-center gap-2 cursor-pointer select-none text-sm text-ink-600">
-            <input
-              type="checkbox"
-              checked={sendEmail}
-              onChange={(e) => setSendEmail(e.target.checked)}
-              className="h-4 w-4 rounded border-ink-300 text-cyan-500 focus:ring-cyan-300"
-            />
-            Send welcome email to new hire
-          </label>
+          {email.trim() && (
+            <label className="flex items-center gap-2 cursor-pointer select-none text-sm text-ink-600">
+              <input
+                type="checkbox"
+                checked={sendEmail}
+                onChange={(e) => setSendEmail(e.target.checked)}
+                className="h-4 w-4 rounded border-ink-300 text-cyan-500 focus:ring-cyan-300"
+              />
+              Send welcome email to new hire
+            </label>
+          )}
           <div className="flex gap-3 pt-2">
             <button type="button" onClick={onClose} className="btn-ghost flex-1">Cancel</button>
-            <button type="submit" className="btn-cyan flex-1" disabled={!firstName || !lastName || !email}>
+            <button type="submit" className="btn-cyan flex-1" disabled={!firstName || !lastName}>
               Add Employee
             </button>
           </div>

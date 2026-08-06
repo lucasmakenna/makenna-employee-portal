@@ -557,7 +557,7 @@ export default function TeamMemberPage() {
   const params = useParams<{ id: string }>();
   const router = useRouter();
   const { user, loaded } = useCurrentUser();
-  const { employees, remove, update: updateEmployee } = useEmployees();
+  const { employees, deactivate, update: updateEmployee } = useEmployees();
   const { get: getPacket } = usePackets();
   const { records: allAccountabilityRecords } = useAccountability();
   const [tab, setTab] = useState<Tab>('overview');
@@ -1030,7 +1030,10 @@ export default function TeamMemberPage() {
         employeeName={fullName(employee)}
         adminEmail={user.email}
         onCancel={() => setShowRemoveModal(false)}
-        onConfirm={() => { remove(employee.id); router.replace('/team'); }}
+        onConfirm={(reason) => {
+          deactivate(employee.id, { reason, byId: user.id, byName: fullName(user) });
+          router.replace('/team');
+        }}
       />
     )}
     </>
@@ -1046,7 +1049,7 @@ function RemoveEmployeeModal({
   employeeName: string;
   adminEmail: string;
   onCancel: () => void;
-  onConfirm: () => void;
+  onConfirm: (reason: string) => void;
 }) {
   const [password, setPassword] = useState('');
   const [reason, setReason] = useState('');
@@ -1076,7 +1079,7 @@ function RemoveEmployeeModal({
         setLoading(false);
         return;
       }
-      onConfirm();
+      onConfirm(reason);
     } catch {
       setError('Something went wrong. Try again.');
       setLoading(false);
@@ -1089,7 +1092,7 @@ function RemoveEmployeeModal({
         <div className="border-b border-ink-100 px-6 py-4">
           <h2 className="text-lg font-bold text-hibiscus-600">Remove Employee</h2>
           <p className="mt-1 text-sm text-ink-500">
-            You are about to remove <strong>{employeeName}</strong> from the portal. This cannot be undone.
+            You are about to deactivate <strong>{employeeName}</strong>. Their record will be preserved and can be restored by an admin.
           </p>
         </div>
         <form onSubmit={handleSubmit} className="p-6 space-y-4">

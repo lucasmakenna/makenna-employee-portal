@@ -69,6 +69,11 @@ export type Employee = {
   attachments?: EmployeeAttachment[];
   /** UUID token for the read-only "view my file" share link. Generated on demand by a manager. */
   shareToken?: string;
+  /** Soft-delete audit trail — set when an admin removes the employee */
+  deactivatedAt?: string;
+  deactivatedById?: string;
+  deactivatedByName?: string;
+  deactivationReason?: string;
 };
 
 export type EmployeeAttachment = {

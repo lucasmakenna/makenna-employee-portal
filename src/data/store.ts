@@ -114,6 +114,10 @@ export function employeeFromRow(r: Record<string, unknown>): Employee {
     active: r.active as boolean,
     attachments: (r.attachments as Employee['attachments']) ?? [],
     shareToken: (r.share_token as string) ?? undefined,
+    deactivatedAt: (r.deactivated_at as string) ?? undefined,
+    deactivatedById: (r.deactivated_by_id as string) ?? undefined,
+    deactivatedByName: (r.deactivated_by_name as string) ?? undefined,
+    deactivationReason: (r.deactivation_reason as string) ?? undefined,
   };
 }
 
@@ -135,6 +139,10 @@ function employeeToRow(e: Employee) {
     active: e.active,
     attachments: e.attachments ?? [],
     updated_at: new Date().toISOString(),
+    deactivated_at: e.deactivatedAt ?? null,
+    deactivated_by_id: e.deactivatedById ?? null,
+    deactivated_by_name: e.deactivatedByName ?? null,
+    deactivation_reason: e.deactivationReason ?? null,
   };
 }
 
@@ -444,18 +452,56 @@ export function useEmployees() {
 
   const getById = useCallback((id: string) => list.find((e) => e.id === id), [list]);
 
-  const remove = useCallback((id: string) => {
+  const deactivate = useCallback(
+    (id: string, info: { reason: string; byId: string; byName: string }) => {
+      const patch: Partial<Employee> = {
+        active: false,
+        deactivatedAt: new Date().toISOString(),
+        deactivatedById: info.byId,
+        deactivatedByName: info.byName,
+        deactivationReason: info.reason,
+      };
+      setList((prev) => {
+        const next = prev.map((e) => (e.id === id ? { ...e, ...patch } : e));
+        saveEmployees(next);
+        const updated = next.find((e) => e.id === id);
+        if (updated) {
+          syncToDb(
+            () => dbCall('employees', 'update', { data: employeeToRow(updated), eq: [['id', id]] }),
+            `deactivate ${updated.firstName} ${updated.lastName}`,
+          );
+        }
+        return next;
+      });
+    },
+    [],
+  );
+
+  const restore = useCallback((id: string) => {
+    const patch: Partial<Employee> = {
+      active: true,
+      deactivatedAt: undefined,
+      deactivatedById: undefined,
+      deactivatedByName: undefined,
+      deactivationReason: undefined,
+    };
     setList((prev) => {
-      const next = prev.filter((e) => e.id !== id);
+      const next = prev.map((e) => (e.id === id ? { ...e, ...patch } : e));
       saveEmployees(next);
+      const updated = next.find((e) => e.id === id);
+      if (updated) {
+        syncToDb(
+          () => dbCall('employees', 'update', { data: employeeToRow(updated), eq: [['id', id]] }),
+          `restore ${updated.firstName} ${updated.lastName}`,
+        );
+      }
       return next;
     });
-    dbCall('employees', 'delete', { eq: [['id', id]] }).then(() => {});
   }, []);
 
   return useMemo(
-    () => ({ employees: list, add, update, getById, remove }),
-    [list, add, update, getById, remove],
+    () => ({ employees: list, add, update, getById, deactivate, restore }),
+    [list, add, update, getById, deactivate, restore],
   );
 }
 
