@@ -346,6 +346,7 @@ export const STATIONS: TrainingStation[] = [
         name: 'Culture video watched',
         description: 'New Hire watches the Makenna Koffee culture video.',
         estimatedMinutes: 15,
+        videoUrl: 'https://www.youtube.com/embed/5bZgsa8f63U',
         competencyCriteria: [
           'New Hire watches the culture video with the trainer.',
           'Trainer answers any questions after viewing.',
