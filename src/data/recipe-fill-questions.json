@@ -1,19 +1,19 @@
 {
   "test_name": "Makenna Koffee Recipe Test",
-  "total_questions": 1394,
+  "total_questions": 804,
   "options": {
     "quantity": [
-      "1",
-      "1 1/2",
-      "1 1/4",
-      "1 3/4",
-      "1/2",
       "1/4",
+      "1/2",
+      "3/4",
+      "1",
+      "1 1/4",
+      "1 1/2",
       "2",
+      "2 1/4",
       "2 1/2",
       "3",
       "3 1/2",
-      "3/4",
       "4",
       "4 1/2",
       "5",
@@ -34,8 +34,7 @@
       "chocolate macadamia nut syrup",
       "cinnamon syrup",
       "coconut syrup",
-      "cr\u00e8me de menthe syrup",
-      "dragon fruit kiwi syrup",
+      "crème de menthe syrup",
       "dragon fruit syrup",
       "gingerbread syrup",
       "grapefruit syrup",
@@ -44,6 +43,8 @@
       "guava syrup",
       "hazelnut syrup",
       "irish cream syrup",
+      "irish cream syrup in 10 oz cold brew",
+      "irish cream syrup in 8 oz cold brew",
       "kiwi syrup",
       "lavender syrup",
       "lemon syrup",
@@ -85,6 +86,7 @@
       "chocolate chips",
       "cinnamon powder",
       "cookie butter",
+      "cookie butter crumbs",
       "cookie dough",
       "cookie dough bits",
       "horchata powder",
@@ -101,19 +103,17 @@
       "vanilla powder",
       "vanilla protein powder",
       "white chocolate powder",
-      "white mocha powder"
+      "white mocha powder",
+      "whole espresso beans"
     ],
     "cream": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6"
+      "2"
     ],
     "drizzle": [
       "caramel",
+      "caramel and chocolate",
       "chocolate",
+      "chocolate and caramel",
       "honey",
       "salted caramel",
       "strawberry",
@@ -124,23 +124,29 @@
       "oreo crumb"
     ],
     "fill_oz": [
-      "10",
-      "12",
+      "2 1/2",
+      "3",
+      "3 1/2",
+      "4",
+      "5",
       "6",
       "7",
-      "8"
+      "8",
+      "10",
+      "12",
+      "14"
     ]
   },
   "conflictMap": {
     "strawberry syrup": [
-      "strawberry pur\u00e9e",
+      "strawberry purée",
       "strawberry puree",
       "strawberry",
       "strawberry drizzle",
       "strawberry puree drizzle",
       "tea zone strawberry syrup"
     ],
-    "strawberry pur\u00e9e": [
+    "strawberry purée": [
       "strawberry syrup",
       "strawberry puree",
       "strawberry",
@@ -150,7 +156,7 @@
     ],
     "strawberry puree": [
       "strawberry syrup",
-      "strawberry pur\u00e9e",
+      "strawberry purée",
       "strawberry",
       "strawberry drizzle",
       "strawberry puree drizzle",
@@ -158,7 +164,7 @@
     ],
     "strawberry": [
       "strawberry syrup",
-      "strawberry pur\u00e9e",
+      "strawberry purée",
       "strawberry puree",
       "strawberry drizzle",
       "strawberry puree drizzle",
@@ -166,7 +172,7 @@
     ],
     "strawberry drizzle": [
       "strawberry syrup",
-      "strawberry pur\u00e9e",
+      "strawberry purée",
       "strawberry puree",
       "strawberry",
       "strawberry puree drizzle",
@@ -174,7 +180,7 @@
     ],
     "strawberry puree drizzle": [
       "strawberry syrup",
-      "strawberry pur\u00e9e",
+      "strawberry purée",
       "strawberry puree",
       "strawberry",
       "strawberry drizzle",
@@ -182,7 +188,7 @@
     ],
     "tea zone strawberry syrup": [
       "strawberry syrup",
-      "strawberry pur\u00e9e",
+      "strawberry purée",
       "strawberry puree",
       "strawberry",
       "strawberry drizzle",
@@ -195,118 +201,140 @@
       "caramel and chocolate"
     ],
     "white chocolate powder": [
+      "mexican mocha powder",
       "white mocha powder",
-      "white chocolate"
+      "white chocolate",
+      "mocha powder",
+      "white chocolate sauce"
     ],
     "white mocha powder": [
-      "white chocolate powder",
+      "mexican mocha powder",
+      "white chocolate",
       "mocha powder",
-      "mexican mocha powder"
+      "white chocolate powder"
+    ],
+    "white chocolate": [
+      "white mocha powder",
+      "white mocha sauce",
+      "white chocolate powder",
+      "white chocolate sauce"
+    ],
+    "mexican mocha powder": [
+      "mocha powder",
+      "white chocolate powder",
+      "white mocha powder"
+    ],
+    "mocha powder": [
+      "mexican mocha powder",
+      "white chocolate powder",
+      "white mocha powder"
     ],
     "white chocolate sauce": [
       "white mocha sauce",
+      "white chocolate powder",
       "white chocolate"
     ],
     "white mocha sauce": [
-      "white chocolate sauce"
-    ],
-    "mango pur\u00e9e": [
-      "mango syrup",
-      "mango puree"
-    ],
-    "mango syrup": [
-      "mango pur\u00e9e",
-      "mango puree"
+      "white chocolate sauce",
+      "white chocolate"
     ],
     "mango puree": [
-      "mango pur\u00e9e",
+      "mango purée",
       "mango syrup"
     ],
-    "almond syrup": [
-      "almond roca syrup"
+    "mango purée": [
+      "mango puree",
+      "mango syrup"
+    ],
+    "mango syrup": [
+      "mango puree",
+      "mango purée"
     ],
     "almond roca syrup": [
       "almond syrup"
     ],
-    "dragon fruit syrup": [
-      "dragon fruit kiwi syrup",
-      "kiwi syrup"
+    "almond syrup": [
+      "almond roca syrup"
     ],
     "dragon fruit kiwi syrup": [
       "dragon fruit syrup",
       "kiwi syrup"
     ],
-    "kiwi syrup": [
-      "dragon fruit syrup",
-      "dragon fruit kiwi syrup"
+    "dragon fruit syrup": [
+      "dragon fruit kiwi syrup",
+      "kiwi syrup"
     ],
-    "vanilla powder": [
+    "kiwi syrup": [
+      "dragon fruit kiwi syrup",
+      "dragon fruit syrup"
+    ],
+    "spiced chai powder": [
       "vanilla bean powder",
-      "vanilla chai powder",
       "vanilla chai",
-      "spiced chai powder",
+      "vanilla chai powder",
+      "vanilla powder",
       "vanilla protein powder"
     ],
     "vanilla bean powder": [
-      "vanilla powder",
+      "spiced chai powder",
+      "vanilla chai",
       "vanilla chai powder",
-      "vanilla chai",
-      "spiced chai powder",
-      "vanilla protein powder"
-    ],
-    "vanilla chai powder": [
       "vanilla powder",
-      "vanilla bean powder",
-      "vanilla chai",
-      "spiced chai powder",
       "vanilla protein powder"
     ],
     "vanilla chai": [
-      "vanilla powder",
+      "spiced chai powder",
       "vanilla bean powder",
       "vanilla chai powder",
-      "spiced chai powder",
+      "vanilla powder",
       "vanilla protein powder"
     ],
-    "spiced chai powder": [
-      "vanilla powder",
+    "vanilla chai powder": [
+      "spiced chai powder",
       "vanilla bean powder",
-      "vanilla chai powder",
       "vanilla chai",
+      "vanilla powder",
+      "vanilla protein powder"
+    ],
+    "vanilla powder": [
+      "spiced chai powder",
+      "vanilla bean powder",
+      "vanilla chai",
+      "vanilla chai powder",
       "vanilla protein powder"
     ],
     "vanilla protein powder": [
-      "vanilla powder",
+      "spiced chai powder",
       "vanilla bean powder",
-      "vanilla chai powder",
       "vanilla chai",
-      "spiced chai powder"
-    ],
-    "peppermint sauce": [
-      "peppermint bark sauce"
+      "vanilla chai powder",
+      "vanilla powder"
     ],
     "peppermint bark sauce": [
       "peppermint sauce"
     ],
-    "cinnamon": [
-      "cinnamon syrup",
-      "brown sugar cinnamon",
-      "brown sugar cinnamon syrup"
-    ],
-    "cinnamon syrup": [
-      "cinnamon",
-      "brown sugar cinnamon",
-      "brown sugar cinnamon syrup"
+    "peppermint sauce": [
+      "peppermint bark sauce"
     ],
     "brown sugar cinnamon": [
+      "brown sugar cinnamon syrup",
       "cinnamon",
-      "cinnamon syrup",
-      "brown sugar cinnamon syrup"
+      "cinnamon syrup"
     ],
     "brown sugar cinnamon syrup": [
+      "brown sugar cinnamon",
       "cinnamon",
-      "cinnamon syrup",
-      "brown sugar cinnamon"
+      "cinnamon syrup"
+    ],
+    "cinnamon": [
+      "brown sugar cinnamon",
+      "brown sugar cinnamon syrup",
+      "cinnamon syrup"
+    ],
+    "cinnamon syrup": [
+      "brown sugar cinnamon",
+      "brown sugar cinnamon syrup",
+      "cinnamon"
     ],
     "caramel apple butter": [
       "caramel apple butter syrup"
@@ -338,23 +366,23 @@
     "matcha powder": [
       "matcha"
     ],
-    "raspberry syrup": [
+    "blackberry syrup": [
       "blue raspberry syrup",
-      "blackberry syrup"
+      "raspberry syrup"
     ],
     "blue raspberry syrup": [
-      "raspberry syrup",
-      "blackberry syrup"
+      "blackberry syrup",
+      "raspberry syrup"
     ],
-    "blackberry syrup": [
-      "raspberry syrup",
+    "raspberry syrup": [
+      "blackberry syrup",
       "blue raspberry syrup"
-    ],
-    "macadamia nut syrup": [
-      "chocolate macadamia nut syrup"
     ],
     "chocolate macadamia nut syrup": [
       "macadamia nut syrup"
+    ],
+    "macadamia nut syrup": [
+      "chocolate macadamia nut syrup"
     ],
     "coconut syrup": [
       "sf coconut syrup"
@@ -362,45 +390,37 @@
     "sf coconut syrup": [
       "coconut syrup"
     ],
-    "mocha powder": [
-      "mexican mocha powder",
-      "white mocha powder"
-    ],
-    "mexican mocha powder": [
-      "mocha powder",
-      "white mocha powder"
-    ],
     "cookie dough": [
       "cookie dough bits"
     ],
     "cookie dough bits": [
       "cookie dough"
     ],
-    "caramel sauce": [
-      "salted caramel sauce",
-      "caramel"
-    ],
-    "salted caramel sauce": [
-      "caramel sauce",
-      "salted caramel"
-    ],
     "caramel": [
+      "salted caramel sauce",
       "salted caramel",
       "caramel sauce"
     ],
-    "salted caramel": [
+    "caramel sauce": [
+      "salted caramel sauce",
+      "salted caramel",
+      "caramel"
+    ],
+    "salted caramel sauce": [
+      "salted caramel",
       "caramel",
-      "salted caramel sauce"
+      "caramel sauce"
+    ],
+    "salted caramel": [
+      "salted caramel sauce",
+      "caramel",
+      "caramel sauce"
     ],
     "pineapple": [
       "pineapple syrup"
     ],
     "pineapple syrup": [
       "pineapple"
-    ],
-    "white chocolate": [
-      "white chocolate powder",
-      "white chocolate sauce"
     ],
     "brown sugar": [
       "brown sugar powder"
@@ -1297,42 +1317,6 @@
       ]
     },
     {
-      "id": "2e2015f7-a645-4188-a318-2ca80bdfd7f0",
-      "drink": "Red Hammer",
-      "size": "16 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "raspberry syrup"
-        }
-      ]
-    },
-    {
-      "id": "9bceca8c-4f86-46d5-968a-44482c2ea1b4",
-      "drink": "Red Hammer",
-      "size": "24 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "raspberry syrup"
-        }
-      ]
-    },
-    {
       "id": "7ccea95d-0394-448d-a9b8-5c5b2fe22c82",
       "drink": "Red Starburst",
       "size": "16 oz",
@@ -1918,7 +1902,7 @@
     },
     {
       "id": "a36de136-27b3-4025-84cb-b6afc638d87e",
-      "drink": "The Dragon\u2019s Breath",
+      "drink": "The Dragon’s Breath",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
       "blanks": [
@@ -1956,7 +1940,7 @@
     },
     {
       "id": "2f723ab4-328b-4fd3-ba9e-5ed526fb051b",
-      "drink": "The Dragon\u2019s Breath",
+      "drink": "The Dragon’s Breath",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
       "blanks": [
@@ -2253,7 +2237,7 @@
       ]
     },
     {
-      "id": "f32a277c-55b6-42f2-869e-82ed00d87e58",
+      "id": "7855e35a-b474-43d3-9417-a9f16265771e",
       "drink": "Vanilla Chai Blended",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -2271,7 +2255,7 @@
       ]
     },
     {
-      "id": "498d7c4d-cbe0-477e-bb9a-78b2adbab683",
+      "id": "30fbd8e4-836e-4914-bf93-27adac94e307",
       "drink": "Vanilla Chai Blended",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -2289,43 +2273,7 @@
       ]
     },
     {
-      "id": "e0e829f6-a20e-4eff-a2ff-46752d23770f",
-      "drink": "Spiced Chai Blended",
-      "size": "16 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "spiced chai powder"
-        }
-      ]
-    },
-    {
-      "id": "2039f1b2-73c2-4985-877f-bb37c6e4f72f",
-      "drink": "Spiced Chai Blended",
-      "size": "24 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "spiced chai powder"
-        }
-      ]
-    },
-    {
-      "id": "ca83cf76-e8fd-4509-90df-b68782e9884d",
+      "id": "a5b69eb6-01d8-49c9-b43f-560069a4c883",
       "drink": "Chai Blended Oregon Style",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -2353,7 +2301,7 @@
       ]
     },
     {
-      "id": "accd57fc-d9e5-4c90-9192-73264a0bf863",
+      "id": "30d78da6-100b-4759-9f9a-d21e3c786ec3",
       "drink": "Chai Blended Oregon Style",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -2381,7 +2329,7 @@
       ]
     },
     {
-      "id": "e54236b7-1a02-4db0-bcfe-66b4af90c06e",
+      "id": "6bf9155b-0311-4ffb-be96-e6b0b4815275",
       "drink": "Hula Girl Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -2409,7 +2357,7 @@
       ]
     },
     {
-      "id": "4aa069c3-52eb-46d3-a2a0-c3bec1f8ebcf",
+      "id": "34541c3f-114d-4f22-adf2-19761620fd8d",
       "drink": "Hula Girl Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -2437,7 +2385,7 @@
       ]
     },
     {
-      "id": "e7130e4d-eefe-426a-9c51-26923511e1e7",
+      "id": "05e9d41f-b0af-43f3-81f0-8726a08900e2",
       "drink": "Java Mint Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -2480,12 +2428,12 @@
         {
           "index": 7,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         }
       ]
     },
     {
-      "id": "8c2c11d3-b626-4c28-8792-4aaebad2e875",
+      "id": "5c397f96-066e-41c9-a950-fe4abb520ee5",
       "drink": "Java Mint Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -2528,12 +2476,12 @@
         {
           "index": 7,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         }
       ]
     },
     {
-      "id": "29e8f7eb-b0c1-47e2-9d2b-d4a15aba8838",
+      "id": "6245e5c7-d8f2-4e95-88f2-0e40a057244e",
       "drink": "Kona Caramel Chiller (Blended Sandy Brunette",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -2561,7 +2509,7 @@
       ]
     },
     {
-      "id": "be446c23-5208-4e98-b260-21846cff954e",
+      "id": "fe95e88e-5f28-40e7-9cf1-dd7662da684d",
       "drink": "Kona Caramel Chiller (Blended Sandy Brunette",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -2589,7 +2537,7 @@
       ]
     },
     {
-      "id": "3912248d-d529-4dbd-9373-4f42c5fbc98c",
+      "id": "2435a1a6-b012-4c75-8240-83edbf872781",
       "drink": "Maui Caramel Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -2617,7 +2565,7 @@
       ]
     },
     {
-      "id": "d0b379e7-9d57-42e3-9437-3ea6b61bd692",
+      "id": "81cb7be5-0b39-43df-98a1-6d0d93a4b9b1",
       "drink": "Maui Caramel Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -2645,7 +2593,7 @@
       ]
     },
     {
-      "id": "3d20f03f-829b-4fd1-9c01-3c7236134fa1",
+      "id": "aab146e8-8e41-4a8a-81cd-aab5f59a522d",
       "drink": "Maui Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -2663,7 +2611,7 @@
       ]
     },
     {
-      "id": "a1047423-89c7-4872-b6a7-8fc59a32020f",
+      "id": "cf4d52d7-6a75-4061-ad3f-18bb191d1235",
       "drink": "Maui Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -2681,7 +2629,7 @@
       ]
     },
     {
-      "id": "7403e7b3-12e9-41c1-81e2-697c2f355e19",
+      "id": "261bf788-cfa4-4b5c-af0c-abc14591beb3",
       "drink": "Maui Matcha Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -2699,7 +2647,7 @@
       ]
     },
     {
-      "id": "6671417f-cb8d-4f2b-8aba-c4a66f1670db",
+      "id": "7f507458-47d8-446a-9ce1-c9eba139df0e",
       "drink": "Maui Matcha Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -2717,7 +2665,7 @@
       ]
     },
     {
-      "id": "a8a50bce-9d61-4c6c-a80d-ddbc49099537",
+      "id": "cbae2b39-9519-424d-af1d-f15e9f864a05",
       "drink": "Maui Mocha Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -2735,7 +2683,7 @@
       ]
     },
     {
-      "id": "5ff70247-7541-4cc0-8736-2d54536c5ff4",
+      "id": "5c92d118-d053-4b74-aa89-0047e6185575",
       "drink": "Maui Mocha Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -2753,7 +2701,7 @@
       ]
     },
     {
-      "id": "c72aace1-8d43-40f4-b44c-1d3f28baadb3",
+      "id": "87bb5283-7ea4-4134-8aa4-76aa5b536fcf",
       "drink": "Mocha Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -2771,7 +2719,7 @@
       ]
     },
     {
-      "id": "806c5547-312e-4237-b5e3-70649efb90d4",
+      "id": "6ba433b6-5f09-4fe3-9bc3-ab2446ebf90a",
       "drink": "Mocha Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -2789,7 +2737,7 @@
       ]
     },
     {
-      "id": "9ee12f3e-bcbb-485e-a4aa-ba0b8c447d52",
+      "id": "4ffd3ad5-2aba-41df-a8af-b85df2d61580",
       "drink": "Oreo Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle\n___ on top",
@@ -2827,7 +2775,7 @@
       ]
     },
     {
-      "id": "f3d4ebb2-b30f-4923-abf9-aea628319eab",
+      "id": "98489056-b9a0-4491-a8a1-c284a6e3ca8b",
       "drink": "Oreo Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle\n___ on top",
@@ -2865,7 +2813,7 @@
       ]
     },
     {
-      "id": "db588a4d-da4d-4615-82e8-f7055955a379",
+      "id": "60fddee4-8d34-412b-a774-71055e235562",
       "drink": "PB No J Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
@@ -2898,7 +2846,7 @@
       ]
     },
     {
-      "id": "58d77581-3d09-46ec-bd99-9f810e4079b7",
+      "id": "cc14115a-f858-49f6-9621-af999709d8fe",
       "drink": "PB No J Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
@@ -2931,7 +2879,7 @@
       ]
     },
     {
-      "id": "4fa28b92-edb3-4cf4-8070-6674b670d2d7",
+      "id": "e36738d2-aeec-466b-8bcf-073e3a1dd06c",
       "drink": "Sandy Kisses Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -2959,7 +2907,7 @@
       ]
     },
     {
-      "id": "7899ee76-ca79-433c-8279-e2131b9471dd",
+      "id": "3b268213-f5eb-49da-ab91-f05766dbc976",
       "drink": "Sandy Kisses Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -2987,7 +2935,7 @@
       ]
     },
     {
-      "id": "5b3e9f66-4fdd-4d15-90f6-1a46f7615894",
+      "id": "28731f53-e93f-43c8-a88f-a7e1624bd843",
       "drink": "The Skylar Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
@@ -3025,7 +2973,7 @@
       ]
     },
     {
-      "id": "f3b81354-af13-4278-9935-03e2687ac712",
+      "id": "db440827-e784-4745-ab83-dac46d2d8c94",
       "drink": "The Skylar Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
@@ -3063,7 +3011,7 @@
       ]
     },
     {
-      "id": "017f5f10-0dbc-4e83-8b4c-77a8d3d15827",
+      "id": "a7f50c62-9269-4cbc-a61a-911beae9f0f0",
       "drink": "Vanilla Caramel Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -3091,7 +3039,7 @@
       ]
     },
     {
-      "id": "db88fc40-e93c-4c57-a180-b22375b6e41a",
+      "id": "32895565-8115-4401-b71d-8b45ecdc5aa1",
       "drink": "Vanilla Caramel Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -3119,7 +3067,7 @@
       ]
     },
     {
-      "id": "dabdaeea-2d5b-48ce-b86e-1e6a89ba377f",
+      "id": "c8ad05bb-d56a-43e1-93fa-bf05f47bd82e",
       "drink": "Vanilla Mocha Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -3147,7 +3095,7 @@
       ]
     },
     {
-      "id": "769db383-78bc-4770-a5f4-d8cc843040d7",
+      "id": "83749e33-75a4-4348-b2b1-c2ae2457f9af",
       "drink": "Vanilla Mocha Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -3175,7 +3123,7 @@
       ]
     },
     {
-      "id": "3ba80f25-d803-4ad3-ab76-29f00902c141",
+      "id": "dccb7a8a-1f20-4b49-9e1a-89d5285f11e6",
       "drink": "White Chocolate Mocha Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -3193,7 +3141,7 @@
       ]
     },
     {
-      "id": "d2bb6aa4-38bb-4abe-9c1b-cf1824c4f468",
+      "id": "3158f3e8-2ceb-4cf1-810d-e60b93086e9d",
       "drink": "White Chocolate Mocha Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -3211,7 +3159,7 @@
       ]
     },
     {
-      "id": "4aaca441-760a-4f4f-9526-f56ab40b2867",
+      "id": "10b38046-6bd5-439c-838c-2b5f3871eed5",
       "drink": "Bubble Gum",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -3239,7 +3187,7 @@
       ]
     },
     {
-      "id": "95fb1628-59a5-4dfc-826a-b0faa475d2f5",
+      "id": "b6ca4795-5412-4d8b-bd94-0a88c08f6984",
       "drink": "Bubble Gum",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -3267,7 +3215,7 @@
       ]
     },
     {
-      "id": "bd441d02-2e25-4fe3-a39e-3df9538c5662",
+      "id": "7f8fdfcf-1716-430f-bdb9-ad960a890fe3",
       "drink": "Chocolate Chippy Chip",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
@@ -3305,7 +3253,7 @@
       ]
     },
     {
-      "id": "4544f025-9ce1-42d7-bdff-5a4522129446",
+      "id": "148440c8-8041-4a68-a37c-5df2fb5e27ff",
       "drink": "Chocolate Chippy Chip",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
@@ -3343,7 +3291,7 @@
       ]
     },
     {
-      "id": "d16f3f73-aab1-4f96-a0da-dab243af28ad",
+      "id": "2ed7d270-848b-4453-b2b7-b3e14e5dcee1",
       "drink": "Chocolate Volcano",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -3361,7 +3309,7 @@
       ]
     },
     {
-      "id": "7cf026b3-3d53-4097-96de-32f5ea3a93a0",
+      "id": "1f6a19f1-e3d0-4f64-8233-0283c26d6bf8",
       "drink": "Chocolate Volcano",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -3379,7 +3327,7 @@
       ]
     },
     {
-      "id": "cd6b2d04-5335-438d-8a89-7e815334e56f",
+      "id": "3409f14d-25d4-48dd-b2bc-8c36cdfb8d5e",
       "drink": "Cotton Candy",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -3417,7 +3365,7 @@
       ]
     },
     {
-      "id": "ba1c52f0-e557-4ed4-9513-aa8173664d02",
+      "id": "91c95786-55aa-42fc-ab87-6d7a09e4af92",
       "drink": "Cotton Candy",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -3455,7 +3403,7 @@
       ]
     },
     {
-      "id": "fd8548e1-b6d6-4dfa-b3d3-480b8a710b01",
+      "id": "e4a68395-33d2-4a10-86e6-f0f5b9697e74",
       "drink": "Shark Bite",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -3473,7 +3421,7 @@
       ]
     },
     {
-      "id": "5212c711-2115-4117-84dc-dccac8214931",
+      "id": "3ca6d775-c580-4ef0-aed7-920c98611076",
       "drink": "Shark Bite",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -3491,7 +3439,7 @@
       ]
     },
     {
-      "id": "322090c4-d2c5-4d1a-a75b-94e80b18473d",
+      "id": "0564b802-ed84-47d0-82d4-9daa212d03f6",
       "drink": "The Drew Dog",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -3509,7 +3457,7 @@
       ]
     },
     {
-      "id": "5acdfdc6-26e3-4ffd-ad31-75a01453635c",
+      "id": "4560b2d7-edb3-4cdb-a42d-c3b11c9e336e",
       "drink": "The Drew Dog",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -3527,7 +3475,7 @@
       ]
     },
     {
-      "id": "53e038e1-de6a-4e24-91c8-94c6a6aec480",
+      "id": "9b790ea0-cd75-45f5-b9ad-c21119524e18",
       "drink": "Almond Blossom",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -3555,7 +3503,7 @@
       ]
     },
     {
-      "id": "a28e4cfc-66a4-4ad5-85a9-9b8ee86b1ac9",
+      "id": "26cdce2d-94b5-473e-9ad8-20686aefe548",
       "drink": "Almond Blossom",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -3583,7 +3531,7 @@
       ]
     },
     {
-      "id": "67ffb9ec-3f64-4d14-91dd-e497858d345d",
+      "id": "97ac50ed-f299-47f0-9ee7-a3fd28afb2af",
       "drink": "Cabo San Lucas",
       "size": "16 oz",
       "template": "___ pumps of ___",
@@ -3601,7 +3549,7 @@
       ]
     },
     {
-      "id": "4f19fac3-a55b-4d7d-b80d-44dd9363e22e",
+      "id": "b419ad7a-4efe-4355-96d6-ee0e0b24ce09",
       "drink": "Cabo San Lucas",
       "size": "24 oz",
       "template": "___ pumps of ___",
@@ -3619,7 +3567,7 @@
       ]
     },
     {
-      "id": "a57090ac-316f-467f-bd2e-10b46f53bf7b",
+      "id": "8fda85e1-ecb5-46f0-aba7-7ff412f45c00",
       "drink": "Caramel Latte Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ drizzle",
@@ -3642,7 +3590,7 @@
       ]
     },
     {
-      "id": "467e6966-779a-4e55-8e9f-0e794f19e245",
+      "id": "a418b574-74fb-48f7-be5d-a944471055f3",
       "drink": "Caramel Latte Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ drizzle",
@@ -3665,7 +3613,7 @@
       ]
     },
     {
-      "id": "920088ca-2e75-4e2d-813a-3a0b05bbf02d",
+      "id": "bc85854f-888f-4272-95a7-2b0261d54214",
       "drink": "Hawaiian Honey",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -3698,7 +3646,7 @@
       ]
     },
     {
-      "id": "5a0831b9-581b-4a6f-a5cf-cdb53a2b455c",
+      "id": "31410ad4-e183-4db3-9dbd-1b5fbbff4e4e",
       "drink": "Hawaiian Honey",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -3731,7 +3679,7 @@
       ]
     },
     {
-      "id": "51163129-b2d9-44cb-b7b8-07485295722e",
+      "id": "d5c83fa4-cdcb-40f6-83b9-7e6563c64d38",
       "drink": "Hawaiian Latte",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -3759,7 +3707,7 @@
       ]
     },
     {
-      "id": "47713804-a0de-4539-8bd0-3832c5e574dc",
+      "id": "13e0b4e3-3b9f-402a-a261-eceb6afcfee2",
       "drink": "Hawaiian Latte",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -3787,7 +3735,7 @@
       ]
     },
     {
-      "id": "b2317804-91d5-41bc-9b1a-fa6898ef309b",
+      "id": "2cf52c8d-3af2-4d2d-b857-3c8312c7c841",
       "drink": "Heart Attack",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -3815,7 +3763,7 @@
       ]
     },
     {
-      "id": "b6cbf47a-8afb-4a24-8bd0-45e3fb3bc988",
+      "id": "6274d2a4-cc31-4f93-a469-dfc4eb2989bb",
       "drink": "Heart Attack",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -3843,7 +3791,7 @@
       ]
     },
     {
-      "id": "d7afbc4b-29ba-465f-be28-1ddf212f1d1b",
+      "id": "a526939e-a10b-46d3-a8fc-c072ece99ab5",
       "drink": "Hippie Goat",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -3871,7 +3819,7 @@
       ]
     },
     {
-      "id": "4cb42d59-6113-4bb4-99f0-02b3c1c44301",
+      "id": "066a9593-c4d9-41ae-afd6-ff9c152ef4d4",
       "drink": "Hippie Goat",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -3971,7 +3919,7 @@
       ]
     },
     {
-      "id": "8db61625-7010-4c15-9ef2-a23371833be6",
+      "id": "a65f3a19-0063-48d0-b1ff-72690145b9a0",
       "drink": "Lavender Latte",
       "size": "16 oz",
       "template": "___ pumps of ___",
@@ -3989,7 +3937,7 @@
       ]
     },
     {
-      "id": "7fdaef90-abb9-4b80-af75-7443fd271ca0",
+      "id": "107e392d-fcf6-481a-9627-3f7b2766b367",
       "drink": "Lavender Latte",
       "size": "24 oz",
       "template": "___ pumps of ___",
@@ -4007,7 +3955,7 @@
       ]
     },
     {
-      "id": "d5fdc809-e41e-4385-b38c-1ddd2c3e72af",
+      "id": "db66fe7f-cb37-4c65-a15c-04d8e43ad890",
       "drink": "Mexican Mocha",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -4025,7 +3973,7 @@
       ]
     },
     {
-      "id": "afc40030-81f3-4c8f-b466-81d5c5b13df7",
+      "id": "24a2fb58-4678-44cd-9463-a5b3f624b2e9",
       "drink": "Mexican Mocha",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -4043,7 +3991,7 @@
       ]
     },
     {
-      "id": "304349b2-98fa-4636-9c1a-1708e8cf4881",
+      "id": "be998fc8-076b-4676-9885-8f453dbcc63a",
       "drink": "Mocha",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -4061,7 +4009,7 @@
       ]
     },
     {
-      "id": "e1e6623e-71bd-499c-9b6f-f2a2426bf3f6",
+      "id": "4fe9976d-dde6-4123-8516-fb5b41aed051",
       "drink": "Mocha",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -4079,7 +4027,7 @@
       ]
     },
     {
-      "id": "7b19a5bd-2646-4312-be71-1c4d4e10695c",
+      "id": "f87ef8a9-27df-4487-a301-a34ba5c339ac",
       "drink": "North Shore Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4107,7 +4055,7 @@
       ]
     },
     {
-      "id": "110eb7e2-5521-4fdf-a1ba-f5accafeea3a",
+      "id": "5234fb2a-fec0-4708-b955-6cd3b5880254",
       "drink": "North Shore Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4135,7 +4083,7 @@
       ]
     },
     {
-      "id": "5b99d304-4e8c-4661-9e6b-0cf5bdce375c",
+      "id": "f3838b66-21eb-4ddd-b8ea-8c555714ff14",
       "drink": "Nutty Irishman",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4163,7 +4111,7 @@
       ]
     },
     {
-      "id": "82b35002-c995-491a-85a8-17c8dea28206",
+      "id": "b0b03d6f-34c7-49a2-b688-749f56d3999b",
       "drink": "Nutty Irishman",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4191,7 +4139,7 @@
       ]
     },
     {
-      "id": "dd9a3931-51f4-411f-ab10-3032ea7bc357",
+      "id": "545e2684-2454-4085-bf14-5b2c6e498b55",
       "drink": "Sandy Blonde",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -4224,7 +4172,7 @@
       ]
     },
     {
-      "id": "9ec4acce-ea7c-4c09-8a0e-d7ec3a2c88b2",
+      "id": "4e669abf-9841-4b60-acf3-a35447b079f7",
       "drink": "Sandy Blonde",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -4257,7 +4205,7 @@
       ]
     },
     {
-      "id": "2611da03-8826-4957-baa8-3d11a830831b",
+      "id": "d80f67cb-fcfd-4f72-96e8-f1e89583cd0b",
       "drink": "Sandy Brunette",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -4290,7 +4238,7 @@
       ]
     },
     {
-      "id": "09037805-b698-496d-bc0f-2c2d5b9bd043",
+      "id": "b5b3a874-03de-4f53-9cbd-7c570cbcd07e",
       "drink": "Sandy Brunette",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -4323,7 +4271,7 @@
       ]
     },
     {
-      "id": "698684aa-1c1f-4529-adf2-a7ac70fdd730",
+      "id": "54d2ab8d-ef88-40fc-9b60-0c7c3eea827d",
       "drink": "Summer Latte",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -4341,7 +4289,7 @@
       ]
     },
     {
-      "id": "f33fb87b-577a-4f65-a7da-b5e47b8a124f",
+      "id": "af0390e5-1a32-4a60-a1f3-7fd81cde31a6",
       "drink": "Summer Latte",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -4359,7 +4307,7 @@
       ]
     },
     {
-      "id": "aca0296f-b24f-4914-aefe-6817c8949b85",
+      "id": "7c230574-3d0b-4857-9767-40a9a125334d",
       "drink": "The Ben",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4387,7 +4335,7 @@
       ]
     },
     {
-      "id": "47347e04-de5c-4264-b98d-21ba5a1e37a7",
+      "id": "98c0ec8e-1d7d-4ac1-a071-1d320a65f720",
       "drink": "The Ben",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4415,7 +4363,7 @@
       ]
     },
     {
-      "id": "4af52b05-846b-4e7b-a3c9-ae02acaaba3f",
+      "id": "a461fb6c-960e-4c2e-a6cb-df91b7cec798",
       "drink": "The Farris",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -4443,7 +4391,7 @@
       ]
     },
     {
-      "id": "3a52222f-f3b2-440d-ac43-f81e01c77741",
+      "id": "e39de11c-68c4-4b33-882b-0dd5d752664c",
       "drink": "The Farris",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -4471,7 +4419,7 @@
       ]
     },
     {
-      "id": "a2b57669-c4f3-45d1-8c54-882fdb7960c5",
+      "id": "43afa6bb-75b2-4eae-ae29-a4a3276d55bd",
       "drink": "The Haylee",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4499,7 +4447,7 @@
       ]
     },
     {
-      "id": "ddc2c00d-dc6d-4488-955e-de69e834d3bf",
+      "id": "6a2f9ab9-e142-47e7-a201-22d709d8cf10",
       "drink": "The Haylee",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4527,7 +4475,7 @@
       ]
     },
     {
-      "id": "7c026381-1be1-4fa4-a7c5-23c53c2cc7c3",
+      "id": "d8c827e0-ddda-4cfa-851d-b7a8ad8a118a",
       "drink": "The Legend",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -4560,7 +4508,7 @@
       ]
     },
     {
-      "id": "e2422bc4-b81e-4db2-80f3-d7d2a5215d86",
+      "id": "c9ed0bb9-4ff3-4846-857d-49a2582a3897",
       "drink": "The Legend",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -4593,7 +4541,7 @@
       ]
     },
     {
-      "id": "66eb71c3-fa01-4f35-afbe-ab8d68b1f7ac",
+      "id": "a6a83afc-b1e8-4fe9-b57c-0c655d0bc0df",
       "drink": "The Taylor",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4621,7 +4569,7 @@
       ]
     },
     {
-      "id": "faaf1c18-48b9-4b56-90a7-cbf267b7ca13",
+      "id": "8110874d-211c-4266-9a81-ed9cf4b1abe1",
       "drink": "The Taylor",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4649,7 +4597,7 @@
       ]
     },
     {
-      "id": "0921b10b-c85e-42a0-8bb9-031778a470b3",
+      "id": "04e12b2a-444d-4681-9833-cd7b45701c53",
       "drink": "Waikiki",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4677,7 +4625,7 @@
       ]
     },
     {
-      "id": "559fa732-f1e2-4f9a-b970-90c41b4b625b",
+      "id": "d5367488-c9ce-4c11-818c-f203286241e9",
       "drink": "Waikiki",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4705,7 +4653,7 @@
       ]
     },
     {
-      "id": "fb405a65-d13d-4fb2-9f54-860ffe20401d",
+      "id": "ee7e439e-5474-4091-9090-3a1a612672bb",
       "drink": "White Chocolate Mocha",
       "size": "16 oz",
       "template": "___ pumps of ___",
@@ -4723,7 +4671,7 @@
       ]
     },
     {
-      "id": "13eccb75-6302-437a-b1b8-b7a81579b44b",
+      "id": "b3698a2d-a556-4260-99e9-16e089d26fdd",
       "drink": "White Chocolate Mocha",
       "size": "24 oz",
       "template": "___ pumps of ___",
@@ -4777,7 +4725,7 @@
       ]
     },
     {
-      "id": "51b22e8c-c387-4f81-8a01-dabe5d9a1d11",
+      "id": "9dc9a67b-7064-40a1-ab6c-ad64d1b73c03",
       "drink": "Almond Blossom Hot",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4805,7 +4753,7 @@
       ]
     },
     {
-      "id": "f331d14c-ae3a-4dd8-8738-633a97aeb654",
+      "id": "5b747c1f-2d79-4e83-a153-985768433bf0",
       "drink": "Almond Blossom Hot",
       "size": "20 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4833,7 +4781,7 @@
       ]
     },
     {
-      "id": "fed6ee03-32d4-44ed-b5fa-f051251ad018",
+      "id": "1126a998-57b8-4951-9e33-024e07145c6b",
       "drink": "Cabo San Lucas Hot",
       "size": "16 oz",
       "template": "___ pumps of ___",
@@ -4851,7 +4799,7 @@
       ]
     },
     {
-      "id": "0c205731-ffb7-429b-a889-d025e6807cd4",
+      "id": "3f3c9e70-d7e3-44b7-8066-038758780c81",
       "drink": "Cabo San Lucas Hot",
       "size": "20 oz",
       "template": "___ pumps of ___",
@@ -4869,7 +4817,7 @@
       ]
     },
     {
-      "id": "4f7d6a9e-04bf-4344-8c9b-a3f25aad1b48",
+      "id": "abd46d7f-0942-4722-81f2-a0b3d2381afc",
       "drink": "Caramel Latte Hot",
       "size": "16 oz",
       "template": "___ pumps of ___",
@@ -4887,7 +4835,7 @@
       ]
     },
     {
-      "id": "7eda799a-e59d-49ca-ac45-0fd3faffdae7",
+      "id": "f7d5273e-b2b6-4d9a-95cd-88e34527faed",
       "drink": "Caramel Latte Hot",
       "size": "20 oz",
       "template": "___ pumps of ___",
@@ -4905,7 +4853,7 @@
       ]
     },
     {
-      "id": "09bdc40f-be5e-401e-8648-8bca164f3369",
+      "id": "9e2bfced-0260-45da-846c-b11e588307f7",
       "drink": "Hawaiian Honey Hot",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ squirt of ___",
@@ -4933,7 +4881,7 @@
       ]
     },
     {
-      "id": "eca9ffde-58d0-41cf-8223-bcf08421b4d8",
+      "id": "23d91177-3439-431a-b8d6-cbfa0e9ac593",
       "drink": "Hawaiian Honey Hot",
       "size": "20 oz",
       "template": "___ pumps of ___\n___ squirt of ___",
@@ -4961,7 +4909,7 @@
       ]
     },
     {
-      "id": "ec6b6031-e15f-4e7e-b372-691b33ce35ee",
+      "id": "cb50e7a6-264a-47b0-9d8e-e6356efc34c1",
       "drink": "Hawaiian Latte Hot",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -4989,7 +4937,7 @@
       ]
     },
     {
-      "id": "b048d001-232e-4d9e-a3ce-433d44a031c3",
+      "id": "a2ad79c0-a9bd-4797-938c-88bc17337d7e",
       "drink": "Hawaiian Latte Hot",
       "size": "20 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -5017,7 +4965,7 @@
       ]
     },
     {
-      "id": "68fbf709-e09a-4b40-a37a-d3ad492a1c7a",
+      "id": "bc46a1f2-1204-4c66-b881-6b7a2195f91b",
       "drink": "Heart Attack Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5045,7 +4993,7 @@
       ]
     },
     {
-      "id": "4fbcd111-9728-4200-a234-6d9f13fac282",
+      "id": "37f7d9b7-5724-44d0-a89a-835f7fa4250e",
       "drink": "Heart Attack Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5073,7 +5021,7 @@
       ]
     },
     {
-      "id": "352bb995-cb0a-4b23-ac42-e74a6c1f3753",
+      "id": "aff942cd-1d78-4b26-b5df-7ce756a14d51",
       "drink": "Hippie Goat Hot",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ scoops of ___",
@@ -5101,7 +5049,7 @@
       ]
     },
     {
-      "id": "0ea95eeb-6861-41ff-987f-e8ddf3e40d15",
+      "id": "d6371e7c-4c8d-4e9e-8740-bff57561e78e",
       "drink": "Hippie Goat Hot",
       "size": "20 oz",
       "template": "___ pumps of ___\n___ scoops of ___",
@@ -5201,7 +5149,7 @@
       ]
     },
     {
-      "id": "daae1450-f57b-4ded-b76f-1d7c20ad3f98",
+      "id": "9dc8d0ce-5326-4180-b283-2781ea1030fb",
       "drink": "Lavender Latte Hot",
       "size": "16 oz",
       "template": "___ pumps of ___",
@@ -5219,7 +5167,7 @@
       ]
     },
     {
-      "id": "3a3588a8-abcc-4d8b-a533-b3769eb5121d",
+      "id": "3b387849-07e6-41e9-ab12-dd9a2151ed40",
       "drink": "Lavender Latte Hot",
       "size": "20 oz",
       "template": "___ pumps of ___",
@@ -5237,7 +5185,7 @@
       ]
     },
     {
-      "id": "adb0154b-eea9-4309-8414-67e569d3b71a",
+      "id": "2a2d2684-e67d-40c3-8cb3-82cb87207b4f",
       "drink": "Mexican Mocha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -5255,7 +5203,7 @@
       ]
     },
     {
-      "id": "3161376f-36c4-46ef-8d57-08f40217b32b",
+      "id": "2fe7fa20-153f-4e01-af35-85414c9ec6c3",
       "drink": "Mexican Mocha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___",
@@ -5273,7 +5221,7 @@
       ]
     },
     {
-      "id": "69125cb8-4f46-424c-b9a6-6dc4eb6b62f4",
+      "id": "7f9b2e4a-2768-41d9-86c4-fe6cba26a3a4",
       "drink": "Mocha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -5291,7 +5239,7 @@
       ]
     },
     {
-      "id": "54b3c86e-797d-4e55-a3bf-80aee1a7cc6d",
+      "id": "dfc41cb2-aa87-46f4-b14e-eee2c4ccb6bd",
       "drink": "Mocha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___",
@@ -5309,7 +5257,7 @@
       ]
     },
     {
-      "id": "e970dd67-c92a-44ff-bfa9-92d5a8d58f04",
+      "id": "cd096fb2-98ea-468c-ae17-52dfecc0c094",
       "drink": "North Shore Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5337,7 +5285,7 @@
       ]
     },
     {
-      "id": "824f2ef3-f7a4-48b6-bdf7-10f12251989d",
+      "id": "b8beae61-3722-40c1-9db0-396993eb57b0",
       "drink": "North Shore Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5365,7 +5313,7 @@
       ]
     },
     {
-      "id": "6a437744-1d93-4e14-b637-6ca8465ae258",
+      "id": "e7023c1f-a0c1-4891-bbd5-d4c9743e6208",
       "drink": "Nutty Irishman Hot",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -5393,7 +5341,7 @@
       ]
     },
     {
-      "id": "55610cc8-4803-4f7b-87d2-fcec27cc4727",
+      "id": "2c5e5803-ef1a-47a6-9d90-03a0fe4019ea",
       "drink": "Nutty Irishman Hot",
       "size": "20 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -5421,7 +5369,7 @@
       ]
     },
     {
-      "id": "077316ca-53e4-4aea-8574-7cd0b466ab15",
+      "id": "88f772a5-e7fd-47eb-85b7-0b233113865c",
       "drink": "Sandy Blonde Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -5454,7 +5402,7 @@
       ]
     },
     {
-      "id": "9a068d3b-5759-4645-b5cd-13c4e0aeb346",
+      "id": "51a07dc5-8a41-431f-b23f-fefcdaf3cb13",
       "drink": "Sandy Blonde Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -5487,7 +5435,7 @@
       ]
     },
     {
-      "id": "c4016269-981f-4b36-a36b-6b39969cd6c6",
+      "id": "ff4c6182-feef-4a2d-983e-12d58bace9f8",
       "drink": "Sandy Brunette Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5515,7 +5463,7 @@
       ]
     },
     {
-      "id": "51a12139-b78a-4448-9d26-911feeeb14f9",
+      "id": "91b5970d-8283-4634-88d7-8be96c4c668f",
       "drink": "Sandy Brunette Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5543,7 +5491,7 @@
       ]
     },
     {
-      "id": "c8538ffe-b3e6-4fdc-b224-9d39878ce359",
+      "id": "2974fbac-03ea-428f-aa91-a7a54b15ea48",
       "drink": "Summer Latte Hot",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -5561,7 +5509,7 @@
       ]
     },
     {
-      "id": "e7d9f472-5987-40be-8689-ee0ba1a27835",
+      "id": "5cd6d084-a5fe-496f-bc41-4c6628c53574",
       "drink": "Summer Latte Hot",
       "size": "20 oz",
       "template": "___ scoops of ___",
@@ -5579,7 +5527,7 @@
       ]
     },
     {
-      "id": "cdc62115-c4d0-4325-b35a-6840308b11f0",
+      "id": "8847910c-896b-47a4-9aff-9ca41e712e93",
       "drink": "The Ben Hot",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -5607,7 +5555,7 @@
       ]
     },
     {
-      "id": "213a886f-84aa-4b1a-82a0-c3c794d431f4",
+      "id": "46f0bdd8-85af-468b-a57f-40992d7737e6",
       "drink": "The Ben Hot",
       "size": "20 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -5635,7 +5583,7 @@
       ]
     },
     {
-      "id": "2837344c-bb27-49c7-9fd1-e8f66e832808",
+      "id": "0b1554d4-0420-4c3f-bd77-6a89a7e076bc",
       "drink": "The Farris Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5663,7 +5611,7 @@
       ]
     },
     {
-      "id": "3d1b1de0-7a81-443b-bcde-574d60a32d4d",
+      "id": "da8ffd55-318e-40d0-b951-f1daa9b6a50c",
       "drink": "The Farris Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5691,7 +5639,7 @@
       ]
     },
     {
-      "id": "d9994635-afcb-4f74-a8c5-24efb70fe49d",
+      "id": "aed53eb5-18c1-471c-b2ca-283c8b45cb79",
       "drink": "The Haylee Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5719,7 +5667,7 @@
       ]
     },
     {
-      "id": "06ee405b-9c76-48a8-b63b-6a45f7689512",
+      "id": "ea5f00a8-473c-4305-8529-466ba16e4578",
       "drink": "The Haylee Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5747,7 +5695,7 @@
       ]
     },
     {
-      "id": "dc61a78f-3824-4410-81a1-bedc862f0839",
+      "id": "acf012a4-da0e-4abe-96d3-fc8451f86808",
       "drink": "The Legend Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -5780,7 +5728,7 @@
       ]
     },
     {
-      "id": "15f77993-e9d3-4652-9ef2-8ea67d9b98aa",
+      "id": "b55635b0-b8cd-4605-8ee4-2e55cb099347",
       "drink": "The Legend Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -5813,7 +5761,7 @@
       ]
     },
     {
-      "id": "e9d8d914-072c-43d4-bb81-8aa7b01b9c8f",
+      "id": "c8266419-4338-4270-bef6-e2cd5493cdd4",
       "drink": "The Taylor Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5841,7 +5789,7 @@
       ]
     },
     {
-      "id": "aaab82d4-ae9c-4465-b75d-473d1b1aa9ce",
+      "id": "d64aa1b7-c82c-4cfe-85e9-7d037dd5828e",
       "drink": "The Taylor Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5869,7 +5817,7 @@
       ]
     },
     {
-      "id": "edd60097-9da9-4fc4-b385-e5cd2602680a",
+      "id": "8f8b5dbd-a13c-4e4a-933b-930af6203d07",
       "drink": "Waikiki Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5897,7 +5845,7 @@
       ]
     },
     {
-      "id": "3c06bfb2-02f1-41a9-a037-707502df69f4",
+      "id": "134e5dcb-7ddc-49ad-8401-3d5b0066ea7c",
       "drink": "Waikiki Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -5925,7 +5873,7 @@
       ]
     },
     {
-      "id": "682b6e4b-0d3d-4d87-b477-aafc96c51439",
+      "id": "169cf0e9-867f-47c1-a121-762e717cd1b6",
       "drink": "White Chocolate Mocha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -5943,7 +5891,7 @@
       ]
     },
     {
-      "id": "11fe2c3b-76c4-4c8b-8870-edad75d830f5",
+      "id": "b3035bd8-d032-4625-b80c-cb32cfa4d8ff",
       "drink": "White Chocolate Mocha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___",
@@ -5997,7 +5945,7 @@
       ]
     },
     {
-      "id": "0b401a75-976c-49f4-8d12-dfd887235bd1",
+      "id": "33751746-e7e2-49d2-acbb-c00541d127fb",
       "drink": "Dr. Creamy",
       "size": "16 oz",
       "template": "___ pumps of ___",
@@ -6015,7 +5963,7 @@
       ]
     },
     {
-      "id": "0fea122c-0fbf-47d1-b164-31ea0361db2a",
+      "id": "6312f767-399a-4035-8b3b-510da734e591",
       "drink": "Dr. Creamy",
       "size": "24 oz",
       "template": "___ pumps of ___",
@@ -6033,7 +5981,7 @@
       ]
     },
     {
-      "id": "0c8f66bc-3a2d-4cdf-825e-ffaa42aa7013",
+      "id": "7c306c42-b652-4a85-9f22-0cae960574cc",
       "drink": "Vanilla Chai Iced",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -6051,7 +5999,7 @@
       ]
     },
     {
-      "id": "466f13d9-36f8-48a8-8017-61fabd1cfad3",
+      "id": "640ab4db-c441-4ee3-a38a-d8839fc65900",
       "drink": "Vanilla Chai Iced",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -6065,42 +6013,6 @@
           "index": 1,
           "type": "powder",
           "correct": "vanilla chai powder"
-        }
-      ]
-    },
-    {
-      "id": "75c8849a-2116-4206-a4c1-cf7ebbf4cbcf",
-      "drink": "Spiced Chai Iced",
-      "size": "16 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "spiced chai powder"
-        }
-      ]
-    },
-    {
-      "id": "fc307889-126b-4cf9-9369-d6cff53d7847",
-      "drink": "Spiced Chai Iced",
-      "size": "24 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "spiced chai powder"
         }
       ]
     },
@@ -6141,7 +6053,7 @@
       ]
     },
     {
-      "id": "740e5da9-ae9e-420c-b69b-164f2d1f386b",
+      "id": "4b778e97-705e-40aa-8ffc-4a03a9b79b63",
       "drink": "Matcha Iced",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -6159,7 +6071,7 @@
       ]
     },
     {
-      "id": "3b6f5b91-3200-448f-a072-148824e60fce",
+      "id": "911f008d-29e9-4ac8-ad59-e479eb0c3516",
       "drink": "Matcha Iced",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -6361,7 +6273,7 @@
       ]
     },
     {
-      "id": "7ff07767-28ce-4dc8-9269-1b8b3830449a",
+      "id": "9fceeb6a-f896-43a4-87f8-dc0851ca15e5",
       "drink": "Terminator",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -6389,7 +6301,7 @@
       ]
     },
     {
-      "id": "0cd32fc2-6129-4f95-aa9f-6ef747c38c50",
+      "id": "e158a4d2-658c-4d6d-95e9-9ce2ea1f0d4c",
       "drink": "Terminator",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -7082,7 +6994,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         }
       ]
     },
@@ -7120,13 +7032,13 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         }
       ]
     },
     {
-      "id": "053f97c7-9a99-48f8-858a-967a7b418dea",
-      "drink": "Caramel De\u2019Lite",
+      "id": "8710428a-88d0-4e59-9e21-456289a6809e",
+      "drink": "Caramel De’Lite",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
@@ -7158,8 +7070,8 @@
       ]
     },
     {
-      "id": "f47a64e2-6a2b-4658-869b-2d009d3379ff",
-      "drink": "Caramel De\u2019Lite",
+      "id": "45604ccc-59ca-42f9-9a43-bf964e879303",
+      "drink": "Caramel De’Lite",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
@@ -7191,7 +7103,7 @@
       ]
     },
     {
-      "id": "688f8e79-6044-4e75-9cee-109ad764c74f",
+      "id": "5c896cb2-0930-4ce6-87a8-7d7029944bdb",
       "drink": "Peanut Butter Patties",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -7219,7 +7131,7 @@
       ]
     },
     {
-      "id": "7eef43d6-4b7a-43f1-9480-f39f5f1108b3",
+      "id": "584b4eeb-8f37-4c14-b68a-8cac3754dfa2",
       "drink": "Peanut Butter Patties",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -7247,7 +7159,7 @@
       ]
     },
     {
-      "id": "c2fde72b-1d48-44fe-96c0-5ef64e316215",
+      "id": "15eea9c3-6e70-496e-b50d-f73db793a7a9",
       "drink": "PUMPKIN CHAI",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -7275,7 +7187,7 @@
       ]
     },
     {
-      "id": "402ba524-8d63-4beb-9a11-aa5edcffa9b0",
+      "id": "b01665e9-479c-42b1-8183-c95d4249a198",
       "drink": "PUMPKIN CHAI",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -7303,7 +7215,7 @@
       ]
     },
     {
-      "id": "294f6634-51d7-42cd-9d68-e22faff3be11",
+      "id": "5686ec2b-0889-4051-96c0-9c06a85c6839",
       "drink": "PUMPKIN CREME SPICE LATTE",
       "size": "16 oz",
       "template": "___ pumps of ___",
@@ -7321,7 +7233,7 @@
       ]
     },
     {
-      "id": "e02500bd-3ab3-441e-8d59-5dbd4a31f6a8",
+      "id": "2418b221-fa1c-4ec8-8a40-322cf3bf49cf",
       "drink": "PUMPKIN CREME SPICE LATTE",
       "size": "24 oz",
       "template": "___ pumps of ___",
@@ -7339,7 +7251,7 @@
       ]
     },
     {
-      "id": "90e928b2-55ff-494c-8ce7-fdd2aaa3affb",
+      "id": "6abb9a29-452b-4faa-bc06-9b98ab70efd2",
       "drink": "PUMPKIN OREO (BLENDED",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ on top",
@@ -7372,7 +7284,7 @@
       ]
     },
     {
-      "id": "71465c14-1e54-4650-af97-9ed1f5d93acb",
+      "id": "b81e8c42-fdbb-4ee7-af51-4ce4c31563c5",
       "drink": "PUMPKIN OREO (BLENDED",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ on top",
@@ -7405,7 +7317,7 @@
       ]
     },
     {
-      "id": "d0a667b8-4627-42cb-a70b-f7e607a94b5f",
+      "id": "e80d4e88-2bf2-4511-889a-7c28e7a9c5ca",
       "drink": "FALL IN A CUP LATTE",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -7433,7 +7345,7 @@
       ]
     },
     {
-      "id": "ea3771ae-c64f-4c81-a38d-75a9bcf69ec2",
+      "id": "23ec5930-e28d-41ec-8d26-d22cc91bfcae",
       "drink": "FALL IN A CUP LATTE",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -7461,7 +7373,7 @@
       ]
     },
     {
-      "id": "b717c37c-344d-4345-a5c7-c81fcfbacde0",
+      "id": "1e88b957-7af8-405d-bab7-088a5c30a312",
       "drink": "ALOHA PUMPKIN SPICE LATTE",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -7489,7 +7401,7 @@
       ]
     },
     {
-      "id": "25203e5c-ab6c-4772-b5df-102f9aff458d",
+      "id": "f4d614e7-16b3-47f3-a8f6-02d1e20e27eb",
       "drink": "ALOHA PUMPKIN SPICE LATTE",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -7695,10 +7607,10 @@
       ]
     },
     {
-      "id": "0e8cc0ab-eb9f-4f50-9b59-ddaf9ab43556",
+      "id": "1a23f1a6-c2ad-4caf-950a-18d656e8b60b",
       "drink": "PUMPKIN CREME FUNNEL CAKE",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle\n___ drizzle\n___ drizzle",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -7729,19 +7641,14 @@
           "index": 5,
           "type": "drizzle",
           "correct": "chocolate"
-        },
-        {
-          "index": 6,
-          "type": "drizzle",
-          "correct": "chocolate"
         }
       ]
     },
     {
-      "id": "79fe3ad1-8249-4644-96e4-20fda80d6b8f",
+      "id": "c4522c47-2377-4c4b-81d7-68ee0c040f90",
       "drink": "PUMPKIN CREME FUNNEL CAKE",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle\n___ drizzle\n___ drizzle",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -7770,11 +7677,6 @@
         },
         {
           "index": 5,
-          "type": "drizzle",
-          "correct": "chocolate"
-        },
-        {
-          "index": 6,
           "type": "drizzle",
           "correct": "chocolate"
         }
@@ -7837,7 +7739,7 @@
       ]
     },
     {
-      "id": "0988a9a0-a2b7-40d9-a89f-53fea1196500",
+      "id": "aacf81ae-9f5a-408b-b906-ecd03957bdb7",
       "drink": "Cookie Butter Iced",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -7855,7 +7757,7 @@
       ]
     },
     {
-      "id": "246a2efe-6f9f-4dd0-85d2-df4bc0615db6",
+      "id": "22392675-9078-421f-bf27-8af31062558c",
       "drink": "Cookie Butter Iced",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -7873,7 +7775,7 @@
       ]
     },
     {
-      "id": "ae3e4f3b-4fb4-4643-b889-ffce3f4f4954",
+      "id": "356fb97d-10d6-4310-9c33-ef89e44e9247",
       "drink": "Gingerbread Latte Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
@@ -7911,7 +7813,7 @@
       ]
     },
     {
-      "id": "b3d71453-51f7-48ff-bf7a-94cacd606783",
+      "id": "f584f2eb-2519-4de9-be95-d0c4a7d8628d",
       "drink": "Gingerbread Latte Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
@@ -7949,7 +7851,7 @@
       ]
     },
     {
-      "id": "db6fe2e5-e3f9-4aa6-9d25-cce643977e49",
+      "id": "24816206-b44f-4135-8a56-08bcbe387b59",
       "drink": "Nutcracker Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -7982,7 +7884,7 @@
       ]
     },
     {
-      "id": "9d7b1cff-4257-4efd-8433-765642efa5bd",
+      "id": "b132f72b-fc7a-4f4c-89a3-cf4e90f8dd66",
       "drink": "Nutcracker Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -8015,7 +7917,7 @@
       ]
     },
     {
-      "id": "92a6f829-129a-483e-b91b-ae40686d295f",
+      "id": "d7a9013f-a2f7-41c7-957e-db7db4267e38",
       "drink": "Peppermint Snowball Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -8043,7 +7945,7 @@
       ]
     },
     {
-      "id": "6c9b10d2-6ede-4707-8e96-77afe0d263d8",
+      "id": "0643b061-aaea-4c39-aae3-2e467382f4cb",
       "drink": "Peppermint Snowball Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -8071,7 +7973,7 @@
       ]
     },
     {
-      "id": "824df305-f0d4-4a3b-ada7-e88fff373687",
+      "id": "0ab12a50-753e-4028-be86-1ccb987079d0",
       "drink": "The Rudolph Iced",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -8104,7 +8006,7 @@
       ]
     },
     {
-      "id": "a380cbcc-f4d1-499d-9903-80b0d848752e",
+      "id": "d9902f9a-c83c-415e-b24e-89d95bb57f37",
       "drink": "The Rudolph Iced",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -8137,8 +8039,8 @@
       ]
     },
     {
-      "id": "25e8bc1f-6f15-4b78-88ea-9288b119983b",
-      "drink": "Santa\u2019s Cookie Iced",
+      "id": "6e90e0d1-2067-4b4f-8f28-f0e37b904d11",
+      "drink": "Santa’s Cookie Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
       "blanks": [
@@ -8175,8 +8077,8 @@
       ]
     },
     {
-      "id": "06c11711-a146-4dc8-9b3d-b2b9a2fe950c",
-      "drink": "Santa\u2019s Cookie Iced",
+      "id": "a46f2d2b-3133-431e-bc8c-a4c8f24b7895",
+      "drink": "Santa’s Cookie Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
       "blanks": [
@@ -8213,7 +8115,7 @@
       ]
     },
     {
-      "id": "a4fa1855-db8b-421e-91b7-ee8fba7fe91f",
+      "id": "ba6cd72d-15d2-4d64-8e7b-3f3a452ede38",
       "drink": "Bow and Arrow (Blended Only)",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
@@ -8251,7 +8153,7 @@
       ]
     },
     {
-      "id": "4936b356-c971-4747-87c6-b55b0ea68320",
+      "id": "55b86487-aaa7-4985-b83f-8a56a3eede2c",
       "drink": "Bow and Arrow (Blended Only)",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
@@ -8289,8 +8191,8 @@
       ]
     },
     {
-      "id": "240d990f-8fd5-4e0c-badc-1b6a1ca47f6e",
-      "drink": "Cupid\u2019s Kiss Iced",
+      "id": "d358011f-54a1-490a-b562-8d8d03680d44",
+      "drink": "Cupid’s Kiss Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
       "blanks": [
@@ -8317,8 +8219,8 @@
       ]
     },
     {
-      "id": "8378f13e-2597-44c2-bdd4-1af492b1d771",
-      "drink": "Cupid\u2019s Kiss Iced",
+      "id": "9189b7df-f9d6-4263-a5ce-ef40ac1adcef",
+      "drink": "Cupid’s Kiss Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
       "blanks": [
@@ -8493,7 +8395,7 @@
       ]
     },
     {
-      "id": "da8723c6-d7c1-45d1-9645-5cac2dd28fa1",
+      "id": "f9fcdf43-87dd-48b1-afd9-93ef6e2511f5",
       "drink": "Raspberry Truffle Iced",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -8521,7 +8423,7 @@
       ]
     },
     {
-      "id": "af87c50b-a703-43e7-9d45-d31bb6c24864",
+      "id": "7389a23b-2dc3-4ec6-aa99-bc3b6df60c55",
       "drink": "Raspberry Truffle Iced",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -8549,7 +8451,7 @@
       ]
     },
     {
-      "id": "8c2a2565-94ff-4bbb-9071-a2a380ba04c5",
+      "id": "9036c280-cb86-424f-b716-daace1d227cc",
       "drink": "Almond Joy",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -8587,35 +8489,45 @@
       ]
     },
     {
-      "id": "32ce75d3-1dea-4e4d-a814-c7abc961a1ec",
+      "id": "cda0cde4-5afc-4c48-9639-3a09b06cf435",
       "drink": "Almond Joy",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "1"
+          "correct": "2 1/4"
         },
         {
           "index": 1,
-          "type": "syrup",
-          "correct": "coconut syrup"
+          "type": "powder",
+          "correct": "mocha powder"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "1/2"
+          "correct": "1"
         },
         {
           "index": 3,
+          "type": "syrup",
+          "correct": "coconut syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1/2"
+        },
+        {
+          "index": 5,
           "type": "syrup",
           "correct": "almond syrup"
         }
       ]
     },
     {
-      "id": "495a8d71-06d8-44e0-a830-7e7ad0fe573e",
+      "id": "9036c280-cb86-424f-b716-daace1d227cc",
       "drink": "Almond Joy",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -8653,7 +8565,7 @@
       ]
     },
     {
-      "id": "66c74521-7cb3-4167-9745-4be958db3690",
+      "id": "cda0cde4-5afc-4c48-9639-3a09b06cf435",
       "drink": "Almond Joy",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -8691,7 +8603,7 @@
       ]
     },
     {
-      "id": "e66de33d-fb07-463f-9f01-9fadea95f8fe",
+      "id": "e6cbe7ff-bca1-4045-8a94-51d051a001d9",
       "drink": "Milky Way Iced",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -8724,30 +8636,40 @@
       ]
     },
     {
-      "id": "a00c3431-d9b2-4356-8e65-40d81c5ef299",
+      "id": "05f68ee9-26a9-41d9-96fe-78b666cf076e",
       "drink": "Milky Way Iced",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ drizzle",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "3/4"
+          "correct": "2 1/4"
         },
         {
           "index": 1,
+          "type": "powder",
+          "correct": "mocha powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 3,
           "type": "sauce",
           "correct": "caramel sauce"
         },
         {
-          "index": 2,
+          "index": 4,
           "type": "drizzle",
           "correct": "caramel"
         }
       ]
     },
     {
-      "id": "ac4e4470-5775-4908-8be7-2300f512f470",
+      "id": "bb7330cd-8e51-4896-8232-fe26926011f9",
       "drink": "Mounds",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -8775,25 +8697,35 @@
       ]
     },
     {
-      "id": "4330e344-d2a8-404a-9276-58b9c0e86ad7",
+      "id": "68354afe-a258-40c5-a721-bb732d32ea8f",
       "drink": "Mounds",
       "size": "24 oz",
-      "template": "___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "1 1/2"
+          "correct": "2 1/4"
         },
         {
           "index": 1,
+          "type": "powder",
+          "correct": "mocha powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
           "type": "syrup",
           "correct": "coconut syrup"
         }
       ]
     },
     {
-      "id": "2101831a-1ce3-4d3c-ba3f-05a86da00bdc",
+      "id": "bb7330cd-8e51-4896-8232-fe26926011f9",
       "drink": "Mounds",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -8821,7 +8753,7 @@
       ]
     },
     {
-      "id": "b0da9592-6fca-4349-9ffb-0dde44f382f4",
+      "id": "68354afe-a258-40c5-a721-bb732d32ea8f",
       "drink": "Mounds",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -8849,8 +8781,8 @@
       ]
     },
     {
-      "id": "0c0ba63b-bfcf-4d63-a5a1-482ce8ddb29f",
-      "drink": "Reese\u2019s",
+      "id": "c69d048f-c911-4ead-be20-1704aafc3968",
+      "drink": "Reese’s",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
       "blanks": [
@@ -8882,8 +8814,8 @@
       ]
     },
     {
-      "id": "bbb46e0e-d5cd-40af-836e-c86a95a1d191",
-      "drink": "Reese\u2019s",
+      "id": "0ff1d315-4326-4517-ac85-ee64c22ec56f",
+      "drink": "Reese’s",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
       "blanks": [
@@ -8916,7 +8848,7 @@
     },
     {
       "id": "c69d048f-c911-4ead-be20-1704aafc3968",
-      "drink": "Reese\u2019s",
+      "drink": "Reese’s",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
       "blanks": [
@@ -8949,7 +8881,7 @@
     },
     {
       "id": "0ff1d315-4326-4517-ac85-ee64c22ec56f",
-      "drink": "Reese\u2019s",
+      "drink": "Reese’s",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
       "blanks": [
@@ -8981,10 +8913,10 @@
       ]
     },
     {
-      "id": "7ce41b18-a68f-4634-925f-166f2a26750e",
+      "id": "a82c8fe0-cede-4c7b-af9a-799aeadd9878",
       "drink": "Snickers",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -9015,24 +8947,29 @@
           "index": 5,
           "type": "syrup",
           "correct": "hazelnut syrup"
+        },
+        {
+          "index": 6,
+          "type": "drizzle",
+          "correct": "chocolate and caramel"
         }
       ]
     },
     {
-      "id": "a5021145-66f7-42b5-bd37-33c61598b9be",
+      "id": "8b771cad-4591-41bf-9c19-cfaed9479eb1",
       "drink": "Snickers",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "3/4"
+          "correct": "2 1/4"
         },
         {
           "index": 1,
-          "type": "sauce",
-          "correct": "caramel sauce"
+          "type": "powder",
+          "correct": "mocha powder"
         },
         {
           "index": 2,
@@ -9041,13 +8978,28 @@
         },
         {
           "index": 3,
+          "type": "sauce",
+          "correct": "caramel sauce"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 5,
           "type": "syrup",
           "correct": "hazelnut syrup"
+        },
+        {
+          "index": 6,
+          "type": "drizzle",
+          "correct": "chocolate and caramel"
         }
       ]
     },
     {
-      "id": "2b8cc712-7bfb-47d5-a111-d8b8242eaccc",
+      "id": "c2f84909-f78e-4ad6-b99f-0c7950385085",
       "drink": "York",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -9070,7 +9022,7 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         },
         {
           "index": 4,
@@ -9085,7 +9037,7 @@
       ]
     },
     {
-      "id": "66452048-fd12-4015-bca9-0dffc9a3eb6f",
+      "id": "2ca54409-75d9-4f46-98ae-e2b550f69dcd",
       "drink": "York",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -9108,7 +9060,7 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         },
         {
           "index": 4,
@@ -9146,7 +9098,7 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         },
         {
           "index": 4,
@@ -9184,7 +9136,7 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         },
         {
           "index": 4,
@@ -9199,8 +9151,8 @@
       ]
     },
     {
-      "id": "419a6e84-d513-4000-a117-748d38fd7417",
-      "drink": "Going Bananas Chiller\uf34c",
+      "id": "ab55eb3e-0a1c-4b08-8c9b-ef2fbf3d5e0a",
+      "drink": "Going Bananas Chiller🍌",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
       "blanks": [
@@ -9247,8 +9199,8 @@
       ]
     },
     {
-      "id": "b5b61971-9cf7-4b53-8b30-4555409a3a02",
-      "drink": "Going Bananas Chiller\uf34c",
+      "id": "8e734b26-c04c-4eaa-ae7f-9d976c6803ab",
+      "drink": "Going Bananas Chiller🍌",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
       "blanks": [
@@ -9295,7 +9247,7 @@
       ]
     },
     {
-      "id": "62cc4b3a-4298-4d50-80b3-22ef17e9a6b4",
+      "id": "8c93c525-38bb-4775-926e-85a6dd75502e",
       "drink": "Chillin in Cabo",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -9323,7 +9275,7 @@
       ]
     },
     {
-      "id": "1db1b56f-122a-417f-a8b4-edcc8ed8c5c8",
+      "id": "fe3fc85f-fae3-4673-bee9-8bcf75e41165",
       "drink": "Chillin in Cabo",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -9351,7 +9303,7 @@
       ]
     },
     {
-      "id": "1d9485fe-b598-4096-8f2f-8543774987fc",
+      "id": "708c21b8-6e7a-41ab-a1ad-77a7095cc186",
       "drink": "Blended Farris",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -9384,7 +9336,7 @@
       ]
     },
     {
-      "id": "28197740-15a3-468a-911f-b22cd32f3b27",
+      "id": "84f532f7-af8d-48eb-8ba0-e3e436b63c39",
       "drink": "Blended Farris",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -9417,7 +9369,7 @@
       ]
     },
     {
-      "id": "8a0aa692-6be8-4a37-868a-56fa638a9c59",
+      "id": "2b0d858d-8af4-4aaf-b231-d63835f87663",
       "drink": "Hawaiian Dream Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -9460,7 +9412,7 @@
       ]
     },
     {
-      "id": "498973e6-52a4-429c-a03d-9cdc334344c2",
+      "id": "2f049462-88f8-4453-9761-404de9adcd3d",
       "drink": "Hawaiian Dream Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -9503,7 +9455,7 @@
       ]
     },
     {
-      "id": "d610ab8d-3bb9-48f3-9d04-f25dd1707ad7",
+      "id": "bd99903d-55a5-4944-b8ef-ca38586a073b",
       "drink": "Blended Haylee",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -9531,7 +9483,7 @@
       ]
     },
     {
-      "id": "ffd63ee3-5d40-43e4-9247-53dc092fd9d1",
+      "id": "9ad06587-1d17-4f39-85c2-9bd80eb148f4",
       "drink": "Blended Haylee",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -9559,7 +9511,7 @@
       ]
     },
     {
-      "id": "ca39ac68-0e85-4996-80ef-7ab751e6feb5",
+      "id": "f2fe0941-23b7-438b-a496-74c56555a1d6",
       "drink": "Flower Child Chiller (Blended Hippie Goat)",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -9587,7 +9539,7 @@
       ]
     },
     {
-      "id": "a16f094f-f3c2-43dc-83ac-10c1d84960d0",
+      "id": "b431d69a-9a32-4422-bafe-d9cc3afedb10",
       "drink": "Flower Child Chiller (Blended Hippie Goat)",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -9707,7 +9659,7 @@
       ]
     },
     {
-      "id": "8c4e6ad5-839d-4757-9229-a26b62fbdbb6",
+      "id": "9858d208-7944-4545-8886-a664446c3b81",
       "drink": "Blended Nutty Irishman",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -9745,7 +9697,7 @@
       ]
     },
     {
-      "id": "df820a7c-e2d5-49e2-bf0e-4b30b313d28b",
+      "id": "814fc981-a4d8-4674-a5f7-1e9a09c4bf21",
       "drink": "Blended Nutty Irishman",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -9819,7 +9771,7 @@
       ]
     },
     {
-      "id": "5852dc2d-abed-40f8-9e88-8ae36c51938f",
+      "id": "83817b07-8c97-41c5-9c88-f59dae1891e0",
       "drink": "Blended Taylor",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -9847,7 +9799,7 @@
       ]
     },
     {
-      "id": "f516fb1c-abde-42d9-934b-43336bf16422",
+      "id": "91934af8-bfbe-4ea1-aa07-df69f432eb86",
       "drink": "Blended Taylor",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -9875,7 +9827,7 @@
       ]
     },
     {
-      "id": "8a5e964f-5808-465d-ab50-f28fd90f8a70",
+      "id": "3928c1ae-0645-4737-b4e6-9d74ee1cf910",
       "drink": "Blended Waikiki",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -10229,7 +10181,7 @@
       ]
     },
     {
-      "id": "191ab1bc-fa52-40a1-8fe5-5c71e8324d89",
+      "id": "ccac44e5-96d4-4939-a61d-7bbff888dc0e",
       "drink": "Honey Lavender Latte Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ drizzle",
@@ -10252,7 +10204,7 @@
       ]
     },
     {
-      "id": "1fb2fc6e-cd26-4743-b539-762a4a9559e8",
+      "id": "6b482f63-d751-4143-b27e-c5d5949ecc22",
       "drink": "Honey Lavender Latte Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ drizzle",
@@ -10784,7 +10736,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         },
         {
           "index": 6,
@@ -10827,7 +10779,7 @@
         {
           "index": 5,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         },
         {
           "index": 6,
@@ -11246,7 +11198,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "irish cream syrup"
+          "correct": "irish cream syrup in 8 oz cold brew"
         },
         {
           "index": 2,
@@ -11279,7 +11231,7 @@
         {
           "index": 1,
           "type": "syrup",
-          "correct": "irish cream syrup"
+          "correct": "irish cream syrup in 10 oz cold brew"
         },
         {
           "index": 2,
@@ -11299,7 +11251,7 @@
       ]
     },
     {
-      "id": "91ba00ad-45a1-4bbc-aee3-e059f758a9ab",
+      "id": "6e9d41d8-371d-4a94-8c05-2e6901f1d00c",
       "drink": "Coco Cabana",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -11327,7 +11279,7 @@
       ]
     },
     {
-      "id": "b8a27962-fe33-47a7-9f39-d962cdc9ceb5",
+      "id": "1edbb4f3-0a10-4fb8-b5c6-fca64cbf1453",
       "drink": "Coco Cabana",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -11355,7 +11307,7 @@
       ]
     },
     {
-      "id": "7564f37d-e775-4eb7-8804-9c8a94cc9dfa",
+      "id": "de3b2673-106b-4662-a081-228fa7081bfd",
       "drink": "Coco Cabana - Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -11383,7 +11335,7 @@
       ]
     },
     {
-      "id": "292e2200-e5a4-4bc6-826e-93e6cecc7dda",
+      "id": "76878b20-c221-4b9b-90e9-b6e1b1752148",
       "drink": "Coco Cabana - Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -11407,6 +11359,274 @@
           "index": 3,
           "type": "syrup",
           "correct": "coconut syrup"
+        }
+      ]
+    },
+    {
+      "id": "6b356c56-4487-4b9c-8b56-be38b5ec0a5e",
+      "drink": "Maui Latte (3/4) Iced",
+      "size": "16 oz",
+      "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "6"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "a739fc2d-fbfa-48bc-9ff9-9175e46ea459",
+      "drink": "Maui Latte (3/4) Iced",
+      "size": "24 oz",
+      "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "7"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "6c1f1add-74c8-4d3b-bbb8-f9eab187e147",
+      "drink": "Maui Latte (1/2) Iced",
+      "size": "16 oz",
+      "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "6da78ba7-596f-4600-8323-2e2150a2d599",
+      "drink": "Maui Latte (1/2) Iced",
+      "size": "24 oz",
+      "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "5"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "14b37a0e-06c1-4e5c-ba4a-62ec6bdc6fda",
+      "drink": "Maui Latte (1/4) Iced",
+      "size": "16 oz",
+      "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "d76e95c4-ab99-4785-8e99-05b6688a1f58",
+      "drink": "Maui Latte (1/4) Iced",
+      "size": "24 oz",
+      "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "ac832170-91ad-496d-9d71-e4a9992ef672",
+      "drink": "Maui Latte Full Iced",
+      "size": "16 oz",
+      "template": "___ oz Maui Milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "10"
+        }
+      ]
+    },
+    {
+      "id": "594ee02c-c0fa-45cc-a72c-80e0eaf58fb3",
+      "drink": "Maui Latte Full Iced",
+      "size": "24 oz",
+      "template": "___ oz Maui Milk",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "04a8093e-4c7b-4a18-aae0-ea9f06ae9165",
+      "drink": "Maui Latte (3/4) Hot",
+      "size": "16 oz",
+      "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "8"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "fada522b-4989-40ff-b418-e6fbcd4b70f7",
+      "drink": "Maui Latte (3/4) Hot",
+      "size": "20 oz",
+      "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "10"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "b6c3c785-ab96-4a5c-875f-06505efe6604",
+      "drink": "Maui Latte (1/2) Hot",
+      "size": "16 oz",
+      "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "6"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "95a402fd-0d25-4bbe-b5c9-2222e309ec57",
+      "drink": "Maui Latte (1/2) Hot",
+      "size": "20 oz",
+      "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "7"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "42f6ccfe-c286-4a55-8907-3fd0911e1c5e",
+      "drink": "Maui Latte (1/4) Hot",
+      "size": "16 oz",
+      "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "a401ac24-11ff-4590-b200-d9873caf0ca0",
+      "drink": "Maui Latte (1/4) Hot",
+      "size": "20 oz",
+      "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "3 1/2"
+        },
+        {
+          "index": 1,
+          "type": "fill_oz",
+          "correct": "14"
+        }
+      ]
+    },
+    {
+      "id": "dc09c9b1-5208-484e-b6d4-5e0cc4490e7a",
+      "drink": "Maui Latte Full Hot",
+      "size": "16 oz",
+      "template": "Maui Milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "12"
+        }
+      ]
+    },
+    {
+      "id": "6e741e82-20b9-41a6-884f-8f4fe1695eb2",
+      "drink": "Maui Latte Full Hot",
+      "size": "20 oz",
+      "template": "Maui Milk to ___ oz",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "fill_oz",
+          "correct": "14"
         }
       ]
     },
@@ -11539,7 +11759,7 @@
       ]
     },
     {
-      "id": "fbba39c6-a462-44a3-adc5-e0defca71a3f",
+      "id": "da16db74-37ca-4a8b-84f7-272c735d01d2",
       "drink": "White Chocolate Mac Cold Brew",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -11572,7 +11792,7 @@
       ]
     },
     {
-      "id": "75528fc7-19fc-4973-97c7-19833f3f36c6",
+      "id": "ab318c1e-f937-4d84-8000-a5d48db8db9c",
       "drink": "White Chocolate Mac Cold Brew",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -11727,83 +11947,63 @@
       ]
     },
     {
-      "id": "4fcf8154-54db-4129-858a-569766d4968b",
+      "id": "01ba253f-4613-4fcc-8ca3-1ab151798342",
       "drink": "Gingerbread Blended",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
+      "template": "___ pumps of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "white chocolate powder"
-        },
-        {
-          "index": 2,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 1,
           "type": "syrup",
           "correct": "gingerbread syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
-          "correct": "toasted marshmallow syrup"
-        }
-      ]
-    },
-    {
-      "id": "0becf385-b999-4915-a091-e76193b1b19c",
-      "drink": "Gingerbread Blended",
-      "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "white chocolate powder"
         },
         {
           "index": 2,
           "type": "quantity",
-          "correct": "2 1/2"
+          "correct": "1"
         },
         {
           "index": 3,
-          "type": "syrup",
-          "correct": "gingerbread syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 5,
           "type": "syrup",
           "correct": "toasted marshmallow syrup"
         }
       ]
     },
     {
-      "id": "c8a78a6b-1c05-4eac-8552-80d7bcefc0ea",
+      "id": "58e79838-c54c-4e24-b694-dcd2c0d63fd8",
+      "drink": "Gingerbread Blended",
+      "size": "24 oz",
+      "template": "___ pumps of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "gingerbread syrup"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "toasted marshmallow syrup"
+        }
+      ]
+    },
+    {
+      "id": "de37981c-39a9-48e9-aeb4-cc21e11974ee",
       "drink": "Gingerbread Latte Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -11841,7 +12041,7 @@
       ]
     },
     {
-      "id": "09f855d3-94a4-42aa-b3e1-34758cf22c65",
+      "id": "0c9ee13b-0024-4dee-aa73-155cb1a92fe7",
       "drink": "Gingerbread Latte Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -11879,20 +12079,20 @@
       ]
     },
     {
-      "id": "3cb513e8-6225-4653-82ba-9353ead9fce3",
-      "drink": "Santa\u2019s Cookie Blended",
+      "id": "90ebdd85-3b0a-42cc-b1e1-4e85378e4b54",
+      "drink": "Santa’s Cookie Blended",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
+      "template": "___ pumps of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "3"
+          "correct": "1 1/2"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "white chocolate powder"
+          "type": "syrup",
+          "correct": "toasted marshmallow syrup"
         },
         {
           "index": 2,
@@ -11902,35 +12102,25 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "toasted marshmallow syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
           "correct": "almond roca syrup"
         }
       ]
     },
     {
-      "id": "c4960375-ef2b-422d-9f9e-169d8cdc8c8b",
-      "drink": "Santa\u2019s Cookie Blended",
+      "id": "1c14ed7d-d912-49da-bee0-d954e66d9d1c",
+      "drink": "Santa’s Cookie Blended",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
+      "template": "___ pumps of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "4"
+          "correct": "2"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "white chocolate powder"
+          "type": "syrup",
+          "correct": "toasted marshmallow syrup"
         },
         {
           "index": 2,
@@ -11940,25 +12130,15 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "toasted marshmallow syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
           "correct": "almond roca syrup"
         }
       ]
     },
     {
-      "id": "0eb6c2bb-c6e3-47de-af47-399bd2e6af3d",
+      "id": "eaf83b76-0392-43be-93bb-4ccf4093aa91",
       "drink": "The Rudolph Blended",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___",
+      "template": "___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -11967,26 +12147,16 @@
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "mocha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 3,
           "type": "sauce",
           "correct": "peppermint sauce"
         }
       ]
     },
     {
-      "id": "d3e645ca-3a22-41ed-accd-ae78642eabac",
+      "id": "fc792ab0-1436-45fb-81ab-badc13cb5848",
       "drink": "The Rudolph Blended",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___",
+      "template": "___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -11995,23 +12165,13 @@
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "mocha powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 3,
           "type": "sauce",
           "correct": "peppermint sauce"
         }
       ]
     },
     {
-      "id": "c4904b29-d934-464a-b3ae-cd19653f04ac",
+      "id": "d879a9c7-0e00-40e5-b72e-18ed97c2a3b5",
       "drink": "The Rudolph Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -12044,7 +12204,7 @@
       ]
     },
     {
-      "id": "a1345a42-f027-4bd1-9c87-787a53708889",
+      "id": "a6a0d23c-40f6-4574-9468-69f629b04f06",
       "drink": "The Rudolph Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -12077,58 +12237,20 @@
       ]
     },
     {
-      "id": "c8fd7b5f-aae3-4e82-adcd-a8cb000494ef",
+      "id": "980f1c75-d14c-45aa-a37c-9b8826b030f2",
       "drink": "Nutcracker Blended",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
+      "template": "___ pumps of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
-        },
-        {
-          "index": 2,
           "type": "quantity",
           "correct": "2"
         },
         {
-          "index": 3,
+          "index": 1,
           "type": "sauce",
           "correct": "caramel sauce"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
-          "correct": "hazelnut syrup"
-        }
-      ]
-    },
-    {
-      "id": "3b232335-08f2-4d35-a8b8-e4b3ef6a7115",
-      "drink": "Nutcracker Blended",
-      "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "vanilla powder"
         },
         {
           "index": 2,
@@ -12137,26 +12259,44 @@
         },
         {
           "index": 3,
+          "type": "syrup",
+          "correct": "hazelnut syrup"
+        }
+      ]
+    },
+    {
+      "id": "4f093333-ce2d-4d2d-bc04-16da3ee2443a",
+      "drink": "Nutcracker Blended",
+      "size": "24 oz",
+      "template": "___ pumps of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
           "type": "sauce",
           "correct": "caramel sauce"
         },
         {
-          "index": 4,
+          "index": 2,
           "type": "quantity",
           "correct": "3 1/2"
         },
         {
-          "index": 5,
+          "index": 3,
           "type": "syrup",
           "correct": "hazelnut syrup"
         }
       ]
     },
     {
-      "id": "e5fae9dd-777e-4e36-bb9b-156a976f9a0f",
+      "id": "ae612f75-fb5a-4446-84a1-55bbb993154f",
       "drink": "Peppermint Snowball Blended",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___",
+      "template": "___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -12165,26 +12305,16 @@
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "white chocolate powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "3"
-        },
-        {
-          "index": 3,
           "type": "sauce",
           "correct": "peppermint sauce"
         }
       ]
     },
     {
-      "id": "0f7c55f8-4413-419f-a54d-8a0b44aace76",
+      "id": "09950333-8cf7-4708-ae03-1062e832a0df",
       "drink": "Peppermint Snowball Blended",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___",
+      "template": "___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -12193,23 +12323,13 @@
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "white chocolate powder"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "4"
-        },
-        {
-          "index": 3,
           "type": "sauce",
           "correct": "peppermint sauce"
         }
       ]
     },
     {
-      "id": "4f979c08-38d1-480c-92dd-fc7aae399efc",
+      "id": "e0fad0e8-4b8a-4431-8f46-f697122db34f",
       "drink": "Peppermint Snowball Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -12237,7 +12357,7 @@
       ]
     },
     {
-      "id": "7b012253-3b6d-4f57-8731-c0fe4ed8d00e",
+      "id": "4787a44b-8618-4406-a1ab-1d64f15ac716",
       "drink": "Peppermint Snowball Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -12341,7 +12461,7 @@
       ]
     },
     {
-      "id": "9c83752d-7834-4db7-a7d7-0cfa224e332e",
+      "id": "2c2c5ae5-bedf-4bc1-8013-99fa799c4489",
       "drink": "Chai Oregon Iced",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -12369,7 +12489,7 @@
       ]
     },
     {
-      "id": "cdf2acfd-3e96-4ed1-ac65-6aca234de755",
+      "id": "d79e6ca7-f134-4c23-b67e-caf120bb602a",
       "drink": "Chai Oregon Iced",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -12397,7 +12517,7 @@
       ]
     },
     {
-      "id": "6e9eb0a1-2165-4f91-9275-339f64427ce7",
+      "id": "72cc6e53-fbd8-4752-b365-21789cf94576",
       "drink": "Matcha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -12415,7 +12535,7 @@
       ]
     },
     {
-      "id": "c0374cba-060a-4034-ab91-1f4d09db1b11",
+      "id": "f698c688-9dc3-4000-9ad4-79770d8316f7",
       "drink": "Matcha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___",
@@ -12433,7 +12553,7 @@
       ]
     },
     {
-      "id": "af72a3e4-bfcb-43b1-8a2c-df28a6d1a2cd",
+      "id": "a90c5224-a747-4a7e-bcda-76d18bf46f1c",
       "drink": "Chai Oregon Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -12461,7 +12581,7 @@
       ]
     },
     {
-      "id": "a2e13569-e8a2-4c45-b00b-b069f3fa85f0",
+      "id": "24f9fe45-aee5-4db4-b96d-63eb987ecaa8",
       "drink": "Chai Oregon Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -12489,7 +12609,7 @@
       ]
     },
     {
-      "id": "b7c0a0ee-7827-48e2-a03a-d58ab1815c71",
+      "id": "c3fc212d-d09d-4855-9fdb-21be5a82ca5e",
       "drink": "Vanilla Chai Hot",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -12507,7 +12627,7 @@
       ]
     },
     {
-      "id": "f308e820-383f-4559-b689-3b8662f75d72",
+      "id": "d70537c4-32e9-4485-9cf1-19ec9db574cd",
       "drink": "Vanilla Chai Hot",
       "size": "20 oz",
       "template": "___ scoops of ___",
@@ -12553,10 +12673,10 @@
       ]
     },
     {
-      "id": "7da67d2a-6252-4866-95ae-b268c08fbbf8",
+      "id": "ffacaf97-3178-4f06-bcbc-f53ff504352e",
       "drink": "Lavender White Mocha Hot",
       "size": "20 oz",
-      "template": "___ pumps of ___\n___ scoops of ___",
+      "template": "___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -12567,22 +12687,12 @@
           "index": 1,
           "type": "syrup",
           "correct": "lavender syrup"
-        },
-        {
-          "index": 2,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 3,
-          "type": "powder",
-          "correct": "white chocolate powder"
         }
       ]
     },
     {
-      "id": "10662917-ca65-4e81-a861-e86959794325",
-      "drink": "Cupid\u2019s Kiss Blended",
+      "id": "2279d54a-b2c4-4ad1-8eb8-010d939f48d0",
+      "drink": "Cupid’s Kiss Blended",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
       "blanks": [
@@ -12609,8 +12719,8 @@
       ]
     },
     {
-      "id": "d0c5efa3-8136-49e1-9f21-0ef3bfb2d739",
-      "drink": "Cupid\u2019s Kiss Blended",
+      "id": "a900e0a2-94be-4cfa-b9d1-7c27e0b8a5a6",
+      "drink": "Cupid’s Kiss Blended",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
       "blanks": [
@@ -12637,8 +12747,8 @@
       ]
     },
     {
-      "id": "951079d0-455a-4786-ba1b-01973adfc356",
-      "drink": "Cupid\u2019s Kiss Hot",
+      "id": "118363ad-e33d-4133-bc1c-67e8139bd601",
+      "drink": "Cupid’s Kiss Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
       "blanks": [
@@ -12665,8 +12775,8 @@
       ]
     },
     {
-      "id": "a05e04cf-3c0a-4110-b518-6b7b3f50f9e8",
-      "drink": "Cupid\u2019s Kiss Hot",
+      "id": "fbc96bf2-aa41-4cfd-9997-2fa8c1da9f3f",
+      "drink": "Cupid’s Kiss Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
       "blanks": [
@@ -12693,7 +12803,7 @@
       ]
     },
     {
-      "id": "ae50c1be-42fb-4924-8ff7-16f3cc708b22",
+      "id": "4a099e24-15b7-466a-ba85-4e111d793664",
       "drink": "Raspberry Truffle Blended",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -12721,7 +12831,7 @@
       ]
     },
     {
-      "id": "b4c5839b-c46a-4950-a771-bcad270e145a",
+      "id": "a1cca7cb-32bd-44de-bc1d-10cdf21417b1",
       "drink": "Raspberry Truffle Blended",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -12749,7 +12859,7 @@
       ]
     },
     {
-      "id": "7df7478a-8a16-4957-8b7a-dc857b31f243",
+      "id": "9fae1888-4c97-4119-9c02-586a4e3056f0",
       "drink": "Raspberry Truffle Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -12777,7 +12887,7 @@
       ]
     },
     {
-      "id": "3e897cad-a218-497f-9eb2-a475f111369e",
+      "id": "6248f24f-1546-48fa-9ba8-ef8001ddcaa9",
       "drink": "Raspberry Truffle Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -13055,7 +13165,7 @@
       ]
     },
     {
-      "id": "8fa237c8-ad39-42fa-8afe-6b5aed144585",
+      "id": "ef0098b6-ffd1-4d77-899e-1e64a6b51500",
       "drink": "Shaken Irish",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -13083,7 +13193,7 @@
       ]
     },
     {
-      "id": "e43ed550-a972-4388-b292-1c83c0f1b62c",
+      "id": "6dbe30f3-d3b5-4564-b4c8-10ee51473b5a",
       "drink": "Shaken Irish",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -13111,7 +13221,7 @@
       ]
     },
     {
-      "id": "107a06ec-5616-42d6-80c7-76818bc3baa1",
+      "id": "db391c9b-0808-4f7b-b94d-3f6119f0433b",
       "drink": "Honey Bee Latte Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ scoops of ___",
@@ -13139,7 +13249,7 @@
       ]
     },
     {
-      "id": "7cb0e61f-6b4e-4907-b6fc-e7d82fa60872",
+      "id": "f31a4997-cb49-4b54-a596-362bb9bf556f",
       "drink": "Honey Bee Latte Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ scoops of ___",
@@ -13167,7 +13277,7 @@
       ]
     },
     {
-      "id": "edd384d6-e5b9-4f40-bff1-32ed55e147d9",
+      "id": "ed794d8c-e86d-4cc8-87d9-2e3b7cbb22f4",
       "drink": "Honey Bee Latte Hot",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ scoops of ___",
@@ -13195,7 +13305,7 @@
       ]
     },
     {
-      "id": "b3b7fd0e-be6d-40ef-9b6d-3774e14d596f",
+      "id": "7dfdb28d-240f-413e-a6b1-a9813b38798f",
       "drink": "Honey Bee Latte Hot",
       "size": "20 oz",
       "template": "___ pumps of ___\n___ scoops of ___",
@@ -13223,7 +13333,7 @@
       ]
     },
     {
-      "id": "7a109fbc-e040-4b62-aa35-f79bd1dc8782",
+      "id": "2dcc6978-d1e3-4f31-8d68-1827d6335274",
       "drink": "Sugar Cookie Latte Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
@@ -13261,7 +13371,7 @@
       ]
     },
     {
-      "id": "762826bb-c0a7-4cb1-aeab-4d4d52b1bbc3",
+      "id": "8b363b63-4aa5-4c84-b3de-a0753b25834e",
       "drink": "Sugar Cookie Latte Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
@@ -13299,7 +13409,7 @@
       ]
     },
     {
-      "id": "4e28c35c-1b49-4eea-95ff-f6ca7ddaf9a5",
+      "id": "4470841f-c2e0-427c-9042-00e02f450fcc",
       "drink": "Santa's Cookie (Sugar Cookie)",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -13337,20 +13447,58 @@
       ]
     },
     {
-      "id": "becc71a7-02bd-4dd3-b34f-7c444a3d699d",
+      "id": "b15b42bb-a5ea-4584-8583-f9dff9c4672a",
+      "drink": "Santa's Cookie (Sugar Cookie)",
+      "size": "20 oz",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "white chocolate powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "toasted marshmallow syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "almond roca syrup"
+        }
+      ]
+    },
+    {
+      "id": "ee90e920-e03e-4bd8-9829-f24350180c97",
       "drink": "Sugar Cookie Blended",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
+      "template": "___ pumps of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "3"
+          "correct": "1 1/2"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "white chocolate powder"
+          "type": "syrup",
+          "correct": "toasted marshmallow syrup"
         },
         {
           "index": 2,
@@ -13360,35 +13508,25 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "toasted marshmallow syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
           "correct": "almond roca syrup"
         }
       ]
     },
     {
-      "id": "ebfb9b80-1501-45bd-9dab-e710a9d975b6",
+      "id": "312ceae5-f67a-479d-a24a-e781bf66bc20",
       "drink": "Sugar Cookie Blended",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
+      "template": "___ pumps of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "4"
+          "correct": "2"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "white chocolate powder"
+          "type": "syrup",
+          "correct": "toasted marshmallow syrup"
         },
         {
           "index": 2,
@@ -13398,22 +13536,12 @@
         {
           "index": 3,
           "type": "syrup",
-          "correct": "toasted marshmallow syrup"
-        },
-        {
-          "index": 4,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 5,
-          "type": "syrup",
           "correct": "almond roca syrup"
         }
       ]
     },
     {
-      "id": "d1d80a04-a4ea-41f6-8d4e-e7239478e76a",
+      "id": "aa887ed2-897e-47b5-96aa-a67e3e784d53",
       "drink": "Shaken Brown Sugar Cinnamon Oat",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -13441,7 +13569,7 @@
       ]
     },
     {
-      "id": "c8374571-8a5c-4a02-8684-a10aa5493649",
+      "id": "646ab564-dae9-4279-9ae4-57f16ed38f08",
       "drink": "Shaken Brown Sugar Cinnamon Oat",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -13469,10 +13597,10 @@
       ]
     },
     {
-      "id": "e9123432-7a1f-4f6c-a77c-3e53dbac4500",
+      "id": "2acea443-88e9-4309-99c5-d476874f8164",
       "drink": "Caramel Crunch Chai (Iced)",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ drizzle\n___ drizzle",
+      "template": "___ scoops of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -13488,19 +13616,14 @@
           "index": 2,
           "type": "drizzle",
           "correct": "caramel"
-        },
-        {
-          "index": 3,
-          "type": "drizzle",
-          "correct": "caramel"
         }
       ]
     },
     {
-      "id": "82f213a5-69fd-4199-8d10-d341292bdf1b",
+      "id": "a44fc64f-0c3f-421c-8b6e-a4670ec55641",
       "drink": "Caramel Crunch Chai (Iced)",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ drizzle\n___ drizzle",
+      "template": "___ scoops of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -13514,11 +13637,6 @@
         },
         {
           "index": 2,
-          "type": "drizzle",
-          "correct": "caramel"
-        },
-        {
-          "index": 3,
           "type": "drizzle",
           "correct": "caramel"
         }
@@ -13597,7 +13715,7 @@
       ]
     },
     {
-      "id": "9a69716a-edca-4480-b8a8-09596e64ee39",
+      "id": "172892bb-03d9-4b04-97c0-ed2a368913d8",
       "drink": "Honey Matcha",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ drizzle",
@@ -13620,7 +13738,7 @@
       ]
     },
     {
-      "id": "c7c4afbc-25bb-4cfd-9dcb-fd020d39f8eb",
+      "id": "bba53d16-5b7b-4e5d-957d-4d39b47c3489",
       "drink": "Honey Matcha",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ drizzle",
@@ -13643,7 +13761,7 @@
       ]
     },
     {
-      "id": "23b16c1d-7587-4980-9815-c94da63de1fd",
+      "id": "9030bef1-453b-4e45-9a35-74422a037aa1",
       "drink": "Honey Matcha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ drizzle",
@@ -13666,7 +13784,7 @@
       ]
     },
     {
-      "id": "1f4128e7-e945-46de-b5fb-583353c79d10",
+      "id": "da122846-b1ab-4ab7-b5db-040afe0d4dae",
       "drink": "Honey Matcha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ drizzle",
@@ -13801,7 +13919,7 @@
       ]
     },
     {
-      "id": "7dec7add-d57f-4738-890c-271346cdafea",
+      "id": "17431823-a6b1-4e4a-a9af-10da367aea41",
       "drink": "Butter Beer",
       "size": "16 oz",
       "template": "___ pumps of ___",
@@ -13819,7 +13937,7 @@
       ]
     },
     {
-      "id": "79a017bf-c543-4f20-b6ab-550cbc947aa3",
+      "id": "a0aae064-04a2-4573-8a8b-e8fb1c23b8ba",
       "drink": "Butter Beer",
       "size": "24 oz",
       "template": "___ pumps of ___",
@@ -13837,7 +13955,7 @@
       ]
     },
     {
-      "id": "6c8b624a-7743-4ccc-b8d3-846ae5ea6b2f",
+      "id": "f7105b0f-77d7-4d3f-b5c5-5fe5a3e37881",
       "drink": "Shaken Brown Sugar Maui",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -13865,7 +13983,7 @@
       ]
     },
     {
-      "id": "14b26307-ce9f-4601-9d9d-154bfa6a0f0c",
+      "id": "1e02e5db-1791-4159-8389-054031bcbd8f",
       "drink": "Shaken Brown Sugar Maui",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -13959,7 +14077,7 @@
       ]
     },
     {
-      "id": "7420b16a-0540-42b9-8cd8-7466d544fb8f",
+      "id": "c0868258-1126-451d-b556-48a7d5be433d",
       "drink": "Kona Cloud Chai Iced",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -13977,7 +14095,7 @@
       ]
     },
     {
-      "id": "165991b8-fdcd-4157-b5c1-5c31960575ce",
+      "id": "93f4927a-6bbe-4ec5-aa4d-480847025dcb",
       "drink": "Kona Cloud Chai Iced",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -13995,7 +14113,7 @@
       ]
     },
     {
-      "id": "d5881da5-f780-4e85-8c68-41688136c4e9",
+      "id": "57892df7-2a8e-457e-8863-4f317761ab39",
       "drink": "Kona Cloud Chai Hot",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -14013,7 +14131,7 @@
       ]
     },
     {
-      "id": "1f818ca3-0330-4f44-a5f6-e4d720536e58",
+      "id": "bb441486-c384-43cf-8466-010632210f60",
       "drink": "Kona Cloud Chai Hot",
       "size": "20 oz",
       "template": "___ scoops of ___",
@@ -14031,7 +14149,7 @@
       ]
     },
     {
-      "id": "7d846d60-b1a5-4786-b259-369b04863ac2",
+      "id": "1340a279-7869-4e01-9872-ace111df29e6",
       "drink": "Maui Mocha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -14049,7 +14167,7 @@
       ]
     },
     {
-      "id": "0ae4d5bb-93d4-4756-9774-e844d6da94ae",
+      "id": "71ba1ddf-ff05-4197-9b00-cb56fe3b0b8e",
       "drink": "Maui Mocha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___",
@@ -14067,7 +14185,7 @@
       ]
     },
     {
-      "id": "1e6e7168-d4dd-4150-b258-d5926df6e2ab",
+      "id": "62c0bd99-9745-4534-ad39-b566fcba8d71",
       "drink": "Maui Vanilla Hot",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -14085,7 +14203,7 @@
       ]
     },
     {
-      "id": "d6547b86-56b7-4027-bc8f-61a4da035c3b",
+      "id": "b142615f-a6b8-45f5-b621-ef8ec001f466",
       "drink": "Maui Vanilla Hot",
       "size": "20 oz",
       "template": "___ scoops of ___",
@@ -14103,7 +14221,7 @@
       ]
     },
     {
-      "id": "720e3747-0351-4b6a-af8e-a2e8d85a1fc4",
+      "id": "56e72ed7-3eb0-4e05-9558-83f92de4bb9e",
       "drink": "Maui Vanilla Iced",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -14121,7 +14239,7 @@
       ]
     },
     {
-      "id": "8ebf42c1-435f-4d2c-8fac-5507de5afe00",
+      "id": "5dbfea1f-ca64-4a9e-9653-399779168645",
       "drink": "Maui Vanilla Iced",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -14139,7 +14257,7 @@
       ]
     },
     {
-      "id": "2f3ae7a1-afd9-44c4-a086-4bae72e381bc",
+      "id": "b90fb2b2-ab10-404b-accb-d1c0f49f5acf",
       "drink": "Maui Mocha Iced",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -14157,7 +14275,7 @@
       ]
     },
     {
-      "id": "51923976-4036-4323-81f0-6008cd45cbee",
+      "id": "13408ab6-e4a2-4ccb-a476-a57bfc8b208d",
       "drink": "Maui Mocha Iced",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -14389,7 +14507,7 @@
       ]
     },
     {
-      "id": "6329fe20-7e39-4f2a-91b9-0dba350470b2",
+      "id": "56434cd5-3381-4c12-b5ca-213c9f7ea7f4",
       "drink": "Barbie",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -14407,7 +14525,7 @@
       ]
     },
     {
-      "id": "7c9bc9c3-8c51-422c-952b-73b821fc3d4e",
+      "id": "ffc3a9d4-9edb-4177-8c88-36caca1b0aa4",
       "drink": "Barbie",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -14519,20 +14637,20 @@
       ]
     },
     {
-      "id": "4065b52b-22bc-4cf6-9a30-7cfd855d898e",
+      "id": "2ce09b4f-10e9-4189-9862-c355b2a6c497",
       "drink": "Beach Babe Slushy",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ pumps of ___",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "3/4"
+          "correct": "2 1/4"
         },
         {
           "index": 1,
           "type": "syrup",
-          "correct": "peach syrup"
+          "correct": "strawberry syrup"
         },
         {
           "index": 2,
@@ -14541,6 +14659,16 @@
         },
         {
           "index": 3,
+          "type": "syrup",
+          "correct": "peach syrup"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
         }
@@ -15397,42 +15525,6 @@
       ]
     },
     {
-      "id": "5e3fe9ee-813e-4e29-876b-00cf3131e641",
-      "drink": "Red Hammer Slushy",
-      "size": "16 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "raspberry syrup"
-        }
-      ]
-    },
-    {
-      "id": "dbca9580-400f-4ab1-94a3-5fbd77e73bba",
-      "drink": "Red Hammer Slushy",
-      "size": "24 oz",
-      "template": "___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "1 1/2"
-        },
-        {
-          "index": 1,
-          "type": "syrup",
-          "correct": "raspberry syrup"
-        }
-      ]
-    },
-    {
       "id": "7f4c9585-a35b-4909-a652-720828b23e5a",
       "drink": "Red Starburst Slushy",
       "size": "16 oz",
@@ -16018,7 +16110,7 @@
     },
     {
       "id": "696a5f99-1f75-4ee2-8c3e-aaee9088c4da",
-      "drink": "Dragon\u2019s Breath Slushy",
+      "drink": "Dragon’s Breath Slushy",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
       "blanks": [
@@ -16056,7 +16148,7 @@
     },
     {
       "id": "9b61c618-1356-4dfc-b5b3-28c3a54441b1",
-      "drink": "Dragon\u2019s Breath Slushy",
+      "drink": "Dragon’s Breath Slushy",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___",
       "blanks": [
@@ -16353,7 +16445,7 @@
       ]
     },
     {
-      "id": "768c2561-656c-4a4d-b4c6-d922379beeb9",
+      "id": "f7007a3a-5dd4-40b6-ad83-b5b95b7225b1",
       "drink": "Caramel Crunch Chai Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ drizzle",
@@ -16376,7 +16468,7 @@
       ]
     },
     {
-      "id": "45d02f1e-59d1-42bc-bb73-ee87f8a1a636",
+      "id": "dabc814e-b45c-4cd9-9820-5c52a7701d59",
       "drink": "Caramel Crunch Chai Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ drizzle",
@@ -16435,10 +16527,10 @@
       ]
     },
     {
-      "id": "a89aed41-da13-464f-aa56-31ee06634bcc",
+      "id": "85bad606-720a-4d6f-96f3-f1597ce8731b",
       "drink": "Banana Protein",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ scoops of ___",
+      "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -16459,14 +16551,19 @@
           "index": 3,
           "type": "powder",
           "correct": "peanut butter"
+        },
+        {
+          "index": 4,
+          "type": "drizzle",
+          "correct": "honey"
         }
       ]
     },
     {
-      "id": "f133b0f2-473b-4195-9edd-d09a3584aeac",
+      "id": "191f4dc6-f22f-4df0-b488-b1d434dda194",
       "drink": "Blueberry Protein",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ scoops of ___",
+      "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -16487,14 +16584,19 @@
           "index": 3,
           "type": "powder",
           "correct": "peanut butter"
+        },
+        {
+          "index": 4,
+          "type": "drizzle",
+          "correct": "honey"
         }
       ]
     },
     {
-      "id": "9102a396-1e03-4fcf-9244-a14652e3d8f8",
+      "id": "4ad577b5-d86c-431e-bda8-6d6c64cf3be2",
       "drink": "Mocha Protein",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ scoops of ___",
+      "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -16515,11 +16617,16 @@
           "index": 3,
           "type": "powder",
           "correct": "peanut butter"
+        },
+        {
+          "index": 4,
+          "type": "drizzle",
+          "correct": "honey"
         }
       ]
     },
     {
-      "id": "8ef83579-b25c-4a53-9516-a74636d78cb1",
+      "id": "9c963943-fae4-49f8-9ab3-95821deb749b",
       "drink": "Dr. Creamy (Blended)",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -16537,7 +16644,7 @@
       ]
     },
     {
-      "id": "63c94a98-8020-4457-904c-107c67628652",
+      "id": "aa764d06-8d87-4880-a910-cc045ebb62ec",
       "drink": "Dr. Creamy (Blended)",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -16957,7 +17064,7 @@
       ]
     },
     {
-      "id": "23dce290-255f-4541-ac20-ed889a4b97a4",
+      "id": "a750d63e-0e10-4299-a426-f79a781480da",
       "drink": "Cookie Dough Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ scoops of ___",
@@ -16995,7 +17102,7 @@
       ]
     },
     {
-      "id": "7a641fee-7d03-4d2a-b1b5-8720674503a3",
+      "id": "0a0b66ff-f813-4608-b9a6-b6f06f2fd430",
       "drink": "Cookie Dough Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ scoops of ___",
@@ -17069,7 +17176,7 @@
       ]
     },
     {
-      "id": "98fca919-3092-477e-92cf-dd65e87ad8fd",
+      "id": "b0d04371-405d-4cd5-bb92-ad610e9081cd",
       "drink": "Sugar Latte Iced",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -17087,7 +17194,7 @@
       ]
     },
     {
-      "id": "b1bb117b-d837-4e41-af9a-fe164f1844c6",
+      "id": "48fac701-1c48-4897-9a45-a5d3ab2a9e88",
       "drink": "Sugar Latte Iced",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -17105,7 +17212,7 @@
       ]
     },
     {
-      "id": "2a34c26f-cf28-42e9-a25d-24dea5684c0d",
+      "id": "dcf9e4f1-1c85-428a-9a20-74289f2300cd",
       "drink": "Sugar Latte Hot",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -17123,7 +17230,7 @@
       ]
     },
     {
-      "id": "f5da961c-611e-4e1c-bfff-90a96b302038",
+      "id": "7da55202-da7a-4b0c-9a7b-d80eb4647dfa",
       "drink": "Sugar Latte Hot",
       "size": "20 oz",
       "template": "___ scoops of ___",
@@ -17177,10 +17284,10 @@
       ]
     },
     {
-      "id": "e20ace17-3595-4aa4-a9aa-2c6028e421c9",
+      "id": "4e4c40d8-9643-4e95-a561-6a4acb635797",
       "drink": "Gingerbread Chai",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud",
       "blanks": [
         {
           "index": 0,
@@ -17206,21 +17313,11 @@
           "index": 4,
           "type": "cream",
           "correct": "2"
-        },
-        {
-          "index": 5,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 6,
-          "type": "syrup",
-          "correct": "gingerbread syrup"
         }
       ]
     },
     {
-      "id": "ae78e88d-cb15-4fcd-bc64-cc2229673c4d",
+      "id": "ada0950f-92d9-4564-94b4-35d569c72af3",
       "drink": "Gingerbread Chai",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -17263,7 +17360,7 @@
       ]
     },
     {
-      "id": "0712fdaa-b448-4188-bec3-f4c54443ac7c",
+      "id": "795649e2-02f2-4bb9-bcb9-8a3220367005",
       "drink": "Frozen Butter Beer",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -17306,7 +17403,7 @@
       ]
     },
     {
-      "id": "e5d392bf-626c-432c-9607-4cdbb73032fe",
+      "id": "045dac04-eaca-40d9-bd4d-9e76fb8af582",
       "drink": "Frozen Butter Beer",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -17349,10 +17446,10 @@
       ]
     },
     {
-      "id": "201d636a-2ac0-461b-97d3-7a6bd6c39f42",
+      "id": "c56a2996-d75b-4464-bf22-94c051436039",
       "drink": "Chocolate Covered Strawberry Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___\n___ drizzle",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -17381,23 +17478,13 @@
         },
         {
           "index": 5,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 6,
-          "type": "syrup",
-          "correct": "strawberry syrup"
-        },
-        {
-          "index": 7,
           "type": "drizzle",
           "correct": "chocolate"
         }
       ]
     },
     {
-      "id": "2f7a8bd6-4363-4a1d-b65f-2550207318f7",
+      "id": "d55846c4-ae0b-4b87-a635-1856a9982838",
       "drink": "Chocolate Covered Strawberry Iced",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___\n___ drizzle",
@@ -17445,10 +17532,10 @@
       ]
     },
     {
-      "id": "c50f6faf-c8a2-4612-8661-43cbccad1388",
+      "id": "bb58abe7-3b62-4407-b995-3e72fe1565d0",
       "drink": "Samoa Sunrise Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle\n___ drizzle",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -17484,19 +17571,14 @@
           "index": 6,
           "type": "drizzle",
           "correct": "caramel"
-        },
-        {
-          "index": 7,
-          "type": "drizzle",
-          "correct": "caramel"
         }
       ]
     },
     {
-      "id": "7a69b05f-1657-40d7-b5b1-6a351d46ed33",
+      "id": "0dddc538-e205-48f2-9b84-843d52af4849",
       "drink": "Samoa Sunrise Iced",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle\n___ drizzle",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -17532,16 +17614,11 @@
           "index": 6,
           "type": "drizzle",
           "correct": "caramel"
-        },
-        {
-          "index": 7,
-          "type": "drizzle",
-          "correct": "caramel"
         }
       ]
     },
     {
-      "id": "33a42b7d-cf27-4f01-a79a-9dad3a0d078e",
+      "id": "b8e0bf56-bc70-4483-a5c5-98e39033c193",
       "drink": "Churro Latte Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ scoops of ___",
@@ -17569,7 +17646,7 @@
       ]
     },
     {
-      "id": "77b449fa-ee2f-4dd0-a87d-cf71790f1077",
+      "id": "3714c207-98f4-480c-9e54-8b37356cf927",
       "drink": "Churro Latte Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ scoops of ___",
@@ -17597,7 +17674,7 @@
       ]
     },
     {
-      "id": "34cb0439-6e86-4132-859c-a2f7dc4e44a7",
+      "id": "ed03ac3b-aece-4178-834c-1a78c6b19942",
       "drink": "Horchata Latte",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud",
@@ -17640,7 +17717,7 @@
       ]
     },
     {
-      "id": "732b7572-f91c-45ea-8325-874aa4c0c480",
+      "id": "c1c3dd08-7325-4ab4-9337-a071d38967fa",
       "drink": "Horchata Latte",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud",
@@ -17683,7 +17760,7 @@
       ]
     },
     {
-      "id": "170fcb9c-511d-4ed6-80f8-77955f2119ea",
+      "id": "b90bfda0-d7e3-45ed-bb8a-a59db4fb990f",
       "drink": "Horchata Latte Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud",
@@ -17726,7 +17803,7 @@
       ]
     },
     {
-      "id": "ba3af933-831c-48c7-b030-4b4079e3958c",
+      "id": "ea2f3988-275d-4ec8-ba8b-01470709fab7",
       "drink": "Horchata Latte Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud",
@@ -17769,7 +17846,7 @@
       ]
     },
     {
-      "id": "b0357d63-cd59-4dfe-9922-4bb6e37ca657",
+      "id": "f6148f9c-c612-41af-90b5-b37b4cbb05fa",
       "drink": "Cinna-Swirl",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -17797,7 +17874,7 @@
       ]
     },
     {
-      "id": "864d51a7-efe8-45e6-b359-286b5360741f",
+      "id": "a7fa755b-633d-4cd9-904d-cfb7365e0cbf",
       "drink": "Cinna-Swirl",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -17825,7 +17902,7 @@
       ]
     },
     {
-      "id": "07075b24-47b8-4624-8754-8e2829a743a7",
+      "id": "d7933954-c5eb-40b2-a86e-9995a918b808",
       "drink": "Dubai Matcha",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -17868,7 +17945,7 @@
       ]
     },
     {
-      "id": "d0d8bedb-a3bd-4eaf-bba5-57bfaffbf15b",
+      "id": "bb6e9ec6-23d9-4b7c-ba1f-c2cba03a4da7",
       "drink": "Dubai Matcha",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -17977,7 +18054,7 @@
       ]
     },
     {
-      "id": "2be4f4ad-8bcb-47cf-98e5-75d6a807ac36",
+      "id": "bf081144-da26-47bb-9e85-6751a9118d76",
       "drink": "Firecracker",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud",
@@ -18010,7 +18087,7 @@
       ]
     },
     {
-      "id": "623a6510-9801-4c6a-a967-28e6f0b05e19",
+      "id": "d3c31612-2f85-499b-86f1-c0565380dfa2",
       "drink": "Firecracker",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud",
@@ -18043,7 +18120,7 @@
       ]
     },
     {
-      "id": "40b2baa2-6bfa-4171-843e-0b23210a2507",
+      "id": "5f9a869e-52a2-4ff7-95f3-d41c6a3ad2bc",
       "drink": "Freedom Latte",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -18086,7 +18163,7 @@
       ]
     },
     {
-      "id": "592266de-11b2-4850-b9cb-98ae06d762c3",
+      "id": "7828012f-181e-48eb-a83a-7b87b75213f4",
       "drink": "Freedom Latte",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -18129,7 +18206,7 @@
       ]
     },
     {
-      "id": "dd28d371-cdbc-4a8e-9946-f78f45b5be64",
+      "id": "afd26b78-2f1f-4782-9d1e-0af2afed8898",
       "drink": "Strawberries and Stripes",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -18172,7 +18249,7 @@
       ]
     },
     {
-      "id": "8248a701-4cec-49ee-ab68-36c6ce47a87c",
+      "id": "fcfaf33d-8a48-4be2-a42a-f0a9df8c6eda",
       "drink": "Strawberries and Stripes",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -18215,7 +18292,7 @@
       ]
     },
     {
-      "id": "24c514de-3ff2-4dbc-bdc2-82a31622929b",
+      "id": "6c5bbe65-1caa-4790-b747-0b44bb5174e9",
       "drink": "American Flag Freeze",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___\n___ drizzle",
@@ -18253,7 +18330,7 @@
       ]
     },
     {
-      "id": "7f56e44b-dd31-4666-b6b4-35f01a8ea08a",
+      "id": "7f8a9cbe-c205-4920-8545-7e8a4d6aedad",
       "drink": "American Flag Freeze",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___\n___ drizzle",
@@ -18327,7 +18404,7 @@
       ]
     },
     {
-      "id": "852b306a-07cd-4657-995c-f0403a4af34e",
+      "id": "e987e11f-ce4f-4975-93fa-1b4da007708d",
       "drink": "4th of July Makenna Energy",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -18360,7 +18437,7 @@
       ]
     },
     {
-      "id": "f20e961c-ed18-4849-aa2b-9fcc47ef7f4f",
+      "id": "fb8c7fc5-fee9-4525-9005-989716e050fc",
       "drink": "4th of July Makenna Energy",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -18429,7 +18506,7 @@
       ]
     },
     {
-      "id": "926e45aa-6fe1-4a2a-a4da-36e0089a78ac",
+      "id": "cc06f9a9-62b7-43a9-b770-b82a8600967e",
       "drink": "Caramel Apple Pie",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -18462,7 +18539,7 @@
       ]
     },
     {
-      "id": "fc9b8d76-c702-4a8d-8042-efd5803374a4",
+      "id": "1a4cf2b0-6166-4057-9502-c9190b418ba5",
       "drink": "Caramel Apple Pie",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -18551,7 +18628,7 @@
       ]
     },
     {
-      "id": "eb243576-6002-4728-aa61-f62e28c0d7d7",
+      "id": "4ecc77aa-18a2-4de1-8d3f-ca507f19499d",
       "drink": "Matcha Horchata",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
@@ -18589,7 +18666,7 @@
       ]
     },
     {
-      "id": "a6faa5a7-1de5-4195-b9a7-912112f8148a",
+      "id": "a6d6058d-e5ea-45c9-8924-ddb1481f56bc",
       "drink": "Matcha Horchata",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
@@ -18627,7 +18704,7 @@
       ]
     },
     {
-      "id": "4a49b509-cd2c-445a-b94a-9d5b5813957c",
+      "id": "a9cf19c6-62eb-45ab-ba20-e0f0ce376a84",
       "drink": "Green Mamba",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -18660,7 +18737,7 @@
       ]
     },
     {
-      "id": "43b41a99-9c69-4ac4-9c5a-a8937d3c097b",
+      "id": "83723239-826f-4d17-98b8-e059c635f28e",
       "drink": "Banana Pudding Matcha",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -18693,7 +18770,7 @@
       ]
     },
     {
-      "id": "6330d117-e577-4088-b8d2-211cc920f0ba",
+      "id": "a9a4b7d5-6b0f-4e7f-b7d1-ca3381897892",
       "drink": "Banana Pudding Matcha",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -18726,7 +18803,7 @@
       ]
     },
     {
-      "id": "b9944434-ea59-4dd8-8063-c6ec8820648a",
+      "id": "4db50607-3f08-44e8-9c6e-24e486877231",
       "drink": "Strawberry Matcha",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ drizzle\n___ oz of kona cloud\n___ pumps of ___",
@@ -18764,7 +18841,7 @@
       ]
     },
     {
-      "id": "75a2bca7-67db-480b-90d9-a56340e309a4",
+      "id": "7cf0af1b-abdb-4d94-95ce-23d131012fff",
       "drink": "Strawberry Matcha",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ drizzle\n___ oz of kona cloud\n___ pumps of ___",
@@ -18802,7 +18879,7 @@
       ]
     },
     {
-      "id": "18840375-e3bd-4058-9e12-cb25e09ef38c",
+      "id": "ee9d9e3b-ee88-4ea7-af0b-4009941a7693",
       "drink": "Shaken Peppermint",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -18835,10 +18912,10 @@
       ]
     },
     {
-      "id": "bb19b963-2d25-45cb-ad18-0c198b5cfddd",
+      "id": "2a806de9-829a-418a-8885-918cdb561de2",
       "drink": "Shaken Peppermint",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
+      "template": "___ pumps of ___\n___ oz of kona cloud",
       "blanks": [
         {
           "index": 0,
@@ -18854,22 +18931,12 @@
           "index": 2,
           "type": "cream",
           "correct": "2"
-        },
-        {
-          "index": 3,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 4,
-          "type": "sauce",
-          "correct": "peppermint sauce"
         }
       ]
     },
     {
-      "id": "b890fde9-35b4-4c82-93f5-adf6981ff9ac",
-      "drink": "Pi\u00f1a Colada Matcha",
+      "id": "09503ea4-7a62-4d26-9225-113bb836f07a",
+      "drink": "Piña Colada Matcha",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
       "blanks": [
@@ -18897,7 +18964,7 @@
     },
     {
       "id": "80c15125-77bf-411e-b296-eec26e41a962",
-      "drink": "Pi\u00f1a Colada Matcha",
+      "drink": "Piña Colada Matcha",
       "size": "24 oz",
       "template": "___ scoops of ___",
       "blanks": [
@@ -18950,7 +19017,7 @@
       ]
     },
     {
-      "id": "1d8ee4e2-9746-4b74-94ef-5c7cbeff483b",
+      "id": "79f6e0e8-81c8-4c35-8610-6f1f56a1f03f",
       "drink": "Blended Cookie Butter",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -18978,7 +19045,7 @@
       ]
     },
     {
-      "id": "8313ab48-fcfa-4b3f-b017-10cbd5e1dc4e",
+      "id": "95ab42e0-a8a3-4e7a-be07-a0671115dc6b",
       "drink": "Blended Cookie Butter",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___",
@@ -19006,10 +19073,10 @@
       ]
     },
     {
-      "id": "68d85818-aa91-43b0-a4e6-15b83240ad60",
+      "id": "758d989a-e8e5-48f6-8b72-990db9bb9da1",
       "drink": "Love at First Sip Iced",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___\n___ drizzle",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -19038,23 +19105,13 @@
         },
         {
           "index": 5,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 6,
-          "type": "syrup",
-          "correct": "strawberry puree"
-        },
-        {
-          "index": 7,
           "type": "drizzle",
           "correct": "strawberry puree"
         }
       ]
     },
     {
-      "id": "b085fe3d-0ba4-44e2-bb8e-d29e85bdc947",
+      "id": "6fd35e58-5745-437f-a340-e1a820da4542",
       "drink": "Love at First Sip Iced",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___\n___ drizzle",
@@ -19121,6 +19178,39 @@
           "index": 2,
           "type": "quantity",
           "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "syrup",
+          "correct": "strawberry puree"
+        },
+        {
+          "index": 4,
+          "type": "drizzle",
+          "correct": "strawberry puree"
+        }
+      ]
+    },
+    {
+      "id": "7cc74686-2f75-4772-849a-ba59dfcc3b8c",
+      "drink": "Love Shot Shaken Espresso",
+      "size": "20 oz",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "sauce",
+          "correct": "white chocolate sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
         },
         {
           "index": 3,
@@ -19287,10 +19377,10 @@
       ]
     },
     {
-      "id": "c57e8a04-5530-4ece-88b3-b00366d16147",
+      "id": "25edc0dc-0e4a-4b7c-9ff9-dd49414dfc46",
       "drink": "Berry In Love",
       "size": "16 oz",
-      "template": "___ pumps of ___\n___ drizzle\n___ oz of kona cloud\n___ pumps of ___\n___ drizzle",
+      "template": "___ pumps of ___\n___ drizzle\n___ oz of kona cloud\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -19321,19 +19411,14 @@
           "index": 5,
           "type": "syrup",
           "correct": "strawberry puree"
-        },
-        {
-          "index": 6,
-          "type": "drizzle",
-          "correct": "chocolate"
         }
       ]
     },
     {
-      "id": "0930bf97-ebf2-4ab7-82ac-50b50bea7451",
+      "id": "a541acf3-8620-4b72-8c93-3c82d5e78b63",
       "drink": "Berry In Love",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ drizzle\n___ oz of kona cloud\n___ pumps of ___\n___ drizzle",
+      "template": "___ pumps of ___\n___ drizzle\n___ oz of kona cloud\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -19364,11 +19449,6 @@
           "index": 5,
           "type": "syrup",
           "correct": "strawberry puree"
-        },
-        {
-          "index": 6,
-          "type": "drizzle",
-          "correct": "chocolate"
         }
       ]
     },
@@ -19449,7 +19529,7 @@
       ]
     },
     {
-      "id": "b871fa51-cdd2-4474-9409-b3ed134f62ba",
+      "id": "9ed4c004-fea4-4b63-bb91-c71200c4577b",
       "drink": "Rainbow Rush Makenna Energy",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -19482,7 +19562,7 @@
       ]
     },
     {
-      "id": "e00eefec-0f09-4415-9f67-cb19817bd5a6",
+      "id": "95880b15-fcef-4655-ae64-fa7e02d2587e",
       "drink": "Rainbow Rush Makenna Energy",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -19515,8 +19595,8 @@
       ]
     },
     {
-      "id": "a664eafd-26c8-4e70-a04d-cacc462c4c14",
-      "drink": "Pot O\u2019 Gold Iced",
+      "id": "80fd55a3-baef-4896-8834-d8a7e2c0d545",
+      "drink": "Pot O’ Gold Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
       "blanks": [
@@ -19553,13 +19633,13 @@
         {
           "index": 6,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         }
       ]
     },
     {
-      "id": "290a3cea-5b8d-4686-af70-fb01e93cd0fb",
-      "drink": "Pot O\u2019 Gold Iced",
+      "id": "439f328b-1b8c-4eb6-b3d8-d245b1f3799f",
+      "drink": "Pot O’ Gold Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
       "blanks": [
@@ -19596,12 +19676,12 @@
         {
           "index": 6,
           "type": "syrup",
-          "correct": "cr\u00e8me de menthe syrup"
+          "correct": "crème de menthe syrup"
         }
       ]
     },
     {
-      "id": "71283b11-0a4d-4e4b-abde-9c15d491c25e",
+      "id": "31f3186e-7046-4934-a6b0-09eca3a51dda",
       "drink": "The Lucky Charm Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -19629,7 +19709,7 @@
       ]
     },
     {
-      "id": "fa07a412-8184-4321-b017-ce0d18eaeb79",
+      "id": "7e7e8a5c-5398-41e1-8ce9-06990dd76e8d",
       "drink": "The Lucky Charm Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -19657,7 +19737,7 @@
       ]
     },
     {
-      "id": "e3573682-ff2a-4712-a450-5496c4fe01c7",
+      "id": "e393d145-3165-4a74-8133-616170c731c7",
       "drink": "Samoa Sunrise Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -19700,7 +19780,7 @@
       ]
     },
     {
-      "id": "566615af-a756-4030-8157-d06e82e967a9",
+      "id": "783caa58-6b1b-4155-8f1f-1f03f4d2163a",
       "drink": "Samoa Sunrise Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -19779,7 +19859,7 @@
       ]
     },
     {
-      "id": "77ab8ad8-f34b-4921-b63a-22cf861b31b5",
+      "id": "29bf1da1-3e85-4394-bbc3-d7670a91f5d5",
       "drink": "Rainbow Rush Makenna Energy Slush",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ oz of kona cloud",
@@ -19802,7 +19882,7 @@
       ]
     },
     {
-      "id": "7fe71646-83d5-4011-ae5f-075b97e12fb1",
+      "id": "75a70d55-16e2-4f4b-816c-729d262b72ba",
       "drink": "Rainbow Rush Makenna Energy Slush",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ oz of kona cloud",
@@ -19825,8 +19905,8 @@
       ]
     },
     {
-      "id": "27006c3e-9c98-4ca8-8fd9-babff6a313e0",
-      "drink": "Beach S\u2019more",
+      "id": "17c1d690-04e5-4acd-9e8c-118ef77f5b39",
+      "drink": "Beach S’more",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
@@ -19868,8 +19948,8 @@
       ]
     },
     {
-      "id": "1f19499e-f1d8-43b0-86ac-03a5bf4d76b3",
-      "drink": "Beach S\u2019more",
+      "id": "58279c63-167e-4138-afc8-050339387242",
+      "drink": "Beach S’more",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
@@ -19911,7 +19991,7 @@
       ]
     },
     {
-      "id": "5209e335-cda1-4458-acb6-6a69a634d1f7",
+      "id": "7f471515-437b-4856-8dd8-213c2f802690",
       "drink": "Cocoa Berry",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -19939,7 +20019,7 @@
       ]
     },
     {
-      "id": "af1fed1c-35fb-471c-a9e1-35c361c08e76",
+      "id": "c03ad5ff-14a0-4375-9ad0-e005a5885765",
       "drink": "Banana Babe Latte",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -19992,7 +20072,7 @@
       ]
     },
     {
-      "id": "86174334-9fc5-44cf-9c18-4bafa7f7526f",
+      "id": "e940108e-024f-41a4-9b6d-ead0490ea502",
       "drink": "Banana Babe Latte",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -20073,7 +20153,7 @@
       ]
     },
     {
-      "id": "4bb1d743-c360-4ab7-9e34-955db4a98aef",
+      "id": "fce49ed9-d9d2-43a0-ae3a-3e238e52d77c",
       "drink": "Strawberry Lemonade Refresher",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -20101,7 +20181,7 @@
       ]
     },
     {
-      "id": "7081740a-8074-4c84-8b7e-21aad7c96334",
+      "id": "389d8fac-ea0b-4cec-aafa-0d965ac98c11",
       "drink": "Mango Passion Fruit Matcha",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -20129,7 +20209,7 @@
       ]
     },
     {
-      "id": "a9bb056d-a320-44d0-8528-3f4f167568d6",
+      "id": "23a2e301-b873-4585-882e-cc758a9ef89b",
       "drink": "Brownie Batter Latte",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ scoops of ___",
@@ -20195,7 +20275,7 @@
       ]
     },
     {
-      "id": "bd3b74ce-da32-4ccf-b7f1-276dbf78edda",
+      "id": "a8ae785b-84d3-413e-a372-e895aae19eb9",
       "drink": "Maui Milk Tea",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -20223,7 +20303,7 @@
       ]
     },
     {
-      "id": "83532530-3449-42a1-aaa6-a23825afa8f8",
+      "id": "f91f9d9f-3483-4434-95ca-afe627aa283c",
       "drink": "Peaches and Cream",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___",
@@ -20423,7 +20503,7 @@
       ]
     },
     {
-      "id": "e84aaa5a-168b-4405-b57a-3869463a5154",
+      "id": "0e57104d-9d92-4126-9a1a-1864d0c1c262",
       "drink": "Salty Ex Boyfriend",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -20466,7 +20546,7 @@
       ]
     },
     {
-      "id": "2d6e9c33-3f88-4f41-b41e-5f6653b0aeb1",
+      "id": "407ab729-4815-4ca0-98c3-df0624602804",
       "drink": "Salty Ex Boyfriend",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -20509,7 +20589,7 @@
       ]
     },
     {
-      "id": "d14d8dd2-195e-4b7b-8c32-1196aedf80e3",
+      "id": "b5d1f4b6-b8d8-4baf-8cde-8b0935ea5f66",
       "drink": "Salty Ex Girlfriend",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -20552,7 +20632,7 @@
       ]
     },
     {
-      "id": "23b9c069-6eef-4c6d-a0a0-01928c2897e6",
+      "id": "e41b90c4-3659-4de9-ace5-38e2491c87ca",
       "drink": "Salty Ex Girlfriend",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -20595,7 +20675,7 @@
       ]
     },
     {
-      "id": "0f96e7eb-0431-414f-b14c-f0e9e2e7bc08",
+      "id": "444b7797-466f-4426-aa47-bf4dbed59bc0",
       "drink": "Salty Ex Boyfriend HOT",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -20638,7 +20718,7 @@
       ]
     },
     {
-      "id": "2e54bd42-2f6c-41bb-af2a-9ae06dd5b125",
+      "id": "de837e72-43a7-4c58-bb40-d619f7236ab9",
       "drink": "Salty Ex Boyfriend HOT",
       "size": "20 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -20681,7 +20761,7 @@
       ]
     },
     {
-      "id": "5b462296-bf1b-4570-976b-e3d65c27cbc2",
+      "id": "60746fac-24e7-4b6e-bfee-4f160da7b70b",
       "drink": "Salty Ex Girlfriend HOT",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -20724,7 +20804,7 @@
       ]
     },
     {
-      "id": "7a27891c-bc55-452d-85a8-0fbe7ac3892c",
+      "id": "7c1af487-3270-47b9-8c1e-ade9266ebece",
       "drink": "Salty Ex Girlfriend HOT",
       "size": "20 oz",
       "template": "___ pumps of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -20767,7 +20847,7 @@
       ]
     },
     {
-      "id": "2ba2e2b6-51de-433f-82e3-2ca752a5a74a",
+      "id": "92b49773-f86f-41ff-87e0-5ad574738e2a",
       "drink": "Salty Kiss",
       "size": "16 oz",
       "template": "___ oz of kona cloud\n___ pumps of ___",
@@ -20790,7 +20870,7 @@
       ]
     },
     {
-      "id": "887ae1b9-63f3-471c-badc-26c8df6444ee",
+      "id": "a7f9de22-3a38-4004-b7aa-a8f44f976e3e",
       "drink": "Salty Kiss",
       "size": "24 oz",
       "template": "___ oz of kona cloud\n___ pumps of ___",
@@ -20813,10 +20893,10 @@
       ]
     },
     {
-      "id": "6c34e35e-ddb4-4779-9dbe-bcf16f089db3",
+      "id": "2568fdbe-a616-4d93-81b1-74dedc7b28fc",
       "drink": "Salty Cold Brew",
       "size": "16 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -20827,14 +20907,24 @@
           "index": 1,
           "type": "sauce",
           "correct": "caramel sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
     {
-      "id": "f1703a50-494d-4895-a63f-b429c68618e4",
+      "id": "3bd64c66-2f48-491b-bc7b-147d723fc1df",
       "drink": "Salty Cold Brew",
       "size": "24 oz",
-      "template": "___ pumps of ___",
+      "template": "___ pumps of ___\n___ pumps of ___",
       "blanks": [
         {
           "index": 0,
@@ -20845,11 +20935,21 @@
           "index": 1,
           "type": "sauce",
           "correct": "caramel sauce"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 3,
+          "type": "sauce",
+          "correct": "salted caramel sauce"
         }
       ]
     },
     {
-      "id": "000d1106-355c-4709-8564-d89408898a3a",
+      "id": "8345cbc7-5518-485a-8e95-7bf5545fe459",
       "drink": "Fried Banana Latte",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -20877,7 +20977,7 @@
       ]
     },
     {
-      "id": "f6143ebf-8edc-4311-850c-0131c19117a5",
+      "id": "062c57ae-3f59-4189-adc6-b44e4660fe40",
       "drink": "Fried Banana Latte",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -21089,7 +21189,7 @@
       ]
     },
     {
-      "id": "2752c1e9-6116-4c35-b95e-2538f8670c1f",
+      "id": "40b9644a-e41d-4057-b629-793140b7fbe3",
       "drink": "Root Beer Float - Blended",
       "size": "16 oz",
       "template": "___ scoops of ___",
@@ -21107,7 +21207,7 @@
       ]
     },
     {
-      "id": "796b851f-cd84-4640-b266-a7462459fd5f",
+      "id": "c99b5aee-53ca-4aef-9940-e34a9581465e",
       "drink": "Root Beer Float - Blended",
       "size": "24 oz",
       "template": "___ scoops of ___",
@@ -21125,7 +21225,7 @@
       ]
     },
     {
-      "id": "be8fc2c2-cd63-4470-a9b3-10182eb4dfed",
+      "id": "8e375eb0-fbc3-4b74-be3e-5804bb20782a",
       "drink": "Lilikoi Matcha",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -21158,7 +21258,7 @@
       ]
     },
     {
-      "id": "3f034184-01e5-4ca2-b217-492460c2ec2a",
+      "id": "dc7ae1cb-a7b6-4862-9695-2dff2b9334c0",
       "drink": "Lilikoi Matcha",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -21191,10 +21291,10 @@
       ]
     },
     {
-      "id": "c5caaf30-1d54-4709-874f-707158f73d6f",
+      "id": "284fc37a-7ff9-4a0c-9950-2da885a087fa",
       "drink": "Chocolate Covered Strawberry Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___\n___ drizzle",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -21223,23 +21323,13 @@
         },
         {
           "index": 5,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 6,
-          "type": "syrup",
-          "correct": "strawberry syrup"
-        },
-        {
-          "index": 7,
           "type": "drizzle",
           "correct": "chocolate"
         }
       ]
     },
     {
-      "id": "120222b6-129d-41e9-8064-b35417e92706",
+      "id": "e24b68e7-1114-413e-9cd6-e271cf0beaf4",
       "drink": "Chocolate Covered Strawberry Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___\n___ drizzle",
@@ -21287,7 +21377,7 @@
       ]
     },
     {
-      "id": "a6a1504a-8b4a-41c7-a881-6d5451ba1c71",
+      "id": "006a11cc-6443-49b5-a097-bfe40883e5d9",
       "drink": "Churro Latte Hot",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ scoops of ___",
@@ -21315,7 +21405,7 @@
       ]
     },
     {
-      "id": "a339470d-9951-49ec-bd3a-4fb833f5507d",
+      "id": "bba9fa88-5938-4983-b4ac-1e2eb2631110",
       "drink": "Churro Latte Hot",
       "size": "20 oz",
       "template": "___ pumps of ___\n___ scoops of ___",
@@ -21343,7 +21433,7 @@
       ]
     },
     {
-      "id": "f1175051-eaf8-4c3a-b47a-7a793c9dfc97",
+      "id": "a3696127-5a3a-4fe5-bf1a-3e988c6e83fb",
       "drink": "Honey Lavender Latte Hot",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ drizzle",
@@ -21366,7 +21456,7 @@
       ]
     },
     {
-      "id": "2bbfcd18-cb97-43da-bc81-3b695172acd4",
+      "id": "0ef3e4c6-805c-4e2e-a221-d5df0b1baf39",
       "drink": "Honey Lavender Latte Hot",
       "size": "20 oz",
       "template": "___ pumps of ___\n___ drizzle",
@@ -21511,7 +21601,7 @@
       ]
     },
     {
-      "id": "d04fb947-e2c6-4306-a5a1-f795767fe713",
+      "id": "dc78c565-1016-483f-9525-e27c8d1b8427",
       "drink": "Milky Way Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
@@ -21544,23 +21634,33 @@
       ]
     },
     {
-      "id": "466d8935-8ae2-4403-b29e-725a75584154",
+      "id": "ce3f31b5-690f-4712-9819-55413f76a2fa",
       "drink": "Milky Way Hot",
       "size": "20 oz",
-      "template": "___ pumps of ___\n___ drizzle",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "3/4"
+          "correct": "2 1/4"
         },
         {
           "index": 1,
+          "type": "powder",
+          "correct": "mocha powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "3/4"
+        },
+        {
+          "index": 3,
           "type": "sauce",
           "correct": "caramel sauce"
         },
         {
-          "index": 2,
+          "index": 4,
           "type": "drizzle",
           "correct": "caramel"
         }
@@ -21791,7 +21891,7 @@
       ]
     },
     {
-      "id": "c58cc6b0-5379-41db-947d-b0f82dff191b",
+      "id": "8488e674-cc10-4eb7-8235-f86eef5e18e5",
       "drink": "Banana Cream Iced",
       "size": "16 oz",
       "template": "___ drizzle\n___ pumps of ___\n___ pumps of ___",
@@ -21824,7 +21924,7 @@
       ]
     },
     {
-      "id": "3df2baf1-8a86-478e-a879-38a9a2566829",
+      "id": "ce8f13db-e013-47c5-8639-29bf95f57c45",
       "drink": "Banana Cream Iced",
       "size": "24 oz",
       "template": "___ drizzle\n___ pumps of ___\n___ pumps of ___",
@@ -21857,10 +21957,10 @@
       ]
     },
     {
-      "id": "22e8a93b-163a-459b-91ea-9f657d860846",
+      "id": "1d71076b-e9f2-490e-a57d-0e6c24eb04e2",
       "drink": "Banana Cream Slush",
       "size": "16 oz",
-      "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle\n___ drizzle",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -21886,19 +21986,14 @@
           "index": 4,
           "type": "drizzle",
           "correct": "white chocolate"
-        },
-        {
-          "index": 5,
-          "type": "drizzle",
-          "correct": "white chocolate"
         }
       ]
     },
     {
-      "id": "83aa4234-d48b-4a35-8044-de50512af106",
+      "id": "61239415-e1ba-4e78-810e-52a8103a7afc",
       "drink": "Banana Cream Slush",
       "size": "24 oz",
-      "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle\n___ drizzle",
+      "template": "___ pumps of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -21924,16 +22019,11 @@
           "index": 4,
           "type": "drizzle",
           "correct": "white chocolate"
-        },
-        {
-          "index": 5,
-          "type": "drizzle",
-          "correct": "white chocolate"
         }
       ]
     },
     {
-      "id": "98dd9740-0889-4235-905e-479a780ecb68",
+      "id": "c6292e23-621e-4b6e-9e4e-57a8fef86aea",
       "drink": "Beaches and Cream Iced",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -21961,7 +22051,7 @@
       ]
     },
     {
-      "id": "24d39179-b463-486e-9285-8d47802ffcf4",
+      "id": "f1fbf37c-3917-4a52-b24b-3443926cf0d0",
       "drink": "Beaches and Cream Iced",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -21989,7 +22079,7 @@
       ]
     },
     {
-      "id": "e4dc04ed-68b4-4352-93c9-8c69beb9a9fb",
+      "id": "da5cdb92-3593-4e67-a00d-f6a65bfc0b32",
       "drink": "Beaches and Cream Slush",
       "size": "16 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -22017,7 +22107,7 @@
       ]
     },
     {
-      "id": "7611ba6c-18ef-4be8-8cc5-34952d8060fa",
+      "id": "f2e5a2d4-ed25-402c-9397-2311c6cb2774",
       "drink": "Beaches and Cream Slush",
       "size": "24 oz",
       "template": "___ pumps of ___\n___ pumps of ___",
@@ -22223,10 +22313,10 @@
       ]
     },
     {
-      "id": "7bf4e7b7-9f9f-4414-bb66-a75d627cfd1b",
+      "id": "c6068409-a8ad-4ddb-9c3f-635cd5e0625a",
       "drink": "Horchata Cold Brew",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\nIn Kona Cloud:\n___ scoops of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ scoops of ___",
       "blanks": [
         {
           "index": 0,
@@ -22261,10 +22351,10 @@
       ]
     },
     {
-      "id": "79f17338-d47f-49c1-8bf3-d2b5a09fb2c5",
+      "id": "da3de4d3-20a6-4365-ab31-f538eb447f30",
       "drink": "Horchata Cold Brew",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\nIn Kona Cloud:\n___ scoops of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ scoops of ___",
       "blanks": [
         {
           "index": 0,
@@ -22299,7 +22389,7 @@
       ]
     },
     {
-      "id": "8a3c28c7-c7d6-47d4-8462-e433d029493c",
+      "id": "11b9dac7-10cb-45b1-9ba1-de5feb6bbd0b",
       "drink": "Double Matcha Iced",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -22332,7 +22422,7 @@
       ]
     },
     {
-      "id": "91a55869-9f49-45d9-8ea6-214ac1359b5a",
+      "id": "2ae1f9ae-e1fa-4887-84cb-25058a001d47",
       "drink": "Double Matcha Iced",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -22365,7 +22455,7 @@
       ]
     },
     {
-      "id": "1746b168-4d75-4875-999c-ed0ef4c0aedb",
+      "id": "eb0b33c5-f569-4ad2-a4c6-2da3e97dcb78",
       "drink": "Double Matcha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -22398,7 +22488,7 @@
       ]
     },
     {
-      "id": "6aea51ef-4eca-412f-8194-80c09b29b45f",
+      "id": "f89d20ad-8416-4388-a6a7-8987d854442d",
       "drink": "Double Matcha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -22431,7 +22521,7 @@
       ]
     },
     {
-      "id": "2d56fee1-3cd5-4a3b-96ea-d9083f93b6b8",
+      "id": "a93129e7-1ffa-416f-a4fa-c598eb52ac5d",
       "drink": "Cookie Butter Matcha Iced",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -22459,12 +22549,12 @@
         {
           "index": 4,
           "type": "powder",
-          "correct": "cookie butter"
+          "correct": "cookie butter crumbs"
         }
       ]
     },
     {
-      "id": "d6176703-9f88-4498-854b-87acf3640ed4",
+      "id": "b8dfe306-9455-4766-a972-3d9e0cadd941",
       "drink": "Cookie Butter Matcha Iced",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -22492,12 +22582,12 @@
         {
           "index": 4,
           "type": "powder",
-          "correct": "cookie butter"
+          "correct": "cookie butter crumbs"
         }
       ]
     },
     {
-      "id": "383ff1cb-3631-45a1-9367-00d8a38812fe",
+      "id": "38b499d1-008b-4461-a4bc-e4a19421477e",
       "drink": "Cookie Butter Matcha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -22525,12 +22615,12 @@
         {
           "index": 4,
           "type": "powder",
-          "correct": "cookie butter"
+          "correct": "cookie butter crumbs"
         }
       ]
     },
     {
-      "id": "2142e501-d1ea-4376-8d56-093e35ff30c5",
+      "id": "91253d9d-39c3-44a7-a2c5-75380f2c27dc",
       "drink": "Cookie Butter Matcha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -22558,12 +22648,12 @@
         {
           "index": 4,
           "type": "powder",
-          "correct": "cookie butter"
+          "correct": "cookie butter crumbs"
         }
       ]
     },
     {
-      "id": "49876f85-ccf2-4c38-a5ba-d3ec95e40f0e",
+      "id": "a12a130e-b6a2-430e-b347-4c159634486c",
       "drink": "Strawberry Matcha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -22596,7 +22686,7 @@
       ]
     },
     {
-      "id": "6190acbc-1483-43e5-88b9-f853dfd9e874",
+      "id": "48969a31-f34c-41f4-8740-06476f46091a",
       "drink": "Strawberry Matcha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -22629,7 +22719,7 @@
       ]
     },
     {
-      "id": "7ce48335-c968-488a-b82f-fe0d4ed59213",
+      "id": "9fb8744b-5712-4c3b-badd-f8c4c025b3a7",
       "drink": "Banana Pudding Matcha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -22662,7 +22752,7 @@
       ]
     },
     {
-      "id": "a4bee91a-2871-4e0a-8a40-6c591900cc56",
+      "id": "5589fc92-040d-41dc-b223-e177faf377b5",
       "drink": "Banana Pudding Matcha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ oz of kona cloud\n___ pumps of ___",
@@ -22695,7 +22785,7 @@
       ]
     },
     {
-      "id": "f1ff65a1-57b5-4116-a5ef-ebf6ba123338",
+      "id": "d8cd1eec-ae4f-4e8e-abfb-f54ebbddde8d",
       "drink": "Horchata Matcha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
@@ -22733,7 +22823,7 @@
       ]
     },
     {
-      "id": "28345eba-b885-4577-83b8-e05a556325ef",
+      "id": "4539b42c-2e5e-467e-8105-acc1db5e86f5",
       "drink": "Horchata Matcha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
@@ -22771,7 +22861,7 @@
       ]
     },
     {
-      "id": "fd284a2a-86ff-4b53-9bce-90c2f1803fea",
+      "id": "d404efcc-36fa-44ad-b234-a6005e4be8f4",
       "drink": "Sugar Crystal Matcha Iced",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -22814,7 +22904,7 @@
       ]
     },
     {
-      "id": "6d8656e1-d150-4c57-9a92-9b4e46ae555b",
+      "id": "db3638af-62d7-49b4-9a0f-c51ff1ef3842",
       "drink": "Sugar Crystal Matcha Iced",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -22857,7 +22947,7 @@
       ]
     },
     {
-      "id": "1b41852e-b78d-4a2b-b05b-6f59709270ce",
+      "id": "80ef5d3b-8883-4656-a640-59a9f377ceba",
       "drink": "Sugar Crystal Matcha Hot",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -22900,7 +22990,7 @@
       ]
     },
     {
-      "id": "76f4c8ad-afd0-4ba6-9648-0dfe516559a1",
+      "id": "30224ee6-493b-4f8a-9e79-f758930455ce",
       "drink": "Sugar Crystal Matcha Hot",
       "size": "20 oz",
       "template": "___ scoops of ___\n___ scoops of ___\n___ oz of kona cloud\n___ scoops of ___",
@@ -23131,46 +23221,10 @@
       ]
     },
     {
-      "id": "5d5d2b2a-4b0d-46ed-b338-20325c6a6224",
-      "drink": "Spiced Chai Hot",
-      "size": "16 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "spiced chai powder"
-        }
-      ]
-    },
-    {
-      "id": "86b25eb2-7705-44fe-ae38-0183a2a7c491",
-      "drink": "Spiced Chai Hot",
-      "size": "20 oz",
-      "template": "___ scoops of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "quantity",
-          "correct": "2 1/2"
-        },
-        {
-          "index": 1,
-          "type": "powder",
-          "correct": "spiced chai powder"
-        }
-      ]
-    },
-    {
-      "id": "84876594-602a-405c-b903-809e87361a6e",
+      "id": "37276d74-719e-4ce3-b821-1a2e83228a05",
       "drink": "Snickers Hot",
       "size": "16 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -23201,14 +23255,19 @@
           "index": 5,
           "type": "syrup",
           "correct": "hazelnut syrup"
+        },
+        {
+          "index": 6,
+          "type": "drizzle",
+          "correct": "caramel and chocolate"
         }
       ]
     },
     {
-      "id": "f0d3c7a9-eb24-4f0d-863b-4b9f90eecafe",
+      "id": "ad99a505-d922-4471-a6a5-6950da03e1f1",
       "drink": "Snickers Hot",
       "size": "20 oz",
-      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
+      "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -23239,6 +23298,11 @@
           "index": 5,
           "type": "syrup",
           "correct": "hazelnut syrup"
+        },
+        {
+          "index": 6,
+          "type": "drizzle",
+          "correct": "caramel and chocolate"
         }
       ]
     },
@@ -23329,8 +23393,8 @@
       ]
     },
     {
-      "id": "dccd6ee0-47a5-5d79-a195-64aa4b929b2c",
-      "drink": "Fill Chart \u2014 Iced Drinks",
+      "id": "d912fa3b-1c5b-58f9-8adf-22a56ee238f4",
+      "drink": "Fill Chart — Iced Drinks",
       "size": "16 oz",
       "template": "Milk of Choice to ___ oz",
       "blanks": [
@@ -23342,8 +23406,8 @@
       ]
     },
     {
-      "id": "0485bdc6-bbef-5ac5-8283-21e8162143a1",
-      "drink": "Fill Chart \u2014 Iced Drinks",
+      "id": "51ab5791-5b1d-5490-b0c7-f51ffff344ff",
+      "drink": "Fill Chart — Iced Drinks",
       "size": "24 oz",
       "template": "Milk of Choice to ___ oz",
       "blanks": [
@@ -23355,8 +23419,8 @@
       ]
     },
     {
-      "id": "b72ab957-4cec-5d99-8f7c-4689f246a241",
-      "drink": "Fill Chart \u2014 Hot Drinks",
+      "id": "efb674fe-1439-582a-957d-490e696d0283",
+      "drink": "Fill Chart — Hot Drinks",
       "size": "16 oz",
       "template": "Milk of Choice to ___ oz",
       "blanks": [
@@ -23368,8 +23432,8 @@
       ]
     },
     {
-      "id": "a8681c5b-f1ee-5b25-8d44-cc2388a2ce9f",
-      "drink": "Fill Chart \u2014 Blended / Chillers",
+      "id": "f918e18f-0083-5366-afe4-f0fdbbb3d390",
+      "drink": "Fill Chart — Blended / Chillers",
       "size": "16 oz",
       "template": "Milk of Choice to ___ oz",
       "blanks": [
@@ -23381,8 +23445,8 @@
       ]
     },
     {
-      "id": "a8b58f77-28f8-5b2f-bc5f-5286c3d4ffc1",
-      "drink": "Fill Chart \u2014 Blended / Chillers",
+      "id": "524d9242-a137-5a87-ba10-91ab36006459",
+      "drink": "Fill Chart — Blended / Chillers",
       "size": "24 oz",
       "template": "Milk of Choice to ___ oz",
       "blanks": [
@@ -23394,8 +23458,8 @@
       ]
     },
     {
-      "id": "3cf50a99-d453-56e3-bc30-1bd2722ec03a",
-      "drink": "Fill Chart \u2014 Freezes",
+      "id": "983e0567-7566-5f43-a15e-24c6594f074b",
+      "drink": "Fill Chart — Freezes",
       "size": "16 oz",
       "template": "Milk of Choice to ___ oz",
       "blanks": [
@@ -23407,8 +23471,8 @@
       ]
     },
     {
-      "id": "8e8291ba-48ca-5085-a44f-4aff70324a9b",
-      "drink": "Fill Chart \u2014 Freezes",
+      "id": "5de4e048-2bb5-5684-bc00-b98d2a5899ed",
+      "drink": "Fill Chart — Freezes",
       "size": "24 oz",
       "template": "Milk of Choice to ___ oz",
       "blanks": [
@@ -23416,52 +23480,6 @@
           "index": 0,
           "type": "fill_oz",
           "correct": "8"
-        }
-      ]
-    },
-    {
-      "id": "2d524b39-a40f-4253-ac0a-a0d1cf53bdaa",
-      "drink": "Salty Cold Brew",
-      "size": "16 oz",
-      "template": "___ oz of kona cloud\n___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "cream",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 2,
-          "type": "sauce",
-          "correct": "salted caramel sauce"
-        }
-      ]
-    },
-    {
-      "id": "e24fa55a-9b9a-4d0a-b798-ab37f8dac099",
-      "drink": "Salty Cold Brew",
-      "size": "24 oz",
-      "template": "___ oz of kona cloud\n___ pumps of ___",
-      "blanks": [
-        {
-          "index": 0,
-          "type": "cream",
-          "correct": "2"
-        },
-        {
-          "index": 1,
-          "type": "quantity",
-          "correct": "1"
-        },
-        {
-          "index": 2,
-          "type": "sauce",
-          "correct": "salted caramel sauce"
         }
       ]
     }
