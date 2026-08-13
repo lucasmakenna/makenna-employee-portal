@@ -1,5 +1,7 @@
 {
   "test_name": "Makenna Koffee Recipe Test",
+  "test_id": "mkc-recipe-fill-v1",
+  "description": "Fill-in-the-blank recipe knowledge test for Makenna Koffee baristas.",
   "total_questions": 804,
   "options": {
     "quantity": [
@@ -203,22 +205,22 @@
     ],
     "white chocolate powder": [
       "white chocolate sauce",
-      "mexican mocha powder",
       "white chocolate",
-      "mocha powder",
-      "white mocha powder"
+      "white mocha powder",
+      "mexican mocha powder",
+      "mocha powder"
     ],
     "white mocha powder": [
-      "white chocolate powder",
       "white chocolate",
+      "white chocolate powder",
       "mexican mocha powder",
       "mocha powder"
     ],
     "white chocolate": [
-      "white mocha sauce",
       "white chocolate sauce",
       "white chocolate powder",
-      "white mocha powder"
+      "white mocha powder",
+      "white mocha sauce"
     ],
     "mexican mocha powder": [
       "mocha powder",
@@ -231,9 +233,9 @@
       "white mocha powder"
     ],
     "white chocolate sauce": [
-      "white mocha sauce",
       "white chocolate powder",
-      "white chocolate"
+      "white chocolate",
+      "white mocha sauce"
     ],
     "white mocha sauce": [
       "white chocolate sauce",
@@ -398,24 +400,24 @@
       "cookie dough"
     ],
     "caramel": [
-      "caramel sauce",
+      "salted caramel sauce",
+      "salted caramel",
+      "caramel sauce"
+    ],
+    "caramel sauce": [
+      "caramel",
       "salted caramel sauce",
       "salted caramel"
     ],
-    "caramel sauce": [
-      "salted caramel sauce",
-      "salted caramel",
-      "caramel"
-    ],
     "salted caramel sauce": [
-      "caramel sauce",
+      "caramel",
       "salted caramel",
-      "caramel"
+      "caramel sauce"
     ],
     "salted caramel": [
-      "caramel sauce",
+      "caramel",
       "salted caramel sauce",
-      "caramel"
+      "caramel sauce"
     ],
     "pineapple": [
       "pineapple syrup"
