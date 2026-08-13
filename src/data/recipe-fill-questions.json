@@ -204,23 +204,23 @@
       "caramel and chocolate"
     ],
     "white chocolate powder": [
-      "white chocolate sauce",
-      "white chocolate",
+      "mocha powder",
       "white mocha powder",
       "mexican mocha powder",
-      "mocha powder"
+      "white chocolate",
+      "white chocolate sauce"
     ],
     "white mocha powder": [
-      "white chocolate",
       "white chocolate powder",
+      "mocha powder",
       "mexican mocha powder",
-      "mocha powder"
+      "white chocolate"
     ],
     "white chocolate": [
-      "white chocolate sauce",
       "white chocolate powder",
+      "white mocha sauce",
       "white mocha powder",
-      "white mocha sauce"
+      "white chocolate sauce"
     ],
     "mexican mocha powder": [
       "mocha powder",
@@ -234,12 +234,12 @@
     ],
     "white chocolate sauce": [
       "white chocolate powder",
-      "white chocolate",
-      "white mocha sauce"
+      "white mocha sauce",
+      "white chocolate"
     ],
     "white mocha sauce": [
-      "white chocolate sauce",
-      "white chocolate"
+      "white chocolate",
+      "white chocolate sauce"
     ],
     "mango puree": [
       "mango purée",
@@ -401,23 +401,23 @@
     ],
     "caramel": [
       "salted caramel sauce",
-      "salted caramel",
-      "caramel sauce"
+      "caramel sauce",
+      "salted caramel"
     ],
     "caramel sauce": [
-      "caramel",
       "salted caramel sauce",
+      "caramel",
       "salted caramel"
     ],
     "salted caramel sauce": [
+      "caramel sauce",
       "caramel",
-      "salted caramel",
-      "caramel sauce"
+      "salted caramel"
     ],
     "salted caramel": [
-      "caramel",
       "salted caramel sauce",
-      "caramel sauce"
+      "caramel sauce",
+      "caramel"
     ],
     "pineapple": [
       "pineapple syrup"
@@ -9372,7 +9372,7 @@
       ]
     },
     {
-      "id": "2b0d858d-8af4-4aaf-b231-d63835f87663",
+      "id": "ce4198a8-6c9c-4d51-88da-fd1f7ed2c5a3",
       "drink": "Hawaiian Dream Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -9415,7 +9415,7 @@
       ]
     },
     {
-      "id": "2f049462-88f8-4453-9761-404de9adcd3d",
+      "id": "a2639812-d6c9-4fbb-aec9-b7121b2c8238",
       "drink": "Hawaiian Dream Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___\n___ drizzle",
@@ -19476,7 +19476,7 @@
       ]
     },
     {
-      "id": "41fdc1e2-8302-4675-9eae-769fd42ad9af",
+      "id": "93d946d4-1074-413e-b241-21c1d0f68012",
       "drink": "Sweetheart Swirl Chiller",
       "size": "16 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
@@ -19514,7 +19514,7 @@
       ]
     },
     {
-      "id": "ad16e51c-b556-4e55-b549-d69ff03e0857",
+      "id": "1739b335-b653-46dd-9cd6-b578554744f7",
       "drink": "Sweetheart Swirl Chiller",
       "size": "24 oz",
       "template": "___ scoops of ___\n___ pumps of ___\n___ pumps of ___",
