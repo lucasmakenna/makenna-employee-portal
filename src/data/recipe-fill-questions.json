@@ -108,6 +108,10 @@
       "white mocha powder",
       "whole espresso beans"
     ],
+    "produce": [
+      "banana",
+      "blueberries"
+    ],
     "cream": [
       "2"
     ],
@@ -204,23 +208,23 @@
       "caramel and chocolate"
     ],
     "white chocolate powder": [
-      "white chocolate",
+      "white chocolate sauce",
       "mexican mocha powder",
-      "mocha powder",
       "white mocha powder",
-      "white chocolate sauce"
+      "mocha powder",
+      "white chocolate"
     ],
     "white mocha powder": [
-      "white chocolate",
+      "white chocolate powder",
       "mexican mocha powder",
       "mocha powder",
-      "white chocolate powder"
+      "white chocolate"
     ],
     "white chocolate": [
-      "white mocha powder",
-      "white mocha sauce",
       "white chocolate powder",
-      "white chocolate sauce"
+      "white chocolate sauce",
+      "white mocha powder",
+      "white mocha sauce"
     ],
     "mexican mocha powder": [
       "mocha powder",
@@ -233,13 +237,13 @@
       "white mocha powder"
     ],
     "white chocolate sauce": [
+      "white chocolate powder",
       "white chocolate",
-      "white mocha sauce",
-      "white chocolate powder"
+      "white mocha sauce"
     ],
     "white mocha sauce": [
-      "white chocolate",
-      "white chocolate sauce"
+      "white chocolate sauce",
+      "white chocolate"
     ],
     "mango puree": [
       "mango purée",
@@ -16570,10 +16574,10 @@
       ]
     },
     {
-      "id": "85bad606-720a-4d6f-96f3-f1597ce8731b",
+      "id": "7f582830-1b5f-4293-a074-71a17c7aabdf",
       "drink": "Banana Protein",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
+      "template": "___ scoops of ___\n___ whole ___\n___ scoops of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -16588,35 +16592,45 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 3,
+          "type": "produce",
+          "correct": "banana"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
           "type": "powder",
           "correct": "peanut butter"
         },
         {
-          "index": 4,
+          "index": 6,
           "type": "drizzle",
           "correct": "honey"
         }
       ]
     },
     {
-      "id": "191f4dc6-f22f-4df0-b488-b1d434dda194",
+      "id": "8b939b66-2bf4-41e6-a7a8-ad6b84aea806",
       "drink": "Blueberry Protein",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
+      "template": "___ scoops of ___\n___ scoops of ___\n___ whole ___\n___ scoops of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
           "type": "quantity",
-          "correct": "2"
+          "correct": "4"
         },
         {
           "index": 1,
-          "type": "powder",
-          "correct": "vanilla protein powder"
+          "type": "produce",
+          "correct": "blueberries"
         },
         {
           "index": 2,
@@ -16626,20 +16640,40 @@
         {
           "index": 3,
           "type": "powder",
-          "correct": "peanut butter"
+          "correct": "vanilla protein powder"
         },
         {
           "index": 4,
+          "type": "quantity",
+          "correct": "1"
+        },
+        {
+          "index": 5,
+          "type": "produce",
+          "correct": "banana"
+        },
+        {
+          "index": 6,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 7,
+          "type": "powder",
+          "correct": "peanut butter"
+        },
+        {
+          "index": 8,
           "type": "drizzle",
           "correct": "honey"
         }
       ]
     },
     {
-      "id": "4ad577b5-d86c-431e-bda8-6d6c64cf3be2",
+      "id": "daf0f43f-e709-4610-98e3-de2579e3aa8e",
       "drink": "Mocha Protein",
       "size": "24 oz",
-      "template": "___ scoops of ___\n___ scoops of ___\n___ drizzle",
+      "template": "___ scoops of ___\n___ whole ___\n___ scoops of ___\n___ drizzle",
       "blanks": [
         {
           "index": 0,
@@ -16654,15 +16688,25 @@
         {
           "index": 2,
           "type": "quantity",
-          "correct": "2"
+          "correct": "1"
         },
         {
           "index": 3,
+          "type": "produce",
+          "correct": "banana"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
           "type": "powder",
           "correct": "peanut butter"
         },
         {
-          "index": 4,
+          "index": 6,
           "type": "drizzle",
           "correct": "honey"
         }
