@@ -2,7 +2,7 @@
   "test_name": "Makenna Koffee Recipe Test",
   "test_id": "mkc-recipe-fill-v1",
   "description": "Fill-in-the-blank recipe knowledge test for Makenna Koffee baristas.",
-  "total_questions": 804,
+  "total_questions": 806,
   "options": {
     "quantity": [
       "1/4",
@@ -128,6 +128,7 @@
       "white chocolate"
     ],
     "topping": [
+      "graham cracker",
       "oreo crumb"
     ],
     "fill_oz": [
@@ -208,23 +209,23 @@
       "caramel and chocolate"
     ],
     "white chocolate powder": [
-      "white chocolate sauce",
-      "mexican mocha powder",
       "white mocha powder",
       "mocha powder",
-      "white chocolate"
+      "white chocolate",
+      "mexican mocha powder",
+      "white chocolate sauce"
     ],
     "white mocha powder": [
-      "white chocolate powder",
-      "mexican mocha powder",
       "mocha powder",
+      "mexican mocha powder",
+      "white chocolate powder",
       "white chocolate"
     ],
     "white chocolate": [
-      "white chocolate powder",
-      "white chocolate sauce",
       "white mocha powder",
-      "white mocha sauce"
+      "white mocha sauce",
+      "white chocolate powder",
+      "white chocolate sauce"
     ],
     "mexican mocha powder": [
       "mocha powder",
@@ -237,13 +238,13 @@
       "white mocha powder"
     ],
     "white chocolate sauce": [
+      "white mocha sauce",
       "white chocolate powder",
-      "white chocolate",
-      "white mocha sauce"
+      "white chocolate"
     ],
     "white mocha sauce": [
-      "white chocolate sauce",
-      "white chocolate"
+      "white chocolate",
+      "white chocolate sauce"
     ],
     "mango puree": [
       "mango purée",
@@ -405,8 +406,8 @@
     ],
     "caramel": [
       "salted caramel",
-      "caramel sauce",
-      "salted caramel sauce"
+      "salted caramel sauce",
+      "caramel sauce"
     ],
     "caramel sauce": [
       "salted caramel",
@@ -419,8 +420,8 @@
       "caramel"
     ],
     "salted caramel": [
-      "caramel sauce",
       "salted caramel sauce",
+      "caramel sauce",
       "caramel"
     ],
     "pineapple": [
@@ -23476,6 +23477,82 @@
           "index": 6,
           "type": "drizzle",
           "correct": "chocolate"
+        }
+      ]
+    },
+    {
+      "id": "ec530d66-8403-415b-8180-210324d87420",
+      "drink": "S'mores Cold Brew",
+      "size": "16 oz",
+      "template": "___ pumps of ___\n___ oz of kona cloud\n___ drizzle\n___ dust",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "toasted marshmallow syrup"
+        },
+        {
+          "index": 2,
+          "type": "cream",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "drizzle",
+          "correct": "chocolate"
+        },
+        {
+          "index": 4,
+          "type": "topping",
+          "correct": "graham cracker"
+        }
+      ]
+    },
+    {
+      "id": "ee657b02-443d-4e7b-98b9-a632d064e947",
+      "drink": "S'mores Cold Brew",
+      "size": "24 oz",
+      "template": "___ pumps of ___\n___ oz of kona cloud\n___ pumps of ___\n___ drizzle\n___ dust",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "syrup",
+          "correct": "toasted marshmallow syrup"
+        },
+        {
+          "index": 2,
+          "type": "cream",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 4,
+          "type": "syrup",
+          "correct": "toasted marshmallow syrup"
+        },
+        {
+          "index": 5,
+          "type": "drizzle",
+          "correct": "chocolate"
+        },
+        {
+          "index": 6,
+          "type": "topping",
+          "correct": "graham cracker"
         }
       ]
     },

@@ -422,7 +422,7 @@
   {
     "id": "c488160b-bca1-4f55-bb82-e3ac8d32c371",
     "drink": "Heart Attack",
-    "recipe": "● Medium (16 oz)\nIn a measuring cup:\n2 pumps of white chocolate sauce\n3/4 (three quarters) pumps of caramel sauce\n4 espresso shots\nWHISK THOROUGHLY\n2 1/2 (two and a half) oz of Half and Half\nMilk of Choice to 10 oz\nPour over ice\nAdd caramel over the top of the drink\n\n● Large (24 oz)\nIn a measuring cup:\n2 1/2 (two and a half) pumps of white chocolate sauce\n1 pump of caramel sauce\n4 espresso shots\nWHISK THOROUGHLY\n2 1/2 (two and a half) oz of Half and Half\nMilk of Choice to 12 oz\nPour over ice\nAdd caramel over the top of the drink\n\n● X-tra Large (32 oz)\nIn a measuring cup:\n4 pumps of white chocolate sauce\n1 1/2 (one and a half) pumps of caramel sauce\n6 espresso shots\nWHISK THOROUGHLY\n2 1/2 (two and a half) oz of Half and Half\nMilk of Choice to 20 oz\nPour over ice\nAdd caramel over the top of the drink",
+    "recipe": "● Medium (16 oz)\nIn a measuring cup:\n2 pumps of white chocolate sauce\n3/4 (three quarters) pumps of caramel sauce\n4 espresso shots\nWHISK THOROUGHLY\n2 1/2 (two and a half) oz of Half and Half\nMilk of Choice to 10 oz\nPour over ice\ncaramel drizzle\n\n● Large (24 oz)\nIn a measuring cup:\n2 1/2 (two and a half) pumps of white chocolate sauce\n1 pump of caramel sauce\n4 espresso shots\nWHISK THOROUGHLY\n2 1/2 (two and a half) oz of Half and Half\nMilk of Choice to 12 oz\nPour over ice\ncaramel drizzle\n\n● X-tra Large (32 oz)\nIn a measuring cup:\n4 pumps of white chocolate sauce\n1 1/2 (one and a half) pumps of caramel sauce\n6 espresso shots\nWHISK THOROUGHLY\n2 1/2 (two and a half) oz of Half and Half\nMilk of Choice to 20 oz\nPour over ice\ncaramel drizzle",
     "category": "Supreme Iced",
     "mela_category": "Supreme Iced"
   },
@@ -618,7 +618,7 @@
   {
     "id": "588c2d23-92f7-4480-a87f-4cdef7e3d235",
     "drink": "Heart Attack Hot",
-    "recipe": "● Medium (16 oz)\nIn a hot drink cup:\n1 (one) scoop of white chocolate powder\n3/4 (three quarters) pumps of caramel sauce\n4 espresso shots\nWHISK THOROUGHLY\nIn a measuring cup:\n2 1/2 (two and a half) oz of Half and Half\nMilk of Choice to 12 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\nAdd caramel over the top of the drink\n\n● Large (20 oz)\nIn a hot drink cup:\n1 1/2 (one and a half) scoops of white chocolate powder\n1 pump of caramel sauce\n4 espresso shots\nWHISK THOROUGHLY\nIn a measuring cup:\n2 1/2 (two and a half) oz of Half and Half\nMilk of Choice to 14 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\nAdd caramel over the top of the drink",
+    "recipe": "● Medium (16 oz)\nIn a hot drink cup:\n1 (one) scoop of white chocolate powder\n3/4 (three quarters) pumps of caramel sauce\n4 espresso shots\nWHISK THOROUGHLY\nIn a measuring cup:\n2 1/2 (two and a half) oz of Half and Half\nMilk of Choice to 12 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\ncaramel drizzle\n\n● Large (20 oz)\nIn a hot drink cup:\n1 1/2 (one and a half) scoops of white chocolate powder\n1 pump of caramel sauce\n4 espresso shots\nWHISK THOROUGHLY\nIn a measuring cup:\n2 1/2 (two and a half) oz of Half and Half\nMilk of Choice to 14 oz\nTransfer into steaming pitcher\nSteam to desired temperature\nPour steamed milk into hot drink cup\ncaramel drizzle",
     "category": "Supreme Hot",
     "mela_category": "Supreme Hot"
   },
@@ -2882,5 +2882,12 @@
     "recipe": "● Medium (16 oz)\nIn a blender:\n3 scoops of white chocolate powder\n2 pumps of chocolate macadamia nut syrup\n1 pump of toasted marshmallow syrup\n2 espresso shots\nCup full of ice\nBLEND\nAdd Kona Cloud to bottom of drink cup\nPour blended drink on top\nChocolate drizzle\nWhip/No whip\n\n● Large (24 oz)\nIn a blender:\n4 scoops of white chocolate powder\n3 pumps of chocolate macadamia nut syrup\n1 1/2 (one and a half) pumps of toasted marshmallow syrup\n2 espresso shots\nCup full of ice\nBLEND\nAdd Kona Cloud to bottom of drink cup\nPour blended drink on top\nChocolate drizzle\nWhip/No whip\n\n● X-tra Large (32 oz)\nIn a blender:\n6 scoops of white chocolate powder\n4 pumps of chocolate macadamia nut syrup\n2 pumps of toasted marshmallow syrup\n4 espresso shots\nCup full of ice\nBLEND\nAdd Kona Cloud to bottom of drink cup\nPour blended drink on top\nChocolate drizzle\nWhip/No whip",
     "category": "Blended Drinks",
     "mela_category": "Blended Drinks"
+  },
+  {
+    "id": "33a93179-a91d-4840-b95c-a1499b74cc2c",
+    "drink": "S'mores Cold Brew",
+    "recipe": "● Small (12 oz)\nIn a measuring cup:\n1 1/2 (one and a half) pumps of toasted marshmallow syrup\nCold brew to 6 oz\nPour over ice\nIn new measuring cup:\n2 oz Kona Cloud\n2 pumps of toasted marshmallow syrup\nMIX THOROUGHLY\nPour on top of cold brew\nChocolate drizzle\nGraham cracker dust\n\n● Medium (16 oz)\nIn a measuring cup:\n2 pumps of toasted marshmallow syrup\nCold brew to 8 oz\nPour over ice\nIn new measuring cup:\n2 oz Kona Cloud\n2 pumps of toasted marshmallow syrup\nMIX THOROUGHLY\nPour on top of cold brew\nChocolate drizzle\nGraham cracker dust\n\n● Large (24 oz)\nIn a measuring cup:\n2 1/2 (two and a half) pumps of toasted marshmallow syrup\nCold brew to 10 oz\nPour over ice\nIn new measuring cup:\n2 oz Kona Cloud\n2 pumps of toasted marshmallow syrup\nMIX THOROUGHLY\nPour on top of cold brew\nChocolate drizzle\nGraham cracker dust",
+    "category": "Cold Brew",
+    "mela_category": "Cold Brew"
   }
 ]
