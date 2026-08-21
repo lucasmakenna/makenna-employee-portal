@@ -2,7 +2,7 @@
   "test_name": "Makenna Koffee Recipe Test",
   "test_id": "mkc-recipe-fill-v1",
   "description": "Fill-in-the-blank recipe knowledge test for Makenna Koffee baristas.",
-  "total_questions": 808,
+  "total_questions": 814,
   "options": {
     "quantity": [
       "1/4",
@@ -209,23 +209,23 @@
       "caramel and chocolate"
     ],
     "white chocolate powder": [
-      "mexican mocha powder",
+      "white chocolate",
       "mocha powder",
       "white chocolate sauce",
-      "white chocolate",
+      "mexican mocha powder",
       "white mocha powder"
     ],
     "white mocha powder": [
-      "mocha powder",
-      "mexican mocha powder",
       "white chocolate",
-      "white chocolate powder"
+      "mocha powder",
+      "white chocolate powder",
+      "mexican mocha powder"
     ],
     "white chocolate": [
-      "white chocolate sauce",
-      "white mocha powder",
+      "white chocolate powder",
       "white mocha sauce",
-      "white chocolate powder"
+      "white chocolate sauce",
+      "white mocha powder"
     ],
     "mexican mocha powder": [
       "mocha powder",
@@ -238,9 +238,9 @@
       "white mocha powder"
     ],
     "white chocolate sauce": [
-      "white mocha sauce",
       "white chocolate",
-      "white chocolate powder"
+      "white chocolate powder",
+      "white mocha sauce"
     ],
     "white mocha sauce": [
       "white chocolate",
@@ -405,24 +405,24 @@
       "cookie dough"
     ],
     "caramel": [
-      "caramel sauce",
       "salted caramel sauce",
-      "salted caramel"
+      "salted caramel",
+      "caramel sauce"
     ],
     "caramel sauce": [
       "salted caramel sauce",
-      "caramel",
-      "salted caramel"
+      "salted caramel",
+      "caramel"
     ],
     "salted caramel sauce": [
-      "caramel sauce",
+      "salted caramel",
       "caramel",
-      "salted caramel"
+      "caramel sauce"
     ],
     "salted caramel": [
-      "caramel sauce",
       "salted caramel sauce",
-      "caramel"
+      "caramel",
+      "caramel sauce"
     ],
     "pineapple": [
       "pineapple syrup"
@@ -2277,6 +2277,42 @@
           "index": 1,
           "type": "powder",
           "correct": "vanilla chai powder"
+        }
+      ]
+    },
+    {
+      "id": "4db03c89-0963-4a7e-8a91-48285a6cd611",
+      "drink": "Spiced Chai Blended",
+      "size": "16 oz",
+      "template": "___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "3"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
+        }
+      ]
+    },
+    {
+      "id": "f3a1c145-d806-4404-ae51-74e3a642b630",
+      "drink": "Spiced Chai Blended",
+      "size": "24 oz",
+      "template": "___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "4"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
         }
       ]
     },
@@ -6041,6 +6077,42 @@
           "index": 1,
           "type": "powder",
           "correct": "vanilla chai powder"
+        }
+      ]
+    },
+    {
+      "id": "9677d375-86a4-4a03-9457-f5320c09d647",
+      "drink": "Spiced Chai Iced",
+      "size": "16 oz",
+      "template": "___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
+        }
+      ]
+    },
+    {
+      "id": "6afa0e0d-e53d-4e87-8148-b51802a728ea",
+      "drink": "Spiced Chai Iced",
+      "size": "24 oz",
+      "template": "___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
         }
       ]
     },
@@ -23305,6 +23377,42 @@
           "index": 5,
           "type": "sauce",
           "correct": "white chocolate sauce"
+        }
+      ]
+    },
+    {
+      "id": "82cd512e-adb4-4c07-b6f6-a8e9ce763e15",
+      "drink": "Spiced Chai Hot",
+      "size": "16 oz",
+      "template": "___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
+        }
+      ]
+    },
+    {
+      "id": "62e577f2-b207-49d2-bf50-2be492a37e42",
+      "drink": "Spiced Chai Hot",
+      "size": "20 oz",
+      "template": "___ scoops of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "spiced chai powder"
         }
       ]
     },
