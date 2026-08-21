@@ -2,7 +2,7 @@
   "test_name": "Makenna Koffee Recipe Test",
   "test_id": "mkc-recipe-fill-v1",
   "description": "Fill-in-the-blank recipe knowledge test for Makenna Koffee baristas.",
-  "total_questions": 806,
+  "total_questions": 808,
   "options": {
     "quantity": [
       "1/4",
@@ -209,23 +209,23 @@
       "caramel and chocolate"
     ],
     "white chocolate powder": [
-      "white mocha powder",
-      "mocha powder",
-      "white chocolate",
       "mexican mocha powder",
-      "white chocolate sauce"
+      "mocha powder",
+      "white chocolate sauce",
+      "white chocolate",
+      "white mocha powder"
     ],
     "white mocha powder": [
       "mocha powder",
       "mexican mocha powder",
-      "white chocolate powder",
-      "white chocolate"
+      "white chocolate",
+      "white chocolate powder"
     ],
     "white chocolate": [
+      "white chocolate sauce",
       "white mocha powder",
       "white mocha sauce",
-      "white chocolate powder",
-      "white chocolate sauce"
+      "white chocolate powder"
     ],
     "mexican mocha powder": [
       "mocha powder",
@@ -239,8 +239,8 @@
     ],
     "white chocolate sauce": [
       "white mocha sauce",
-      "white chocolate powder",
-      "white chocolate"
+      "white chocolate",
+      "white chocolate powder"
     ],
     "white mocha sauce": [
       "white chocolate",
@@ -405,23 +405,23 @@
       "cookie dough"
     ],
     "caramel": [
-      "salted caramel",
+      "caramel sauce",
       "salted caramel sauce",
-      "caramel sauce"
+      "salted caramel"
     ],
     "caramel sauce": [
-      "salted caramel",
       "salted caramel sauce",
-      "caramel"
+      "caramel",
+      "salted caramel"
     ],
     "salted caramel sauce": [
-      "salted caramel",
       "caramel sauce",
-      "caramel"
+      "caramel",
+      "salted caramel"
     ],
     "salted caramel": [
-      "salted caramel sauce",
       "caramel sauce",
+      "salted caramel sauce",
       "caramel"
     ],
     "pineapple": [
@@ -11391,8 +11391,8 @@
       ]
     },
     {
-      "id": "6b356c56-4487-4b9c-8b56-be38b5ec0a5e",
-      "drink": "Maui Latte (3/4) Iced",
+      "id": "9e37c8b8-dffb-47f5-95d6-249c255ced76",
+      "drink": "Maui Latte (3/4 Maui) Iced",
       "size": "16 oz",
       "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11409,8 +11409,8 @@
       ]
     },
     {
-      "id": "a739fc2d-fbfa-48bc-9ff9-9175e46ea459",
-      "drink": "Maui Latte (3/4) Iced",
+      "id": "fc28a81d-81f4-4dc1-81d5-b3f34be9713c",
+      "drink": "Maui Latte (3/4 Maui) Iced",
       "size": "24 oz",
       "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11427,8 +11427,8 @@
       ]
     },
     {
-      "id": "6c1f1add-74c8-4d3b-bbb8-f9eab187e147",
-      "drink": "Maui Latte (1/2) Iced",
+      "id": "26a81978-4d69-49c8-8f35-1abbeca963b2",
+      "drink": "Maui Latte (1/2 Maui) Iced",
       "size": "16 oz",
       "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11445,8 +11445,8 @@
       ]
     },
     {
-      "id": "6da78ba7-596f-4600-8323-2e2150a2d599",
-      "drink": "Maui Latte (1/2) Iced",
+      "id": "cb22b744-65f5-44f0-96af-e0b4a90902f9",
+      "drink": "Maui Latte (1/2 Maui) Iced",
       "size": "24 oz",
       "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11463,8 +11463,8 @@
       ]
     },
     {
-      "id": "14b37a0e-06c1-4e5c-ba4a-62ec6bdc6fda",
-      "drink": "Maui Latte (1/4) Iced",
+      "id": "d8653039-bfcc-48ae-b8fe-a6a3316d8969",
+      "drink": "Maui Latte (1/4 Maui) Iced",
       "size": "16 oz",
       "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11481,8 +11481,8 @@
       ]
     },
     {
-      "id": "d76e95c4-ab99-4785-8e99-05b6688a1f58",
-      "drink": "Maui Latte (1/4) Iced",
+      "id": "341eaefe-29a5-4f91-8c1e-25c8af4ecfb7",
+      "drink": "Maui Latte (1/4 Maui) Iced",
       "size": "24 oz",
       "template": "___ oz Maui Milk\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11499,8 +11499,8 @@
       ]
     },
     {
-      "id": "ac832170-91ad-496d-9d71-e4a9992ef672",
-      "drink": "Maui Latte Full Iced",
+      "id": "6d883c11-7af5-492d-b153-2050c24cfb9a",
+      "drink": "Maui Latte (Full Maui) Iced",
       "size": "16 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
@@ -11512,8 +11512,8 @@
       ]
     },
     {
-      "id": "594ee02c-c0fa-45cc-a72c-80e0eaf58fb3",
-      "drink": "Maui Latte Full Iced",
+      "id": "c2f4c8e0-9f14-42bf-945b-f50cbe331ad7",
+      "drink": "Maui Latte (Full Maui) Iced",
       "size": "24 oz",
       "template": "___ oz Maui Milk",
       "blanks": [
@@ -11525,8 +11525,8 @@
       ]
     },
     {
-      "id": "04a8093e-4c7b-4a18-aae0-ea9f06ae9165",
-      "drink": "Maui Latte (3/4) Hot",
+      "id": "336c6008-eaeb-4beb-9adf-9c131982df17",
+      "drink": "Maui Latte (3/4 Maui) Hot",
       "size": "16 oz",
       "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11543,8 +11543,8 @@
       ]
     },
     {
-      "id": "fada522b-4989-40ff-b418-e6fbcd4b70f7",
-      "drink": "Maui Latte (3/4) Hot",
+      "id": "c324026d-5ac1-4429-9a7e-82eaa811aa21",
+      "drink": "Maui Latte (3/4 Maui) Hot",
       "size": "20 oz",
       "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11561,8 +11561,8 @@
       ]
     },
     {
-      "id": "b6c3c785-ab96-4a5c-875f-06505efe6604",
-      "drink": "Maui Latte (1/2) Hot",
+      "id": "eb54bce1-5635-40e9-ab7b-0c31ce2cedd2",
+      "drink": "Maui Latte (1/2 Maui) Hot",
       "size": "16 oz",
       "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11579,8 +11579,8 @@
       ]
     },
     {
-      "id": "95a402fd-0d25-4bbe-b5c9-2222e309ec57",
-      "drink": "Maui Latte (1/2) Hot",
+      "id": "46e0982d-db32-46a2-917b-4f7609b9fcd0",
+      "drink": "Maui Latte (1/2 Maui) Hot",
       "size": "20 oz",
       "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11597,8 +11597,8 @@
       ]
     },
     {
-      "id": "42f6ccfe-c286-4a55-8907-3fd0911e1c5e",
-      "drink": "Maui Latte (1/4) Hot",
+      "id": "4d2b26f0-f106-4968-8222-af0aee8c6ea7",
+      "drink": "Maui Latte (1/4 Maui) Hot",
       "size": "16 oz",
       "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11615,8 +11615,8 @@
       ]
     },
     {
-      "id": "a401ac24-11ff-4590-b200-d9873caf0ca0",
-      "drink": "Maui Latte (1/4) Hot",
+      "id": "7532316c-0dd0-4d96-a8de-a16451f288d0",
+      "drink": "Maui Latte (1/4 Maui) Hot",
       "size": "20 oz",
       "template": "Maui Milk to ___ oz\nMilk of Choice to ___ oz",
       "blanks": [
@@ -11633,8 +11633,8 @@
       ]
     },
     {
-      "id": "dc09c9b1-5208-484e-b6d4-5e0cc4490e7a",
-      "drink": "Maui Latte Full Hot",
+      "id": "28f1bd37-17a9-4664-98a1-172600561c62",
+      "drink": "Maui Latte (Full Maui) Hot",
       "size": "16 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
@@ -11646,8 +11646,8 @@
       ]
     },
     {
-      "id": "6e741e82-20b9-41a6-884f-8f4fe1695eb2",
-      "drink": "Maui Latte Full Hot",
+      "id": "32036779-7366-4b19-a82e-c4abf11580fb",
+      "drink": "Maui Latte (Full Maui) Hot",
       "size": "20 oz",
       "template": "Maui Milk to ___ oz",
       "blanks": [
@@ -23553,6 +23553,82 @@
           "index": 6,
           "type": "topping",
           "correct": "graham cracker"
+        }
+      ]
+    },
+    {
+      "id": "9e71ffae-6c1e-43b3-882d-6dbca0b672dc",
+      "drink": "Horchata Latte Blended",
+      "size": "16 oz",
+      "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "horchata powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "white chocolate powder"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "1 1/2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "brown sugar cinnamon syrup"
+        }
+      ]
+    },
+    {
+      "id": "72c7ddb5-70be-4180-94f3-c3204ca53f3e",
+      "drink": "Horchata Latte Blended",
+      "size": "24 oz",
+      "template": "___ scoops of ___\n___ scoops of ___\n___ pumps of ___",
+      "blanks": [
+        {
+          "index": 0,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 1,
+          "type": "powder",
+          "correct": "horchata powder"
+        },
+        {
+          "index": 2,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 3,
+          "type": "powder",
+          "correct": "white chocolate powder"
+        },
+        {
+          "index": 4,
+          "type": "quantity",
+          "correct": "2"
+        },
+        {
+          "index": 5,
+          "type": "syrup",
+          "correct": "brown sugar cinnamon syrup"
         }
       ]
     },

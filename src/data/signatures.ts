@@ -14,7 +14,7 @@
 
 import type { SignatureAuditRecord } from '@/types';
 import { hashRecord } from '@/lib/signature-audit';
-import { supabase } from '@/lib/supabase';
+import { dbCall } from '@/lib/db-client';
 
 const LOG_KEY = 'makenna-signature-log';
 
@@ -39,7 +39,7 @@ export function appendSignature(record: SignatureAuditRecord) {
   all.push(record);
   writeAll(all);
   // Fire-and-forget sync to Supabase
-  supabase.from('signature_audit_records').insert({
+  dbCall('signature_audit_records', 'insert', { data: {
     id: record.id,
     context: record.context,
     signer_employee_id: record.signerEmployeeId,
@@ -55,7 +55,7 @@ export function appendSignature(record: SignatureAuditRecord) {
     consent_acknowledged: record.consentAcknowledged,
     prior_record_id: record.priorRecordId,
     prior_record_hash: record.priorRecordHash,
-  }).then(() => {});
+  }}).then(() => {});
 }
 
 export function getAllSignatures(): SignatureAuditRecord[] {
@@ -97,15 +97,14 @@ function rowToRecord(row: any): SignatureAuditRecord {
 export async function loadSignatureById(id: string): Promise<SignatureAuditRecord | undefined> {
   const local = getSignatureById(id);
   if (local) return local;
-  const { data } = await supabase.from('signature_audit_records').select('*').eq('id', id).single();
+  const { data } = await dbCall('signature_audit_records', 'select', { eq: [['id', id]], single: true });
   return data ? rowToRecord(data) : undefined;
 }
 
 export async function loadSignaturesForEmployee(employeeId: string): Promise<SignatureAuditRecord[]> {
-  const { data } = await supabase
-    .from('signature_audit_records')
-    .select('*')
-    .or(`context->>'employeeId'.eq.${employeeId},signer_employee_id.eq.${employeeId}`);
+  const { data } = await dbCall<unknown[]>('signature_audit_records', 'select', {
+    or: `context->>'employeeId'.eq.${employeeId},signer_employee_id.eq.${employeeId}`,
+  });
   if (!data || data.length === 0) return getSignaturesForEmployee(employeeId);
   return data.map(rowToRecord);
 }

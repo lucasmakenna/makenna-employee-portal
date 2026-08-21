@@ -8,7 +8,7 @@
  * toggle and sign-off calls upsert again to keep it current.
  */
 
-import { supabase } from './supabase';
+import { dbCall } from './db-client';
 
 export type StationProgress = {
   stationId: string;
@@ -21,10 +21,10 @@ export type StationProgress = {
 export async function loadTrainingProgress(
   employeeId: string,
 ): Promise<Record<string, StationProgress>> {
-  const { data, error } = await supabase
-    .from('training_progress')
-    .select('station_id, skills_completed, signed_off_by, signed_off_at')
-    .eq('employee_id', employeeId);
+  const { data, error } = await dbCall<{ station_id: string; skills_completed: string[]; signed_off_by: string | null; signed_off_at: string | null }[]>(
+    'training_progress', 'select',
+    { select: 'station_id, skills_completed, signed_off_by, signed_off_at', eq: [['employee_id', employeeId]] },
+  );
 
   if (error) {
     console.error('loadTrainingProgress error:', error.message);
@@ -47,9 +47,10 @@ export async function loadTrainingProgress(
 export async function loadAllTrainingProgress(): Promise<
   Record<string, Record<string, StationProgress>>
 > {
-  const { data, error } = await supabase
-    .from('training_progress')
-    .select('employee_id, station_id, skills_completed, signed_off_by, signed_off_at');
+  const { data, error } = await dbCall<{ employee_id: string; station_id: string; skills_completed: string[]; signed_off_by: string | null; signed_off_at: string | null }[]>(
+    'training_progress', 'select',
+    { select: 'employee_id, station_id, skills_completed, signed_off_by, signed_off_at' },
+  );
 
   if (error) {
     console.error('loadAllTrainingProgress error:', error.message);
@@ -74,8 +75,8 @@ export async function saveStationProgress(
   employeeId: string,
   progress: StationProgress,
 ): Promise<void> {
-  const { error } = await supabase.from('training_progress').upsert(
-    {
+  const { error } = await dbCall('training_progress', 'upsert', {
+    data: {
       employee_id: employeeId,
       station_id: progress.stationId,
       skills_completed: progress.skillsCompleted,
@@ -83,8 +84,8 @@ export async function saveStationProgress(
       signed_off_at: progress.signedOffAt ?? null,
       updated_at: new Date().toISOString(),
     },
-    { onConflict: 'employee_id,station_id' },
-  );
+    onConflict: 'employee_id,station_id',
+  });
 
   if (error) {
     console.error('saveStationProgress error:', error.message);
