@@ -140,7 +140,7 @@ export default function StationDetailPage() {
                   ))}
                 </div>
               )}
-              {isAnyRole(user?.role, ['admin', 'trainer']) && (
+              {isAnyRole(user?.role, ['admin', 'manager', 'trainer']) && (
                 <TrainerNotepad skillId={sk.id} />
               )}
             </div>
