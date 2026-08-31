@@ -96,9 +96,16 @@ export type Certification = {
   fileUrl?: string;
 };
 
+export type SkillSignoff = {
+  trainerId: string;
+  trainerName: string;
+  completedAt: string; // ISO
+};
+
 export type StationProgress = {
   stationId: string;
   skillsCompleted: string[]; // skill ids
+  skillSignoffs?: Record<string, SkillSignoff>; // skillId → who checked it off
   signedOffBy?: string; // trainer employee id
   signedOffAt?: string; // ISO
 };

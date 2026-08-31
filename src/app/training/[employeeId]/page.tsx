@@ -148,12 +148,23 @@ export default function TraineeProgress() {
   const toggleSkill = async (skillId: string) => {
     if (!canSignOff) return;
     const current = employee.trainingProgressByStation[station.id]?.skillsCompleted ?? [];
-    const next = current.includes(skillId)
-      ? current.filter((s) => s !== skillId)
-      : [...current, skillId];
+    const currentSignoffs = employee.trainingProgressByStation[station.id]?.skillSignoffs ?? {};
+    const isChecking = !current.includes(skillId);
+    const next = isChecking ? [...current, skillId] : current.filter((s) => s !== skillId);
+    const nextSignoffs = { ...currentSignoffs };
+    if (isChecking) {
+      nextSignoffs[skillId] = {
+        trainerId: user.id,
+        trainerName: fullName(user),
+        completedAt: new Date().toISOString(),
+      };
+    } else {
+      delete nextSignoffs[skillId];
+    }
     const updated = {
       stationId: station.id,
       skillsCompleted: next,
+      skillSignoffs: nextSignoffs,
       signedOffBy: progress?.signedOffBy,
       signedOffAt: progress?.signedOffAt,
     };
@@ -161,9 +172,7 @@ export default function TraineeProgress() {
       ...employee.trainingProgressByStation,
       [station.id]: updated,
     };
-    // Write to localStorage immediately so progress survives a page refresh.
     updateEmployee(employee.id, { trainingProgressByStation: nextTrainingProgress });
-    // Also persist to Supabase when configured.
     await saveStationProgress(employee.id, updated);
   };
 
@@ -463,6 +472,14 @@ export default function TraineeProgress() {
                           <div className="font-semibold text-ink-700 capitalize-words">{toTitleCase(sk.name)}</div>
                           <span className="text-xs text-ink-400">~{sk.estimatedMinutes} min</span>
                         </div>
+                        {(() => {
+                          const signoff = progress?.skillSignoffs?.[sk.id];
+                          return signoff ? (
+                            <div className="mt-0.5 text-xs text-emerald-600">
+                              ✓ {signoff.trainerName} · {new Date(signoff.completedAt).toLocaleDateString()}
+                            </div>
+                          ) : null;
+                        })()}
                         <p className="mt-1 text-sm text-ink-600">{sk.description}</p>
                         <ul className="mt-2 space-y-1">
                           {sk.competencyCriteria.map((c, i) => (

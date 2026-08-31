@@ -9,21 +9,33 @@
  */
 
 import { dbCall } from './db-client';
+import type { StationProgress } from '@/types';
 
-export type StationProgress = {
-  stationId: string;
-  skillsCompleted: string[];
-  signedOffBy?: string;
-  signedOffAt?: string;
+type ProgressRow = {
+  station_id: string;
+  skills_completed: string[];
+  skill_signoffs: Record<string, { trainerId: string; trainerName: string; completedAt: string }> | null;
+  signed_off_by: string | null;
+  signed_off_at: string | null;
 };
+
+function rowToProgress(row: ProgressRow): StationProgress {
+  return {
+    stationId: row.station_id,
+    skillsCompleted: row.skills_completed ?? [],
+    skillSignoffs: row.skill_signoffs ?? undefined,
+    signedOffBy: row.signed_off_by ?? undefined,
+    signedOffAt: row.signed_off_at ?? undefined,
+  };
+}
 
 /** Load all station progress rows for one employee. */
 export async function loadTrainingProgress(
   employeeId: string,
 ): Promise<Record<string, StationProgress>> {
-  const { data, error } = await dbCall<{ station_id: string; skills_completed: string[]; signed_off_by: string | null; signed_off_at: string | null }[]>(
+  const { data, error } = await dbCall<(ProgressRow & { employee_id?: string })[]>(
     'training_progress', 'select',
-    { select: 'station_id, skills_completed, signed_off_by, signed_off_at', eq: [['employee_id', employeeId]] },
+    { select: 'station_id, skills_completed, skill_signoffs, signed_off_by, signed_off_at', eq: [['employee_id', employeeId]] },
   );
 
   if (error) {
@@ -32,14 +44,7 @@ export async function loadTrainingProgress(
   }
 
   const result: Record<string, StationProgress> = {};
-  for (const row of data ?? []) {
-    result[row.station_id] = {
-      stationId: row.station_id,
-      skillsCompleted: row.skills_completed ?? [],
-      signedOffBy: row.signed_off_by ?? undefined,
-      signedOffAt: row.signed_off_at ?? undefined,
-    };
-  }
+  for (const row of data ?? []) result[row.station_id] = rowToProgress(row);
   return result;
 }
 
@@ -47,9 +52,9 @@ export async function loadTrainingProgress(
 export async function loadAllTrainingProgress(): Promise<
   Record<string, Record<string, StationProgress>>
 > {
-  const { data, error } = await dbCall<{ employee_id: string; station_id: string; skills_completed: string[]; signed_off_by: string | null; signed_off_at: string | null }[]>(
+  const { data, error } = await dbCall<(ProgressRow & { employee_id: string })[]>(
     'training_progress', 'select',
-    { select: 'employee_id, station_id, skills_completed, signed_off_by, signed_off_at' },
+    { select: 'employee_id, station_id, skills_completed, skill_signoffs, signed_off_by, signed_off_at' },
   );
 
   if (error) {
@@ -60,12 +65,7 @@ export async function loadAllTrainingProgress(): Promise<
   const result: Record<string, Record<string, StationProgress>> = {};
   for (const row of data ?? []) {
     if (!result[row.employee_id]) result[row.employee_id] = {};
-    result[row.employee_id][row.station_id] = {
-      stationId: row.station_id,
-      skillsCompleted: row.skills_completed ?? [],
-      signedOffBy: row.signed_off_by ?? undefined,
-      signedOffAt: row.signed_off_at ?? undefined,
-    };
+    result[row.employee_id][row.station_id] = rowToProgress(row);
   }
   return result;
 }
@@ -80,6 +80,7 @@ export async function saveStationProgress(
       employee_id: employeeId,
       station_id: progress.stationId,
       skills_completed: progress.skillsCompleted,
+      skill_signoffs: progress.skillSignoffs ?? {},
       signed_off_by: progress.signedOffBy ?? null,
       signed_off_at: progress.signedOffAt ?? null,
       updated_at: new Date().toISOString(),
