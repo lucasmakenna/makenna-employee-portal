@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, Clock, Pencil, StickyNote, ChevronDown, ChevronUp } from 'lucide-react';
+import { ArrowLeft, Clock, Pencil, StickyNote } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import { useCurrentUser, isAnyRole } from '@/lib/auth';
 import { getStation, STATIONS } from '@/data/training';
@@ -70,9 +70,6 @@ export default function StationDetailPage() {
               <Pencil size={14} /> Edit content
             </Link>
           </div>
-          {isTrainer(user?.role) && (
-            <TrainerNotepad skillId={station.id} />
-          )}
         </div>
 
         {/* Skills */}
@@ -146,6 +143,9 @@ export default function StationDetailPage() {
                   ))}
                 </div>
               )}
+              {isTrainer(user?.role) && (
+                <TrainerNotepad skillId={sk.id} />
+              )}
             </div>
           ))}
         </div>
@@ -196,31 +196,21 @@ export default function StationDetailPage() {
 }
 
 function TrainerNotepad({ skillId }: { skillId: string }) {
-  const [open, setOpen] = useState(false);
   const [note, setNote] = useState('');
 
   return (
-    <div className="mt-4 border-t border-ink-100 pt-3">
-      <button
-        onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1.5 text-xs text-ink-400 hover:text-ink-600 transition-colors"
-      >
-        <StickyNote size={13} />
-        <span className="font-medium">Trainer notes</span>
-        {note && !open && (
-          <span className="ml-1 inline-block h-1.5 w-1.5 rounded-full bg-cyan-400" />
-        )}
-        {open ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
-      </button>
-      {open && (
-        <textarea
-          value={note}
-          onChange={(e) => setNote(e.target.value)}
-          placeholder="Add session notes for this skill…"
-          rows={3}
-          className="mt-2 w-full resize-none rounded-lg border border-ink-200 bg-cyan-50/30 px-3 py-2 text-sm text-ink-700 placeholder:text-ink-300 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
-        />
-      )}
+    <div className="mt-4 border-t border-ink-100 pt-4">
+      <div className="flex items-center gap-1.5 mb-2">
+        <StickyNote size={13} className="text-ink-400" />
+        <span className="text-xs font-semibold uppercase tracking-wider text-ink-400">Trainer notes</span>
+      </div>
+      <textarea
+        value={note}
+        onChange={(e) => setNote(e.target.value)}
+        placeholder="Add session notes for this skill…"
+        rows={2}
+        className="w-full resize-none rounded-lg border border-ink-200 bg-cyan-50/30 px-3 py-2 text-sm text-ink-700 placeholder:text-ink-300 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+      />
     </div>
   );
 }
