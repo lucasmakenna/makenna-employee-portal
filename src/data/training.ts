@@ -1309,7 +1309,7 @@ export const STATIONS: TrainingStation[] = [
       },
       {
         id: 'bb1-32c',
-        name: 'Milk types and texturing practice',
+        name: 'Steaming — Milk Types and Texturing Practice',
         description: 'Fat content affects how milk takes air. Non-dairy requires significantly more effort. Practice with whole milk first, then oat and almond. Goal: thick microfoam for lattes, thicker foam for cappuccinos.',
         estimatedMinutes: 15,
         competencyCriteria: [
