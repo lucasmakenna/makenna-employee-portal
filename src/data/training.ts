@@ -1282,7 +1282,7 @@ export const STATIONS: TrainingStation[] = [
         id: 'bb1-32',
         name: 'Milk steaming — pitcher selection, wand prep, and air introduction',
         description: 'Select the correct pitcher by drink size. Purge the wand. Position wand below the milk surface. Open steam knob fully. Listen for "tsch tsch" sound. Introduce air 4–5 seconds then submerge wand.',
-        estimatedMinutes: 25,
+        estimatedMinutes: 20,
         competencyCriteria: [
           'PITCHER SELECTION: Smallest pitcher = Cortado or Steamed Milk for Drip. Medium pitcher = Small or Medium hot drink. Large pitcher = Large hot drink.',
           'Measure milk to the required oz mark inside the pitcher.',
@@ -1294,9 +1294,25 @@ export const STATIONS: TrainingStation[] = [
           'A "tsch tsch" or paper-ripping sound = air being introduced and a whirlpool forming. If absent, lower the pitcher slowly until you hear it.',
           'Introduce air for approximately 4–5 seconds, then raise the pitcher so the wand is fully submerged.',
           'For a Latte: milk volume should increase by about 20%.',
+        ],
+      },
+      {
+        id: 'bb1-32b',
+        name: 'Cappuccino steaming — volume, air technique, temperature, and finish',
+        description: 'Cappuccino milk grows about 50% (vs 20% for a latte). Total milk is 2 oz less than iced. Follow the milk surface continuously while introducing air.',
+        estimatedMinutes: 15,
+        competencyCriteria: [
           'For a Cappuccino: milk grows about 50%. Total milk = 2 oz less than iced. Follow the milk surface continuously while introducing air.',
           'TEMPERATURE: Close the steam knob 10–15 degrees before the target temp (milk keeps rising). Kids = 120°F / Regular = 150°F / Extra hot = 160°F.',
           'FINISH: Pull pitcher down. Wipe wand, purge again, set bucket aside. Tap pitcher on the counter and swirl until milk looks like wet paint.',
+        ],
+      },
+      {
+        id: 'bb1-32c',
+        name: 'Milk types and texturing practice',
+        description: 'Fat content affects how milk takes air. Non-dairy requires significantly more effort. Practice with whole milk first, then oat and almond. Goal: thick microfoam for lattes, thicker foam for cappuccinos.',
+        estimatedMinutes: 15,
+        competencyCriteria: [
           '"Fat content in dairy milk traps the air introduced during steaming. Lower-fat milks require additional seconds of air introduction. Non-dairy milks contain no fat and require significantly more effort to reach target volume."',
           'Practice with Whole Milk, then Oat Milk and Almond Milk (non-dairy requires significantly more air).',
           'Texturing/pouring practice goal: thick microfoam for a Latte, thicker foam for a Cappuccino — correct temperature without scalding.',
