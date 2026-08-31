@@ -3,13 +3,16 @@
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, Clock, Pencil } from 'lucide-react';
+import { ArrowLeft, Clock, Pencil, StickyNote, ChevronDown, ChevronUp } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import { useCurrentUser, isAnyRole } from '@/lib/auth';
 import { getStation, STATIONS } from '@/data/training';
 import { isInTraining, fullName } from '@/data/employees';
+import type { Employee } from '@/types';
 import { useEmployees } from '@/data/store';
 import { loadAllTrainingProgress } from '@/lib/training-db';
+
+const isTrainer = (role?: Employee['role']) => isAnyRole(role, ['admin', 'manager', 'trainer']);
 
 export default function StationDetailPage() {
   const params = useParams<{ id: string }>();
@@ -140,6 +143,9 @@ export default function StationDetailPage() {
                   ))}
                 </div>
               )}
+              {isTrainer(user?.role) && (
+                <TrainerNotepad skillId={sk.id} />
+              )}
             </div>
           ))}
         </div>
@@ -186,6 +192,36 @@ export default function StationDetailPage() {
         </div>
       </div>
     </AppShell>
+  );
+}
+
+function TrainerNotepad({ skillId }: { skillId: string }) {
+  const [open, setOpen] = useState(false);
+  const [note, setNote] = useState('');
+
+  return (
+    <div className="mt-4 border-t border-ink-100 pt-3">
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="flex items-center gap-1.5 text-xs text-ink-400 hover:text-ink-600 transition-colors"
+      >
+        <StickyNote size={13} />
+        <span className="font-medium">Trainer notes</span>
+        {note && !open && (
+          <span className="ml-1 inline-block h-1.5 w-1.5 rounded-full bg-cyan-400" />
+        )}
+        {open ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
+      </button>
+      {open && (
+        <textarea
+          value={note}
+          onChange={(e) => setNote(e.target.value)}
+          placeholder="Add session notes for this skill…"
+          rows={3}
+          className="mt-2 w-full resize-none rounded-lg border border-ink-200 bg-cyan-50/30 px-3 py-2 text-sm text-ink-700 placeholder:text-ink-300 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+        />
+      )}
+    </div>
   );
 }
 
