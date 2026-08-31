@@ -3,7 +3,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, CheckCircle2, Clock, FileText, PenLine, Stamp, ClipboardList, NotebookPen } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, Clock, FileText, PenLine, Stamp, ClipboardList, NotebookPen, StickyNote } from 'lucide-react';
 import { format, parseISO } from 'date-fns';
 import AppShell from '@/components/AppShell';
 import Avatar from '@/components/Avatar';
@@ -21,6 +21,25 @@ import { stampSignature, tryGetGeolocation } from '@/lib/signature-audit';
 import { appendSignature, getMostRecentRecord } from '@/data/signatures';
 import { loadTrainingProgress, saveStationProgress } from '@/lib/training-db';
 import { useEmployees, usePackets, useTrainingNotes } from '@/data/store';
+
+function SkillNotepad({ skillId }: { skillId: string }) {
+  const [note, setNote] = useState('');
+  return (
+    <div className="mt-3 border-t border-ink-100 pt-3">
+      <div className="flex items-center gap-1.5 mb-1.5">
+        <StickyNote size={12} className="text-ink-400" />
+        <span className="text-xs font-semibold uppercase tracking-wider text-ink-400">Trainer notes</span>
+      </div>
+      <textarea
+        value={note}
+        onChange={(e) => setNote(e.target.value)}
+        placeholder="Notes for this skill…"
+        rows={2}
+        className="w-full resize-none rounded-lg border border-ink-200 bg-cyan-50/30 px-3 py-2 text-sm text-ink-700 placeholder:text-ink-300 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+      />
+    </div>
+  );
+}
 
 /** Convert a skill name to Title Case, respecting em-dashes as phrase separators. */
 function toTitleCase(str: string): string {
@@ -531,6 +550,9 @@ export default function TraineeProgress() {
                             )}
                           </div>
                         )}
+
+                        {/* Per-skill trainer note */}
+                        {canSignOff && <SkillNotepad skillId={sk.id} />}
                       </div>
                     </div>
                   </div>
