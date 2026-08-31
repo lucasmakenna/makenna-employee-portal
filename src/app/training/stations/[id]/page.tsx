@@ -70,6 +70,9 @@ export default function StationDetailPage() {
               <Pencil size={14} /> Edit content
             </Link>
           </div>
+          {isTrainer(user?.role) && (
+            <TrainerNotepad skillId={station.id} />
+          )}
         </div>
 
         {/* Skills */}
@@ -142,9 +145,6 @@ export default function StationDetailPage() {
                     </figure>
                   ))}
                 </div>
-              )}
-              {isTrainer(user?.role) && (
-                <TrainerNotepad skillId={sk.id} />
               )}
             </div>
           ))}
