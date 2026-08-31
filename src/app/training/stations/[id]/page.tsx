@@ -8,11 +8,8 @@ import AppShell from '@/components/AppShell';
 import { useCurrentUser, isAnyRole } from '@/lib/auth';
 import { getStation, STATIONS } from '@/data/training';
 import { isInTraining, fullName } from '@/data/employees';
-import type { Employee } from '@/types';
 import { useEmployees } from '@/data/store';
 import { loadAllTrainingProgress } from '@/lib/training-db';
-
-const isTrainer = (role?: Employee['role']) => isAnyRole(role, ['admin', 'manager', 'trainer']);
 
 export default function StationDetailPage() {
   const params = useParams<{ id: string }>();
@@ -143,7 +140,7 @@ export default function StationDetailPage() {
                   ))}
                 </div>
               )}
-              {isTrainer(user?.role) && (
+              {isAnyRole(user?.role, ['admin', 'trainer']) && (
                 <TrainerNotepad skillId={sk.id} />
               )}
             </div>
