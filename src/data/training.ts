@@ -913,7 +913,6 @@ export const STATIONS: TrainingStation[] = [
         competencyCriteria: [
           '"Restocking pastries (store specific)."',
           'Continue using a syrup bottle until the pump can no longer extract any liquid. Do not replace a bottle that still has usable product.',
-          'If a bottle is nearly empty but needs to be replaced for a rush, discard the remaining syrup into another bottle of the exact same flavor.',
           '"Refilling beans - How to know which beans are which."',
           '"Unboxing and putting away product."',
         ],
@@ -1385,7 +1384,7 @@ export const STATIONS: TrainingStation[] = [
           questions: [
             'What is the correct fill level for the RED counter sanitizing bucket vs. the WHITE steaming wand bucket?',
             'When must a sanitizing bucket be changed early, regardless of the timer?',
-            'When should a syrup bottle be replaced, and what do you do if a bottle is nearly empty during a rush?',
+            'When should a syrup bottle be replaced?',
             'Walk through the steps for preparing a Cold Brew Toddy from start to finish.',
             'What is the target espresso shot extraction time range?',
             'Describe the purpose of each step in sequence: Grind, Dose, and Tamp.',
@@ -1396,7 +1395,7 @@ export const STATIONS: TrainingStation[] = [
           answers: [
             'RED counter sanitizing bucket = fill to LINE 2. WHITE steam wand bucket = fill to LINE 1.',
             'When the water becomes cloudy or greasy — regardless of how long it has been since the last change.',
-            'Replace a bottle ONLY when the pump can no longer extract any liquid. If a bottle is nearly empty during a rush, discard the remaining syrup into another bottle of the exact same flavor — do not mix different flavors.',
+            'Replace a bottle ONLY when the pump can no longer extract any liquid.',
             'Place the plastic stand inside the Toddy → set the grinder to COARSE → place a bag behind the grinder outlet to catch grinds → pour Cold Brew Beans in and grind → place the filter bag with grinds into the Toddy → fill with drinking water using a clean pitcher (leave 1 inch at the top) → write the Ready By Date (current time + 14 hours) → leave the Toddy out at room temperature. Do NOT put it in the fridge.',
             '10–15 seconds is the target. A 9-second shot is usable but grind must be adjusted finer immediately. 8 seconds or below must be discarded. A 16–18 second shot is usable but adjust coarser immediately. 19 seconds or above must be discarded.',
             'Grind: the grinder breaks down beans to a specific particle size for proper water flow and extraction. Dose: the grinder automatically weighs a precise amount of grounds (16–18g) into the portafilter — ensures consistency every shot. Tamp: applies even, firm pressure (~30 lbs) to create a level, compact puck so water flows evenly through all the grounds.',
