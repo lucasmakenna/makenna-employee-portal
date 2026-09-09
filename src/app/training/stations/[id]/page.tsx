@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, Clock, Pencil, StickyNote } from 'lucide-react';
+import { ArrowLeft, Clock, Lock, Pencil, StickyNote } from 'lucide-react';
 import AppShell from '@/components/AppShell';
 import { useCurrentUser, isAnyRole } from '@/lib/auth';
 import { getStation, STATIONS } from '@/data/training';
@@ -94,6 +94,7 @@ export default function StationDetailPage() {
                   <ChecklistCriteria
                     criteria={sk.competencyCriteria}
                     skillId={sk.id}
+                    signOff={sk.signOff}
                     trainerNotes={
                       isAnyRole(user?.role, ['admin', 'manager', 'trainer'])
                         ? sk.trainerNotes
@@ -216,21 +217,25 @@ function ChecklistCriteria({
   criteria,
   skillId,
   trainerNotes,
+  signOff,
 }: {
   criteria: string[];
   skillId: string;
   trainerNotes?: string[];
+  signOff?: boolean;
 }) {
   const [checked, setChecked] = useState<boolean[]>(() => criteria.map(() => false));
+  const [signedOff, setSignedOff] = useState(false);
 
   const toggle = (i: number) =>
     setChecked((prev) => prev.map((v, idx) => (idx === i ? !v : v)));
 
   const doneCount = checked.filter(Boolean).length;
+  const allDone = doneCount === criteria.length;
 
   return (
     <div className="space-y-1">
-      {doneCount === criteria.length && (
+      {allDone && (
         <div className="mb-2 rounded-lg bg-emerald-50 border border-emerald-200 px-3 py-2 text-xs font-semibold text-emerald-700">
           ✓ All points covered!
         </div>
@@ -243,22 +248,84 @@ function ChecklistCriteria({
                 type="checkbox"
                 checked={checked[i]}
                 onChange={() => toggle(i)}
-                className="mt-0.5 h-4 w-4 shrink-0 rounded border-ink-300 accent-cyan-500 cursor-pointer"
+                className="mt-0.5 h-3.5 w-3.5 shrink-0 rounded border-ink-300 accent-cyan-500 cursor-pointer"
               />
               <span className={`text-sm leading-snug transition-colors ${checked[i] ? 'line-through text-ink-400' : 'text-ink-700'}`}>
                 {c}
               </span>
             </label>
             {trainerNotes?.[i] && (
-              <p className="ml-7 mt-1 text-xs italic text-hibiscus-600">
+              <p className="ml-6 mt-1 text-xs italic text-hibiscus-600">
                 Trainer note: {trainerNotes[i]}
               </p>
             )}
           </li>
         ))}
       </ul>
-      {doneCount > 0 && doneCount < criteria.length && (
-        <p className="mt-2 text-xs text-ink-400">{doneCount} of {criteria.length} covered</p>
+      {doneCount > 0 && !allDone && (
+        <p className="mt-2 text-xs text-ink-400">{doneCount} of {criteria.length} completed</p>
+      )}
+
+      {signOff && (
+        <div className="mt-5 border-t border-ink-100 pt-5">
+          <div className="flex items-center justify-between mb-3">
+            <div>
+              <p className="text-sm font-bold text-ink-700">Trainer Sign-Off</p>
+              <p className="text-xs text-ink-400">Complete once all {criteria.length} drinks are checked off</p>
+            </div>
+            {allDone && !signedOff ? (
+              <span className="inline-flex items-center gap-1 rounded-md bg-emerald-50 border border-emerald-200 px-2.5 py-1 text-xs font-semibold text-emerald-700">
+                ✓ Ready
+              </span>
+            ) : !signedOff ? (
+              <span className="inline-flex items-center gap-1.5 rounded-md bg-ink-50 border border-ink-100 px-2.5 py-1 text-xs font-semibold text-ink-400">
+                <Lock size={10} /> Locked
+              </span>
+            ) : null}
+          </div>
+
+          {signedOff ? (
+            <div className="rounded-lg bg-emerald-50 border border-emerald-200 px-4 py-3 text-sm font-semibold text-emerald-700">
+              ✓ Sign-off complete
+            </div>
+          ) : (
+            <>
+              <div className="grid grid-cols-2 gap-3 mb-3">
+                {[
+                  { id: `${skillId}-barista`, label: 'New Barista Name', placeholder: 'Full name', type: 'text' },
+                  { id: `${skillId}-store`,   label: 'Store',            placeholder: 'Location',  type: 'text' },
+                  { id: `${skillId}-trainer`, label: 'Trainer Name',     placeholder: 'Full name', type: 'text' },
+                  { id: `${skillId}-date`,    label: 'Date',             placeholder: '',          type: 'date' },
+                ].map((f) => (
+                  <div key={f.id}>
+                    <label className="block text-xs font-bold uppercase tracking-wide text-ink-400 mb-1">
+                      {f.label}
+                    </label>
+                    <input
+                      id={f.id}
+                      type={f.type}
+                      placeholder={f.placeholder}
+                      disabled={!allDone}
+                      className="w-full rounded-lg border border-ink-200 bg-ink-50 px-3 py-2 text-sm text-ink-700 placeholder:text-ink-300 focus:border-cyan-400 focus:bg-white focus:outline-none focus:ring-1 focus:ring-cyan-400 disabled:opacity-40 disabled:cursor-not-allowed"
+                    />
+                  </div>
+                ))}
+              </div>
+              <button
+                disabled={!allDone}
+                onClick={() => setSignedOff(true)}
+                className="w-full rounded-lg bg-cyan-400 py-2.5 text-sm font-bold text-white transition-colors hover:bg-cyan-500 disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                Complete Sign-Off
+              </button>
+              {!allDone && (
+                <p className="mt-2 text-center text-xs italic text-ink-300">
+                  Check off all {criteria.length} drinks to unlock
+                </p>
+              )}
+            </>
+          )}
+        </div>
       )}
     </div>
   );

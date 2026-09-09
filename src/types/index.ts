@@ -322,6 +322,11 @@ export type TrainingSkill = {
    * trainer/manager/admin roles.
    */
   trainerNotes?: string[];
+  /**
+   * If true, a trainer sign-off form (barista name, trainer name, store, date)
+   * appears below the checklist, locked until every item is checked.
+   */
+  signOff?: boolean;
 };
 
 export type TrainingSignoff = {

@@ -2067,10 +2067,11 @@ export const STATIONS: TrainingStation[] = [
       },
       {
         id: 'fr-6',
-        name: 'Final Drink Check-Off (trainer-administered)',
+        name: 'Final Drink Sign Off',
         description: 'The trainer gives drinks from this list to the new barista, in no particular order, until all are completed without mistakes. The new barista may use the iPad. If the trainer has to stop or correct the new barista, that drink is a failure and cannot be retried that same day. 3–5 consecutive mistakes means the new barista needs more practice shifts before retrying the list. Fewer mistakes can be retried next shift. If a new hire is very strong, the trainer may test some drinks verbally — the new barista must still walk through every step in detail, but a mistake during a verbal test means they go back to physically making drinks for the rest of the list.',
         estimatedMinutes: 60,
         criteriaChecklist: true,
+        signOff: true,
         competencyCriteria: [
           'Iced Maui Latte ¾ (medium)',
           'Iced Maui Vanilla (medium)',
