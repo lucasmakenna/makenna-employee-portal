@@ -87,7 +87,7 @@ type Matrix = Record<Capability, Partial<Record<Role, boolean>>>;
 export const MATRIX: Matrix = {
   // ──── Hiring ───────────────────────────────────────────────
   'hiring.view_pipeline':       { admin: true, manager: true, lead: true,  trainer: true,  barista: false },
-  'hiring.create_candidate':    { admin: true, manager: true, lead: true,  trainer: false, barista: false },
+  'hiring.create_candidate':    { admin: true, manager: true, lead: true,  trainer: true,  barista: false },
   'hiring.move_stage':          { admin: true, manager: true, lead: false, trainer: false, barista: false },
   'hiring.hire':                { admin: true, manager: true, lead: false, trainer: false, barista: false },
   'hiring.reject':              { admin: true, manager: true, lead: false, trainer: false, barista: false },
