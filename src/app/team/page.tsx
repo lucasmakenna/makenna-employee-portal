@@ -39,7 +39,7 @@ export default function TeamPage() {
 
   if (!user) return null;
 
-  const canManage = user.role === 'admin' || user.role === 'manager';
+  const canManage = user.role === 'admin' || user.role === 'manager' || user.role === 'trainer';
 
   // Baristas only see teammates at their own location(s) — full directory
   // is for managers/admins/trainers/leads coordinating across stores.
