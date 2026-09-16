@@ -37,7 +37,8 @@ export type LocationId =
   | 'beach-house'
   | 'coffee-truck'
   | 'balboa'
-  | 'reseda';
+  | 'reseda'
+  | 'irwindale';
 
 export type Location = {
   id: LocationId;
