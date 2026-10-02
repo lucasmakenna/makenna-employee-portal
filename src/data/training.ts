@@ -1299,10 +1299,10 @@ export const STATIONS: TrainingStation[] = [
       {
         id: 'bb1-32b',
         name: 'Cappuccino steaming — volume, air technique, temperature, and finish',
-        description: 'Cappuccino milk grows about 50% (vs 20% for a latte). Total milk is 2 oz less than iced. Follow the milk surface continuously while introducing air.',
+        description: 'Cappuccino milk grows about 50% (vs 20% for a latte). Total milk is 2 oz less than hot. Follow the milk surface continuously while introducing air.',
         estimatedMinutes: 15,
         competencyCriteria: [
-          'For a Cappuccino: milk grows about 50%. Total milk = 2 oz less than iced. Follow the milk surface continuously while introducing air.',
+          'For a Cappuccino: milk grows about 50%. Total milk = 2 oz less than hot (S=8 oz / M=10 oz / L=12 oz). Follow the milk surface continuously while introducing air.',
           'TEMPERATURE: Close the steam knob 10–15 degrees before the target temp (milk keeps rising). Kids = 120°F / Regular = 150°F / Extra hot = 160°F.',
           'FINISH: Pull pitcher down. Wipe wand, purge again, set bucket aside. Tap pitcher on the counter and swirl until milk looks like wet paint.',
         ],
