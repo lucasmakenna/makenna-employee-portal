@@ -13,8 +13,8 @@ export const LOCATIONS: Location[] = [
   { id: 'balboa', name: 'Balboa', city: 'Balboa, CA', pin: '8420' },
   { id: 'reseda', name: 'Reseda', city: 'Reseda, CA', pin: '9255' },
   { id: 'irwindale', name: 'Irwindale', city: 'Irwindale, CA', pin: '15702' },
-  { id: 'oxnard', name: 'Oxnard', city: 'Oxnard, CA' },
-  { id: 'isla-vista', name: 'Isla Vista', city: 'Isla Vista, CA' },
+  { id: 'oxnard', name: 'Oxnard', city: 'Oxnard, CA', pin: '2350' },
+  { id: 'isla-vista', name: 'Isla Vista', city: 'Isla Vista, CA', pin: '6521' },
 ];
 
 export function getLocation(id: string) {
