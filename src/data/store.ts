@@ -395,7 +395,14 @@ function loadEmployees(): Employee[] {
     // Merge: seed provides base defaults, localStorage overrides + adds dynamic employees
     const map = new Map<string, Employee>();
     EMP_SEED.forEach((e) => map.set(e.id, e));
-    stored.forEach((e) => map.set(e.id, e));
+    stored.forEach((e) => {
+      // Sanitize nullable array/object fields that old cached data might have as null
+      if (!Array.isArray(e.certifications)) e.certifications = [];
+      if (!e.trainingProgressByStation || typeof e.trainingProgressByStation !== 'object') e.trainingProgressByStation = {};
+      if (!Array.isArray(e.additionalLocationIds)) e.additionalLocationIds = [];
+      if (!Array.isArray(e.attachments)) e.attachments = [];
+      map.set(e.id, e);
+    });
     RETIRED_EMPLOYEE_IDS.forEach((id) => map.delete(id));
     return Array.from(map.values());
   } catch {

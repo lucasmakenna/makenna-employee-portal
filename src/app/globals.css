@@ -65,6 +65,13 @@ html, body {
   }
 }
 
+/* Prevent iOS Safari from auto-zooming inputs (triggers when font-size < 16px) */
+@supports (-webkit-touch-callout: none) {
+  .input {
+    font-size: 16px;
+  }
+}
+
 /* Print styles — keep the audit certificate clean on paper */
 @media print {
   body { background: white; }

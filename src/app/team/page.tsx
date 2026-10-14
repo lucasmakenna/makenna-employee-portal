@@ -141,7 +141,7 @@ export default function TeamPage() {
                     {ROLE_LABELS[e.role]} · {getLocation(e.homeLocationId)?.name}
                   </div>
                   <div className="mt-1 flex flex-wrap gap-1">
-                    {e.certifications.map((c) => {
+                    {(e.certifications ?? []).map((c) => {
                       const days = Math.round(
                         (new Date(c.expiresOn).getTime() - Date.now()) / 86400000,
                       );

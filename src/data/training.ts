@@ -450,7 +450,7 @@ export const STATIONS: TrainingStation[] = [
           '"Food safety is critical for the health and well-being of our customers and our team."',
           '"Temperature Checks - Demonstrate to New Hire how to check cold holding temperatures in the Fridges. The critical point is that cold holding must be 41°F or below."',
           '"How to verify thermometers are working in fridges/and not missing."',
-          '"Never leave milk and dairy out longer than 1 hour cumulative. Show how to use a probe thermometer (if shift lead)."',
+          '"Never leave milk and dairy out longer than 1 hour consecutive. Show how to use a probe thermometer (if shift lead)."',
         ],
       },
       {
@@ -1187,7 +1187,7 @@ export const STATIONS: TrainingStation[] = [
         estimatedMinutes: 20,
         competencyCriteria: [
           '"Standard prep time: 2 minutes 30 seconds" for Supreme Iced drinks.',
-          'Practice drinks used in training: Sandy Blonde (Medium, 16 oz) and The Ben (Small, 12 oz) for verbal walk-through and build; Waikiki (Medium, 16 oz Iced) for first independent Mela pull.',
+          'Practice drinks used in training: Sandy Blonde (Medium, 16 oz) and The Ben (Small, 12 oz) for verbal walk-through and build; Waikiki (Medium, 16 oz Iced) for first independent Makenna Recipe App pull.',
           'SHOT COUNT: Small = 1 shot / Medium = 2 shots / Large = 2 shots (+1 free optional) / X-tra Large = 4 shots.',
           'HALF & HALF per size: Small = 2 oz / Medium = 2.5 oz / Large = 2.5 oz / X-tra Large = 5 oz. Maui Milk uses the same chart unless noted.',
           'FILL-TO (Milk of Choice): Small = 8 oz / Medium = 10 oz / Large = 12 oz / X-tra Large = 20 oz.',
@@ -1211,14 +1211,14 @@ export const STATIONS: TrainingStation[] = [
       },
       {
         id: 'bb1-27',
-        name: 'Mela (iPad) — how to find and read a recipe',
-        description: 'Show the New Hire how to open Mela, use the search bar, find a drink, select the correct style (Iced/Hot/Blended), and read the recipe.',
+        name: 'Makenna Recipe App (iPad) — how to find and read a recipe',
+        description: 'Show the New Hire how to open the Makenna Recipe App, use the search bar, find a drink, select the correct style (Iced/Hot/Blended), and read the recipe.',
         estimatedMinutes: 10,
         competencyCriteria: [
-          'Show the Mela app icon on the iPad so the New Hire can find it on a closed screen.',
-          'Open Mela. Show the New Hire where the search bar lives.',
+          'Show the Makenna Recipe App icon on the iPad so the New Hire can find it on a closed screen.',
+          'Open the Makenna Recipe App. Show the New Hire where the search bar lives.',
           'Show that drinks come in different styles: Iced, Hot, Blended. The New Hire picks the one that matches the drink ticket.',
-          'Sizes in Mela: 12 oz Small, 16 oz Medium, 24 oz Large (20 oz Large for Hot), 32 oz X-tra Large.',
+          'Sizes in the Makenna Recipe App: 12 oz Small, 16 oz Medium, 24 oz Large (20 oz Large for Hot), 32 oz X-tra Large.',
         ],
       },
       {
@@ -1335,7 +1335,7 @@ export const STATIONS: TrainingStation[] = [
           'Always whisk thoroughly after sauces and espresso — before walking away from the espresso area.',
           'Steam the milk only after the drink is fully built and whisked. Steamed milk left sitting creates thick foam.',
           'Drizzle on hot drinks goes across the top of the drink, not around the rim (cup is not transparent).',
-          'Hot drinks occasionally use powder where the iced version uses sauce or syrup — always check Mela.',
+          'Hot drinks occasionally use powder where the iced version uses sauce or syrup — always check the Makenna Recipe App.',
         ],
       },
       {
@@ -1344,7 +1344,7 @@ export const STATIONS: TrainingStation[] = [
         description: 'Cold brew base in measuring cup: flavor → cold brew. Pour into iced cup. Rinse cup. Build Kona Cloud topping: Kona Cloud → flavor → whisk → pour on top.',
         estimatedMinutes: 20,
         competencyCriteria: [
-          'Practice drink used in training: Brown Sugar Cinnamon Cold Brew (Medium, 16 oz) — pulled live from Mela by the New Hire, finished with cinnamon powder topping (coach for the right amount — not too little, not too much).',
+          'Practice drink used in training: Brown Sugar Cinnamon Cold Brew (Medium, 16 oz) — pulled live from the Makenna Recipe App by the New Hire, finished with cinnamon powder topping (coach for the right amount — not too little, not too much).',
           'Cold brew drinks are only available iced. "Our menu cold brews come with flavor in the cold brew and are topped with a flavored Kona Cloud."',
           'Trainer tip on remembering fill-to: "Liquid is less than the iced drinks because of the Kona Cloud. For example, on the Small: 8 oz of liquid plus 2 oz of Kona Cloud is 10 oz total."',
           'ORDER OF OPERATIONS: Measuring cup #1 — flavor → cold brew → pour into drink cup with ice to rim → rinse measuring cup.',
@@ -1499,10 +1499,10 @@ export const STATIONS: TrainingStation[] = [
       {
         id: 'bb2-7',
         name: 'Dairy handling during practice',
-        description: 'Never leave milk out longer than 1 hour cumulatively. Use small batch containers during rush to maintain cold-holding compliance.',
+        description: 'Never leave milk out longer than 1 hour consecutively. Use small batch containers during rush to maintain cold-holding compliance.',
         estimatedMinutes: 10,
         competencyCriteria: [
-          'Dairy out of the refrigerator cannot exceed 1 hour cumulatively.',
+          'Dairy out of the refrigerator cannot exceed 1 hour consecutively.',
           'During busy periods, use small batch containers and return milk to the fridge frequently.',
           'New Hire tracks the time milk has been out and rotates it back proactively.',
         ],
