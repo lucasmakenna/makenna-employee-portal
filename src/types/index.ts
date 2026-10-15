@@ -40,7 +40,8 @@ export type LocationId =
   | 'reseda'
   | 'irwindale'
   | 'oxnard'
-  | 'isla-vista';
+  | 'isla-vista'
+  | 'newport-beach';
 
 export type Location = {
   id: LocationId;

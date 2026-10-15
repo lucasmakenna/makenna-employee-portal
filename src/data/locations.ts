@@ -15,6 +15,7 @@ export const LOCATIONS: Location[] = [
   { id: 'irwindale', name: 'Irwindale', city: 'Irwindale, CA', pin: '15702' },
   { id: 'oxnard', name: 'Oxnard', city: 'Oxnard, CA', pin: '2350' },
   { id: 'isla-vista', name: 'Isla Vista', city: 'Isla Vista, CA', pin: '6521' },
+  { id: 'newport-beach', name: 'Newport Beach', city: 'Newport Beach, CA', pin: '3601' },
 ];
 
 export function getLocation(id: string) {
