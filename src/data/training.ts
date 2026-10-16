@@ -178,19 +178,6 @@ export const STATIONS: TrainingStation[] = [
           'Copy of completed Food Handler card to be filed within 30 days.',
         ],
       },
-      {
-        id: 'cc-6c',
-        name: 'Harassment Prevention Training attestation signed',
-        description: 'California SB 1343 requires all employees to complete harassment prevention training within 6 months of hire. New Hire signs the attestation after completing the state-provided course.',
-        estimatedMinutes: 10,
-        onboardingDocId: 'harassment_attestation',
-        competencyCriteria: [
-          'New Hire completes the CA Civil Rights Dept. free online Harassment Prevention Training at calcivilrights.ca.gov/shpt.',
-          'New Hire uploads a screenshot of their completion screen.',
-          'New Hire signs the Harassment Prevention Training attestation.',
-          'Training must be repeated every 2 years.',
-        ],
-      },
       // ── 1.3 Labor Law, Attendance, Benefits ──────────────────────────
       {
         id: 'cc-7',

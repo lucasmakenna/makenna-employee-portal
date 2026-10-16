@@ -18,7 +18,6 @@ import Avatar from '@/components/Avatar';
 import SignaturePad, { SignaturePadResult } from '@/components/SignaturePad';
 import ESIGNConsentGate from '@/components/ESIGNConsentGate';
 import FormSheet from '@/components/FormSheet';
-import HarassmentTrainingUpload, { HarassmentTrainingResult } from '@/components/HarassmentTrainingUpload';
 import WorkPermitUpload, { WorkPermitResult } from '@/components/WorkPermitUpload';
 import { useCurrentUser } from '@/lib/auth';
 import { can } from '@/data/permissions';
@@ -133,39 +132,6 @@ export default function OnboardingDetail() {
     setActiveTaskId(null);
   };
 
-  const handleHarassmentSign = async (result: HarassmentTrainingResult) => {
-    const tpl = getDocTemplate('harassment_attestation');
-    const geo = await tryGetGeolocation();
-    const prior = await getMostRecentRecord();
-    const record = await stampSignature({
-      context: { kind: 'onboarding', employeeId: packet.employeeId, docId: 'harassment_attestation' },
-      signerEmployeeId: packet.employeeId,
-      signerLegalName: result.signature.signerLegalName,
-      documentTitle: tpl?.title ?? 'Harassment Prevention Training',
-      documentBody: tpl?.templateBody ?? '',
-      signatureImagePngDataUrl: result.signature.signaturePngDataUrl,
-      consentAcknowledged: true,
-      priorRecord: prior,
-      geo,
-    });
-    appendSignature(record);
-    updatePacket(packet.employeeId, {
-      tasks: packet.tasks.map((t) =>
-        t.id === 'harassment_attestation'
-          ? {
-              ...t,
-              signed: true,
-              signedAt: record.signedAtIso,
-              signedByName: result.signature.signerLegalName,
-              signatureRecordId: record.id,
-              completionProofDataUrl: result.completionProofDataUrl,
-            }
-          : t,
-      ),
-    });
-    setActiveTaskId(null);
-  };
-
   const handleWorkPermitSign = async (result: WorkPermitResult) => {
     const geo = await tryGetGeolocation();
     const prior = await getMostRecentRecord();
@@ -232,23 +198,6 @@ export default function OnboardingDetail() {
 
   return (
     <AppShell>
-      {/* Harassment Prevention — full-screen sheet */}
-      {activeTaskId === 'harassment_attestation' &&
-        !packet.tasks.find((t) => t.id === 'harassment_attestation')?.signed && (
-          <FormSheet
-            title="Harassment Prevention Training"
-            subtitle="California SB 1343 · CA Civil Rights Dept."
-            onClose={() => setActiveTaskId(null)}
-          >
-            <HarassmentTrainingUpload
-              signerName={fullName(employee)}
-              templateBody={getDocTemplate('harassment_attestation')?.templateBody ?? ''}
-              onSubmit={handleHarassmentSign}
-              onCancel={() => setActiveTaskId(null)}
-            />
-          </FormSheet>
-        )}
-
       {/* Work Permit — full-screen sheet (minors only, dynamically injected) */}
       {activeTaskId === 'work_permit' && workPermitTask && !workPermitTask.signed && (
         <FormSheet
@@ -410,7 +359,7 @@ export default function OnboardingDetail() {
                 startSign(t.id);
               };
 
-              if (t.id === 'harassment_attestation' || t.id === 'work_permit') {
+              if (t.id === 'work_permit') {
                 const formToggle = () => {
                   if (t.signed) {
                     if (t.signatureRecordId) router.push(`/onboarding/${packet.employeeId}/certificate/${t.signatureRecordId}`);

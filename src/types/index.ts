@@ -159,7 +159,6 @@ export type OnboardingDocId =
   | 'nda'
   | 'handbook'
   | 'food_handler_attestation'
-  | 'harassment_attestation'
   | 'meal_period_waiver'
   | 'work_permit'
   | 'direct_deposit'

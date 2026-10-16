@@ -66,13 +66,6 @@ This waiver is entered into by mutual consent of employee and employer.`,
     templateBody: `I acknowledge that California Health and Safety Code §113948 requires me to obtain a California Food Handler card within 30 days of my date of hire. I will complete the ServSafe California Food Handler course (https://www.servsafe.com/access/SS/Catalog/ProductDetail/SSECT6CA) on Day 1 of my employment using the in-store tablet, with the $11.99 course fee paid by Makenna Koffee on the store's credit card. I understand that course time is paid (approximately 1 hour). I will provide a copy of my Food Handler card to my Store Manager for retention in my employee file, and I will renew the card prior to its 3-year expiration. I understand that maintaining a valid card is a condition of my continued employment.`,
   },
   {
-    id: 'harassment_attestation',
-    title: 'Harassment Prevention Training',
-    description: 'California SB 1343 requires all team members to complete harassment prevention training within 6 months of hire — 1 hour for crew, 2 hours for supervisors. Complete the free state-provided course at calcivilrights.ca.gov/shpt, screenshot your completion screen, and upload it here before signing.',
-    required: true,
-    templateBody: `I acknowledge the obligation under California SB 1343 to complete harassment prevention training within 6 months of my date of hire (1 hour for non-supervisory employees, 2 hours for supervisors), and to repeat the training every 2 years. I have completed the California Civil Rights Department's free online Harassment Prevention Training (https://calcivilrights.ca.gov/shpt/) and have uploaded my completion screenshot for retention. I understand that this training must be repeated every 2 years.`,
-  },
-  {
     id: 'nda',
     title: 'Confidentiality & IP Agreement',
     description: 'Standard NDA covering customer data, recipes, and proprietary information.',
