@@ -22,6 +22,7 @@ import {
   Eye,
   EyeOff,
   X,
+  ClipboardList,
 } from 'lucide-react';
 import clsx from 'clsx';
 import { useCurrentUser } from '@/lib/auth';
@@ -44,6 +45,7 @@ const NAV = [
   { href: '/study', icon: BookOpen, label: 'Study Mode' },
   { href: '/team', icon: Users, label: 'Team' },
   { href: '/milestones', icon: PartyPopper, label: 'Milestones' },
+  { href: '/daily-review', icon: ClipboardList, label: 'End of Day Training Review', hideForBarista: true, trainerOnly: true },
   { href: '/accountability', icon: ShieldAlert, label: 'Accountability' },
   { href: '/locations', icon: MapPin, label: 'Locations' },
 ];
@@ -72,7 +74,11 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         {/* Tri-stripe — the site's signature horizontal accent */}
         <div className="tri-stripe" />
         <nav className="flex-1 p-3">
-          {NAV.filter((item) => !(item.hideForBarista && user?.role === 'barista')).map((item) => {
+          {NAV.filter((item) => {
+            if (item.hideForBarista && user?.role === 'barista') return false;
+            if (item.trainerOnly && !['trainer', 'manager', 'admin'].includes(user?.role ?? '')) return false;
+            return true;
+          }).map((item) => {
             const active = pathname.startsWith(item.href);
             return (
               <Link
@@ -148,7 +154,11 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
         {/* Mobile nav strip */}
         <nav className="flex overflow-x-auto border-b border-ink-100 bg-white px-2 py-2 md:hidden">
-          {NAV.filter((item) => !(item.hideForBarista && user?.role === 'barista')).map((item) => {
+          {NAV.filter((item) => {
+            if (item.hideForBarista && user?.role === 'barista') return false;
+            if (item.trainerOnly && !['trainer', 'manager', 'admin'].includes(user?.role ?? '')) return false;
+            return true;
+          }).map((item) => {
             const active = pathname.startsWith(item.href);
             return (
               <Link

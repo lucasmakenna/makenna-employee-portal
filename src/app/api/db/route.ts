@@ -15,6 +15,7 @@ const ALLOWED_TABLES = new Set([
   'training_notes',
   'study_overrides',
   'recipes_test_attempts',
+  'trainer_daily_reviews',
 ]);
 
 export async function POST(req: NextRequest) {
