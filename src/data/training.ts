@@ -61,7 +61,7 @@ export const STATIONS: TrainingStation[] = [
   {
     id: 'compliance-culture',
     name: 'Section 1 — Compliance & Culture',
-    description: 'Section 1 — Administrative documents, labor law, food handler enrollment, and Makenna Koffee culture & Aspects of Success.',
+    description: 'Section 1 — Administrative documents, labor law, and Makenna Koffee culture & Aspects of Success.',
     order: 1,
     contentVersion: 2,
     updatedAt: '2026-05-20T00:00:00Z',
@@ -151,31 +151,6 @@ export const STATIONS: TrainingStation[] = [
           'Verify work permit is valid and current.',
           'File a copy in the New Hire\'s personnel record.',
           'Skip this step if New Hire is 18 or older.',
-        ],
-      },
-      // ── 1.2 Food Handler ───────────────────────────────────────────────
-      {
-        id: 'cc-6',
-        name: 'Food Handler Course enrolled on Day 1',
-        description: 'Enroll New Hire in the Food Handler certification course on Day 1. Manager provides the ServSafe link. Course is completed on paid company time.',
-        estimatedMinutes: 10,
-        competencyCriteria: [
-          'Manager provides New Hire with the ServSafe registration link on Day 1.',
-          'Course fee paid using the store credit card.',
-          'Training is completed on company time (approximately 1 paid hour).',
-          'New Hire must file a copy of their Food Handler Card within 30 days of hire.',
-        ],
-      },
-      {
-        id: 'cc-6b',
-        name: 'Food Handler Certification attestation signed',
-        description: 'New Hire signs the Food Handler Certification attestation — acknowledging the 30-day requirement and obligation to maintain a valid card.',
-        estimatedMinutes: 5,
-        onboardingDocId: 'food_handler_attestation',
-        competencyCriteria: [
-          'New Hire acknowledges the California requirement to obtain a Food Handler card within 30 days of hire.',
-          'New Hire signs the Food Handler Certification attestation.',
-          'Copy of completed Food Handler card to be filed within 30 days.',
         ],
       },
       // ── 1.3 Labor Law, Attendance, Benefits ──────────────────────────
@@ -2037,6 +2012,31 @@ export const STATIONS: TrainingStation[] = [
           'Manager reviews the Barista job expectations.',
           'Manager reviews the Shift Lead job expectations (if applicable).',
           'Defines who is responsible for key tasks (e.g., restocking milk, cleaning, expo) to support teamwork.',
+        ],
+      },
+      // ── Food Handler ──────────────────────────────────────────────────
+      {
+        id: 'cc-6',
+        name: 'Food Handler Course — completion verified',
+        description: 'Verify that the New Hire has completed the Food Handler certification course (enrolled on Day 1 via ServSafe). Course must be completed on company time within 30 days of hire.',
+        estimatedMinutes: 10,
+        competencyCriteria: [
+          'Confirm New Hire completed the ServSafe Food Handler course.',
+          'Course fee was paid using the store credit card.',
+          'Training was completed on company time (approximately 1 paid hour).',
+          'New Hire must file a copy of their Food Handler Card within 30 days of hire.',
+        ],
+      },
+      {
+        id: 'cc-6b',
+        name: 'Food Handler Certification attestation signed',
+        description: 'New Hire signs the Food Handler Certification attestation — acknowledging the 30-day requirement and obligation to maintain a valid card.',
+        estimatedMinutes: 5,
+        onboardingDocId: 'food_handler_attestation',
+        competencyCriteria: [
+          'New Hire acknowledges the California requirement to obtain a Food Handler card within 30 days of hire.',
+          'New Hire signs the Food Handler Certification attestation.',
+          'Copy of completed Food Handler card to be filed within 30 days.',
         ],
       },
       {
