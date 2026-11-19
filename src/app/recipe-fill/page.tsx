@@ -7,15 +7,17 @@ import AppShell from '@/components/AppShell';
 import { useCurrentUser } from '@/lib/auth';
 import { useRecipeFillAttempts, useEmployees } from '@/data/store';
 import { RECIPE_FILL_QUESTIONS, RECIPE_FILL_META, getHiddenDrinkNames } from '@/data/recipe-fill';
+import { getTop21QuestionIds } from '@/data/recipe-fill-top21';
 import { RECIPE_FILL_PASSING_SCORE } from '@/types';
 import { fullName } from '@/data/employees';
 import { format } from 'date-fns';
 
 // ── Test size config ──────────────────────────────────────────────────────────
 const TEST_SIZES = [
-  { id: 'quick',    label: 'Quick Practice',  drinkCount: 20,  description: '~5–10 min' },
-  { id: 'standard', label: 'Standard Test',   drinkCount: 50,  description: '~15–20 min' },
+  { id: 'quick',    label: 'Quick Practice',  drinkCount: 20,   description: '~5–10 min' },
+  { id: 'standard', label: 'Standard Test',   drinkCount: 50,   description: '~15–20 min' },
   { id: 'full',     label: 'Full Menu',        drinkCount: 9999, description: 'All 309 drinks' },
+  { id: 'top21',    label: 'Final Day',        drinkCount: 21,   description: 'Top 21 drinks' },
 ] as const;
 type TestSizeId = typeof TEST_SIZES[number]['id'];
 
@@ -72,8 +74,13 @@ export default function RecipeFillPage() {
       router.push('/recipe-fill/take');
       return;
     }
-    const hidden = await getHiddenDrinkNames();
-    const ids = sampleQuestions(RECIPE_FILL_QUESTIONS, selectedSize.drinkCount, hidden);
+    let ids: string[];
+    if (testSize === 'top21') {
+      ids = getTop21QuestionIds(RECIPE_FILL_QUESTIONS);
+    } else {
+      const hidden = await getHiddenDrinkNames();
+      ids = sampleQuestions(RECIPE_FILL_QUESTIONS, selectedSize.drinkCount, hidden);
+    }
     start(user!.id, ids);
     router.push('/recipe-fill/take');
   }
@@ -81,8 +88,13 @@ export default function RecipeFillPage() {
   async function handleAssignStart() {
     if (!assignTo) return;
     if (!assigneeActiveAttempt) {
-      const hidden = await getHiddenDrinkNames();
-      const ids = sampleQuestions(RECIPE_FILL_QUESTIONS, selectedSize.drinkCount, hidden);
+      let ids: string[];
+      if (testSize === 'top21') {
+        ids = getTop21QuestionIds(RECIPE_FILL_QUESTIONS);
+      } else {
+        const hidden = await getHiddenDrinkNames();
+        ids = sampleQuestions(RECIPE_FILL_QUESTIONS, selectedSize.drinkCount, hidden);
+      }
       start(assignTo, ids);
     }
     router.push(`/recipe-fill/take?for=${assignTo}`);
@@ -175,7 +187,7 @@ export default function RecipeFillPage() {
                 >
                   <span className="text-sm font-bold text-ink-700">{s.label}</span>
                   <span className="text-xs text-ink-400 mt-0.5">
-                    {s.id === 'full' ? 'All 309 drinks' : `${s.drinkCount} drinks`} · {s.description}
+                    {s.id === 'full' ? 'All 309 drinks' : s.id === 'top21' ? 'Top 21 drinks + variants' : `${s.drinkCount} drinks`} · {s.description}
                   </span>
                 </button>
               ))}
