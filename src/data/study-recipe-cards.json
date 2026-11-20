@@ -2917,5 +2917,33 @@
     "recipe": "● Small (12 oz)\nIn a blender:\n1 scoop of horchata powder\n1 scoop of white chocolate powder\nIn a measuring cup:\n1 pump of brown sugar cinnamon syrup\n1 espresso shot\n2 oz Maui milk\nMilk of choice to 5 oz\nPour into blender\nAdd full cup of ice\nBLEND on 4\nPour into cup\nTop off with Kona Cloud\nTop with cinnamon powder\n\n● Medium (16 oz)\nIn a blender:\n1 1/2 (one and a half) scoops of horchata powder\n1 1/2 (one and a half) scoops of white chocolate powder\nIn a measuring cup:\n1 1/2 (one and a half) pumps of brown sugar cinnamon syrup\n2 espresso shots\n2 1/2 (two and a half) oz Maui milk\nMilk of choice to 6 oz\nPour into blender\nAdd full cup of ice\nBLEND on 4\nPour into cup\nTop off with Kona Cloud\nTop with cinnamon powder\n\n● Large (24 oz)\nIn a blender:\n2 scoops of horchata powder\n2 scoops of white chocolate powder\nIn a measuring cup:\n2 pumps of brown sugar cinnamon syrup\n2 espresso shots\n2 1/2 (two and a half) oz Maui milk\nMilk of choice to 7 oz\nPour into blender\nAdd full cup of ice\nBLEND on 4\nPour into cup\nTop off with Kona Cloud\nTop with cinnamon powder",
     "category": "Blended",
     "mela_category": "Blended"
+  },
+  {
+    "id": "56805d03-363f-4d44-ad74-339088683cea",
+    "drink": "Strawberry Banana Smoothie",
+    "recipe": "ALL SIZES\nIn a blender:\nFull cup of ice\nStrawberry Banana puree to the top\nBlend until smooth\nPour into cup\n\n--- Modifiers ---\n+ Kona Wall: Swirl 2 oz Kona Cloud around the inside wall of the cup before pouring\n+ Strawberry Glaze: Drizzle strawberry glaze inside the cup before pouring",
+    "category": "Smoothies",
+    "mela_category": "Smoothies"
+  },
+  {
+    "id": "827f73e0-75a0-4b2b-92cd-352e39cdc051",
+    "drink": "Strawberry Smoothie",
+    "recipe": "ALL SIZES\nIn a blender:\nFull cup of ice\nStrawberry puree to the top\nBlend until smooth\nPour into cup\n\n--- Modifiers ---\n+ Kona Wall: Swirl 2 oz Kona Cloud around the inside wall of the cup before pouring\n+ Strawberry Glaze: Drizzle strawberry glaze inside the cup before pouring",
+    "category": "Smoothies",
+    "mela_category": "Smoothies"
+  },
+  {
+    "id": "a89de5cc-ffcf-4958-bdf9-34cc7d9a9233",
+    "drink": "Mango Smoothie",
+    "recipe": "ALL SIZES\nIn a blender:\nFull cup of ice\nMango puree to the top\nBlend until smooth\nPour into cup\n\n--- Modifiers ---\n+ Kona Wall: Swirl 2 oz Kona Cloud around the inside wall of the cup before pouring",
+    "category": "Smoothies",
+    "mela_category": "Smoothies"
+  },
+  {
+    "id": "7bb362f9-9c2c-46c2-97a6-36101566c7de",
+    "drink": "Wildberry Smoothie",
+    "recipe": "ALL SIZES\nIn a blender:\nFull cup of ice\nWildberry puree to the top\nBlend until smooth\nPour into cup\n\n--- Modifiers ---\n+ Kona Wall: Swirl 2 oz Kona Cloud around the inside wall of the cup before pouring",
+    "category": "Smoothies",
+    "mela_category": "Smoothies"
   }
 ]
